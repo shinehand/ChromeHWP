@@ -72,28 +72,85 @@ const HwpParser = {
   },
 
   _scanPrvText(b) {
-    // "PrvText" UTF-16LE: 50 00 72 00 76 00 54 00 65 00 78 00 74 00
-    const PAT = [0x50,0x00,0x72,0x00,0x76,0x00,0x54,0x00,0x65,0x00,0x78,0x00,0x74,0x00];
-    const exp = HwpParser._u16(b, 0x1E);
-    const ss  = (exp >= 7 && exp <= 14) ? (1 << exp) : 512;
+    // ─────────────────────────────────────────────────────
+    // CFB 헤더 파라미터 읽기
+    // ─────────────────────────────────────────────────────
+    const exp  = HwpParser._u16(b, 0x1E);
+    const ss   = (exp >= 7 && exp <= 14) ? (1 << exp) : 512; // 섹터 크기 (보통 512)
 
-    for (let pos = 512; pos + 128 <= b.length; pos += 128) {
+    // 미니 스트림 컷오프 크기: 이 값보다 작은 스트림은 미니 섹터(64 바이트)에 저장
+    const miniCutoff = HwpParser._u32(b, 0x38) || 4096;
+
+    // 첫 번째 디렉토리 섹터 위치 (CFB 오프셋 0x2C)
+    const dirStartSec = HwpParser._u32(b, 0x2C);
+    if (dirStartSec >= 0xFFFFFFFA) return null;
+    const dirBase = (dirStartSec + 1) * ss;
+    if (dirBase + 128 > b.length) return null;
+
+    // ─────────────────────────────────────────────────────
+    // Root Entry (디렉토리 첫 번째 엔트리, 128 바이트)
+    //   → startSec/size 로 미니 스트림 컨테이너 위치 파악
+    // ─────────────────────────────────────────────────────
+    const rootStartSec = HwpParser._u32(b, dirBase + 116);
+    const miniContainerOff = (rootStartSec < 0xFFFFFFFA)
+      ? (rootStartSec + 1) * ss
+      : -1;
+
+    console.log('[HWP] ss=%d miniCutoff=%d dirBase=%d rootStartSec=%d miniContainerOff=%d',
+                ss, miniCutoff, dirBase, rootStartSec, miniContainerOff);
+
+    // ─────────────────────────────────────────────────────
+    // 디렉토리 섹터 스캔으로 "PrvText" 엔트리 탐색
+    //   dirBase 이후 최대 8섹터 범위만 탐색 (파일 전체 스캔 방지)
+    // ─────────────────────────────────────────────────────
+    const PAT  = [0x50,0x00,0x72,0x00,0x76,0x00,0x54,0x00,0x65,0x00,0x78,0x00,0x74,0x00];
+    const limit = Math.min(dirBase + ss * 8, b.length - 128);
+
+    for (let pos = dirBase; pos <= limit; pos += 128) {
       const nl = HwpParser._u16(b, pos + 64);
+      // "PrvText" = 7글자 × 2 + null 2바이트 = 16
       if (nl !== 16) continue;
+
       let ok = true;
-      for (let k = 0; k < PAT.length; k++) { if (b[pos+k] !== PAT[k]) { ok=false; break; } }
+      for (let k = 0; k < PAT.length; k++) {
+        if (b[pos + k] !== PAT[k]) { ok = false; break; }
+      }
       if (!ok) continue;
 
-      const startSec  = HwpParser._u32(b, pos + 116);
-      const streamSz  = HwpParser._u32(b, pos + 120);
-      console.log('[HWP] PrvText @ pos=%d sec=%d size=%d', pos, startSec, streamSz);
+      const startSec = HwpParser._u32(b, pos + 116);
+      const streamSz = HwpParser._u32(b, pos + 120);
+      console.log('[HWP] PrvText 발견 pos=%d startSec=%d size=%d', pos, startSec, streamSz);
 
-      if (startSec >= 0xFFFFFFFA || streamSz === 0 || streamSz > 8*1024*1024) return null;
-      const off = (startSec + 1) * ss;
-      const end = Math.min(off + streamSz, b.length);
-      if (off >= b.length) return null;
-      return new TextDecoder('utf-16le').decode(b.slice(off, end));
+      if (startSec >= 0xFFFFFFFA || streamSz === 0 || streamSz > 8 * 1024 * 1024) return null;
+
+      let off, end;
+
+      if (streamSz < miniCutoff && miniContainerOff > 0) {
+        // ── 미니 스트림 경로 (작은 스트림 — 대부분의 HWP PrvText) ──
+        // 미니 섹터는 64 바이트 단위로, 미니 스트림 컨테이너 내부에 저장
+        const MINI_SS = 64;
+        off = miniContainerOff + startSec * MINI_SS;
+        end = off + streamSz;
+        console.log('[HWP] 미니 스트림: containerOff=%d miniSec=%d off=%d', miniContainerOff, startSec, off);
+      } else {
+        // ── 일반 스트림 경로 (큰 스트림) ──
+        off = (startSec + 1) * ss;
+        end = off + streamSz;
+        console.log('[HWP] 일반 스트림: off=%d', off);
+      }
+
+      if (off < 0 || off >= b.length) {
+        console.warn('[HWP] 스트림 오프셋(%d) 범위 초과 (파일크기=%d)', off, b.length);
+        return null;
+      }
+      end = Math.min(end, b.length);
+
+      const text = new TextDecoder('utf-16le').decode(b.slice(off, end));
+      console.log('[HWP] PrvText 디코딩 완료: %d 글자', text.length);
+      return text;
     }
+
+    console.warn('[HWP] PrvText 엔트리를 찾지 못했습니다.');
     return null;
   },
 
