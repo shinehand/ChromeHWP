@@ -163,6 +163,7 @@ const HwpParser = {
   /* ── zlib 압축 해제 ── */
   async _decompressZlib(data) {
     const timeoutMs = 8000;
+    let lastError = null;
     for (const mode of ['deflate', 'deflate-raw']) {
       let timeoutId = null;
       const timeoutPromise = new Promise((_, reject) => {
@@ -194,7 +195,10 @@ const HwpParser = {
         for (const c of chunks) { out.set(c, off); off += c.length; }
         return out;
       } catch (e) {
-        if (mode === 'deflate-raw') throw e;
+        lastError = e;
+        if (mode === 'deflate-raw') {
+          throw new Error(`zlib 압축 해제 실패 (mode=${mode}): ${e?.message || e}`);
+        }
       } finally {
         if (timeoutId) clearTimeout(timeoutId);
         try { reader.releaseLock(); } catch {}
@@ -202,7 +206,7 @@ const HwpParser = {
       }
     }
 
-    throw new Error('zlib 압축 해제 실패');
+    throw new Error(`zlib 압축 해제 실패: ${lastError?.message || 'unknown error'}`);
   },
 
   /* ── HWP 레코드 파서 (TagID 67 = HWPTAG_PARA_TEXT) ── */
@@ -250,8 +254,12 @@ const HwpParser = {
     const miniContainerOff = rootStartSec < 0xFFFFFFFA ? (rootStartSec + 1) * ss : -1;
 
     const fat = HwpParser._readFat(b, ss);
-    const sectionNames = Array.from({ length: 100 }, (_, i) => 'Section' + i);
-    const entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames]);
+    let sectionNames = Array.from({ length: 10 }, (_, i) => 'Section' + i);
+    let entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames]);
+    if (entries.Section9) {
+      sectionNames = Array.from({ length: 100 }, (_, i) => 'Section' + i);
+      entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames]);
+    }
 
     let compressed = true;
     if (entries.FileHeader) {
@@ -271,7 +279,7 @@ const HwpParser = {
     }
 
     const allParas = [];
-    for (let sn = 0; sn < 100; sn++) {
+    for (let sn = 0; sn < sectionNames.length; sn++) {
       const entry = entries['Section' + sn];
       if (!entry) break;
       const { startSec, streamSz } = entry;
@@ -289,7 +297,10 @@ const HwpParser = {
 
       if (compressed) {
         try { data = await HwpParser._decompressZlib(data); }
-        catch(e) { console.warn('[HWP] Section' + sn + ' 압축 해제 실패:', e.message); continue; }
+        catch(e) {
+          console.warn('[HWP] Section' + sn + ' 압축 해제 실패:', e.message);
+          compressed = false;
+        }
       }
 
       const paras = HwpParser._parseHwpRecords(data);

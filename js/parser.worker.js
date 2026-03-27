@@ -111,6 +111,7 @@ function scanDirEntries(b, names) {
 ════════════════════════════════════════════════════════ */
 async function decompressZlib(data) {
   const timeoutMs = 8000;
+  let lastError = null;
   for (const mode of ['deflate', 'deflate-raw']) {
     let timeoutId = null;
     const timeoutPromise = new Promise((_, reject) => {
@@ -142,7 +143,10 @@ async function decompressZlib(data) {
       for (const c of chunks) { out.set(c, off); off += c.length; }
       return out;
     } catch (e) {
-      if (mode === 'deflate-raw') throw e;
+      lastError = e;
+      if (mode === 'deflate-raw') {
+        throw new Error(`zlib 압축 해제 실패 (mode=${mode}): ${e?.message || e}`);
+      }
     } finally {
       if (timeoutId) clearTimeout(timeoutId);
       try { reader.releaseLock(); } catch {}
@@ -150,7 +154,7 @@ async function decompressZlib(data) {
     }
   }
 
-  throw new Error('zlib 압축 해제 실패');
+  throw new Error(`zlib 압축 해제 실패: ${lastError?.message || 'unknown error'}`);
 }
 
 /* ════════════════════════════════════════════════════════
@@ -224,9 +228,14 @@ async function parseBodyText(b) {
 
   const fat = readFat(b, ss);
 
-  // 필요한 디렉토리 엔트리 한 번에 스캔
-  const sectionNames = Array.from({ length: 100 }, (_, i) => 'Section' + i);
-  const entries = scanDirEntries(b, ['FileHeader', ...sectionNames]);
+  // 우선 자주 쓰는 구간(Section0~9)만 빠르게 스캔
+  let sectionNames = Array.from({ length: 10 }, (_, i) => 'Section' + i);
+  let entries = scanDirEntries(b, ['FileHeader', ...sectionNames]);
+  // 9번 섹션까지 존재하면 그때만 확장 스캔
+  if (entries.Section9) {
+    sectionNames = Array.from({ length: 100 }, (_, i) => 'Section' + i);
+    entries = scanDirEntries(b, ['FileHeader', ...sectionNames]);
+  }
 
   // FileHeader → 압축/암호화 플래그 확인
   let compressed = true;
@@ -249,9 +258,9 @@ async function parseBodyText(b) {
     }
   }
 
-  // Section0 ~ Section99 파싱
+  // Section 파싱
   const allParas = [];
-  for (let sn = 0; sn < 100; sn++) {
+  for (let sn = 0; sn < sectionNames.length; sn++) {
     const entry = entries['Section' + sn];
     if (!entry) break;
 
@@ -275,7 +284,8 @@ async function parseBodyText(b) {
         data = await decompressZlib(data);
       } catch (e) {
         console.warn('[Worker] Section' + sn + ' 압축 해제 실패:', e.message);
-        continue;
+        // 압축 플래그가 잘못된 문서 대비: 현재/이후 섹션은 원본으로 파싱 시도
+        compressed = false;
       }
     }
 
