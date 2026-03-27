@@ -549,8 +549,11 @@ const HwpParser = {
   _getParaTextControlSize(ch) {
     switch (ch) {
       case 0x0001:
-      case 0x0002:
       case 0x0003:
+      case 0x0004:
+      case 0x0005:
+      case 0x0007:
+      case 0x0008:
       case 0x000B:
       case 0x000C:
       case 0x000E:
@@ -558,18 +561,11 @@ const HwpParser = {
       case 0x0010:
       case 0x0011:
       case 0x0012:
+      case 0x0013:
+      case 0x0014:
       case 0x0015:
       case 0x0016:
       case 0x0017:
-        return 16;
-      case 0x0004:
-      case 0x0005:
-      case 0x0006:
-      case 0x0007:
-      case 0x0008:
-      case 0x0009:
-      case 0x0013:
-      case 0x0014:
         return 16;
       default:
         return 2;
