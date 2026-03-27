@@ -150,7 +150,8 @@ const HwpParser = {
       written += len;
       sec = (fat[sec] ?? 0xFFFFFFFE) >>> 0;
     }
-    return result;
+    if (written === 0) return null;
+    return written === streamSz ? result : result.slice(0, written);
   },
 
   _readMiniFat(b, ss, fat) {
@@ -191,7 +192,8 @@ const HwpParser = {
       written += len;
       sec = (miniFat[sec] ?? 0xFFFFFFFE) >>> 0;
     }
-    return result;
+    if (written === 0) return null;
+    return written === streamSz ? result : result.slice(0, written);
   },
 
   _scanDirEntries(b, names, ss, fat, dirStartSec) {
@@ -307,7 +309,7 @@ const HwpParser = {
           else if (ch === 0x0009) { chars.push('\t'); i += 2; }
           else if (ch === 0x000A || ch === 0x0006) { chars.push('\n'); i += 2; }
           else if (ch === 0x0002) { chars.push('\n'); i += 2; }
-          else if (ch >= 0x0001 && ch <= 0x001F) { i += 32; }
+          else if (ch >= 0x0001 && ch <= 0x001F) { i += HwpParser._getParaTextControlSize(ch); }
           else if (ch >= 0x0020) { chars.push(String.fromCharCode(ch)); i += 2; }
           else { i += 2; }
         }
@@ -316,6 +318,119 @@ const HwpParser = {
       pos = recEnd;
     }
     return paras;
+  },
+
+  _scoreParas(paras) {
+    return paras.reduce((sum, para) => (
+      sum + para.texts.reduce((textSum, run) => textSum + run.text.replace(/\s+/g, '').length, 0)
+    ), 0);
+  },
+
+  _paragraphsFromText(text) {
+    return text
+      .replace(/\r\n/g, '\n')
+      .replace(/\r/g, '\n')
+      .replace(/\x02/g, '\n')
+      .split('\n')
+      .map(line => ({ align: 'left', texts: [HwpParser._run(line)] }));
+  },
+
+  /**
+   * BodyText 구조 레코드 파싱이 실패했을 때 UTF-16LE 텍스트 덩어리를 휴리스틱하게 복구합니다.
+   * 한글이 1글자 이상 포함된 연속 블록만 후보로 삼아, 바이너리 노이즈보다 실제 본문을 우선 선택합니다.
+   */
+  _scanUtf16TextBlock(data, startOffset = 0, minRawLen = 20) {
+    let bestStart = -1, bestScore = 0, bestRawLen = 0;
+    let runStart = -1, runLen = 0, koreanInRun = 0;
+
+    const isValidCp = cp =>
+      (cp >= 0x20  && cp <= 0x7E)   ||
+      (cp >= 0xAC00 && cp <= 0xD7A3)||
+      (cp >= 0x1100 && cp <= 0x11FF)||
+      (cp >= 0x3130 && cp <= 0x318F)||
+      (cp >= 0x4E00 && cp <= 0x9FFF)||
+      cp === 0x000A || cp === 0x000D || cp === 0x0009 || cp === 0x0002;
+
+    const flush = () => {
+      if (runLen >= minRawLen && koreanInRun > 0) {
+        const score = runLen * (1 + koreanInRun / Math.max(runLen / 2, 1));
+        if (score > bestScore) {
+          bestStart = runStart;
+          bestScore = score;
+          bestRawLen = runLen;
+        }
+      }
+      runStart = -1;
+      runLen = 0;
+      koreanInRun = 0;
+    };
+
+    for (let i = startOffset; i + 2 <= data.length; i += 2) {
+      const cp = data[i] | (data[i + 1] << 8);
+      if (isValidCp(cp)) {
+        if (runStart < 0) runStart = i;
+        runLen += 2;
+        if (cp >= 0xAC00 && cp <= 0xD7A3) koreanInRun++;
+      } else {
+        flush();
+      }
+    }
+    flush();
+
+    if (bestStart < 0) return null;
+    return new TextDecoder('utf-16le').decode(data.slice(bestStart, bestStart + bestRawLen));
+  },
+
+  /**
+   * 섹션 스트림을 raw/deflated 양쪽으로 시도한 뒤, 구조 레코드가 안 맞으면 UTF-16 텍스트 블록 복구까지 수행합니다.
+   * 그래도 유의미한 본문을 찾지 못한 경우에만 빈 결과를 반환해 상위 단계에서 PrvText fallback 으로 넘어가게 합니다.
+   */
+  async _extractSectionParas(data, compressedHint, sectionName) {
+    const attempts = [];
+    const pushAttempt = (mode, bytes) => {
+      if (!bytes || bytes.length === 0) return;
+      attempts.push({ mode, bytes });
+    };
+
+    if (!compressedHint) pushAttempt('raw', data);
+
+    try {
+      pushAttempt('deflated', await HwpParser._decompressZlib(data));
+    } catch (e) {
+      console.warn(`[HWP] ${sectionName} 압축 해제 실패:`, e.message);
+    }
+
+    if (compressedHint) pushAttempt('raw', data);
+
+    let bestParas = [];
+    let bestScore = 0;
+
+    for (const { mode, bytes } of attempts) {
+      const paras = HwpParser._parseHwpRecords(bytes);
+      const score = HwpParser._scoreParas(paras);
+      if (score > bestScore) {
+        bestScore = score;
+        bestParas = paras;
+      }
+      if (score > 0) {
+        console.log('[HWP] %s: %d단락 (%s)', sectionName, paras.length, mode);
+      }
+    }
+
+    if (bestScore > 0) return bestParas;
+
+    for (const { mode, bytes } of attempts) {
+      const text = HwpParser._scanUtf16TextBlock(bytes, 0, 20);
+      if (!text) continue;
+      const paras = HwpParser._paragraphsFromText(text);
+      const score = HwpParser._scoreParas(paras);
+      if (score > 0) {
+        console.warn('[HWP] %s: 구조 파싱 실패 → 텍스트 블록 복구 (%s)', sectionName, mode);
+        return paras;
+      }
+    }
+
+    return [];
   },
 
   /* ── BodyText/Section 스트림 파싱 ── */
@@ -385,22 +500,8 @@ const HwpParser = {
         data = HwpParser._readStreamByFat(b, startSec, streamSz, ss, fat);
       }
       if (!data || data.length === 0) continue;
-
-      if (compressed) {
-        try { data = await HwpParser._decompressZlib(data); }
-        catch(e) {
-          console.warn('[HWP] Section' + sn + ' 압축 해제 실패:', e.message);
-          const rawParas = HwpParser._parseHwpRecords(data);
-          if (rawParas.length > 0) {
-            allParas.push(...rawParas);
-          }
-          continue;
-        }
-      }
-
-      const paras = HwpParser._parseHwpRecords(data);
+      const paras = await HwpParser._extractSectionParas(data, compressed, 'Section' + sn);
       allParas.push(...paras);
-      console.log('[HWP] Section%d: %d단락', sn, paras.length);
     }
 
     return allParas.length > 0 ? allParas : null;
@@ -544,6 +645,37 @@ const HwpParser = {
   _run(text) {
     return { text: text||'', bold:false, italic:false, underline:false,
              fontSize:11, fontName:'Malgun Gothic', color:'#000000' };
+  },
+
+  /**
+   * HWP PARA_TEXT 제어문자의 소비 길이입니다.
+   * 이 파서에서는 문단 내부 inline/extended control 을 16바이트, 일반 제어문자를 2바이트로 소비해
+   * 실제 본문 텍스트를 과도하게 건너뛰지 않도록 맞춥니다.
+   */
+  _getParaTextControlSize(ch) {
+    switch (ch) {
+      case 0x0001:
+      case 0x0003:
+      case 0x0004:
+      case 0x0005:
+      case 0x0007:
+      case 0x0008:
+      case 0x000B:
+      case 0x000C:
+      case 0x000E:
+      case 0x000F:
+      case 0x0010:
+      case 0x0011:
+      case 0x0012:
+      case 0x0013:
+      case 0x0014:
+      case 0x0015:
+      case 0x0016:
+      case 0x0017:
+        return 16;
+      default:
+        return 2;
+    }
   },
 
   _u16(b, o) { return (b[o]??0) | ((b[o+1]??0)<<8); },

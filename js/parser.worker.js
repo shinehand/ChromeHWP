@@ -92,7 +92,8 @@ function readStreamByFat(b, startSec, streamSz, ss, fat) {
     written += len;
     sec = (fat[sec] ?? 0xFFFFFFFE) >>> 0;
   }
-  return result;
+  if (written === 0) return null;
+  return written === streamSz ? result : result.slice(0, written);
 }
 
 /** MiniFAT 체인을 읽어 miniFat[miniSec] = 다음 miniSec 맵을 구성합니다. */
@@ -137,7 +138,8 @@ function readStreamByMiniFat(miniStream, startSec, streamSz, miniFat) {
     written += len;
     sec = (miniFat[sec] ?? 0xFFFFFFFE) >>> 0;
   }
-  return result;
+  if (written === 0) return null;
+  return written === streamSz ? result : result.slice(0, written);
 }
 
 /** 이름 목록에 해당하는 CFB 디렉토리 엔트리를 스캔합니다. */
@@ -272,8 +274,7 @@ function parseHwpRecords(data) {
         } else if (ch === 0x0002) {
           chars.push('\n'); i += 2; // 섹션/컬럼 나눔
         } else if (ch >= 0x0001 && ch <= 0x001F) {
-          // 인라인 컨트롤: 제어 문자(2) + 확장 데이터(30) = 32 바이트
-          i += 32;
+          i += getParaTextControlSize(ch);
         } else if (ch >= 0x0020) {
           chars.push(String.fromCharCode(ch));
           i += 2;
@@ -288,6 +289,146 @@ function parseHwpRecords(data) {
   }
 
   return paras;
+}
+
+function scoreParas(paras) {
+  return paras.reduce((sum, para) => (
+    sum + para.texts.reduce((textSum, chunk) => textSum + chunk.text.replace(/\s+/g, '').length, 0)
+  ), 0);
+}
+
+function paragraphsFromText(text) {
+  return text
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n')
+    .replace(/\x02/g, '\n')
+    .split('\n')
+    .map(line => ({ align: 'left', texts: [run(line)] }));
+}
+
+/**
+ * BodyText 구조 레코드가 깨졌을 때 UTF-16LE 텍스트 덩어리를 휴리스틱하게 복구합니다.
+ * 한글이 1글자 이상 포함된 연속 블록을 우선 선택해 바이너리 노이즈보다 실제 본문 후보를 고릅니다.
+ */
+function scanUtf16TextBlock(data, startOffset = 0, minRawLen = 20) {
+  let bestStart = -1, bestScore = 0, bestRawLen = 0;
+  let runStart = -1, runLen = 0, koreanInRun = 0;
+
+  const isValidCp = cp =>
+    (cp >= 0x20  && cp <= 0x7E)   ||
+    (cp >= 0xAC00 && cp <= 0xD7A3)||
+    (cp >= 0x1100 && cp <= 0x11FF)||
+    (cp >= 0x3130 && cp <= 0x318F)||
+    (cp >= 0x4E00 && cp <= 0x9FFF)||
+    cp === 0x000A || cp === 0x000D || cp === 0x0009 || cp === 0x0002;
+
+  const flush = () => {
+    if (runLen >= minRawLen && koreanInRun > 0) {
+      const score = runLen * (1 + koreanInRun / Math.max(runLen / 2, 1));
+      if (score > bestScore) {
+        bestStart = runStart;
+        bestScore = score;
+        bestRawLen = runLen;
+      }
+    }
+    runStart = -1;
+    runLen = 0;
+    koreanInRun = 0;
+  };
+
+  for (let i = startOffset; i + 2 <= data.length; i += 2) {
+    const cp = data[i] | (data[i + 1] << 8);
+    if (isValidCp(cp)) {
+      if (runStart < 0) runStart = i;
+      runLen += 2;
+      if (cp >= 0xAC00 && cp <= 0xD7A3) koreanInRun++;
+    } else {
+      flush();
+    }
+  }
+  flush();
+
+  if (bestStart < 0) return null;
+  return new TextDecoder('utf-16le').decode(data.slice(bestStart, bestStart + bestRawLen));
+}
+
+/** HWP PARA_TEXT 제어문자의 소비 길이: 이 파서에서는 inline/extended control 을 16바이트, 일반 제어문자를 2바이트로 처리합니다. */
+function getParaTextControlSize(ch) {
+  switch (ch) {
+    case 0x0001:
+    case 0x0003:
+    case 0x0004:
+    case 0x0005:
+    case 0x0007:
+    case 0x0008:
+    case 0x000B:
+    case 0x000C:
+    case 0x000E:
+    case 0x000F:
+    case 0x0010:
+    case 0x0011:
+    case 0x0012:
+    case 0x0013:
+    case 0x0014:
+    case 0x0015:
+    case 0x0016:
+    case 0x0017:
+      return 16;
+    default:
+      return 2;
+  }
+}
+
+/**
+ * 섹션 스트림을 raw/deflated 양쪽으로 구조 파싱하고, 모두 실패하면 UTF-16 텍스트 블록 복구까지 시도합니다.
+ * 그래도 본문 후보가 없을 때만 빈 배열을 반환해 상위 단계가 PrvText fallback 으로 넘어가게 합니다.
+ */
+async function extractSectionParas(data, compressedHint, sectionName) {
+  const attempts = [];
+  const pushAttempt = (mode, bytes) => {
+    if (!bytes || bytes.length === 0) return;
+    attempts.push({ mode, bytes });
+  };
+
+  if (!compressedHint) pushAttempt('raw', data);
+
+  try {
+    pushAttempt('deflated', await decompressZlib(data));
+  } catch (e) {
+    console.warn(`[Worker] ${sectionName} 압축 해제 실패:`, e.message);
+  }
+
+  if (compressedHint) pushAttempt('raw', data);
+
+  let bestParas = [];
+  let bestScore = 0;
+
+  for (const { mode, bytes } of attempts) {
+    const paras = parseHwpRecords(bytes);
+    const score = scoreParas(paras);
+    if (score > bestScore) {
+      bestScore = score;
+      bestParas = paras;
+    }
+    if (score > 0) {
+      self.postMessage({ type: 'progress', msg: `${sectionName}: ${paras.length}개 단락 완료 (${mode})` });
+    }
+  }
+
+  if (bestScore > 0) return bestParas;
+
+  for (const { mode, bytes } of attempts) {
+    const text = scanUtf16TextBlock(bytes, 0, 20);
+    if (!text) continue;
+    const paras = paragraphsFromText(text);
+    const score = scoreParas(paras);
+    if (score > 0) {
+      self.postMessage({ type: 'progress', msg: `${sectionName}: 텍스트 블록 복구 (${mode})` });
+      return paras;
+    }
+  }
+
+  return [];
 }
 
 /* ════════════════════════════════════════════════════════
@@ -373,24 +514,8 @@ async function parseBodyText(b) {
     }
     if (!data || data.length === 0) continue;
 
-    if (compressed) {
-      try {
-        data = await decompressZlib(data);
-      } catch (e) {
-        console.warn('[Worker] Section' + sn + ' 압축 해제 실패:', e.message);
-        // 현재 섹션은 원본 레코드로도 파싱 시도
-        const rawParas = parseHwpRecords(data);
-        if (rawParas.length > 0) {
-          allParas.push(...rawParas);
-          self.postMessage({ type: 'progress', msg: `Section${sn}: ${rawParas.length}개 단락 완료(raw)` });
-        }
-        continue;
-      }
-    }
-
-    const paras = parseHwpRecords(data);
+    const paras = await extractSectionParas(data, compressed, 'Section' + sn);
     allParas.push(...paras);
-    self.postMessage({ type: 'progress', msg: `Section${sn}: ${paras.length}개 단락 완료` });
   }
 
   return allParas.length > 0 ? allParas : null;
