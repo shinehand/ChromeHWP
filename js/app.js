@@ -389,41 +389,45 @@ function scrollToPage(pi) {
 function enterEditMode() {
   if (!state.doc) return;
   HwpEditor.loadDocument(state.doc);
-  UI.viewerPanel.hidden = true;
-  UI.editorPanel.hidden = false;
-  UI.btnEditMode.hidden = true;
-  UI.btnViewMode.hidden = false;
+  UI.viewerPanel.style.display = 'none';
+  UI.editorPanel.style.display = 'flex';
+  UI.btnEditMode.style.display = 'none';
+  UI.btnViewMode.style.display = '';
   state.mode = 'edit';
   updateStatusBar();
   HwpEditor.focus();
 }
 
 function enterViewMode() {
-  UI.editorPanel.hidden = true;
-  UI.viewerPanel.hidden = false;
-  UI.btnViewMode.hidden = true;
-  UI.btnEditMode.hidden = false;
+  UI.editorPanel.style.display = 'none';
+  UI.viewerPanel.style.display = '';
+  UI.btnViewMode.style.display = 'none';
+  UI.btnEditMode.style.display = '';
   state.mode = 'view';
   updateStatusBar();
 }
 
 /* ── UI 헬퍼 ── */
 function updateUiAfterLoad(file) {
-  UI.dropZone.hidden    = true;
-  UI.mainContent.hidden = false;
-  UI.statusBar.hidden   = false;
-  UI.btnEditMode.disabled = false;
-  UI.exportGroup.hidden   = false;
-  UI.fileName.textContent = file.name;
+  UI.dropZone.style.display    = 'none';
+  UI.mainContent.style.display = 'flex';
+  UI.statusBar.style.display   = 'flex';
+  UI.btnEditMode.disabled      = false;
+  UI.exportGroup.style.display = 'flex';
+  UI.fileName.textContent      = file.name;
   UI.statusFileInfo.textContent = `${(file.size/1024).toFixed(1)} KB | ${state.doc.meta.pages}페이지`;
 }
 
+// style.display 직접 제어 — CSS display:flex 가 hidden 속성을 덮어쓰는 문제 방지
 function showLoading(msg) {
-  UI.loadingMsg.textContent = msg || '처리 중...';
-  UI.loadingOverlay.hidden  = false;
+  UI.loadingMsg.textContent    = msg || '처리 중...';
+  UI.loadingOverlay.style.display = 'flex';
 }
-function hideLoading()     { UI.loadingOverlay.hidden = true; }
-function showError(msg)    { UI.errorMsg.textContent = msg; UI.errorBanner.hidden = false; }
+function hideLoading()  { UI.loadingOverlay.style.display = 'none'; }
+function showError(msg) {
+  UI.errorMsg.textContent    = msg;
+  UI.errorBanner.style.display = 'flex';
+}
 
 function updateStatusBar() {
   UI.statusPageInfo.textContent = `${state.currentPage+1} / ${state.doc?.pages?.length??1} 페이지`;
@@ -440,7 +444,7 @@ UI.btnViewMode.onclick = enterViewMode;
 UI.btnExportHTML.onclick  = () => HwpExporter.exportHtml();
 UI.btnExportPDF.onclick   = () => HwpExporter.exportPdf();
 UI.btnExportHWPX.onclick  = () => HwpExporter.exportHwpx();
-UI.btnCloseError.onclick  = () => { UI.errorBanner.hidden = true; };
+UI.btnCloseError.onclick  = () => { UI.errorBanner.style.display = 'none'; };
 
 UI.dropZone.addEventListener('dragenter', e => { e.preventDefault(); UI.dropZone.classList.add('drag-over'); });
 UI.dropZone.addEventListener('dragover',  e => { e.preventDefault(); UI.dropZone.classList.add('drag-over'); });
