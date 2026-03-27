@@ -10,10 +10,10 @@ const HwpParser = {
 
   async parse(buffer, filename) {
     const ext = filename.split('.').pop().toLowerCase();
-    await new Promise(r => setTimeout(r, 80)); // UI 업데이트 여유
+    await new Promise(r => setTimeout(r, 80));
 
     if (ext === 'hwpx') return HwpParser._parseHwpx(buffer);
-    if (ext === 'hwp')  return HwpParser._parseHwp5(buffer);
+    if (ext === 'hwp')  return await HwpParser._parseHwp5(buffer);
     throw new Error(`지원하지 않는 형식: .${ext} (.hwp / .hwpx 만 가능)`);
   },
 
@@ -49,18 +49,37 @@ const HwpParser = {
     }));
   },
 
-  /* ── HWP 5.0 ── */
-  _parseHwp5(buffer) {
+  /* ════════════════════════════════════════════
+     HWP 5.0 — 3단계 파싱 전략
+  ════════════════════════════════════════════ */
+  async _parseHwp5(buffer) {
     const b = new Uint8Array(buffer);
     const SIG = [0xD0,0xCF,0x11,0xE0,0xA1,0xB1,0x1A,0xE1];
     if (!SIG.every((v, i) => b[i] === v))
       throw new Error('HWP 시그니처 불일치 — 올바른 HWP 5.0 파일인지 확인하세요.');
 
-    // 전략 1: CFB PrvText 스트림 직접 추출
+    // 전략 0: BodyText/Section 파싱 (전체 텍스트 + 단락 구조)
+    let allParas = null;
+    try { allParas = await HwpParser._parseBodyText(b); }
+    catch(e) { console.warn('[HWP] BodyText 파싱 실패:', e); }
+
+    if (allParas) {
+      const cleaned = [];
+      let emptyRun = 0;
+      for (const p of allParas) {
+        const isEmpty = !p.texts.some(t => t.text.trim());
+        if (isEmpty) { if (++emptyRun <= 2) cleaned.push(p); }
+        else { emptyRun = 0; cleaned.push(p); }
+      }
+      const pages = HwpParser._paginate(cleaned, 40);
+      return { meta: { pages: pages.length }, pages };
+    }
+
+    // 전략 1: CFB PrvText 스트림
     let text = null;
     try { text = HwpParser._scanPrvText(b); } catch(e) { console.warn('[HWP] PrvText 오류:', e); }
 
-    // 전략 2: 파일 전체에서 한글 UTF-16LE 블록 직접 탐색 (CFB 구조 무관)
+    // 전략 2: 한글 UTF-16LE 블록 직접 탐색
     if (!text) {
       console.log('[HWP] PrvText 실패 → 한글 텍스트 직접 스캔 시도');
       try { text = HwpParser._scanKoreanText(b); } catch(e) { console.warn('[HWP] 텍스트 스캔 오류:', e); }
@@ -75,6 +94,179 @@ const HwpParser = {
       meta: { pages: pages.length, note: '⚠️ PrvText 텍스트 추출 (서식 미지원)' },
       pages
     };
+  },
+
+  /* ════════════════════════════════════════════
+     CFB FAT 유틸리티
+  ════════════════════════════════════════════ */
+  _readFat(b, ss) {
+    const nFat = HwpParser._u32(b, 0x28);
+    if (nFat === 0) return new Uint32Array(0);
+    const ePS = ss / 4;
+    const fat = new Uint32Array(nFat * ePS);
+    for (let i = 0; i < 109 && i < nFat; i++) {
+      const fatSec = HwpParser._u32(b, 0x4C + i * 4);
+      if (fatSec >= 0xFFFFFFF8) break;
+      const base = (fatSec + 1) * ss;
+      if (base + ss > b.length) continue;
+      for (let j = 0; j < ePS; j++)
+        fat[i * ePS + j] = HwpParser._u32(b, base + j * 4);
+    }
+    return fat;
+  },
+
+  _readStreamByFat(b, startSec, streamSz, ss, fat) {
+    if (startSec >= 0xFFFFFFF8 || streamSz === 0) return null;
+    const result = new Uint8Array(streamSz);
+    let written = 0, sec = startSec;
+    while (sec < 0xFFFFFFF8 && written < streamSz) {
+      const off = (sec + 1) * ss;
+      const len = Math.min(ss, streamSz - written);
+      if (off + len > b.length) break;
+      result.set(b.subarray(off, off + len), written);
+      written += len;
+      sec = (fat[sec] ?? 0xFFFFFFFE) >>> 0;
+    }
+    return result;
+  },
+
+  _scanDirEntries(b, names) {
+    const queries = names.map(name => {
+      const pat = [];
+      for (const c of name) { const cc = c.charCodeAt(0); pat.push(cc & 0xFF, cc >> 8); }
+      return { name, pat, nameLen: (name.length + 1) * 2 };
+    });
+    const result = {};
+    for (let pos = 512; pos + 128 <= b.length; pos += 128) {
+      const nl = HwpParser._u16(b, pos + 64);
+      for (const { name, pat, nameLen } of queries) {
+        if (nl !== nameLen) continue;
+        let ok = true;
+        for (let k = 0; k < pat.length; k++) {
+          if (b[pos + k] !== pat[k]) { ok = false; break; }
+        }
+        if (ok) result[name] = {
+          startSec: HwpParser._u32(b, pos + 116),
+          streamSz: HwpParser._u32(b, pos + 120),
+        };
+      }
+    }
+    return result;
+  },
+
+  /* ── zlib 압축 해제 ── */
+  async _decompressZlib(data) {
+    const ds = new DecompressionStream('deflate');
+    const writer = ds.writable.getWriter();
+    const reader = ds.readable.getReader();
+    await writer.write(data);
+    await writer.close();
+    const chunks = [];
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      chunks.push(value);
+    }
+    const total = chunks.reduce((s, c) => s + c.length, 0);
+    const out = new Uint8Array(total);
+    let off = 0;
+    for (const c of chunks) { out.set(c, off); off += c.length; }
+    return out;
+  },
+
+  /* ── HWP 레코드 파서 (TagID 67 = HWPTAG_PARA_TEXT) ── */
+  _parseHwpRecords(data) {
+    const paras = [];
+    let pos = 0;
+    while (pos + 4 <= data.length) {
+      const hdr   = HwpParser._u32(data, pos); pos += 4;
+      const tagId = hdr & 0x3FF;
+      let size    = (hdr >> 20) & 0xFFF;
+      if (size === 0xFFF) {
+        if (pos + 4 > data.length) break;
+        size = HwpParser._u32(data, pos); pos += 4;
+      }
+      const recEnd = Math.min(pos + size, data.length);
+      if (tagId === 67 && size >= 2) {
+        const chars = [];
+        let i = pos;
+        while (i + 2 <= recEnd) {
+          const ch = data[i] | (data[i+1] << 8);
+          if (ch === 0x000D) { i += 2; break; }
+          else if (ch === 0x0009) { chars.push('\t'); i += 2; }
+          else if (ch === 0x000A || ch === 0x0006) { chars.push('\n'); i += 2; }
+          else if (ch === 0x0002) { chars.push('\n'); i += 2; }
+          else if (ch >= 0x0001 && ch <= 0x001F) { i += 32; }
+          else if (ch >= 0x0020) { chars.push(String.fromCharCode(ch)); i += 2; }
+          else { i += 2; }
+        }
+        paras.push({ align: 'left', texts: [HwpParser._run(chars.join(''))] });
+      }
+      pos = recEnd;
+    }
+    return paras;
+  },
+
+  /* ── BodyText/Section 스트림 파싱 ── */
+  async _parseBodyText(b) {
+    const ss         = (() => { const e = HwpParser._u16(b, 0x1E); return (e>=7&&e<=14)?(1<<e):512; })();
+    const miniCutoff = HwpParser._u32(b, 0x38) || 4096;
+    const dirStartSec = HwpParser._u32(b, 0x2C);
+    if (dirStartSec >= 0xFFFFFFFA) return null;
+
+    const dirBase          = (dirStartSec + 1) * ss;
+    const rootStartSec     = HwpParser._u32(b, dirBase + 116);
+    const miniContainerOff = rootStartSec < 0xFFFFFFFA ? (rootStartSec + 1) * ss : -1;
+
+    const fat = HwpParser._readFat(b, ss);
+    const sectionNames = Array.from({ length: 10 }, (_, i) => 'Section' + i);
+    const entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames]);
+
+    let compressed = true;
+    if (entries.FileHeader) {
+      const { startSec, streamSz } = entries.FileHeader;
+      let fhData;
+      if (streamSz < miniCutoff && miniContainerOff > 0) {
+        const off = miniContainerOff + startSec * 64;
+        fhData = b.slice(off, Math.min(off + streamSz, b.length));
+      } else {
+        fhData = HwpParser._readStreamByFat(b, startSec, streamSz, ss, fat);
+      }
+      if (fhData && fhData.length >= 40) {
+        compressed = (fhData[36] & 1) !== 0;
+        if (fhData[36] & 2) { console.warn('[HWP] 암호화된 문서'); return null; }
+        console.log('[HWP] FileHeader: compressed=%s', compressed);
+      }
+    }
+
+    const allParas = [];
+    for (let sn = 0; sn <= 9; sn++) {
+      const entry = entries['Section' + sn];
+      if (!entry) break;
+      const { startSec, streamSz } = entry;
+      if (startSec >= 0xFFFFFFFA || streamSz === 0) break;
+
+      let data;
+      if (streamSz < miniCutoff && miniContainerOff > 0) {
+        const off = miniContainerOff + startSec * 64;
+        if (off + streamSz > b.length) continue;
+        data = b.slice(off, off + streamSz);
+      } else {
+        data = HwpParser._readStreamByFat(b, startSec, streamSz, ss, fat);
+      }
+      if (!data || data.length === 0) continue;
+
+      if (compressed) {
+        try { data = await HwpParser._decompressZlib(data); }
+        catch(e) { console.warn('[HWP] Section' + sn + ' 압축 해제 실패:', e.message); continue; }
+      }
+
+      const paras = HwpParser._parseHwpRecords(data);
+      allParas.push(...paras);
+      console.log('[HWP] Section%d: %d단락', sn, paras.length);
+    }
+
+    return allParas.length > 0 ? allParas : null;
   },
 
   _scanPrvText(b) {
