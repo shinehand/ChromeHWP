@@ -258,14 +258,27 @@ async function parseBodyText(b) {
     }
   }
 
+  let sectionNumbers = Object.keys(entries)
+    .filter(name => /^Section\d+$/.test(name))
+    .map(name => Number(name.slice(7)))
+    .sort((a, b) => a - b);
+  if (sectionNumbers.length === 0 && !entries.Section9) {
+    sectionNames = Array.from({ length: 100 }, (_, i) => 'Section' + i);
+    entries = scanDirEntries(b, ['FileHeader', ...sectionNames]);
+    sectionNumbers = Object.keys(entries)
+      .filter(name => /^Section\d+$/.test(name))
+      .map(name => Number(name.slice(7)))
+      .sort((a, b) => a - b);
+  }
+
   // Section 파싱
   const allParas = [];
-  for (let sn = 0; sn < sectionNames.length; sn++) {
+  for (const sn of sectionNumbers) {
     const entry = entries['Section' + sn];
-    if (!entry) break;
+    if (!entry) continue;
 
     const { startSec, streamSz } = entry;
-    if (startSec >= 0xFFFFFFFA || streamSz === 0) break;
+    if (startSec >= 0xFFFFFFFA || streamSz === 0) continue;
 
     self.postMessage({ type: 'progress', msg: `Section${sn} 읽는 중... (${(streamSz/1024).toFixed(0)} KB)` });
 
@@ -284,8 +297,15 @@ async function parseBodyText(b) {
         data = await decompressZlib(data);
       } catch (e) {
         console.warn('[Worker] Section' + sn + ' 압축 해제 실패:', e.message);
-        // 압축 플래그가 잘못된 문서 대비: 현재/이후 섹션은 원본으로 파싱 시도
-        compressed = false;
+        // 현재 섹션은 원본 레코드로도 파싱 시도
+        const rawParas = parseHwpRecords(data);
+        if (rawParas.length > 0) {
+          allParas.push(...rawParas);
+          // 첫 섹션에서 원본 파싱이 유효하면 비압축 문서로 간주
+          if (sn === sectionNumbers[0]) compressed = false;
+          self.postMessage({ type: 'progress', msg: `Section${sn}: ${rawParas.length}개 단락 완료(raw)` });
+        }
+        continue;
       }
     }
 

@@ -278,12 +278,25 @@ const HwpParser = {
       }
     }
 
+    let sectionNumbers = Object.keys(entries)
+      .filter(name => /^Section\d+$/.test(name))
+      .map(name => Number(name.slice(7)))
+      .sort((a, b) => a - b);
+    if (sectionNumbers.length === 0 && !entries.Section9) {
+      sectionNames = Array.from({ length: 100 }, (_, i) => 'Section' + i);
+      entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames]);
+      sectionNumbers = Object.keys(entries)
+        .filter(name => /^Section\d+$/.test(name))
+        .map(name => Number(name.slice(7)))
+        .sort((a, b) => a - b);
+    }
+
     const allParas = [];
-    for (let sn = 0; sn < sectionNames.length; sn++) {
+    for (const sn of sectionNumbers) {
       const entry = entries['Section' + sn];
-      if (!entry) break;
+      if (!entry) continue;
       const { startSec, streamSz } = entry;
-      if (startSec >= 0xFFFFFFFA || streamSz === 0) break;
+      if (startSec >= 0xFFFFFFFA || streamSz === 0) continue;
 
       let data;
       if (streamSz < miniCutoff && miniContainerOff > 0) {
@@ -299,7 +312,12 @@ const HwpParser = {
         try { data = await HwpParser._decompressZlib(data); }
         catch(e) {
           console.warn('[HWP] Section' + sn + ' 압축 해제 실패:', e.message);
-          compressed = false;
+          const rawParas = HwpParser._parseHwpRecords(data);
+          if (rawParas.length > 0) {
+            allParas.push(...rawParas);
+            if (sn === sectionNumbers[0]) compressed = false;
+          }
+          continue;
         }
       }
 
