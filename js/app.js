@@ -130,7 +130,7 @@ const HwpParser = {
     return result;
   },
 
-  _scanDirEntries(b, names) {
+  _scanDirEntries(b, names, ss, fat, dirStartSec) {
     const queries = names.map(name => {
       const pat = [];
       for (const c of name) { const cc = c.charCodeAt(0); pat.push(cc & 0xFF, cc >> 8); }
@@ -138,24 +138,36 @@ const HwpParser = {
     });
     const result = {};
     const found = new Set();
-    for (let pos = 512; pos + 128 <= b.length; pos += 128) {
-      const nl = HwpParser._u16(b, pos + 64);
-      for (const { name, pat, nameLen } of queries) {
-        if (found.has(name)) continue;
-        if (nl !== nameLen) continue;
-        let ok = true;
-        for (let k = 0; k < pat.length; k++) {
-          if (b[pos + k] !== pat[k]) { ok = false; break; }
-        }
-        if (ok) {
-          result[name] = {
-            startSec: HwpParser._u32(b, pos + 116),
-            streamSz: HwpParser._u32(b, pos + 120),
-          };
-          found.add(name);
+    if (dirStartSec >= 0xFFFFFFFA) return result;
+
+    let sec = dirStartSec;
+    const visited = new Set();
+    while (sec < 0xFFFFFFF8 && !visited.has(sec)) {
+      visited.add(sec);
+      const base = (sec + 1) * ss;
+      if (base + ss > b.length) break;
+
+      for (let pos = base; pos + 128 <= base + ss; pos += 128) {
+        const nl = HwpParser._u16(b, pos + 64);
+        for (const { name, pat, nameLen } of queries) {
+          if (found.has(name)) continue;
+          if (nl !== nameLen) continue;
+          let ok = true;
+          for (let k = 0; k < pat.length; k++) {
+            if (b[pos + k] !== pat[k]) { ok = false; break; }
+          }
+          if (ok) {
+            result[name] = {
+              startSec: HwpParser._u32(b, pos + 116),
+              streamSz: HwpParser._u32(b, pos + 120),
+            };
+            found.add(name);
+          }
         }
       }
+
       if (found.size === queries.length) break;
+      sec = (fat[sec] ?? 0xFFFFFFFE) >>> 0;
     }
     return result;
   },
@@ -255,10 +267,10 @@ const HwpParser = {
 
     const fat = HwpParser._readFat(b, ss);
     let sectionNames = Array.from({ length: 10 }, (_, i) => 'Section' + i);
-    let entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames]);
+    let entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames], ss, fat, dirStartSec);
     if (entries.Section9) {
       sectionNames = Array.from({ length: 100 }, (_, i) => 'Section' + i);
-      entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames]);
+      entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames], ss, fat, dirStartSec);
     }
 
     let compressed = true;
@@ -284,7 +296,7 @@ const HwpParser = {
       .sort((a, b) => a - b);
     if (sectionNumbers.length === 0 && !entries.Section9) {
       sectionNames = Array.from({ length: 100 }, (_, i) => 'Section' + i);
-      entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames]);
+      entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames], ss, fat, dirStartSec);
       sectionNumbers = Object.keys(entries)
         .filter(name => /^Section\d+$/.test(name))
         .map(name => Number(name.slice(7)))
@@ -315,7 +327,6 @@ const HwpParser = {
           const rawParas = HwpParser._parseHwpRecords(data);
           if (rawParas.length > 0) {
             allParas.push(...rawParas);
-            if (sn === sectionNumbers[0]) compressed = false;
           }
           continue;
         }

@@ -74,7 +74,7 @@ function readStreamByFat(b, startSec, streamSz, ss, fat) {
 }
 
 /** 이름 목록에 해당하는 CFB 디렉토리 엔트리를 스캔합니다. */
-function scanDirEntries(b, names) {
+function scanDirEntries(b, names, ss, fat, dirStartSec) {
   // 이름 → UTF-16LE 바이트 배열 + 예상 nameLen 미리 계산
   const queries = names.map(name => {
     const pat = [];
@@ -84,24 +84,36 @@ function scanDirEntries(b, names) {
 
   const result = {};
   const found = new Set();
-  for (let pos = 512; pos + 128 <= b.length; pos += 128) {
-    const nl = u16(b, pos + 64);
-    for (const { name, pat, nameLen } of queries) {
-      if (found.has(name)) continue;
-      if (nl !== nameLen) continue;
-      let ok = true;
-      for (let k = 0; k < pat.length; k++) {
-        if (b[pos + k] !== pat[k]) { ok = false; break; }
-      }
-      if (ok) {
-        result[name] = {
-          startSec: u32(b, pos + 116),
-          streamSz: u32(b, pos + 120),
-        };
-        found.add(name);
+  if (dirStartSec >= 0xFFFFFFFA) return result;
+
+  let sec = dirStartSec;
+  const visited = new Set();
+  while (sec < 0xFFFFFFF8 && !visited.has(sec)) {
+    visited.add(sec);
+    const base = (sec + 1) * ss;
+    if (base + ss > b.length) break;
+
+    for (let pos = base; pos + 128 <= base + ss; pos += 128) {
+      const nl = u16(b, pos + 64);
+      for (const { name, pat, nameLen } of queries) {
+        if (found.has(name)) continue;
+        if (nl !== nameLen) continue;
+        let ok = true;
+        for (let k = 0; k < pat.length; k++) {
+          if (b[pos + k] !== pat[k]) { ok = false; break; }
+        }
+        if (ok) {
+          result[name] = {
+            startSec: u32(b, pos + 116),
+            streamSz: u32(b, pos + 120),
+          };
+          found.add(name);
+        }
       }
     }
+
     if (found.size === queries.length) break;
+    sec = (fat[sec] ?? 0xFFFFFFFE) >>> 0;
   }
   return result;
 }
@@ -230,11 +242,11 @@ async function parseBodyText(b) {
 
   // 우선 자주 쓰는 구간(Section0~9)만 빠르게 스캔
   let sectionNames = Array.from({ length: 10 }, (_, i) => 'Section' + i);
-  let entries = scanDirEntries(b, ['FileHeader', ...sectionNames]);
+  let entries = scanDirEntries(b, ['FileHeader', ...sectionNames], ss, fat, dirStartSec);
   // 9번 섹션까지 존재하면 그때만 확장 스캔
   if (entries.Section9) {
     sectionNames = Array.from({ length: 100 }, (_, i) => 'Section' + i);
-    entries = scanDirEntries(b, ['FileHeader', ...sectionNames]);
+    entries = scanDirEntries(b, ['FileHeader', ...sectionNames], ss, fat, dirStartSec);
   }
 
   // FileHeader → 압축/암호화 플래그 확인
@@ -264,7 +276,7 @@ async function parseBodyText(b) {
     .sort((a, b) => a - b);
   if (sectionNumbers.length === 0 && !entries.Section9) {
     sectionNames = Array.from({ length: 100 }, (_, i) => 'Section' + i);
-    entries = scanDirEntries(b, ['FileHeader', ...sectionNames]);
+    entries = scanDirEntries(b, ['FileHeader', ...sectionNames], ss, fat, dirStartSec);
     sectionNumbers = Object.keys(entries)
       .filter(name => /^Section\d+$/.test(name))
       .map(name => Number(name.slice(7)))
@@ -301,8 +313,6 @@ async function parseBodyText(b) {
         const rawParas = parseHwpRecords(data);
         if (rawParas.length > 0) {
           allParas.push(...rawParas);
-          // 첫 섹션에서 원본 파싱이 유효하면 비압축 문서로 간주
-          if (sn === sectionNumbers[0]) compressed = false;
           self.postMessage({ type: 'progress', msg: `Section${sn}: ${rawParas.length}개 단락 완료(raw)` });
         }
         continue;
