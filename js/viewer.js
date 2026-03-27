@@ -73,7 +73,7 @@ let   exporter = null;
 async function processFile(file) {
   const allowed = /\.(hwp|hwpx)$/i;
   if (!allowed.test(file.name)) {
-    showError(`지원하지 않는 파일 형식입니다: ${file.name}\n(.hwp 또는 .hwpx 파일을 선택하세요)`);
+    showError(`지원하지 않는 파일 형식입니다: ${file.name} (.hwp 또는 .hwpx 파일을 선택하세요)`);
     return;
   }
 
@@ -81,13 +81,23 @@ async function processFile(file) {
 
   try {
     const buffer = await file.arrayBuffer();
-    showLoading('HWP 구조를 파싱하는 중...');
+    showLoading(`HWP 파일 파싱 중... (${(file.size / 1024).toFixed(0)} KB) — 잠시 기다려주세요`);
 
-    const doc = await HwpParser.parse(buffer, file.name);
+    let doc;
+    try {
+      doc = await HwpParser.parse(buffer, file.name);
+    } catch (parseErr) {
+      // 파싱 실패해도 빈 문서로 계속 진행
+      console.error('[HWP] 파싱 오류:', parseErr);
+      doc = {
+        meta: { title: file.name, author: '', pages: 1, note: `파싱 오류: ${parseErr.message}` },
+        pages: [{ index: 0, paragraphs: [{ align: 'left', texts: [{ text: `⚠️ 파싱 오류: ${parseErr.message}`, bold: false, italic: false, underline: false, fontSize: 12, fontName: 'Malgun Gothic', color: '#dc2626' }] }] }],
+      };
+    }
 
-    state.doc        = doc;
-    state.filename   = file.name;
-    state.mode       = 'view';
+    state.doc         = doc;
+    state.filename    = file.name;
+    state.mode        = 'view';
     state.currentPage = 0;
 
     exporter = new HwpExporter(editor, file.name);
@@ -98,8 +108,8 @@ async function processFile(file) {
 
   } catch (err) {
     hideLoading();
-    showError(`파싱 오류: ${err.message}`);
-    console.error('[HWP Parser Error]', err);
+    showError(`오류: ${err.message}`);
+    console.error('[HWP] 예상치 못한 오류:', err);
   }
 }
 
