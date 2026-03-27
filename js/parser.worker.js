@@ -73,6 +73,51 @@ function readStreamByFat(b, startSec, streamSz, ss, fat) {
   return result;
 }
 
+/** MiniFAT 체인을 읽어 miniFat[miniSec] = 다음 miniSec 맵을 구성합니다. */
+function readMiniFat(b, ss, fat) {
+  const miniFatStartSec = u32(b, 0x3C);
+  const nMiniFatSec = u32(b, 0x40);
+  if (nMiniFatSec === 0 || miniFatStartSec >= 0xFFFFFFFA) return new Uint32Array(0);
+
+  const entriesPerSec = ss / 4;
+  const miniFat = new Uint32Array(nMiniFatSec * entriesPerSec);
+  let sec = miniFatStartSec;
+  let i = 0;
+  const visited = new Set();
+
+  while (sec < 0xFFFFFFF8 && !visited.has(sec) && i < nMiniFatSec) {
+    visited.add(sec);
+    const base = (sec + 1) * ss;
+    if (base + ss > b.length) break;
+    for (let j = 0; j < entriesPerSec; j++) {
+      miniFat[i * entriesPerSec + j] = u32(b, base + j * 4);
+    }
+    i++;
+    sec = (fat[sec] ?? 0xFFFFFFFE) >>> 0;
+  }
+  return miniFat;
+}
+
+/** MiniFAT 체인을 따라 미니 스트림(<miniCutoff) 데이터를 읽습니다. */
+function readStreamByMiniFat(miniStream, startSec, streamSz, miniFat) {
+  if (!miniStream || startSec >= 0xFFFFFFF8 || streamSz === 0) return null;
+  const miniSS = 64;
+  const result = new Uint8Array(streamSz);
+  let written = 0, sec = startSec;
+  const visited = new Set();
+
+  while (sec < 0xFFFFFFF8 && written < streamSz && !visited.has(sec)) {
+    visited.add(sec);
+    const off = sec * miniSS;
+    const len = Math.min(miniSS, streamSz - written);
+    if (off + len > miniStream.length) break;
+    result.set(miniStream.subarray(off, off + len), written);
+    written += len;
+    sec = (miniFat[sec] ?? 0xFFFFFFFE) >>> 0;
+  }
+  return result;
+}
+
 /** 이름 목록에 해당하는 CFB 디렉토리 엔트리를 스캔합니다. */
 function scanDirEntries(b, names, ss, fat, dirStartSec) {
   // 이름 → UTF-16LE 바이트 배열 + 예상 nameLen 미리 계산
@@ -127,7 +172,7 @@ async function decompressZlib(data) {
   for (const mode of ['deflate', 'deflate-raw']) {
     let timeoutId = null;
     const timeoutPromise = new Promise((_, reject) => {
-      timeoutId = setTimeout(() => reject(new Error('zlib 압축 해제 시간 초과 (8초)')), timeoutMs);
+      timeoutId = setTimeout(() => reject(new Error(`zlib 압축 해제 시간 초과 (${Math.floor(timeoutMs / 1000)}초)`)), timeoutMs);
     });
 
     const ds = new DecompressionStream(mode);
@@ -236,9 +281,14 @@ async function parseBodyText(b) {
 
   const dirBase         = (dirStartSec + 1) * ss;
   const rootStartSec    = u32(b, dirBase + 116);
+  const rootStreamSz    = u32(b, dirBase + 120);
   const miniContainerOff = rootStartSec < 0xFFFFFFFA ? (rootStartSec + 1) * ss : -1;
 
   const fat = readFat(b, ss);
+  const miniFat = readMiniFat(b, ss, fat);
+  const miniStream = (rootStartSec < 0xFFFFFFFA && rootStreamSz > 0)
+    ? readStreamByFat(b, rootStartSec, rootStreamSz, ss, fat)
+    : null;
 
   // 우선 자주 쓰는 구간(Section0~9)만 빠르게 스캔
   let sectionNames = Array.from({ length: 10 }, (_, i) => 'Section' + i);
@@ -255,8 +305,7 @@ async function parseBodyText(b) {
     const { startSec, streamSz } = entries.FileHeader;
     let fhData;
     if (streamSz < miniCutoff && miniContainerOff > 0) {
-      const off = miniContainerOff + startSec * 64;
-      fhData = b.slice(off, Math.min(off + streamSz, b.length));
+      fhData = readStreamByMiniFat(miniStream, startSec, streamSz, miniFat);
     } else {
       fhData = readStreamByFat(b, startSec, streamSz, ss, fat);
     }
@@ -296,9 +345,7 @@ async function parseBodyText(b) {
 
     let data;
     if (streamSz < miniCutoff && miniContainerOff > 0) {
-      const off = miniContainerOff + startSec * 64;
-      if (off + streamSz > b.length) continue;
-      data = b.slice(off, off + streamSz);
+      data = readStreamByMiniFat(miniStream, startSec, streamSz, miniFat);
     } else {
       data = readStreamByFat(b, startSec, streamSz, ss, fat);
     }
@@ -341,48 +388,41 @@ function scanPrvText(b) {
   if (dirBase + 128 > b.length) return null;
 
   const rootStartSec = u32(b, dirBase + 116);
+  const rootStreamSz = u32(b, dirBase + 120);
   const miniContainerOff = (rootStartSec < 0xFFFFFFFA) ? (rootStartSec + 1) * ss : -1;
+  const fat = readFat(b, ss);
+  const miniFat = readMiniFat(b, ss, fat);
+  const miniStream = (rootStartSec < 0xFFFFFFFA && rootStreamSz > 0)
+    ? readStreamByFat(b, rootStartSec, rootStreamSz, ss, fat)
+    : null;
 
   self.postMessage({ type:'progress', msg:`PrvText CFB 스캔 중... ss=${ss}` });
+  const entries = scanDirEntries(b, ['PrvText'], ss, fat, dirStartSec);
+  const prv = entries.PrvText;
+  if (!prv) return null;
 
-  const PAT = [0x50,0x00,0x72,0x00,0x76,0x00,0x54,0x00,0x65,0x00,0x78,0x00,0x74,0x00];
+  const { startSec, streamSz } = prv;
+  if (startSec >= 0xFFFFFFFA || streamSz === 0 || streamSz > 8 * 1024 * 1024) return null;
 
-  for (let pos = 512; pos + 128 <= b.length; pos += 128) {
-    if (u16(b, pos + 64) !== 16) continue;
-    let ok = true;
-    for (let k = 0; k < PAT.length; k++) {
-      if (b[pos + k] !== PAT[k]) { ok = false; break; }
-    }
-    if (!ok) continue;
-
-    const startSec = u32(b, pos + 116);
-    const streamSz = u32(b, pos + 120);
-    if (startSec >= 0xFFFFFFFA || streamSz === 0 || streamSz > 8*1024*1024) return null;
-
-    let off;
-    if (streamSz < miniCutoff && miniContainerOff > 0) {
-      off = miniContainerOff + startSec * 64;
-    } else {
-      off = (startSec + 1) * ss;
-    }
-
-    if (off < 512 || off >= b.length) return null;
-
-    const end  = Math.min(off + streamSz, b.length);
-    const text = new TextDecoder('utf-16le').decode(b.slice(off, end));
-
-    let korean = 0, printable = 0;
-    for (const c of text) {
-      const cp = c.charCodeAt(0);
-      if (cp >= 0xAC00 && cp <= 0xD7A3) { korean++; printable++; }
-      else if (cp >= 0x20 || cp === 10 || cp === 13) printable++;
-    }
-    if (text.length === 0 || printable / text.length < 0.6 || korean < 3) return null;
-
-    self.postMessage({ type:'progress', msg:`PrvText 추출 성공 (${text.length}글자)` });
-    return text;
+  let raw;
+  if (streamSz < miniCutoff && miniContainerOff > 0) {
+    raw = readStreamByMiniFat(miniStream, startSec, streamSz, miniFat);
+  } else {
+    raw = readStreamByFat(b, startSec, streamSz, ss, fat);
   }
-  return null;
+  if (!raw || raw.length === 0) return null;
+
+  const text = new TextDecoder('utf-16le').decode(raw);
+  let korean = 0, printable = 0;
+  for (const c of text) {
+    const cp = c.charCodeAt(0);
+    if (cp >= 0xAC00 && cp <= 0xD7A3) { korean++; printable++; }
+    else if (cp >= 0x20 || cp === 10 || cp === 13) printable++;
+  }
+  if (text.length === 0 || printable / text.length < 0.6 || korean < 3) return null;
+
+  self.postMessage({ type:'progress', msg:`PrvText 추출 성공 (${text.length}글자)` });
+  return text;
 }
 
 /* ════════════════════════════════════════════════════════

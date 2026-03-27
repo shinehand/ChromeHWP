@@ -130,6 +130,47 @@ const HwpParser = {
     return result;
   },
 
+  _readMiniFat(b, ss, fat) {
+    const miniFatStartSec = HwpParser._u32(b, 0x3C);
+    const nMiniFatSec = HwpParser._u32(b, 0x40);
+    if (nMiniFatSec === 0 || miniFatStartSec >= 0xFFFFFFFA) return new Uint32Array(0);
+
+    const ePS = ss / 4;
+    const miniFat = new Uint32Array(nMiniFatSec * ePS);
+    let sec = miniFatStartSec;
+    let i = 0;
+    const visited = new Set();
+
+    while (sec < 0xFFFFFFF8 && !visited.has(sec) && i < nMiniFatSec) {
+      visited.add(sec);
+      const base = (sec + 1) * ss;
+      if (base + ss > b.length) break;
+      for (let j = 0; j < ePS; j++)
+        miniFat[i * ePS + j] = HwpParser._u32(b, base + j * 4);
+      i++;
+      sec = (fat[sec] ?? 0xFFFFFFFE) >>> 0;
+    }
+    return miniFat;
+  },
+
+  _readStreamByMiniFat(miniStream, startSec, streamSz, miniFat) {
+    if (!miniStream || startSec >= 0xFFFFFFF8 || streamSz === 0) return null;
+    const MINI_SS = 64;
+    const result = new Uint8Array(streamSz);
+    let written = 0, sec = startSec;
+    const visited = new Set();
+    while (sec < 0xFFFFFFF8 && written < streamSz && !visited.has(sec)) {
+      visited.add(sec);
+      const off = sec * MINI_SS;
+      const len = Math.min(MINI_SS, streamSz - written);
+      if (off + len > miniStream.length) break;
+      result.set(miniStream.subarray(off, off + len), written);
+      written += len;
+      sec = (miniFat[sec] ?? 0xFFFFFFFE) >>> 0;
+    }
+    return result;
+  },
+
   _scanDirEntries(b, names, ss, fat, dirStartSec) {
     const queries = names.map(name => {
       const pat = [];
@@ -179,7 +220,7 @@ const HwpParser = {
     for (const mode of ['deflate', 'deflate-raw']) {
       let timeoutId = null;
       const timeoutPromise = new Promise((_, reject) => {
-        timeoutId = setTimeout(() => reject(new Error('zlib 압축 해제 시간 초과 (8초)')), timeoutMs);
+        timeoutId = setTimeout(() => reject(new Error(`zlib 압축 해제 시간 초과 (${Math.floor(timeoutMs / 1000)}초)`)), timeoutMs);
       });
 
       const ds = new DecompressionStream(mode);
@@ -263,9 +304,14 @@ const HwpParser = {
 
     const dirBase          = (dirStartSec + 1) * ss;
     const rootStartSec     = HwpParser._u32(b, dirBase + 116);
+    const rootStreamSz     = HwpParser._u32(b, dirBase + 120);
     const miniContainerOff = rootStartSec < 0xFFFFFFFA ? (rootStartSec + 1) * ss : -1;
 
     const fat = HwpParser._readFat(b, ss);
+    const miniFat = HwpParser._readMiniFat(b, ss, fat);
+    const miniStream = (rootStartSec < 0xFFFFFFFA && rootStreamSz > 0)
+      ? HwpParser._readStreamByFat(b, rootStartSec, rootStreamSz, ss, fat)
+      : null;
     let sectionNames = Array.from({ length: 10 }, (_, i) => 'Section' + i);
     let entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames], ss, fat, dirStartSec);
     if (entries.Section9) {
@@ -278,8 +324,7 @@ const HwpParser = {
       const { startSec, streamSz } = entries.FileHeader;
       let fhData;
       if (streamSz < miniCutoff && miniContainerOff > 0) {
-        const off = miniContainerOff + startSec * 64;
-        fhData = b.slice(off, Math.min(off + streamSz, b.length));
+        fhData = HwpParser._readStreamByMiniFat(miniStream, startSec, streamSz, miniFat);
       } else {
         fhData = HwpParser._readStreamByFat(b, startSec, streamSz, ss, fat);
       }
@@ -312,9 +357,7 @@ const HwpParser = {
 
       let data;
       if (streamSz < miniCutoff && miniContainerOff > 0) {
-        const off = miniContainerOff + startSec * 64;
-        if (off + streamSz > b.length) continue;
-        data = b.slice(off, off + streamSz);
+        data = HwpParser._readStreamByMiniFat(miniStream, startSec, streamSz, miniFat);
       } else {
         data = HwpParser._readStreamByFat(b, startSec, streamSz, ss, fat);
       }
@@ -361,82 +404,51 @@ const HwpParser = {
     //   → startSec/size 로 미니 스트림 컨테이너 위치 파악
     // ─────────────────────────────────────────────────────
     const rootStartSec = HwpParser._u32(b, dirBase + 116);
+    const rootStreamSz = HwpParser._u32(b, dirBase + 120);
     const miniContainerOff = (rootStartSec < 0xFFFFFFFA)
       ? (rootStartSec + 1) * ss
       : -1;
+    const fat = HwpParser._readFat(b, ss);
+    const miniFat = HwpParser._readMiniFat(b, ss, fat);
+    const miniStream = (rootStartSec < 0xFFFFFFFA && rootStreamSz > 0)
+      ? HwpParser._readStreamByFat(b, rootStartSec, rootStreamSz, ss, fat)
+      : null;
 
     console.log('[HWP] ss=%d miniCutoff=%d dirBase=%d rootStartSec=%d miniContainerOff=%d',
                 ss, miniCutoff, dirBase, rootStartSec, miniContainerOff);
 
-    // ─────────────────────────────────────────────────────
-    // 파일 전체 128바이트 단위 스캔으로 "PrvText" 디렉토리 엔트리 탐색
-    //   디렉토리 섹터가 비연속(FAT 체인)이어도 반드시 찾을 수 있도록
-    //   512 바이트(헤더) 이후부터 파일 끝까지 전체 탐색
-    // ─────────────────────────────────────────────────────
-    const PAT = [0x50,0x00,0x72,0x00,0x76,0x00,0x54,0x00,0x65,0x00,0x78,0x00,0x74,0x00];
-
-    for (let pos = 512; pos + 128 <= b.length; pos += 128) {
-      const nl = HwpParser._u16(b, pos + 64);
-      // "PrvText" = 7글자 × 2 + null 2바이트 = 16
-      if (nl !== 16) continue;
-
-      let ok = true;
-      for (let k = 0; k < PAT.length; k++) {
-        if (b[pos + k] !== PAT[k]) { ok = false; break; }
-      }
-      if (!ok) continue;
-
-      const startSec = HwpParser._u32(b, pos + 116);
-      const streamSz = HwpParser._u32(b, pos + 120);
-      console.log('[HWP] PrvText 발견 pos=%d startSec=%d size=%d', pos, startSec, streamSz);
-
-      if (startSec >= 0xFFFFFFFA || streamSz === 0 || streamSz > 8 * 1024 * 1024) return null;
-
-      let off, end;
-
-      if (streamSz < miniCutoff && miniContainerOff > 0) {
-        // ── 미니 스트림 경로 (작은 스트림 — 대부분의 HWP PrvText) ──
-        // 미니 섹터는 64 바이트 단위로, 미니 스트림 컨테이너 내부에 저장
-        const MINI_SS = 64;
-        off = miniContainerOff + startSec * MINI_SS;
-        end = off + streamSz;
-        console.log('[HWP] 미니 스트림: containerOff=%d miniSec=%d off=%d', miniContainerOff, startSec, off);
-      } else {
-        // ── 일반 스트림 경로 (큰 스트림) ──
-        off = (startSec + 1) * ss;
-        end = off + streamSz;
-        console.log('[HWP] 일반 스트림: off=%d', off);
-      }
-
-      // 오프셋 범위 검사 — 잘못된 오프셋이면 즉시 null 반환 (재시도 없음)
-      // 재시도 로직이 엉뚱한 데이터를 읽어 깨진 텍스트를 반환하는 문제 방지
-      if (off < 0 || off >= b.length) {
-        console.warn('[HWP] 오프셋(%d) 범위 초과 (fileLen=%d) → null 반환, _scanKoreanText로 위임', off, b.length);
-        return null;
-      }
-      end = Math.min(off + streamSz, b.length);
-
-      const raw  = b.slice(off, end);
-      const text = new TextDecoder('utf-16le').decode(raw);
-
-      // 유효성 검증: 한글 + 출력 가능 문자가 60% 이상이어야 함
-      let korean = 0, printable = 0;
-      for (const c of text) {
-        const cp = c.charCodeAt(0);
-        if (cp >= 0xAC00 && cp <= 0xD7A3) { korean++; printable++; }
-        else if (cp >= 0x20 || cp === 10 || cp === 13) printable++;
-      }
-      const ratio = text.length > 0 ? printable / text.length : 0;
-      if (ratio < 0.6 || korean < 3) {
-        console.warn('[HWP] PrvText 품질 불량 (printable=%.0f%%, korean=%d) → 폐기', ratio*100, korean);
-        return null;
-      }
-      console.log('[HWP] PrvText 추출 성공: %d글자 (한글 %d, 유효율 %.0f%%)', text.length, korean, ratio*100);
-      return text;
+    const entries = HwpParser._scanDirEntries(b, ['PrvText'], ss, fat, dirStartSec);
+    const entry = entries.PrvText;
+    if (!entry) {
+      console.warn('[HWP] PrvText 엔트리를 찾지 못했습니다.');
+      return null;
     }
 
-    console.warn('[HWP] PrvText 엔트리를 찾지 못했습니다.');
-    return null;
+    const { startSec, streamSz } = entry;
+    if (startSec >= 0xFFFFFFFA || streamSz === 0 || streamSz > 8 * 1024 * 1024) return null;
+
+    let raw;
+    if (streamSz < miniCutoff && miniContainerOff > 0) {
+      raw = HwpParser._readStreamByMiniFat(miniStream, startSec, streamSz, miniFat);
+    } else {
+      raw = HwpParser._readStreamByFat(b, startSec, streamSz, ss, fat);
+    }
+    if (!raw || raw.length === 0) return null;
+
+    const text = new TextDecoder('utf-16le').decode(raw);
+    let korean = 0, printable = 0;
+    for (const c of text) {
+      const cp = c.charCodeAt(0);
+      if (cp >= 0xAC00 && cp <= 0xD7A3) { korean++; printable++; }
+      else if (cp >= 0x20 || cp === 10 || cp === 13) printable++;
+    }
+    const ratio = text.length > 0 ? printable / text.length : 0;
+    if (ratio < 0.6 || korean < 3) {
+      console.warn('[HWP] PrvText 품질 불량 (printable=%.0f%%, korean=%d) → 폐기', ratio * 100, korean);
+      return null;
+    }
+    console.log('[HWP] PrvText 추출 성공: %d글자 (한글 %d, 유효율 %.0f%%)', text.length, korean, ratio * 100);
+    return text;
   },
 
   /**
