@@ -307,7 +307,7 @@ const HwpParser = {
           else if (ch === 0x0009) { chars.push('\t'); i += 2; }
           else if (ch === 0x000A || ch === 0x0006) { chars.push('\n'); i += 2; }
           else if (ch === 0x0002) { chars.push('\n'); i += 2; }
-          else if (ch >= 0x0001 && ch <= 0x001F) { i += 32; }
+          else if (ch >= 0x0001 && ch <= 0x001F) { i += HwpParser._getParaTextControlSize(ch); }
           else if (ch >= 0x0020) { chars.push(String.fromCharCode(ch)); i += 2; }
           else { i += 2; }
         }
@@ -544,6 +544,36 @@ const HwpParser = {
   _run(text) {
     return { text: text||'', bold:false, italic:false, underline:false,
              fontSize:11, fontName:'Malgun Gothic', color:'#000000' };
+  },
+
+  _getParaTextControlSize(ch) {
+    switch (ch) {
+      case 0x0001:
+      case 0x0002:
+      case 0x0003:
+      case 0x000B:
+      case 0x000C:
+      case 0x000E:
+      case 0x000F:
+      case 0x0010:
+      case 0x0011:
+      case 0x0012:
+      case 0x0015:
+      case 0x0016:
+      case 0x0017:
+        return 16;
+      case 0x0004:
+      case 0x0005:
+      case 0x0006:
+      case 0x0007:
+      case 0x0008:
+      case 0x0009:
+      case 0x0013:
+      case 0x0014:
+        return 16;
+      default:
+        return 2;
+    }
   },
 
   _u16(b, o) { return (b[o]??0) | ((b[o+1]??0)<<8); },
