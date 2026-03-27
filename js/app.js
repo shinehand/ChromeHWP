@@ -408,6 +408,78 @@ const UI = {
 
 const state = { doc:null, filename:'', mode:'view', currentPage:0 };
 
+/* ── Web Worker 파싱 ── */
+function parseWithWorker(buffer, filename) {
+  return new Promise((resolve, reject) => {
+    let worker;
+    try {
+      const workerUrl = (typeof chrome !== 'undefined' && chrome.runtime?.getURL)
+        ? chrome.runtime.getURL('js/parser.worker.js')
+        : 'js/parser.worker.js';
+      worker = new Worker(workerUrl);
+    } catch (e) {
+      return reject(e);
+    }
+
+    worker.onmessage = ({ data }) => {
+      if (data.type === 'progress') {
+        showLoading(data.msg);
+      } else if (data.type === 'done') {
+        worker.terminate();
+        resolve(data.doc);
+      } else if (data.type === 'error') {
+        worker.terminate();
+        reject(new Error(data.message));
+      } else if (data.type === 'fallback_main') {
+        // Worker가 HWPX를 JSZip 없이 파싱 못함 → 메인 스레드에서 처리
+        worker.terminate();
+        console.log('[APP] Worker fallback → 메인 스레드 파싱');
+        HwpParser.parse(buffer.slice(0), filename)
+          .then(resolve).catch(reject);
+      }
+    };
+    worker.onerror = (e) => {
+      worker.terminate();
+      reject(new Error('Worker 오류: ' + e.message));
+    };
+
+    // buffer를 전송(transfer)하여 복사 비용 제거
+    worker.postMessage({ buffer, filename }, [buffer]);
+  });
+}
+
+/* ── 버퍼 처리 (공통 코어) ── */
+async function processBuffer(buffer, filename, sizeBytes) {
+  showLoading(`파싱 중... (${(sizeBytes/1024).toFixed(0)} KB)`);
+  let doc;
+
+  try {
+    doc = await parseWithWorker(buffer, filename);
+  } catch (e) {
+    console.warn('[APP] Worker 실패, 메인 스레드로 재시도:', e.message);
+    try {
+      doc = await HwpParser.parse(buffer, filename);
+    } catch (e2) {
+      console.error('[HWP] 파싱 실패:', e2);
+      doc = {
+        meta: { pages:1, note: '파싱 오류: ' + e2.message },
+        pages: [{ index:0, paragraphs:[{ align:'left', texts:[{
+          text: '⚠️ 파싱 오류: ' + e2.message,
+          bold:false, italic:false, underline:false, fontSize:12,
+          fontName:'Malgun Gothic', color:'#dc2626'
+        }] }] }]
+      };
+    }
+  }
+
+  state.doc = doc; state.filename = filename; state.mode = 'view'; state.currentPage = 0;
+  HwpExporter.setFilename(filename);
+
+  hideLoading();
+  renderDocument(doc);
+  updateUiAfterLoad(filename, sizeBytes);
+}
+
 /* ── 파일 처리 ── */
 async function processFile(file) {
   if (!/\.(hwp|hwpx)$/i.test(file.name)) {
@@ -416,37 +488,61 @@ async function processFile(file) {
   }
 
   showLoading('파일을 읽는 중...');
-  let doc;
-
   try {
     const buffer = await file.arrayBuffer();
-    showLoading(`파싱 중... (${(file.size/1024).toFixed(0)} KB)`);
-
-    try {
-      doc = await HwpParser.parse(buffer, file.name);
-    } catch (e) {
-      console.error('[HWP] 파싱 실패:', e);
-      doc = {
-        meta: { pages:1, note: '파싱 오류: ' + e.message },
-        pages: [{ index:0, paragraphs:[{ align:'left', texts:[{
-          text: '⚠️ 파싱 오류: ' + e.message,
-          bold:false, italic:false, underline:false, fontSize:12,
-          fontName:'Malgun Gothic', color:'#dc2626'
-        }] }] }]
-      };
-    }
-
-    state.doc = doc; state.filename = file.name; state.mode = 'view'; state.currentPage = 0;
-    HwpExporter.setFilename(file.name);
-
-    hideLoading();
-    renderDocument(doc);
-    updateUiAfterLoad(file);
-
+    await processBuffer(buffer, file.name, file.size);
   } catch (err) {
     hideLoading();
     showError('오류: ' + err.message);
     console.error('[APP]', err);
+  }
+}
+
+/* ── 컨텍스트 메뉴 / URL 파라미터로 파일 자동 로드 ── */
+async function autoLoadFromParams() {
+  const params = new URLSearchParams(location.search);
+
+  // 방법 1: background.js가 session storage에 저장해 둔 파일 데이터 가져오기
+  if (params.get('fromContext') === '1') {
+    showLoading('파일 데이터 수신 중...');
+    try {
+      const pending = await new Promise((resolve, reject) => {
+        chrome.runtime.sendMessage({ type: 'GET_PENDING_HWP' }, (resp) => {
+          if (chrome.runtime.lastError) return reject(new Error(chrome.runtime.lastError.message));
+          resolve(resp);
+        });
+      });
+      if (!pending) throw new Error('전달된 파일 데이터가 없습니다.');
+
+      const { b64, filename } = pending;
+      // base64 → ArrayBuffer
+      const binary = atob(b64);
+      const bytes  = new Uint8Array(binary.length);
+      for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+      await processBuffer(bytes.buffer, filename, bytes.length);
+    } catch (err) {
+      hideLoading();
+      showError('파일 로드 실패: ' + err.message);
+      console.error('[APP] fromContext 오류:', err);
+    }
+    return;
+  }
+
+  // 방법 2: CORS로 인해 background fetch 실패 → URL 파라미터로 직접 fetch 시도
+  const hwpUrl = params.get('hwpUrl');
+  if (hwpUrl) {
+    showLoading('원격 파일 다운로드 중...');
+    try {
+      const resp = await fetch(hwpUrl);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status} ${resp.statusText}`);
+      const buffer = await resp.arrayBuffer();
+      const filename = decodeURIComponent(hwpUrl.split('/').pop().split('?')[0]) || 'document.hwp';
+      await processBuffer(buffer, filename, buffer.byteLength);
+    } catch (err) {
+      hideLoading();
+      showError('원격 파일 로드 실패: ' + err.message);
+      console.error('[APP] hwpUrl 오류:', err);
+    }
   }
 }
 
@@ -536,14 +632,14 @@ function enterViewMode() {
 }
 
 /* ── UI 헬퍼 ── */
-function updateUiAfterLoad(file) {
+function updateUiAfterLoad(filename, sizeBytes) {
   UI.dropZone.style.display    = 'none';
   UI.mainContent.style.display = 'flex';
   UI.statusBar.style.display   = 'flex';
   UI.btnEditMode.disabled      = false;
   UI.exportGroup.style.display = 'flex';
-  UI.fileName.textContent      = file.name;
-  UI.statusFileInfo.textContent = `${(file.size/1024).toFixed(1)} KB | ${state.doc.meta.pages}페이지`;
+  UI.fileName.textContent      = filename;
+  UI.statusFileInfo.textContent = `${(sizeBytes/1024).toFixed(1)} KB | ${state.doc.meta.pages}페이지`;
 }
 
 // style.display 직접 제어 — CSS display:flex 가 hidden 속성을 덮어쓰는 문제 방지
@@ -609,3 +705,9 @@ document.addEventListener('keydown', e => {
 });
 
 console.log('[HWP Viewer] app.js 로드 완료 ✓');
+
+/* ── 페이지 로드 시 URL 파라미터 자동 처리 ── */
+if (typeof chrome !== 'undefined' && chrome.runtime?.id) {
+  // Chrome 확장 컨텍스트에서만 실행
+  autoLoadFromParams().catch(e => console.error('[APP] autoLoad 오류:', e));
+}
