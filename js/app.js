@@ -104,9 +104,32 @@ const HwpParser = {
     if (nFat === 0) return new Uint32Array(0);
     const ePS = ss / 4;
     const fat = new Uint32Array(nFat * ePS);
-    for (let i = 0; i < 109 && i < nFat; i++) {
-      const fatSec = HwpParser._u32(b, 0x4C + i * 4);
-      if (fatSec >= 0xFFFFFFF8) break;
+    const difat = [];
+    for (let i = 0; i < 109 && difat.length < nFat; i++) {
+      const sec = HwpParser._u32(b, 0x4C + i * 4);
+      if (sec >= 0xFFFFFFF8) break;
+      difat.push(sec);
+    }
+
+    let difatSec = HwpParser._u32(b, 0x44);
+    const nDifatSec = HwpParser._u32(b, 0x48);
+    let difatRead = 0;
+    const visited = new Set();
+    while (difat.length < nFat && difatSec < 0xFFFFFFF8 && difatRead < nDifatSec && !visited.has(difatSec)) {
+      visited.add(difatSec);
+      const base = (difatSec + 1) * ss;
+      if (base + ss > b.length) break;
+      for (let i = 0; i < ePS - 1 && difat.length < nFat; i++) {
+        const sec = HwpParser._u32(b, base + i * 4);
+        if (sec >= 0xFFFFFFF8) continue;
+        difat.push(sec);
+      }
+      difatSec = HwpParser._u32(b, base + (ePS - 1) * 4);
+      difatRead++;
+    }
+
+    for (let i = 0; i < difat.length; i++) {
+      const fatSec = difat[i];
       const base = (fatSec + 1) * ss;
       if (base + ss > b.length) continue;
       for (let j = 0; j < ePS; j++)
@@ -130,48 +153,136 @@ const HwpParser = {
     return result;
   },
 
-  _scanDirEntries(b, names) {
+  _readMiniFat(b, ss, fat) {
+    const miniFatStartSec = HwpParser._u32(b, 0x3C);
+    const nMiniFatSec = HwpParser._u32(b, 0x40);
+    if (nMiniFatSec === 0 || miniFatStartSec >= 0xFFFFFFFA) return new Uint32Array(0);
+
+    const ePS = ss / 4;
+    const miniFat = new Uint32Array(nMiniFatSec * ePS);
+    let sec = miniFatStartSec;
+    let i = 0;
+    const visited = new Set();
+
+    while (sec < 0xFFFFFFF8 && !visited.has(sec) && i < nMiniFatSec) {
+      visited.add(sec);
+      const base = (sec + 1) * ss;
+      if (base + ss > b.length) break;
+      for (let j = 0; j < ePS; j++)
+        miniFat[i * ePS + j] = HwpParser._u32(b, base + j * 4);
+      i++;
+      sec = (fat[sec] ?? 0xFFFFFFFE) >>> 0;
+    }
+    return miniFat;
+  },
+
+  _readStreamByMiniFat(miniStream, startSec, streamSz, miniFat) {
+    if (!miniStream || startSec >= 0xFFFFFFF8 || streamSz === 0) return null;
+    const MINI_SS = 64;
+    const result = new Uint8Array(streamSz);
+    let written = 0, sec = startSec;
+    const visited = new Set();
+    while (sec < 0xFFFFFFF8 && written < streamSz && !visited.has(sec)) {
+      visited.add(sec);
+      const off = sec * MINI_SS;
+      const len = Math.min(MINI_SS, streamSz - written);
+      if (off + len > miniStream.length) break;
+      result.set(miniStream.subarray(off, off + len), written);
+      written += len;
+      sec = (miniFat[sec] ?? 0xFFFFFFFE) >>> 0;
+    }
+    return result;
+  },
+
+  _scanDirEntries(b, names, ss, fat, dirStartSec) {
     const queries = names.map(name => {
       const pat = [];
       for (const c of name) { const cc = c.charCodeAt(0); pat.push(cc & 0xFF, cc >> 8); }
       return { name, pat, nameLen: (name.length + 1) * 2 };
     });
     const result = {};
-    for (let pos = 512; pos + 128 <= b.length; pos += 128) {
-      const nl = HwpParser._u16(b, pos + 64);
-      for (const { name, pat, nameLen } of queries) {
-        if (nl !== nameLen) continue;
-        let ok = true;
-        for (let k = 0; k < pat.length; k++) {
-          if (b[pos + k] !== pat[k]) { ok = false; break; }
+    const found = new Set();
+    if (dirStartSec >= 0xFFFFFFFA) return result;
+
+    let sec = dirStartSec;
+    const visited = new Set();
+    while (sec < 0xFFFFFFF8 && !visited.has(sec)) {
+      visited.add(sec);
+      const base = (sec + 1) * ss;
+      if (base + ss > b.length) break;
+
+      for (let pos = base; pos + 128 <= base + ss; pos += 128) {
+        const nl = HwpParser._u16(b, pos + 64);
+        for (const { name, pat, nameLen } of queries) {
+          if (found.has(name)) continue;
+          if (nl !== nameLen) continue;
+          let ok = true;
+          for (let k = 0; k < pat.length; k++) {
+            if (b[pos + k] !== pat[k]) { ok = false; break; }
+          }
+          if (ok) {
+            result[name] = {
+              startSec: HwpParser._u32(b, pos + 116),
+              streamSz: HwpParser._u32(b, pos + 120),
+            };
+            found.add(name);
+          }
         }
-        if (ok) result[name] = {
-          startSec: HwpParser._u32(b, pos + 116),
-          streamSz: HwpParser._u32(b, pos + 120),
-        };
       }
+
+      if (found.size === queries.length) break;
+      sec = (fat[sec] ?? 0xFFFFFFFE) >>> 0;
     }
     return result;
   },
 
   /* ── zlib 압축 해제 ── */
   async _decompressZlib(data) {
-    const ds = new DecompressionStream('deflate');
-    const writer = ds.writable.getWriter();
-    const reader = ds.readable.getReader();
-    await writer.write(data);
-    await writer.close();
-    const chunks = [];
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      chunks.push(value);
+    const timeoutMs = 8000;
+    let lastError = null;
+    for (const mode of ['deflate', 'deflate-raw']) {
+      let timeoutId = null;
+      const timeoutPromise = new Promise((_, reject) => {
+        timeoutId = setTimeout(() => reject(new Error(`zlib 압축 해제 시간 초과 (${Math.floor(timeoutMs / 1000)}초)`)), timeoutMs);
+      });
+
+      const ds = new DecompressionStream(mode);
+      const writer = ds.writable.getWriter();
+      const reader = ds.readable.getReader();
+      const chunks = [];
+
+      try {
+        const decodePromise = (async () => {
+          await writer.write(data);
+          await writer.close();
+
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            chunks.push(value);
+          }
+        })();
+
+        await Promise.race([decodePromise, timeoutPromise]);
+
+        const total = chunks.reduce((s, c) => s + c.length, 0);
+        const out = new Uint8Array(total);
+        let off = 0;
+        for (const c of chunks) { out.set(c, off); off += c.length; }
+        return out;
+      } catch (e) {
+        lastError = e;
+        if (mode === 'deflate-raw') {
+          throw new Error(`zlib 압축 해제 실패 (mode=${mode}): ${e?.message || e}`);
+        }
+      } finally {
+        if (timeoutId) clearTimeout(timeoutId);
+        try { reader.releaseLock(); } catch {}
+        try { writer.releaseLock(); } catch {}
+      }
     }
-    const total = chunks.reduce((s, c) => s + c.length, 0);
-    const out = new Uint8Array(total);
-    let off = 0;
-    for (const c of chunks) { out.set(c, off); off += c.length; }
-    return out;
+
+    throw new Error(`zlib 압축 해제 실패: ${lastError?.message || 'unknown error'}`);
   },
 
   /* ── HWP 레코드 파서 (TagID 67 = HWPTAG_PARA_TEXT) ── */
@@ -216,19 +327,27 @@ const HwpParser = {
 
     const dirBase          = (dirStartSec + 1) * ss;
     const rootStartSec     = HwpParser._u32(b, dirBase + 116);
+    const rootStreamSz     = HwpParser._u32(b, dirBase + 120);
     const miniContainerOff = rootStartSec < 0xFFFFFFFA ? (rootStartSec + 1) * ss : -1;
 
     const fat = HwpParser._readFat(b, ss);
-    const sectionNames = Array.from({ length: 10 }, (_, i) => 'Section' + i);
-    const entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames]);
+    const miniFat = HwpParser._readMiniFat(b, ss, fat);
+    const miniStream = (rootStartSec < 0xFFFFFFFA && rootStreamSz > 0)
+      ? HwpParser._readStreamByFat(b, rootStartSec, rootStreamSz, ss, fat)
+      : null;
+    let sectionNames = Array.from({ length: 10 }, (_, i) => 'Section' + i);
+    let entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames], ss, fat, dirStartSec);
+    if (entries.Section9) {
+      sectionNames = Array.from({ length: 100 }, (_, i) => 'Section' + i);
+      entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames], ss, fat, dirStartSec);
+    }
 
     let compressed = true;
     if (entries.FileHeader) {
       const { startSec, streamSz } = entries.FileHeader;
       let fhData;
       if (streamSz < miniCutoff && miniContainerOff > 0) {
-        const off = miniContainerOff + startSec * 64;
-        fhData = b.slice(off, Math.min(off + streamSz, b.length));
+        fhData = HwpParser._readStreamByMiniFat(miniStream, startSec, streamSz, miniFat);
       } else {
         fhData = HwpParser._readStreamByFat(b, startSec, streamSz, ss, fat);
       }
@@ -239,18 +358,29 @@ const HwpParser = {
       }
     }
 
+    let sectionNumbers = Object.keys(entries)
+      .filter(name => /^Section\d+$/.test(name))
+      .map(name => Number(name.slice(7)))
+      .sort((a, b) => a - b);
+    if (sectionNumbers.length === 0 && !entries.Section9) {
+      sectionNames = Array.from({ length: 100 }, (_, i) => 'Section' + i);
+      entries = HwpParser._scanDirEntries(b, ['FileHeader', ...sectionNames], ss, fat, dirStartSec);
+      sectionNumbers = Object.keys(entries)
+        .filter(name => /^Section\d+$/.test(name))
+        .map(name => Number(name.slice(7)))
+        .sort((a, b) => a - b);
+    }
+
     const allParas = [];
-    for (let sn = 0; sn <= 9; sn++) {
+    for (const sn of sectionNumbers) {
       const entry = entries['Section' + sn];
-      if (!entry) break;
+      if (!entry) continue;
       const { startSec, streamSz } = entry;
-      if (startSec >= 0xFFFFFFFA || streamSz === 0) break;
+      if (startSec >= 0xFFFFFFFA || streamSz === 0) continue;
 
       let data;
       if (streamSz < miniCutoff && miniContainerOff > 0) {
-        const off = miniContainerOff + startSec * 64;
-        if (off + streamSz > b.length) continue;
-        data = b.slice(off, off + streamSz);
+        data = HwpParser._readStreamByMiniFat(miniStream, startSec, streamSz, miniFat);
       } else {
         data = HwpParser._readStreamByFat(b, startSec, streamSz, ss, fat);
       }
@@ -258,7 +388,14 @@ const HwpParser = {
 
       if (compressed) {
         try { data = await HwpParser._decompressZlib(data); }
-        catch(e) { console.warn('[HWP] Section' + sn + ' 압축 해제 실패:', e.message); continue; }
+        catch(e) {
+          console.warn('[HWP] Section' + sn + ' 압축 해제 실패:', e.message);
+          const rawParas = HwpParser._parseHwpRecords(data);
+          if (rawParas.length > 0) {
+            allParas.push(...rawParas);
+          }
+          continue;
+        }
       }
 
       const paras = HwpParser._parseHwpRecords(data);
@@ -290,82 +427,51 @@ const HwpParser = {
     //   → startSec/size 로 미니 스트림 컨테이너 위치 파악
     // ─────────────────────────────────────────────────────
     const rootStartSec = HwpParser._u32(b, dirBase + 116);
+    const rootStreamSz = HwpParser._u32(b, dirBase + 120);
     const miniContainerOff = (rootStartSec < 0xFFFFFFFA)
       ? (rootStartSec + 1) * ss
       : -1;
+    const fat = HwpParser._readFat(b, ss);
+    const miniFat = HwpParser._readMiniFat(b, ss, fat);
+    const miniStream = (rootStartSec < 0xFFFFFFFA && rootStreamSz > 0)
+      ? HwpParser._readStreamByFat(b, rootStartSec, rootStreamSz, ss, fat)
+      : null;
 
     console.log('[HWP] ss=%d miniCutoff=%d dirBase=%d rootStartSec=%d miniContainerOff=%d',
                 ss, miniCutoff, dirBase, rootStartSec, miniContainerOff);
 
-    // ─────────────────────────────────────────────────────
-    // 파일 전체 128바이트 단위 스캔으로 "PrvText" 디렉토리 엔트리 탐색
-    //   디렉토리 섹터가 비연속(FAT 체인)이어도 반드시 찾을 수 있도록
-    //   512 바이트(헤더) 이후부터 파일 끝까지 전체 탐색
-    // ─────────────────────────────────────────────────────
-    const PAT = [0x50,0x00,0x72,0x00,0x76,0x00,0x54,0x00,0x65,0x00,0x78,0x00,0x74,0x00];
-
-    for (let pos = 512; pos + 128 <= b.length; pos += 128) {
-      const nl = HwpParser._u16(b, pos + 64);
-      // "PrvText" = 7글자 × 2 + null 2바이트 = 16
-      if (nl !== 16) continue;
-
-      let ok = true;
-      for (let k = 0; k < PAT.length; k++) {
-        if (b[pos + k] !== PAT[k]) { ok = false; break; }
-      }
-      if (!ok) continue;
-
-      const startSec = HwpParser._u32(b, pos + 116);
-      const streamSz = HwpParser._u32(b, pos + 120);
-      console.log('[HWP] PrvText 발견 pos=%d startSec=%d size=%d', pos, startSec, streamSz);
-
-      if (startSec >= 0xFFFFFFFA || streamSz === 0 || streamSz > 8 * 1024 * 1024) return null;
-
-      let off, end;
-
-      if (streamSz < miniCutoff && miniContainerOff > 0) {
-        // ── 미니 스트림 경로 (작은 스트림 — 대부분의 HWP PrvText) ──
-        // 미니 섹터는 64 바이트 단위로, 미니 스트림 컨테이너 내부에 저장
-        const MINI_SS = 64;
-        off = miniContainerOff + startSec * MINI_SS;
-        end = off + streamSz;
-        console.log('[HWP] 미니 스트림: containerOff=%d miniSec=%d off=%d', miniContainerOff, startSec, off);
-      } else {
-        // ── 일반 스트림 경로 (큰 스트림) ──
-        off = (startSec + 1) * ss;
-        end = off + streamSz;
-        console.log('[HWP] 일반 스트림: off=%d', off);
-      }
-
-      // 오프셋 범위 검사 — 잘못된 오프셋이면 즉시 null 반환 (재시도 없음)
-      // 재시도 로직이 엉뚱한 데이터를 읽어 깨진 텍스트를 반환하는 문제 방지
-      if (off < 0 || off >= b.length) {
-        console.warn('[HWP] 오프셋(%d) 범위 초과 (fileLen=%d) → null 반환, _scanKoreanText로 위임', off, b.length);
-        return null;
-      }
-      end = Math.min(off + streamSz, b.length);
-
-      const raw  = b.slice(off, end);
-      const text = new TextDecoder('utf-16le').decode(raw);
-
-      // 유효성 검증: 한글 + 출력 가능 문자가 60% 이상이어야 함
-      let korean = 0, printable = 0;
-      for (const c of text) {
-        const cp = c.charCodeAt(0);
-        if (cp >= 0xAC00 && cp <= 0xD7A3) { korean++; printable++; }
-        else if (cp >= 0x20 || cp === 10 || cp === 13) printable++;
-      }
-      const ratio = text.length > 0 ? printable / text.length : 0;
-      if (ratio < 0.6 || korean < 3) {
-        console.warn('[HWP] PrvText 품질 불량 (printable=%.0f%%, korean=%d) → 폐기', ratio*100, korean);
-        return null;
-      }
-      console.log('[HWP] PrvText 추출 성공: %d글자 (한글 %d, 유효율 %.0f%%)', text.length, korean, ratio*100);
-      return text;
+    const entries = HwpParser._scanDirEntries(b, ['PrvText'], ss, fat, dirStartSec);
+    const entry = entries.PrvText;
+    if (!entry) {
+      console.warn('[HWP] PrvText 엔트리를 찾지 못했습니다.');
+      return null;
     }
 
-    console.warn('[HWP] PrvText 엔트리를 찾지 못했습니다.');
-    return null;
+    const { startSec, streamSz } = entry;
+    if (startSec >= 0xFFFFFFFA || streamSz === 0 || streamSz > 8 * 1024 * 1024) return null;
+
+    let raw;
+    if (streamSz < miniCutoff && miniContainerOff > 0) {
+      raw = HwpParser._readStreamByMiniFat(miniStream, startSec, streamSz, miniFat);
+    } else {
+      raw = HwpParser._readStreamByFat(b, startSec, streamSz, ss, fat);
+    }
+    if (!raw || raw.length === 0) return null;
+
+    const text = new TextDecoder('utf-16le').decode(raw);
+    let korean = 0, printable = 0;
+    for (const c of text) {
+      const cp = c.charCodeAt(0);
+      if (cp >= 0xAC00 && cp <= 0xD7A3) { korean++; printable++; }
+      else if (cp >= 0x20 || cp === 10 || cp === 13) printable++;
+    }
+    const ratio = text.length > 0 ? printable / text.length : 0;
+    if (ratio < 0.6 || korean < 3) {
+      console.warn('[HWP] PrvText 품질 불량 (printable=%.0f%%, korean=%d) → 폐기', ratio * 100, korean);
+      return null;
+    }
+    console.log('[HWP] PrvText 추출 성공: %d글자 (한글 %d, 유효율 %.0f%%)', text.length, korean, ratio * 100);
+    return text;
   },
 
   /**
@@ -559,9 +665,35 @@ const HwpExporter = {
   },
 
   _dl(blob, name) {
-    const a = Object.assign(document.createElement('a'), { href:URL.createObjectURL(blob), download:name });
+    if (typeof window.showSaveFilePicker === 'function') {
+      this._saveWithPicker(blob, name).catch(() => {
+        this._downloadByAnchor(blob, name);
+      });
+      return;
+    }
+    this._downloadByAnchor(blob, name);
+  },
+
+  async _saveWithPicker(blob, name) {
+    const ext = (name.split('.').pop() || 'bin').toLowerCase();
+    const handle = await window.showSaveFilePicker({
+      suggestedName: name,
+      types: [{
+        description: 'HWP Viewer Export',
+        accept: {
+          [blob.type || 'application/octet-stream']: [`.${ext}`],
+        },
+      }],
+    });
+    const writable = await handle.createWritable();
+    await writable.write(blob);
+    await writable.close();
+  },
+
+  _downloadByAnchor(blob, name) {
+    const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: name });
     a.click();
-    setTimeout(()=>URL.revokeObjectURL(a.href), 10000);
+    setTimeout(() => URL.revokeObjectURL(a.href), 10000);
   },
 };
 
@@ -604,6 +736,18 @@ const state = { doc:null, filename:'', mode:'view', currentPage:0 };
 function parseWithWorker(buffer, filename) {
   return new Promise((resolve, reject) => {
     let worker;
+    let timer = null;
+    let settled = false;
+    const WORKER_TIMEOUT_MS = 30_000; // 30초
+
+    const finish = (handler) => {
+      if (settled) return;
+      settled = true;
+      if (timer) clearTimeout(timer);
+      if (worker) worker.terminate();
+      handler();
+    };
+
     try {
       const workerUrl = (typeof chrome !== 'undefined' && chrome.runtime?.getURL)
         ? chrome.runtime.getURL('js/parser.worker.js')
@@ -613,30 +757,34 @@ function parseWithWorker(buffer, filename) {
       return reject(e);
     }
 
+    timer = setTimeout(() => {
+      finish(() => reject(new Error('파싱 시간 초과: Worker 처리 제한(30초)')));
+    }, WORKER_TIMEOUT_MS);
+
     worker.onmessage = ({ data }) => {
       if (data.type === 'progress') {
         showLoading(data.msg);
       } else if (data.type === 'done') {
-        worker.terminate();
-        resolve(data.doc);
+        finish(() => resolve(data.doc));
       } else if (data.type === 'error') {
-        worker.terminate();
-        reject(new Error(data.message));
+        finish(() => reject(new Error(data.message)));
       } else if (data.type === 'fallback_main') {
         // Worker가 HWPX를 JSZip 없이 파싱 못함 → 메인 스레드에서 처리
-        worker.terminate();
-        console.log('[APP] Worker fallback → 메인 스레드 파싱');
-        HwpParser.parse(buffer.slice(0), filename)
-          .then(resolve).catch(reject);
+        finish(() => {
+          console.log('[APP] Worker fallback → 메인 스레드 파싱');
+          HwpParser.parse(buffer.slice(0), filename)
+            .then(resolve).catch(reject);
+        });
       }
     };
     worker.onerror = (e) => {
-      worker.terminate();
-      reject(new Error('Worker 오류: ' + e.message));
+      finish(() => reject(new Error('Worker 오류: ' + e.message)));
     };
 
-    // buffer를 전송(transfer)하여 복사 비용 제거
-    worker.postMessage({ buffer, filename }, [buffer]);
+    // slice(0)로 ArrayBuffer 전체 복사본을 만들어 worker에만 transfer합니다.
+    // 원본 buffer는 detach되지 않아 worker 타임아웃/실패 시 메인 스레드 fallback 파싱에 그대로 사용됩니다.
+    const workerBuffer = buffer.slice(0);
+    worker.postMessage({ buffer: workerBuffer, filename }, [workerBuffer]);
   });
 }
 
@@ -666,9 +814,14 @@ async function processBuffer(buffer, filename, sizeBytes) {
 
   state.doc = doc; state.filename = filename; state.mode = 'view'; state.currentPage = 0;
   HwpExporter.setFilename(filename);
+  if (typeof chrome !== 'undefined' && chrome.runtime?.id) {
+    chrome.runtime.sendMessage({ type: 'ADD_RECENT_HWP_FILE', filename }).catch((err) => {
+      console.warn('[APP] 최근 파일 저장 실패:', err?.message || err);
+    });
+  }
 
   hideLoading();
-  renderDocument(doc);
+  renderHWP(doc);
   updateUiAfterLoad(filename, sizeBytes);
 }
 
@@ -792,6 +945,10 @@ function renderDocument(doc) {
   });
 
   updateStatusBar();
+}
+
+function renderHWP(data) {
+  renderDocument(data);
 }
 
 function scrollToPage(pi) {
