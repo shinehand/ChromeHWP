@@ -3152,6 +3152,7 @@ const UI = {
   btnSaveCurrent: $('btnSaveCurrent'),
   saveAsFormat:   $('saveAsFormat'),
   btnSaveAs:      $('btnSaveAs'),
+  btnPrint:       $('btnPrint'),
   btnCloseError:  $('btnCloseError'),
   loadingOverlay: $('loadingOverlay'),
   loadingMsg:     $('loadingMsg'),
@@ -3253,14 +3254,19 @@ function applyDocumentActionState() {
   const title = locked ? (state.documentLockReason || '') : '';
   const saveCurrentReason = getSaveCurrentDisabledReason();
   const saveAsReason = getSaveAsDisabledReason();
+  const printReason = !state.doc
+    ? '인쇄할 문서가 없습니다.'
+    : (locked ? (state.documentLockReason || '현재 문서는 인쇄할 수 없습니다.') : '');
 
   UI.btnEditMode.disabled = !state.doc || locked;
   UI.btnSaveCurrent.disabled = Boolean(saveCurrentReason);
   UI.btnSaveAs.disabled = Boolean(saveAsReason);
+  UI.btnPrint.disabled = Boolean(printReason);
 
   UI.btnEditMode.title = title;
   UI.btnSaveCurrent.title = saveCurrentReason || '';
   UI.btnSaveAs.title = saveAsReason || '';
+  UI.btnPrint.title = printReason || '';
   if (UI.saveAsFormat) UI.saveAsFormat.title = saveAsReason || '';
 }
 
@@ -4487,6 +4493,9 @@ UI.btnSaveAs.onclick = () => {
     showError('다른 이름으로 저장 실패: ' + err.message);
   });
 };
+UI.btnPrint.onclick = () => {
+  HwpExporter.exportPdf();
+};
 UI.saveAsFormat.onchange = () => applyDocumentActionState();
 UI.btnCloseError.onclick  = () => { UI.errorBanner.style.display = 'none'; };
 
@@ -4528,6 +4537,12 @@ document.addEventListener('keydown', e => {
         if (err?.name === 'AbortError') return;
         showError('저장 실패: ' + err.message);
       });
+    }
+  }
+  if (e.ctrlKey && e.key==='p') {
+    e.preventDefault();
+    if (!UI.btnPrint.disabled) {
+      HwpExporter.exportPdf();
     }
   }
   if (e.key==='Escape' && state.mode==='edit') enterViewMode();
