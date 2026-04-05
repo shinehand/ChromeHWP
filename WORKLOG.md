@@ -468,3 +468,276 @@
   - 결과:
     - 회귀검증에 필요한 `output/playwright/inputs/*` 샘플은 유지
     - 반복 생성되는 스냅샷/스크린샷/로그 폴더는 커밋 범위에서 제외
+
+## 2026-04-05
+
+- 요청: 현재 프로젝트 상태 확인 및 Claude에서 이어서 작업하던 내용 추적
+- 범위:
+  - 저장소 상태
+  - 작업 기록 문서
+  - 최근 커밋 히스토리
+  - 뷰어 진입점/최신 기능 반영 여부
+- 확인:
+  - `git status --short --branch` 기준 워크트리는 깨끗하고 현재 브랜치는 `main`
+  - 작업 기록 문서는 `WORKLOG.md`, `BACKLOG.md`, `docs/rendering-status.md` 중심으로 유지되고 있음
+  - 별도 `.claude*` 파일이나 Claude 전용 세션 로그 파일은 저장소 내에서 확인되지 않음
+  - 최근 자동 에이전트 커밋은 Claude가 아니라 GitHub Copilot 세션 기준으로 남아 있음
+    - `e2d7767`: 뷰어에 `🖨️ 인쇄` 버튼과 `Ctrl+P` 추가
+    - `1c95264`: 인쇄 액션 명명과 상태 헬퍼 정리
+    - `07c928c`: 위 작업이 `main`에 머지된 상태
+  - 따라서 문서 로그상 마지막 큰 작업 묶음은 `2026-03-29` 렌더링/저장 UX 개선이고, 그 이후 실제 코드 변경은 인쇄 기능 추가로 이어진 상태로 해석하는 것이 타당함
+- 현재 프로젝트 요약:
+  - Chrome Extension Manifest V3 기반 `HWP Web Viewer & Editor`
+  - 핵심 런타임은 `background.js`, `popup.js`, `pages/viewer.html`, `js/app.js`, `js/parser.worker.js`
+  - 현재 뷰어 액션은 파일 열기, 편집 모드, 현재 저장, 다른 이름으로 저장, 인쇄까지 포함
+- 다음 이어보기 후보:
+  - `BACKLOG.md` 기준 최우선은 `HWP 개체/도형 앵커 복원`, `HWPX 도형/이미지 앵커 정밀화`, `공통 레이아웃 메트릭 보정`
+  - 구조적으로는 `js/app.js` 와 `js/parser.worker.js` 중복 해소가 중기 핵심 과제로 남아 있음
+
+- 요청: 공식 HWP 형식 PDF를 근거로 HWP 처리 정확도 보강
+- 참고 문서:
+  - `/Users/shinehandmac/Downloads/한글문서파일형식_5.0_revision1.3.pdf`
+  - `/Users/shinehandmac/Downloads/한글문서파일형식_수식_revision1.3.pdf`
+  - `/Users/shinehandmac/Downloads/한글문서파일형식_차트_revision1.2.pdf`
+  - `/Users/shinehandmac/Downloads/한글문서파일형식_배포용문서_revision1.2.pdf`
+  - `/Users/shinehandmac/Downloads/한글문서파일형식3.0_HWPML_revision1.2.pdf`
+- 문서에서 실제 반영 대상으로 잡은 항목:
+  - `표 68/69`: 개체 공통 속성의 `offset`, `width/height`, `inline`, 설명문
+  - `표 105`: `HWPTAG_EQEDIT` 수식 스크립트/글자 크기/색상
+  - `표 117~119`: `HWPTAG_SHAPE_COMPONENT_OLE` 기본 속성 및 BinData ID
+  - 차트 문서 연계: `HWPTAG_CHART_DATA` 동반 여부로 차트 placeholder 식별
+- 반영 내용:
+  - `js/app.js`
+    - HWP `BinData` 인덱스를 이미지 전용에서 전체 `BINxxxx.*` 메타까지 확장
+    - 개체 공통 속성 파서를 추가해 HWP 이미지의 `inline`, `offsetX/Y`, 설명문(`alt`)을 실제 레코드 값으로 반영
+    - `gso` subtree 에서 `HWPTAG_EQEDIT`, `HWPTAG_SHAPE_COMPONENT_OLE`, `HWPTAG_CHART_DATA`, `HWPTAG_VIDEO_DATA`를 함께 스캔하도록 확장
+    - 수식은 스크립트를 보존한 `equation` 블록으로, OLE/차트/동영상은 식별 가능한 placeholder 블록으로 복원
+    - 렌더러에 `equation`/`ole` 블록 스타일과 표 셀 내부 중첩 렌더 경로 추가
+  - `js/parser.worker.js`
+    - 메인 스레드와 동일한 HWP 개체 공통 속성 / 수식 / OLE 파싱 로직 반영
+    - Worker 쪽 block text/weight 계산도 새 블록 타입을 이해하도록 보정
+  - `css/viewer.css`
+    - 수식/OLE placeholder 렌더 스타일 추가
+- 검증:
+  - `node --check js/app.js`
+  - `node --check js/parser.worker.js`
+  - Worker VM으로 대표 HWP 샘플 2종(`goyeopje.hwp`, `attachment-sale-notice.hwp`) 재파싱
+    - 기존 샘플 구조 유지 확인
+    - `attachment-sale-notice.hwp` 이미지 블록이 공식 개체 공통 속성 기준 `inline=true`로 해석되는 것 확인
+  - synthetic byte로 `EQEDIT` / `OLE` helper 파서 동작 점검
+  - `node scripts/verify_samples.mjs` 는 Playwright 세션 `verify-current` 연결 실패(`connect ENOENT verify-current`)로 완료하지 못함
+
+- 추가 반영: 배포용 문서 복호화 기반 정리
+  - 참고 문서:
+    - `한글문서파일형식_배포용문서_revision1.2.pdf`
+    - `한글문서파일형식_5.0_revision1.3.pdf` 의 `HWPTAG_DISTRIBUTE_DOC_DATA`
+  - 반영 내용:
+    - `js/app.js`, `js/parser.worker.js`
+      - `HWPTAG_DISTRIBUTE_DOC_DATA`(256바이트) 해석 helper 추가
+      - 문서에 적힌 MS Visual C `srand()/rand()` 규칙으로 256바이트 난수 패턴 재생성
+      - XOR 후 해시 데이터에서 AES-128 키(앞 16바이트)와 옵션 플래그 추출
+      - AES-128 ECB 복호화 루틴을 내장해 배포용 스트림 payload 를 해제할 수 있는 경로 추가
+      - `DocInfo`/`Section` 파싱 전에 `raw`, `deflated`, `distributed`, `distributed+deflated`, `deflated+distributed` 시도를 순차적으로 평가하도록 확장
+      - 일반 암호화 문서는 계속 차단하되, 배포용 문서는 별도 복호화 시도로 진행하도록 FileHeader 분기 수정
+  - 검증:
+    - `node --check js/app.js`
+    - `node --check js/parser.worker.js`
+    - Node `crypto`로 만든 synthetic AES-128 ECB ciphertext 를 worker helper 로 복호화해 원문 일치 확인
+    - 대표 일반 HWP 3종(`goyeopje.hwp`, `attachment-sale-notice.hwp`, `231229 ... 등록신청서 ... .hwp`) 재파싱 유지 확인
+  - 메모:
+    - 현재 보유 샘플에서는 실제 `배포용` 플래그가 선명한 문서를 아직 확보하지 못해, 실문서 end-to-end 검증은 synthetic/helper 단계까지 수행
+
+- 추가 반영: `결석계.hwp` 테이블 헤더 렌더 보정
+  - 배경:
+    - `/Users/shinehandmac/Downloads/결석계.hwp` 검증 중 첫 행의 `결석계` 제목과 우측 결재란이 세로로 쌓여 보여 상단 비율이 크게 어긋남
+    - 원인은 첫 표라는 이유만으로 `first-page-primary` 보정을 적용하던 렌더러와, `제목 + 결재란 중첩 표` 조합을 일반 셀 흐름으로 직렬 렌더하던 처리
+  - 반영 내용:
+    - `js/app.js`
+      - `shouldUsePrimaryFormLayout()`을 추가해 `등록신청서` 계열 첫 표에만 첫 페이지 전용 휴리스틱을 적용하도록 제한
+      - `getCompositeHeaderCellModel()` / `renderCompositeHeaderCell()`을 추가해 `제목 + 결재란` 헤더 셀을 중앙 제목 + 우측 결재란 레이아웃으로 별도 렌더
+    - `css/viewer.css`
+      - `.hwp-form-header-*` 스타일을 추가해 헤더 셀을 3열 그리드로 배치하고 결재란을 우측에 고정
+  - 검증:
+    - `node --check js/app.js`
+    - `node --check js/parser.worker.js`
+    - Playwright headed 검증으로 `결석계.hwp` 재오픈
+      - 첫 표의 `data-layout`가 `null`로 바뀌어 등록신청서 전용 보정이 빠진 것 확인
+      - 첫 셀 `data-role`이 `form-header`로 렌더되고, 실제 화면에서 `결석계` 제목과 결재란이 상단 좌우로 분리 배치되는 것 확인
+
+- 추가 반영: OWPML 확장자 수용 경로 정리
+  - 참고 자료:
+    - e-나라표준인증 `KS X 6101 개방형 워드프로세서 마크업 언어(OWPML) 문서 구조`
+      - 최종개정확인일 `2024-10-30`
+      - 적용범위에 `바이너리 HWP 문서 포맷을 100% 호환할 수 있는 문서 규격`, `문서의 호환성 평가 기준`, `메타데이터 추가 등 확장성` 명시
+    - 한컴 다운로드센터 `HWP/OWPML 형식`
+      - `OWPML은 HWP 2018부터 .owpml`, `하위 버전은 HWP 2010부터 .hwpx` 라고 안내
+    - 한컴 WebHwpCtrl `지원되는 파일 형식`
+      - `한글 표준 문서 .hwpx`, `개방형 표준 문서 .owpml` 표기 확인
+  - 판단:
+    - 현재 저장소의 `HWPX` 파서는 ZIP + `Contents/section*.xml` 기반 OWPML 패키지를 읽고 있으므로 `.owpml`은 신규 포맷 구현보다 확장자 alias 지원이 우선
+  - 반영 내용:
+    - `js/app.js`, `js/parser.worker.js`, `js/hwp-parser.js`
+      - `.owpml`을 `HWPX/OWPML` 패키지 파서로 연결
+    - `pages/viewer.html`, `popup.html`, `popup.js`, `js/viewer.js`
+      - 파일 선택/드롭/오류 문구/저장 형식 목록에 `.owpml` 추가
+    - `background.js`, `content_script.js`
+      - 웹 링크 수집 및 컨텍스트 메뉴 패턴에 `.owpml` 추가
+    - `js/app.js`, `js/exporter.js`
+      - OWPML 저장을 HWPX 패키지 생성 경로와 공용화하고, 원본이 `.owpml`이면 덮어쓰기/다른 이름으로 저장 시 `.owpml` 확장자를 유지하도록 보정
+  - 검증:
+    - `node --check js/app.js`
+    - `node --check js/parser.worker.js`
+    - `node --check js/hwp-parser.js`
+    - `node --check js/viewer.js`
+    - `node --check js/exporter.js`
+    - `node --check popup.js`
+    - `node --check background.js`
+    - `node --check content_script.js`
+    - Playwright로 `output/playwright/inputs/incheon-2a.hwpx`를 `incheon-2a.owpml`로 복제해 업로드
+      - 탭 제목이 `incheon-2a.owpml - ChromeHWP Viewer`로 표시되는 것 확인
+      - 기존과 동일하게 `10페이지` 문서가 렌더되는 것 확인
+
+- 추가 반영: HWP 문단/표 단위 변환 재보정
+  - 참고 자료:
+    - `한글문서파일형식_5.0_revision1.3.pdf`
+      - `HWPUNIT = 1/7200 inch`
+      - 문단 모양의 `왼쪽 여백`, `들여쓰기`, `문단 간격 위/아래`가 HWPUNIT 계열 값으로 정의됨
+    - `한글문서파일형식3.0_HWPML_revision1.2.pdf`
+      - `LineSpacing`, 여백, 들여쓰기 값이 `hwpunit` 또는 글자수로 정의됨
+  - 배경:
+    - 렌더러가 HWP 문단 여백/들여쓰기와 셀 padding에 임의 배율(`/60`, `/22`)을 써서 실제보다 크게 벌어지는 문제가 있었음
+    - `결석계.hwp`와 일반 공고문 샘플 모두 표 내부 여백과 문단 들여쓰기가 과장되어 보였음
+  - 반영 내용:
+    - `js/app.js`
+      - `hwpSignedPageUnitToPx()` 추가
+      - 문단 `marginLeft`, `textIndent`, `spacingBefore`, `spacingAfter`를 `HWPUNIT -> px` 기준(`1/106`)으로 재변환
+      - HWP/HWPX 표 셀 높이와 내용 높이 계산을 `hwpPageUnitToPx()` 기반으로 보정
+      - 표 셀 padding을 HWPUNIT 기준으로 줄이고, padding 정보가 없을 때 기본값도 `6/8px`에서 `3/4px`로 축소
+  - 검증:
+    - `node --check js/app.js`
+    - `node --check js/parser.worker.js`
+    - Playwright로 `결석계.hwp` 재오픈
+      - 상단 표와 `결석 종류` 중첩 표가 이전보다 덜 부풀고 셀 내부 여백이 줄어든 것 확인
+    - Playwright로 `incheon-2a.hwpx` 재오픈
+      - 대표 문단의 들여쓰기/패딩 계산값이 이전보다 축소된 것 확인
+
+- 추가 반영: 줄 간격 종류 해석 및 OWPML 메인 파서 경로 정리
+  - 참고 자료:
+    - `한글문서파일형식_5.0_revision1.3.pdf`
+      - 문단 모양 `속성 1` 하위 `bit 0~1`이 구버전 줄 간격 종류
+      - `속성 2` 하위 `bit 0~4`에 줄 간격 종류가 정의되며 값 `0=글자에 따라(%)`, `1=고정 값`, `2=여백만 지정`, `3=최소`
+    - `한글문서파일형식3.0_HWPML_revision1.2.pdf`
+      - `LineSpacingType`, `LineSpacing`이 독립 속성으로 정의되고 값은 `hwpunit` 또는 글자수 기반
+  - 반영 내용:
+    - `js/app.js`
+      - `HwpParser._normalizeLineSpacingType()`, `HwpParser._hwpLineSpacingTypeFromCode()` 추가
+      - HWP 문단 모양 파서가 `lineSpacingType`을 함께 복원하도록 수정
+      - HWPX/OWPML `header.xml`의 `lineSpacing type="..."` 값을 `paraProps`에 보존
+      - `resolveParagraphLineHeight()`를 추가해 `percent/fixed/space-only/minimum`별로 CSS `line-height`를 다르게 계산
+      - `parseWithWorker()`에서 `.owpml`도 `.hwpx`와 동일하게 메인 파서 경로를 사용하도록 수정
+    - `js/parser.worker.js`
+      - HWP 문단 모양 파서와 문단 블록 모델에 `lineSpacingType` 반영
+  - 검증:
+    - `node --check js/app.js`
+    - `node --check js/parser.worker.js`
+    - Worker VM으로 `/Users/shinehandmac/Downloads/결석계.hwp` 파싱
+      - 문단 `lineSpacingType`가 `percent`로 복원되는 것 확인
+    - Playwright로 `incheon-2a.owpml` 재오픈
+      - `.owpml`이 메인 파서 경로로 열리고 `10페이지` 문서가 유지되는 것 확인
+
+- 추가 반영: 글자 모양 `장평/자간/상대크기/글자위치` 및 표 `cellSpacing` 반영
+  - 참고 자료:
+    - `한글문서파일형식_5.0_revision1.3.pdf`
+      - 글자 모양 레코드에서 언어별 `장평`, `자간`, `상대 크기`, `글자 위치`가 각각 `UINT8/INT8` 배열로 저장됨
+    - `한글문서파일형식3.0_HWPML_revision1.2.pdf`
+      - `RATIO`, `CHARSPACING`, `RELSIZE`, `CHAROFFSET` 엘리먼트 정의
+      - `CellSpacing`이 HTML `cellspacing`과 같은 의미로 정의됨
+  - 반영 내용:
+    - `js/app.js`
+      - HWPX `charPr`에서 `ratio`, `spacing`, `relSz`, `offset`를 읽어 런 스타일로 보존
+      - HWP 글자 모양 레코드에서 언어별 `장평`, `자간`, `상대 크기`, `글자 위치`를 복원
+      - 런 병합 비교(`_hwpxSameRunStyle`)에 새 스타일 필드를 포함
+      - 렌더러가 `letter-spacing`, 상대 글자 크기, 기준선 오프셋, 제한적 `scaleX/fontStretch`를 적용
+      - 표 `cellSpacing`이 있을 때 `border-collapse: separate`와 `border-spacing`으로 반영
+    - `js/parser.worker.js`
+      - HWP 글자 모양 레코드에 `scaleX`, `letterSpacing`, `relSize`, `offsetY` 추가
+    - `js/hwp-parser.js`, `js/viewer.js`
+      - 모듈형 뷰어 경로도 동일한 글자 모양 필드를 읽고 렌더하도록 동기화
+    - 회귀 샘플:
+      - `/Users/shinehandmac/Downloads/결석계.hwp`를 `output/playwright/inputs/gyeolseokgye.hwp`로 복사해 저장소 내 검증 샘플로 추가
+  - 검증:
+    - `node --check js/app.js`
+    - `node --check js/parser.worker.js`
+    - `node --check js/hwp-parser.js`
+    - `node --check js/viewer.js`
+    - Worker VM으로 `/Users/shinehandmac/Downloads/결석계.hwp` 파싱
+      - 표 내부 문단에서 자간 `-19~-3`, 일부 문장 `장평 97` 값이 실제로 복원되는 것 확인
+    - Playwright로 `http://127.0.0.1:4174/pages/viewer.html`에서 `output/playwright/inputs/gyeolseokgye.hwp` 업로드
+      - 제목이 `gyeolseokgye.hwp - ChromeHWP Viewer`로 표시되는 것 확인
+      - `.hwp-page` 1장 렌더와 스타일 적용 span 23개 확인
+      - 검증 스크린샷: `.playwright-cli/page-2026-04-05T14-12-12-640Z.png`
+
+- 추가 반영: 개체 앵커 배치, `textFlow`, 상대 크기 기반 렌더 보강
+  - 참고 자료:
+    - `한글문서파일형식_5.0_revision1.3.pdf`
+      - `표 69 개체 공통 속성`: `VertRelTo`, `HorzRelTo`, `FlowWithText`, `AllowOverlap`, `TextWrap`, `TextFlow`, `width/height` 기준 비트 정의
+      - `표 68 개체 공통 속성`: `vertOffset`, `horzOffset`, `width`, `height`, 바깥 여백이 개체 공통 속성에 포함됨
+    - `한글문서파일형식3.0_HWPML_revision1.2.pdf`
+      - `표 104 SIZE`: `WidthRelTo/HeightRelTo`가 `Paper/Page/Column/Para/Absolute` 기준을 가짐
+      - `표 105 POSITION`: `TreatAsChar=false`일 때 `VertRelTo/HorzRelTo`, 오프셋, `FlowWithText`, `AllowOverlap`이 적용됨
+  - 배경:
+    - 기존 렌더러는 HWP/HWPX 개체 메타데이터를 파싱해도 실제 화면에서는 대부분 문단 안 흐름으로만 배치했고, `page/paper` 기준 개체나 `behind/in-front`, `textFlow`를 실사용하지 않았음
+    - HWPX 비인라인 그림/표가 작은 경우 문단 내 인라인처럼 섞이거나, 표 오프셋이 과소 반영되는 문제가 있었음
+  - 반영 내용:
+    - `js/app.js`
+      - HWPX `pic/tbl`와 HWP 개체 공통 속성에서 읽은 `vertRelTo`, `horzRelTo`, `textWrap`, `textFlow`, `widthRelTo`, `heightRelTo`, `allowOverlap`, `flowWithText`를 공통 블록 메타로 유지
+      - 비인라인 HWPX 그림을 더 이상 크기 휴리스틱만으로 인라인 처리하지 않도록 수정
+      - 개체 배치 전용 helper를 추가해:
+        - HWP/HWPX별 오프셋/바깥 여백 단위를 따로 변환
+        - `textFlow=left-only/right-only`에 따라 float 방향을 보정
+        - `widthRelTo/heightRelTo`가 `absolute`가 아닐 때 페이지/본문/문단 폭 기준 상대 크기를 계산
+        - `page/paper` 기준 절대배치 개체는 실제 `.hwp-page` 앵커로 옮긴 뒤 좌표를 계산
+      - 표 셀 내부 절대배치를 위해 `.hwp-table-cell-content`를 기준 컨테이너로 사용
+    - `css/viewer.css`
+      - `.hwp-table-cell-content { position: relative; }` 추가
+    - HTML 내보내기용 인라인 스타일에도 동일한 셀 기준 컨테이너 규칙 반영
+  - 검증:
+    - `node --check js/app.js`
+    - `node --check js/parser.worker.js`
+    - `node --check js/hwp-parser.js`
+    - `node --check js/viewer.js`
+    - Playwright로 `incheon-2a.hwpx` 재오픈
+      - 비인라인 LH 로고가 다시 본문 제목과 겹치지 않는 위치로 렌더되는 것 확인
+      - 첫 이미지 배치 transform이 `translate(50px, 0px)` 수준으로 적용되고, 표 오프셋도 `392 -> 5px`, `952/2033 -> 13px/27px` 등으로 복원되는 것 확인
+      - 검증 스크린샷: `.playwright-cli/page-2026-04-05T14-47-37-877Z.png`
+    - Playwright로 `attachment-sale-notice.hwp` 재오픈
+      - `15페이지`, 이미지 3개, 상단 배너/본문 텍스트 유지 확인
+      - 검증 스크린샷: `.playwright-cli/page-2026-04-05T14-48-31-916Z.png`
+    - Playwright DOM 주입 테스트
+      - `horzRelTo=page`, `vertRelTo=page`, `textWrap=behind-text` 가상 블록이 `position:absolute`로 계산되고 부모가 `.hwp-page`로 옮겨지는 것 확인
+    - 참고:
+      - `node scripts/verify_samples.mjs`는 Playwright CLI의 `verify-current` 세션 연결 오류(`connect ENOENT verify-current`)로 이번에도 자동 회귀를 끝까지 수행하지 못함
+
+- 추가 반영: HWP 양식표 열폭 계산과 세로 라벨 렌더 보정
+  - 배경:
+    - `결석계.hwp`에서 첫 표가 여전히 어긋나 보였고, 원인을 확인해 보니 `colSpan` 셀 폭을 균등 분배하는 기존 열폭 계산이 실제 열 비율을 오염시키고 있었음
+    - 특히 첫 줄/중간 줄의 병합 셀이 1열 폭을 과도하게 키우거나 줄이는 바람에 `인 적 사 항`, `결 석 일 수`, `결 석 종 류` 라벨이 한 글자씩 떨어지거나 지나치게 벌어지는 문제가 있었음
+  - 반영 내용:
+    - `js/app.js`, `js/parser.worker.js`
+      - 테이블 열폭 계산을 `단일 칸(colSpan=1)` 우선 방식으로 바꾸고, 병합 셀은 비어 있는 열을 채우거나 부족분만 보정하도록 수정
+      - `결 석 종 류`처럼 단일 음절이 공백으로 나열된 라벨 셀은 2글자씩 줄바꿈(`결 석\n종 류`)으로 렌더하도록 보정
+    - `js/app.js`
+      - `stacked-label` 역할을 추가하고 해당 셀은 `vertical-align: middle`, `line-height: 1.06`, `white-space: pre-line`로 렌더
+  - 검증:
+    - `node --check js/app.js`
+    - `node --check js/parser.worker.js`
+    - Playwright로 `gyeolseokgye.hwp`를 cache-busting URL에서 재오픈
+      - 첫 표 열폭이 `[73, 67, 270, 66, 222]`로 재계산되는 것 확인
+      - 첫 열 라벨 셀이 `stacked-label` 역할로 렌더되고 행 높이가 `243px -> 142px` 수준으로 줄어든 것 확인
+      - 검증 스크린샷: `.playwright-cli/page-2026-04-05T15-00-32-735Z.png`
+
+- 상태 정리:
+  - 현재까지 누적 반영 사항과 남은 큰 작업을 빠르게 볼 수 있도록 `STATUS.md`를 추가
+  - 커밋 전에 최근 핵심 로직(개체 배치, 표 열폭 계산, 세로 라벨 보정)에 한글 주석 보강
+  - 공식 형식 PDF 5종을 `docs/hwp-spec/`로 복사하고, 테스트 샘플 목록을 `docs/hwp-assets.md`에 정리
+  - 추가 검증용 양식 샘플 `output/playwright/inputs/goyeopje-full-2024.hwp` 추가

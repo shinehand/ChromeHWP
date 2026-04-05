@@ -309,15 +309,18 @@ html, body {
 
 .hwp-page-header {
   flex: 0 0 auto;
+  position: relative;
 }
 
 .hwp-page-body {
   flex: 1 1 auto;
+  position: relative;
 }
 
 .hwp-page-footer {
   margin-top: auto;
   padding-top: 18px;
+  position: relative;
 }
 
 /* hwp.js 출력 내부 폰트/레이아웃 보정 */
@@ -387,6 +390,10 @@ html, body {
   margin-top: 3px;
 }
 
+.hwp-table-cell-content {
+  position: relative;
+}
+
 .hwp-image-block {
   margin: 10px 0;
   text-align: center;
@@ -408,6 +415,48 @@ html, body {
   max-width: 100%;
   height: auto;
   display: inline-block;
+}
+
+.hwp-object-block {
+  margin: 8px 0;
+  text-align: left;
+}
+
+.hwp-object-block[data-align="center"] {
+  text-align: center;
+}
+
+.hwp-object-block[data-align="right"] {
+  text-align: right;
+}
+
+.hwp-object-block[data-inline="true"] {
+  margin: 4px 0 8px;
+}
+
+.hwp-equation,
+.hwp-ole {
+  display: inline-block;
+  max-width: 100%;
+  white-space: pre-wrap;
+}
+
+.hwp-equation {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  font-family: 'Cambria Math', 'Times New Roman', serif;
+  color: #111827;
+}
+
+.hwp-ole {
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  color: #9a3412;
+  font-size: 12px;
 }
 
 .hwp-table-nested {
@@ -479,6 +528,39 @@ html, body {
   font-weight: 400;
   letter-spacing: -0.01em;
   white-space: nowrap;
+}
+
+.hwp-form-header-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(220px, 42%);
+  align-items: start;
+  column-gap: 12px;
+  width: 100%;
+}
+
+.hwp-form-header-title {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 68px;
+}
+
+.hwp-form-header-title .hwp-table-paragraph {
+  margin: 0;
+  text-align: center;
+}
+
+.hwp-form-header-approval {
+  grid-column: 3;
+  justify-self: end;
+  min-width: min(100%, 280px);
+  width: min(100%, 320px);
+}
+
+.hwp-form-header-approval .hwp-table-wrap {
+  margin: 0;
 }
 
 /* ── 상태바 ──────────────────────────────────── */

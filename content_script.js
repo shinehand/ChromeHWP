@@ -12,7 +12,7 @@
           return null;
         }
 
-        if (!/\.(hwp|hwpx)(?:$|\?)/i.test(url)) return null;
+        if (!/\.(hwp|hwpx|owpml)(?:$|[?#])/i.test(url)) return null;
 
         return {
           url,

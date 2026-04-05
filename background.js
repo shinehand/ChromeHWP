@@ -2,7 +2,7 @@
  * background.js — Service Worker (Manifest V3)
  *
  * 기능:
- *  1. 웹페이지의 .hwp/.hwpx 링크 우클릭 → "HWP 에디터로 열기" 컨텍스트 메뉴
+ *  1. 웹페이지의 .hwp/.hwpx/.owpml 링크 우클릭 → "HWP 에디터로 열기" 컨텍스트 메뉴
  *     클릭 시 해당 URL을 fetch해 ArrayBuffer를 chrome.storage.session에 저장 후
  *     viewer.html을 새 탭으로 열어 즉시 파일 로드
  *  2. 팝업과 뷰어 사이 최근 파일 메타데이터 동기화
@@ -10,7 +10,7 @@
 
 const MAX_LINKS = 100;
 const MAX_RECENTS = 20;
-const HWP_LINK_PATTERN = /\.(hwp|hwpx)(?:$|[?#])/i;
+const HWP_LINK_PATTERN = /\.(hwp|hwpx|owpml)(?:$|[?#])/i;
 
 /* ── 설치/업데이트 시 컨텍스트 메뉴 등록 ── */
 chrome.runtime.onInstalled.addListener(() => {
@@ -26,10 +26,13 @@ chrome.runtime.onInstalled.addListener(() => {
       targetUrlPatterns: [
         '*://*/*.hwp',
         '*://*/*.hwpx',
+        '*://*/*.owpml',
         '*://*/*.hwp?*',
         '*://*/*.hwpx?*',
+        '*://*/*.owpml?*',
         '*://*/*.hwp#*',
         '*://*/*.hwpx#*',
+        '*://*/*.owpml#*',
       ],
     });
   });

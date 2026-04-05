@@ -29,7 +29,8 @@ function u32be(b, o) {
 function run(text, opts) {
   return Object.assign(
     { text: text||'', bold:false, italic:false, underline:false,
-      fontSize:11, fontName:'Malgun Gothic', color:'#000000' },
+      fontSize:11, fontName:'Malgun Gothic', color:'#000000',
+      scaleX:100, letterSpacing:0, relSize:100, offsetY:0 },
     opts
   );
 }
@@ -301,7 +302,7 @@ function detectImageMime(bytes, filename = '') {
 
 async function parseHwpBinaryMap(b, allEntries, ss, fat, miniCutoff, miniStream, miniFat) {
   const binEntries = Object.entries(allEntries || {})
-    .filter(([name]) => /^BIN\d+\.(png|jpe?g|gif|bmp|webp)$/i.test(name))
+    .filter(([name]) => /^BIN\d+\./i.test(name))
     .sort((a, b) => {
       const ai = Number((a[0].match(/^BIN(\d+)/i) || [])[1] || 0);
       const bi = Number((b[0].match(/^BIN(\d+)/i) || [])[1] || 0);
@@ -311,8 +312,21 @@ async function parseHwpBinaryMap(b, allEntries, ss, fat, miniCutoff, miniStream,
   const images = {};
   const ordered = [];
   const byId = {};
+  const allById = {};
 
   for (const [name, entry] of binEntries) {
+    const numericId = Number((name.match(/^BIN(\d+)/i) || [])[1] || 0);
+    const baseEntry = {
+      id: numericId,
+      name,
+      size: Number(entry?.streamSz) || 0,
+    };
+    if (numericId > 0) {
+      allById[numericId] = baseEntry;
+    }
+
+    if (!/\.(png|jpe?g|gif|bmp|webp)$/i.test(name)) continue;
+
     let bytes = readEntryStream(b, entry, ss, fat, miniCutoff, miniStream, miniFat);
     if (!bytes?.length) continue;
 
@@ -326,16 +340,287 @@ async function parseHwpBinaryMap(b, allEntries, ss, fat, miniCutoff, miniStream,
     if (!mime) continue;
 
     const src = `data:${mime};base64,${bytesToBase64(bytes)}`;
-    const numericId = Number((name.match(/^BIN(\d+)/i) || [])[1] || 0);
-    const imageEntry = { id: numericId, name, src };
+    const imageEntry = { ...baseEntry, src, mime };
     images[name] = src;
     ordered.push(imageEntry);
     if (numericId > 0) {
       byId[numericId] = imageEntry;
+      allById[numericId] = imageEntry;
     }
   }
 
-  return { images, ordered, byId };
+  return { images, ordered, byId, allById };
+}
+
+function hwpRotl8(value, shift) {
+  return ((value << shift) | (value >> (8 - shift))) & 0xFF;
+}
+
+function hwpGfMul(a, b) {
+  let aa = a & 0xFF;
+  let bb = b & 0xFF;
+  let out = 0;
+  while (bb > 0) {
+    if (bb & 1) out ^= aa;
+    aa = (aa << 1) ^ ((aa & 0x80) ? 0x11B : 0);
+    aa &= 0xFF;
+    bb >>= 1;
+  }
+  return out & 0xFF;
+}
+
+function hwpGfPow(base, exponent) {
+  let out = 1;
+  let value = base & 0xFF;
+  let exp = exponent >>> 0;
+  while (exp > 0) {
+    if (exp & 1) out = hwpGfMul(out, value);
+    value = hwpGfMul(value, value);
+    exp >>>= 1;
+  }
+  return out & 0xFF;
+}
+
+function hwpAesTables() {
+  if (globalThis.__hwpAesTables) return globalThis.__hwpAesTables;
+
+  const sbox = new Uint8Array(256);
+  const invSbox = new Uint8Array(256);
+  const rcon = new Uint8Array(10);
+
+  let r = 1;
+  for (let i = 0; i < rcon.length; i++) {
+    rcon[i] = r;
+    r = hwpGfMul(r, 2);
+  }
+
+  for (let i = 0; i < 256; i++) {
+    const inv = i === 0 ? 0 : hwpGfPow(i, 254);
+    const value = (
+      inv
+      ^ hwpRotl8(inv, 1)
+      ^ hwpRotl8(inv, 2)
+      ^ hwpRotl8(inv, 3)
+      ^ hwpRotl8(inv, 4)
+      ^ 0x63
+    ) & 0xFF;
+    sbox[i] = value;
+    invSbox[value] = i;
+  }
+
+  globalThis.__hwpAesTables = { sbox, invSbox, rcon };
+  return globalThis.__hwpAesTables;
+}
+
+function hwpAesExpandKey(keyBytes) {
+  const key = keyBytes instanceof Uint8Array ? keyBytes : new Uint8Array(keyBytes || []);
+  if (key.length !== 16) {
+    throw new Error('AES-128 키 길이가 올바르지 않습니다.');
+  }
+
+  const { sbox, rcon } = hwpAesTables();
+  const expanded = new Uint8Array(176);
+  expanded.set(key);
+
+  let generated = 16;
+  let rconIndex = 0;
+  const temp = new Uint8Array(4);
+
+  while (generated < expanded.length) {
+    temp.set(expanded.slice(generated - 4, generated));
+    if (generated % 16 === 0) {
+      const first = temp[0];
+      temp[0] = sbox[temp[1]] ^ rcon[rconIndex++];
+      temp[1] = sbox[temp[2]];
+      temp[2] = sbox[temp[3]];
+      temp[3] = sbox[first];
+    }
+    for (let i = 0; i < 4; i++) {
+      expanded[generated] = expanded[generated - 16] ^ temp[i];
+      generated += 1;
+    }
+  }
+
+  return expanded;
+}
+
+function hwpAesAddRoundKey(state, roundKeys, offset) {
+  for (let i = 0; i < 16; i++) {
+    state[i] ^= roundKeys[offset + i];
+  }
+}
+
+function hwpAesInvShiftRows(state) {
+  const copy = state.slice();
+  state[0] = copy[0];   state[4] = copy[4];   state[8] = copy[8];   state[12] = copy[12];
+  state[1] = copy[13];  state[5] = copy[1];   state[9] = copy[5];   state[13] = copy[9];
+  state[2] = copy[10];  state[6] = copy[14];  state[10] = copy[2];  state[14] = copy[6];
+  state[3] = copy[7];   state[7] = copy[11];  state[11] = copy[15]; state[15] = copy[3];
+}
+
+function hwpAesInvSubBytes(state, invSbox) {
+  for (let i = 0; i < 16; i++) {
+    state[i] = invSbox[state[i]];
+  }
+}
+
+function hwpAesInvMixColumns(state) {
+  for (let col = 0; col < 4; col++) {
+    const offset = col * 4;
+    const s0 = state[offset];
+    const s1 = state[offset + 1];
+    const s2 = state[offset + 2];
+    const s3 = state[offset + 3];
+    state[offset] = (
+      hwpGfMul(s0, 14)
+      ^ hwpGfMul(s1, 11)
+      ^ hwpGfMul(s2, 13)
+      ^ hwpGfMul(s3, 9)
+    ) & 0xFF;
+    state[offset + 1] = (
+      hwpGfMul(s0, 9)
+      ^ hwpGfMul(s1, 14)
+      ^ hwpGfMul(s2, 11)
+      ^ hwpGfMul(s3, 13)
+    ) & 0xFF;
+    state[offset + 2] = (
+      hwpGfMul(s0, 13)
+      ^ hwpGfMul(s1, 9)
+      ^ hwpGfMul(s2, 14)
+      ^ hwpGfMul(s3, 11)
+    ) & 0xFF;
+    state[offset + 3] = (
+      hwpGfMul(s0, 11)
+      ^ hwpGfMul(s1, 13)
+      ^ hwpGfMul(s2, 9)
+      ^ hwpGfMul(s3, 14)
+    ) & 0xFF;
+  }
+}
+
+function hwpAesDecryptBlock(block, expandedKey) {
+  const { invSbox } = hwpAesTables();
+  const state = new Uint8Array(block);
+
+  hwpAesAddRoundKey(state, expandedKey, 160);
+  for (let round = 9; round >= 1; round--) {
+    hwpAesInvShiftRows(state);
+    hwpAesInvSubBytes(state, invSbox);
+    hwpAesAddRoundKey(state, expandedKey, round * 16);
+    hwpAesInvMixColumns(state);
+  }
+  hwpAesInvShiftRows(state);
+  hwpAesInvSubBytes(state, invSbox);
+  hwpAesAddRoundKey(state, expandedKey, 0);
+  return state;
+}
+
+function hwpAesEcbDecrypt(data, keyBytes) {
+  const bytes = data instanceof Uint8Array ? data : new Uint8Array(data || []);
+  const expandedKey = hwpAesExpandKey(keyBytes);
+  const alignedLength = bytes.length - (bytes.length % 16);
+  const out = new Uint8Array(bytes.length);
+
+  for (let offset = 0; offset < alignedLength; offset += 16) {
+    const block = hwpAesDecryptBlock(bytes.slice(offset, offset + 16), expandedKey);
+    out.set(block, offset);
+  }
+  if (alignedLength < bytes.length) {
+    out.set(bytes.slice(alignedLength), alignedLength);
+  }
+  return out;
+}
+
+function hwpBuildDistributeRandomBytes(seed) {
+  const out = new Uint8Array(256);
+  let written = 0;
+  let state = seed >>> 0;
+  const nextRand = () => {
+    state = (Math.imul(state, 214013) + 2531011) >>> 0;
+    return (state >>> 16) & 0x7FFF;
+  };
+
+  while (written < out.length) {
+    const value = nextRand() & 0xFF;
+    const repeat = (nextRand() & 0x0F) + 1;
+    for (let i = 0; i < repeat && written < out.length; i++) {
+      out[written++] = value;
+    }
+  }
+  return out;
+}
+
+function extractHwpDistributeKeyData(distributeBody) {
+  if (!distributeBody || distributeBody.length < 256) return null;
+  const seed = u32(distributeBody, 0);
+  const randomBytes = hwpBuildDistributeRandomBytes(seed);
+  const merged = new Uint8Array(256);
+  for (let i = 0; i < merged.length; i++) {
+    merged[i] = randomBytes[i] ^ distributeBody[i];
+  }
+  const offset = (seed & 0x0F) + 4;
+  if (offset + 82 > merged.length) return null;
+  const hashBytes = merged.slice(offset, offset + 80);
+  return {
+    seed,
+    offset,
+    hashBytes,
+    aesKey: hashBytes.slice(0, 16),
+    optionFlags: u16(merged, offset + 80),
+  };
+}
+
+function unwrapHwpDistributedStream(data) {
+  const rec = readRecord(data, 0);
+  if (!rec || rec.tagId !== 28 || rec.body.length < 256) return null;
+  const keyData = extractHwpDistributeKeyData(rec.body);
+  if (!keyData?.aesKey?.length) return null;
+  const payload = data.slice(rec.nextPos);
+  return {
+    bytes: hwpAesEcbDecrypt(payload, keyData.aesKey),
+    optionFlags: keyData.optionFlags,
+    keyData,
+  };
+}
+
+async function buildHwpRecordAttempts(data, options = {}) {
+  const { compressedHint = false, distributedHint = false } = options || {};
+  const attempts = [];
+  const seen = new Set();
+  const pushAttempt = (mode, bytes) => {
+    if (!bytes || bytes.length === 0) return;
+    const signature = `${bytes.length}:${Array.from(bytes.slice(0, 16)).join(',')}`;
+    if (seen.has(signature)) return;
+    seen.add(signature);
+    attempts.push({ mode, bytes });
+  };
+
+  const tryInflate = async (label, bytes) => {
+    try {
+      pushAttempt(label, await decompressZlib(bytes));
+    } catch {}
+  };
+
+  pushAttempt('raw', data);
+  await tryInflate('deflated', data);
+
+  if (distributedHint) {
+    const rawDistributed = unwrapHwpDistributedStream(data);
+    if (rawDistributed?.bytes?.length) {
+      pushAttempt('distributed', rawDistributed.bytes);
+      await tryInflate('distributed+deflated', rawDistributed.bytes);
+    }
+
+    try {
+      const deflated = await decompressZlib(data);
+      const deflatedDistributed = unwrapHwpDistributedStream(deflated);
+      if (deflatedDistributed?.bytes?.length) {
+        pushAttempt('deflated+distributed', deflatedDistributed.bytes);
+      }
+    } catch {}
+  }
+
+  return attempts;
 }
 
 /* ════════════════════════════════════════════════════════
@@ -549,6 +834,10 @@ function parseHwpCharShape(body, faceNames = {}) {
   if (!body || body.length < 56) return null;
   const attr = u32(body, 46);
   const faceId = u16(body, 0);
+  const scaleX = body[14] ?? 100;
+  const letterSpacing = (body[21] ?? 0) << 24 >> 24;
+  const relSize = body[28] ?? 100;
+  const offsetY = (body[35] ?? 0) << 24 >> 24;
   const fontSizeRaw = u32(body, 42);
   return {
     fontName: faceNames[faceId] || '',
@@ -557,6 +846,10 @@ function parseHwpCharShape(body, faceNames = {}) {
     bold: Boolean(attr & (1 << 1)),
     italic: Boolean(attr & 1),
     underline: ((attr >> 2) & 0x3) !== 0,
+    scaleX,
+    letterSpacing,
+    relSize,
+    offsetY,
   };
 }
 
@@ -574,6 +867,26 @@ function hwpAlignFromAttr(attr) {
   }
 }
 
+function normalizeLineSpacingType(value) {
+  const raw = String(value || '').trim().toLowerCase();
+  if (!raw) return '';
+  if (['percent', 'percentage', 'ratio', 'char', 'chars', 'character', 'relative'].includes(raw)) return 'percent';
+  if (['fixed', 'fixed-value', 'fixedvalue'].includes(raw)) return 'fixed';
+  if (['space-only', 'spaceonly', 'margin', 'margins-only', 'betweenlines', 'between-lines', 'only-margin'].includes(raw)) return 'space-only';
+  if (['minimum', 'minimum-value', 'minimumvalue', 'at-least', 'at_least', 'min'].includes(raw)) return 'minimum';
+  return raw;
+}
+
+function hwpLineSpacingTypeFromCode(code) {
+  switch (Number(code)) {
+    case 0: return 'percent';
+    case 1: return 'fixed';
+    case 2: return 'space-only';
+    case 3: return 'minimum';
+    default: return '';
+  }
+}
+
 function i32(b, o) {
   const value = u32(b, o);
   return value > 0x7FFFFFFF ? value - 0x100000000 : value;
@@ -582,6 +895,7 @@ function i32(b, o) {
 function parseHwpParaShape(body) {
   if (!body || body.length < 26) return null;
   const attr = u32(body, 0);
+  const modernAttr = body.length >= 46 ? u32(body, 42) : 0;
   const modernLineSpacing = body.length >= 54 ? u32(body, 50) : 0;
   const legacyLineSpacing = body.length >= 28 ? u32(body, 24) : 0;
   return {
@@ -590,6 +904,9 @@ function parseHwpParaShape(body) {
     textIndent: i32(body, 12),
     spacingBefore: i32(body, 16),
     spacingAfter: i32(body, 20),
+    lineSpacingType: modernLineSpacing
+      ? hwpLineSpacingTypeFromCode(modernAttr & 0x1F)
+      : hwpLineSpacingTypeFromCode(attr & 0x3),
     lineSpacing: modernLineSpacing || legacyLineSpacing || 0,
   };
 }
@@ -711,6 +1028,7 @@ function createHwpParagraphBlock(text, paraState = {}, docInfo = null) {
     textIndent: paraStyle?.textIndent ?? 0,
     spacingBefore: paraStyle?.spacingBefore ?? 0,
     spacingAfter: paraStyle?.spacingAfter ?? 0,
+    lineSpacingType: paraStyle?.lineSpacingType || '',
     lineSpacing: paraStyle?.lineSpacing ?? 0,
     lineHeightPx: lineMetrics.lineHeightPx,
     layoutHeightPx: lineMetrics.layoutHeightPx,
@@ -781,15 +1099,12 @@ function parseHwpDocInfoRecords(data) {
   };
 }
 
-async function parseHwpDocInfoStream(data, compressedHint) {
-  const attempts = [{ mode: 'raw', bytes: data }];
-  try {
-    attempts.push({ mode: 'deflated', bytes: await decompressZlib(data) });
-  } catch (e) {
-    if (compressedHint) {
-      console.warn('[Worker] DocInfo 압축 해제 실패:', e.message);
-    }
-  }
+async function parseHwpDocInfoStream(data, streamOptions = {}) {
+  const normalizedOptions = typeof streamOptions === 'object'
+    ? streamOptions
+    : { compressedHint: Boolean(streamOptions) };
+  const { compressedHint = false, distributedHint = false } = normalizedOptions;
+  const attempts = await buildHwpRecordAttempts(data, { compressedHint, distributedHint });
 
   let best = {
     faceNames: {},
@@ -864,12 +1179,9 @@ function resolveHwpBinaryImage(docInfo = null, pictureBody = null) {
   return nextHwpBinaryImage(docInfo);
 }
 
-function pickHwpDisplayMetric(...candidates) {
-  const positives = candidates
-    .map(value => Number(value) || 0)
-    .filter(value => value > 0);
-  if (!positives.length) return 0;
-  return Math.min(...positives);
+function resolveHwpBinaryEntry(docInfo = null, binId = 0) {
+  if (!binId || binId <= 0) return null;
+  return docInfo?.binEntriesById?.[binId] || null;
 }
 
 function firstPositiveMetric(...candidates) {
@@ -880,43 +1192,254 @@ function firstPositiveMetric(...candidates) {
   return 0;
 }
 
-function parseHwpGsoBlock(ctrlBody, pictureBody, docInfo = null) {
+function decodeHwpUtf16String(body, offset, charLength) {
+  const safeOffset = Math.max(0, Number(offset) || 0);
+  const safeChars = Math.max(0, Number(charLength) || 0);
+  if (!body || safeChars <= 0 || safeOffset >= body.length) return '';
+  const byteLength = Math.min(body.length - safeOffset, safeChars * 2);
+  if (byteLength <= 0) return '';
+  return new TextDecoder('utf-16le')
+    .decode(body.slice(safeOffset, safeOffset + byteLength))
+    .replace(/\u0000/g, '')
+    .trim();
+}
+
+function hwpObjectRelTo(axis, code = 0) {
+  const idx = Number(code) || 0;
+  if (axis === 'vert') {
+    return ['paper', 'page', 'para'][idx] || 'para';
+  }
+  return ['paper', 'page', 'column', 'para'][idx] || 'column';
+}
+
+function hwpObjectAlign(axis, code = 0) {
+  const idx = Number(code) || 0;
+  if (axis === 'vert') {
+    return ['top', 'center', 'bottom', 'inside', 'outside'][idx] || 'top';
+  }
+  return ['left', 'center', 'right', 'inside', 'outside'][idx] || 'left';
+}
+
+function hwpObjectTextWrap(code = 0) {
+  return ['square', 'tight', 'through', 'top-and-bottom', 'behind-text', 'in-front-of-text'][Number(code) || 0]
+    || 'top-and-bottom';
+}
+
+function hwpObjectTextFlow(code = 0) {
+  return ['both-sides', 'left-only', 'right-only', 'largest-only'][Number(code) || 0]
+    || 'both-sides';
+}
+
+function hwpObjectSizeRelTo(axis, code = 0) {
+  if (axis === 'height') {
+    return ['paper', 'page', 'absolute'][Number(code) || 0] || 'absolute';
+  }
+  return ['paper', 'page', 'column', 'para', 'absolute'][Number(code) || 0] || 'absolute';
+}
+
+function parseHwpObjectCommon(ctrlBody) {
+  if (!ctrlBody || ctrlBody.length < 46) return null;
+  const attr = u32(ctrlBody, 4);
+  const descLen = u16(ctrlBody, 44);
+  const vertRelTo = hwpObjectRelTo('vert', (attr >> 3) & 0x3);
+  const horzRelTo = hwpObjectRelTo('horz', (attr >> 8) & 0x3);
+  return {
+    controlId: ctrlId(ctrlBody),
+    attr,
+    vertOffset: i32(ctrlBody, 8),
+    horzOffset: i32(ctrlBody, 12),
+    width: u32(ctrlBody, 16),
+    height: u32(ctrlBody, 20),
+    zOrder: i32(ctrlBody, 24),
+    margin: [
+      u16(ctrlBody, 28),
+      u16(ctrlBody, 30),
+      u16(ctrlBody, 32),
+      u16(ctrlBody, 34),
+    ],
+    instanceId: u32(ctrlBody, 36),
+    preventPageBreak: i32(ctrlBody, 40),
+    description: decodeHwpUtf16String(ctrlBody, 46, descLen),
+    inline: Boolean(attr & 1),
+    affectLineSpacing: Boolean(attr & (1 << 2)),
+    vertRelTo,
+    vertAlign: hwpObjectAlign('vert', (attr >> 5) & 0x7),
+    horzRelTo,
+    horzAlign: hwpObjectAlign('horz', (attr >> 10) & 0x7),
+    align: hwpObjectAlign('horz', (attr >> 10) & 0x7),
+    flowWithText: Boolean((attr >> 13) & 0x1),
+    allowOverlap: Boolean((attr >> 14) & 0x1),
+    widthRelTo: hwpObjectSizeRelTo('width', (attr >> 15) & 0x7),
+    heightRelTo: hwpObjectSizeRelTo('height', (attr >> 18) & 0x3),
+    sizeProtected: Boolean((attr >> 20) & 0x1),
+    textWrap: hwpObjectTextWrap((attr >> 21) & 0x7),
+    textFlow: hwpObjectTextFlow((attr >> 24) & 0x3),
+    numberingCategory: (attr >> 26) & 0x7,
+  };
+}
+
+function withObjectLayout(block, objectInfo = {}) {
+  if (!block) return block;
+  return {
+    ...block,
+    align: objectInfo?.align || block.align || 'left',
+    inline: objectInfo?.inline ?? block.inline ?? false,
+    affectLineSpacing: objectInfo?.affectLineSpacing ?? block.affectLineSpacing ?? false,
+    vertRelTo: objectInfo?.vertRelTo || block.vertRelTo || 'para',
+    vertAlign: objectInfo?.vertAlign || block.vertAlign || 'top',
+    horzRelTo: objectInfo?.horzRelTo || block.horzRelTo || 'column',
+    horzAlign: objectInfo?.horzAlign || block.horzAlign || block.align || 'left',
+    offsetX: Number(objectInfo?.horzOffset ?? block.offsetX) || 0,
+    offsetY: Number(objectInfo?.vertOffset ?? block.offsetY) || 0,
+    flowWithText: objectInfo?.flowWithText ?? block.flowWithText ?? false,
+    allowOverlap: objectInfo?.allowOverlap ?? block.allowOverlap ?? false,
+    widthRelTo: objectInfo?.widthRelTo || block.widthRelTo || 'absolute',
+    heightRelTo: objectInfo?.heightRelTo || block.heightRelTo || 'absolute',
+    sizeProtected: objectInfo?.sizeProtected ?? block.sizeProtected ?? false,
+    textWrap: objectInfo?.textWrap || block.textWrap || 'top-and-bottom',
+    textFlow: objectInfo?.textFlow || block.textFlow || 'both-sides',
+    zOrder: Number(objectInfo?.zOrder ?? block.zOrder) || 0,
+    outMargin: Array.isArray(objectInfo?.margin)
+      ? [...objectInfo.margin]
+      : (Array.isArray(block.outMargin) ? [...block.outMargin] : []),
+  };
+}
+
+function createHwpObjectTextBlock(type, objectInfo, text, runOpts = {}, extra = {}) {
+  const content = String(text || '').trim();
+  return withObjectLayout({
+    type,
+    width: Number(objectInfo?.width) || 0,
+    height: Number(objectInfo?.height) || 0,
+    description: objectInfo?.description || '',
+    sourceFormat: 'hwp',
+    texts: [run(content || (type === 'equation' ? '[수식]' : '[OLE 개체]'), runOpts)],
+    ...extra,
+  }, objectInfo);
+}
+
+function parseHwpEquationBlock(objectInfo, equationBody) {
+  if (!equationBody || equationBody.length < 6) return null;
+
+  const scriptLen = u16(equationBody, 4);
+  const script = decodeHwpUtf16String(equationBody, 6, scriptLen);
+  let offset = 6 + (scriptLen * 2);
+
+  const fontSize = equationBody.length >= offset + 4 ? u32(equationBody, offset) : 0;
+  offset += equationBody.length >= offset + 4 ? 4 : 0;
+  const color = equationBody.length >= offset + 4
+    ? hwpColorRefToCss(u32(equationBody, offset))
+    : '';
+  offset += equationBody.length >= offset + 4 ? 4 : 0;
+  const baseline = equationBody.length >= offset + 2 ? u16(equationBody, offset) : 0;
+  offset += equationBody.length >= offset + 2 ? 2 : 0;
+
+  let version = '';
+  let fontName = '';
+  if (offset < equationBody.length) {
+    const tailText = new TextDecoder('utf-16le')
+      .decode(equationBody.slice(offset))
+      .replace(/\u0000+/g, '\n')
+      .split('\n')
+      .map(part => part.trim())
+      .filter(Boolean);
+    [version = '', fontName = ''] = tailText;
+  }
+
+  const runOpts = {
+    color: color || '#111827',
+  };
+  if (fontName) runOpts.fontName = fontName;
+  if (fontSize > 0) {
+    runOpts.fontSize = Math.max(11, Math.min(28, Math.round(fontSize / 100)));
+  }
+
+  return createHwpObjectTextBlock(
+    'equation',
+    objectInfo,
+    script || '[수식]',
+    runOpts,
+    {
+      script,
+      equationVersion: version,
+      equationFontName: fontName,
+      equationFontSize: fontSize,
+      baseline,
+    },
+  );
+}
+
+function parseHwpOleBlock(objectInfo, oleBody, docInfo = null, extras = {}) {
+  if (!oleBody || oleBody.length < 24) return null;
+
+  const attr = u16(oleBody, 0);
+  const extentX = i32(oleBody, 2);
+  const extentY = i32(oleBody, 6);
+  const binId = u16(oleBody, 10);
+  const binaryEntry = resolveHwpBinaryEntry(docInfo, binId);
+
+  let label = '[OLE 개체]';
+  if (extras?.hasChartData) label = '[차트]';
+  else if (extras?.hasVideoData) label = '[동영상]';
+  else if (binaryEntry?.name) label = `[OLE] ${binaryEntry.name}`;
+
+  return createHwpObjectTextBlock(
+    'ole',
+    {
+      ...objectInfo,
+      width: firstPositiveMetric(objectInfo?.width, extentX, 0),
+      height: firstPositiveMetric(objectInfo?.height, extentY, 0),
+    },
+    label,
+    {},
+    {
+      oleAttr: attr,
+      oleBinId: binId,
+      binaryName: binaryEntry?.name || '',
+      hasChartData: Boolean(extras?.hasChartData),
+      hasVideoData: Boolean(extras?.hasVideoData),
+    },
+  );
+}
+
+function parseHwpGsoBlock(objectInfo, pictureBody, docInfo = null) {
   if (!pictureBody?.length) return null;
   const imageRef = resolveHwpBinaryImage(docInfo, pictureBody);
   if (!imageRef?.src) return null;
 
   const width = firstPositiveMetric(
-    u32(ctrlBody, 16),
+    objectInfo?.width,
     u32(pictureBody, 52),
     u32(pictureBody, 20),
     u32(pictureBody, 28),
     0,
   );
   const height = firstPositiveMetric(
-    u32(ctrlBody, 20),
+    objectInfo?.height,
     u32(pictureBody, 56),
     u32(pictureBody, 32),
     u32(pictureBody, 40),
     0,
   );
 
-  return {
+  return withObjectLayout({
     type: 'image',
     src: imageRef.src,
-    alt: imageRef.name || 'image',
+    alt: objectInfo?.description || imageRef.name || 'image',
     width,
     height,
-    align: 'left',
-    inline: false,
-    offsetX: 0,
-    offsetY: 0,
     sourceFormat: 'hwp',
-  };
+  }, objectInfo);
 }
 
 function parseGsoControl(data, startPos, ctrlLevel, ctrlBody, docInfo = null) {
   let pos = startPos;
+  const objectInfo = parseHwpObjectCommon(ctrlBody);
   let pictureBody = null;
+  let equationBody = null;
+  let oleBody = null;
+  let hasChartData = false;
+  let hasVideoData = false;
 
   while (pos < data.length) {
     const rec = readRecord(data, pos);
@@ -924,12 +1447,29 @@ function parseGsoControl(data, startPos, ctrlLevel, ctrlBody, docInfo = null) {
     if (rec.level <= ctrlLevel) break;
     if (rec.tagId === 85 && !pictureBody) {
       pictureBody = rec.body;
+    } else if (rec.tagId === 88 && !equationBody) {
+      equationBody = rec.body;
+    } else if (rec.tagId === 84 && !oleBody) {
+      oleBody = rec.body;
+    } else if (rec.tagId === 95) {
+      hasChartData = true;
+    } else if (rec.tagId === 98) {
+      hasVideoData = true;
     }
     pos = rec.nextPos;
   }
 
+  let block = null;
+  if (equationBody) {
+    block = parseHwpEquationBlock(objectInfo, equationBody);
+  } else if (pictureBody) {
+    block = parseHwpGsoBlock(objectInfo, pictureBody, docInfo);
+  } else if (oleBody) {
+    block = parseHwpOleBlock(objectInfo, oleBody, docInfo, { hasChartData, hasVideoData });
+  }
+
   return {
-    block: parseHwpGsoBlock(ctrlBody, pictureBody, docInfo),
+    block,
     nextPos: pos,
   };
 }
@@ -1040,6 +1580,18 @@ function blockText(block) {
       .join('\n');
   }
 
+  if (block.type === 'image') {
+    return '[이미지]';
+  }
+
+  if (block.type === 'equation') {
+    return (block.texts || []).map(chunk => chunk.text || '').join('') || '[수식]';
+  }
+
+  if (block.type === 'ole') {
+    return (block.texts || []).map(chunk => chunk.text || '').join('') || '[OLE 개체]';
+  }
+
   return (block.texts || []).map(chunk => chunk.text || '').join('');
 }
 
@@ -1050,6 +1602,13 @@ function estimateBlockWeight(block) {
       (sum, row) => sum + tableRowWeight(block, row.index),
       0,
     );
+  }
+  if (block.type === 'image') {
+    if (block.inline) return 1;
+    return Math.max(1, Math.min(6, Math.round((Number(block.height) || 1200) / 1000)));
+  }
+  if (block.type === 'equation' || block.type === 'ole') {
+    return block.inline ? 1 : 2;
   }
   return 1;
 }
@@ -1145,15 +1704,63 @@ function buildTableBlock(tableInfo, cells) {
     ...cells.map(cell => cell.col + cell.colSpan),
   );
 
-  const columnWidths = Array.from({ length: colCount }, () => 0);
   const sortedCells = cells
     .filter(cell => cell.col < colCount && cell.row < rowCount)
     .sort((a, b) => (a.row - b.row) || (a.col - b.col));
 
+  const columnWidths = Array.from({ length: colCount }, () => 0);
+
+  // 워커와 메인 렌더러가 같은 열폭 기준을 써야 회귀 없이 같은 표 비율이 유지된다.
   for (const cell of sortedCells) {
-    const unitWidth = cell.width > 0 ? cell.width / Math.max(1, cell.colSpan) : 0;
-    for (let c = cell.col; c < Math.min(colCount, cell.col + cell.colSpan); c++) {
-      columnWidths[c] = Math.max(columnWidths[c], unitWidth);
+    if ((cell.colSpan || 1) !== 1 || !(cell.width > 0)) continue;
+    columnWidths[cell.col] = Math.max(columnWidths[cell.col], cell.width);
+  }
+
+  // 병합 셀은 비어 있는 열을 메우는 용도로만 반영하고, 단일 셀 폭을 덮어쓰지 않는다.
+  for (const cell of sortedCells) {
+    const span = Math.max(1, cell.colSpan || 1);
+    if (span === 1 || !(cell.width > 0)) continue;
+
+    const start = Math.max(0, cell.col);
+    const end = Math.min(colCount, cell.col + span);
+    const indices = [];
+    let existing = 0;
+    for (let c = start; c < end; c++) {
+      indices.push(c);
+      existing += columnWidths[c] || 0;
+    }
+
+    if (!indices.length) continue;
+    if (existing <= 0) {
+      const unitWidth = cell.width / indices.length;
+      indices.forEach(c => { columnWidths[c] = Math.max(columnWidths[c], unitWidth); });
+      continue;
+    }
+
+    if (cell.width <= existing) continue;
+
+    const deficit = cell.width - existing;
+    const zeroCols = indices.filter(c => !(columnWidths[c] > 0));
+    if (zeroCols.length) {
+      const unitWidth = deficit / zeroCols.length;
+      zeroCols.forEach(c => { columnWidths[c] = Math.max(columnWidths[c], unitWidth); });
+      continue;
+    }
+
+    const basis = indices.reduce((sum, c) => sum + (columnWidths[c] || 0), 0) || indices.length;
+    indices.forEach(c => {
+      const ratio = (columnWidths[c] || 0) > 0 ? ((columnWidths[c] || 0) / basis) : (1 / indices.length);
+      columnWidths[c] += deficit * ratio;
+    });
+  }
+
+  if (!columnWidths.every(width => width > 0)) {
+    const known = columnWidths.filter(width => width > 0);
+    const fallbackWidth = known.length
+      ? (known.reduce((sum, width) => sum + width, 0) / known.length)
+      : 1;
+    for (let c = 0; c < columnWidths.length; c++) {
+      if (!(columnWidths[c] > 0)) columnWidths[c] = fallbackWidth;
     }
   }
 
@@ -1185,10 +1792,11 @@ function buildTableBlock(tableInfo, cells) {
   };
 }
 
-function parseTableControl(data, startPos, ctrlLevel, docInfo = null) {
+function parseTableControl(data, startPos, ctrlLevel, docInfo = null, controlBody = null) {
   let pos = startPos;
   let tableInfo = null;
   const cells = [];
+  const objectInfo = parseHwpObjectCommon(controlBody);
 
   while (pos < data.length) {
     const rec = readRecord(data, pos);
@@ -1227,7 +1835,7 @@ function parseTableControl(data, startPos, ctrlLevel, docInfo = null) {
           const nestedCtrlId = ctrlId(next.body);
           if (nestedCtrlId === 'tbl ') {
             pushParagraph();
-            const { block, nextPos } = parseTableControl(data, next.nextPos, next.level, docInfo);
+            const { block, nextPos } = parseTableControl(data, next.nextPos, next.level, docInfo, next.body);
             if (block) paragraphs.push(block);
             pos = nextPos;
             continue;
@@ -1287,7 +1895,7 @@ function parseTableControl(data, startPos, ctrlLevel, docInfo = null) {
   }
 
   return {
-    block: buildTableBlock(tableInfo, cells),
+    block: withObjectLayout(buildTableBlock(tableInfo, cells), objectInfo),
     nextPos: pos,
   };
 }
@@ -1317,7 +1925,7 @@ function parseHwpBlockRange(data, startPos = 0, docInfo = null, stopLevel = null
       const controlId = ctrlId(rec.body);
       if (controlId === 'tbl ') {
         pushParagraph();
-        const { block, nextPos } = parseTableControl(data, rec.nextPos, rec.level, docInfo);
+        const { block, nextPos } = parseTableControl(data, rec.nextPos, rec.level, docInfo, rec.body);
         if (block) paras.push(block);
         pos = nextPos;
         continue;
@@ -1506,26 +2114,8 @@ function scanUtf16TextBlock(data, startOffset = 0, minRawLen = 20) {
  * 섹션 스트림을 raw/deflated 양쪽으로 구조 파싱하고, 모두 실패하면 UTF-16 텍스트 블록 복구까지 시도합니다.
  * 그래도 본문 후보가 없을 때만 빈 결과를 반환해 상위 단계가 PrvText fallback 으로 넘어가게 합니다.
  */
-async function extractSectionParas(data, compressedHint, sectionName, docInfo = null) {
-  const attempts = [];
-  const pushAttempt = (mode, bytes) => {
-    if (!bytes || bytes.length === 0) return;
-    attempts.push({ mode, bytes });
-  };
-
-  if (compressedHint) {
-    try {
-      pushAttempt('deflated', await decompressZlib(data));
-    } catch (e) {
-      console.warn(`[Worker] ${sectionName} 압축 해제 실패:`, e.message);
-      pushAttempt('raw', data);
-    }
-  } else {
-    pushAttempt('raw', data);
-    try {
-      pushAttempt('deflated', await decompressZlib(data));
-    } catch {}
-  }
+async function extractSectionParas(data, compressedHint, sectionName, docInfo = null, distributedHint = false) {
+  const attempts = await buildHwpRecordAttempts(data, { compressedHint, distributedHint });
 
   let bestParas = [];
   let bestHeaderBlocks = [];
@@ -1602,6 +2192,7 @@ async function parseBodyText(b) {
 
   // FileHeader → 압축/암호화 플래그 확인
   let compressed = true;
+  let distributed = false;
   if (entries.FileHeader) {
     const { startSec, streamSz } = entries.FileHeader;
     let fhData;
@@ -1613,7 +2204,8 @@ async function parseBodyText(b) {
     if (fhData && fhData.length >= 40) {
       compressed = (fhData[36] & 1) !== 0;
       const encrypted = (fhData[36] & 2) !== 0;
-      if (encrypted) {
+      distributed = (fhData[36] & 4) !== 0;
+      if (encrypted && !distributed) {
         self.postMessage({ type: 'progress', msg: '암호화된 문서입니다 — 복호화 불가' });
         return null;
       }
@@ -1631,7 +2223,10 @@ async function parseBodyText(b) {
       docInfoData = readStreamByFat(b, startSec, streamSz, ss, fat);
     }
     if (docInfoData?.length) {
-      docInfo = await parseHwpDocInfoStream(docInfoData, compressed);
+      docInfo = await parseHwpDocInfoStream(docInfoData, {
+        compressedHint: compressed,
+        distributedHint: distributed,
+      });
     }
   }
 
@@ -1640,6 +2235,7 @@ async function parseBodyText(b) {
   docInfo.images = hwpImages.images;
   docInfo.binImages = hwpImages.ordered;
   docInfo.binImagesById = hwpImages.byId;
+  docInfo.binEntriesById = hwpImages.allById;
   docInfo.binImageCursor = 0;
 
   let sectionNumbers = Object.keys(entries)
@@ -1676,7 +2272,7 @@ async function parseBodyText(b) {
     }
     if (!data || data.length === 0) continue;
 
-    const parsed = await extractSectionParas(data, compressed, 'Section' + sn, docInfo);
+    const parsed = await extractSectionParas(data, compressed, 'Section' + sn, docInfo, distributed);
     allParas.push(...(parsed?.paras || []));
     if (!headerBlocks.length && parsed?.headerBlocks?.length) {
       headerBlocks = parsed.headerBlocks;
@@ -1821,7 +2417,7 @@ self.onmessage = async ({ data }) => {
   try {
     let doc;
 
-    if (ext === 'hwpx') {
+    if (ext === 'hwpx' || ext === 'owpml') {
       try {
         importScripts('../lib/jszip.min.js');
         doc = await parseHwpx(buffer);

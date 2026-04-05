@@ -71,9 +71,9 @@ let   exporter = null;
  * @param {File} file
  */
 async function processFile(file) {
-  const allowed = /\.(hwp|hwpx)$/i;
+  const allowed = /\.(hwp|hwpx|owpml)$/i;
   if (!allowed.test(file.name)) {
-    showError(`지원하지 않는 파일 형식입니다: ${file.name} (.hwp 또는 .hwpx 파일을 선택하세요)`);
+    showError(`지원하지 않는 파일 형식입니다: ${file.name} (.hwp, .hwpx 또는 .owpml 파일을 선택하세요)`);
     return;
   }
 
@@ -157,9 +157,26 @@ function renderDocument(doc) {
           if (run.bold)      s.fontWeight    = 'bold';
           if (run.italic)    s.fontStyle     = 'italic';
           if (run.underline) s.textDecoration = 'underline';
-          if (run.fontSize)  s.fontSize      = `${run.fontSize}pt`;
+          const relSize = Number.isFinite(Number(run.relSize)) && Number(run.relSize) > 0
+            ? Number(run.relSize) / 100
+            : 1;
+          const fontSize = (Number(run.fontSize) || 0) * relSize;
+          if (fontSize)      s.fontSize      = `${Math.round(fontSize * 10) / 10}pt`;
           if (run.fontName)  s.fontFamily    = `'${run.fontName}', sans-serif`;
           if (run.color && run.color !== '#000000') s.color = run.color;
+          if (Number.isFinite(run.letterSpacing) && run.letterSpacing !== 0) {
+            s.letterSpacing = `${Math.max(-0.5, Math.min(0.5, run.letterSpacing / 100))}em`;
+          }
+          if (Number.isFinite(run.offsetY) && run.offsetY !== 0) {
+            s.position = 'relative';
+            s.top = `${Math.max(-1, Math.min(1, run.offsetY / 100))}em`;
+          }
+          if (Number.isFinite(run.scaleX) && run.scaleX > 0 && run.scaleX !== 100) {
+            s.display = 'inline-block';
+            s.transformOrigin = 'left center';
+            s.fontStretch = `${Math.max(50, Math.min(200, run.scaleX))}%`;
+            s.transform = `scaleX(${Math.max(0.5, Math.min(2, run.scaleX / 100))})`;
+          }
 
           pEl.appendChild(span);
         });
@@ -336,7 +353,7 @@ document.addEventListener('dragover', e => e.preventDefault());
 document.addEventListener('drop', e => {
   e.preventDefault();
   const file = e.dataTransfer?.files?.[0];
-  if (file && /\.(hwp|hwpx)$/i.test(file.name)) processFile(file);
+  if (file && /\.(hwp|hwpx|owpml)$/i.test(file.name)) processFile(file);
 });
 
 // ── 스크롤 시 현재 페이지 추적 ─────────────

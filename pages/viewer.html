@@ -29,6 +29,7 @@
       <button id="btnSaveCurrent" class="btn btn-export" disabled>💾 저장</button>
       <select id="saveAsFormat" class="save-format-select" aria-label="다른 이름으로 저장 형식">
         <option value="hwpx">HWPX</option>
+        <option value="owpml">OWPML</option>
         <option value="html">HTML</option>
         <option value="pdf">PDF</option>
         <option value="hwp">HWP</option>
@@ -37,16 +38,16 @@
       <button id="btnPrint" class="btn btn-export" disabled>🖨️ 인쇄</button>
     </div>
   </div>
-  <input type="file" id="fileInput" accept=".hwp,.hwpx" style="display:none" />
+  <input type="file" id="fileInput" accept=".hwp,.hwpx,.owpml" style="display:none" />
 </header>
 
 <!-- ───────────── 드래그&드롭 업로드 존 ───────────── -->
 <div class="drop-zone" id="dropZone">
   <div class="drop-zone-inner">
     <div class="drop-icon">📂</div>
-    <p class="drop-title">HWP / HWPX 파일을 여기에 끌어다 놓으세요</p>
+    <p class="drop-title">HWP / HWPX / OWPML 파일을 여기에 끌어다 놓으세요</p>
     <p class="drop-sub">또는 <button class="link-btn" id="btnDropOpen">파일 선택</button></p>
-    <p class="drop-note">지원 형식: .hwp (HWP 5.0+), .hwpx</p>
+    <p class="drop-note">지원 형식: .hwp (HWP 5.0+), .hwpx, .owpml</p>
   </div>
 </div>
 

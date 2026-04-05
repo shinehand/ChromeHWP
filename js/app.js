@@ -12,9 +12,9 @@ const HwpParser = {
     const ext = filename.split('.').pop().toLowerCase();
     await new Promise(r => setTimeout(r, 80));
 
-    if (ext === 'hwpx') return HwpParser._parseHwpx(buffer);
+    if (ext === 'hwpx' || ext === 'owpml') return HwpParser._parseHwpx(buffer);
     if (ext === 'hwp')  return await HwpParser._parseHwp5(buffer);
-    throw new Error(`지원하지 않는 형식: .${ext} (.hwp / .hwpx 만 가능)`);
+    throw new Error(`지원하지 않는 형식: .${ext} (.hwp / .hwpx / .owpml 만 가능)`);
   },
 
   /* ── HWPX ── */
@@ -194,6 +194,7 @@ const HwpParser = {
           textIndent: HwpParser._hwpxAttrNum(HwpParser._hwpxDescendant(marginEl, 'intent'), 'value', 0),
           spacingBefore: HwpParser._hwpxAttrNum(HwpParser._hwpxDescendant(marginEl, 'prev'), 'value', 0),
           spacingAfter: HwpParser._hwpxAttrNum(HwpParser._hwpxDescendant(marginEl, 'next'), 'value', 0),
+          lineSpacingType: HwpParser._normalizeLineSpacingType(lineSpacingEl?.getAttribute?.('type')),
           lineSpacing: HwpParser._hwpxAttrNum(lineSpacingEl, 'value', 0),
         };
         return;
@@ -204,6 +205,10 @@ const HwpParser = {
         if (!Number.isFinite(id)) return;
         const fontRefEl = HwpParser._hwpxFirstChild(node, 'fontRef');
         const underlineEl = HwpParser._hwpxFirstChild(node, 'underline');
+        const ratioEl = HwpParser._hwpxFirstChild(node, 'ratio');
+        const spacingEl = HwpParser._hwpxFirstChild(node, 'spacing');
+        const relSzEl = HwpParser._hwpxFirstChild(node, 'relSz');
+        const offsetEl = HwpParser._hwpxFirstChild(node, 'offset');
         refs.charProps[id] = {
           fontName: refs.hangulFonts[String(fontRefEl?.getAttribute?.('hangul'))] || '',
           fontSize: HwpParser._hwpxAttrNum(node, 'height', 0) > 0
@@ -213,6 +218,10 @@ const HwpParser = {
           bold: Boolean(HwpParser._hwpxFirstChild(node, 'bold')),
           italic: Boolean(HwpParser._hwpxFirstChild(node, 'italic')),
           underline: (underlineEl?.getAttribute?.('type') || 'NONE') !== 'NONE',
+          scaleX: HwpParser._hwpxCharAttrNum(ratioEl, 100),
+          letterSpacing: HwpParser._hwpxCharAttrNum(spacingEl, 0),
+          relSize: HwpParser._hwpxCharAttrNum(relSzEl, 100),
+          offsetY: HwpParser._hwpxCharAttrNum(offsetEl, 0),
         };
       }
     });
@@ -306,6 +315,53 @@ const HwpParser = {
     return Number.isFinite(value) ? value : fallback;
   },
 
+  _hwpxCharAttrNum(node, fallback = 0) {
+    const attrs = ['hangul', 'latin', 'hanja', 'japanese', 'other', 'symbol', 'user'];
+    for (const attr of attrs) {
+      const value = Number(node?.getAttribute?.(attr));
+      if (Number.isFinite(value)) return value;
+    }
+    return fallback;
+  },
+
+  _normalizeObjectRelTo(value, axis = 'horz') {
+    const raw = String(value || '').trim().toLowerCase().replace(/[_\s]+/g, '-');
+    if (!raw) return axis === 'horz' ? 'column' : 'para';
+    if (['paper', 'page', 'para', 'column', 'absolute'].includes(raw)) return raw;
+    return axis === 'horz' ? 'column' : 'para';
+  },
+
+  _normalizeObjectAlign(value, axis = 'horz') {
+    const raw = String(value || '').trim().toLowerCase().replace(/[_\s]+/g, '-');
+    if (!raw) return axis === 'horz' ? 'left' : 'top';
+    if (['left', 'center', 'right', 'top', 'bottom', 'inside', 'outside'].includes(raw)) return raw;
+    return axis === 'horz' ? 'left' : 'top';
+  },
+
+  _normalizeObjectTextWrap(value) {
+    const raw = String(value || '').trim().toLowerCase().replace(/[_\s]+/g, '-');
+    if (['square', 'tight', 'through'].includes(raw)) return raw;
+    if (['top-and-bottom', 'topandbottom'].includes(raw)) return 'top-and-bottom';
+    if (['behind-text', 'behindtext'].includes(raw)) return 'behind-text';
+    if (['in-front-of-text', 'infrontoftext', 'front-of-text'].includes(raw)) return 'in-front-of-text';
+    return raw || 'top-and-bottom';
+  },
+
+  _normalizeObjectTextFlow(value) {
+    const raw = String(value || '').trim().toLowerCase().replace(/[_\s]+/g, '-');
+    if (['both-sides', 'bothsides'].includes(raw)) return 'both-sides';
+    if (['left-only', 'leftonly'].includes(raw)) return 'left-only';
+    if (['right-only', 'rightonly'].includes(raw)) return 'right-only';
+    if (['largest-only', 'largestonly'].includes(raw)) return 'largest-only';
+    return raw || 'both-sides';
+  },
+
+  _normalizeObjectSizeRelTo(value, axis = 'width') {
+    const raw = String(value || '').trim().toLowerCase().replace(/[_\s]+/g, '-');
+    if (['paper', 'page', 'column', 'para', 'absolute'].includes(raw)) return raw;
+    return axis === 'width' ? 'absolute' : 'absolute';
+  },
+
   _hwpxParseMm(value) {
     const match = String(value || '').match(/-?\d+(?:\.\d+)?/);
     return match ? Number(match[0]) : 0;
@@ -359,7 +415,11 @@ const HwpParser = {
       && a.underline === b.underline
       && a.fontSize === b.fontSize
       && a.fontName === b.fontName
-      && a.color === b.color;
+      && a.color === b.color
+      && a.scaleX === b.scaleX
+      && a.letterSpacing === b.letterSpacing
+      && a.relSize === b.relSize
+      && a.offsetY === b.offsetY;
   },
 
   _hwpxPushTextRun(runBuffer, text, style = {}) {
@@ -405,12 +465,71 @@ const HwpParser = {
     };
   },
 
+  _withObjectLayout(block, objectInfo = {}) {
+    if (!block) return block;
+    return {
+      ...block,
+      align: objectInfo?.align || block.align || 'left',
+      inline: objectInfo?.inline ?? block.inline ?? false,
+      affectLineSpacing: objectInfo?.affectLineSpacing ?? block.affectLineSpacing ?? false,
+      vertRelTo: objectInfo?.vertRelTo || block.vertRelTo || 'para',
+      vertAlign: objectInfo?.vertAlign || block.vertAlign || 'top',
+      horzRelTo: objectInfo?.horzRelTo || block.horzRelTo || 'column',
+      horzAlign: objectInfo?.horzAlign || block.horzAlign || block.align || 'left',
+      offsetX: Number(objectInfo?.horzOffset ?? block.offsetX) || 0,
+      offsetY: Number(objectInfo?.vertOffset ?? block.offsetY) || 0,
+      flowWithText: objectInfo?.flowWithText ?? block.flowWithText ?? false,
+      allowOverlap: objectInfo?.allowOverlap ?? block.allowOverlap ?? false,
+      holdAnchorAndSO: objectInfo?.holdAnchorAndSO ?? block.holdAnchorAndSO ?? false,
+      widthRelTo: objectInfo?.widthRelTo || block.widthRelTo || 'absolute',
+      heightRelTo: objectInfo?.heightRelTo || block.heightRelTo || 'absolute',
+      sizeProtected: objectInfo?.sizeProtected ?? block.sizeProtected ?? false,
+      textWrap: objectInfo?.textWrap || block.textWrap || 'top-and-bottom',
+      textFlow: objectInfo?.textFlow || block.textFlow || 'both-sides',
+      zOrder: Number(objectInfo?.zOrder ?? block.zOrder) || 0,
+      outMargin: Array.isArray(objectInfo?.margin)
+        ? [...objectInfo.margin]
+        : (Array.isArray(block.outMargin) ? [...block.outMargin] : []),
+    };
+  },
+
+  _hwpxParseObjectLayout(node) {
+    const posEl = HwpParser._hwpxFirstChild(node, 'pos');
+    const sizeEl = HwpParser._hwpxFirstChild(node, 'sz');
+    const outMarginEl = HwpParser._hwpxFirstChild(node, 'outMargin');
+    return {
+      inline: posEl?.getAttribute?.('treatAsChar') === '1',
+      affectLineSpacing: posEl?.getAttribute?.('affectLSpacing') === '1',
+      vertRelTo: HwpParser._normalizeObjectRelTo(posEl?.getAttribute?.('vertRelTo'), 'vert'),
+      vertAlign: HwpParser._normalizeObjectAlign(posEl?.getAttribute?.('vertAlign'), 'vert'),
+      horzRelTo: HwpParser._normalizeObjectRelTo(posEl?.getAttribute?.('horzRelTo'), 'horz'),
+      horzAlign: HwpParser._normalizeObjectAlign(posEl?.getAttribute?.('horzAlign'), 'horz'),
+      vertOffset: HwpParser._hwpxAttrNum(posEl, 'vertOffset', 0),
+      horzOffset: HwpParser._hwpxAttrNum(posEl, 'horzOffset', 0),
+      flowWithText: posEl?.getAttribute?.('flowWithText') === '1',
+      allowOverlap: posEl?.getAttribute?.('allowOverlap') === '1',
+      holdAnchorAndSO: posEl?.getAttribute?.('holdAnchorAndSO') === '1',
+      widthRelTo: HwpParser._normalizeObjectSizeRelTo(sizeEl?.getAttribute?.('widthRelTo'), 'width'),
+      heightRelTo: HwpParser._normalizeObjectSizeRelTo(sizeEl?.getAttribute?.('heightRelTo'), 'height'),
+      sizeProtected: sizeEl?.getAttribute?.('protect') === '1',
+      textWrap: HwpParser._normalizeObjectTextWrap(node?.getAttribute?.('textWrap')),
+      textFlow: HwpParser._normalizeObjectTextFlow(node?.getAttribute?.('textFlow')),
+      zOrder: HwpParser._hwpxAttrNum(node, 'zOrder', 0),
+      margin: [
+        HwpParser._hwpxAttrNum(outMarginEl, 'left', 0),
+        HwpParser._hwpxAttrNum(outMarginEl, 'right', 0),
+        HwpParser._hwpxAttrNum(outMarginEl, 'top', 0),
+        HwpParser._hwpxAttrNum(outMarginEl, 'bottom', 0),
+      ],
+    };
+  },
+
   _hwpxPictureBlock(picEl, header = {}) {
     const imgEl = HwpParser._hwpxDescendant(picEl, 'img');
     const curSizeEl = HwpParser._hwpxFirstChild(picEl, 'curSz');
     const orgSizeEl = HwpParser._hwpxFirstChild(picEl, 'orgSz');
     const sizeEl = HwpParser._hwpxFirstChild(picEl, 'sz') || curSizeEl || orgSizeEl;
-    const posEl = HwpParser._hwpxFirstChild(picEl, 'pos');
+    const objectInfo = HwpParser._hwpxParseObjectLayout(picEl);
     const ref = imgEl?.getAttribute?.('binaryItemIDRef') || '';
     const src = header?.images?.[ref] || '';
     if (!src) return null;
@@ -419,17 +538,15 @@ const HwpParser = {
     const height = HwpParser._hwpxAttrNum(sizeEl, 'height',
       HwpParser._hwpxAttrNum(curSizeEl, 'height', HwpParser._hwpxAttrNum(orgSizeEl, 'height', 0)));
 
-    return {
+    return HwpParser._withObjectLayout({
       type: 'image',
       src,
       alt: ref || 'image',
       width,
       height,
-      align: HwpParser._hwpxMapAlign(posEl?.getAttribute?.('horzAlign') || 'LEFT'),
-      inline: posEl?.getAttribute?.('treatAsChar') === '1',
-      offsetX: HwpParser._hwpxAttrNum(posEl, 'horzOffset', 0),
-      offsetY: HwpParser._hwpxAttrNum(posEl, 'vertOffset', 0),
-    };
+      sourceFormat: 'hwpx',
+      description: HwpParser._hwpxFirstChild(picEl, 'shapeComment')?.textContent?.trim?.() || '',
+    }, objectInfo);
   },
 
   _hwpxInlineImageRun(picEl, header = {}) {
@@ -639,10 +756,7 @@ const HwpParser = {
           blocks.push(...HwpParser._hwpxTableBlocks(child, header));
         } else if (name === 'pic') {
           const imageBlock = HwpParser._hwpxPictureBlock(child, header);
-          const canInlineImage = imageBlock && paragraphHasText && (
-            imageBlock.inline
-            || (imageBlock.width > 0 && imageBlock.width <= 9000 && imageBlock.height <= 5000)
-          );
+          const canInlineImage = imageBlock && paragraphHasText && imageBlock.inline;
           if (canInlineImage) {
             const imageRun = HwpParser._hwpxInlineImageRun(child, header);
             if (imageRun) runBuffer.push(imageRun);
@@ -667,6 +781,7 @@ const HwpParser = {
   _hwpxTableBlocks(tblEl, header = {}) {
     const rowEls = HwpParser._hwpxChildren(tblEl, 'tr');
     const cells = [];
+    const objectInfo = HwpParser._hwpxParseObjectLayout(tblEl);
 
     rowEls.forEach((trEl, rowIndex) => {
       HwpParser._hwpxChildren(trEl, 'tc').forEach((tcEl, cellIndex) => {
@@ -709,12 +824,12 @@ const HwpParser = {
       });
     });
 
-    const table = HwpParser._hwpxNormalizeTableMetrics(HwpParser._buildTableBlock({
+    const table = HwpParser._hwpxNormalizeTableMetrics(HwpParser._withObjectLayout(HwpParser._buildTableBlock({
       rowCount: Math.max(rowEls.length, HwpParser._hwpxAttrNum(tblEl, 'rowCnt', rowEls.length)),
       colCount: HwpParser._hwpxAttrNum(tblEl, 'colCnt', 0),
       cellSpacing: HwpParser._hwpxAttrNum(tblEl, 'cellSpacing', 0),
       sourceFormat: 'hwpx',
-    }, cells));
+    }, cells), objectInfo));
 
     if (!table || !HwpParser._blockHasVisualContent(table)) {
       return [];
@@ -1166,7 +1281,7 @@ const HwpParser = {
 
   async _parseHwpBinaryMap(b, allEntries, ss, fat, miniCutoff, miniStream, miniFat) {
     const binEntries = Object.entries(allEntries || {})
-      .filter(([name]) => /^BIN\d+\.(png|jpe?g|gif|bmp|webp)$/i.test(name))
+      .filter(([name]) => /^BIN\d+\./i.test(name))
       .sort((a, b) => {
         const ai = Number((a[0].match(/^BIN(\d+)/i) || [])[1] || 0);
         const bi = Number((b[0].match(/^BIN(\d+)/i) || [])[1] || 0);
@@ -1176,8 +1291,21 @@ const HwpParser = {
     const images = {};
     const ordered = [];
     const byId = {};
+    const allById = {};
 
     for (const [name, entry] of binEntries) {
+      const numericId = Number((name.match(/^BIN(\d+)/i) || [])[1] || 0);
+      const baseEntry = {
+        id: numericId,
+        name,
+        size: Number(entry?.streamSz) || 0,
+      };
+      if (numericId > 0) {
+        allById[numericId] = baseEntry;
+      }
+
+      if (!/\.(png|jpe?g|gif|bmp|webp)$/i.test(name)) continue;
+
       let bytes = HwpParser._readEntryStream(b, entry, ss, fat, miniCutoff, miniStream, miniFat);
       if (!bytes?.length) continue;
 
@@ -1191,16 +1319,291 @@ const HwpParser = {
       if (!mime) continue;
 
       const src = `data:${mime};base64,${HwpParser._bytesToBase64(bytes)}`;
-      const numericId = Number((name.match(/^BIN(\d+)/i) || [])[1] || 0);
-      const imageEntry = { id: numericId, name, src };
+      const imageEntry = { ...baseEntry, src, mime };
       images[name] = src;
       ordered.push(imageEntry);
       if (numericId > 0) {
         byId[numericId] = imageEntry;
+        allById[numericId] = imageEntry;
       }
     }
 
-    return { images, ordered, byId };
+    return { images, ordered, byId, allById };
+  },
+
+  _hwpRotl8(value, shift) {
+    return ((value << shift) | (value >> (8 - shift))) & 0xFF;
+  },
+
+  _hwpGfMul(a, b) {
+    let aa = a & 0xFF;
+    let bb = b & 0xFF;
+    let out = 0;
+    while (bb > 0) {
+      if (bb & 1) out ^= aa;
+      aa = (aa << 1) ^ ((aa & 0x80) ? 0x11B : 0);
+      aa &= 0xFF;
+      bb >>= 1;
+    }
+    return out & 0xFF;
+  },
+
+  _hwpGfPow(base, exponent) {
+    let out = 1;
+    let value = base & 0xFF;
+    let exp = exponent >>> 0;
+    while (exp > 0) {
+      if (exp & 1) out = HwpParser._hwpGfMul(out, value);
+      value = HwpParser._hwpGfMul(value, value);
+      exp >>>= 1;
+    }
+    return out & 0xFF;
+  },
+
+  _hwpAesTables() {
+    if (HwpParser.__hwpAesTables) return HwpParser.__hwpAesTables;
+
+    const sbox = new Uint8Array(256);
+    const invSbox = new Uint8Array(256);
+    const rcon = new Uint8Array(10);
+
+    let r = 1;
+    for (let i = 0; i < rcon.length; i++) {
+      rcon[i] = r;
+      r = HwpParser._hwpGfMul(r, 2);
+    }
+
+    for (let i = 0; i < 256; i++) {
+      const inv = i === 0 ? 0 : HwpParser._hwpGfPow(i, 254);
+      const value = (
+        inv
+        ^ HwpParser._hwpRotl8(inv, 1)
+        ^ HwpParser._hwpRotl8(inv, 2)
+        ^ HwpParser._hwpRotl8(inv, 3)
+        ^ HwpParser._hwpRotl8(inv, 4)
+        ^ 0x63
+      ) & 0xFF;
+      sbox[i] = value;
+      invSbox[value] = i;
+    }
+
+    HwpParser.__hwpAesTables = { sbox, invSbox, rcon };
+    return HwpParser.__hwpAesTables;
+  },
+
+  _hwpAesExpandKey(keyBytes) {
+    const key = keyBytes instanceof Uint8Array ? keyBytes : new Uint8Array(keyBytes || []);
+    if (key.length !== 16) {
+      throw new Error('AES-128 키 길이가 올바르지 않습니다.');
+    }
+
+    const { sbox, rcon } = HwpParser._hwpAesTables();
+    const expanded = new Uint8Array(176);
+    expanded.set(key);
+
+    let generated = 16;
+    let rconIndex = 0;
+    const temp = new Uint8Array(4);
+
+    while (generated < expanded.length) {
+      temp.set(expanded.slice(generated - 4, generated));
+      if (generated % 16 === 0) {
+        const first = temp[0];
+        temp[0] = sbox[temp[1]] ^ rcon[rconIndex++];
+        temp[1] = sbox[temp[2]];
+        temp[2] = sbox[temp[3]];
+        temp[3] = sbox[first];
+      }
+      for (let i = 0; i < 4; i++) {
+        expanded[generated] = expanded[generated - 16] ^ temp[i];
+        generated += 1;
+      }
+    }
+
+    return expanded;
+  },
+
+  _hwpAesAddRoundKey(state, roundKeys, offset) {
+    for (let i = 0; i < 16; i++) {
+      state[i] ^= roundKeys[offset + i];
+    }
+  },
+
+  _hwpAesInvShiftRows(state) {
+    const copy = state.slice();
+    state[0] = copy[0];   state[4] = copy[4];   state[8] = copy[8];   state[12] = copy[12];
+    state[1] = copy[13];  state[5] = copy[1];   state[9] = copy[5];   state[13] = copy[9];
+    state[2] = copy[10];  state[6] = copy[14];  state[10] = copy[2];  state[14] = copy[6];
+    state[3] = copy[7];   state[7] = copy[11];  state[11] = copy[15]; state[15] = copy[3];
+  },
+
+  _hwpAesInvSubBytes(state, invSbox) {
+    for (let i = 0; i < 16; i++) {
+      state[i] = invSbox[state[i]];
+    }
+  },
+
+  _hwpAesInvMixColumns(state) {
+    for (let col = 0; col < 4; col++) {
+      const offset = col * 4;
+      const s0 = state[offset];
+      const s1 = state[offset + 1];
+      const s2 = state[offset + 2];
+      const s3 = state[offset + 3];
+      state[offset] = (
+        HwpParser._hwpGfMul(s0, 14)
+        ^ HwpParser._hwpGfMul(s1, 11)
+        ^ HwpParser._hwpGfMul(s2, 13)
+        ^ HwpParser._hwpGfMul(s3, 9)
+      ) & 0xFF;
+      state[offset + 1] = (
+        HwpParser._hwpGfMul(s0, 9)
+        ^ HwpParser._hwpGfMul(s1, 14)
+        ^ HwpParser._hwpGfMul(s2, 11)
+        ^ HwpParser._hwpGfMul(s3, 13)
+      ) & 0xFF;
+      state[offset + 2] = (
+        HwpParser._hwpGfMul(s0, 13)
+        ^ HwpParser._hwpGfMul(s1, 9)
+        ^ HwpParser._hwpGfMul(s2, 14)
+        ^ HwpParser._hwpGfMul(s3, 11)
+      ) & 0xFF;
+      state[offset + 3] = (
+        HwpParser._hwpGfMul(s0, 11)
+        ^ HwpParser._hwpGfMul(s1, 13)
+        ^ HwpParser._hwpGfMul(s2, 9)
+        ^ HwpParser._hwpGfMul(s3, 14)
+      ) & 0xFF;
+    }
+  },
+
+  _hwpAesDecryptBlock(block, expandedKey) {
+    const { invSbox } = HwpParser._hwpAesTables();
+    const state = new Uint8Array(block);
+
+    HwpParser._hwpAesAddRoundKey(state, expandedKey, 160);
+    for (let round = 9; round >= 1; round--) {
+      HwpParser._hwpAesInvShiftRows(state);
+      HwpParser._hwpAesInvSubBytes(state, invSbox);
+      HwpParser._hwpAesAddRoundKey(state, expandedKey, round * 16);
+      HwpParser._hwpAesInvMixColumns(state);
+    }
+    HwpParser._hwpAesInvShiftRows(state);
+    HwpParser._hwpAesInvSubBytes(state, invSbox);
+    HwpParser._hwpAesAddRoundKey(state, expandedKey, 0);
+    return state;
+  },
+
+  _hwpAesEcbDecrypt(data, keyBytes) {
+    const bytes = data instanceof Uint8Array ? data : new Uint8Array(data || []);
+    const expandedKey = HwpParser._hwpAesExpandKey(keyBytes);
+    const alignedLength = bytes.length - (bytes.length % 16);
+    const out = new Uint8Array(bytes.length);
+
+    for (let offset = 0; offset < alignedLength; offset += 16) {
+      const block = HwpParser._hwpAesDecryptBlock(bytes.slice(offset, offset + 16), expandedKey);
+      out.set(block, offset);
+    }
+    if (alignedLength < bytes.length) {
+      out.set(bytes.slice(alignedLength), alignedLength);
+    }
+    return out;
+  },
+
+  _hwpBuildDistributeRandomBytes(seed) {
+    const out = new Uint8Array(256);
+    let written = 0;
+    let state = seed >>> 0;
+    const nextRand = () => {
+      state = (Math.imul(state, 214013) + 2531011) >>> 0;
+      return (state >>> 16) & 0x7FFF;
+    };
+
+    while (written < out.length) {
+      const value = nextRand() & 0xFF;
+      const repeat = (nextRand() & 0x0F) + 1;
+      for (let i = 0; i < repeat && written < out.length; i++) {
+        out[written++] = value;
+      }
+    }
+    return out;
+  },
+
+  _extractHwpDistributeKeyData(distributeBody) {
+    if (!distributeBody || distributeBody.length < 256) return null;
+    const seed = HwpParser._u32(distributeBody, 0);
+    const randomBytes = HwpParser._hwpBuildDistributeRandomBytes(seed);
+    const merged = new Uint8Array(256);
+    for (let i = 0; i < merged.length; i++) {
+      merged[i] = randomBytes[i] ^ distributeBody[i];
+    }
+    const offset = (seed & 0x0F) + 4;
+    if (offset + 82 > merged.length) return null;
+    const hashBytes = merged.slice(offset, offset + 80);
+    return {
+      seed,
+      offset,
+      hashBytes,
+      aesKey: hashBytes.slice(0, 16),
+      optionFlags: HwpParser._u16(merged, offset + 80),
+    };
+  },
+
+  _unwrapHwpDistributedStream(data) {
+    const rec = HwpParser._readRecord(data, 0);
+    if (!rec || rec.tagId !== 28 || rec.body.length < 256) return null;
+    const keyData = HwpParser._extractHwpDistributeKeyData(rec.body);
+    if (!keyData?.aesKey?.length) return null;
+    const payload = data.slice(rec.nextPos);
+    return {
+      bytes: HwpParser._hwpAesEcbDecrypt(payload, keyData.aesKey),
+      optionFlags: keyData.optionFlags,
+      keyData,
+    };
+  },
+
+  async _buildHwpRecordAttempts(data, options = {}) {
+    const { compressedHint = false, distributedHint = false } = options || {};
+    const attempts = [];
+    const seen = new Set();
+    const pushAttempt = (mode, bytes) => {
+      if (!bytes || bytes.length === 0) return;
+      const signature = `${bytes.length}:${Array.from(bytes.slice(0, 16)).join(',')}`;
+      if (seen.has(signature)) return;
+      seen.add(signature);
+      attempts.push({ mode, bytes });
+    };
+
+    const tryInflate = async (label, bytes) => {
+      try {
+        pushAttempt(label, await HwpParser._decompressZlib(bytes));
+      } catch {}
+    };
+
+    pushAttempt('raw', data);
+    if (compressedHint) {
+      await tryInflate('deflated', data);
+    } else {
+      await tryInflate('deflated', data);
+    }
+
+    if (distributedHint) {
+      const rawDistributed = HwpParser._unwrapHwpDistributedStream(data);
+      if (rawDistributed?.bytes?.length) {
+        pushAttempt('distributed', rawDistributed.bytes);
+        await tryInflate('distributed+deflated', rawDistributed.bytes);
+      }
+
+      try {
+        const deflated = await HwpParser._decompressZlib(data);
+        const deflatedDistributed = HwpParser._unwrapHwpDistributedStream(deflated);
+        if (deflatedDistributed?.bytes?.length) {
+          pushAttempt('deflated+distributed', deflatedDistributed.bytes);
+        }
+      } catch {}
+    }
+
+    return attempts;
   },
 
   /* ── zlib 압축 해제 ── */
@@ -1451,6 +1854,10 @@ const HwpParser = {
     if (!body || body.length < 56) return null;
     const attr = HwpParser._u32(body, 46);
     const faceId = HwpParser._u16(body, 0);
+    const scaleX = body[14] ?? 100;
+    const letterSpacing = (body[21] ?? 0) << 24 >> 24;
+    const relSize = body[28] ?? 100;
+    const offsetY = (body[35] ?? 0) << 24 >> 24;
     const fontSizeRaw = HwpParser._u32(body, 42);
     return {
       fontName: faceNames[faceId] || '',
@@ -1459,6 +1866,10 @@ const HwpParser = {
       bold: Boolean(attr & (1 << 1)),
       italic: Boolean(attr & 1),
       underline: ((attr >> 2) & 0x3) !== 0,
+      scaleX,
+      letterSpacing,
+      relSize,
+      offsetY,
     };
   },
 
@@ -1476,9 +1887,30 @@ const HwpParser = {
     }
   },
 
+  _normalizeLineSpacingType(value) {
+    const raw = String(value || '').trim().toLowerCase();
+    if (!raw) return '';
+    if (['percent', 'percentage', 'ratio', 'char', 'chars', 'character', 'relative'].includes(raw)) return 'percent';
+    if (['fixed', 'fixed-value', 'fixedvalue'].includes(raw)) return 'fixed';
+    if (['space-only', 'spaceonly', 'margin', 'margins-only', 'betweenlines', 'between-lines', 'only-margin'].includes(raw)) return 'space-only';
+    if (['minimum', 'minimum-value', 'minimumvalue', 'at-least', 'at_least', 'min'].includes(raw)) return 'minimum';
+    return raw;
+  },
+
+  _hwpLineSpacingTypeFromCode(code) {
+    switch (Number(code)) {
+      case 0: return 'percent';
+      case 1: return 'fixed';
+      case 2: return 'space-only';
+      case 3: return 'minimum';
+      default: return '';
+    }
+  },
+
   _parseHwpParaShape(body) {
     if (!body || body.length < 26) return null;
     const attr = HwpParser._u32(body, 0);
+    const modernAttr = body.length >= 46 ? HwpParser._u32(body, 42) : 0;
     const modernLineSpacing = body.length >= 54 ? HwpParser._u32(body, 50) : 0;
     const legacyLineSpacing = body.length >= 28 ? HwpParser._u32(body, 24) : 0;
     return {
@@ -1487,6 +1919,9 @@ const HwpParser = {
       textIndent: HwpParser._i32(body, 12),
       spacingBefore: HwpParser._i32(body, 16),
       spacingAfter: HwpParser._i32(body, 20),
+      lineSpacingType: modernLineSpacing
+        ? HwpParser._hwpLineSpacingTypeFromCode(modernAttr & 0x1F)
+        : HwpParser._hwpLineSpacingTypeFromCode(attr & 0x3),
       lineSpacing: modernLineSpacing || legacyLineSpacing || 0,
     };
   },
@@ -1608,6 +2043,7 @@ const HwpParser = {
       textIndent: paraStyle?.textIndent ?? 0,
       spacingBefore: paraStyle?.spacingBefore ?? 0,
       spacingAfter: paraStyle?.spacingAfter ?? 0,
+      lineSpacingType: paraStyle?.lineSpacingType || '',
       lineSpacing: paraStyle?.lineSpacing ?? 0,
       lineHeightPx: lineMetrics.lineHeightPx,
       layoutHeightPx: lineMetrics.layoutHeightPx,
@@ -1678,15 +2114,12 @@ const HwpParser = {
     };
   },
 
-  async _parseHwpDocInfoStream(data, compressedHint) {
-    const attempts = [{ mode: 'raw', bytes: data }];
-    try {
-      attempts.push({ mode: 'deflated', bytes: await HwpParser._decompressZlib(data) });
-    } catch (e) {
-      if (compressedHint) {
-        console.warn('[HWP] DocInfo 압축 해제 실패:', e.message);
-      }
-    }
+  async _parseHwpDocInfoStream(data, streamOptions = {}) {
+    const normalizedOptions = typeof streamOptions === 'object'
+      ? streamOptions
+      : { compressedHint: Boolean(streamOptions) };
+    const { compressedHint = false, distributedHint = false } = normalizedOptions;
+    const attempts = await HwpParser._buildHwpRecordAttempts(data, { compressedHint, distributedHint });
 
     let best = {
       faceNames: {},
@@ -1764,12 +2197,9 @@ const HwpParser = {
     return HwpParser._nextHwpBinaryImage(docInfo);
   },
 
-  _pickHwpDisplayMetric(...candidates) {
-    const positives = candidates
-      .map(value => Number(value) || 0)
-      .filter(value => value > 0);
-    if (!positives.length) return 0;
-    return Math.min(...positives);
+  _resolveHwpBinaryEntry(docInfo = null, binId = 0) {
+    if (!binId || binId <= 0) return null;
+    return docInfo?.binEntriesById?.[binId] || null;
   },
 
   _firstPositiveMetric(...candidates) {
@@ -1780,43 +2210,227 @@ const HwpParser = {
     return 0;
   },
 
-  _parseHwpGsoBlock(ctrlBody, pictureBody, docInfo = null) {
+  _decodeHwpUtf16String(body, offset, charLength) {
+    const safeOffset = Math.max(0, Number(offset) || 0);
+    const safeChars = Math.max(0, Number(charLength) || 0);
+    if (!body || safeChars <= 0 || safeOffset >= body.length) return '';
+    const byteLength = Math.min(body.length - safeOffset, safeChars * 2);
+    if (byteLength <= 0) return '';
+    return new TextDecoder('utf-16le')
+      .decode(body.slice(safeOffset, safeOffset + byteLength))
+      .replace(/\u0000/g, '')
+      .trim();
+  },
+
+  _hwpObjectRelTo(axis, code = 0) {
+    const idx = Number(code) || 0;
+    if (axis === 'vert') {
+      return ['paper', 'page', 'para'][idx] || 'para';
+    }
+    return ['paper', 'page', 'column', 'para'][idx] || 'column';
+  },
+
+  _hwpObjectAlign(axis, code = 0) {
+    const idx = Number(code) || 0;
+    if (axis === 'vert') {
+      return ['top', 'center', 'bottom', 'inside', 'outside'][idx] || 'top';
+    }
+    return ['left', 'center', 'right', 'inside', 'outside'][idx] || 'left';
+  },
+
+  _hwpObjectTextWrap(code = 0) {
+    return ['square', 'tight', 'through', 'top-and-bottom', 'behind-text', 'in-front-of-text'][Number(code) || 0]
+      || 'top-and-bottom';
+  },
+
+  _hwpObjectTextFlow(code = 0) {
+    return ['both-sides', 'left-only', 'right-only', 'largest-only'][Number(code) || 0]
+      || 'both-sides';
+  },
+
+  _hwpObjectSizeRelTo(axis, code = 0) {
+    if (axis === 'height') {
+      return ['paper', 'page', 'absolute'][Number(code) || 0] || 'absolute';
+    }
+    return ['paper', 'page', 'column', 'para', 'absolute'][Number(code) || 0] || 'absolute';
+  },
+
+  _parseHwpObjectCommon(ctrlBody) {
+    if (!ctrlBody || ctrlBody.length < 46) return null;
+    const attr = HwpParser._u32(ctrlBody, 4);
+    const descLen = HwpParser._u16(ctrlBody, 44);
+    const vertRelTo = HwpParser._hwpObjectRelTo('vert', (attr >> 3) & 0x3);
+    const horzRelTo = HwpParser._hwpObjectRelTo('horz', (attr >> 8) & 0x3);
+    return {
+      controlId: HwpParser._ctrlId(ctrlBody),
+      attr,
+      vertOffset: HwpParser._i32(ctrlBody, 8),
+      horzOffset: HwpParser._i32(ctrlBody, 12),
+      width: HwpParser._u32(ctrlBody, 16),
+      height: HwpParser._u32(ctrlBody, 20),
+      zOrder: HwpParser._i32(ctrlBody, 24),
+      margin: [
+        HwpParser._u16(ctrlBody, 28),
+        HwpParser._u16(ctrlBody, 30),
+        HwpParser._u16(ctrlBody, 32),
+        HwpParser._u16(ctrlBody, 34),
+      ],
+      instanceId: HwpParser._u32(ctrlBody, 36),
+      preventPageBreak: HwpParser._i32(ctrlBody, 40),
+      description: HwpParser._decodeHwpUtf16String(ctrlBody, 46, descLen),
+      inline: Boolean(attr & 1),
+      affectLineSpacing: Boolean(attr & (1 << 2)),
+      vertRelTo,
+      vertAlign: HwpParser._hwpObjectAlign('vert', (attr >> 5) & 0x7),
+      horzRelTo,
+      horzAlign: HwpParser._hwpObjectAlign('horz', (attr >> 10) & 0x7),
+      align: HwpParser._hwpObjectAlign('horz', (attr >> 10) & 0x7),
+      flowWithText: Boolean((attr >> 13) & 0x1),
+      allowOverlap: Boolean((attr >> 14) & 0x1),
+      widthRelTo: HwpParser._hwpObjectSizeRelTo('width', (attr >> 15) & 0x7),
+      heightRelTo: HwpParser._hwpObjectSizeRelTo('height', (attr >> 18) & 0x3),
+      sizeProtected: Boolean((attr >> 20) & 0x1),
+      textWrap: HwpParser._hwpObjectTextWrap((attr >> 21) & 0x7),
+      textFlow: HwpParser._hwpObjectTextFlow((attr >> 24) & 0x3),
+      numberingCategory: (attr >> 26) & 0x7,
+    };
+  },
+
+  _createHwpObjectTextBlock(type, objectInfo, text, runOpts = {}, extra = {}) {
+    const content = String(text || '').trim();
+    return HwpParser._withObjectLayout({
+      type,
+      width: Number(objectInfo?.width) || 0,
+      height: Number(objectInfo?.height) || 0,
+      description: objectInfo?.description || '',
+      sourceFormat: 'hwp',
+      texts: [HwpParser._run(content || (type === 'equation' ? '[수식]' : '[OLE 개체]'), runOpts)],
+      ...extra,
+    }, objectInfo);
+  },
+
+  _parseHwpEquationBlock(objectInfo, equationBody) {
+    if (!equationBody || equationBody.length < 6) return null;
+
+    const scriptLen = HwpParser._u16(equationBody, 4);
+    const script = HwpParser._decodeHwpUtf16String(equationBody, 6, scriptLen);
+    let offset = 6 + (scriptLen * 2);
+
+    const fontSize = equationBody.length >= offset + 4 ? HwpParser._u32(equationBody, offset) : 0;
+    offset += equationBody.length >= offset + 4 ? 4 : 0;
+    const color = equationBody.length >= offset + 4
+      ? HwpParser._hwpColorRefToCss(HwpParser._u32(equationBody, offset))
+      : '';
+    offset += equationBody.length >= offset + 4 ? 4 : 0;
+    const baseline = equationBody.length >= offset + 2 ? HwpParser._u16(equationBody, offset) : 0;
+    offset += equationBody.length >= offset + 2 ? 2 : 0;
+
+    let version = '';
+    let fontName = '';
+    if (offset < equationBody.length) {
+      const tailText = new TextDecoder('utf-16le')
+        .decode(equationBody.slice(offset))
+        .replace(/\u0000+/g, '\n')
+        .split('\n')
+        .map(part => part.trim())
+        .filter(Boolean);
+      [version = '', fontName = ''] = tailText;
+    }
+
+    const runOpts = {
+      color: color || '#111827',
+    };
+    if (fontName) runOpts.fontName = fontName;
+    if (fontSize > 0) {
+      runOpts.fontSize = Math.max(11, Math.min(28, Math.round(fontSize / 100)));
+    }
+
+    return HwpParser._createHwpObjectTextBlock(
+      'equation',
+      objectInfo,
+      script || '[수식]',
+      runOpts,
+      {
+        script,
+        equationVersion: version,
+        equationFontName: fontName,
+        equationFontSize: fontSize,
+        baseline,
+      },
+    );
+  },
+
+  _parseHwpOleBlock(objectInfo, oleBody, docInfo = null, extras = {}) {
+    if (!oleBody || oleBody.length < 24) return null;
+
+    const attr = HwpParser._u16(oleBody, 0);
+    const extentX = HwpParser._i32(oleBody, 2);
+    const extentY = HwpParser._i32(oleBody, 6);
+    const binId = HwpParser._u16(oleBody, 10);
+    const binaryEntry = HwpParser._resolveHwpBinaryEntry(docInfo, binId);
+
+    let label = '[OLE 개체]';
+    if (extras?.hasChartData) label = '[차트]';
+    else if (extras?.hasVideoData) label = '[동영상]';
+    else if (binaryEntry?.name) label = `[OLE] ${binaryEntry.name}`;
+
+    return HwpParser._createHwpObjectTextBlock(
+      'ole',
+      {
+        ...objectInfo,
+        width: HwpParser._firstPositiveMetric(objectInfo?.width, extentX, 0),
+        height: HwpParser._firstPositiveMetric(objectInfo?.height, extentY, 0),
+      },
+      label,
+      {},
+      {
+        oleAttr: attr,
+        oleBinId: binId,
+        binaryName: binaryEntry?.name || '',
+        hasChartData: Boolean(extras?.hasChartData),
+        hasVideoData: Boolean(extras?.hasVideoData),
+      },
+    );
+  },
+
+  _parseHwpGsoBlock(objectInfo, pictureBody, docInfo = null) {
     if (!pictureBody?.length) return null;
     const imageRef = HwpParser._resolveHwpBinaryImage(docInfo, pictureBody);
     if (!imageRef?.src) return null;
 
     const width = HwpParser._firstPositiveMetric(
-      HwpParser._u32(ctrlBody, 16),
+      objectInfo?.width,
       HwpParser._u32(pictureBody, 52),
       HwpParser._u32(pictureBody, 20),
       HwpParser._u32(pictureBody, 28),
       0,
     );
     const height = HwpParser._firstPositiveMetric(
-      HwpParser._u32(ctrlBody, 20),
+      objectInfo?.height,
       HwpParser._u32(pictureBody, 56),
       HwpParser._u32(pictureBody, 32),
       HwpParser._u32(pictureBody, 40),
       0,
     );
 
-    return {
+    return HwpParser._withObjectLayout({
       type: 'image',
       src: imageRef.src,
-      alt: imageRef.name || 'image',
+      alt: objectInfo?.description || imageRef.name || 'image',
       width,
       height,
-      align: 'left',
-      inline: false,
-      offsetX: 0,
-      offsetY: 0,
       sourceFormat: 'hwp',
-    };
+    }, objectInfo);
   },
 
   _parseGsoControl(data, startPos, ctrlLevel, ctrlBody, docInfo = null) {
     let pos = startPos;
+    const objectInfo = HwpParser._parseHwpObjectCommon(ctrlBody);
     let pictureBody = null;
+    let equationBody = null;
+    let oleBody = null;
+    let hasChartData = false;
+    let hasVideoData = false;
 
     while (pos < data.length) {
       const rec = HwpParser._readRecord(data, pos);
@@ -1824,12 +2438,29 @@ const HwpParser = {
       if (rec.level <= ctrlLevel) break;
       if (rec.tagId === 85 && !pictureBody) {
         pictureBody = rec.body;
+      } else if (rec.tagId === 88 && !equationBody) {
+        equationBody = rec.body;
+      } else if (rec.tagId === 84 && !oleBody) {
+        oleBody = rec.body;
+      } else if (rec.tagId === 95) {
+        hasChartData = true;
+      } else if (rec.tagId === 98) {
+        hasVideoData = true;
       }
       pos = rec.nextPos;
     }
 
+    let block = null;
+    if (equationBody) {
+      block = HwpParser._parseHwpEquationBlock(objectInfo, equationBody);
+    } else if (pictureBody) {
+      block = HwpParser._parseHwpGsoBlock(objectInfo, pictureBody, docInfo);
+    } else if (oleBody) {
+      block = HwpParser._parseHwpOleBlock(objectInfo, oleBody, docInfo, { hasChartData, hasVideoData });
+    }
+
     return {
-      block: HwpParser._parseHwpGsoBlock(ctrlBody, pictureBody, docInfo),
+      block,
       nextPos: pos,
     };
   },
@@ -1986,6 +2617,14 @@ const HwpParser = {
       return '[이미지]';
     }
 
+    if (block.type === 'equation') {
+      return (block.texts || []).map(run => run.text || '').join('') || '[수식]';
+    }
+
+    if (block.type === 'ole') {
+      return (block.texts || []).map(run => run.text || '').join('') || '[OLE 개체]';
+    }
+
     return (block.texts || []).map(run => run.text || '').join('');
   },
 
@@ -2000,6 +2639,9 @@ const HwpParser = {
     if (block.type === 'image') {
       if (block.inline) return 1;
       return Math.max(1, Math.min(6, Math.round((Number(block.height) || 1200) / 1000)));
+    }
+    if (block.type === 'equation' || block.type === 'ole') {
+      return block.inline ? 1 : 2;
     }
     return 1;
   },
@@ -2098,15 +2740,63 @@ const HwpParser = {
       ...cells.map(cell => cell.col + cell.colSpan),
     );
 
-    const columnWidths = Array.from({ length: colCount }, () => 0);
     const sortedCells = cells
       .filter(cell => cell.col < colCount && cell.row < rowCount)
       .sort((a, b) => (a.row - b.row) || (a.col - b.col));
 
+    const columnWidths = Array.from({ length: colCount }, () => 0);
+
+    // 병합 셀보다 실제 단일 셀 폭을 먼저 기준으로 잡아야 양식표 비율이 덜 흔들린다.
     for (const cell of sortedCells) {
-      const unitWidth = cell.width > 0 ? cell.width / Math.max(1, cell.colSpan) : 0;
-      for (let c = cell.col; c < Math.min(colCount, cell.col + cell.colSpan); c++) {
-        columnWidths[c] = Math.max(columnWidths[c], unitWidth);
+      if ((cell.colSpan || 1) !== 1 || !(cell.width > 0)) continue;
+      columnWidths[cell.col] = Math.max(columnWidths[cell.col], cell.width);
+    }
+
+    // 병합 셀은 "균등 분배"가 아니라 아직 비어 있는 열을 채우는 보정용으로만 사용한다.
+    for (const cell of sortedCells) {
+      const span = Math.max(1, cell.colSpan || 1);
+      if (span === 1 || !(cell.width > 0)) continue;
+
+      const start = Math.max(0, cell.col);
+      const end = Math.min(colCount, cell.col + span);
+      const indices = [];
+      let existing = 0;
+      for (let c = start; c < end; c++) {
+        indices.push(c);
+        existing += columnWidths[c] || 0;
+      }
+
+      if (!indices.length) continue;
+      if (existing <= 0) {
+        const unitWidth = cell.width / indices.length;
+        indices.forEach(c => { columnWidths[c] = Math.max(columnWidths[c], unitWidth); });
+        continue;
+      }
+
+      if (cell.width <= existing) continue;
+
+      const deficit = cell.width - existing;
+      const zeroCols = indices.filter(c => !(columnWidths[c] > 0));
+      if (zeroCols.length) {
+        const unitWidth = deficit / zeroCols.length;
+        zeroCols.forEach(c => { columnWidths[c] = Math.max(columnWidths[c], unitWidth); });
+        continue;
+      }
+
+      const basis = indices.reduce((sum, c) => sum + (columnWidths[c] || 0), 0) || indices.length;
+      indices.forEach(c => {
+        const ratio = (columnWidths[c] || 0) > 0 ? ((columnWidths[c] || 0) / basis) : (1 / indices.length);
+        columnWidths[c] += deficit * ratio;
+      });
+    }
+
+    if (!columnWidths.every(width => width > 0)) {
+      const known = columnWidths.filter(width => width > 0);
+      const fallbackWidth = known.length
+        ? (known.reduce((sum, width) => sum + width, 0) / known.length)
+        : 1;
+      for (let c = 0; c < columnWidths.length; c++) {
+        if (!(columnWidths[c] > 0)) columnWidths[c] = fallbackWidth;
       }
     }
 
@@ -2139,10 +2829,11 @@ const HwpParser = {
     };
   },
 
-  _parseTableControl(data, startPos, ctrlLevel, docInfo = null) {
+  _parseTableControl(data, startPos, ctrlLevel, docInfo = null, controlBody = null) {
     let pos = startPos;
     let tableInfo = null;
     const cells = [];
+    const objectInfo = HwpParser._parseHwpObjectCommon(controlBody);
 
     while (pos < data.length) {
       const rec = HwpParser._readRecord(data, pos);
@@ -2181,7 +2872,7 @@ const HwpParser = {
           const nestedCtrlId = HwpParser._ctrlId(next.body);
           if (nestedCtrlId === 'tbl ') {
             pushParagraph();
-            const { block, nextPos } = HwpParser._parseTableControl(data, next.nextPos, next.level, docInfo);
+            const { block, nextPos } = HwpParser._parseTableControl(data, next.nextPos, next.level, docInfo, next.body);
             if (block) paragraphs.push(block);
             pos = nextPos;
             continue;
@@ -2241,7 +2932,7 @@ const HwpParser = {
     }
 
     return {
-      block: HwpParser._buildTableBlock(tableInfo, cells),
+      block: HwpParser._withObjectLayout(HwpParser._buildTableBlock(tableInfo, cells), objectInfo),
       nextPos: pos,
     };
   },
@@ -2267,7 +2958,7 @@ const HwpParser = {
         const controlId = HwpParser._ctrlId(rec.body);
         if (controlId === 'tbl ') {
           pushParagraph();
-          const { block, nextPos } = HwpParser._parseTableControl(data, rec.nextPos, rec.level, docInfo);
+          const { block, nextPos } = HwpParser._parseTableControl(data, rec.nextPos, rec.level, docInfo, rec.body);
           if (block) paras.push(block);
           pos = nextPos;
           continue;
@@ -2404,26 +3095,8 @@ const HwpParser = {
    * 섹션 스트림을 raw/deflated 양쪽으로 시도한 뒤, 구조 레코드가 안 맞으면 UTF-16 텍스트 블록 복구까지 수행합니다.
    * 그래도 유의미한 본문을 찾지 못한 경우에만 빈 결과를 반환해 상위 단계에서 PrvText fallback 으로 넘어가게 합니다.
    */
-  async _extractSectionParas(data, compressedHint, sectionName, docInfo = null) {
-    const attempts = [];
-    const pushAttempt = (mode, bytes) => {
-      if (!bytes || bytes.length === 0) return;
-      attempts.push({ mode, bytes });
-    };
-
-    if (compressedHint) {
-      try {
-        pushAttempt('deflated', await HwpParser._decompressZlib(data));
-      } catch (e) {
-        console.warn(`[HWP] ${sectionName} 압축 해제 실패:`, e.message);
-        pushAttempt('raw', data);
-      }
-    } else {
-      pushAttempt('raw', data);
-      try {
-        pushAttempt('deflated', await HwpParser._decompressZlib(data));
-      } catch {}
-    }
+  async _extractSectionParas(data, compressedHint, sectionName, docInfo = null, distributedHint = false) {
+    const attempts = await HwpParser._buildHwpRecordAttempts(data, { compressedHint, distributedHint });
 
     let bestParas = [];
     let bestHeaderBlocks = [];
@@ -2492,6 +3165,7 @@ const HwpParser = {
     }
 
     let compressed = true;
+    let distributed = false;
     if (entries.FileHeader) {
       const { startSec, streamSz } = entries.FileHeader;
       let fhData;
@@ -2502,8 +3176,12 @@ const HwpParser = {
       }
       if (fhData && fhData.length >= 40) {
         compressed = (fhData[36] & 1) !== 0;
-        if (fhData[36] & 2) { console.warn('[HWP] 암호화된 문서'); return null; }
-        console.log('[HWP] FileHeader: compressed=%s', compressed);
+        distributed = (fhData[36] & 4) !== 0;
+        if ((fhData[36] & 2) && !distributed) {
+          console.warn('[HWP] 암호화된 문서');
+          return null;
+        }
+        console.log('[HWP] FileHeader: compressed=%s distributed=%s', compressed, distributed);
       }
     }
 
@@ -2518,7 +3196,10 @@ const HwpParser = {
         docInfoData = HwpParser._readStreamByFat(b, startSec, streamSz, ss, fat);
       }
       if (docInfoData?.length) {
-        docInfo = await HwpParser._parseHwpDocInfoStream(docInfoData, compressed);
+        docInfo = await HwpParser._parseHwpDocInfoStream(docInfoData, {
+          compressedHint: compressed,
+          distributedHint: distributed,
+        });
       }
     }
 
@@ -2527,6 +3208,7 @@ const HwpParser = {
     docInfo.images = hwpImages.images;
     docInfo.binImages = hwpImages.ordered;
     docInfo.binImagesById = hwpImages.byId;
+    docInfo.binEntriesById = hwpImages.allById;
     docInfo.binImageCursor = 0;
 
     let sectionNumbers = Object.keys(entries)
@@ -2558,7 +3240,13 @@ const HwpParser = {
         data = HwpParser._readStreamByFat(b, startSec, streamSz, ss, fat);
       }
       if (!data || data.length === 0) continue;
-      const parsed = await HwpParser._extractSectionParas(data, compressed, 'Section' + sn, docInfo);
+      const parsed = await HwpParser._extractSectionParas(
+        data,
+        compressed,
+        'Section' + sn,
+        docInfo,
+        distributed,
+      );
       allParas.push(...(parsed?.paras || []));
       if (!headerBlocks.length && parsed?.headerBlocks?.length) {
         headerBlocks = parsed.headerBlocks;
@@ -2735,7 +3423,8 @@ const HwpParser = {
   _run(text, opts = {}) {
     return Object.assign(
       { text: text||'', bold:false, italic:false, underline:false,
-        fontSize:11, fontName:'Malgun Gothic', color:'#000000' },
+        fontSize:11, fontName:'Malgun Gothic', color:'#000000',
+        scaleX:100, letterSpacing:0, relSize:100, offsetY:0 },
       opts
     );
   },
@@ -2896,7 +3585,7 @@ const HwpExporter = {
   setFilename(name) { this.basename = name.replace(/\.[^.]+$/,''); },
 
   canOverwriteFormat(format) {
-    return format === 'hwpx';
+    return format === 'hwpx' || format === 'owpml';
   },
 
   buildHtmlBlob() {
@@ -2945,17 +3634,19 @@ const HwpExporter = {
 
     const format = getFilenameExtension(state.filename);
     if (!this.canOverwriteFormat(format)) {
-      showError('현재 파일 덮어쓰기는 HWPX 파일만 지원합니다. 다른 이름으로 저장을 사용해 주세요.');
+      showError('현재 파일 덮어쓰기는 HWPX/OWPML 파일만 지원합니다. 다른 이름으로 저장을 사용해 주세요.');
       return false;
     }
 
     const blob = await this.buildHwpxBlob();
+    const packageExt = format === 'owpml' ? 'owpml' : 'hwpx';
+    const packageLabel = packageExt === 'owpml' ? 'OWPML 문서' : 'HWPX 문서';
     const handle = await this._saveWithPicker(blob, state.filename, {
       handle: state.fileHandle,
-      description: 'HWPX 문서',
+      description: packageLabel,
       accept: {
-        'application/hwp+zip': ['.hwpx'],
-        'application/octet-stream': ['.hwpx'],
+        'application/hwp+zip': [`.${packageExt}`],
+        'application/octet-stream': [`.${packageExt}`],
       },
     });
 
@@ -2994,19 +3685,20 @@ const HwpExporter = {
       return true;
     }
 
-    if (format === 'hwpx') {
+    if (format === 'hwpx' || format === 'owpml') {
       const blob = await this.buildHwpxBlob();
+      const packageLabel = format === 'owpml' ? 'OWPML 문서' : 'HWPX 문서';
       await this._saveWithPicker(blob, name, {
-        description: 'HWPX 문서',
+        description: packageLabel,
         accept: {
-          'application/hwp+zip': ['.hwpx'],
-          'application/octet-stream': ['.hwpx'],
+          'application/hwp+zip': [`.${suffix}`],
+          'application/octet-stream': [`.${suffix}`],
         },
       });
       return true;
     }
 
-    showError('현재는 .hwp 바이너리 저장을 지원하지 않습니다. HWPX로 저장해 주세요.');
+    showError('현재는 .hwp 바이너리 저장을 지원하지 않습니다. HWPX 또는 OWPML로 저장해 주세요.');
     return false;
   },
 
@@ -3015,9 +3707,9 @@ const HwpExporter = {
 <style>
 body{font-family:'HCR Batang','함초롬바탕','Noto Serif KR','Malgun Gothic',serif;max-width:860px;margin:0 auto;padding:60px 80px;font-size:14px;line-height:1.68}
 .hwp-page{background:#fff;padding:0 0 24px;margin-bottom:24px;break-after:page;display:flex;flex-direction:column;min-height:980px}
-.hwp-page-header{flex:0 0 auto}
-.hwp-page-body{flex:1 1 auto}
-.hwp-page-footer{margin-top:auto;padding-top:18px}
+.hwp-page-header{flex:0 0 auto;position:relative}
+.hwp-page-body{flex:1 1 auto;position:relative}
+.hwp-page-footer{margin-top:auto;padding-top:18px;position:relative}
 .hwp-page p{margin:0 0 4px;white-space:pre-wrap}
 .hwp-page-number{font-size:12px;letter-spacing:0.08em;color:#475569}
 .hwp-inline-image{display:inline-block;vertical-align:middle;margin-right:10px}
@@ -3027,11 +3719,19 @@ body{font-family:'HCR Batang','함초롬바탕','Noto Serif KR','Malgun Gothic',
 .hwp-table-cell{border:1px solid #6b7280;padding:4px 6px;vertical-align:top;font-size:12.7px;line-height:1.32;white-space:normal}
 .hwp-table-paragraph{margin:0;min-height:1.1em;line-height:1.22}
 .hwp-table-paragraph+.hwp-table-paragraph{margin-top:3px}
+.hwp-table-cell-content{position:relative}
 .hwp-image-block{margin:10px 0;text-align:center}
 .hwp-image-block[data-align="left"]{text-align:left}
 .hwp-image-block[data-align="right"]{text-align:right}
 .hwp-image-block[data-inline="true"]{margin:4px 0 8px}
 .hwp-image{max-width:100%;height:auto;display:inline-block}
+.hwp-object-block{margin:8px 0;text-align:left}
+.hwp-object-block[data-align="center"]{text-align:center}
+.hwp-object-block[data-align="right"]{text-align:right}
+.hwp-object-block[data-inline="true"]{margin:4px 0 8px}
+.hwp-equation,.hwp-ole{display:inline-block;max-width:100%;white-space:pre-wrap}
+.hwp-equation{padding:6px 10px;border-radius:8px;background:#f8fafc;border:1px solid #cbd5e1;font-family:'Cambria Math','Times New Roman',serif;color:#111827}
+.hwp-ole{padding:7px 10px;border-radius:8px;background:#fff7ed;border:1px solid #fdba74;color:#9a3412;font-size:12px}
 .hwp-table-nested{margin-top:6px}
 .hwp-table-nested>.hwp-table-wrap{margin:6px 0 0}
 .hwp-table[data-layout="first-page-primary"] .hwp-table-row[data-row-role="title"]>td{padding-top:10px;padding-bottom:10px;vertical-align:middle}
@@ -3044,6 +3744,11 @@ body{font-family:'HCR Batang','함초롬바탕','Noto Serif KR','Malgun Gothic',
 .hwp-form-title-label{margin:0;text-align:center;font-size:19px;font-weight:500;letter-spacing:0.01em;line-height:1.06;white-space:nowrap}
 .hwp-form-title-options{display:flex;flex-direction:column;justify-content:center;gap:8px}
 .hwp-form-title-option{margin:0;font-size:14.5px;line-height:1.04;font-weight:400;letter-spacing:-0.01em;white-space:nowrap}
+.hwp-form-header-layout{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(220px,42%);align-items:start;column-gap:12px;width:100%}
+.hwp-form-header-title{grid-column:2;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:68px}
+.hwp-form-header-title .hwp-table-paragraph{margin:0;text-align:center}
+.hwp-form-header-approval{grid-column:3;justify-self:end;min-width:min(100%,280px);width:min(100%,320px)}
+.hwp-form-header-approval .hwp-table-wrap{margin:0}
 @media print{body{padding:20mm 25mm}.hwp-page{padding:0;margin-bottom:0}}
 </style>
 </head><body>${body}</body></html>`;
@@ -3214,7 +3919,7 @@ function getSaveCurrentDisabledReason() {
   if (state.mode !== 'edit') return '편집 모드에서 수정한 뒤 저장할 수 있습니다.';
   if (!state.hasUnsavedChanges) return '저장할 편집 내용이 없습니다.';
   if (!HwpExporter.canOverwriteFormat(getFilenameExtension(state.filename))) {
-    return '현재 파일 덮어쓰기는 HWPX 파일만 지원합니다. 다른 이름으로 저장을 사용해 주세요.';
+    return '현재 파일 덮어쓰기는 HWPX/OWPML 파일만 지원합니다. 다른 이름으로 저장을 사용해 주세요.';
   }
   return '';
 }
@@ -3222,7 +3927,7 @@ function getSaveCurrentDisabledReason() {
 function getSaveAsDisabledReason(format = UI.saveAsFormat?.value || 'hwpx') {
   if (!state.doc) return '저장할 문서가 없습니다.';
   if (state.documentLocked) return state.documentLockReason || '현재 문서는 저장할 수 없습니다.';
-  if (format === 'hwp') return '현재는 .hwp 바이너리 저장을 지원하지 않습니다. HWPX를 사용해 주세요.';
+  if (format === 'hwp') return '현재는 .hwp 바이너리 저장을 지원하지 않습니다. HWPX 또는 OWPML을 사용해 주세요.';
   if (format === 'pdf' && state.mode === 'edit' && state.hasUnsavedChanges) {
     return '';
   }
@@ -3292,7 +3997,7 @@ function ensureDocumentActionAllowed(actionLabel) {
 /* ── Web Worker 파싱 ── */
 function parseWithWorker(buffer, filename) {
   const ext = filename.split('.').pop().toLowerCase();
-  if (ext === 'hwpx') {
+  if (ext === 'hwpx' || ext === 'owpml') {
     return HwpParser.parse(buffer, filename);
   }
 
@@ -3402,8 +4107,8 @@ async function processBuffer(buffer, filename, sizeBytes, options = {}) {
 
 /* ── 파일 처리 ── */
 async function processFile(file, options = {}) {
-  if (!/\.(hwp|hwpx)$/i.test(file.name)) {
-    showError('지원 형식: .hwp, .hwpx 파일만 가능합니다.');
+  if (!/\.(hwp|hwpx|owpml)$/i.test(file.name)) {
+    showError('지원 형식: .hwp, .hwpx, .owpml 파일만 가능합니다.');
     return;
   }
 
@@ -3495,12 +4200,27 @@ function appendRunSpan(parent, run) {
 
   const span = document.createElement('span');
   span.textContent = run.text;
+  const effectiveFontSize = resolveRunFontSize(run);
   if (run.bold)      span.style.fontWeight = 'bold';
   if (run.italic)    span.style.fontStyle = 'italic';
   if (run.underline) span.style.textDecoration = 'underline';
-  if (run.fontSize)  span.style.fontSize = run.fontSize + 'pt';
+  if (effectiveFontSize > 0) span.style.fontSize = `${effectiveFontSize}pt`;
   if (run.fontName)  span.style.fontFamily = `'${run.fontName}', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif`;
   if (run.color && run.color !== '#000000') span.style.color = run.color;
+  if (Number.isFinite(run.letterSpacing) && run.letterSpacing !== 0) {
+    const letterSpacing = Math.max(-0.5, Math.min(0.5, run.letterSpacing / 100));
+    span.style.letterSpacing = `${letterSpacing}em`;
+  }
+  if (Number.isFinite(run.offsetY) && run.offsetY !== 0) {
+    span.style.position = 'relative';
+    span.style.top = `${Math.max(-1, Math.min(1, run.offsetY / 100))}em`;
+  }
+  if (Number.isFinite(run.scaleX) && run.scaleX > 0 && run.scaleX !== 100) {
+    span.style.display = 'inline-block';
+    span.style.transformOrigin = 'left center';
+    span.style.fontStretch = `${Math.max(50, Math.min(200, run.scaleX))}%`;
+    span.style.transform = `scaleX(${Math.max(0.5, Math.min(2, run.scaleX / 100))})`;
+  }
   parent.appendChild(span);
 }
 
@@ -3525,19 +4245,20 @@ function appendParagraphBlock(parent, para, className = '', options = {}) {
     p.style.tabSize = '4';
   }
   if (Number.isFinite(para.marginLeft) && !['center', 'right'].includes(p.style.textAlign)) {
-    p.style.paddingLeft = `${hwpSignedUnitToPx(para.marginLeft, -40, 140, 1 / 60, 0)}px`;
+    p.style.paddingLeft = `${Math.max(0, hwpSignedPageUnitToPx(para.marginLeft, -24, 220, 0))}px`;
   }
   if (Number.isFinite(para.textIndent) && !['center', 'right'].includes(p.style.textAlign)) {
-    p.style.textIndent = `${hwpSignedUnitToPx(para.textIndent, -60, 80, 1 / 60, 0)}px`;
+    p.style.textIndent = `${hwpSignedPageUnitToPx(para.textIndent, -120, 160, 0)}px`;
   }
   if (Number.isFinite(para.spacingBefore) && para.spacingBefore > 0) {
-    p.style.marginTop = `${hwpSignedUnitToPx(para.spacingBefore, 0, 40, 1 / 100, 0)}px`;
+    p.style.marginTop = `${hwpPageUnitToPx(para.spacingBefore, 0, 56, 0)}px`;
   }
   if (Number.isFinite(para.spacingAfter) && para.spacingAfter > 0) {
-    p.style.marginBottom = `${hwpSignedUnitToPx(para.spacingAfter, 0, 40, 1 / 100, 4)}px`;
+    p.style.marginBottom = `${hwpPageUnitToPx(para.spacingAfter, 0, 56, 4)}px`;
   }
-  if (Number.isFinite(para.lineSpacing) && para.lineSpacing > 0) {
-    p.style.lineHeight = `${Math.max(1, Math.min(2.2, para.lineSpacing / 100))}`;
+  const resolvedLineHeight = resolveParagraphLineHeight(para);
+  if (resolvedLineHeight) {
+    p.style.lineHeight = resolvedLineHeight;
   } else if (Number.isFinite(para.lineHeightPx) && para.lineHeightPx > 0) {
     p.style.lineHeight = `${para.lineHeightPx}px`;
   }
@@ -3570,6 +4291,11 @@ function appendParagraphBlock(parent, para, className = '', options = {}) {
   } else if (effectiveRole === 'field-inline-note') {
     p.style.textAlign = 'center';
     p.style.lineHeight = '1.12';
+  } else if (effectiveRole === 'stacked-label') {
+    p.style.textAlign = 'center';
+    p.style.lineHeight = '1.06';
+    p.style.whiteSpace = 'pre-line';
+    p.style.letterSpacing = '-0.01em';
   } else if (effectiveRole === 'page-number') {
     p.classList.add('hwp-page-number');
     p.style.textAlign = para.align || 'center';
@@ -3600,7 +4326,7 @@ function appendParagraphBlock(parent, para, className = '', options = {}) {
 function appendImageBlock(parent, block, className = '') {
   const wrap = document.createElement('div');
   wrap.className = `hwp-image-block${className ? ` ${className}` : ''}`;
-  wrap.dataset.align = block.align || 'center';
+  wrap.dataset.align = block.horzAlign || block.align || 'center';
   if (block.inline) wrap.dataset.inline = 'true';
   const treatLargeOffsetAsRightAligned = (Number(block.offsetX) || 0) > 20000
     && (block.align || 'left') === 'left';
@@ -3622,12 +4348,55 @@ function appendImageBlock(parent, block, className = '') {
     : hwpUnitToPx(block.height, 24, 960, 1 / 26, 0);
   if (widthPx) img.style.width = `${widthPx}px`;
   if (heightPx) img.style.maxHeight = `${heightPx}px`;
-  if (!treatLargeOffsetAsRightAligned) {
+  if (block.inline && !treatLargeOffsetAsRightAligned) {
     applyImageOffsetStyles(img, block, false);
   }
 
   wrap.appendChild(img);
   parent.appendChild(wrap);
+  registerPlacedBlock(wrap, img, block);
+}
+
+function appendObjectTextBlock(parent, block, kind = 'equation', className = '') {
+  const wrap = document.createElement('div');
+  wrap.className = `hwp-object-block hwp-${kind}-block${className ? ` ${className}` : ''}`;
+  wrap.dataset.align = block.horzAlign || block.align || 'left';
+  if (block.inline) wrap.dataset.inline = 'true';
+
+  const box = document.createElement('div');
+  box.className = `hwp-${kind}`;
+  box.textContent = HwpParser._blockText(block).trim() || (kind === 'equation' ? '[수식]' : '[OLE 개체]');
+
+  if (kind === 'equation') {
+    const firstRun = (block.texts || [])[0] || {};
+    if (firstRun.fontName) {
+      box.style.fontFamily = `'${firstRun.fontName}', 'Cambria Math', 'Times New Roman', serif`;
+    }
+    if (firstRun.color && firstRun.color !== '#000000') {
+      box.style.color = firstRun.color;
+    }
+    if (firstRun.fontSize) {
+      box.style.fontSize = `${Math.max(13, Math.min(28, Number(firstRun.fontSize) || 14))}pt`;
+    }
+  }
+
+  const widthPx = block.sourceFormat === 'hwp'
+    ? hwpUnitToPx(block.width, 48, 720, 1 / 75, 0)
+    : 0;
+  if (widthPx > 0) {
+    box.style.maxWidth = `${widthPx}px`;
+  }
+  if (block.inline) {
+    applyImageOffsetStyles(box, block, false);
+  }
+
+  if (block.description) {
+    box.title = block.description;
+  }
+
+  wrap.appendChild(box);
+  parent.appendChild(wrap);
+  registerPlacedBlock(wrap, box, block);
 }
 
 function appendBlockByType(parent, block, context = {}) {
@@ -3651,11 +4420,37 @@ function appendBlockByType(parent, block, context = {}) {
     return;
   }
 
+  if (block.type === 'equation') {
+    appendObjectTextBlock(parent, block, 'equation');
+    return;
+  }
+
+  if (block.type === 'ole') {
+    appendObjectTextBlock(parent, block, 'ole');
+    return;
+  }
+
   appendParagraphBlock(parent, block);
 }
 
 function getCellTextInline(cell) {
   return HwpParser._cellText(cell).replace(/\s+/g, ' ').trim();
+}
+
+function getStackedHangulLabelLines(text) {
+  const tokens = String(text || '')
+    .replace(/\n+/g, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  if (tokens.length < 4 || tokens.length > 8) return null;
+  if (!tokens.every(token => /^[가-힣]$/.test(token))) return null;
+
+  const lines = [];
+  for (let i = 0; i < tokens.length; i += 2) {
+    lines.push(tokens.slice(i, i + 2).join(' '));
+  }
+  return lines.filter(Boolean);
 }
 
 function getParagraphText(para) {
@@ -3680,17 +4475,398 @@ function hwpPageUnitToPx(value, minPx, maxPx, fallbackPx = 0) {
   return hwpUnitToPx(value, minPx, maxPx, 1 / 106, fallbackPx);
 }
 
+function hwpSignedPageUnitToPx(value, minPx, maxPx, fallbackPx = 0) {
+  return hwpSignedUnitToPx(value, minPx, maxPx, 1 / 106, fallbackPx);
+}
+
+function objectUnitScale(block, kind = 'size') {
+  if (block?.sourceFormat === 'hwpx') {
+    return kind === 'position' ? (1 / 75) : (1 / 26);
+  }
+  return 1 / 75;
+}
+
+function objectUnitToPx(block, value, minPx, maxPx, fallbackPx = 0, kind = 'size') {
+  return hwpUnitToPx(value, minPx, maxPx, objectUnitScale(block, kind), fallbackPx);
+}
+
+function objectSignedUnitToPx(block, value, minPx, maxPx, fallbackPx = 0, kind = 'size') {
+  return hwpSignedUnitToPx(value, minPx, maxPx, objectUnitScale(block, kind), fallbackPx);
+}
+
+function resolveRunFontSize(run) {
+  const baseFontSize = Math.max(0, Number(run?.fontSize) || 0);
+  const relSize = Number.isFinite(Number(run?.relSize)) && Number(run?.relSize) > 0
+    ? Number(run.relSize) / 100
+    : 1;
+  return baseFontSize > 0 ? Math.round(baseFontSize * relSize * 10) / 10 : 0;
+}
+
+function paragraphBaseFontPx(para) {
+  const fontPt = Math.max(
+    10.5,
+    ...(para?.texts || []).map(run => Math.max(0, resolveRunFontSize(run))),
+  );
+  return fontPt * (96 / 72);
+}
+
+function resolveParagraphLineHeight(para) {
+  const spacing = Number(para?.lineSpacing) || 0;
+  if (spacing <= 0) return '';
+
+  const type = HwpParser._normalizeLineSpacingType(para?.lineSpacingType) || 'percent';
+  const baseFontPx = paragraphBaseFontPx(para);
+
+  if (type === 'fixed') {
+    const px = hwpPageUnitToPx(spacing, 0, 140, 0);
+    return px > 0 ? `${px}px` : '';
+  }
+
+  if (type === 'minimum') {
+    const minPx = hwpPageUnitToPx(spacing, 0, 140, 0);
+    return `${Math.max(Math.round(baseFontPx * 1.2), minPx)}px`;
+  }
+
+  if (type === 'space-only') {
+    const extraPx = hwpPageUnitToPx(spacing, 0, 80, 0);
+    return `${Math.max(Math.round(baseFontPx * 1.2), Math.round(baseFontPx + extraPx))}px`;
+  }
+
+  return `${Math.max(1, Math.min(4, spacing / 100))}`;
+}
+
 function applyImageOffsetStyles(el, imageLike, inline = false) {
   const offsetX = Number(imageLike?.offsetX) || 0;
   const offsetY = Number(imageLike?.offsetY) || 0;
-  if (offsetX > 0) {
-    const leftPx = hwpPageUnitToPx(offsetX, 0, inline ? 420 : 520, 0);
-    if (leftPx > 0) el.style.marginLeft = `${leftPx}px`;
+  const translateX = hwpSignedUnitToPx(offsetX, inline ? -280 : -520, inline ? 280 : 520, 1 / 106, 0);
+  const translateY = hwpSignedUnitToPx(offsetY, -120, 120, 1 / 106, 0);
+  if (!translateX && !translateY) return;
+  el.style.transform = `translate(${translateX}px, ${translateY}px)`;
+}
+
+function hasPlacedBlockMetadata(block) {
+  return Boolean(block) && (
+    block.inline !== undefined
+    || block.horzRelTo
+    || block.vertRelTo
+    || block.textWrap
+    || Number(block.offsetX)
+    || Number(block.offsetY)
+    || Number(block.zOrder)
+  );
+}
+
+function objectMarginPx(block) {
+  const margin = Array.isArray(block?.outMargin) && block.outMargin.length >= 4
+    ? block.outMargin
+    : (Array.isArray(block?.margin) ? block.margin : []);
+  return {
+    left: objectUnitToPx(block, margin[0], 0, 96, 0, 'position'),
+    right: objectUnitToPx(block, margin[1], 0, 96, 0, 'position'),
+    top: objectUnitToPx(block, margin[2], 0, 96, 0, 'position'),
+    bottom: objectUnitToPx(block, margin[3], 0, 96, 0, 'position'),
+  };
+}
+
+function objectOffsetPx(block) {
+  return {
+    x: objectSignedUnitToPx(block, block?.offsetX, -720, 720, 0, 'position'),
+    y: objectSignedUnitToPx(block, block?.offsetY, -720, 720, 0, 'position'),
+  };
+}
+
+function measureElementSize(el, axis = 'width') {
+  if (!el) return 0;
+  const rect = el.getBoundingClientRect();
+  if (axis === 'height') {
+    return Math.max(el.clientHeight || 0, el.scrollHeight || 0, rect.height || 0);
   }
-  if (offsetY > 0) {
-    const topPx = hwpPageUnitToPx(offsetY, 0, 120, 0);
-    if (topPx > 0) el.style.marginTop = `${topPx}px`;
+  return Math.max(el.clientWidth || 0, el.scrollWidth || 0, rect.width || 0);
+}
+
+function resolvePlacedBlockContext(wrap) {
+  return {
+    pageEl: wrap.closest('.hwp-page'),
+    areaEl: wrap.closest('.hwp-page-header, .hwp-page-body, .hwp-page-footer'),
+    cellContentEl: wrap.closest('.hwp-table-cell-content'),
+    parentEl: wrap.parentElement,
+  };
+}
+
+function resolvePositionBasisElement(wrap, block, axis = 'horz', context = resolvePlacedBlockContext(wrap)) {
+  const relTo = HwpParser._normalizeObjectRelTo(
+    axis === 'horz' ? block?.horzRelTo : block?.vertRelTo,
+    axis,
+  );
+  if (relTo === 'paper' || relTo === 'page') {
+    return context.pageEl || context.areaEl || context.parentEl || wrap.parentElement;
   }
+  if (relTo === 'column') {
+    return context.areaEl || context.parentEl || context.pageEl || wrap.parentElement;
+  }
+  return context.cellContentEl || context.parentEl || context.areaEl || context.pageEl || wrap.parentElement;
+}
+
+function resolveSizeBasisElement(wrap, block, axis = 'width', context = resolvePlacedBlockContext(wrap)) {
+  const relTo = HwpParser._normalizeObjectSizeRelTo(
+    axis === 'width' ? block?.widthRelTo : block?.heightRelTo,
+    axis,
+  );
+  if (relTo === 'paper') {
+    return context.pageEl || context.areaEl || context.parentEl || wrap.parentElement;
+  }
+  if (relTo === 'page') {
+    return context.areaEl || context.pageEl || context.parentEl || wrap.parentElement;
+  }
+  if (relTo === 'column') {
+    return context.areaEl || context.parentEl || context.pageEl || wrap.parentElement;
+  }
+  if (relTo === 'para') {
+    return context.cellContentEl || context.parentEl || context.areaEl || context.pageEl || wrap.parentElement;
+  }
+  return context.parentEl || context.areaEl || context.pageEl || wrap.parentElement;
+}
+
+function resolveRelativeMetricRatio(rawValue) {
+  const value = Number(rawValue);
+  if (!Number.isFinite(value) || value <= 0) return 0;
+  if (value <= 400) return value / 100;
+  if (value <= 4000) return value / 1000;
+  return value / 10000;
+}
+
+function resolveObjectMetricPx(wrap, block, axis = 'width', context = resolvePlacedBlockContext(wrap)) {
+  const value = Number(axis === 'width' ? block?.width : block?.height);
+  if (!Number.isFinite(value) || value <= 0) return 0;
+
+  const relTo = HwpParser._normalizeObjectSizeRelTo(
+    axis === 'width' ? block?.widthRelTo : block?.heightRelTo,
+    axis,
+  );
+  if (relTo === 'absolute') {
+    return axis === 'width'
+      ? objectUnitToPx(block, value, 24, 960, 0)
+      : objectUnitToPx(block, value, 24, 1280, 0);
+  }
+
+  const basisEl = resolveSizeBasisElement(wrap, block, axis, context);
+  const basisSize = measureElementSize(basisEl, axis);
+  const ratio = resolveRelativeMetricRatio(value);
+  if (!basisSize || !ratio) return 0;
+  const px = Math.round(basisSize * ratio);
+  return Math.max(24, Math.min(axis === 'width' ? 960 : 1280, px));
+}
+
+function applyPlacedBlockSizing(wrap, contentEl, block) {
+  // HWP/HWPX 개체는 절대값뿐 아니라 페이지/본문/문단 기준 상대 크기를 함께 쓴다.
+  const context = resolvePlacedBlockContext(wrap);
+  const widthPx = resolveObjectMetricPx(wrap, block, 'width', context);
+  const heightPx = resolveObjectMetricPx(wrap, block, 'height', context);
+
+  wrap.style.width = '';
+  wrap.style.maxWidth = '';
+  wrap.style.minHeight = '';
+
+  if (widthPx > 0) {
+    if (block?.type === 'table') {
+      wrap.style.width = `${widthPx}px`;
+      wrap.style.maxWidth = '100%';
+      contentEl.style.width = '100%';
+    } else if (contentEl.tagName === 'IMG') {
+      contentEl.style.width = `${widthPx}px`;
+      contentEl.style.maxWidth = `${widthPx}px`;
+    } else {
+      contentEl.style.width = `${widthPx}px`;
+      contentEl.style.maxWidth = `${widthPx}px`;
+    }
+  }
+
+  if (heightPx > 0) {
+    if (contentEl.tagName === 'IMG') {
+      contentEl.style.maxHeight = `${heightPx}px`;
+    } else if (block?.type === 'table') {
+      wrap.style.minHeight = `${heightPx}px`;
+    } else {
+      contentEl.style.minHeight = `${heightPx}px`;
+    }
+  }
+}
+
+function offsetWithinAncestor(sourceEl, ancestorEl) {
+  if (!sourceEl || !ancestorEl || sourceEl === ancestorEl) {
+    return { left: 0, top: 0 };
+  }
+  const sourceRect = sourceEl.getBoundingClientRect();
+  const ancestorRect = ancestorEl.getBoundingClientRect();
+  return {
+    left: sourceRect.left - ancestorRect.left,
+    top: sourceRect.top - ancestorRect.top,
+  };
+}
+
+function resolvePlacementAnchorElement(wrap, block, context = resolvePlacedBlockContext(wrap)) {
+  const horzRelTo = HwpParser._normalizeObjectRelTo(block?.horzRelTo, 'horz');
+  const vertRelTo = HwpParser._normalizeObjectRelTo(block?.vertRelTo, 'vert');
+  if (['paper', 'page'].includes(horzRelTo) || ['paper', 'page'].includes(vertRelTo)) {
+    return context.pageEl || context.areaEl || context.parentEl || wrap.parentElement;
+  }
+  return context.cellContentEl || context.parentEl || context.areaEl || context.pageEl || wrap.parentElement;
+}
+
+function registerPlacedBlock(wrap, contentEl, block) {
+  if (!wrap || !contentEl || !hasPlacedBlockMetadata(block) || block.inline) return;
+  wrap.dataset.hwpPlacedBlock = '1';
+  wrap.__hwpBlock = block;
+  wrap.__hwpContentEl = contentEl;
+  if (contentEl.tagName === 'IMG' && !contentEl.complete) {
+    contentEl.addEventListener('load', () => {
+      const pageEl = wrap.closest('.hwp-page');
+      if (pageEl) applyDeferredObjectLayouts(pageEl);
+    }, { once: true });
+  }
+}
+
+function resetPlacedBlockStyles(wrap) {
+  wrap.style.position = '';
+  wrap.style.left = '';
+  wrap.style.top = '';
+  wrap.style.right = '';
+  wrap.style.bottom = '';
+  wrap.style.width = '';
+  wrap.style.maxWidth = '';
+  wrap.style.minHeight = '';
+  wrap.style.zIndex = '';
+  wrap.style.float = '';
+  wrap.style.clear = '';
+  wrap.style.transform = '';
+  wrap.style.margin = '';
+  wrap.style.marginLeft = '';
+  wrap.style.marginRight = '';
+  wrap.style.marginTop = '';
+  wrap.style.marginBottom = '';
+  wrap.style.overflow = '';
+}
+
+function resolveAlignedCoordinate(align, containerSize, objectSize, axis = 'horz') {
+  const normalized = HwpParser._normalizeObjectAlign(align, axis);
+  if (normalized === 'center') {
+    return Math.max(0, (containerSize - objectSize) / 2);
+  }
+  if (normalized === 'right' || normalized === 'bottom' || normalized === 'outside') {
+    return Math.max(0, containerSize - objectSize);
+  }
+  return 0;
+}
+
+function shouldAbsolutePlaceBlock(block) {
+  if (!block || block.inline) return false;
+  const wrapMode = HwpParser._normalizeObjectTextWrap(block.textWrap);
+  const horzRelTo = HwpParser._normalizeObjectRelTo(block.horzRelTo, 'horz');
+  const vertRelTo = HwpParser._normalizeObjectRelTo(block.vertRelTo, 'vert');
+  return ['paper', 'page'].includes(horzRelTo)
+    || ['paper', 'page'].includes(vertRelTo)
+    || ['behind-text', 'in-front-of-text'].includes(wrapMode)
+    || Boolean(block.allowOverlap && !block.flowWithText);
+}
+
+function applyPlacedBlockFlowStyles(wrap, block) {
+  const margins = objectMarginPx(block);
+  const offsets = objectOffsetPx(block);
+  const wrapMode = HwpParser._normalizeObjectTextWrap(block.textWrap);
+  const horzAlign = HwpParser._normalizeObjectAlign(block.horzAlign || block.align, 'horz');
+  const textFlow = HwpParser._normalizeObjectTextFlow(block.textFlow);
+
+  wrap.style.margin = `${margins.top}px ${margins.right}px ${margins.bottom}px ${margins.left}px`;
+  if (wrapMode === 'top-and-bottom') {
+    wrap.style.clear = 'both';
+  }
+  if (['square', 'tight', 'through'].includes(wrapMode)) {
+    const flowSide = textFlow === 'left-only'
+      ? 'right'
+      : textFlow === 'right-only'
+        ? 'left'
+        : ((horzAlign === 'right' || horzAlign === 'outside') ? 'right' : horzAlign);
+
+    if (flowSide === 'right' || flowSide === 'outside') {
+      wrap.style.float = 'right';
+      if (!margins.left) wrap.style.marginLeft = '12px';
+    } else if (flowSide === 'center') {
+      wrap.style.marginLeft = 'auto';
+      wrap.style.marginRight = 'auto';
+    } else {
+      wrap.style.float = 'left';
+      if (!margins.right) wrap.style.marginRight = '12px';
+    }
+  } else if (horzAlign === 'right' || horzAlign === 'outside') {
+    wrap.style.marginLeft = 'auto';
+  } else if (horzAlign === 'center') {
+    wrap.style.marginLeft = 'auto';
+    wrap.style.marginRight = 'auto';
+  }
+
+  if (offsets.x || offsets.y) {
+    wrap.style.transform = `translate(${offsets.x}px, ${offsets.y}px)`;
+  }
+}
+
+function applyPlacedBlockAbsoluteStyles(wrap, contentEl, block) {
+  const context = resolvePlacedBlockContext(wrap);
+  const anchorEl = resolvePlacementAnchorElement(wrap, block, context);
+  if (!anchorEl) return;
+
+  // page/paper 기준 개체는 실제 DOM 부모도 페이지 앵커로 옮겨야 좌표계가 맞는다.
+  if (wrap.parentElement !== anchorEl) {
+    anchorEl.appendChild(wrap);
+  }
+
+  const contentRect = contentEl.getBoundingClientRect();
+  const margins = objectMarginPx(block);
+  const offsets = objectOffsetPx(block);
+  const horzAlign = HwpParser._normalizeObjectAlign(block.horzAlign || block.align, 'horz');
+  const vertAlign = HwpParser._normalizeObjectAlign(block.vertAlign, 'vert');
+  const horzBasisEl = resolvePositionBasisElement(wrap, block, 'horz', context);
+  const vertBasisEl = resolvePositionBasisElement(wrap, block, 'vert', context);
+  const horzBasisOffset = offsetWithinAncestor(horzBasisEl, anchorEl);
+  const vertBasisOffset = offsetWithinAncestor(vertBasisEl, anchorEl);
+  const anchorWidth = Math.max(measureElementSize(horzBasisEl, 'width'), contentRect.width);
+  const anchorHeight = Math.max(measureElementSize(vertBasisEl, 'height'), contentRect.height);
+  const objectWidth = Math.max(contentRect.width, contentEl.scrollWidth || 0, 24);
+  const objectHeight = Math.max(contentRect.height, contentEl.scrollHeight || 0, 24);
+
+  let left = horzBasisOffset.left + resolveAlignedCoordinate(horzAlign, anchorWidth, objectWidth, 'horz') + offsets.x;
+  let top = vertBasisOffset.top + resolveAlignedCoordinate(vertAlign, anchorHeight, objectHeight, 'vert') + offsets.y;
+  left += margins.left;
+  top += margins.top;
+  if (horzAlign === 'right' || horzAlign === 'outside') left -= margins.right;
+  if (vertAlign === 'bottom' || vertAlign === 'outside') top -= margins.bottom;
+
+  wrap.style.position = 'absolute';
+  wrap.style.left = `${Math.round(left)}px`;
+  wrap.style.top = `${Math.round(top)}px`;
+  wrap.style.margin = '0';
+  wrap.style.float = 'none';
+  wrap.style.clear = 'none';
+  wrap.style.transform = '';
+  wrap.style.overflow = 'visible';
+  wrap.style.zIndex = `${Math.max(1, 100 + (Number(block.zOrder) || 0))}`;
+  if (anchorEl.style.position !== 'relative' && anchorEl.style.position !== 'absolute') {
+    anchorEl.style.position = 'relative';
+  }
+}
+
+function applyDeferredObjectLayouts(root = document) {
+  const scope = root instanceof Element || root instanceof Document ? root : document;
+  scope.querySelectorAll('[data-hwp-placed-block="1"]').forEach(wrap => {
+    const block = wrap.__hwpBlock;
+    const contentEl = wrap.__hwpContentEl || wrap.firstElementChild;
+    if (!block || !contentEl) return;
+    resetPlacedBlockStyles(wrap);
+    applyPlacedBlockSizing(wrap, contentEl, block);
+    applyPlacedBlockFlowStyles(wrap, block);
+    if (shouldAbsolutePlaceBlock(block)) {
+      applyPlacedBlockAbsoluteStyles(wrap, contentEl, block);
+    }
+  });
 }
 
 function hwpxGradientToCss(fillGradient) {
@@ -3997,6 +5173,55 @@ function normalizeApplicationFormRows(tableBlock, rows) {
   return normalizedRows;
 }
 
+function getTableBlockText(tableBlock) {
+  return (tableBlock?.rows || [])
+    .flatMap(row => row.cells || [])
+    .map(cell => getCellTextInline(cell))
+    .filter(Boolean)
+    .join(' ');
+}
+
+function shouldUsePrimaryFormLayout(tableBlock) {
+  const tableText = getTableBlockText(tableBlock);
+  if (!tableText) return false;
+  if (/등\s*록\s*신\s*청\s*서/.test(tableText)) return true;
+  return /접수번호|접수일시|처리기간/.test(tableText)
+    && /①/.test(tableText)
+    && /②/.test(tableText)
+    && /③/.test(tableText);
+}
+
+function getCompositeHeaderCellModel(tableBlock, row, cell, rowVisualIndex) {
+  if (rowVisualIndex !== 0) return null;
+  if ((Number(cell?.colSpan) || 1) < Math.max(2, Number(tableBlock?.colCount) || 0)) return null;
+
+  const paragraphs = cell?.paragraphs || [];
+  const nestedTables = paragraphs.filter(para => para?.type === 'table');
+  if (nestedTables.length !== 1) return null;
+
+  const titleParagraphs = paragraphs
+    .filter(para => para?.type !== 'table')
+    .filter(para => getParagraphText(para).trim());
+  if (!titleParagraphs.length || titleParagraphs.length > 3) return null;
+
+  const titleText = titleParagraphs
+    .map(getParagraphText)
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (!titleText || titleText.length > 24 || /등록신청서/.test(titleText)) return null;
+
+  const approvalText = getTableBlockText(nestedTables[0]).replace(/\s+/g, ' ').trim();
+  if (!/결\s*재|담\s*임|교\s*무|교\s*감|전\s*결|검\s*토|승\s*인|원\s*장|부\s*장|과\s*장|팀\s*장/.test(approvalText)) {
+    return null;
+  }
+
+  return {
+    titleParagraphs,
+    approvalTable: nestedTables[0],
+  };
+}
+
 function renderApplicationTitleCell(parent, cell) {
   const rawLines = (cell?.paragraphs || [])
     .map(getParagraphText)
@@ -4034,19 +5259,48 @@ function renderApplicationTitleCell(parent, cell) {
   parent.appendChild(grid);
 }
 
+function renderCompositeHeaderCell(parent, model, tableContext) {
+  const layout = document.createElement('div');
+  layout.className = 'hwp-form-header-layout';
+
+  const title = document.createElement('div');
+  title.className = 'hwp-form-header-title';
+  model.titleParagraphs.forEach(para => {
+    appendParagraphBlock(title, para, 'hwp-table-paragraph', {
+      alignOverride: 'center',
+      role: 'form-header-title',
+      rowRole: 'body',
+      cellRole: 'form-header',
+    });
+  });
+  layout.appendChild(title);
+
+  const approval = document.createElement('div');
+  approval.className = 'hwp-form-header-approval';
+  appendTableBlock(approval, model.approvalTable, {
+    pageIndex: tableContext.pageIndex,
+    tableIndex: `${tableContext.tableIndex}-header-${tableContext.rowIndex}-${tableContext.colIndex}`,
+    isFirstTableOnFirstPage: false,
+  });
+  layout.appendChild(approval);
+
+  parent.appendChild(layout);
+}
+
 function appendTableBlock(parent, tableBlock, tableContext = {}) {
   const {
     pageIndex = Number(parent?.dataset?.pageIndex ?? 0),
     tableIndex = 0,
     isFirstTableOnFirstPage = pageIndex === 0 && tableIndex === 0,
   } = tableContext;
+  const usePrimaryFormLayout = isFirstTableOnFirstPage && shouldUsePrimaryFormLayout(tableBlock);
 
   const wrap = document.createElement('div');
   wrap.className = 'hwp-table-wrap';
   wrap.dataset.kind = 'hwp-table';
   wrap.dataset.pageIndex = String(pageIndex);
   wrap.dataset.tableIndex = String(tableIndex);
-  if (isFirstTableOnFirstPage) wrap.dataset.layout = 'first-page-primary';
+  if (usePrimaryFormLayout) wrap.dataset.layout = 'first-page-primary';
 
   const table = document.createElement('table');
   table.className = 'hwp-table';
@@ -4055,7 +5309,15 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
   table.dataset.pageIndex = String(pageIndex);
   table.dataset.tableIndex = String(tableIndex);
   if (tableBlock.sourceFormat) table.dataset.sourceFormat = tableBlock.sourceFormat;
-  if (isFirstTableOnFirstPage) table.dataset.layout = 'first-page-primary';
+  if (usePrimaryFormLayout) table.dataset.layout = 'first-page-primary';
+  const cellSpacingPx = hwpPageUnitToPx(tableBlock.cellSpacing, 0, 48, 0);
+  if (cellSpacingPx > 0) {
+    wrap.dataset.cellSpacing = String(tableBlock.cellSpacing || 0);
+    table.dataset.cellSpacing = String(tableBlock.cellSpacing || 0);
+    table.style.borderCollapse = 'separate';
+    table.style.borderSpacing = `${cellSpacingPx}px`;
+    table.style.outlineOffset = '0';
+  }
 
   if (tableBlock.columnWidths?.length) {
     const colgroup = document.createElement('colgroup');
@@ -4070,7 +5332,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
   }
 
   const tbody = document.createElement('tbody');
-  const rowsToRender = isFirstTableOnFirstPage
+  const rowsToRender = usePrimaryFormLayout
     ? normalizeApplicationFormRows(tableBlock, tableBlock.rows || [])
     : (tableBlock.rows || []);
 
@@ -4083,7 +5345,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
     const rowLooksLikeOptions = rowVisualIndex === 0 && /고엽제후유/.test(rowTexts);
     const rowLooksLikeMeta = /접수번호|접수일시|처리기간/.test(rowTexts);
     const rowLooksLikePersonForm = /①성\s*명|②주민등록번호|③주\s*소/.test(rowTexts);
-    const rowLooksLikeTopSpacer = isFirstTableOnFirstPage
+    const rowLooksLikeTopSpacer = usePrimaryFormLayout
       && rowVisualIndex <= 2
       && cells.length === 1
       && !rowTexts
@@ -4110,14 +5372,14 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       : 0;
     const rowHeightPx = isHwpxTable
       ? (explicitHwpxRowHeight > 0
-        ? hwpUnitToPx(explicitHwpxRowHeight, 0, 180, 1 / 50, 0)
+        ? hwpPageUnitToPx(explicitHwpxRowHeight, 0, 180, 0)
         : hwpUnitToPx(rowHeight, 24, 180, 12, 0))
-      : hwpUnitToPx(rowHeight, 28, 320, 5.4, 0);
+      : hwpPageUnitToPx(rowHeight, 0, 320, 0);
     const cellHeightPx = isHwpxTable
-      ? hwpUnitToPx(maxCellHeight, 0, 120, 1 / 50, 0)
-      : hwpUnitToPx(maxCellHeight, 24, 300, 1 / 170, 0);
+      ? hwpPageUnitToPx(maxCellHeight, 0, 140, 0)
+      : hwpPageUnitToPx(maxCellHeight, 0, 300, 0);
     const contentHeightPx = isHwpxTable
-      ? hwpUnitToPx(maxContentHeight, 0, 120, 1 / 50, 0)
+      ? hwpPageUnitToPx(maxContentHeight, 0, 140, 0)
       : 0;
     let minRowHeight = Math.max(30, rowHeightPx, cellHeightPx, contentHeightPx);
     if (rowLooksLikeTitle) {
@@ -4145,12 +5407,24 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       applyCellBorderStyle(td, cell);
 
       const text = getCellTextInline(cell);
+      const rawText = HwpParser._cellText(cell);
       const explicitCellRole = cell.syntheticRole || '';
       const isTitleLabelCell = /등\s*록\s*신\s*청\s*서/.test(text);
       const isOptionCell = rowLooksLikeTitle && /고엽제후유/.test(text);
       const isCombinedTitleBlock = isTitleLabelCell && isOptionCell;
       const isPeriodCell = /처리기간|20\s*일|90\s*일/.test(text);
       const isMetaCell = /접수번호|접수일시/.test(text);
+      const stackedLabelLines = getStackedHangulLabelLines(rawText);
+      // "결 석 종 류" 같은 세로 라벨은 원문 공백 패턴을 살려 2글자씩 줄바꿈해 준다.
+      const isStackedLabelCell = !explicitCellRole
+        && !isTitleLabelCell
+        && !isOptionCell
+        && !isPeriodCell
+        && !isMetaCell
+        && (cell.colSpan || 1) === 1
+        && (cell.rowSpan || 1) === 1
+        && (cell.col || 0) === 0
+        && Boolean(stackedLabelLines);
       const isFieldLabelCell = explicitCellRole === 'field-label'
         || /^[①-⑳⑴-⒇<]\s*/.test(text)
         || /^(학\s*력|직\s*업|월\s*소득)/.test(text);
@@ -4168,36 +5442,35 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       else if (isOptionCell) td.dataset.role = 'title-options';
       else if (isPeriodCell) td.dataset.role = 'process-period';
       else if (isMetaCell) td.dataset.role = 'meta';
+      else if (isStackedLabelCell) td.dataset.role = 'stacked-label';
       else if (isFieldLabelCell) td.dataset.role = 'field-label';
       else if (isFieldInlineNoteCell) td.dataset.role = 'field-inline-note';
       else td.dataset.role = 'body';
       td.dataset.rowRole = tr.dataset.rowRole || 'body';
-      if (isFirstTableOnFirstPage && td.dataset.role === 'title-block' && td.rowSpan > 2) {
+      const compositeHeaderModel = getCompositeHeaderCellModel(tableBlock, row, cell, rowVisualIndex);
+      if (compositeHeaderModel) td.dataset.role = 'form-header';
+
+      if (usePrimaryFormLayout && td.dataset.role === 'title-block' && td.rowSpan > 2) {
         td.rowSpan = 2;
         td.dataset.rowSpan = '2';
       }
 
-      const cellVerticalAlign = cell.verticalAlign || (shouldMiddleCell ? 'middle' : 'top');
+      const cellVerticalAlign = isStackedLabelCell
+        ? 'middle'
+        : (cell.verticalAlign || (shouldMiddleCell ? 'middle' : 'top'));
       td.style.verticalAlign = cellVerticalAlign;
 
       const [padL, padR, padT, padB] = cell.padding || [];
       const hasPaddingInfo = [padL, padR, padT, padB].some(v => Number(v) > 0);
-      let topPx = 6;
-      let rightPx = 8;
-      let bottomPx = 6;
-      let leftPx = 8;
+      let topPx = 3;
+      let rightPx = 4;
+      let bottomPx = 3;
+      let leftPx = 4;
       if (hasPaddingInfo) {
-        if (isHwpxTable) {
-          topPx = hwpUnitToPx(padT, 3, 18, 1 / 90, 6);
-          rightPx = hwpUnitToPx(padR, 4, 20, 1 / 90, 8);
-          bottomPx = hwpUnitToPx(padB, 3, 18, 1 / 90, 6);
-          leftPx = hwpUnitToPx(padL, 4, 20, 1 / 90, 8);
-        } else {
-          topPx = hwpUnitToPx(padT, 4, 30, 1 / 22, 6);
-          rightPx = hwpUnitToPx(padR, 6, 36, 1 / 22, 8);
-          bottomPx = hwpUnitToPx(padB, 4, 30, 1 / 22, 6);
-          leftPx = hwpUnitToPx(padL, 6, 36, 1 / 22, 8);
-        }
+        topPx = hwpPageUnitToPx(padT, 0, 18, 0);
+        rightPx = hwpPageUnitToPx(padR, 0, 20, 0);
+        bottomPx = hwpPageUnitToPx(padB, 0, 18, 0);
+        leftPx = hwpPageUnitToPx(padL, 0, 20, 0);
       } else if (rowLooksLikeTitle) {
         if (isTitleLabelCell) {
           topPx = 16; rightPx = 10; bottomPx = 16; leftPx = 10;
@@ -4213,7 +5486,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       } else if (rowLooksLikePersonForm) {
         topPx = 7; rightPx = 8; bottomPx = 7; leftPx = 8;
       } else {
-        topPx = 6; rightPx = 8; bottomPx = 6; leftPx = 8;
+        topPx = 3; rightPx = 4; bottomPx = 3; leftPx = 4;
       }
       td.style.padding = `${topPx}px ${rightPx}px ${bottomPx}px ${leftPx}px`;
       if (rowLooksLikeTitle) td.style.height = `${minRowHeight}px`;
@@ -4236,7 +5509,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       }
       if (isOptionCell) content.style.gap = '8px';
 
-      const shouldRenderTitleGrid = isFirstTableOnFirstPage
+      const shouldRenderTitleGrid = usePrimaryFormLayout
         && td.dataset.role === 'title-block'
         && /등\s*록\s*신\s*청\s*서/.test(text);
       if (shouldRenderTitleGrid) {
@@ -4246,15 +5519,36 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
         return;
       }
 
+      if (compositeHeaderModel) {
+        renderCompositeHeaderCell(content, compositeHeaderModel, {
+          pageIndex,
+          tableIndex,
+          rowIndex: row.index,
+          colIndex: cell.col ?? 0,
+        });
+        td.appendChild(content);
+        tr.appendChild(td);
+        return;
+      }
+
       const paragraphs = cell.paragraphs?.length
         ? cell.paragraphs
         : [HwpParser._createParagraphBlock('')];
       paragraphs.forEach((para, paraIndex) => {
-        if (para?.type === 'table') {
+        let paragraphToRender = para;
+        if (isStackedLabelCell && stackedLabelLines && paraIndex === 0 && para?.type !== 'table') {
+          const sourceRun = (para.texts || []).find(run => String(run.text || '').trim()) || (para.texts || [])[0] || {};
+          paragraphToRender = {
+            ...para,
+            texts: [HwpParser._run(stackedLabelLines.join('\n'), { ...sourceRun })],
+          };
+        }
+
+        if (paragraphToRender?.type === 'table') {
           const nestedMount = document.createElement('div');
           nestedMount.className = 'hwp-table-nested';
           content.appendChild(nestedMount);
-          appendTableBlock(nestedMount, para, {
+          appendTableBlock(nestedMount, paragraphToRender, {
             pageIndex,
             tableIndex: `${tableIndex}-${row.index}-${cell.col}-${paraIndex}`,
             isFirstTableOnFirstPage: false,
@@ -4262,14 +5556,25 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
           return;
         }
 
-        if (para?.type === 'image') {
-          appendImageBlock(content, para, 'hwp-image-inline');
+        if (paragraphToRender?.type === 'image') {
+          appendImageBlock(content, paragraphToRender, 'hwp-image-inline');
+          return;
+        }
+
+        if (paragraphToRender?.type === 'equation') {
+          appendObjectTextBlock(content, paragraphToRender, 'equation', 'hwp-object-inline');
+          return;
+        }
+
+        if (paragraphToRender?.type === 'ole') {
+          appendObjectTextBlock(content, paragraphToRender, 'ole', 'hwp-object-inline');
           return;
         }
 
         let paraRole = 'cell-body';
         if (td.dataset.role === 'field-label') paraRole = 'field-label';
         else if (td.dataset.role === 'field-inline-note') paraRole = 'field-inline-note';
+        else if (td.dataset.role === 'stacked-label') paraRole = 'stacked-label';
         else if (isTitleLabelCell) paraRole = 'title-label';
         else if (isOptionCell) paraRole = 'title-option-item';
         else if (isPeriodCell) paraRole = 'process-period';
@@ -4277,7 +5582,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
 
         const forceCenter = isTitleLabelCell || isOptionCell || (shouldCenterCell && !isPeriodCell) || (paraIndex === 0 && rowLooksLikeTitle);
         const paragraphClass = `hwp-table-paragraph${forceCenter ? ' hwp-table-paragraph-centered' : ''}`;
-        appendParagraphBlock(content, para, paragraphClass, {
+        appendParagraphBlock(content, paragraphToRender, paragraphClass, {
           alignOverride: forceCenter ? 'center' : '',
           role: paraRole,
           rowRole: tr.dataset.rowRole || '',
@@ -4295,6 +5600,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
   table.appendChild(tbody);
   wrap.appendChild(table);
   parent.appendChild(wrap);
+  registerPlacedBlock(wrap, table, tableBlock);
 }
 
 function blockPreviewText(block) {
@@ -4362,6 +5668,7 @@ function renderDocument(doc) {
     UI.pageThumbnails.appendChild(th);
   });
 
+  requestAnimationFrame(() => applyDeferredObjectLayouts(UI.documentCanvas));
   updateStatusBar();
 }
 
@@ -4518,7 +5825,7 @@ document.addEventListener('dragover', e => e.preventDefault());
 document.addEventListener('drop', e => {
   e.preventDefault();
   const f = e.dataTransfer?.files?.[0];
-  if(f && /\.(hwp|hwpx)$/i.test(f.name)) processFile(f, { fileHandle: null, fileSource: 'drop' });
+  if(f && /\.(hwp|hwpx|owpml)$/i.test(f.name)) processFile(f, { fileHandle: null, fileSource: 'drop' });
 });
 
 UI.viewerPanel?.addEventListener('scroll', () => {

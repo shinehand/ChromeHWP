@@ -120,7 +120,7 @@
   };
 
   const openFileInViewer = async (file) => {
-    if (!/\.(hwp|hwpx)$/i.test(file.name)) {
+    if (!/\.(hwp|hwpx|owpml)$/i.test(file.name)) {
       setStatus('지원되지 않는 파일 형식입니다.', true);
       return;
     }

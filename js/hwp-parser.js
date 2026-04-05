@@ -1,7 +1,7 @@
 /**
  * hwp-parser.js  (v3 — 안정 재작성)
  * ─────────────────────────────────────────────────────────────────────────────
- * HWP 5.0 / HWPX 파일을 파싱하여 공통 HwpDocument 모델로 변환합니다.
+ * HWP 5.0 / HWPX / OWPML 파일을 파싱하여 공통 HwpDocument 모델로 변환합니다.
  *
  * HWP 5.0 전략:
  *   CFB(OLE) 컨테이너에서 "PrvText" 스트림을 찾아 UTF-16LE 텍스트를 추출.
@@ -36,7 +36,7 @@ export class HwpParser {
     );
 
     const work = (async () => {
-      if (ext === 'hwpx') return HwpParser._parseHwpx(buffer);
+      if (ext === 'hwpx' || ext === 'owpml') return HwpParser._parseHwpx(buffer);
       if (ext === 'hwp')  return HwpParser._parseHwp5(buffer);
       throw new Error(`지원하지 않는 파일 형식입니다: .${ext}`);
     })();
@@ -45,7 +45,7 @@ export class HwpParser {
   }
 
   /* ═══════════════════════════════════════════════════════════
-     HWPX (.hwpx) — ZIP + XML
+     HWPX/OWPML (.hwpx/.owpml) — ZIP + XML
   ═══════════════════════════════════════════════════════════ */
   static async _parseHwpx(buffer) {
     if (typeof JSZip === 'undefined') {
@@ -98,7 +98,18 @@ export class HwpParser {
       if (runs.length > 0) {
         for (const run of runs) {
           const charPr = run.querySelector('charPr, hp\\:charPr, hh\\:charPr');
+          const ratioEl = charPr?.querySelector?.('ratio, hp\\:ratio, hh\\:ratio');
+          const spacingEl = charPr?.querySelector?.('spacing, hp\\:spacing, hh\\:spacing');
+          const relSzEl = charPr?.querySelector?.('relSz, hp\\:relSz, hh\\:relSz');
+          const offsetEl = charPr?.querySelector?.('offset, hp\\:offset, hh\\:offset');
           const attr   = (el, a) => el?.getAttribute(a) || el?.getAttribute(`hp:${a}`) || null;
+          const charAttr = (el, fallback) => {
+            for (const name of ['hangul', 'latin', 'hanja', 'japanese', 'other', 'symbol', 'user']) {
+              const value = Number(attr(el, name));
+              if (Number.isFinite(value)) return value;
+            }
+            return fallback;
+          };
           texts.push({
             text:      run.textContent || '',
             bold:      attr(charPr, 'bold') === '1',
@@ -107,6 +118,10 @@ export class HwpParser {
             fontSize:  parseFloat(attr(charPr, 'size') || '1000') / 100,
             fontName:  attr(charPr, 'fontRef') || 'Malgun Gothic',
             color:     attr(charPr, 'color') || '#000000',
+            scaleX:    charAttr(ratioEl, 100),
+            letterSpacing: charAttr(spacingEl, 0),
+            relSize:   charAttr(relSzEl, 100),
+            offsetY:   charAttr(offsetEl, 0),
           });
         }
       } else {
@@ -300,6 +315,10 @@ export class HwpParser {
       fontSize:  11,
       fontName:  'Malgun Gothic',
       color:     '#000000',
+      scaleX:    100,
+      letterSpacing: 0,
+      relSize:   100,
+      offsetY:   0,
     };
   }
 

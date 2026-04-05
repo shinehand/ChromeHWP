@@ -4,9 +4,9 @@
  * 수정된 문서를 다양한 포맷으로 내보내는 유틸리티.
  *
  * 지원 포맷:
- *  1. HTML   — Quill innerHTML + 스타일 래퍼
- *  2. PDF    — window.print() 기반 (CSS @print 미디어 쿼리 활용)
- *  3. HWPX   — 최소 HWPX XML 구조 생성 후 ZIP 패키징 (JSZip 사용)
+ *  1. HTML        — Quill innerHTML + 스타일 래퍼
+ *  2. PDF         — window.print() 기반 (CSS @print 미디어 쿼리 활용)
+ *  3. HWPX/OWPML  — 최소 OWPML XML 구조 생성 후 ZIP 패키징 (JSZip 사용)
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
@@ -88,7 +88,7 @@ ${body}
   /* ──────────────────────────────────────────────
      HWPX 내보내기 (최소 XML 구조 + JSZip)
   ────────────────────────────────────────────── */
-  async exportHwpx() {
+  async exportHwpx(extension = 'hwpx') {
     if (typeof JSZip === 'undefined') {
       alert('JSZip 라이브러리가 로드되지 않았습니다.');
       return;
@@ -111,7 +111,8 @@ ${body}
     zip.folder('META-INF').file('manifest.xml', this._manifestXml());
 
     const blob = await zip.generateAsync({ type: 'blob', mimeType: 'application/hwp+zip' });
-    this._download(blob, `${this.basename}.hwpx`);
+    const suffix = extension === 'owpml' ? 'owpml' : 'hwpx';
+    this._download(blob, `${this.basename}.${suffix}`);
   }
 
   /**
