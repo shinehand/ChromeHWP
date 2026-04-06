@@ -191,7 +191,8 @@ const HwpParser = {
         refs.paraProps[id] = {
           align: HwpParser._hwpxMapAlign(alignEl?.getAttribute?.('horizontal')),
           marginLeft: HwpParser._hwpxAttrNum(HwpParser._hwpxDescendant(marginEl, 'left'), 'value', 0),
-          textIndent: HwpParser._hwpxAttrNum(HwpParser._hwpxDescendant(marginEl, 'intent'), 'value', 0),
+          marginRight: HwpParser._hwpxAttrNum(HwpParser._hwpxDescendant(marginEl, 'right'), 'value', 0),
+          textIndent: HwpParser._hwpxAttrNum(HwpParser._hwpxDescendant(marginEl, 'indent'), 'value', 0),
           spacingBefore: HwpParser._hwpxAttrNum(HwpParser._hwpxDescendant(marginEl, 'prev'), 'value', 0),
           spacingAfter: HwpParser._hwpxAttrNum(HwpParser._hwpxDescendant(marginEl, 'next'), 'value', 0),
           lineSpacingType: HwpParser._normalizeLineSpacingType(lineSpacingEl?.getAttribute?.('type')),
@@ -4247,19 +4248,19 @@ function appendParagraphBlock(parent, para, className = '', options = {}) {
     p.style.tabSize = '4';
   }
   if (Number.isFinite(para.marginLeft) && !['center', 'right'].includes(p.style.textAlign)) {
-    p.style.paddingLeft = `${Math.max(0, hwpSignedPageUnitToPx(para.marginLeft, -24, 220, 0))}px`;
+    p.style.paddingLeft = `${Math.max(0, hwpSignedUnitToPx(para.marginLeft, -34, 310, 1 / 75, 0))}px`;
   }
   if (Number.isFinite(para.marginRight) && para.marginRight > 0) {
-    p.style.paddingRight = `${hwpSignedPageUnitToPx(para.marginRight, 0, 220, 0)}px`;
+    p.style.paddingRight = `${hwpUnitToPx(para.marginRight, 0, 310, 1 / 75, 0)}px`;
   }
   if (Number.isFinite(para.textIndent) && !['center', 'right'].includes(p.style.textAlign)) {
-    p.style.textIndent = `${hwpSignedPageUnitToPx(para.textIndent, -120, 160, 0)}px`;
+    p.style.textIndent = `${hwpSignedUnitToPx(para.textIndent, -170, 226, 1 / 75, 0)}px`;
   }
   if (Number.isFinite(para.spacingBefore) && para.spacingBefore > 0) {
-    p.style.marginTop = `${hwpPageUnitToPx(para.spacingBefore, 0, 56, 0)}px`;
+    p.style.marginTop = `${hwpUnitToPx(para.spacingBefore, 0, 80, 1 / 75, 0)}px`;
   }
   if (Number.isFinite(para.spacingAfter) && para.spacingAfter > 0) {
-    p.style.marginBottom = `${hwpPageUnitToPx(para.spacingAfter, 0, 56, 4)}px`;
+    p.style.marginBottom = `${hwpUnitToPx(para.spacingAfter, 0, 80, 1 / 75, 4)}px`;
   }
   const resolvedLineHeight = resolveParagraphLineHeight(para);
   if (resolvedLineHeight) {
@@ -4523,17 +4524,17 @@ function resolveParagraphLineHeight(para) {
   const baseFontPx = paragraphBaseFontPx(para);
 
   if (type === 'fixed') {
-    const px = hwpPageUnitToPx(spacing, 0, 140, 0);
+    const px = hwpUnitToPx(spacing, 0, 200, 1 / 75, 0);
     return px > 0 ? `${px}px` : '';
   }
 
   if (type === 'minimum') {
-    const minPx = hwpPageUnitToPx(spacing, 0, 140, 0);
+    const minPx = hwpUnitToPx(spacing, 0, 200, 1 / 75, 0);
     return `${Math.max(Math.round(baseFontPx * 1.2), minPx)}px`;
   }
 
   if (type === 'space-only') {
-    const extraPx = hwpPageUnitToPx(spacing, 0, 80, 0);
+    const extraPx = hwpUnitToPx(spacing, 0, 112, 1 / 75, 0);
     return `${Math.max(Math.round(baseFontPx * 1.2), Math.round(baseFontPx + extraPx))}px`;
   }
 

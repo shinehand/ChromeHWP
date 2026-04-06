@@ -30,6 +30,12 @@
   - HWPX 셀 가중치 추정 상한 14 → 20 확대 (다단락 셀 누락 개선)
   - `_summarizeHwpLineSegs` `lineHeightPx` 상한 42px → 56px (대형 폰트 단락 높이 개선)
   - `parser.worker.js` 동기화
+- HWPX/HWP 단락 서식 파싱 버그 수정 (이번 세션)
+  - HWPX paraPr `'intent'` → `'indent'` 타이포 수정 (textIndent가 HWPX 파일에서 전혀 적용 안 되던 심각한 버그)
+  - HWPX paraPr `marginRight` 파싱 추가 (`<right>` 요소)
+  - 단락 여백·들여쓰기 단위 스케일 수정: `1/106` → `1/75` (HWPUNIT = 1/7200inch, 96DPI 기준 정확한 변환)
+    - `appendParagraphBlock`: marginLeft (−34~310px), marginRight, textIndent (−170~226px), spacingBefore/After (0~80px)
+    - `resolveParagraphLineHeight`: fixed/minimum/space-only lineSpacing (0~200/112px)
 
 ## 확인된 대표 결과
 
@@ -41,6 +47,7 @@
 - `gyeolseokgye.hwp`
   - 상단 표의 병합 셀 왜곡이 줄었고, 첫 열 라벨의 세로 배치가 이전보다 자연스러워짐
   - 우측 여백 파싱 추가로 단락 텍스트 배치 정밀화
+  - HWPX `indent` 타이포 수정 및 단위 스케일 1/75 전환으로 들여쓰기/간격이 원본에 훨씬 더 가까워짐
 
 ## 저장소에 함께 둔 레퍼런스
 
@@ -67,7 +74,7 @@
 
 ## 다음 우선순위
 
-1. `결석계.hwp` 하단 중첩 표 행높이와 세로 정렬 보정 (HWPX 상한 확대 반영 후 재확인)
-2. HWP 5.0 단락 들여쓰기 정밀화 (`marginLeft`/`textIndent` 스케일 검증)
+1. HWP 5.0 단락 스타일ID(styleId) 기반 기본 스타일 적용 — 헤딩/목록 등이 StyleID로 표시되는 경우 올바른 폰트/크기 적용
+2. `결석계.hwp` 하단 중첩 표 행높이와 세로 정렬 재확인 (이전 세션 상한 확대 + 이번 스케일 수정 반영 후)
 3. 차트/OLE placeholder를 실제 렌더 경로로 확장
 4. 실샘플 기준 `page/paper` 절대배치 검증
