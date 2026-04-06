@@ -21,6 +21,26 @@
   - `결석계.hwp` 상단 제목/결재란 조합 레이아웃 보정
   - 병합 셀 때문에 열폭이 퍼지던 계산 보정
   - `인 적 사 항`, `결 석 일 수`, `결 석 종 류` 같은 세로 라벨을 2글자씩 줄바꿈해 렌더
+- HWP/HWPX 레이아웃 메트릭 정밀화 (이번 세션)
+  - `_parseHwpParaShape`: 우측 여백(`marginRight`) 파싱 추가 (오프셋 8)
+  - `_createHwpParagraphBlock` / `createHwpParagraphBlock` (worker): `marginRight` 전달
+  - `appendParagraphBlock`: `para.marginRight > 0`이면 `padding-right` 적용
+  - HWPX 표 행 높이 상한 180px → 280px 확대 (키 큰 행 잘림 방지)
+  - HWPX 셀 높이·본문 높이 상한 140px → 200px 확대
+  - HWPX 셀 가중치 추정 상한 14 → 20 확대 (다단락 셀 누락 개선)
+  - `_summarizeHwpLineSegs` `lineHeightPx` 상한 42px → 56px (대형 폰트 단락 높이 개선)
+  - `parser.worker.js` 동기화
+- HWPX/HWP 단락 서식 파싱 버그 수정 (이번 세션)
+  - HWPX paraPr `'intent'` → `'indent'` 타이포 수정 (textIndent가 HWPX 파일에서 전혀 적용 안 되던 심각한 버그)
+  - HWPX paraPr `marginRight` 파싱 추가 (`<right>` 요소)
+  - 단락 여백·들여쓰기 단위 스케일 수정: `1/106` → `1/75` (HWPUNIT = 1/7200inch, 96DPI 기준 정확한 변환)
+    - `appendParagraphBlock`: marginLeft (−34~310px), marginRight, textIndent (−170~226px), spacingBefore/After (0~80px)
+    - `resolveParagraphLineHeight`: fixed/minimum/space-only lineSpacing (0~200/112px)
+- **코드 파일 분할** (이번 세션): `js/app.js` (5878줄) → 3개 파일로 분리, AI 작업 편의성 개선
+  - `js/hwp-parser.js` (~3452줄): `HwpParser` 객체 전체 (HWP5 바이너리·HWPX ZIP 파서)
+  - `js/hwp-renderer.js` (~1441줄): DOM 렌더링 함수 전체 (appendRunSpan ~ appendTableBlock)
+  - `js/app.js` (~998줄): HwpEditor·HwpExporter·state·UI·이벤트 핸들러
+  - `pages/viewer.html`: 3개 스크립트를 순서대로 로드 (hwp-parser → hwp-renderer → app)
 
 ## 확인된 대표 결과
 
@@ -31,6 +51,8 @@
   - 15페이지, 이미지 3개, 상단 배너와 본문 텍스트 유지 확인
 - `gyeolseokgye.hwp`
   - 상단 표의 병합 셀 왜곡이 줄었고, 첫 열 라벨의 세로 배치가 이전보다 자연스러워짐
+  - 우측 여백 파싱 추가로 단락 텍스트 배치 정밀화
+  - HWPX `indent` 타이포 수정 및 단위 스케일 1/75 전환으로 들여쓰기/간격이 원본에 훨씬 더 가까워짐
 
 ## 저장소에 함께 둔 레퍼런스
 
@@ -57,6 +79,7 @@
 
 ## 다음 우선순위
 
-1. `결석계.hwp` 하단 중첩 표 행높이와 세로 정렬 보정
-2. 차트/OLE placeholder를 실제 렌더 경로로 확장
-3. 실샘플 기준 `page/paper` 절대배치 검증
+1. HWP 5.0 단락 스타일ID(styleId) 기반 기본 스타일 적용 — 헤딩/목록 등이 StyleID로 표시되는 경우 올바른 폰트/크기 적용
+2. `결석계.hwp` 하단 중첩 표 행높이와 세로 정렬 재확인 (이전 세션 상한 확대 + 이번 스케일 수정 반영 후)
+3. 차트/OLE placeholder를 실제 렌더 경로로 확장
+4. 실샘플 기준 `page/paper` 절대배치 검증

@@ -901,6 +901,7 @@ function parseHwpParaShape(body) {
   return {
     align: hwpAlignFromAttr(attr),
     marginLeft: i32(body, 4),
+    marginRight: i32(body, 8),
     textIndent: i32(body, 12),
     spacingBefore: i32(body, 16),
     spacingAfter: i32(body, 20),
@@ -978,7 +979,7 @@ function summarizeHwpLineSegs(lineSegs = []) {
   const totalHeight = heights.reduce((sum, value) => sum + value, 0);
   const avgHeight = totalHeight / heights.length;
   return {
-    lineHeightPx: Math.max(11, Math.min(42, Math.round(avgHeight / 106))),
+    lineHeightPx: Math.max(11, Math.min(56, Math.round(avgHeight / 106))),
     layoutHeightPx: Math.max(12, Math.min(320, Math.round(totalHeight / 106))),
   };
 }
@@ -1025,6 +1026,7 @@ function createHwpParagraphBlock(text, paraState = {}, docInfo = null) {
     type: 'paragraph',
     align: paraStyle?.align || 'left',
     marginLeft: paraStyle?.marginLeft ?? 0,
+    marginRight: paraStyle?.marginRight ?? 0,
     textIndent: paraStyle?.textIndent ?? 0,
     spacingBefore: paraStyle?.spacingBefore ?? 0,
     spacingAfter: paraStyle?.spacingAfter ?? 0,
