@@ -41,6 +41,10 @@
   - `js/hwp-renderer.js` (~1441줄): DOM 렌더링 함수 전체 (appendRunSpan ~ appendTableBlock)
   - `js/app.js` (~998줄): HwpEditor·HwpExporter·state·UI·이벤트 핸들러
   - `pages/viewer.html`: 3개 스크립트를 순서대로 로드 (hwp-parser → hwp-renderer → app)
+- HWP 스타일/문단 머리 확장 (이번 세션)
+  - `DocInfo`에서 `TAB_DEF`, `NUMBERING`, `BULLET`, `STYLE` 레코드 파싱 추가
+  - HWP 문단 생성 시 `styleId` 기반 기본 문단/글자 모양 병합
+  - 번호/글머리표 문단 메타데이터 노출 및 기본 prefix 렌더 추가
 
 ## 확인된 대표 결과
 
@@ -75,11 +79,12 @@
 - 줄바꿈/폰트 폭 정밀화
   - 한글 앱과 같은 줄바꿈 폭, 폰트 대체, 장평 영향까지 더 맞춰야 함
 - 자동 회귀 검증 안정화
-  - `scripts/verify_samples.mjs`는 현재 Playwright CLI 세션 연결 오류(`verify-current`) 때문에 안정적으로 돌지 않음
+  - `scripts/verify_samples.mjs`는 저장소 상대 샘플 경로와 세션 재시도를 사용하도록 보강됨
+  - 다만 샘플 범위 확대와 골든 비교 기준은 여전히 더 필요함
 
 ## 다음 우선순위
 
-1. HWP 5.0 단락 스타일ID(styleId) 기반 기본 스타일 적용 — 헤딩/목록 등이 StyleID로 표시되는 경우 올바른 폰트/크기 적용
+1. HWP 번호/글머리표 실샘플 재검증 — 현재는 기본 prefix 렌더까지 반영됐고 실제 번호 형식/연속성 검증이 더 필요함
 2. `결석계.hwp` 하단 중첩 표 행높이와 세로 정렬 재확인 (이전 세션 상한 확대 + 이번 스케일 수정 반영 후)
 3. 차트/OLE placeholder를 실제 렌더 경로로 확장
 4. 실샘플 기준 `page/paper` 절대배치 검증

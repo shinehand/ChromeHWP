@@ -57,12 +57,63 @@ function appendRunSpan(parent, run) {
   parent.appendChild(span);
 }
 
+function resolveParagraphListMarker(para, listStateRef = null) {
+  const listInfo = para?.listInfo;
+  if (!listInfo) return '';
+  if (listInfo.kind === 'bullet') {
+    return String(listInfo.marker || '•').trim() || '•';
+  }
+
+  const state = listStateRef || {};
+  const key = `${listInfo.kind}:${listInfo.listId || 0}`;
+  const level = Math.max(1, Number(listInfo.level) || 1);
+  const counters = Array.isArray(state[key]) ? [...state[key]] : [];
+  const start = Math.max(1, Number(listInfo.start) || 1);
+  const currentValue = Math.max(start, (counters[level - 1] || (start - 1)) + 1);
+  counters[level - 1] = currentValue;
+  counters.length = level;
+  state[key] = counters;
+
+  const joined = counters.join('.');
+  const format = String(listInfo.format || '').trim();
+  const marker = format
+    ? format.replace(/\^N/g, `${joined}.`).replace(/\^n/g, joined).replace(/\^\^/g, '^').trim()
+    : `${currentValue}.`;
+  return marker || `${currentValue}.`;
+}
+
+// 번호/글머리표 marker는 한 자리 목록도 너무 좁아 보이지 않게 1.8em을 최소로 두고,
+// 2~3자리 다단계 번호(`10.2.`, `12.3.4.`)도 본문 첫 글자와 겹치지 않도록 4.2em 안에서 늘린다.
+const LIST_MARKER_MIN_WIDTH_EM = 1.8;
+const LIST_MARKER_MAX_WIDTH_EM = 4.2;
+const LIST_MARKER_BASE_WIDTH_EM = 1.4;
+const LIST_MARKER_CHAR_WIDTH_EM = 0.16;
+
+// 짧은 다열 표 첫 행은 보통 compact header 성격이 강해서 가운데 정렬 대상으로 본다.
+const COMPACT_TABLE_HEADER_MIN_CELLS = 3;
+const COMPACT_TABLE_HEADER_MAX_CELLS = 6;
+const COMPACT_TABLE_HEADER_MAX_TEXT_LENGTH = 18;
+const TITLE_CELL_MIN_CONTENT_HEIGHT_PX = 48;
+const COMPACT_CELL_MIN_CONTENT_HEIGHT_PX = 24;
+
+// rowspan 라벨은 compact header와 같은 길이 제한을 쓰되 줄 수만 더 엄격하게 본다.
+const GROUPED_ROW_LABEL_MAX_TEXT_LENGTH = COMPACT_TABLE_HEADER_MAX_TEXT_LENGTH;
+const GROUPED_ROW_LABEL_MAX_LINES = 3;
+
+function calculateListMarkerWidth(markerLength) {
+  return Math.max(
+    LIST_MARKER_MIN_WIDTH_EM,
+    Math.min(LIST_MARKER_MAX_WIDTH_EM, LIST_MARKER_BASE_WIDTH_EM + (markerLength * LIST_MARKER_CHAR_WIDTH_EM)),
+  );
+}
+
 function appendParagraphBlock(parent, para, className = '', options = {}) {
   const {
     alignOverride = '',
     role = '',
     rowRole = '',
     cellRole = '',
+    listStateRef = null,
   } = options;
   const effectiveRole = role || para?.role || '';
   const p = document.createElement('p');
@@ -147,13 +198,38 @@ function appendParagraphBlock(parent, para, className = '', options = {}) {
   const hasRenderableRuns = (para.texts || []).some(run => (
     run.type === 'image' || String(run.text || '') !== ''
   ));
+  const listMarker = resolveParagraphListMarker(para, listStateRef);
+  let contentTarget = p;
+  if (listMarker) {
+    p.classList.add('hwp-list-paragraph');
+    p.style.display = 'flex';
+    p.style.alignItems = 'flex-start';
+    p.style.columnGap = '0.35em';
+
+    const markerEl = document.createElement('span');
+    markerEl.className = 'hwp-list-marker';
+    markerEl.textContent = listMarker;
+    markerEl.style.display = 'inline-block';
+    markerEl.style.flex = '0 0 auto';
+    markerEl.style.minWidth = `${calculateListMarkerWidth(listMarker.length)}em`;
+    markerEl.style.whiteSpace = 'nowrap';
+    p.appendChild(markerEl);
+
+    const contentEl = document.createElement('span');
+    contentEl.className = 'hwp-paragraph-content';
+    contentEl.style.display = 'inline-block';
+    contentEl.style.flex = '1 1 auto';
+    contentEl.style.minWidth = '0';
+    p.appendChild(contentEl);
+    contentTarget = contentEl;
+  }
 
   if (!hasRenderableRuns) {
-    p.innerHTML = '&nbsp;';
+    contentTarget.innerHTML = '&nbsp;';
   } else if (effectiveRole === 'process-period' && normalizedProcessText && normalizedProcessText !== textContent) {
-    p.textContent = normalizedProcessText;
+    contentTarget.textContent = normalizedProcessText;
   } else {
-    para.texts.forEach(run => appendRunSpan(p, run));
+    para.texts.forEach(run => appendRunSpan(contentTarget, run));
   }
 
   parent.appendChild(p);
@@ -239,6 +315,7 @@ function appendBlockByType(parent, block, context = {}) {
   const {
     pageIndex = Number(parent?.dataset?.pageIndex ?? 0),
     tableIndexRef = { value: 0 },
+    listStateRef = null,
   } = context;
 
   if (block.type === 'table') {
@@ -266,7 +343,7 @@ function appendBlockByType(parent, block, context = {}) {
     return;
   }
 
-  appendParagraphBlock(parent, block);
+  appendParagraphBlock(parent, block, '', { listStateRef });
 }
 
 function getCellTextInline(cell) {
@@ -287,6 +364,52 @@ function getStackedHangulLabelLines(text) {
     lines.push(tokens.slice(i, i + 2).join(' '));
   }
   return lines.filter(Boolean);
+}
+
+function isCompactTableHeaderRow(rowVisualIndex, cells) {
+  if (
+    rowVisualIndex !== 0
+    || cells.length < COMPACT_TABLE_HEADER_MIN_CELLS
+    || cells.length > COMPACT_TABLE_HEADER_MAX_CELLS
+  ) {
+    return false;
+  }
+  return cells.every(cell => {
+    const text = getCellTextInline(cell);
+    if (!text || text.length > COMPACT_TABLE_HEADER_MAX_TEXT_LENGTH) return false;
+    if ((cell.rowSpan || 1) !== 1) return false;
+    return !(cell.paragraphs || []).some(block => block?.type === 'table');
+  });
+}
+
+function isGroupedRowLabelCell(cell, text, rawText) {
+  const normalized = String(text || '').replace(/\s+/g, '').trim();
+  if ((cell?.rowSpan || 1) <= 1) return false;
+  if ((cell?.colSpan || 1) !== 1) return false;
+  if ((cell?.col || 0) > 1) return false;
+  if (!normalized || normalized.length > GROUPED_ROW_LABEL_MAX_TEXT_LENGTH) return false;
+  // 현재 실샘플의 그룹 라벨은 숫자가 없는 범주명(예: 출석인정결석, 질병으로 인한 결석)이라
+  // 숫자가 섞인 텍스트는 번호/세부 항목 본문일 가능성이 높다고 보고 후보에서 제외한다.
+  if (/[0-9]/.test(normalized)) return false;
+  if ((cell?.paragraphs || []).some(block => block?.type === 'table')) return false;
+  const lineCount = String(rawText || text || '')
+    .split(/\n+/)
+    .map(line => line.trim())
+    .filter(Boolean)
+    .length;
+  return lineCount <= GROUPED_ROW_LABEL_MAX_LINES;
+}
+
+function resolveCellVerticalAlign(cell, options = {}) {
+  const {
+    isStackedLabelCell = false,
+    isGroupedLabelCell = false,
+    rowLooksLikeCompactHeader = false,
+    shouldMiddleCell = false,
+  } = options;
+  if (isStackedLabelCell || isGroupedLabelCell) return 'middle';
+  if (cell?.verticalAlign === 'top' && (rowLooksLikeCompactHeader || shouldMiddleCell)) return 'middle';
+  return cell?.verticalAlign || (shouldMiddleCell ? 'middle' : 'top');
 }
 
 function getParagraphText(para) {
@@ -1128,6 +1251,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
     pageIndex = Number(parent?.dataset?.pageIndex ?? 0),
     tableIndex = 0,
     isFirstTableOnFirstPage = pageIndex === 0 && tableIndex === 0,
+    listStateRef = null,
   } = tableContext;
   const usePrimaryFormLayout = isFirstTableOnFirstPage && shouldUsePrimaryFormLayout(tableBlock);
 
@@ -1181,6 +1305,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
     const rowLooksLikeOptions = rowVisualIndex === 0 && /고엽제후유/.test(rowTexts);
     const rowLooksLikeMeta = /접수번호|접수일시|처리기간/.test(rowTexts);
     const rowLooksLikePersonForm = /①성\s*명|②주민등록번호|③주\s*소/.test(rowTexts);
+    const rowLooksLikeCompactHeader = isCompactTableHeaderRow(rowVisualIndex, cells);
     const rowLooksLikeTopSpacer = usePrimaryFormLayout
       && rowVisualIndex <= 2
       && cells.length === 1
@@ -1195,6 +1320,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
     if (row.syntheticRowRole) tr.dataset.rowRole = row.syntheticRowRole;
     else if (rowLooksLikeTitle) tr.dataset.rowRole = 'title';
     else if (rowLooksLikeMeta) tr.dataset.rowRole = 'meta';
+    else if (rowLooksLikeCompactHeader) tr.dataset.rowRole = 'header';
     else if (rowLooksLikePersonForm) tr.dataset.rowRole = 'person-form';
     else tr.dataset.rowRole = 'body';
 
@@ -1261,6 +1387,9 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
         && (cell.rowSpan || 1) === 1
         && (cell.col || 0) === 0
         && Boolean(stackedLabelLines);
+      const isGroupedLabelCell = !explicitCellRole
+        && !isStackedLabelCell
+        && isGroupedRowLabelCell(cell, text, rawText);
       const isFieldLabelCell = explicitCellRole === 'field-label'
         || /^[①-⑳⑴-⒇<]\s*/.test(text)
         || /^(학\s*력|직\s*업|월\s*소득)/.test(text);
@@ -1279,6 +1408,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       else if (isPeriodCell) td.dataset.role = 'process-period';
       else if (isMetaCell) td.dataset.role = 'meta';
       else if (isStackedLabelCell) td.dataset.role = 'stacked-label';
+      else if (isGroupedLabelCell) td.dataset.role = 'group-label';
       else if (isFieldLabelCell) td.dataset.role = 'field-label';
       else if (isFieldInlineNoteCell) td.dataset.role = 'field-inline-note';
       else td.dataset.role = 'body';
@@ -1291,9 +1421,12 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
         td.dataset.rowSpan = '2';
       }
 
-      const cellVerticalAlign = isStackedLabelCell
-        ? 'middle'
-        : (cell.verticalAlign || (shouldMiddleCell ? 'middle' : 'top'));
+      const cellVerticalAlign = resolveCellVerticalAlign(cell, {
+        isStackedLabelCell,
+        isGroupedLabelCell,
+        rowLooksLikeCompactHeader,
+        shouldMiddleCell,
+      });
       td.style.verticalAlign = cellVerticalAlign;
 
       const [padL, padR, padT, padB] = cell.padding || [];
@@ -1331,13 +1464,17 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       content.className = 'hwp-table-cell-content';
       content.dataset.role = td.dataset.role || 'body';
       content.dataset.rowRole = tr.dataset.rowRole || 'body';
-      if (rowLooksLikeTitle) {
-        const innerHeight = Math.max(48, minRowHeight - topPx - bottomPx);
+      const shouldCenterContent = rowLooksLikeTitle || rowLooksLikeCompactHeader || isGroupedLabelCell;
+      if (shouldCenterContent) {
+        const innerHeight = Math.max(
+          rowLooksLikeTitle ? TITLE_CELL_MIN_CONTENT_HEIGHT_PX : COMPACT_CELL_MIN_CONTENT_HEIGHT_PX,
+          minRowHeight - topPx - bottomPx,
+        );
         content.style.minHeight = `${innerHeight}px`;
         content.style.display = 'flex';
         content.style.flexDirection = 'column';
         content.style.justifyContent = 'center';
-        if (isTitleLabelCell || isOptionCell || shouldCenterCell) {
+        if (isTitleLabelCell || isOptionCell || shouldCenterCell || rowLooksLikeCompactHeader || isGroupedLabelCell) {
           content.style.alignItems = 'center';
         } else {
           content.style.alignItems = 'stretch';
@@ -1388,6 +1525,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
             pageIndex,
             tableIndex: `${tableIndex}-${row.index}-${cell.col}-${paraIndex}`,
             isFirstTableOnFirstPage: false,
+            listStateRef,
           });
           return;
         }
@@ -1423,6 +1561,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
           role: paraRole,
           rowRole: tr.dataset.rowRole || '',
           cellRole: td.dataset.role || '',
+          listStateRef,
         });
       });
 
@@ -1438,4 +1577,3 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
   parent.appendChild(wrap);
   registerPlacedBlock(wrap, table, tableBlock);
 }
-

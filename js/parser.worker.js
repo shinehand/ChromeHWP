@@ -905,11 +905,152 @@ function parseHwpParaShape(body) {
     textIndent: i32(body, 12),
     spacingBefore: i32(body, 16),
     spacingAfter: i32(body, 20),
+    tabDefId: body.length >= 30 ? u16(body, 28) : 0,
+    paraHeadId: body.length >= 32 ? u16(body, 30) : 0,
+    borderFillId: body.length >= 34 ? u16(body, 32) : 0,
+    headShapeType: ['none', 'outline', 'number', 'bullet'][(attr >> 23) & 0x3] || 'none',
+    headShapeLevel: Math.max(1, ((attr >> 25) & 0x7) + 1),
     lineSpacingType: modernLineSpacing
       ? hwpLineSpacingTypeFromCode(modernAttr & 0x1F)
       : hwpLineSpacingTypeFromCode(attr & 0x3),
     lineSpacing: modernLineSpacing || legacyLineSpacing || 0,
   };
+}
+
+function parseHwpTabDef(body) {
+  if (!body || body.length < 6) return null;
+  const attr = u32(body, 0);
+  const count = Math.max(0, i16(body, 4));
+  const tabs = [];
+  let offset = 6;
+  for (let i = 0; i < count && offset + 8 <= body.length; i++, offset += 8) {
+    tabs.push({
+      position: i32(body, offset),
+      kind: ['left', 'right', 'center', 'decimal'][body[offset + 4] || 0] || 'left',
+      leader: body[offset + 5] || 0,
+    });
+  }
+  return {
+    attr,
+    autoLeftTab: Boolean(attr & 1),
+    autoRightTab: Boolean(attr & (1 << 1)),
+    tabs,
+  };
+}
+
+function parseHwpNumbering(body) {
+  if (!body || body.length < 10) return null;
+  let offset = 8;
+  const formats = [];
+  for (let i = 0; i < 7 && offset + 2 <= body.length; i++) {
+    const len = u16(body, offset);
+    offset += 2;
+    formats.push(decodeHwpUtf16String(body, offset, len));
+    offset += len * 2;
+  }
+  const start = offset + 2 <= body.length ? u16(body, offset) : 1;
+  if (offset + 2 <= body.length) offset += 2;
+  const starts = [];
+  for (let i = 0; i < 7 && offset + 4 <= body.length; i++, offset += 4) {
+    starts.push(u32(body, offset));
+  }
+  return {
+    formats,
+    start,
+    starts,
+  };
+}
+
+function parseHwpBullet(body) {
+  if (!body || body.length < 10) return null;
+  return {
+    bulletChar: decodeHwpUtf16String(body, 8, 1) || '•',
+    imageBulletId: body.length >= 14 ? i32(body, 10) : 0,
+    checkBulletChar: body.length >= 20 ? decodeHwpUtf16String(body, 18, 1) : '',
+  };
+}
+
+function parseHwpStyle(body) {
+  if (!body || body.length < 12) return null;
+  let offset = 0;
+  const localNameLen = u16(body, offset);
+  offset += 2;
+  const name = decodeHwpUtf16String(body, offset, localNameLen);
+  offset += localNameLen * 2;
+  const hasEnglishNameLen = offset + 2 <= body.length;
+  const enNameLen = hasEnglishNameLen ? u16(body, offset) : 0;
+  offset += hasEnglishNameLen ? 2 : 0;
+  const englishName = decodeHwpUtf16String(body, offset, enNameLen);
+  offset += enNameLen * 2;
+  const attr = body[offset] || 0;
+  offset += 1;
+  const nextStyleId = body[offset] || 0;
+  offset += 1;
+  const hasLangId = offset + 2 <= body.length;
+  const langId = hasLangId ? i16(body, offset) : 0;
+  offset += hasLangId ? 2 : 0;
+  const hasParaShapeId = offset + 2 <= body.length;
+  const paraShapeId = hasParaShapeId ? u16(body, offset) : 0;
+  offset += hasParaShapeId ? 2 : 0;
+  const charShapeId = offset + 2 <= body.length ? u16(body, offset) : 0;
+  return {
+    name,
+    englishName,
+    attr,
+    kind: (attr & 0x7) === 1 ? 'character' : 'paragraph',
+    nextStyleId,
+    langId,
+    paraShapeId,
+    charShapeId,
+  };
+}
+
+function resolveHwpDocInfoRef(collection, id, allowPlusOne = false) {
+  const key = Number(id);
+  if (!collection || !Number.isFinite(key) || key < 0) return null;
+  if (collection[key]) return collection[key];
+  if (allowPlusOne && collection[key + 1]) return collection[key + 1];
+  return null;
+}
+
+function resolveHwpParagraphStyle(paraState = {}, docInfo = null) {
+  const style = resolveHwpDocInfoRef(docInfo?.styles, paraState?.styleId, true);
+  const styleParaShape = resolveHwpDocInfoRef(docInfo?.paraShapes, style?.paraShapeId, true);
+  const directParaShape = resolveHwpDocInfoRef(docInfo?.paraShapes, paraState?.paraShapeId, false);
+  return {
+    style,
+    paraStyle: {
+      ...(styleParaShape || {}),
+      ...(directParaShape || {}),
+    },
+    baseCharStyle: resolveHwpDocInfoRef(docInfo?.charShapes, style?.charShapeId, true) || {},
+  };
+}
+
+function resolveHwpParagraphListInfo(paraStyle = {}, docInfo = null) {
+  const kind = paraStyle?.headShapeType || 'none';
+  const level = Math.max(1, Number(paraStyle?.headShapeLevel) || 1);
+  const listId = Number(paraStyle?.paraHeadId) || 0;
+  if (kind === 'bullet') {
+    const bullet = resolveHwpDocInfoRef(docInfo?.bullets, listId, true);
+    return {
+      kind,
+      level,
+      listId,
+      marker: bullet?.bulletChar || bullet?.checkBulletChar || '•',
+    };
+  }
+  if (kind === 'number') {
+    const numbering = resolveHwpDocInfoRef(docInfo?.numberings, listId, true);
+    return {
+      kind,
+      level,
+      listId,
+      format: numbering?.formats?.[level - 1] || numbering?.formats?.[0] || '',
+      start: numbering?.starts?.[level - 1] || numbering?.start || 1,
+    };
+  }
+  return null;
 }
 
 function parseHwpParaHeader(body) {
@@ -984,7 +1125,7 @@ function summarizeHwpLineSegs(lineSegs = []) {
   };
 }
 
-function buildHwpTextRuns(text, charShapes = [], docInfo = null) {
+function buildHwpTextRuns(text, charShapes = [], docInfo = null, baseStyle = {}) {
   const sourceText = String(text || '');
   const normalizedRanges = Array.isArray(charShapes)
     ? charShapes
@@ -993,7 +1134,7 @@ function buildHwpTextRuns(text, charShapes = [], docInfo = null) {
     : [];
 
   if (!normalizedRanges.length) {
-    return [run(sourceText)];
+    return [run(sourceText, baseStyle)];
   }
 
   if (normalizedRanges[0].start !== 0) {
@@ -1013,14 +1154,17 @@ function buildHwpTextRuns(text, charShapes = [], docInfo = null) {
     const safeEnd = Math.max(safeStart, Math.min(sourceText.length, nextStart));
     const runText = sourceText.slice(safeStart, safeEnd);
     if (!runText && sourceText.length) continue;
-    runs.push(run(runText, docInfo?.charShapes?.[current.charShapeId] || {}));
+    runs.push(run(runText, {
+      ...baseStyle,
+      ...(docInfo?.charShapes?.[current.charShapeId] || {}),
+    }));
   }
 
-  return runs.length ? runs : [run(sourceText)];
+  return runs.length ? runs : [run(sourceText, baseStyle)];
 }
 
 function createHwpParagraphBlock(text, paraState = {}, docInfo = null) {
-  const paraStyle = docInfo?.paraShapes?.[paraState?.paraShapeId] || null;
+  const { style, paraStyle, baseCharStyle } = resolveHwpParagraphStyle(paraState, docInfo);
   const lineMetrics = summarizeHwpLineSegs(paraState?.lineSegs || []);
   return {
     type: 'paragraph',
@@ -1032,9 +1176,13 @@ function createHwpParagraphBlock(text, paraState = {}, docInfo = null) {
     spacingAfter: paraStyle?.spacingAfter ?? 0,
     lineSpacingType: paraStyle?.lineSpacingType || '',
     lineSpacing: paraStyle?.lineSpacing ?? 0,
+    styleId: paraState?.styleId ?? 0,
+    styleName: style?.name || style?.englishName || '',
+    tabDefId: paraStyle?.tabDefId ?? 0,
+    listInfo: resolveHwpParagraphListInfo(paraStyle, docInfo),
     lineHeightPx: lineMetrics.lineHeightPx,
     layoutHeightPx: lineMetrics.layoutHeightPx,
-    texts: buildHwpTextRuns(text, paraState?.charShapes || [], docInfo),
+    texts: buildHwpTextRuns(text, paraState?.charShapes || [], docInfo, baseCharStyle),
   };
 }
 
@@ -1042,11 +1190,19 @@ function parseHwpDocInfoRecords(data) {
   const faceNames = {};
   const borderFills = {};
   const charShapes = {};
+  const tabDefs = {};
+  const numberings = {};
+  const bullets = {};
   const paraShapes = {};
+  const styles = {};
   let faceNameId = 1;
   let borderFillId = 1;
   let charShapeId = 1;
+  let tabDefId = 1;
+  let numberingId = 1;
+  let bulletId = 1;
   let paraShapeId = 1;
+  let styleId = 1;
   let pos = 0;
 
   while (pos < data.length) {
@@ -1079,12 +1235,48 @@ function parseHwpDocInfoRecords(data) {
       pos = rec.nextPos;
       continue;
     }
+    if (rec.tagId === 22) {
+      const tabDef = parseHwpTabDef(rec.body);
+      if (tabDef) {
+        tabDefs[tabDefId] = tabDef;
+      }
+      tabDefId += 1;
+      pos = rec.nextPos;
+      continue;
+    }
+    if (rec.tagId === 23) {
+      const numbering = parseHwpNumbering(rec.body);
+      if (numbering) {
+        numberings[numberingId] = numbering;
+      }
+      numberingId += 1;
+      pos = rec.nextPos;
+      continue;
+    }
+    if (rec.tagId === 24) {
+      const bullet = parseHwpBullet(rec.body);
+      if (bullet) {
+        bullets[bulletId] = bullet;
+      }
+      bulletId += 1;
+      pos = rec.nextPos;
+      continue;
+    }
     if (rec.tagId === 25) {
       const paraShape = parseHwpParaShape(rec.body);
       if (paraShape) {
         paraShapes[paraShapeId] = paraShape;
       }
       paraShapeId += 1;
+      pos = rec.nextPos;
+      continue;
+    }
+    if (rec.tagId === 26) {
+      const style = parseHwpStyle(rec.body);
+      if (style) {
+        styles[styleId] = style;
+      }
+      styleId += 1;
     }
     pos = rec.nextPos;
   }
@@ -1093,11 +1285,19 @@ function parseHwpDocInfoRecords(data) {
     faceNames,
     borderFills,
     charShapes,
+    tabDefs,
+    numberings,
+    bullets,
     paraShapes,
+    styles,
     faceNameCount: faceNameId - 1,
     borderFillCount: borderFillId - 1,
     charShapeCount: charShapeId - 1,
+    tabDefCount: tabDefId - 1,
+    numberingCount: numberingId - 1,
+    bulletCount: bulletId - 1,
     paraShapeCount: paraShapeId - 1,
+    styleCount: styleId - 1,
   };
 }
 
@@ -1112,11 +1312,19 @@ async function parseHwpDocInfoStream(data, streamOptions = {}) {
     faceNames: {},
     borderFills: {},
     charShapes: {},
+    tabDefs: {},
+    numberings: {},
+    bullets: {},
     paraShapes: {},
+    styles: {},
     faceNameCount: 0,
     borderFillCount: 0,
     charShapeCount: 0,
+    tabDefCount: 0,
+    numberingCount: 0,
+    bulletCount: 0,
     paraShapeCount: 0,
+    styleCount: 0,
   };
   let bestMode = 'raw';
   for (const attempt of attempts) {
@@ -1125,21 +1333,29 @@ async function parseHwpDocInfoStream(data, streamOptions = {}) {
     const score = (parsed.faceNameCount || 0)
       + (parsed.borderFillCount || 0)
       + (parsed.charShapeCount || 0)
-      + (parsed.paraShapeCount || 0);
+      + (parsed.tabDefCount || 0)
+      + (parsed.numberingCount || 0)
+      + (parsed.bulletCount || 0)
+      + (parsed.paraShapeCount || 0)
+      + (parsed.styleCount || 0);
     const bestScore = (best.faceNameCount || 0)
       + (best.borderFillCount || 0)
       + (best.charShapeCount || 0)
-      + (best.paraShapeCount || 0);
+      + (best.tabDefCount || 0)
+      + (best.numberingCount || 0)
+      + (best.bulletCount || 0)
+      + (best.paraShapeCount || 0)
+      + (best.styleCount || 0);
     if (score > bestScore) {
       best = parsed;
       bestMode = attempt.mode;
     }
   }
 
-  if ((best.borderFillCount || 0) > 0 || (best.charShapeCount || 0) > 0 || (best.paraShapeCount || 0) > 0) {
+  if ((best.borderFillCount || 0) > 0 || (best.charShapeCount || 0) > 0 || (best.paraShapeCount || 0) > 0 || (best.styleCount || 0) > 0) {
     self.postMessage({
       type: 'progress',
-      msg: `DocInfo borderFill ${best.borderFillCount || 0}개, 글자모양 ${best.charShapeCount || 0}개, 문단모양 ${best.paraShapeCount || 0}개 적용 (${bestMode})`,
+      msg: `DocInfo borderFill ${best.borderFillCount || 0}개, 글자모양 ${best.charShapeCount || 0}개, 탭 ${best.tabDefCount || 0}개, 번호 ${best.numberingCount || 0}개, 글머리표 ${best.bulletCount || 0}개, 문단모양 ${best.paraShapeCount || 0}개, 스타일 ${best.styleCount || 0}개 적용 (${bestMode})`,
     });
   }
 
