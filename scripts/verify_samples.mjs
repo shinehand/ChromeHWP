@@ -15,7 +15,7 @@ const PWCLI = process.env.PWCLI || path.join(CODEX_HOME, 'skills', 'playwright',
 const VIEWER_URL = process.env.VIEWER_URL || 'http://127.0.0.1:4174/pages/viewer.html';
 const SESSION_NAME = process.env.PLAYWRIGHT_CLI_SESSION || 'verify-current';
 const SAMPLE_DIR = path.join(ROOT_DIR, 'output', 'playwright', 'inputs');
-const SESSION_RETRY_LIMIT = Number(process.env.PLAYWRIGHT_SESSION_RETRIES || 6);
+const MAX_SESSION_RETRIES = Number(process.env.PLAYWRIGHT_SESSION_RETRIES || 6);
 const RETRY_BASE_DELAY_MS = 250;
 
 const HWP_SAMPLE = process.env.HWP_SAMPLE
@@ -119,8 +119,8 @@ function extractButtonRef(snapshot, labels) {
 async function uploadFile(filePath) {
   for (const directRef of ['e8', 'e15']) {
     try {
-      runPw(['click', directRef], { retries: SESSION_RETRY_LIMIT, throwOnError: true });
-      runPw(['upload', filePath], { retries: SESSION_RETRY_LIMIT, throwOnError: true });
+      runPw(['click', directRef], { retries: MAX_SESSION_RETRIES, throwOnError: true });
+      runPw(['upload', filePath], { retries: MAX_SESSION_RETRIES, throwOnError: true });
       return;
     } catch {}
   }
@@ -129,7 +129,7 @@ async function uploadFile(filePath) {
   let lastSnapshot = '';
   const started = Date.now();
   while (!ref && Date.now() - started < 8000) {
-    const snapOut = runPw(['snapshot'], { retries: SESSION_RETRY_LIMIT });
+    const snapOut = runPw(['snapshot'], { retries: MAX_SESSION_RETRIES });
     lastSnapshot = loadSnapshot(snapOut);
     ref = extractButtonRef(lastSnapshot, ['파일 선택', '📂 파일 열기']);
     if (ref) break;
@@ -146,8 +146,8 @@ async function uploadFile(filePath) {
     }
   }
 
-  runPw(['click', ref], { retries: SESSION_RETRY_LIMIT });
-  runPw(['upload', filePath], { retries: SESSION_RETRY_LIMIT });
+  runPw(['click', ref], { retries: MAX_SESSION_RETRIES });
+  runPw(['upload', filePath], { retries: MAX_SESSION_RETRIES });
 }
 
 async function waitForCondition(name, predicate, timeoutMs = 12000, intervalMs = 600) {
@@ -155,7 +155,7 @@ async function waitForCondition(name, predicate, timeoutMs = 12000, intervalMs =
   let lastSnapshot = '';
 
   while (Date.now() - started < timeoutMs) {
-    const snapOut = runPw(['snapshot'], { retries: SESSION_RETRY_LIMIT });
+    const snapOut = runPw(['snapshot'], { retries: MAX_SESSION_RETRIES });
     lastSnapshot = loadSnapshot(snapOut);
     if (predicate(lastSnapshot)) {
       return lastSnapshot;
@@ -257,8 +257,8 @@ async function main() {
   ensureFileExists(HWPX_SAMPLE, 'HWPX 샘플');
   ensureFileExists(ATTACHMENT_HWP_SAMPLE, '추가 HWP 샘플');
 
-  runPw(['close-all'], { retries: SESSION_RETRY_LIMIT });
-  runPw(['open', VIEWER_URL], { retries: SESSION_RETRY_LIMIT });
+  runPw(['close-all'], { retries: MAX_SESSION_RETRIES });
+  runPw(['open', VIEWER_URL], { retries: MAX_SESSION_RETRIES });
   await waitForCondition('초기 뷰어 로드', text => /파일 선택|📂 파일 열기/.test(text));
 
   try {
@@ -271,7 +271,7 @@ async function main() {
     console.log(`- hwpx: ${HWPX_SAMPLE}`);
     console.log(`- attachment: ${ATTACHMENT_HWP_SAMPLE}`);
   } finally {
-    runPw(['close-all'], { retries: SESSION_RETRY_LIMIT });
+    runPw(['close-all'], { retries: MAX_SESSION_RETRIES });
   }
 }
 
