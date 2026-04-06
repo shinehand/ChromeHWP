@@ -36,6 +36,11 @@
   - 단락 여백·들여쓰기 단위 스케일 수정: `1/106` → `1/75` (HWPUNIT = 1/7200inch, 96DPI 기준 정확한 변환)
     - `appendParagraphBlock`: marginLeft (−34~310px), marginRight, textIndent (−170~226px), spacingBefore/After (0~80px)
     - `resolveParagraphLineHeight`: fixed/minimum/space-only lineSpacing (0~200/112px)
+- **코드 파일 분할** (이번 세션): `js/app.js` (5878줄) → 3개 파일로 분리, AI 작업 편의성 개선
+  - `js/hwp-parser.js` (~3452줄): `HwpParser` 객체 전체 (HWP5 바이너리·HWPX ZIP 파서)
+  - `js/hwp-renderer.js` (~1441줄): DOM 렌더링 함수 전체 (appendRunSpan ~ appendTableBlock)
+  - `js/app.js` (~998줄): HwpEditor·HwpExporter·state·UI·이벤트 핸들러
+  - `pages/viewer.html`: 3개 스크립트를 순서대로 로드 (hwp-parser → hwp-renderer → app)
 
 ## 확인된 대표 결과
 
