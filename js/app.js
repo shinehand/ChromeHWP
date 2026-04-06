@@ -315,6 +315,7 @@ body{font-family:'HCR Batang','함초롬바탕','Noto Serif KR','Malgun Gothic',
   buildDocumentHtml(doc) {
     if (!doc?.pages?.length) return '<p>&nbsp;</p>';
     const root = document.createElement('div');
+    const listStateRef = {};
 
     doc.pages.forEach((page, pi) => {
       const pageEl = document.createElement('div');
@@ -332,9 +333,9 @@ body{font-family:'HCR Batang','함초롬바탕','Noto Serif KR','Malgun Gothic',
 
       const { headerEl, bodyEl, footerEl } = createPageSections(pageEl);
       const tableIndexRef = { value: 0 };
-      (page.headerBlocks || []).forEach(block => appendBlockByType(headerEl, block, { pageIndex: pi, tableIndexRef }));
-      page.paragraphs.forEach(block => appendBlockByType(bodyEl, block, { pageIndex: pi, tableIndexRef }));
-      (page.footerBlocks || []).forEach(block => appendBlockByType(footerEl, block, { pageIndex: pi, tableIndexRef }));
+      (page.headerBlocks || []).forEach(block => appendBlockByType(headerEl, block, { pageIndex: pi, tableIndexRef, listStateRef }));
+      page.paragraphs.forEach(block => appendBlockByType(bodyEl, block, { pageIndex: pi, tableIndexRef, listStateRef }));
+      (page.footerBlocks || []).forEach(block => appendBlockByType(footerEl, block, { pageIndex: pi, tableIndexRef, listStateRef }));
 
       root.appendChild(pageEl);
     });
@@ -751,6 +752,7 @@ function renderDocument(doc) {
   UI.documentCanvas.innerHTML = '';
   UI.pageThumbnails.innerHTML = '';
   state.renderedPages = doc.pages.length || 1;
+  const listStateRef = {};
 
   doc.pages.forEach((page, pi) => {
     const pageEl = document.createElement('div');
@@ -769,9 +771,9 @@ function renderDocument(doc) {
 
     const { headerEl, bodyEl, footerEl } = createPageSections(pageEl);
     const tableIndexRef = { value: 0 };
-    (page.headerBlocks || []).forEach(block => appendBlockByType(headerEl, block, { pageIndex: pi, tableIndexRef }));
-    page.paragraphs.forEach(block => appendBlockByType(bodyEl, block, { pageIndex: pi, tableIndexRef }));
-    (page.footerBlocks || []).forEach(block => appendBlockByType(footerEl, block, { pageIndex: pi, tableIndexRef }));
+    (page.headerBlocks || []).forEach(block => appendBlockByType(headerEl, block, { pageIndex: pi, tableIndexRef, listStateRef }));
+    page.paragraphs.forEach(block => appendBlockByType(bodyEl, block, { pageIndex: pi, tableIndexRef, listStateRef }));
+    (page.footerBlocks || []).forEach(block => appendBlockByType(footerEl, block, { pageIndex: pi, tableIndexRef, listStateRef }));
 
     UI.documentCanvas.appendChild(pageEl);
 

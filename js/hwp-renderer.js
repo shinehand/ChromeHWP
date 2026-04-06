@@ -57,12 +57,38 @@ function appendRunSpan(parent, run) {
   parent.appendChild(span);
 }
 
+function resolveParagraphListMarker(para, listStateRef = null) {
+  const listInfo = para?.listInfo;
+  if (!listInfo) return '';
+  if (listInfo.kind === 'bullet') {
+    return String(listInfo.marker || '•').trim() || '•';
+  }
+
+  const state = listStateRef || {};
+  const key = `${listInfo.kind}:${listInfo.listId || 0}`;
+  const level = Math.max(1, Number(listInfo.level) || 1);
+  const counters = Array.isArray(state[key]) ? [...state[key]] : [];
+  const start = Math.max(1, Number(listInfo.start) || 1);
+  const currentValue = Math.max(start, (counters[level - 1] || (start - 1)) + 1);
+  counters[level - 1] = currentValue;
+  counters.length = level;
+  state[key] = counters;
+
+  const joined = counters.join('.');
+  const format = String(listInfo.format || '').trim();
+  const marker = format
+    ? format.replace(/\^N/g, `${joined}.`).replace(/\^n/g, joined).replace(/\^\^/g, '^').trim()
+    : `${currentValue}.`;
+  return marker || `${currentValue}.`;
+}
+
 function appendParagraphBlock(parent, para, className = '', options = {}) {
   const {
     alignOverride = '',
     role = '',
     rowRole = '',
     cellRole = '',
+    listStateRef = null,
   } = options;
   const effectiveRole = role || para?.role || '';
   const p = document.createElement('p');
@@ -147,13 +173,38 @@ function appendParagraphBlock(parent, para, className = '', options = {}) {
   const hasRenderableRuns = (para.texts || []).some(run => (
     run.type === 'image' || String(run.text || '') !== ''
   ));
+  const listMarker = resolveParagraphListMarker(para, listStateRef);
+  let contentTarget = p;
+  if (listMarker) {
+    p.classList.add('hwp-list-paragraph');
+    p.style.display = 'flex';
+    p.style.alignItems = 'flex-start';
+    p.style.columnGap = '0.35em';
+
+    const markerEl = document.createElement('span');
+    markerEl.className = 'hwp-list-marker';
+    markerEl.textContent = listMarker;
+    markerEl.style.display = 'inline-block';
+    markerEl.style.flex = '0 0 auto';
+    markerEl.style.minWidth = `${Math.max(1.8, Math.min(4.2, 1.4 + (listMarker.length * 0.16)))}em`;
+    markerEl.style.whiteSpace = 'nowrap';
+    p.appendChild(markerEl);
+
+    const contentEl = document.createElement('span');
+    contentEl.className = 'hwp-paragraph-content';
+    contentEl.style.display = 'inline-block';
+    contentEl.style.flex = '1 1 auto';
+    contentEl.style.minWidth = '0';
+    p.appendChild(contentEl);
+    contentTarget = contentEl;
+  }
 
   if (!hasRenderableRuns) {
-    p.innerHTML = '&nbsp;';
+    contentTarget.innerHTML = '&nbsp;';
   } else if (effectiveRole === 'process-period' && normalizedProcessText && normalizedProcessText !== textContent) {
-    p.textContent = normalizedProcessText;
+    contentTarget.textContent = normalizedProcessText;
   } else {
-    para.texts.forEach(run => appendRunSpan(p, run));
+    para.texts.forEach(run => appendRunSpan(contentTarget, run));
   }
 
   parent.appendChild(p);
@@ -239,6 +290,7 @@ function appendBlockByType(parent, block, context = {}) {
   const {
     pageIndex = Number(parent?.dataset?.pageIndex ?? 0),
     tableIndexRef = { value: 0 },
+    listStateRef = null,
   } = context;
 
   if (block.type === 'table') {
@@ -266,7 +318,7 @@ function appendBlockByType(parent, block, context = {}) {
     return;
   }
 
-  appendParagraphBlock(parent, block);
+  appendParagraphBlock(parent, block, '', { listStateRef });
 }
 
 function getCellTextInline(cell) {
@@ -1128,6 +1180,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
     pageIndex = Number(parent?.dataset?.pageIndex ?? 0),
     tableIndex = 0,
     isFirstTableOnFirstPage = pageIndex === 0 && tableIndex === 0,
+    listStateRef = null,
   } = tableContext;
   const usePrimaryFormLayout = isFirstTableOnFirstPage && shouldUsePrimaryFormLayout(tableBlock);
 
@@ -1388,6 +1441,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
             pageIndex,
             tableIndex: `${tableIndex}-${row.index}-${cell.col}-${paraIndex}`,
             isFirstTableOnFirstPage: false,
+            listStateRef,
           });
           return;
         }
@@ -1423,6 +1477,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
           role: paraRole,
           rowRole: tr.dataset.rowRole || '',
           cellRole: td.dataset.role || '',
+          listStateRef,
         });
       });
 
@@ -1438,4 +1493,3 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
   parent.appendChild(wrap);
   registerPlacedBlock(wrap, table, tableBlock);
 }
-
