@@ -82,7 +82,8 @@ function resolveParagraphListMarker(para, listStateRef = null) {
   return marker || `${currentValue}.`;
 }
 
-// 번호/글머리표 marker는 1~3자리 다단계 번호까지 겹치지 않도록 최소/최대 폭을 고정한다.
+// 번호/글머리표 marker는 한 자리 목록도 너무 좁아 보이지 않게 1.8em을 최소로 두고,
+// 2~3자리 다단계 번호(`10.2.`, `12.3.4.`)도 본문 첫 글자와 겹치지 않도록 4.2em 안에서 늘린다.
 const LIST_MARKER_MIN_WIDTH_EM = 1.8;
 const LIST_MARKER_MAX_WIDTH_EM = 4.2;
 const LIST_MARKER_BASE_WIDTH_EM = 1.4;
@@ -385,7 +386,8 @@ function isGroupedRowLabelCell(cell, text, rawText) {
   if ((cell?.colSpan || 1) !== 1) return false;
   if ((cell?.col || 0) > 1) return false;
   if (!normalized || normalized.length > GROUPED_ROW_LABEL_MAX_TEXT_LENGTH) return false;
-  if (/[0-9()]/.test(normalized)) return false;
+  // 숫자 계열 텍스트는 표 본문/일련번호일 가능성이 높아서 rowspan 라벨 후보에서 제외한다.
+  if (/[0-9]/.test(normalized)) return false;
   if ((cell?.paragraphs || []).some(block => block?.type === 'table')) return false;
   const lineCount = String(rawText || text || '')
     .split(/\n+/)
