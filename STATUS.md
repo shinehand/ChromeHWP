@@ -21,6 +21,15 @@
   - `결석계.hwp` 상단 제목/결재란 조합 레이아웃 보정
   - 병합 셀 때문에 열폭이 퍼지던 계산 보정
   - `인 적 사 항`, `결 석 일 수`, `결 석 종 류` 같은 세로 라벨을 2글자씩 줄바꿈해 렌더
+- HWP/HWPX 레이아웃 메트릭 정밀화 (이번 세션)
+  - `_parseHwpParaShape`: 우측 여백(`marginRight`) 파싱 추가 (오프셋 8)
+  - `_createHwpParagraphBlock` / `createHwpParagraphBlock` (worker): `marginRight` 전달
+  - `appendParagraphBlock`: `para.marginRight > 0`이면 `padding-right` 적용
+  - HWPX 표 행 높이 상한 180px → 280px 확대 (키 큰 행 잘림 방지)
+  - HWPX 셀 높이·본문 높이 상한 140px → 200px 확대
+  - HWPX 셀 가중치 추정 상한 14 → 20 확대 (다단락 셀 누락 개선)
+  - `_summarizeHwpLineSegs` `lineHeightPx` 상한 42px → 56px (대형 폰트 단락 높이 개선)
+  - `parser.worker.js` 동기화
 
 ## 확인된 대표 결과
 
@@ -31,6 +40,7 @@
   - 15페이지, 이미지 3개, 상단 배너와 본문 텍스트 유지 확인
 - `gyeolseokgye.hwp`
   - 상단 표의 병합 셀 왜곡이 줄었고, 첫 열 라벨의 세로 배치가 이전보다 자연스러워짐
+  - 우측 여백 파싱 추가로 단락 텍스트 배치 정밀화
 
 ## 저장소에 함께 둔 레퍼런스
 
@@ -57,6 +67,7 @@
 
 ## 다음 우선순위
 
-1. `결석계.hwp` 하단 중첩 표 행높이와 세로 정렬 보정
-2. 차트/OLE placeholder를 실제 렌더 경로로 확장
-3. 실샘플 기준 `page/paper` 절대배치 검증
+1. `결석계.hwp` 하단 중첩 표 행높이와 세로 정렬 보정 (HWPX 상한 확대 반영 후 재확인)
+2. HWP 5.0 단락 들여쓰기 정밀화 (`marginLeft`/`textIndent` 스케일 검증)
+3. 차트/OLE placeholder를 실제 렌더 경로로 확장
+4. 실샘플 기준 `page/paper` 절대배치 검증

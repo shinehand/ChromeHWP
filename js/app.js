@@ -960,13 +960,13 @@ const HwpParser = {
     const blocks = cell?.paragraphs || [];
     const explicitHeight = Math.max(Number(cell?.height) || 0, Number(cell?.contentHeight) || 0);
     const heightWeight = explicitHeight > 0
-      ? Math.max(1, Math.min(14, Math.round(explicitHeight / 420)))
+      ? Math.max(1, Math.min(20, Math.round(explicitHeight / 420)))
       : 0;
     if (!blocks.length) return Math.max(1, heightWeight || 1);
 
     const total = blocks.reduce((sum, block) => {
       if (block.type === 'table') {
-        return sum + Math.max(3, Math.min(10, (block.rowCount || 1) * 2));
+        return sum + Math.max(3, Math.min(12, (block.rowCount || 1) * 2));
       }
 
       const text = HwpParser._blockText(block).trim();
@@ -977,7 +977,7 @@ const HwpParser = {
       return sum + wrappedLines;
     }, 0);
 
-    return Math.max(heightWeight, Math.max(1, Math.min(14, total || 1)));
+    return Math.max(heightWeight, Math.max(1, Math.min(20, total || 1)));
   },
 
   _hwpxEstimateRowWeight(row) {
@@ -987,7 +987,7 @@ const HwpParser = {
     const weight = meaningfulCells.reduce((max, cell) => (
       Math.max(max, HwpParser._hwpxEstimateCellWeight(cell))
     ), 1);
-    return Math.max(1, Math.min(14, weight));
+    return Math.max(1, Math.min(20, weight));
   },
 
   _hwpxNormalizeTableMetrics(table) {
@@ -1916,6 +1916,7 @@ const HwpParser = {
     return {
       align: HwpParser._hwpAlignFromAttr(attr),
       marginLeft: HwpParser._i32(body, 4),
+      marginRight: HwpParser._i32(body, 8),
       textIndent: HwpParser._i32(body, 12),
       spacingBefore: HwpParser._i32(body, 16),
       spacingAfter: HwpParser._i32(body, 20),
@@ -1993,7 +1994,7 @@ const HwpParser = {
     const totalHeight = heights.reduce((sum, value) => sum + value, 0);
     const avgHeight = totalHeight / heights.length;
     return {
-      lineHeightPx: hwpPageUnitToPx(avgHeight, 11, 42, 0),
+      lineHeightPx: hwpPageUnitToPx(avgHeight, 11, 56, 0),
       layoutHeightPx: hwpPageUnitToPx(totalHeight, 12, 320, 0),
     };
   },
@@ -2040,6 +2041,7 @@ const HwpParser = {
       type: 'paragraph',
       align: paraStyle?.align || 'left',
       marginLeft: paraStyle?.marginLeft ?? 0,
+      marginRight: paraStyle?.marginRight ?? 0,
       textIndent: paraStyle?.textIndent ?? 0,
       spacingBefore: paraStyle?.spacingBefore ?? 0,
       spacingAfter: paraStyle?.spacingAfter ?? 0,
@@ -4247,6 +4249,9 @@ function appendParagraphBlock(parent, para, className = '', options = {}) {
   if (Number.isFinite(para.marginLeft) && !['center', 'right'].includes(p.style.textAlign)) {
     p.style.paddingLeft = `${Math.max(0, hwpSignedPageUnitToPx(para.marginLeft, -24, 220, 0))}px`;
   }
+  if (Number.isFinite(para.marginRight) && para.marginRight > 0) {
+    p.style.paddingRight = `${hwpSignedPageUnitToPx(para.marginRight, 0, 220, 0)}px`;
+  }
   if (Number.isFinite(para.textIndent) && !['center', 'right'].includes(p.style.textAlign)) {
     p.style.textIndent = `${hwpSignedPageUnitToPx(para.textIndent, -120, 160, 0)}px`;
   }
@@ -5372,14 +5377,14 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       : 0;
     const rowHeightPx = isHwpxTable
       ? (explicitHwpxRowHeight > 0
-        ? hwpPageUnitToPx(explicitHwpxRowHeight, 0, 180, 0)
-        : hwpUnitToPx(rowHeight, 24, 180, 12, 0))
+        ? hwpPageUnitToPx(explicitHwpxRowHeight, 0, 280, 0)
+        : hwpUnitToPx(rowHeight, 24, 280, 12, 0))
       : hwpPageUnitToPx(rowHeight, 0, 320, 0);
     const cellHeightPx = isHwpxTable
-      ? hwpPageUnitToPx(maxCellHeight, 0, 140, 0)
+      ? hwpPageUnitToPx(maxCellHeight, 0, 200, 0)
       : hwpPageUnitToPx(maxCellHeight, 0, 300, 0);
     const contentHeightPx = isHwpxTable
-      ? hwpPageUnitToPx(maxContentHeight, 0, 140, 0)
+      ? hwpPageUnitToPx(maxContentHeight, 0, 200, 0)
       : 0;
     let minRowHeight = Math.max(30, rowHeightPx, cellHeightPx, contentHeightPx);
     if (rowLooksLikeTitle) {
