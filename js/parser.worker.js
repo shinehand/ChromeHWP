@@ -1456,23 +1456,25 @@ function hwpObjectSizeRelTo(axis, code = 0) {
 }
 
 function parseHwpSecDef(body) {
-  // HWPTAG_SEC_DEF (tag 78): 섹션 정의 레코드 — 최소 36바이트 (4+4+4+4+4+4+4+4+4 = 36)
-  // offset 0: attributes, 4: paperWidth, 8: paperHeight, 12-35: margins (left/right/top/bottom/header/footer)
-  if (!body || body.length < 36) return null;
-  const paperWidth  = i32(body, 4);
-  const paperHeight = i32(body, 8);
+  // HWPTAG_PAGE_DEF (tag 73): secd 컨트롤 내부의 페이지 정의 레코드 — 40바이트
+  // offset  0: paperWidth (HWPUNIT), 4: paperHeight (HWPUNIT)
+  // offset  8: marginLeft, 12: marginRight, 16: marginTop, 20: marginBottom
+  // offset 24: marginHeader, 28: marginFooter, 32: gutter, 36: flags
+  if (!body || body.length < 32) return null;
+  const paperWidth  = i32(body, 0);
+  const paperHeight = i32(body, 4);
   if (paperWidth <= 0 || paperHeight <= 0) return null;
   return {
     sourceFormat: 'hwp',
     width:  paperWidth,
     height: paperHeight,
     margins: {
-      left:   i32(body, 12),
-      right:  i32(body, 16),
-      top:    i32(body, 20),
-      bottom: i32(body, 24),
-      header: i32(body, 28),
-      footer: i32(body, 32),
+      left:   i32(body, 8),
+      right:  i32(body, 12),
+      top:    i32(body, 16),
+      bottom: i32(body, 20),
+      header: i32(body, 24),
+      footer: i32(body, 28),
     },
   };
 }
@@ -2196,7 +2198,7 @@ function parseHwpBlockRange(data, startPos = 0, docInfo = null, stopLevel = null
             const sub = readRecord(data, scanPos);
             if (!sub) break;
             if (sub.level <= rec.level) break;
-            if (sub.tagId === 78) {
+            if (sub.tagId === 73) {
               const secDef = parseHwpSecDef(sub.body);
               if (secDef) extras.sectionMeta = secDef;
               break;
