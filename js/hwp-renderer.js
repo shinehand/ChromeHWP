@@ -93,9 +93,11 @@ const LIST_MARKER_CHAR_WIDTH_EM = 0.16;
 const COMPACT_TABLE_HEADER_MIN_CELLS = 3;
 const COMPACT_TABLE_HEADER_MAX_CELLS = 6;
 const COMPACT_TABLE_HEADER_MAX_TEXT_LENGTH = 18;
+const TITLE_CELL_MIN_CONTENT_HEIGHT_PX = 48;
+const COMPACT_CELL_MIN_CONTENT_HEIGHT_PX = 24;
 
-// rowspan 라벨은 좌측 짧은 구분 텍스트만 가운데 정렬해야 일반 본문 셀을 건드리지 않는다.
-const GROUPED_ROW_LABEL_MAX_TEXT_LENGTH = 18;
+// rowspan 라벨은 compact header와 같은 길이 제한을 쓰되 줄 수만 더 엄격하게 본다.
+const GROUPED_ROW_LABEL_MAX_TEXT_LENGTH = COMPACT_TABLE_HEADER_MAX_TEXT_LENGTH;
 const GROUPED_ROW_LABEL_MAX_LINES = 3;
 
 function calculateListMarkerWidth(markerLength) {
@@ -386,7 +388,8 @@ function isGroupedRowLabelCell(cell, text, rawText) {
   if ((cell?.colSpan || 1) !== 1) return false;
   if ((cell?.col || 0) > 1) return false;
   if (!normalized || normalized.length > GROUPED_ROW_LABEL_MAX_TEXT_LENGTH) return false;
-  // 숫자 계열 텍스트는 표 본문/일련번호일 가능성이 높아서 rowspan 라벨 후보에서 제외한다.
+  // 현재 실샘플의 그룹 라벨은 숫자가 없는 범주명(예: 출석인정결석, 질병으로 인한 결석)이라
+  // 숫자가 섞인 텍스트는 번호/세부 항목 본문일 가능성이 높다고 보고 후보에서 제외한다.
   if (/[0-9]/.test(normalized)) return false;
   if ((cell?.paragraphs || []).some(block => block?.type === 'table')) return false;
   const lineCount = String(rawText || text || '')
@@ -395,6 +398,18 @@ function isGroupedRowLabelCell(cell, text, rawText) {
     .filter(Boolean)
     .length;
   return lineCount <= GROUPED_ROW_LABEL_MAX_LINES;
+}
+
+function resolveCellVerticalAlign(cell, options = {}) {
+  const {
+    isStackedLabelCell = false,
+    isGroupedLabelCell = false,
+    rowLooksLikeCompactHeader = false,
+    shouldMiddleCell = false,
+  } = options;
+  if (isStackedLabelCell || isGroupedLabelCell) return 'middle';
+  if (cell?.verticalAlign === 'top' && (rowLooksLikeCompactHeader || shouldMiddleCell)) return 'middle';
+  return cell?.verticalAlign || (shouldMiddleCell ? 'middle' : 'top');
 }
 
 function getParagraphText(para) {
@@ -1406,11 +1421,12 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
         td.dataset.rowSpan = '2';
       }
 
-      const cellVerticalAlign = (isStackedLabelCell || isGroupedLabelCell)
-        ? 'middle'
-        : ((cell.verticalAlign === 'top' && (rowLooksLikeCompactHeader || shouldMiddleCell))
-          ? 'middle'
-          : (cell.verticalAlign || (shouldMiddleCell ? 'middle' : 'top')));
+      const cellVerticalAlign = resolveCellVerticalAlign(cell, {
+        isStackedLabelCell,
+        isGroupedLabelCell,
+        rowLooksLikeCompactHeader,
+        shouldMiddleCell,
+      });
       td.style.verticalAlign = cellVerticalAlign;
 
       const [padL, padR, padT, padB] = cell.padding || [];
@@ -1450,7 +1466,10 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       content.dataset.rowRole = tr.dataset.rowRole || 'body';
       const shouldCenterContent = rowLooksLikeTitle || rowLooksLikeCompactHeader || isGroupedLabelCell;
       if (shouldCenterContent) {
-        const innerHeight = Math.max(rowLooksLikeTitle ? 48 : 24, minRowHeight - topPx - bottomPx);
+        const innerHeight = Math.max(
+          rowLooksLikeTitle ? TITLE_CELL_MIN_CONTENT_HEIGHT_PX : COMPACT_CELL_MIN_CONTENT_HEIGHT_PX,
+          minRowHeight - topPx - bottomPx,
+        );
         content.style.minHeight = `${innerHeight}px`;
         content.style.display = 'flex';
         content.style.flexDirection = 'column';
