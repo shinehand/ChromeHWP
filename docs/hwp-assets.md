@@ -30,4 +30,4 @@
 
 1. 규격 확인이 필요하면 먼저 `docs/hwp-spec/` PDF를 본다.
 2. 뷰어 회귀 확인은 `output/playwright/inputs/` 샘플을 사용한다.
-3. 현재 최소 자동 검증 기준은 `scripts/verify_samples.mjs`를 사용하되, Playwright 세션 오류는 별도 확인이 필요하다.
+3. 현재 최소 자동 검증 기준은 `scripts/verify_samples.mjs`를 사용한다. 기본 샘플 경로는 저장소 상대 경로(`output/playwright/inputs/`)를 사용한다.

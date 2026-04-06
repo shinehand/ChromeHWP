@@ -79,7 +79,8 @@
 - 줄바꿈/폰트 폭 정밀화
   - 한글 앱과 같은 줄바꿈 폭, 폰트 대체, 장평 영향까지 더 맞춰야 함
 - 자동 회귀 검증 안정화
-  - `scripts/verify_samples.mjs`는 현재 Playwright CLI 세션 연결 오류(`verify-current`) 때문에 안정적으로 돌지 않음
+  - `scripts/verify_samples.mjs`는 저장소 상대 샘플 경로와 세션 재시도를 사용하도록 보강됨
+  - 다만 샘플 범위 확대와 골든 비교 기준은 여전히 더 필요함
 
 ## 다음 우선순위
 

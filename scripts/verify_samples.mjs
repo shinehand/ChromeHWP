@@ -13,14 +13,16 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const CODEX_HOME = process.env.CODEX_HOME || path.join(process.env.HOME || '', '.codex');
 const PWCLI = process.env.PWCLI || path.join(CODEX_HOME, 'skills', 'playwright', 'scripts', 'playwright_cli.sh');
 const VIEWER_URL = process.env.VIEWER_URL || 'http://127.0.0.1:4174/pages/viewer.html';
-const SESSION_NAME = 'verify-current';
+const SESSION_NAME = process.env.PLAYWRIGHT_CLI_SESSION || 'verify-current';
+const SAMPLE_DIR = path.join(ROOT_DIR, 'output', 'playwright', 'inputs');
+const SESSION_RETRY_LIMIT = Number(process.env.PLAYWRIGHT_SESSION_RETRIES || 6);
 
 const HWP_SAMPLE = process.env.HWP_SAMPLE
-  || '/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje.hwp';
+  || path.join(SAMPLE_DIR, 'goyeopje.hwp');
 const HWPX_SAMPLE = process.env.HWPX_SAMPLE
-  || '/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx';
+  || path.join(SAMPLE_DIR, 'incheon-2a.hwpx');
 const ATTACHMENT_HWP_SAMPLE = process.env.ATTACHMENT_HWP_SAMPLE
-  || '/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp';
+  || path.join(SAMPLE_DIR, 'attachment-sale-notice.hwp');
 
 function fail(message) {
   console.error(`✗ ${message}`);
@@ -33,22 +35,52 @@ function ensureFileExists(filePath, label) {
   }
 }
 
-function runPw(args) {
-  try {
-    return execFileSync(PWCLI, args, {
-      cwd: ROOT_DIR,
-      env: {
-        ...process.env,
-        CODEX_HOME,
-        PLAYWRIGHT_CLI_SESSION: SESSION_NAME,
-      },
-      encoding: 'utf8',
-      stdio: ['ignore', 'pipe', 'pipe'],
-    });
-  } catch (error) {
-    const stderr = error?.stderr?.toString?.() || '';
-    const stdout = error?.stdout?.toString?.() || '';
-    fail(`Playwright 명령 실패: ${args.join(' ')}\n${stdout}\n${stderr}`.trim());
+function sleepSync(ms) {
+  if (!Number.isFinite(ms) || ms <= 0) return;
+  if (typeof SharedArrayBuffer === 'function' && typeof Atomics?.wait === 'function') {
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+    return;
+  }
+  const end = Date.now() + ms;
+  while (Date.now() < end) {}
+}
+
+function isRetryableSessionError(output = '') {
+  const escapedSession = SESSION_NAME.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`connect ENOENT .*${escapedSession}|session .* not found|Target page, context or browser has been closed`, 'i')
+    .test(output);
+}
+
+function runPw(args, options = {}) {
+  const retries = Number.isFinite(options.retries) ? options.retries : 0;
+  const throwOnError = options.throwOnError === true;
+  for (let attempt = 0; attempt <= retries; attempt += 1) {
+    try {
+      return execFileSync(PWCLI, args, {
+        cwd: ROOT_DIR,
+        env: {
+          ...process.env,
+          CODEX_HOME,
+          PLAYWRIGHT_CLI_SESSION: SESSION_NAME,
+        },
+        encoding: 'utf8',
+        stdio: ['ignore', 'pipe', 'pipe'],
+      });
+    } catch (error) {
+      const stderr = error?.stderr?.toString?.() || '';
+      const stdout = error?.stdout?.toString?.() || '';
+      const details = `${stdout}\n${stderr}`.trim();
+      if (attempt < retries && isRetryableSessionError(details)) {
+        sleepSync(250 * (attempt + 1));
+        continue;
+      }
+      if (throwOnError) {
+        const wrapped = new Error(`Playwright 명령 실패: ${args.join(' ')}\n${details}`.trim());
+        wrapped.cause = error;
+        throw wrapped;
+      }
+      fail(`Playwright 명령 실패: ${args.join(' ')}\n${details}`.trim());
+    }
   }
 }
 
@@ -86,8 +118,8 @@ function extractButtonRef(snapshot, labels) {
 async function uploadFile(filePath) {
   for (const directRef of ['e8', 'e15']) {
     try {
-      runPw(['click', directRef]);
-      runPw(['upload', filePath]);
+      runPw(['click', directRef], { retries: SESSION_RETRY_LIMIT, throwOnError: true });
+      runPw(['upload', filePath], { retries: SESSION_RETRY_LIMIT, throwOnError: true });
       return;
     } catch {}
   }
@@ -96,7 +128,7 @@ async function uploadFile(filePath) {
   let lastSnapshot = '';
   const started = Date.now();
   while (!ref && Date.now() - started < 8000) {
-    const snapOut = runPw(['snapshot']);
+    const snapOut = runPw(['snapshot'], { retries: SESSION_RETRY_LIMIT });
     lastSnapshot = loadSnapshot(snapOut);
     ref = extractButtonRef(lastSnapshot, ['파일 선택', '📂 파일 열기']);
     if (ref) break;
@@ -113,8 +145,8 @@ async function uploadFile(filePath) {
     }
   }
 
-  runPw(['click', ref]);
-  runPw(['upload', filePath]);
+  runPw(['click', ref], { retries: SESSION_RETRY_LIMIT });
+  runPw(['upload', filePath], { retries: SESSION_RETRY_LIMIT });
 }
 
 async function waitForCondition(name, predicate, timeoutMs = 12000, intervalMs = 600) {
@@ -122,7 +154,7 @@ async function waitForCondition(name, predicate, timeoutMs = 12000, intervalMs =
   let lastSnapshot = '';
 
   while (Date.now() - started < timeoutMs) {
-    const snapOut = runPw(['snapshot']);
+    const snapOut = runPw(['snapshot'], { retries: SESSION_RETRY_LIMIT });
     lastSnapshot = loadSnapshot(snapOut);
     if (predicate(lastSnapshot)) {
       return lastSnapshot;
@@ -224,8 +256,9 @@ async function main() {
   ensureFileExists(HWPX_SAMPLE, 'HWPX 샘플');
   ensureFileExists(ATTACHMENT_HWP_SAMPLE, '추가 HWP 샘플');
 
-  runPw(['close-all']);
-  runPw(['open', VIEWER_URL]);
+  runPw(['close-all'], { retries: SESSION_RETRY_LIMIT });
+  runPw(['open', VIEWER_URL], { retries: SESSION_RETRY_LIMIT });
+  await waitForCondition('초기 뷰어 로드', text => /파일 선택|📂 파일 열기/.test(text));
 
   try {
     await verifyHwp();
@@ -237,7 +270,7 @@ async function main() {
     console.log(`- hwpx: ${HWPX_SAMPLE}`);
     console.log(`- attachment: ${ATTACHMENT_HWP_SAMPLE}`);
   } finally {
-    runPw(['close-all']);
+    runPw(['close-all'], { retries: SESSION_RETRY_LIMIT });
   }
 }
 

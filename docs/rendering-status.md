@@ -3,8 +3,8 @@
 ## Scope
 - Project: `ChromeHWP`
 - Baseline samples:
-`/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje.hwp`
-`/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx`
+`output/playwright/inputs/goyeopje.hwp`
+`output/playwright/inputs/incheon-2a.hwpx`
 
 ## Supported Now
 - HWP:
@@ -33,7 +33,7 @@
 
 ## Regression Rule
 - Use this command for minimum smoke verification:
-  - `node /Users/shinehandmac/Github/ChromeHWP/scripts/verify_samples.mjs`
+  - `node scripts/verify_samples.mjs`
 - Minimum pass criteria:
   - `goyeopje.hwp`: `3 페이지` + major form keywords present
   - `incheon-2a.hwpx`: `5 페이지` + first-page core phrases present
