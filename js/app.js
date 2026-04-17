@@ -626,13 +626,16 @@ function parseWithWorker(buffer, filename) {
 }
 
 /* ── WASM 렌더링 (rhwp 기반) ── */
+const WASM_INIT_TIMEOUT_MS = 10000;   // WASM 초기화 최대 대기 시간 (10초)
+const MAX_THUMBNAIL_SVG_SIZE = 500000; // 썸네일 미니 SVG 최대 크기 (500KB)
+
 async function tryWasmRender(buffer, filename) {
   const renderer = window.RhwpWasmRenderer;
   if (!renderer) return null;
 
-  // WASM 초기화 대기 (최대 10초)
+  // WASM 초기화 대기
   let waited = 0;
-  while (!renderer.isReady() && waited < 10000) {
+  while (!renderer.isReady() && waited < WASM_INIT_TIMEOUT_MS) {
     await new Promise(r => setTimeout(r, 100));
     waited += 100;
   }
@@ -674,7 +677,7 @@ function renderWasmPages(result, filename) {
     pv.className = 'page-thumb-preview page-thumb-preview-wasm';
 
     // 썸네일에 미니 SVG 삽입 (SVG 내용이 있으면 복사, 없으면 페이지 번호만)
-    if (svg && svg.length < 500000) {
+    if (svg && svg.length < MAX_THUMBNAIL_SVG_SIZE) {
       const miniWrapper = document.createElement('div');
       miniWrapper.style.cssText = 'transform:scale(0.13);transform-origin:top left;width:770%;pointer-events:none;overflow:hidden;';
       miniWrapper.innerHTML = svg;

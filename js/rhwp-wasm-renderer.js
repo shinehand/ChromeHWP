@@ -12,11 +12,14 @@
 // WASM이 텍스트 폭을 측정할 때 사용하는 전역 함수 (rhwp 필수 요건)
 if (typeof globalThis.measureTextWidth === 'undefined') {
   let _measureCanvas = null;
+  let _measureCtx = null;
   globalThis.measureTextWidth = (font, text) => {
-    if (!_measureCanvas) _measureCanvas = document.createElement('canvas');
-    const ctx = _measureCanvas.getContext('2d');
-    ctx.font = font;
-    return ctx.measureText(text).width;
+    if (!_measureCanvas) {
+      _measureCanvas = document.createElement('canvas');
+      _measureCtx = _measureCanvas.getContext('2d');
+    }
+    _measureCtx.font = font;
+    return _measureCtx.measureText(text).width;
   };
 }
 

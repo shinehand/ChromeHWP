@@ -1,12 +1,15 @@
 /**
- * background.js — Service Worker (Manifest V3)
+ * background.js — Service Worker (Manifest V3, module)
  *
  * 기능:
  *  1. 웹페이지의 .hwp/.hwpx/.owpml 링크 우클릭 → "HWP 에디터로 열기" 컨텍스트 메뉴
  *     클릭 시 해당 URL을 fetch해 ArrayBuffer를 chrome.storage.session에 저장 후
  *     viewer.html을 새 탭으로 열어 즉시 파일 로드
  *  2. 팝업과 뷰어 사이 최근 파일 메타데이터 동기화
+ *  3. HWP 링크 배지 썸네일 추출 (sw/thumbnail-extractor.js)
  */
+
+import { extractThumbnailFromUrl } from './sw/thumbnail-extractor.js';
 
 const MAX_LINKS = 100;
 const MAX_RECENTS = 20;
@@ -320,7 +323,6 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
     }
     (async () => {
       try {
-        const { extractThumbnailFromUrl } = await import('./sw/thumbnail-extractor.js');
         const result = await extractThumbnailFromUrl(url);
         sendResponse(result || { error: 'PrvImage not found' });
       } catch (err) {

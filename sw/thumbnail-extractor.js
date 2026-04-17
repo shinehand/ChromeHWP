@@ -8,6 +8,7 @@
 
 const THUMBNAIL_CACHE = new Map();
 const CACHE_MAX_SIZE = 100;
+const MAX_SECTOR_ITERATIONS = 10000; // FAT 체인 무한루프 방지 안전 한계
 
 /**
  * URL에서 HWP 파일을 fetch하여 PrvImage 썸네일을 추출한다.
@@ -37,7 +38,8 @@ export async function extractThumbnailFromUrl(url) {
       THUMBNAIL_CACHE.set(url, result);
     }
     return result;
-  } catch {
+  } catch (err) {
+    console.debug('[thumbnail-extractor] 추출 실패:', url, err?.message || err);
     return null;
   }
 }
@@ -106,7 +108,7 @@ function extractPrvImage(data) {
 function buildMiniFatTable(data, sectorSize, miniFatStart, fatEntries) {
   const miniFatEntries = [];
   let sector = miniFatStart;
-  for (let safety = 0; safety < 10000; safety++) {
+  for (let safety = 0; safety < MAX_SECTOR_ITERATIONS; safety++) {
     if (sector >= 0xFFFFFFFE) break;
     const offset = (sector + 1) * sectorSize;
     const entriesPerSector = sectorSize / 4;
@@ -125,7 +127,7 @@ function readStreamFromMini(miniStream, startSector, streamSize, miniSectorSize,
   let sector = startSector;
   let bytesRead = 0;
 
-  for (let safety = 0; safety < 10000 && bytesRead < streamSize; safety++) {
+  for (let safety = 0; safety < MAX_SECTOR_ITERATIONS && bytesRead < streamSize; safety++) {
     if (sector >= 0xFFFFFFFE) break;
     const offset = sector * miniSectorSize;
     const copyLen = Math.min(miniSectorSize, streamSize - bytesRead);
@@ -161,7 +163,7 @@ function readStreamFromFAT(data, startSector, streamSize, sectorSize, fatEntries
   let sector = startSector;
   let bytesRead = 0;
 
-  for (let safety = 0; safety < 10000 && bytesRead < streamSize; safety++) {
+  for (let safety = 0; safety < MAX_SECTOR_ITERATIONS && bytesRead < streamSize; safety++) {
     if (sector >= 0xFFFFFFFE) break;
     const offset = (sector + 1) * sectorSize;
     const copyLen = Math.min(sectorSize, streamSize - bytesRead);

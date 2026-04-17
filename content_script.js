@@ -6,6 +6,8 @@
   const BADGE_CLASS = 'chromehwp-badge';
   const HOVER_CLASS = 'chromehwp-hover-card';
   const PROCESSED_ATTR = 'data-chromehwp-processed';
+  const HOVER_SHOW_DELAY = 350;  // 호버 카드 표시 지연 (ms)
+  const HOVER_HIDE_DELAY = 200;  // 호버 카드 숨김 지연 (ms)
 
   // ─── HWP 링크 수집 → 서비스 워커 동기화 ───
 
@@ -163,10 +165,10 @@
     anchor.addEventListener('mouseenter', () => {
       clearTimeout(hoverTimeout);
       hideHoverCard();
-      hoverTimeout = setTimeout(() => showHoverCard(anchor), 350);
+      hoverTimeout = setTimeout(() => showHoverCard(anchor), HOVER_SHOW_DELAY);
     });
     anchor.addEventListener('mouseleave', () => {
-      hoverTimeout = setTimeout(() => hideHoverCard(), 200);
+      hoverTimeout = setTimeout(() => hideHoverCard(), HOVER_HIDE_DELAY);
     });
   }
 
