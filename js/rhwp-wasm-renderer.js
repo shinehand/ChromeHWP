@@ -144,6 +144,8 @@ function _renderAllPages(zoom) {
   return { pageCount, pages, docInfo };
 }
 
+const MAX_SEARCH_ITERATIONS = 10000; // 검색 결과 최대 순회 횟수
+
 /**
  * 현재 문서에서 텍스트를 검색한다.
  * @param {string} query
@@ -156,7 +158,7 @@ function searchText(query, caseSensitive = false) {
   const results = [];
   let fromSec = 0, fromPara = 0, fromChar = 0;
 
-  for (let i = 0; i < 10000; i++) {
+  for (let i = 0; i < MAX_SEARCH_ITERATIONS; i++) {
     try {
       const result = _currentDoc.searchText(query, fromSec, fromPara, fromChar, true, caseSensitive);
       if (!result) break;

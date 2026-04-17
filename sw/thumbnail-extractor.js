@@ -251,7 +251,8 @@ async function extractPrvImageFromZipAsync(data) {
       } else if (compMethod === 8) {
         try {
           const compressed = data.slice(dataStart, dataStart + compSize);
-          const ds = new DecompressionStream('raw');
+          // ZIP DEFLATE는 zlib 헤더 없는 raw deflate 스트림이므로 'deflate-raw' 사용
+          const ds = new DecompressionStream('deflate-raw');
           const writer = ds.writable.getWriter();
           writer.write(compressed);
           writer.close();

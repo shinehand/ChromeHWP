@@ -68,21 +68,21 @@
     document.head.appendChild(style);
 
     // 2) FontFace API로 폰트 데이터를 즉시 로드 (네트워크 요청 트리거)
-    let loaded = 0, failed = 0;
+    let loadedCount = 0, failedCount = 0;
     globalThis._fontLoadPromise = Promise.all(fonts.map(f => {
       const fmt = f.format || 'woff2';
       const face = new FontFace(f.name, `url(${f.file}) format('${fmt}')`);
-      return face.load().then(loaded => {
-        document.fonts.add(loaded);
-        loaded++;
-        return loaded;
+      return face.load().then(loadedFace => {
+        document.fonts.add(loadedFace);
+        loadedCount++;
+        return loadedFace;
       }).catch(e => {
-        failed++;
+        failedCount++;
         return null;
       });
     })).then(async () => {
       await document.fonts.ready;
-      console.log(`[폰트] ${loaded}개 로드 완료, ${failed}개 실패`);
+      console.log(`[폰트] ${loadedCount}개 로드 완료, ${failedCount}개 실패`);
     });
   })();
 
