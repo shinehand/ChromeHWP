@@ -1,0 +1,101 @@
+:root {
+  color-scheme: light;
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+}
+
+body {
+  width: 360px;
+  margin: 0;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.popup-shell {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+}
+
+.popup-header h1 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.popup-header p {
+  margin: 4px 0 0;
+  color: #5b667a;
+  font-size: 12px;
+}
+
+.drop-zone {
+  display: grid;
+  gap: 5px;
+  place-items: center;
+  min-height: 118px;
+  border: 1px dashed #8a97ad;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.drop-zone:focus-visible,
+.drop-zone.dragover {
+  border-color: #2457d6;
+  outline: 2px solid rgba(36, 87, 214, 0.18);
+  background: #eef4ff;
+}
+
+.drop-zone.busy {
+  cursor: wait;
+  opacity: 0.68;
+}
+
+.drop-zone strong {
+  font-size: 14px;
+}
+
+.drop-zone span,
+.status {
+  color: #5b667a;
+  font-size: 12px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+button {
+  min-height: 34px;
+  border: 0;
+  border-radius: 6px;
+  background: #2457d6;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #445066;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+.status {
+  min-height: 18px;
+  margin: 0;
+}
+
+.status.busy {
+  color: #2457d6;
+}
+
+.status.error {
+  color: #b42318;
+}

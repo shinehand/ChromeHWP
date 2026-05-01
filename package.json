@@ -1,0 +1,28 @@
+{
+  "name": "chrome-hwp-editor-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Manifest V3 Chrome extension for parsing, rendering, editing, and exporting HWP/HWPX documents in the browser.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run build",
+    "verify:extension": "npm run build && node scripts/verify_extension_editor.mjs",
+    "verify:visual": "npm run build && node scripts/verify_visual_fidelity.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.7.2",
+    "fflate": "^0.8.2"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.40",
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.10"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

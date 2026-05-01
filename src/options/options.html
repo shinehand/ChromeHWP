@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>ChromeHWP 설정</title>
+    <script type="module" src="./options.ts"></script>
+  </head>
+  <body>
+    <main class="options-shell">
+      <header>
+        <h1>ChromeHWP 설정</h1>
+        <p>문서 열람과 편집 동작의 기본값을 조정합니다.</p>
+      </header>
+
+      <form id="optionsForm" class="settings-panel">
+        <label class="setting-row">
+          <span>
+            <strong>기본 렌더러</strong>
+            <small>문서를 처음 열 때 사용할 렌더링 방식을 선택합니다.</small>
+          </span>
+          <select id="defaultRenderer" name="defaultRenderer">
+            <option value="dom">DOM</option>
+            <option value="canvas">Canvas</option>
+          </select>
+        </label>
+
+        <label class="setting-row">
+          <span>
+            <strong>자동 저장 알림</strong>
+            <small>편집 중 저장 가능한 상태를 상태바에 표시합니다.</small>
+          </span>
+          <input id="autosaveHint" name="autosaveHint" type="checkbox" />
+        </label>
+
+        <button id="saveButton" type="submit">설정 저장</button>
+      </form>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>

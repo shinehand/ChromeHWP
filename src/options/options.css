@@ -1,0 +1,106 @@
+:root {
+  color-scheme: light;
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3f5f8;
+  color: #172033;
+}
+
+.options-shell {
+  width: min(760px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 36px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header p {
+  margin: 8px 0 22px;
+  color: #5b667a;
+}
+
+.settings-panel {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid #d9deea;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.settings-panel.busy {
+  opacity: 0.72;
+}
+
+.setting-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.setting-row:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.setting-row strong,
+.setting-row small {
+  display: block;
+}
+
+.setting-row small {
+  margin-top: 3px;
+  color: #68758a;
+}
+
+select,
+button {
+  min-height: 36px;
+  border-radius: 6px;
+  font: inherit;
+}
+
+select {
+  min-width: 140px;
+  border: 1px solid #c6cedd;
+  padding: 0 10px;
+  background: #ffffff;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+button {
+  justify-self: start;
+  border: 0;
+  background: #2457d6;
+  color: #ffffff;
+  padding: 0 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.64;
+}
+
+.status {
+  min-height: 20px;
+  color: #2457d6;
+}
+
+.status.error {
+  color: #b42318;
+}

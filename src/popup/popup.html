@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>ChromeHWP 빠른 열기</title>
+    <script type="module" src="./popup.ts"></script>
+  </head>
+  <body>
+    <main class="popup-shell">
+      <header class="popup-header">
+        <h1>ChromeHWP</h1>
+        <p>HWP/HWPX 문서를 브라우저에서 엽니다.</p>
+      </header>
+
+      <section id="dropZone" class="drop-zone" tabindex="0" role="button" aria-label="HWP 또는 HWPX 파일 선택">
+        <strong>파일 선택 또는 드롭</strong>
+        <span>.hwp, .hwpx</span>
+      </section>
+
+      <input id="fileInput" type="file" accept=".hwp,.hwpx,application/x-hwp,application/hwp+zip" hidden />
+
+      <div class="actions">
+        <button id="openFileButton" type="button">파일 열기</button>
+        <button id="openEditorButton" type="button" class="secondary">빈 에디터</button>
+      </div>
+
+      <p id="status" class="status" role="status">준비되었습니다.</p>
+    </main>
+  </body>
+</html>

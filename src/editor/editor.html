@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>ChromeHWP 에디터</title>
+    <script type="module" src="./editor.ts"></script>
+  </head>
+  <body>
+    <main class="editor-shell">
+      <header class="topbar">
+        <div>
+          <h1>ChromeHWP 에디터</h1>
+          <p id="documentMeta">문서를 열어 주십시오.</p>
+        </div>
+        <div class="toolbar">
+          <button id="openButton" type="button">열기</button>
+          <button id="exportButton" type="button" disabled>내보내기</button>
+        </div>
+      </header>
+
+      <input id="fileInput" type="file" accept=".hwp,.hwpx,application/x-hwp,application/hwp+zip" hidden />
+
+      <section id="dropZone" class="drop-zone">
+        <strong>HWP/HWPX 파일을 여기에 놓으십시오.</strong>
+        <span>선택한 파일은 에디터 작업 공간으로 전달됩니다.</span>
+      </section>
+
+      <section id="workspace" class="workspace" hidden>
+        <aside class="sidebar">
+          <h2>문서 정보</h2>
+          <dl>
+            <div>
+              <dt>파일명</dt>
+              <dd id="filenameValue">-</dd>
+            </div>
+            <div>
+              <dt>크기</dt>
+              <dd id="sizeValue">-</dd>
+            </div>
+            <div>
+              <dt>형식</dt>
+              <dd id="formatValue">-</dd>
+            </div>
+          </dl>
+        </aside>
+        <article class="page-surface">
+          <div id="documentPreview" class="document-preview" spellcheck="false"></div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
