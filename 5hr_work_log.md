@@ -97,3 +97,12 @@
   - `STRICT_PAGE_EXPECTATIONS=1 npm run verify:extension` passed.
   - `STRICT_VISUAL_FIDELITY=1 npm run verify:visual` passed with `strictFailures: []`.
   - Latest visual summary: 36 pages audited, no strict visual failures. Remaining `review/layout-review` pages are advisory and are listed in `output/hancom-oracle/extension-visual-current/visual-fidelity-summary.json`.
+
+## 2026-05-01 22:59 KST
+
+- Added HWP `PAGE_NUM_PARA` based page-number decoration recovery.
+- The decoration is only injected when the source HWP section actually contains `PAGE_NUM_PARA`, so samples without that record are left unchanged.
+- Re-ran:
+  - `npm run typecheck` passed.
+  - `STRICT_PAGE_EXPECTATIONS=1 npm run verify:extension` passed.
+  - `STRICT_VISUAL_FIDELITY=1 npm run verify:visual` passed with `strictFailures: []`.

@@ -51,6 +51,7 @@ interface HwpParseStats {
   imageCount: number;
   unresolvedImageCount: number;
   pageDefCount: number;
+  pageNumParaCount: number;
   lineSegmentCount: number;
   estimatedPageCount: number;
   pageSplitCount: number;
@@ -71,6 +72,7 @@ interface ParsedRange {
 interface ParsedSection {
   readonly blocks: DocumentBlock[];
   readonly layout?: PageLayout;
+  readonly pageNumbering?: boolean;
 }
 
 interface HwpParagraphMetrics {
@@ -281,6 +283,7 @@ export async function parseHwp(input: HwpParseInput): Promise<ParsedDocument> {
         imageCount: stats.imageCount,
         unresolvedImageCount: stats.unresolvedImageCount,
         pageDefCount: stats.pageDefCount,
+        pageNumParaCount: stats.pageNumParaCount,
         lineSegmentCount: stats.lineSegmentCount,
         estimatedPageCount: stats.estimatedPageCount,
         pageSplitCount: stats.pageSplitCount,
@@ -375,6 +378,10 @@ function parseSection(
   context: HwpParseContext
 ): ParsedSection {
   const layout = findSectionPageLayout(records, context);
+  const pageNumbering = records.some((record) => record.tagId === HWP_TAG.PAGE_NUM_PARA);
+  if (pageNumbering) {
+    context.stats.pageNumParaCount += records.filter((record) => record.tagId === HWP_TAG.PAGE_NUM_PARA).length;
+  }
   const parsed = parseBlockRange(records, 0, null, context);
   const blocks = parsed.blocks;
 
@@ -387,7 +394,8 @@ function parseSection(
   }
   return {
     blocks,
-    ...(layout ? { layout } : {})
+    ...(layout ? { layout } : {}),
+    ...(pageNumbering ? { pageNumbering: true } : {})
   };
 }
 
@@ -397,7 +405,14 @@ function paginateSections(sections: readonly ParsedSection[], context: HwpParseC
     const layout = section.layout ?? DEFAULT_PAGE_LAYOUT;
     const pageBlocks = paginateBlocks(section.blocks, layout, context);
     for (const blocks of pageBlocks) {
-      pages.push({ index: pages.length, blocks, layout });
+      const pageNumber = pages.length + 1;
+      pages.push({
+        index: pages.length,
+        blocks: section.pageNumbering
+          ? [...blocks, createPageNumberDecorationBlock(pageNumber, layout)]
+          : blocks,
+        layout
+      });
     }
   }
   if (!pages.length) pages.push({ index: 0, blocks: [], layout: DEFAULT_PAGE_LAYOUT });
@@ -468,6 +483,28 @@ function paginateBlocks(blocks: readonly DocumentBlock[], layout: PageLayout, co
 
   flush();
   return pages.length ? pages : [[]];
+}
+
+function createPageNumberDecorationBlock(pageNumber: number, layout: PageLayout): ParagraphBlock {
+  const bodyWidth = pageBodyWidth(layout);
+  const bodyHeight = pageBodyHeight(layout);
+  return {
+    type: 'paragraph',
+    runs: [{ text: `- ${pageNumber} -`, fontSizePt: 9 }],
+    align: 'center',
+    lineHeight: '1.2',
+    _hwpxLayout: {
+      heightPx: 18,
+      source: 'hwpx-footer-page-number',
+      position: {
+        leftPx: 0,
+        topPx: Math.max(0, bodyHeight - 22),
+        widthPx: bodyWidth,
+        heightPx: 18,
+        source: 'hwpx-footer-page-number'
+      }
+    }
+  };
 }
 
 function shouldPlaceFlowBlockAfterPositionedContent(metrics: BlockVisualMetrics | null, currentPositionedBottom: number): boolean {
@@ -1227,6 +1264,7 @@ function emptyParseStats(): HwpParseStats {
     imageCount: 0,
     unresolvedImageCount: 0,
     pageDefCount: 0,
+    pageNumParaCount: 0,
     lineSegmentCount: 0,
     estimatedPageCount: 0,
     pageSplitCount: 0,
