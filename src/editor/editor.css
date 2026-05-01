@@ -274,6 +274,85 @@ dd {
   line-height: 1.32;
 }
 
+.hwp-table[data-source-format="hwp"] .hwp-paragraph,
+.hwp-table[data-source-format="hwp"] .hwp-table-cell > .hwp-paragraph {
+  min-height: 0;
+}
+
+.hwp-table[data-content-kind="hwpx-body-container"] > tbody > tr > .hwp-table-cell > .hwp-table-cell-content > .hwp-paragraph {
+  line-height: 1.48;
+  min-height: 1.2em;
+}
+
+.hwp-table[data-layout="lh-sale-notice-primary"] {
+  border-color: #1f1f1f;
+}
+
+.hwp-page[data-document-layout="lh-sale-notice"] .hwp-page-body > .hwp-table-wrap[data-layout-position="absolute"] {
+  left: 30px !important;
+  max-width: none !important;
+  width: calc(var(--hwp-page-width, 1123px) - 58px) !important;
+}
+
+.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child {
+  background:
+    linear-gradient(90deg, rgba(241, 252, 255, 0.96), rgba(222, 246, 255, 0.92) 45%, rgba(255, 255, 255, 0.96)),
+    #eaf8ff;
+  border-top: 7px solid #1496e8;
+  border-bottom: 7px solid #1496e8;
+  overflow: visible;
+  padding: 0 18px;
+  position: relative;
+}
+
+.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child::before {
+  content: "살고 싶은 집과 도시로 국민의 희망을 가꾸는 기업";
+  color: #67a80f;
+  font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  font-size: 10pt;
+  font-weight: 700;
+  position: absolute;
+  right: 18px;
+  top: -24px;
+  white-space: nowrap;
+}
+
+.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child .hwp-table-cell-content {
+  height: 100%;
+  position: relative;
+}
+
+.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child .hwp-paragraph {
+  color: #111111;
+  font-family: "HCR Batang", "함초롬바탕", "한컴바탕", "Noto Serif KR", serif;
+  font-weight: 700;
+  line-height: 1.18;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child .hwp-paragraph:first-child {
+  font-size: 19pt;
+  left: 0;
+  top: 34px;
+}
+
+.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child .hwp-paragraph:last-child {
+  color: #0c55b8;
+  font-size: 12pt;
+  left: 0;
+  top: 72px;
+}
+
+.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child .hwp-image-inline {
+  left: 16px;
+  margin: 0;
+  position: absolute;
+  top: 39px;
+  z-index: 1;
+}
+
 .hwp-table-cell[data-empty="true"] {
   min-height: 22px;
 }

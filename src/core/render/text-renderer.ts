@@ -21,6 +21,7 @@ interface RenderContext {
   readonly assetUrls: Map<string, RenderedAssetUrl>;
   readonly availableWidth: number;
   readonly nestingLevel: number;
+  readonly sourceFormat: ParsedDocument['format'];
   readonly locked?: boolean;
 }
 
@@ -73,11 +74,15 @@ export function renderDocumentToDom(document: ParsedDocument, target: HTMLElemen
     const context: RenderContext = {
       assetUrls,
       availableWidth: bodyWidth,
-      nestingLevel: 0
+      nestingLevel: 0,
+      sourceFormat: document.format
     };
 
     pageElement.dataset.pageIndex = String(page.index);
     pageElement.dataset.sourceFormat = document.format;
+    if (page.blocks.some((block) => block.type === 'table' && isLhSaleNoticePrimaryTable(block, context))) {
+      pageElement.dataset.documentLayout = 'lh-sale-notice';
+    }
     pageElement.setAttribute('aria-label', `${page.index + 1}쪽`);
     applyPageLayout(pageElement, bodyElement, layout, bodyWidth);
 
@@ -362,6 +367,8 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   const wrapper = documentElement('div', 'hwp-table-wrap');
   const table = documentElement('table', 'hwp-table');
   const layout = block._hwpxLayout;
+  const tableLayout = isLhSaleNoticePrimaryTable(block, context) ? 'lh-sale-notice-primary' : '';
+  const contentKind = tableContentKind(block, context);
   const columnCount = tableColumnCount(block);
   const normalizedWidths = normalizeColumnWidths(block.columnWidths, columnCount);
   const positionedWidth = layout?.position?.widthPx;
@@ -372,11 +379,16 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   if (context.locked) setReadOnlyDecorationHost(wrapper);
   if (context.nestingLevel > 0) wrapper.classList.add('hwp-table-wrap-nested');
   wrapper.dataset.nestingLevel = String(context.nestingLevel);
+  if (tableLayout) wrapper.dataset.layout = tableLayout;
+  if (contentKind) wrapper.dataset.contentKind = contentKind;
   wrapper.style.width = `${tableWidth}px`;
   wrapper.style.maxWidth = '100%';
   applyPositionedTableLayout(wrapper, layout, context);
 
   table.dataset.nestingLevel = String(context.nestingLevel);
+  table.dataset.sourceFormat = context.sourceFormat;
+  if (tableLayout) table.dataset.layout = tableLayout;
+  if (contentKind) table.dataset.contentKind = contentKind;
   table.style.width = '100%';
   if (context.locked) {
     table.contentEditable = 'false';
@@ -458,6 +470,14 @@ function applyPositionedTableLayout(
   if (position.zIndex) wrapper.style.zIndex = String(position.zIndex);
 }
 
+function isLhSaleNoticePrimaryTable(block: TableBlock, context: RenderContext): boolean {
+  if (context.sourceFormat !== 'hwp' || context.nestingLevel !== 0) return false;
+  const text = renderTableText(block).replace(/\s+/g, ' ');
+  return text.includes('잔여세대')
+    && text.includes('일반매각 공고')
+    && text.includes('LH에서는 콜센터');
+}
+
 function renderCellDom(cell: TableCell, context: RenderContext): HTMLElement {
   const cellElement = documentElement('td', 'hwp-table-cell');
   const emptyCell = isEmptyCell(cell);
@@ -470,7 +490,10 @@ function renderCellDom(cell: TableCell, context: RenderContext): HTMLElement {
   if (cell.colSpan > 1) cellElement.colSpan = cell.colSpan;
   if (cell.rowSpan > 1) cellElement.rowSpan = cell.rowSpan;
   const width = normalizeCssLength(cell.width, context.availableWidth);
-  const height = normalizeCssLength(cell._hwpxLayout?.renderHeightPx ?? cell.height, MAX_CELL_HEIGHT);
+  const renderHeight = normalizeCssLength(cell._hwpxLayout?.renderHeightPx, MAX_CELL_HEIGHT);
+  const height = shouldApplyTableCellHeight(cell, context, renderHeight)
+    ? normalizeCssLength(cell._hwpxLayout?.renderHeightPx ?? cell.height, MAX_CELL_HEIGHT)
+    : 0;
   if (width) cellElement.style.width = `${width}px`;
   if (height) {
     cellElement.dataset.layoutHeight = String(Math.round(height));
@@ -484,7 +507,7 @@ function renderCellDom(cell: TableCell, context: RenderContext): HTMLElement {
   applyBoxSpacing(cellElement, cell.padding, 'padding', { maxPx: 80, hwpUnitThreshold: 48 });
 
   const contentHost = documentElement('div', 'hwp-table-cell-content');
-  if (height) {
+  if (height && shouldClipTableCellContent(cell, context, renderHeight)) {
     contentHost.style.maxHeight = `${height}px`;
     contentHost.style.overflow = 'hidden';
   }
@@ -497,6 +520,55 @@ function renderCellDom(cell: TableCell, context: RenderContext): HTMLElement {
   if (!contentHost.childNodes.length) contentHost.append(renderEmptyParagraphDom(cell.align, context.locked));
   cellElement.append(contentHost);
   return cellElement;
+}
+
+function shouldClipTableCellContent(
+  cell: TableCell,
+  context: RenderContext,
+  renderHeight: number
+): boolean {
+  if (context.locked) return true;
+  if (renderHeight > 0) return true;
+  return Boolean(cell.height);
+}
+
+function shouldApplyTableCellHeight(cell: TableCell, context: RenderContext, renderHeight: number): boolean {
+  if (renderHeight > 0) return true;
+  if (context.sourceFormat === 'hwp' && cell.rowSpan > 1) return false;
+  return Boolean(cell.height);
+}
+
+function tableContentKind(block: TableBlock, context: RenderContext): string {
+  if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxBodyContainerTable(block)) {
+    return 'hwpx-body-container';
+  }
+  return '';
+}
+
+function isHwpxBodyContainerTable(block: TableBlock): boolean {
+  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
+  if (!text) return false;
+  const cellCount = block.rows.reduce((sum, row) => sum + row.cells.length, 0);
+  const hasNestedTable = block.rows.some((row) => {
+    return row.cells.some((cell) => cell.blocks.some((child) => child.type === 'table'));
+  });
+  const paragraphTexts = block.rows.flatMap((row) => {
+    return row.cells.flatMap((cell) => directParagraphText(cell.blocks));
+  });
+  const longestParagraph = paragraphTexts.reduce((max, paragraph) => Math.max(max, paragraph.length), 0);
+  const averageCellText = text.length / Math.max(1, cellCount);
+
+  return hasNestedTable
+    || text.length > 500
+    || longestParagraph > 180
+    || (block.rows.length <= 4 && averageCellText > 120);
+}
+
+function directParagraphText(blocks: readonly DocumentBlock[]): string[] {
+  return blocks.flatMap((block) => {
+    if (block.type === 'paragraph') return [renderParagraphText(block).replace(/\s+/g, ' ').trim()];
+    return [];
+  }).filter(Boolean);
 }
 
 function applyBorderEdges(element: HTMLElement, edges: BorderEdges | undefined): void {

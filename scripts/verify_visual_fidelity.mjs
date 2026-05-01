@@ -224,6 +224,8 @@ function summarizeReport(report) {
         page: Number(page.pageIndex) + 1,
         verdict: page.verdict,
         diff: page.diff,
+        blurDiff: page.visualMetrics?.blurDiff,
+        layoutDiff: page.visualMetrics?.projectionDiff?.combined,
         compare: page.pageCompare
       }));
     const badPages = pages.filter((page) => ['mismatch', 'capture-error', 'capture-review'].includes(page.verdict));

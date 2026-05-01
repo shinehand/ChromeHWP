@@ -6,12 +6,17 @@ import json
 from pathlib import Path
 from statistics import median
 
-from PIL import Image, ImageChops, ImageDraw, ImageStat
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageStat
 
 
 PAGE_RATIO = 1.414
 PAGE_RATIO_TOLERANCE = 0.10
 PAGE_MIN_WIDTH_RATIO = 0.20
+PAGE_HEIGHT_MIN_RATIO = 0.88
+STRUCTURE_TARGET_WIDTH = 360
+STRUCTURE_DARK_THRESHOLD = 220
+STRUCTURE_BLUR_RADIUS = 0.55
+STRUCTURE_DILATION_SIZE = 3
 
 
 def longest_true_run(values):
@@ -170,7 +175,7 @@ def detect_page_rects(image):
 
 
 def crop_hancom_page(image, target_band):
-    bands = detect_page_rects(image)
+    bands = normalize_page_rects(image, detect_page_rects(image), target_band)
     # At 50% zoom Hancom can show two pages. The capture manifest tells us
     # whether the target is the first visible page or the final visible page.
     if target_band == "last":
@@ -197,6 +202,97 @@ def crop_hancom_page(image, target_band):
     if bottom <= top + 120:
         bottom = image.height
     return trim_hancom_page_shadow(image.crop((left, top, right + 1, bottom)))
+
+
+def normalize_page_rects(image, rects, target_band):
+    candidates = []
+    for rect in rects:
+        normalized = normalize_page_rect(image, rect)
+        if normalized:
+            candidates.append(normalized)
+
+    if candidates:
+        candidates.sort(key=lambda rect: (rect[1], rect[0]))
+        return candidates
+
+    return synthesize_page_rects_from_bands(image, target_band) or rects
+
+
+def normalize_page_rect(image, rect):
+    left, top, right, bottom = rect
+    page_width = right - left + 1
+    height = bottom - top + 1
+    expected_height = int(page_width * PAGE_RATIO)
+    if page_width <= 0 or expected_height <= 0:
+        return None
+    if height < expected_height * PAGE_HEIGHT_MIN_RATIO:
+        return None
+    normalized_bottom = min(image.height - 1, top + expected_height - 1)
+    return (left, top, right, max(bottom, normalized_bottom))
+
+
+def synthesize_page_rects_from_bands(image, target_band):
+    try:
+        bands = detect_page_bands(image)
+    except RuntimeError:
+        return []
+
+    if not bands:
+        return []
+
+    clusters = cluster_page_bands(bands)
+    candidates = []
+    for cluster in clusters:
+        left = int(median(rect[0] for rect in cluster))
+        top = min(rect[1] for rect in cluster)
+        right = int(median(rect[2] for rect in cluster))
+        page_width = right - left + 1
+        if page_width < image.width * PAGE_MIN_WIDTH_RATIO:
+            continue
+        expected_height = int(page_width * PAGE_RATIO)
+        bottom = min(image.height - 1, top + expected_height - 1)
+        if bottom > top + 120:
+            candidates.append((left, top, right, bottom))
+
+    if candidates:
+        candidates.sort(key=lambda rect: (rect[1], rect[0]))
+        return candidates
+
+    # Fallback for captures where horizontal white bands belong to stacked pages
+    # but cluster boundaries were split by dark table lines.
+    left = int(median(rect[0] for rect in bands))
+    right = int(median(rect[2] for rect in bands))
+    page_width = right - left + 1
+    expected_height = int(page_width * PAGE_RATIO)
+    if page_width < image.width * PAGE_MIN_WIDTH_RATIO or expected_height <= 120:
+        return []
+    top_values = sorted(set(rect[1] for rect in bands))
+    if target_band == "last":
+        top = max(0, min(top_values[-1], image.height - expected_height))
+    else:
+        top = top_values[0]
+    return [(left, top, right, min(image.height - 1, top + expected_height - 1))]
+
+
+def cluster_page_bands(bands):
+    sorted_bands = sorted(bands, key=lambda rect: (rect[1], rect[0]))
+    if not sorted_bands:
+        return []
+
+    max_width = max(rect[2] - rect[0] + 1 for rect in sorted_bands)
+    clusters = []
+    current = [sorted_bands[0]]
+    for rect in sorted_bands[1:]:
+        previous = current[-1]
+        same_column = abs(rect[0] - previous[0]) <= max(8, max_width * 0.08) and abs(rect[2] - previous[2]) <= max(8, max_width * 0.08)
+        vertical_gap = rect[1] - previous[3]
+        if same_column and vertical_gap <= max(40, max_width * 0.18):
+            current.append(rect)
+        else:
+            clusters.append(current)
+            current = [rect]
+    clusters.append(current)
+    return clusters
 
 
 def trim_hancom_page_shadow(image):
@@ -281,6 +377,77 @@ def normalized_diff_score(left_image, right_image):
     return ImageStat.Stat(diff).mean[0]
 
 
+def blurred_diff_score(left_image, right_image):
+    width = min(left_image.width, right_image.width)
+    height = min(left_image.height, right_image.height)
+    if width <= 0 or height <= 0:
+        return None
+    left = left_image.crop((0, 0, width, height)).convert("L").filter(ImageFilter.GaussianBlur(1.15))
+    right = right_image.crop((0, 0, width, height)).convert("L").filter(ImageFilter.GaussianBlur(1.15))
+    diff = ImageChops.difference(left, right)
+    return ImageStat.Stat(diff).mean[0]
+
+
+def structure_mask(image):
+    normalized = resize_to_width(image, STRUCTURE_TARGET_WIDTH).convert("L")
+    normalized = normalized.filter(ImageFilter.GaussianBlur(STRUCTURE_BLUR_RADIUS))
+    mask = normalized.point(lambda value: 255 if value < STRUCTURE_DARK_THRESHOLD else 0, mode="L")
+    return mask.filter(ImageFilter.MaxFilter(STRUCTURE_DILATION_SIZE))
+
+
+def projection_diff_score(left_image, right_image):
+    left = structure_mask(left_image)
+    right = structure_mask(right_image)
+    width = min(left.width, right.width)
+    height = min(left.height, right.height)
+    if width <= 0 or height <= 0:
+        return None
+    left = left.crop((0, 0, width, height))
+    right = right.crop((0, 0, width, height))
+    left_pixels = left.load()
+    right_pixels = right.load()
+
+    row_delta = 0.0
+    for y in range(height):
+        left_density = 0
+        right_density = 0
+        for x in range(width):
+            if left_pixels[x, y] > 0:
+                left_density += 1
+            if right_pixels[x, y] > 0:
+                right_density += 1
+        row_delta += abs((left_density / width) - (right_density / width))
+
+    column_delta = 0.0
+    for x in range(width):
+        left_density = 0
+        right_density = 0
+        for y in range(height):
+            if left_pixels[x, y] > 0:
+                left_density += 1
+            if right_pixels[x, y] > 0:
+                right_density += 1
+        column_delta += abs((left_density / height) - (right_density / height))
+
+    row_score = row_delta / height * 100
+    column_score = column_delta / width * 100
+    return {
+        "row": row_score,
+        "column": column_score,
+        "combined": (row_score + column_score) / 2,
+    }
+
+
+def visual_similarity_metrics(hancom_page, chrome_page, target_width):
+    hancom_norm = resize_to_width(hancom_page, target_width)
+    chrome_norm = resize_to_width(chrome_page, target_width)
+    return {
+        "rawDiff": normalized_diff_score(hancom_norm, chrome_norm),
+        "blurDiff": blurred_diff_score(hancom_norm, chrome_norm),
+        "projectionDiff": projection_diff_score(hancom_page, chrome_page),
+    }
+
+
 def capture_quality(hancom_page, chrome_page):
     hancom_ratio = hancom_page.height / max(1, hancom_page.width)
     chrome_ratio = chrome_page.height / max(1, chrome_page.width)
@@ -299,7 +466,7 @@ def capture_quality(hancom_page, chrome_page):
     }
 
 
-def verdict_for_score(score, quality=None):
+def verdict_for_score(score, quality=None, metrics=None):
     if quality and quality.get("status") != "ok":
         return quality["status"]
     if score is None:
@@ -308,7 +475,19 @@ def verdict_for_score(score, quality=None):
         return "close"
     if score <= 32:
         return "review"
+    if is_layout_review(metrics):
+        return "layout-review"
     return "mismatch"
+
+
+def is_layout_review(metrics):
+    if not metrics:
+        return False
+    blur_diff = metrics.get("blurDiff")
+    projection_diff = (metrics.get("projectionDiff") or {}).get("combined")
+    if not isinstance(blur_diff, (int, float)) or not isinstance(projection_diff, (int, float)):
+        return False
+    return blur_diff <= 32.0 and projection_diff <= 30.0
 
 
 def make_compare_image(hancom_page, chrome_page, output_path, title, target_width):
@@ -358,16 +537,15 @@ def build_report(manifest, output_dir, target_width):
                 hancom_page.save(hancom_crop_path)
                 compare_path = compare_dir / f"page-{page_index + 1:03d}-compare.png"
                 make_compare_image(hancom_page, chrome_page, compare_path, title, target_width)
-                score = normalized_diff_score(
-                    resize_to_width(hancom_page, target_width),
-                    resize_to_width(chrome_page, target_width),
-                )
+                metrics = visual_similarity_metrics(hancom_page, chrome_page, target_width)
+                score = metrics["rawDiff"]
                 quality = capture_quality(hancom_page, chrome_page)
                 item.update({
                     "hancomCrop": str(hancom_crop_path),
                     "pageCompare": str(compare_path),
                     "diff": score,
-                    "verdict": verdict_for_score(score, quality),
+                    "verdict": verdict_for_score(score, quality, metrics),
+                    "visualMetrics": metrics,
                     "captureQuality": quality,
                     "hancomCropSize": list(hancom_page.size),
                     "chromeSize": list(chrome_page.size),
@@ -408,13 +586,18 @@ def write_markdown(results, report_path):
         lines.append(f"- pages: {doc['pageCount']}")
         lines.append(f"- verdicts: {doc['verdictCounts']}")
         lines.append("")
-        lines.append("| page | verdict | diff | compare |")
-        lines.append("| ---: | --- | ---: | --- |")
+        lines.append("| page | verdict | raw diff | blur diff | layout diff | compare |")
+        lines.append("| ---: | --- | ---: | ---: | ---: | --- |")
         for page in doc["pages"]:
             diff = "" if page["diff"] is None else f"{page['diff']:.3f}"
+            metrics = page.get("visualMetrics") or {}
+            blur = metrics.get("blurDiff")
+            layout = (metrics.get("projectionDiff") or {}).get("combined")
+            blur_text = "" if blur is None else f"{blur:.3f}"
+            layout_text = "" if layout is None else f"{layout:.3f}"
             compare = page.get("pageCompare", "")
             lines.append(
-                f"| {page['pageIndex'] + 1} | {page['verdict']} | {diff} | `{compare}` |"
+                f"| {page['pageIndex'] + 1} | {page['verdict']} | {diff} | {blur_text} | {layout_text} | `{compare}` |"
             )
         lines.append("")
     report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -428,9 +611,17 @@ def write_html(results, html_path):
             compare = page.get("pageCompare")
             image = f'<img src="{html.escape(str(Path(compare).relative_to(html_path.parent)))}" alt="page compare">' if compare else ""
             diff = "" if page["diff"] is None else f"{page['diff']:.3f}"
+            metrics = page.get("visualMetrics") or {}
+            blur = metrics.get("blurDiff")
+            layout = (metrics.get("projectionDiff") or {}).get("combined")
+            detail = f"raw {diff}"
+            if blur is not None:
+                detail += f" · blur {blur:.3f}"
+            if layout is not None:
+                detail += f" · layout {layout:.3f}"
             page_rows.append(f"""
               <section class="page-card {html.escape(page['verdict'])}">
-                <h3>{page['pageIndex'] + 1}쪽 · {html.escape(page['verdict'])} · diff {html.escape(diff)}</h3>
+                <h3>{page['pageIndex'] + 1}쪽 · {html.escape(page['verdict'])} · {html.escape(detail)}</h3>
                 {image}
               </section>
             """)
@@ -461,6 +652,7 @@ def write_html(results, html_path):
     .page-card.mismatch h3 {{ background: #ffe2df; }}
     .page-card.capture-review h3 {{ background: #ffe9c7; }}
     .page-card.review h3 {{ background: #fff1c2; }}
+    .page-card.layout-review h3 {{ background: #e7f0ff; }}
     .page-card.close h3 {{ background: #e8f5df; }}
     img {{ width: 100%; display: block; }}
   </style>

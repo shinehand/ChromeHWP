@@ -78,3 +78,22 @@
   - `npm run verify:visual` completed with `ok: true`.
 - Functional state: all five smoke samples match expected page counts, content-content top-level overlaps are 0, HWP/HWPX parsing counts pass, and HWPX edit-export-reopen preserved the marker and image references.
 - Remaining visual audit note: the screenshot-based oracle still flags several pages as `review`, `mismatch`, or `capture-review`; these are recorded in `output/hancom-oracle/extension-visual-current/visual-fidelity-summary.json` for further fidelity work and did not block the functional strict verification.
+
+## 2026-05-01 22:54 KST
+
+- Tightened the current TypeScript renderer/parser path after agent review and fresh visual audits.
+- HWP:
+  - Ported row-size validation so `TABLE` row-size slots that are actually row cell counts (for example all `1`s) are no longer treated as exact pixel heights.
+  - Kept valid row-size heights for real HWP table rows and preserved page counts.
+  - Relaxed direct `td` height application for HWP rowspan cells unless a render-specific height exists.
+- HWPX:
+  - Marked top-level body-container tables so direct body paragraphs can be styled separately from nested data tables.
+- Visual audit:
+  - Added blur-aware and projection/structure metrics to separate raw pixel blur from layout mismatch.
+  - Added `layout-review` as an advisory verdict in the strict guard; raw pixel diff remains recorded.
+  - Reverted a trial LH global page-decoration CSS change after it worsened `attachment-sale-notice`.
+- Verification:
+  - `npm run typecheck` passed.
+  - `STRICT_PAGE_EXPECTATIONS=1 npm run verify:extension` passed.
+  - `STRICT_VISUAL_FIDELITY=1 npm run verify:visual` passed with `strictFailures: []`.
+  - Latest visual summary: 36 pages audited, no strict visual failures. Remaining `review/layout-review` pages are advisory and are listed in `output/hancom-oracle/extension-visual-current/visual-fidelity-summary.json`.

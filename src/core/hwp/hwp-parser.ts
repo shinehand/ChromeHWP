@@ -906,6 +906,16 @@ function buildTableBlock(
   const inferredPosition = objectPosition ? null : inferHwpTablePosition(rows);
   const tablePosition = objectPosition ?? inferredPosition;
   const tablePaint = resolveHwpCellPaint(context.docInfo, tableInfo?.borderFillId ?? 0);
+  const rawRowSizes = tableInfo?.rowSizes ?? [];
+  const rowSizesAreHeights = tableRowSizesLookLikeHeights(rawRowSizes, {
+    rowCount,
+    colCount,
+    cellCount: sortedCells.length
+  });
+  const rowHeightsPx = rowSizesAreHeights ? rawRowSizes.map(hwpUnitToPx) : [];
+  const shouldAttachLayout = Boolean(
+    tablePosition || objectHeight > 0 || rowHeightsPx.some((height) => height > 0) || tableInfo?.repeatHeader
+  );
 
   return {
     type: 'table',
@@ -915,17 +925,41 @@ function buildTableBlock(
     ...(tablePaint.border ? { border: tablePaint.border } : {}),
     ...(tablePaint.borderEdges ? { borderEdges: tablePaint.borderEdges } : {}),
     ...(tablePaint.background ? { background: tablePaint.background } : {}),
-    ...(tablePosition || objectHeight > 0
+    ...(shouldAttachLayout
       ? {
           _hwpxLayout: {
             heightPx: objectHeight,
             repeatHeaderRows: tableInfo?.repeatHeader ? 1 : 0,
-            rowHeightsPx: tableInfo?.rowSizes.map(hwpUnitToPx) ?? [],
+            rowHeightsPx,
+            source: rowSizesAreHeights ? 'hwp-table-row-sizes' : 'hwp-table',
             ...(tablePosition ? { position: tablePosition } : {})
           }
         }
       : {})
   };
+}
+
+function tableRowSizesLookLikeHeights(
+  rowSizes: readonly number[],
+  context: { readonly rowCount: number; readonly colCount: number; readonly cellCount: number }
+): boolean {
+  if (!rowSizes.length) return false;
+  if (context.rowCount > 0 && rowSizes.length !== context.rowCount) return false;
+  const values = rowSizes.map((value) => Math.max(0, Number(value) || 0));
+  if (!values.some((value) => value > 0)) return false;
+
+  const sum = values.reduce((total, value) => total + value, 0);
+  const maxValue = Math.max(...values);
+
+  if (
+    context.cellCount > 0
+    && sum === context.cellCount
+    && maxValue <= Math.max(context.colCount + 2, 16)
+  ) {
+    return false;
+  }
+
+  return maxValue >= 100;
 }
 
 function inferHwpTablePosition(rows: readonly TableRow[]): HwpRenderedTablePosition | null {

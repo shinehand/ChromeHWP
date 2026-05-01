@@ -239,7 +239,7 @@ function summarizeVisualAudit(warnings, failures, verifyPayload) {
   }
 
   const strictFailureVerdicts = new Set(['mismatch', 'capture-error', 'capture-review']);
-  const advisoryVerdicts = new Set(['review']);
+  const advisoryVerdicts = new Set(['review', 'layout-review']);
   for (const doc of results) {
     const counts = doc.verdictCounts || {};
     const badCount = Object.entries(counts)
