@@ -1546,3 +1546,29 @@ body {
   height: auto;
   display: block;
 }
+
+/* ── QA 전용 Oracle raster 페이지: 캡처 비교 검증 외 제품 렌더링에서는 비활성화 ── */
+.hwp-page-oracle {
+  padding: 0;
+  min-height: auto;
+  overflow: hidden;
+  background: #fff;
+}
+
+.hwp-oracle-page-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.page-thumb-preview-oracle {
+  height: 90px;
+  overflow: hidden;
+  background: #f8f8f8;
+}
+
+.page-thumb-preview-oracle img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

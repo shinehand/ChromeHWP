@@ -816,6 +816,8 @@ function baseSampleState() {
     modeInfo: '',
     message: '',
     canvasCount: 0,
+    oraclePageCount: 0,
+    oracleImageCount: 0,
     pageElementCount: 0,
     thumbnailCount: 0,
     hasRenderer: false,
@@ -968,12 +970,16 @@ function readSampleState(keywords = []) {
         }
       }));
       const pageElementCount = document.querySelectorAll('.hwp-page').length;
+      const oraclePageCount = document.querySelectorAll('.hwp-page-oracle').length;
+      const oracleImageCount = document.querySelectorAll('.hwp-page-oracle img').length;
       return {
         pageInfo: statusPageInfo,
         sectionInfo: statusSectionInfo,
         modeInfo: statusMode,
         message: statusMessage,
         canvasCount: document.querySelectorAll('.hwp-page canvas').length,
+        oraclePageCount,
+        oracleImageCount,
         pageElementCount,
         thumbnailCount: document.querySelectorAll('.page-thumb, .thumbnail-item, .thumb-item').length,
         renderedPageMetrics: {
@@ -1010,6 +1016,9 @@ async function waitForDocument(sample) {
     const loaded = lastState.hasRenderer
       && renderedPageCount > 0
       && /쪽/.test(lastState.pageInfo);
+    if ((lastState.oraclePageCount || 0) > 0 || (lastState.oracleImageCount || 0) > 0) {
+      throw new Error(`${sample.filename} oracle-raster 캡처 페이지 감지: pages=${lastState.oraclePageCount}, images=${lastState.oracleImageCount}`);
+    }
     if (loaded) {
       return lastState;
     }
@@ -1078,14 +1087,19 @@ async function verifySample(sample, hancomOracleBaseline) {
   const diagnosticControlCount = Number.isFinite(diagnosticCounts?.controls) ? diagnosticCounts.controls : null;
   const renderedPageMetrics = state.renderedPageMetrics || null;
   const firstDiagnosticPage = Array.isArray(diagnostics?.pages) ? diagnostics.pages[0] : null;
-  const expectedRenderedFirstPage = firstDiagnosticPage && Number(firstDiagnosticPage.width) > 0 && Number(firstDiagnosticPage.height) > 0
+  const firstDiagnosticWidth = Number(firstDiagnosticPage?.width);
+  const firstDiagnosticHeight = Number(firstDiagnosticPage?.height);
+  const firstDiagnosticUnit = firstDiagnosticPage?.unit === 'px' || diagnostics?.engine === 'oracle-raster'
+    ? 'px'
+    : 'HWPUNIT';
+  const expectedRenderedFirstPage = firstDiagnosticPage && firstDiagnosticWidth > 0 && firstDiagnosticHeight > 0
     ? {
-      width: Math.round(Number(firstDiagnosticPage.width) / 75),
-      height: Math.round(Number(firstDiagnosticPage.height) / 75),
-      sourceWidth: Number(firstDiagnosticPage.width),
-      sourceHeight: Number(firstDiagnosticPage.height),
-      unit: 'HWPUNIT',
-      scale: '1/75px',
+      width: Math.round(firstDiagnosticUnit === 'px' ? firstDiagnosticWidth : firstDiagnosticWidth / 75),
+      height: Math.round(firstDiagnosticUnit === 'px' ? firstDiagnosticHeight : firstDiagnosticHeight / 75),
+      sourceWidth: firstDiagnosticWidth,
+      sourceHeight: firstDiagnosticHeight,
+      unit: firstDiagnosticUnit,
+      scale: firstDiagnosticUnit === 'px' ? '1px' : '1/75px',
     }
     : null;
   const actualRenderedFirstPage = renderedPageMetrics?.firstPage
@@ -1151,6 +1165,8 @@ async function verifySample(sample, hancomOracleBaseline) {
     modeInfo: state.modeInfo,
     message: state.message,
     canvasCount: state.canvasCount,
+    oraclePageCount: state.oraclePageCount,
+    oracleImageCount: state.oracleImageCount,
     pageElementCount: state.pageElementCount,
     thumbnailCount: state.thumbnailCount,
     pageCount: totalPages,
@@ -1198,6 +1214,9 @@ async function verifySample(sample, hancomOracleBaseline) {
   }
   if (screenshotError) {
     issues.push(`스크린샷 저장 실패: ${screenshotError}`);
+  }
+  if ((state.oraclePageCount || 0) > 0 || (state.oracleImageCount || 0) > 0) {
+    issues.push(`oracle-raster 캡처 렌더링 감지: pages=${state.oraclePageCount}, images=${state.oracleImageCount}`);
   }
   if (!diagnostics) {
     issues.push('구조 진단 데이터 수집 실패');

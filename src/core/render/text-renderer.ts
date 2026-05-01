@@ -28,6 +28,15 @@ interface RenderContext {
 type ParagraphLayout = NonNullable<ParagraphBlock['_hwpxLayout']>;
 type ParagraphLineSegment = NonNullable<ParagraphLayout['lineSegments']>[number];
 type ImageLayout = NonNullable<ImageBlock['_hwpxLayout']>;
+type TableLayout = NonNullable<TableBlock['_hwpxLayout']>;
+type TablePositionLayout = NonNullable<TableLayout['position']> & {
+  readonly offsetLeftPx?: number;
+  readonly offsetTopPx?: number;
+  readonly textWrap?: string;
+  readonly flowWithText?: boolean;
+  readonly allowOverlap?: boolean;
+  readonly margin?: BoxSpacing;
+};
 
 interface ParagraphLineSlice {
   readonly segment: ParagraphLineSegment;
@@ -371,7 +380,8 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   const contentKind = tableContentKind(block, context);
   const columnCount = tableColumnCount(block);
   const normalizedWidths = normalizeColumnWidths(block.columnWidths, columnCount);
-  const positionedWidth = layout?.position?.widthPx;
+  const position = tablePositionLayout(layout);
+  const positionedWidth = position?.widthPx;
   const tableWidth = positionedWidth && positionedWidth > 0
     ? clamp(positionedWidth, MIN_TABLE_WIDTH, MAX_PAGE_WIDTH)
     : resolveTableWidth(block, context.availableWidth);
@@ -456,8 +466,12 @@ function applyPositionedTableLayout(
   layout: TableBlock['_hwpxLayout'] | undefined,
   context: RenderContext
 ): void {
-  const position = layout?.position;
+  const position = tablePositionLayout(layout);
   if (context.nestingLevel > 0 || !position) return;
+  if (shouldKeepPositionedTableInFlow(position)) {
+    applyFlowPositionedTableLayout(wrapper, position);
+    return;
+  }
   const signedOffset = shouldPreserveSignedPosition(position.source);
   wrapper.dataset.layoutPosition = 'absolute';
   wrapper.style.position = 'absolute';
@@ -466,8 +480,49 @@ function applyPositionedTableLayout(
   wrapper.style.margin = '0';
   wrapper.style.maxWidth = 'none';
   if (position.widthPx && position.widthPx > 0) wrapper.style.width = `${Math.round(position.widthPx)}px`;
-  if (position.heightPx && position.heightPx > 0) wrapper.style.minHeight = `${Math.round(position.heightPx)}px`;
+  const positionedHeight = resolvePositionedTableHeight(layout, position);
+  if (positionedHeight > 0) wrapper.style.minHeight = `${Math.round(positionedHeight)}px`;
   if (position.zIndex) wrapper.style.zIndex = String(position.zIndex);
+}
+
+function applyFlowPositionedTableLayout(wrapper: HTMLElement, position: TablePositionLayout): void {
+  wrapper.dataset.layoutPosition = 'flow';
+  wrapper.style.clear = 'both';
+  applyBoxSpacing(wrapper, position.margin, 'margin');
+  if (position.widthPx && position.widthPx > 0) wrapper.style.width = `${Math.round(position.widthPx)}px`;
+  if (position.zIndex) wrapper.style.zIndex = String(position.zIndex);
+
+  const offsetX = clamp(Math.round(position.offsetLeftPx ?? 0), -MAX_PAGE_WIDTH, MAX_PAGE_WIDTH);
+  const offsetY = clamp(Math.round(position.offsetTopPx ?? 0), -MAX_PAGE_HEIGHT, MAX_PAGE_HEIGHT);
+  if (!offsetX && !offsetY) return;
+  wrapper.style.position = 'relative';
+  wrapper.style.left = `${offsetX}px`;
+  wrapper.style.top = `${offsetY}px`;
+}
+
+function shouldKeepPositionedTableInFlow(position: TablePositionLayout): boolean {
+  return isTopAndBottomTextWrap(position.textWrap)
+    && position.flowWithText === true
+    && position.allowOverlap !== true;
+}
+
+function tablePositionLayout(layout: TableBlock['_hwpxLayout'] | undefined): TablePositionLayout | undefined {
+  return layout?.position as TablePositionLayout | undefined;
+}
+
+function resolvePositionedTableHeight(
+  layout: TableBlock['_hwpxLayout'] | undefined,
+  position: NonNullable<NonNullable<TableBlock['_hwpxLayout']>['position']>
+): number {
+  const frameHeight = position.heightPx && position.heightPx > 0 ? position.heightPx : 0;
+  if (!frameHeight) return 0;
+
+  if (position.source === 'hwpx-table-pos') {
+    const tableHeight = layout?.renderHeightPx ?? layout?.heightPx ?? 0;
+    return tableHeight > 0 ? Math.min(frameHeight, tableHeight) : frameHeight;
+  }
+
+  return frameHeight;
 }
 
 function isLhSaleNoticePrimaryTable(block: TableBlock, context: RenderContext): boolean {
@@ -802,6 +857,11 @@ function cssPagePosition(marginVariable: string, offsetPx: number, allowNegative
 
 function shouldPreserveSignedPosition(source: string | undefined): boolean {
   return source === 'hwp-object-common' || source === 'hwp-picture-object-common';
+}
+
+function isTopAndBottomTextWrap(value: string | undefined): boolean {
+  const normalized = value?.trim().replace(/_/g, '-').toLowerCase();
+  return normalized === 'top-and-bottom';
 }
 
 function normalizeCssLength(value: number | undefined, maxPx: number): number {

@@ -52,6 +52,16 @@ interface HwpParseStats {
   unresolvedImageCount: number;
   pageDefCount: number;
   pageNumParaCount: number;
+  headerControlCount: number;
+  footerControlCount: number;
+  sectionControlCount: number;
+  preservedNonBodyControlCount: number;
+  headerDecorationBlockCount: number;
+  footerDecorationBlockCount: number;
+  tableSplitPolicyNoneCount: number;
+  tableSplitPolicyCellCount: number;
+  tableSplitPolicySplitCount: number;
+  tableSplitPolicyUnknownCount: number;
   lineSegmentCount: number;
   estimatedPageCount: number;
   pageSplitCount: number;
@@ -62,6 +72,7 @@ interface HwpParseContext {
   readonly docInfo: HwpDocInfoSummary;
   readonly imageResolver: HwpImageResolver;
   readonly stats: HwpParseStats;
+  readonly nonBodyControls: HwpNonBodyControlSummary[];
 }
 
 interface ParsedRange {
@@ -73,6 +84,31 @@ interface ParsedSection {
   readonly blocks: DocumentBlock[];
   readonly layout?: PageLayout;
   readonly pageNumbering?: boolean;
+  readonly headerDecorations?: DocumentBlock[];
+  readonly footerDecorations?: DocumentBlock[];
+}
+
+interface HwpSectionArtifacts {
+  readonly headerAreas: HwpHeaderFooterArea[];
+  readonly footerAreas: HwpHeaderFooterArea[];
+  readonly sectionControls: HwpNonBodyControlSummary[];
+}
+
+interface HwpHeaderFooterArea {
+  readonly controlId: 'head' | 'foot';
+  readonly applyPageType: string;
+  readonly blocks: DocumentBlock[];
+}
+
+interface HwpNonBodyControlSummary {
+  readonly controlId: string;
+  readonly kind: string;
+  readonly level: number;
+  readonly childRecordCount: number;
+  readonly blockCount: number;
+  readonly applyPageType?: string;
+  readonly widthPx?: number;
+  readonly heightPx?: number;
 }
 
 interface HwpParagraphMetrics {
@@ -94,6 +130,8 @@ interface HwpObjectInfo {
 
 interface HwpTableInfo {
   readonly attr: number;
+  readonly splitPage: number;
+  readonly pageBreak: string;
   readonly rowCount: number;
   readonly colCount: number;
   readonly cellSpacing: number;
@@ -202,6 +240,7 @@ const HWPUNIT_PER_PX = 75;
 const PT_TO_PX = 96 / 72;
 const MIN_PARAGRAPH_HEIGHT_PX = 12;
 const MIN_TABLE_ROW_HEIGHT_PX = 14;
+const MAX_LINE_SEGMENT_HEIGHT_PX = 240;
 const TABLE_BORDER_ESTIMATE_PX = 1;
 const BLOCK_GAP_PX = 6;
 const PAGE_PACK_TOLERANCE = 1.18;
@@ -237,7 +276,8 @@ export async function parseHwp(input: HwpParseInput): Promise<ParsedDocument> {
   const context: HwpParseContext = {
     docInfo,
     imageResolver: new HwpImageResolver(assets, docInfo.binDataRefs),
-    stats
+    stats,
+    nonBodyControls: []
   };
 
   const sections = sectionEntries.map((entry) => {
@@ -284,10 +324,21 @@ export async function parseHwp(input: HwpParseInput): Promise<ParsedDocument> {
         unresolvedImageCount: stats.unresolvedImageCount,
         pageDefCount: stats.pageDefCount,
         pageNumParaCount: stats.pageNumParaCount,
+        headerControlCount: stats.headerControlCount,
+        footerControlCount: stats.footerControlCount,
+        sectionControlCount: stats.sectionControlCount,
+        preservedNonBodyControlCount: stats.preservedNonBodyControlCount,
+        headerDecorationBlockCount: stats.headerDecorationBlockCount,
+        footerDecorationBlockCount: stats.footerDecorationBlockCount,
+        tableSplitPolicyNoneCount: stats.tableSplitPolicyNoneCount,
+        tableSplitPolicyCellCount: stats.tableSplitPolicyCellCount,
+        tableSplitPolicySplitCount: stats.tableSplitPolicySplitCount,
+        tableSplitPolicyUnknownCount: stats.tableSplitPolicyUnknownCount,
         lineSegmentCount: stats.lineSegmentCount,
         estimatedPageCount: stats.estimatedPageCount,
         pageSplitCount: stats.pageSplitCount,
         splitTableCount: stats.splitTableCount,
+        hwpNonBodyControlsJson: JSON.stringify(context.nonBodyControls.slice(0, 100)),
         pageWidths: pages.map((page) => page.layout?.width ?? 0),
         pageHeights: pages.map((page) => page.layout?.height ?? 0)
       }
@@ -382,8 +433,14 @@ function parseSection(
   if (pageNumbering) {
     context.stats.pageNumParaCount += records.filter((record) => record.tagId === HWP_TAG.PAGE_NUM_PARA).length;
   }
-  const parsed = parseBlockRange(records, 0, null, context);
+  const artifacts = emptySectionArtifacts();
+  const parsed = parseBlockRange(records, 0, null, context, artifacts);
   const blocks = parsed.blocks;
+  const headerDecorations = buildHeaderFooterDecorations(artifacts.headerAreas, 'header', layout ?? DEFAULT_PAGE_LAYOUT, context);
+  const footerDecorations = buildHeaderFooterDecorations(artifacts.footerAreas, 'footer', layout ?? DEFAULT_PAGE_LAYOUT, context);
+  const resolvedLayout = layout
+    ? mergeDecorationInset(layout, headerDecorations, footerDecorations)
+    : layout;
 
   if (!blocks.length) {
     const recovered = scanUtf16Text(decodedBytes);
@@ -394,9 +451,141 @@ function parseSection(
   }
   return {
     blocks,
-    ...(layout ? { layout } : {}),
-    ...(pageNumbering ? { pageNumbering: true } : {})
+    ...(resolvedLayout ? { layout: resolvedLayout } : {}),
+    ...(pageNumbering ? { pageNumbering: true } : {}),
+    ...(headerDecorations.length ? { headerDecorations } : {}),
+    ...(footerDecorations.length ? { footerDecorations } : {})
   };
+}
+
+function emptySectionArtifacts(): HwpSectionArtifacts {
+  return {
+    headerAreas: [],
+    footerAreas: [],
+    sectionControls: []
+  };
+}
+
+function buildHeaderFooterDecorations(
+  areas: readonly HwpHeaderFooterArea[],
+  zone: 'header' | 'footer',
+  layout: PageLayout,
+  context: HwpParseContext
+): DocumentBlock[] {
+  const bodyWidth = pageBodyWidth(layout);
+  const bodyHeight = Math.max(
+    0,
+    layout.height - (layout.margin.top ?? 0) - (layout.margin.bottom ?? 0)
+  );
+  const footerInset = Math.max(0, layout.decorationInset?.bottom ?? 0);
+  const footerTop = Math.max(0, bodyHeight - Math.max(footerInset, 1));
+  const source = zone === 'header' ? 'hwpx-header-hwp-control' : 'hwpx-footer-hwp-control';
+  const blocks: DocumentBlock[] = [];
+  let cursorTop = 0;
+
+  for (const area of areas) {
+    for (const block of area.blocks) {
+      const decorated = cloneDecorationBlock(block, source, zone === 'footer' ? footerTop : 0, cursorTop, bodyWidth);
+      blocks.push(decorated);
+      cursorTop += estimateBlockHeight(decorated, bodyWidth) + 2;
+    }
+  }
+
+  if (zone === 'header') context.stats.headerDecorationBlockCount += blocks.length;
+  else context.stats.footerDecorationBlockCount += blocks.length;
+  return blocks;
+}
+
+function cloneDecorationBlock(
+  block: DocumentBlock,
+  source: string,
+  baseTopPx: number,
+  fallbackTopPx: number,
+  bodyWidth: number
+): DocumentBlock {
+  const heightPx = estimateBlockHeight(block, bodyWidth);
+  const position = resolveDecorationPosition(block, baseTopPx, fallbackTopPx, bodyWidth, heightPx, source);
+  const baseLayout = block._hwpxLayout ?? { heightPx };
+  const nextLayout = {
+    ...baseLayout,
+    heightPx: Math.max(1, Math.round(baseLayout.heightPx || heightPx)),
+    source,
+    position
+  };
+
+  if (block.type === 'paragraph') {
+    return { ...block, _hwpxLayout: nextLayout };
+  }
+  if (block.type === 'table') {
+    return { ...block, _hwpxLayout: nextLayout };
+  }
+  return { ...block, inline: false, _hwpxLayout: nextLayout };
+}
+
+function resolveDecorationPosition(
+  block: DocumentBlock,
+  baseTopPx: number,
+  fallbackTopPx: number,
+  bodyWidth: number,
+  heightPx: number,
+  source: string
+): HwpRenderedTablePosition {
+  const existing = block._hwpxLayout?.position;
+  const inferred = existing ?? inferDecorationParagraphPosition(block);
+  const rawTop = inferred?.topPx ?? fallbackTopPx;
+  const topPx = baseTopPx > 0 && rawTop < baseTopPx
+    ? baseTopPx + rawTop
+    : rawTop;
+  return {
+    leftPx: Math.max(0, Math.round(inferred?.leftPx ?? 0)),
+    topPx: Math.max(0, Math.round(topPx)),
+    widthPx: Math.max(1, Math.round(inferred?.widthPx ?? resolveFlowBlockWidth(block, bodyWidth))),
+    heightPx: Math.max(1, Math.round(inferred?.heightPx ?? heightPx)),
+    zIndex: Math.max(180, inferred?.zIndex ?? 0),
+    source
+  };
+}
+
+function inferDecorationParagraphPosition(block: DocumentBlock): HwpRenderedTablePosition | null {
+  if (block.type !== 'paragraph') return null;
+  const segments = block._hwpxLayout?.lineSegments ?? [];
+  if (!segments.length) return null;
+  const left = Math.min(...segments.map((segment) => Math.max(0, segment.horizontalPosition)));
+  const top = Math.min(...segments.map((segment) => Math.max(0, segment.verticalPosition)));
+  const right = Math.max(...segments.map((segment) => Math.max(0, segment.horizontalPosition + segment.horizontalSize)));
+  const bottom = Math.max(...segments.map((segment) => Math.max(0, segment.verticalPosition + segment.verticalSize)));
+  return {
+    leftPx: hwpUnitToPx(left),
+    topPx: hwpUnitToPx(top),
+    widthPx: hwpUnitToPx(Math.max(0, right - left)),
+    heightPx: hwpUnitToPx(Math.max(0, bottom - top)),
+    source: 'hwp-header-footer-line-seg'
+  };
+}
+
+function mergeDecorationInset(
+  layout: PageLayout,
+  headerDecorations: readonly DocumentBlock[],
+  footerDecorations: readonly DocumentBlock[]
+): PageLayout {
+  const current = layout.decorationInset ?? {};
+  const top = Math.max(current.top ?? 0, decorationInsetHeight(headerDecorations, layout));
+  const bottom = Math.max(current.bottom ?? 0, decorationInsetHeight(footerDecorations, layout));
+  if (top === (current.top ?? 0) && bottom === (current.bottom ?? 0)) return layout;
+  return {
+    ...layout,
+    decorationInset: {
+      ...(layout.decorationInset ?? {}),
+      top,
+      bottom
+    }
+  };
+}
+
+function decorationInsetHeight(blocks: readonly DocumentBlock[], layout: PageLayout): number {
+  if (!blocks.length) return 0;
+  const bodyWidth = pageBodyWidth(layout);
+  return blocks.reduce((height, block) => Math.max(height, estimateBlockHeight(block, bodyWidth)), 0);
 }
 
 function paginateSections(sections: readonly ParsedSection[], context: HwpParseContext): DocumentPage[] {
@@ -406,11 +595,16 @@ function paginateSections(sections: readonly ParsedSection[], context: HwpParseC
     const pageBlocks = paginateBlocks(section.blocks, layout, context);
     for (const blocks of pageBlocks) {
       const pageNumber = pages.length + 1;
+      const decoratedBlocks = [
+        ...(section.headerDecorations ?? []),
+        ...blocks,
+        ...(section.footerDecorations ?? [])
+      ];
       pages.push({
         index: pages.length,
         blocks: section.pageNumbering
-          ? [...blocks, createPageNumberDecorationBlock(pageNumber, layout)]
-          : blocks,
+          ? [...decoratedBlocks, createPageNumberDecorationBlock(pageNumber, layout)]
+          : decoratedBlocks,
         layout
       });
     }
@@ -622,15 +816,28 @@ function splitOversizedBlock(
   return fragments;
 }
 
-function parseBlockRange(records: HwpRecord[], startIndex: number, stopLevel: number | null, context: HwpParseContext): ParsedRange {
-  return parseFlowRecords(records, startIndex, context, (record) => stopLevel !== null && record.level <= stopLevel);
+function parseBlockRange(
+  records: HwpRecord[],
+  startIndex: number,
+  stopLevel: number | null,
+  context: HwpParseContext,
+  artifacts?: HwpSectionArtifacts
+): ParsedRange {
+  return parseFlowRecords(
+    records,
+    startIndex,
+    context,
+    (record) => stopLevel !== null && record.level <= stopLevel,
+    artifacts
+  );
 }
 
 function parseFlowRecords(
   records: HwpRecord[],
   startIndex: number,
   context: HwpParseContext,
-  shouldStop: (record: HwpRecord, index: number) => boolean
+  shouldStop: (record: HwpRecord, index: number) => boolean,
+  artifacts?: HwpSectionArtifacts
 ): ParsedRange {
   const blocks: DocumentBlock[] = [];
   let currentParagraph: HwpParagraphDraft | null = null;
@@ -684,7 +891,7 @@ function parseFlowRecords(
 
     if (record.tagId === HWP_TAG.CTRL_HEADER) {
       flush();
-      const parsed = parseControlSubtree(records, index, context);
+      const parsed = parseControlSubtree(records, index, context, artifacts);
       blocks.push(...parsed.blocks);
       index = parsed.nextIndex;
       continue;
@@ -693,7 +900,7 @@ function parseFlowRecords(
     if (record.tagId === HWP_TAG.LIST_HEADER) {
       flush();
       context.stats.listHeaderCount += 1;
-      const parsed = parseListContent(records, index, record.level - 1, context);
+      const parsed = parseListContent(records, index, record.level - 1, context, artifacts);
       blocks.push(...parsed.blocks);
       index = parsed.nextIndex;
       continue;
@@ -722,26 +929,59 @@ function parseFlowRecords(
   return { blocks, nextIndex: index };
 }
 
-function parseControlSubtree(records: HwpRecord[], controlIndex: number, context: HwpParseContext): ParsedRange {
+function parseControlSubtree(
+  records: HwpRecord[],
+  controlIndex: number,
+  context: HwpParseContext,
+  artifacts?: HwpSectionArtifacts
+): ParsedRange {
   const control = records[controlIndex];
   const controlId = readControlId(control.body);
   const objectInfo = parseObjectInfo(control.body);
+  const childRecordCount = countControlChildRecords(records, controlIndex + 1, control.level);
   context.stats.controlCount += 1;
 
   if (controlId === 'tbl ') {
-    const parsed = parseTableControl(records, controlIndex + 1, control.level, context, objectInfo);
+    const parsed = parseTableControl(records, controlIndex + 1, control.level, context, objectInfo, artifacts);
     return { blocks: parsed.block ? [parsed.block] : [], nextIndex: parsed.nextIndex };
   }
 
   if (controlId === 'gso ') {
-    return parseGsoControl(records, controlIndex + 1, control.level, control.body, context);
+    return parseGsoControl(records, controlIndex + 1, control.level, control.body, context, artifacts);
+  }
+
+  if (controlId === 'head' || controlId === 'foot') {
+    const parsed = parseBlockRange(records, controlIndex + 1, control.level, context, artifacts);
+    const area: HwpHeaderFooterArea = {
+      controlId,
+      applyPageType: parseHeaderFooterApplyPageType(control.body),
+      blocks: parsed.blocks
+    };
+    if (controlId === 'head') {
+      artifacts?.headerAreas.push(area);
+      context.stats.headerControlCount += 1;
+    } else {
+      artifacts?.footerAreas.push(area);
+      context.stats.footerControlCount += 1;
+    }
+    recordNonBodyControl(context, artifacts, control, controlId, childRecordCount, parsed.blocks.length, area.applyPageType, objectInfo);
+    return { blocks: [], nextIndex: parsed.nextIndex };
+  }
+
+  if (controlId === 'secd') {
+    const nextIndex = findSubtreeEnd(records, controlIndex + 1, control.level);
+    context.stats.sectionControlCount += 1;
+    recordNonBodyControl(context, artifacts, control, controlId, childRecordCount, 0, undefined, objectInfo);
+    return { blocks: [], nextIndex };
   }
 
   if (isNonBodyControl(controlId)) {
-    return { blocks: [], nextIndex: findSubtreeEnd(records, controlIndex + 1, control.level) };
+    const nextIndex = findSubtreeEnd(records, controlIndex + 1, control.level);
+    recordNonBodyControl(context, artifacts, control, controlId, childRecordCount, 0, undefined, objectInfo);
+    return { blocks: [], nextIndex };
   }
 
-  return parseBlockRange(records, controlIndex + 1, control.level, context);
+  return parseBlockRange(records, controlIndex + 1, control.level, context, artifacts);
 }
 
 function parseGsoControl(
@@ -749,7 +989,8 @@ function parseGsoControl(
   startIndex: number,
   controlLevel: number,
   controlBody: Uint8Array,
-  context: HwpParseContext
+  context: HwpParseContext,
+  artifacts?: HwpSectionArtifacts
 ): ParsedRange {
   const objectInfo = parseObjectInfo(controlBody);
   const nestedBlocks: DocumentBlock[] = [];
@@ -768,14 +1009,14 @@ function parseGsoControl(
 
     if (record.tagId === HWP_TAG.LIST_HEADER && !pictureBody) {
       context.stats.listHeaderCount += 1;
-      const parsed = parseListContent(records, index, controlLevel, context);
+      const parsed = parseListContent(records, index, controlLevel, context, artifacts);
       nestedBlocks.push(...parsed.blocks);
       index = parsed.nextIndex;
       continue;
     }
 
     if (record.tagId === HWP_TAG.CTRL_HEADER && !pictureBody) {
-      const parsed = parseControlSubtree(records, index, context);
+      const parsed = parseControlSubtree(records, index, context, artifacts);
       nestedBlocks.push(...parsed.blocks);
       index = parsed.nextIndex;
       continue;
@@ -800,7 +1041,8 @@ function parseTableControl(
   startIndex: number,
   controlLevel: number,
   context: HwpParseContext,
-  objectInfo: HwpObjectInfo | null
+  objectInfo: HwpObjectInfo | null,
+  artifacts?: HwpSectionArtifacts
 ): { readonly block: TableBlock | null; readonly nextIndex: number } {
   const tableChildLevel = controlLevel + 1;
   let tableInfo: HwpTableInfo | null = null;
@@ -819,7 +1061,7 @@ function parseTableControl(
 
     if (record.level === tableChildLevel && record.tagId === HWP_TAG.LIST_HEADER) {
       context.stats.listHeaderCount += 1;
-      const parsed = parseTableCell(records, index, controlLevel, context, tableInfo);
+      const parsed = parseTableCell(records, index, controlLevel, context, tableInfo, artifacts);
       if (parsed.cell) cells.push(parsed.cell);
       index = parsed.nextIndex;
       continue;
@@ -840,7 +1082,8 @@ function parseTableCell(
   listHeaderIndex: number,
   tableControlLevel: number,
   context: HwpParseContext,
-  tableInfo: HwpTableInfo | null
+  tableInfo: HwpTableInfo | null,
+  artifacts?: HwpSectionArtifacts
 ): { readonly cell: ParsedTableCell | null; readonly nextIndex: number } {
   const listHeader = records[listHeaderIndex];
   const cellInfo = parseTableCellInfo(listHeader.body, tableInfo);
@@ -849,7 +1092,8 @@ function parseTableCell(
     listHeaderIndex + 1,
     context,
     (record) => record.level <= tableControlLevel
-      || (record.level === listHeader.level && record.tagId === HWP_TAG.LIST_HEADER)
+      || (record.level === listHeader.level && record.tagId === HWP_TAG.LIST_HEADER),
+    artifacts
   );
 
   if (!cellInfo) {
@@ -884,14 +1128,21 @@ function parseTableCell(
   };
 }
 
-function parseListContent(records: HwpRecord[], listHeaderIndex: number, parentLevel: number, context: HwpParseContext): ParsedRange {
+function parseListContent(
+  records: HwpRecord[],
+  listHeaderIndex: number,
+  parentLevel: number,
+  context: HwpParseContext,
+  artifacts?: HwpSectionArtifacts
+): ParsedRange {
   const listHeader = records[listHeaderIndex];
   return parseFlowRecords(
     records,
     listHeaderIndex + 1,
     context,
     (record, index) => record.level <= parentLevel
-      || (index > listHeaderIndex + 1 && record.level === listHeader.level && record.tagId === HWP_TAG.LIST_HEADER)
+      || (index > listHeaderIndex + 1 && record.level === listHeader.level && record.tagId === HWP_TAG.LIST_HEADER),
+    artifacts
   );
 }
 
@@ -927,6 +1178,7 @@ function buildTableBlock(
   const columnWidths = synthesizeColumnWidths(sortedCells, colCount);
   const width = columnWidths.reduce((sum, value) => sum + value, 0);
   context.stats.tableCount += 1;
+  recordTableSplitPolicy(context, tableInfo);
 
   const objectWidth = objectInfo && objectInfo.width > 0 ? objectInfo.width : 0;
   const objectHeight = objectInfo && objectInfo.height > 0 ? objectInfo.height : 0;
@@ -951,7 +1203,11 @@ function buildTableBlock(
   });
   const rowHeightsPx = rowSizesAreHeights ? rawRowSizes.map(hwpUnitToPx) : [];
   const shouldAttachLayout = Boolean(
-    tablePosition || objectHeight > 0 || rowHeightsPx.some((height) => height > 0) || tableInfo?.repeatHeader
+    tablePosition
+      || objectHeight > 0
+      || rowHeightsPx.some((height) => height > 0)
+      || tableInfo?.repeatHeader
+      || tableInfo?.pageBreak
   );
 
   return {
@@ -967,6 +1223,7 @@ function buildTableBlock(
           _hwpxLayout: {
             heightPx: objectHeight,
             repeatHeaderRows: tableInfo?.repeatHeader ? 1 : 0,
+            ...(tableInfo?.pageBreak ? { pageBreak: tableInfo.pageBreak } : {}),
             rowHeightsPx,
             source: rowSizesAreHeights ? 'hwp-table-row-sizes' : 'hwp-table',
             ...(tablePosition ? { position: tablePosition } : {})
@@ -1045,6 +1302,7 @@ function parseTableInfo(body: Uint8Array): HwpTableInfo | null {
   if (body.length < 18) return null;
 
   const attr = readUInt32(body, 0);
+  const splitPage = attr & 0x3;
   const rowCount = readUInt16(body, 4);
   const colCount = readUInt16(body, 6);
   const cellSpacing = hwpUnitToPx(readInt16(body, 8));
@@ -1064,6 +1322,8 @@ function parseTableInfo(body: Uint8Array): HwpTableInfo | null {
   const borderFillId = offset + 2 <= body.length ? readUInt16(body, offset) : 0;
   return {
     attr,
+    splitPage,
+    pageBreak: hwpTablePageBreakFromSplitPage(splitPage),
     rowCount,
     colCount,
     cellSpacing,
@@ -1186,7 +1446,7 @@ function createParagraphLineSegmentLayout(draft: HwpParagraphDraft | undefined):
 
   const lineSegments = sourceSegments
     .map((segment, index) => {
-      const verticalSize = firstPositive(segment.height, segment.textHeight, segment.lineSpacing);
+      const verticalSize = firstPositive(segment.textHeight, segment.height, segment.lineSpacing);
       return {
         index,
         textPosition: Math.max(0, segment.chpos),
@@ -1198,7 +1458,7 @@ function createParagraphLineSegmentLayout(draft: HwpParagraphDraft | undefined):
         horizontalPosition: Math.max(0, segment.x),
         horizontalSize: Math.max(0, segment.width),
         flags: segment.flags,
-        heightPx: hwpUnitToPx(verticalSize)
+        heightPx: Math.min(MAX_LINE_SEGMENT_HEIGHT_PX, hwpUnitToPx(verticalSize))
       };
     })
     .filter((segment) => segment.heightPx > 0);
@@ -1265,6 +1525,16 @@ function emptyParseStats(): HwpParseStats {
     unresolvedImageCount: 0,
     pageDefCount: 0,
     pageNumParaCount: 0,
+    headerControlCount: 0,
+    footerControlCount: 0,
+    sectionControlCount: 0,
+    preservedNonBodyControlCount: 0,
+    headerDecorationBlockCount: 0,
+    footerDecorationBlockCount: 0,
+    tableSplitPolicyNoneCount: 0,
+    tableSplitPolicyCellCount: 0,
+    tableSplitPolicySplitCount: 0,
+    tableSplitPolicyUnknownCount: 0,
     lineSegmentCount: 0,
     estimatedPageCount: 0,
     pageSplitCount: 0,
@@ -1338,6 +1608,10 @@ function parsePageDef(body: Uint8Array): PageLayout | null {
       right: hwpUnitToPx(readInt32(body, 12)),
       top: hwpUnitToPx(readInt32(body, 16)),
       bottom: hwpUnitToPx(readInt32(body, 20))
+    },
+    decorationInset: {
+      top: body.length >= 28 ? hwpUnitToPx(readInt32(body, 24)) : 0,
+      bottom: body.length >= 32 ? hwpUnitToPx(readInt32(body, 28)) : 0
     }
   };
 }
@@ -1637,7 +1911,15 @@ function pageBodyWidth(layout: PageLayout): number {
 
 function pageBodyHeight(layout: PageLayout): number {
   const margins = layout.margin ?? {};
-  return Math.max(240, layout.height - (margins.top ?? 0) - (margins.bottom ?? 0));
+  const inset = layout.decorationInset ?? {};
+  return Math.max(
+    240,
+    layout.height
+      - (margins.top ?? 0)
+      - (margins.bottom ?? 0)
+      - (inset.top ?? 0)
+      - (inset.bottom ?? 0)
+  );
 }
 
 function estimateBlockHeight(block: DocumentBlock, availableWidth: number): number {
@@ -1813,6 +2095,7 @@ function estimateTableRowHeights(block: TableBlock, availableWidth: number): num
 }
 
 function splitTableForPagination(block: TableBlock, pageBudget: number, availableWidth: number): TableBlock[] {
+  if (block._hwpxLayout?.pageBreak === 'NONE') return [block];
   const rowHeights = estimateTableRowHeights(block, availableWidth);
   const tableHeight = rowHeights.reduce((sum, height) => sum + height, 0);
   if (block.rows.length <= 1 || tableHeight <= pageBudget * TABLE_SPLIT_TOLERANCE) return [block];
@@ -2288,6 +2571,84 @@ function isNonBodyControl(controlId: string): boolean {
     || controlId === 'foot'
     || controlId === 'fn  '
     || controlId === 'en  ';
+}
+
+function recordNonBodyControl(
+  context: HwpParseContext,
+  artifacts: HwpSectionArtifacts | undefined,
+  control: HwpRecord,
+  controlId: string,
+  childRecordCount: number,
+  blockCount: number,
+  applyPageType: string | undefined,
+  objectInfo: HwpObjectInfo | null
+): void {
+  const summary: HwpNonBodyControlSummary = {
+    controlId,
+    kind: hwpControlKind(controlId),
+    level: control.level,
+    childRecordCount,
+    blockCount,
+    ...(applyPageType ? { applyPageType } : {}),
+    ...(objectInfo && objectInfo.width > 0 ? { widthPx: objectInfo.width } : {}),
+    ...(objectInfo && objectInfo.height > 0 ? { heightPx: objectInfo.height } : {})
+  };
+  context.nonBodyControls.push(summary);
+  artifacts?.sectionControls.push(summary);
+  context.stats.preservedNonBodyControlCount += 1;
+}
+
+function countControlChildRecords(records: HwpRecord[], startIndex: number, parentLevel: number): number {
+  let count = 0;
+  for (let index = startIndex; index < records.length && records[index].level > parentLevel; index += 1) {
+    count += 1;
+  }
+  return count;
+}
+
+function hwpControlKind(controlId: string): string {
+  switch (controlId) {
+    case 'head': return 'header';
+    case 'foot': return 'footer';
+    case 'secd': return 'sectionDefinition';
+    case 'fn  ': return 'footnote';
+    case 'en  ': return 'endnote';
+    default: return controlId ? 'control' : '';
+  }
+}
+
+function parseHeaderFooterApplyPageType(body: Uint8Array): string {
+  const attr = body.length >= 8 ? readUInt32(body, 4) : 0;
+  switch (attr & 0x3) {
+    case 1: return 'odd';
+    case 2: return 'even';
+    case 3: return 'first';
+    default: return 'all';
+  }
+}
+
+function hwpTablePageBreakFromSplitPage(splitPage: number): string {
+  if (splitPage === 1) return 'CELL';
+  if (splitPage === 2) return 'SPLIT';
+  if (splitPage === 0) return 'NONE';
+  return `UNKNOWN_${splitPage}`;
+}
+
+function recordTableSplitPolicy(context: HwpParseContext, tableInfo: HwpTableInfo | null): void {
+  switch (tableInfo?.pageBreak) {
+    case 'NONE':
+      context.stats.tableSplitPolicyNoneCount += 1;
+      break;
+    case 'CELL':
+      context.stats.tableSplitPolicyCellCount += 1;
+      break;
+    case 'SPLIT':
+      context.stats.tableSplitPolicySplitCount += 1;
+      break;
+    default:
+      context.stats.tableSplitPolicyUnknownCount += 1;
+      break;
+  }
 }
 
 function readControlId(body: Uint8Array): string {

@@ -12,10 +12,14 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const VERIFY_REPORT_PATH = process.env.VERIFY_REPORT_PATH
   || path.join(ROOT_DIR, 'output', 'playwright', 'verify-samples-report.json');
 const HANCOM_PAGE_AUDIT_REPORT_PATH = process.env.HANCOM_PAGE_AUDIT_REPORT_PATH
-  || path.join(ROOT_DIR, 'output', 'hancom-oracle', 'page-audit', 'hancom-page-audit-report.json');
-const REQUIRE_VISUAL_AUDIT = process.env.FIDELITY_REQUIRE_VISUAL_AUDIT === '1';
+  || path.join(ROOT_DIR, 'output', 'hancom-oracle', 'extension-visual-current', 'hancom-page-audit-report.json');
+const STRICT_VISUAL_FIDELITY = process.env.STRICT_VISUAL_FIDELITY === '1';
+const REQUIRE_VISUAL_AUDIT = process.env.FIDELITY_REQUIRE_VISUAL_AUDIT === '1' || STRICT_VISUAL_FIDELITY;
 const VISUAL_MAX_AGE_HOURS = Number(process.env.FIDELITY_VISUAL_MAX_AGE_HOURS || 24);
 const DEFAULT_SCREENSHOT_DIR = path.join(ROOT_DIR, 'output', 'playwright', 'qa-snapshots');
+const STRICT_FAILURE_VERDICTS = new Set(['mismatch', 'capture-error', 'capture-review']);
+const ADVISORY_VERDICTS = new Set(['review', 'layout-review']);
+const PASS_VERDICTS = new Set(['close']);
 
 function readJson(filePath, label) {
   if (!existsSync(filePath)) {
@@ -27,6 +31,17 @@ function readJson(filePath, label) {
 function asNumber(value) {
   const number = Number(value);
   return Number.isFinite(number) ? number : null;
+}
+
+function asMetricNumber(value) {
+  if (value === null || value === undefined || value === '') return null;
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
+}
+
+function formatMetric(value) {
+  const number = asMetricNumber(value);
+  return number === null ? 'n/a' : number.toFixed(3);
 }
 
 function parseTimestamp(value) {
@@ -46,6 +61,59 @@ function pushFailure(failures, report, message) {
 
 function uniquePaths(paths) {
   return [...new Set(paths.filter(Boolean))];
+}
+
+function countVerdicts(counts, verdicts) {
+  return Object.entries(counts || {})
+    .filter(([verdict]) => verdicts.has(verdict))
+    .reduce((sum, [, count]) => sum + (Number(count) || 0), 0);
+}
+
+function formatVerdictCounts(counts, verdicts) {
+  const parts = Object.entries(counts || {})
+    .filter(([verdict, count]) => verdicts.has(verdict) && Number(count) > 0)
+    .map(([verdict, count]) => `${verdict}=${count}`);
+  return parts.length ? parts.join(', ') : 'none';
+}
+
+function pageRawDiff(page) {
+  return asMetricNumber(page?.visualMetrics?.rawDiff ?? page?.diff);
+}
+
+function pageBlurDiff(page) {
+  return asMetricNumber(page?.visualMetrics?.blurDiff);
+}
+
+function pageLayoutDiff(page) {
+  return asMetricNumber(page?.visualMetrics?.projectionDiff?.combined);
+}
+
+function formatPageMetrics(page) {
+  return [
+    `raw=${formatMetric(pageRawDiff(page))}`,
+    `blur=${formatMetric(pageBlurDiff(page))}`,
+    `layout=${formatMetric(pageLayoutDiff(page))}`,
+  ].join(', ');
+}
+
+function formatVisualPage(page) {
+  const pageNumber = Number(page?.pageIndex) + 1;
+  const pageLabel = Number.isFinite(pageNumber) ? `p${pageNumber}` : 'p?';
+  const compare = page?.pageCompare ? `, compare=${page.pageCompare}` : '';
+  return `${pageLabel} ${page?.verdict || 'unknown'} (${formatPageMetrics(page)}${compare})`;
+}
+
+function worstPagesByRawDiff(pages, limit = 5) {
+  return [...pages]
+    .sort((left, right) => (pageRawDiff(right) ?? -Infinity) - (pageRawDiff(left) ?? -Infinity))
+    .slice(0, limit);
+}
+
+function formatWorstPages(pages, limit = 5) {
+  if (!pages.length) return '';
+  const selected = worstPagesByRawDiff(pages, limit).map((page) => formatVisualPage(page));
+  const remaining = pages.length - selected.length;
+  return `${selected.join('; ')}${remaining > 0 ? `; +${remaining} more` : ''}`;
 }
 
 function resolveReportArtifactPath(filePath, options = {}) {
@@ -178,14 +246,24 @@ function summarizeStructuralAudit(verifyPayload) {
 }
 
 function summarizeVisualAudit(warnings, failures, verifyPayload) {
+  const summary = {
+    checked: false,
+    documents: 0,
+    pages: 0,
+    passPages: 0,
+    advisoryPages: 0,
+    strictFailurePages: 0,
+  };
+
   if (!existsSync(HANCOM_PAGE_AUDIT_REPORT_PATH)) {
     const message = `한컴 페이지 감사 리포트가 없습니다: ${HANCOM_PAGE_AUDIT_REPORT_PATH}`;
     if (REQUIRE_VISUAL_AUDIT) failures.push(message);
     else warnings.push(message);
-    return;
+    return summary;
   }
 
   const audit = readJson(HANCOM_PAGE_AUDIT_REPORT_PATH, '한컴 페이지 감사 리포트');
+  summary.checked = true;
   const auditGeneratedAt = parseTimestamp(audit.generatedAt);
   const verifyGeneratedAt = verifyPayload.generatedAt;
   const verifyDate = parseTimestamp(verifyGeneratedAt);
@@ -217,8 +295,9 @@ function summarizeVisualAudit(warnings, failures, verifyPayload) {
     const message = '한컴 페이지 감사 리포트가 비어 있습니다.';
     if (REQUIRE_VISUAL_AUDIT) failures.push(message);
     else warnings.push(message);
-    return;
+    return summary;
   }
+  summary.documents = results.length;
 
   const verifyReports = Array.isArray(verifyPayload.reports) ? verifyPayload.reports : [];
   const auditByFilename = new Map(results.map((doc) => [doc.filename, doc]));
@@ -238,26 +317,33 @@ function summarizeVisualAudit(warnings, failures, verifyPayload) {
     }
   }
 
-  const strictFailureVerdicts = new Set(['mismatch', 'capture-error', 'capture-review']);
-  const advisoryVerdicts = new Set(['review', 'layout-review']);
   for (const doc of results) {
     const counts = doc.verdictCounts || {};
-    const badCount = Object.entries(counts)
-      .filter(([verdict]) => strictFailureVerdicts.has(verdict))
-      .reduce((sum, [, count]) => sum + (Number(count) || 0), 0);
-    const advisoryCount = Object.entries(counts)
-      .filter(([verdict]) => advisoryVerdicts.has(verdict))
-      .reduce((sum, [, count]) => sum + (Number(count) || 0), 0);
+    const pages = Array.isArray(doc.pages) ? doc.pages : [];
+    const badPages = pages.filter((page) => STRICT_FAILURE_VERDICTS.has(page.verdict));
+    const advisoryPages = pages.filter((page) => ADVISORY_VERDICTS.has(page.verdict));
+    const badCount = badPages.length || countVerdicts(counts, STRICT_FAILURE_VERDICTS);
+    const advisoryCount = advisoryPages.length || countVerdicts(counts, ADVISORY_VERDICTS);
+    const passCount = countVerdicts(counts, PASS_VERDICTS);
+    summary.pages += pages.length || Object.values(counts).reduce((sum, count) => sum + (Number(count) || 0), 0);
+    summary.passPages += passCount;
+    summary.advisoryPages += advisoryCount;
+    summary.strictFailurePages += badCount;
 
     if (badCount > 0) {
-      const message = `${doc.filename}: 한컴 이미지 감사 mismatch/capture-error/capture-review ${badCount}쪽`;
-      if (REQUIRE_VISUAL_AUDIT) failures.push(message);
-      else warnings.push(message);
+      const details = badPages.length ? `; worst ${formatWorstPages(badPages)}` : '';
+      const message = `${doc.filename}: 한컴 이미지 감사 strict failure ${badCount}쪽 (${formatVerdictCounts(counts, STRICT_FAILURE_VERDICTS)})${details}`;
+      pushVisualAuditIssue(warnings, failures, message);
     }
     if (advisoryCount > 0) {
-      warnings.push(`${doc.filename}: 한컴 이미지 감사 review ${advisoryCount}쪽`);
+      const details = advisoryPages.length ? `; worst ${formatWorstPages(advisoryPages)}` : '';
+      warnings.push(
+        `${doc.filename}: 한컴 이미지 감사 advisory ${advisoryCount}쪽 (${formatVerdictCounts(counts, ADVISORY_VERDICTS)}) - review/layout-review는 clean pass가 아니라 수동 검토 필요 상태입니다${details}`,
+      );
     }
   }
+
+  return summary;
 }
 
 function main() {
@@ -275,17 +361,26 @@ function main() {
   }
   const structuralSummary = summarizeStructuralAudit(verifyPayload);
   const screenshotSummary = summarizeScreenshotArtifacts(verifyPayload);
-  summarizeVisualAudit(warnings, failures, verifyPayload);
+  const visualSummary = summarizeVisualAudit(warnings, failures, verifyPayload);
 
   console.log(`Fidelity guard: ${reports.length} document(s) checked`);
   console.log(`- verify report: ${VERIFY_REPORT_PATH}`);
   console.log(`- visual audit: ${HANCOM_PAGE_AUDIT_REPORT_PATH}`);
   console.log(`- require visual audit: ${REQUIRE_VISUAL_AUDIT ? 'yes' : 'no'}`);
+  console.log(`- strict visual env: ${STRICT_VISUAL_FIDELITY ? 'yes' : 'no'}`);
   console.log(`- visual max age hours: ${VISUAL_MAX_AGE_HOURS}`);
   console.log(`- structural pass: ${structuralSummary.passed}/${structuralSummary.documents}`);
   console.log(`- structural fail: ${structuralSummary.failed}/${structuralSummary.documents}`);
   console.log(`- screenshots present: ${screenshotSummary.present}/${screenshotSummary.documents}`);
   console.log(`- screenshots missing: ${screenshotSummary.missing}/${screenshotSummary.documents}`);
+  if (visualSummary.checked) {
+    console.log(
+      `- visual verdict pages: pass=${visualSummary.passPages}, advisory=${visualSummary.advisoryPages}, strict-failure=${visualSummary.strictFailurePages}, total=${visualSummary.pages}`,
+    );
+    if (visualSummary.advisoryPages > 0) {
+      console.log('- visual advisory status: review/layout-review는 성공 판정이 아니라 raw/blur/layout 확인이 필요한 상태입니다.');
+    }
+  }
 
   if (screenshotSummary.missingFiles.length) {
     console.log('\nScreenshot artifacts');
@@ -320,7 +415,11 @@ function main() {
     return;
   }
 
-  console.log('\n✓ Fidelity guard passed');
+  if (warnings.length) {
+    console.log('\n! Fidelity guard completed with warnings/advisories; this is not a clean visual pass.');
+  } else {
+    console.log('\n✓ Fidelity guard passed without warnings');
+  }
 }
 
 main();

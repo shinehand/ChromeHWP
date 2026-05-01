@@ -158,13 +158,18 @@ function captureCurrentEditorPages(url) {
     const pageOutputs = ${JSON.stringify(Object.fromEntries(pageOutputs))};
     const timeoutMs = ${JSON.stringify(browserTimeoutMs)};
     const sleep = (ms) => page.waitForTimeout(ms);
-    const sampleFilename = (sample) => sample.path.split(/[\\\\/]/).pop();
+    const normalizeName = (value) => String(value || "").trim().normalize("NFC");
+    const sampleFilename = (sample) => normalizeName(sample.filename || sample.path.split(/[\\\\/]/).pop());
     const collectState = async () => page.evaluate(() => {
       const pages = Array.from(document.querySelectorAll(".hwp-page"));
+      const preview = document.querySelector("#documentPreview");
       return {
         filename: (document.querySelector("#filenameValue")?.textContent || "").trim(),
+        renderedFilename: preview?.dataset?.filename || "",
         format: (document.querySelector("#formatValue")?.textContent || "").trim(),
         pages: pages.length,
+        oraclePages: document.querySelectorAll(".hwp-page-oracle").length,
+        canvasPages: document.querySelectorAll(".hwp-page-canvas canvas").length,
         paragraphs: document.querySelectorAll(".hwp-paragraph").length,
         lineSegmentParagraphs: document.querySelectorAll('.hwp-paragraph[data-layout-mode="line-segments"]').length,
         lineSegments: document.querySelectorAll(".hwp-line-segment").length
@@ -173,15 +178,28 @@ function captureCurrentEditorPages(url) {
     const waitForSample = async (sample) => {
       const started = Date.now();
       let state = await collectState();
+      const expectedFilename = sampleFilename(sample);
       while (Date.now() - started < timeoutMs) {
         state = await collectState();
         const formatKind = state.format.startsWith("HWPX") ? "HWPX" : (state.format.startsWith("HWP") ? "HWP" : state.format);
-        if (state.filename === sampleFilename(sample) && formatKind === sample.expectedFormat && state.pages === sample.expectedPages) {
+        if (
+          normalizeName(state.filename) === expectedFilename
+          && normalizeName(state.renderedFilename) === expectedFilename
+          && formatKind === sample.expectedFormat
+          && state.pages === sample.expectedPages
+          && state.oraclePages === 0
+          && state.canvasPages === 0
+        ) {
           return state;
         }
         await sleep(250);
       }
-      throw new Error("로드 시간 초과: " + JSON.stringify(state));
+      throw new Error("로드 시간 초과: " + JSON.stringify({
+        expectedFilename,
+        expectedFormat: sample.expectedFormat,
+        expectedPages: sample.expectedPages,
+        state
+      }));
     };
     const documents = [];
     for (const sample of samples) {

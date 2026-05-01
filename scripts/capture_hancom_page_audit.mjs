@@ -267,13 +267,22 @@ function captureChromePages(report, docDir, pageCount, auditId) {
     runPw(sessionName, ['open', viewerTarget]);
     runPw(sessionName, ['resize', '1440', '1800']);
     sleep(CHROME_LOAD_WAIT_MS);
+    const oracleCountOutput = runPw(sessionName, [
+      'eval',
+      '(() => document.querySelectorAll(".hwp-page-oracle img").length)()',
+    ]);
+    const oracleCount = Number(parsePlaywrightValue(oracleCountOutput));
+    if (oracleCount > 0) {
+      fail(`${report.filename}: oracle-raster 캡처 페이지 감지 ${oracleCount}쪽; 제품 렌더링으로 인정하지 않습니다.`);
+    }
+
     const countOutput = runPw(sessionName, [
       'eval',
       '(() => document.querySelectorAll(".hwp-page-canvas canvas").length)()',
     ]);
-    const canvasCount = Number(parsePlaywrightValue(countOutput));
-    if (canvasCount < pageCount) {
-      fail(`${report.filename}: Chrome canvas 수 부족 ${canvasCount}/${pageCount}`);
+    const renderedCount = Number(parsePlaywrightValue(countOutput));
+    if (renderedCount < pageCount) {
+      fail(`${report.filename}: Chrome 페이지 수 부족 ${renderedCount}/${pageCount}`);
     }
 
     for (let pageIndex = 0; pageIndex < pageCount; pageIndex += 1) {
@@ -281,8 +290,8 @@ function captureChromePages(report, docDir, pageCount, auditId) {
         'eval',
         `(() => {
           const canvas = document.querySelectorAll(".hwp-page-canvas canvas")[${pageIndex}];
-          if (!canvas) return "";
-          return canvas.toDataURL("image/png");
+          if (canvas) return canvas.toDataURL("image/png");
+          return "";
         })()`,
       ]);
       const dataUrl = parsePlaywrightValue(output);

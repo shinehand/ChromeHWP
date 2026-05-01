@@ -360,6 +360,8 @@ body{font-family:'HCR Batang','함초롬바탕','Noto Serif KR','Malgun Gothic',
 .hwp-form-header-title .hwp-table-paragraph{margin:0;text-align:center}
 .hwp-form-header-approval{grid-column:3;justify-self:end;min-width:min(100%,280px);width:min(100%,320px)}
 .hwp-form-header-approval .hwp-table-wrap{margin:0}
+.hwp-page-oracle{padding:0;min-height:auto;overflow:hidden;background:#fff}
+.hwp-oracle-page-image{display:block;width:100%;height:auto}
 @media print{body{padding:20mm 25mm}.hwp-page{padding:0;margin-bottom:0}}
 </style>
 </head><body>${body}</body></html>`;
@@ -486,6 +488,15 @@ function getRenderedCanvasHtml() {
   return clone.innerHTML;
 }
 
+function readOracleField(...values) {
+  for (const value of values) {
+    if (value !== undefined && value !== null && String(value).trim() !== '') {
+      return value;
+    }
+  }
+  return '';
+}
+
 /* ═══════════════════════════════════════════════
    APP STATE & DOM
 ═══════════════════════════════════════════════ */
@@ -521,6 +532,7 @@ const UI = {
   qaHotspotList:  $('qaHotspotList'),
   statusBar:      $('statusBar'),
   statusPageInfo: $('statusPageInfo'),
+  statusCharInfo: $('statusCharInfo'),
   statusSectionInfo: $('statusSectionInfo'),
   statusMode:     $('statusMode'),
   statusFieldInfo:$('statusFieldInfo'),
@@ -549,6 +561,8 @@ const UI = {
 const state = {
   doc: null,
   wasmRenderResult: null,
+  oracleManifest: null,
+  oracleManifestUrl: '',
   wasmBuffer: null,
   filename: '',
   mode: 'view',
@@ -566,7 +580,8 @@ const state = {
   documentLockReason: '',
   fileHandle: null,
   fileSource: '',
-  // WASM 줌 상태
+  // 문서 보기 줌 상태
+  viewZoom: 1.0,
   wasmZoom: 1.0,
   wasmZoomTimer: null,
   wasmCursor: null,
@@ -578,6 +593,19 @@ const state = {
   wasmSearchIndex: -1,
   wasmDiagnostics: null,
 };
+
+const APP_CSS_PX_PER_INCH = 96;
+const RULER_CSS_PX_PER_CM = APP_CSS_PX_PER_INCH / 2.54;
+const RULER_MINOR_DIVISIONS_PER_CM = 5;
+const ORACLE_RASTER_QA_ENABLED = false;
+
+function assertOracleRasterQaEnabled() {
+  if (ORACLE_RASTER_QA_ENABLED) return;
+  throw new Error(
+    '캡처 이미지를 문서처럼 표시하는 oracle-raster 경로는 완전히 비활성화되어 있습니다. '
+    + '실제 .hwp/.hwpx 파일을 열어 DOM 문서로 렌더링해야 합니다.',
+  );
+}
 
 function getFilenameExtension(name = '') {
   return (String(name).split('.').pop() || '').toLowerCase();
@@ -605,6 +633,46 @@ function getSectionCount() {
 function getCurrentSection() {
   const current = state.wasmCursor?.sectionIndex != null ? state.wasmCursor.sectionIndex + 1 : 1;
   return Math.max(1, current);
+}
+
+function countTextRunChars(runs = []) {
+  return (runs || []).reduce((sum, run) => sum + [...String(run?.text || '')].length, 0);
+}
+
+function countBlockChars(block = {}) {
+  if (!block) return 0;
+  if (block.type === 'table') {
+    return (block.rows || []).reduce((rowSum, row) => (
+      rowSum + (row.cells || []).reduce((cellSum, cell) => (
+        cellSum + (cell.paragraphs || []).reduce((paraSum, child) => paraSum + countBlockChars(child), 0)
+      ), 0)
+    ), 0);
+  }
+  if (Array.isArray(block.texts)) return countTextRunChars(block.texts);
+  if (Array.isArray(block.paragraphs)) {
+    return block.paragraphs.reduce((sum, child) => sum + countBlockChars(child), 0);
+  }
+  return 0;
+}
+
+function getDocumentCharCount() {
+  const direct = Number(
+    state.wasmDiagnostics?.documentInfo?.charCount
+    ?? state.oracleManifest?.charCount
+    ?? state.documentInfo?.charCount
+    ?? state.doc?.meta?.charCount,
+  );
+  if (Number.isFinite(direct) && direct >= 0) return direct;
+  if (!state.doc?.pages?.length) return 0;
+
+  return state.doc.pages.reduce((pageSum, page) => {
+    const blocks = [
+      ...(page.headerBlocks || []),
+      ...(page.paragraphs || []),
+      ...(page.footerBlocks || []),
+    ];
+    return pageSum + blocks.reduce((sum, block) => sum + countBlockChars(block), 0);
+  }, 0);
 }
 
 function getStatusMessageText() {
@@ -821,7 +889,56 @@ function collectParsedDocumentDiagnostics(doc = state.doc) {
   };
 }
 
+function collectOracleRasterDiagnostics(manifest = state.oracleManifest) {
+  if (!manifest) return null;
+  const counts = createDiagnosticCounts();
+  const layoutSignals = createLayoutSignals();
+  const pages = (manifest.pages || []).map((page, pageIndex) => ({
+    pageIndex,
+    page: Number.isFinite(Number(page.page)) ? Number(page.page) : pageIndex + 1,
+    width: Number(page.width) || 0,
+    height: Number(page.height) || 0,
+    unit: 'px',
+    sourceFormat: 'oracle-raster',
+    src: page.src || '',
+    sha256: page.sha256 || '',
+    sectionIndex: 0,
+    columns: 1,
+    controlCount: 0,
+    counts: createDiagnosticCounts(),
+    layoutSignals: createLayoutSignals(),
+    controlTypes: {},
+    textRunCount: 0,
+  }));
+
+  return {
+    engine: 'oracle-raster',
+    pageCount: pages.length,
+    sectionCount: 1,
+    documentInfo: {
+      ...(state.documentInfo || {}),
+      id: manifest.id || '',
+      title: manifest.title || '',
+      version: 'oracle-raster',
+      sourceFormat: 'oracle-raster',
+      capture: manifest.capture || null,
+      generatedAt: manifest.generatedAt || '',
+      charCount: manifest.charCount || 0,
+    },
+    counts,
+    layoutSignals,
+    controlTypes: {},
+    pages,
+  };
+}
+
 function refreshWasmDiagnostics(options = {}) {
+  if (state.oracleManifest) {
+    const diagnostics = collectOracleRasterDiagnostics(state.oracleManifest);
+    state.wasmDiagnostics = diagnostics;
+    return diagnostics;
+  }
+
   const renderer = getHwpWasmRenderer();
   if (renderer?.collectDocumentDiagnostics) {
     try {
@@ -844,6 +961,9 @@ function refreshWasmDiagnostics(options = {}) {
 }
 
 function getWasmDiagnosticsSummaryText() {
+  if (state.oracleManifest) {
+    return `QA 캡처 ${state.renderedPages || state.oracleManifest.pages?.length || 0}쪽`;
+  }
   if (!state.wasmRenderResult) return '';
   const counts = state.wasmDiagnostics?.counts;
   if (!counts) return '';
@@ -1121,29 +1241,39 @@ function drawHorizontalRuler() {
   ctx.clearRect(0, 0, width, height);
 
   const grad = ctx.createLinearGradient(0, 0, 0, height);
-  grad.addColorStop(0, '#e4e4e4');
-  grad.addColorStop(1, '#cfcfcf');
+  grad.addColorStop(0, '#eeeeee');
+  grad.addColorStop(1, '#d7d7d7');
   ctx.fillStyle = grad;
   ctx.fillRect(0, 0, width, height);
 
-  const pageEl = UI.documentCanvas.querySelector('.hwp-page');
-  const pageWidth = pageEl?.getBoundingClientRect().width || Math.min(width - 64, 820);
-  const originX = Math.max(24, (panel.clientWidth - pageWidth) / 2 - panel.scrollLeft);
-  const minor = 10;
-  const major = 50;
+  const pageEl = document.getElementById('page-' + state.currentPage)
+    || UI.documentCanvas.querySelector('.hwp-page');
+  const panelRect = panel.getBoundingClientRect();
+  const pageRect = pageEl?.getBoundingClientRect();
+  const originX = pageRect
+    ? pageRect.left - panelRect.left
+    : Math.max(24, (panel.clientWidth - Math.min(width - 64, 820)) / 2 - panel.scrollLeft);
+  const pageWidth = pageRect?.width || Math.min(width - 64, 820);
+  const pxPerCm = Math.max(6, RULER_CSS_PX_PER_CM * getActiveZoom());
+  const minor = pxPerCm / RULER_MINOR_DIVISIONS_PER_CM;
 
-  ctx.strokeStyle = 'rgba(30,30,30,0.45)';
+  ctx.strokeStyle = 'rgba(30,30,30,0.42)';
   ctx.fillStyle = '#4b4b4b';
   ctx.font = '10px Malgun Gothic';
 
-  for (let x = originX, mark = 0; x <= width; x += minor, mark += minor) {
-    const isMajor = mark % major === 0;
-    const tick = isMajor ? height - 4 : height - 9;
+  const firstTick = Math.max(0, Math.floor((0 - originX) / minor));
+  const lastTick = Math.ceil((width - originX) / minor);
+  for (let i = firstTick; i <= lastTick; i += 1) {
+    const x = originX + (i * minor);
+    if (x < originX - 0.5 || x > originX + pageWidth + 0.5) continue;
+    const isMajor = i % RULER_MINOR_DIVISIONS_PER_CM === 0;
+    const isHalf = i % RULER_MINOR_DIVISIONS_PER_CM === Math.floor(RULER_MINOR_DIVISIONS_PER_CM / 2);
+    const tick = isMajor ? height - 4 : (isHalf ? height - 7 : height - 10);
     ctx.beginPath();
     ctx.moveTo(Math.round(x) + 0.5, height);
     ctx.lineTo(Math.round(x) + 0.5, tick);
     ctx.stroke();
-    if (isMajor && x >= 0) ctx.fillText(String(mark / 10), x + 2, 9);
+    if (isMajor && x >= 0) ctx.fillText(String(i / RULER_MINOR_DIVISIONS_PER_CM), x + 2, 9);
   }
 }
 
@@ -1164,22 +1294,32 @@ function drawVerticalRuler() {
   ctx.clearRect(0, 0, width, height);
 
   const grad = ctx.createLinearGradient(0, 0, width, 0);
-  grad.addColorStop(0, '#e4e4e4');
-  grad.addColorStop(1, '#cfcfcf');
+  grad.addColorStop(0, '#eeeeee');
+  grad.addColorStop(1, '#d7d7d7');
   ctx.fillStyle = grad;
   ctx.fillRect(0, 0, width, height);
 
-  const minor = 10;
-  const major = 50;
-  const scrollTop = panel.scrollTop;
+  const pageEl = document.getElementById('page-' + state.currentPage)
+    || UI.documentCanvas.querySelector('.hwp-page');
+  const panelRect = panel.getBoundingClientRect();
+  const pageRect = pageEl?.getBoundingClientRect();
+  const originY = pageRect ? pageRect.top - panelRect.top : -panel.scrollTop;
+  const pageHeight = pageRect?.height || Math.max(1, panel.clientHeight);
+  const pxPerCm = Math.max(6, RULER_CSS_PX_PER_CM * getActiveZoom());
+  const minor = pxPerCm / RULER_MINOR_DIVISIONS_PER_CM;
 
-  ctx.strokeStyle = 'rgba(30,30,30,0.45)';
+  ctx.strokeStyle = 'rgba(30,30,30,0.42)';
   ctx.fillStyle = '#4b4b4b';
   ctx.font = '10px Malgun Gothic';
 
-  for (let y = -(scrollTop % minor), mark = scrollTop - (scrollTop % minor); y <= height; y += minor, mark += minor) {
-    const isMajor = mark % major === 0;
-    const tick = isMajor ? width - 4 : width - 9;
+  const firstTick = Math.max(0, Math.floor((0 - originY) / minor));
+  const lastTick = Math.ceil((height - originY) / minor);
+  for (let i = firstTick; i <= lastTick; i += 1) {
+    const y = originY + (i * minor);
+    if (y < originY - 0.5 || y > originY + pageHeight + 0.5) continue;
+    const isMajor = i % RULER_MINOR_DIVISIONS_PER_CM === 0;
+    const isHalf = i % RULER_MINOR_DIVISIONS_PER_CM === Math.floor(RULER_MINOR_DIVISIONS_PER_CM / 2);
+    const tick = isMajor ? width - 4 : (isHalf ? width - 7 : width - 10);
     ctx.beginPath();
     ctx.moveTo(width, Math.round(y) + 0.5);
     ctx.lineTo(tick, Math.round(y) + 0.5);
@@ -1188,18 +1328,19 @@ function drawVerticalRuler() {
       ctx.save();
       ctx.translate(9, y + 2);
       ctx.rotate(-Math.PI / 2);
-      ctx.fillText(String(mark / 10), 0, 0);
+      ctx.fillText(String(i / RULER_MINOR_DIVISIONS_PER_CM), 0, 0);
       ctx.restore();
     }
   }
 }
 
 function hasLoadedDocument() {
-  return Boolean(state.doc || state.wasmRenderResult);
+  return Boolean(state.doc || state.wasmRenderResult || state.oracleManifest);
 }
 
 function getSaveCurrentDisabledReason() {
   if (!hasLoadedDocument()) return '저장할 문서가 없습니다.';
+  if (state.oracleManifest) return 'QA 캡처 기반 문서는 원본 파일로 덮어쓸 수 없습니다.';
   if (state.documentLocked) return state.documentLockReason || '현재 문서는 저장할 수 없습니다.';
   if (state.mode !== 'edit') return '편집 모드에서 수정한 뒤 저장할 수 있습니다.';
   if (!state.hasUnsavedChanges) return '저장할 편집 내용이 없습니다.';
@@ -1217,6 +1358,7 @@ function getSaveCurrentDisabledReason() {
 
 function getSaveAsDisabledReason(format = UI.saveAsFormat?.value || 'hwpx') {
   if (!hasLoadedDocument()) return '저장할 문서가 없습니다.';
+  if (state.oracleManifest) return 'QA 캡처 기반 문서는 아직 다른 이름 저장을 지원하지 않습니다.';
   if (state.documentLocked) return state.documentLockReason || '현재 문서는 저장할 수 없습니다.';
   if ((format === 'hwpx' || format === 'owpml') && !state.doc) {
     return '현재 문서는 HWPX/OWPML로 재패키징할 수 없습니다. HTML, PDF 또는 HWP 저장을 사용해 주세요.';
@@ -1233,6 +1375,7 @@ function getSaveAsDisabledReason(format = UI.saveAsFormat?.value || 'hwpx') {
 function getPrintDisabledReason() {
   if (!hasLoadedDocument()) return '인쇄할 문서가 없습니다.';
   if (state.documentLocked) return state.documentLockReason || '현재 문서는 인쇄할 수 없습니다.';
+  if (state.oracleManifest) return 'QA 캡처 기반 문서는 인쇄할 수 없습니다.';
   return '';
 }
 
@@ -1267,19 +1410,23 @@ function applyDocumentActionState() {
   const saveAsReason = getSaveAsDisabledReason();
   const printReason = getPrintDisabledReason();
   const hasWasm = Boolean(state.wasmRenderResult);
+  const hasOracle = Boolean(state.oracleManifest);
+  const hasDocument = Boolean(state.doc || hasWasm || hasOracle);
 
   UI.btnEditMode.disabled = (!state.doc && !hasWasm) || locked;
   UI.btnSaveCurrent.disabled = Boolean(saveCurrentReason);
   UI.btnSaveAs.disabled = Boolean(saveAsReason);
   UI.btnPrint.disabled = Boolean(printReason);
-  if (UI.sbZoomFitWidth) UI.sbZoomFitWidth.disabled = !hasWasm;
-  if (UI.sbZoomFit) UI.sbZoomFit.disabled = !hasWasm;
-  if (UI.sbZoomOut) UI.sbZoomOut.disabled = !hasWasm;
-  if (UI.sbZoomIn) UI.sbZoomIn.disabled = !hasWasm;
+  if (UI.sbZoomFitWidth) UI.sbZoomFitWidth.disabled = !hasDocument;
+  if (UI.sbZoomFit) UI.sbZoomFit.disabled = !hasDocument;
+  if (UI.sbZoomOut) UI.sbZoomOut.disabled = !hasDocument;
+  if (UI.sbZoomIn) UI.sbZoomIn.disabled = !hasDocument;
 
   UI.btnEditMode.title = locked
     ? title
-    : hasWasm
+    : hasOracle
+      ? 'QA 캡처 기반 문서는 읽기 전용이옵니다.'
+      : hasWasm
       ? '문서 위에서 직접 편집합니다.'
       : '';
   UI.btnSaveCurrent.title = saveCurrentReason || '';
@@ -1809,10 +1956,27 @@ function exitWasmEditMode() {
 }
 
 /* ── WASM 줌 ── */
+function getActiveZoom() {
+  return state.wasmRenderResult ? state.wasmZoom : (state.viewZoom || 1);
+}
+
 function updateZoomUI() {
-  const zoomText = Math.round(state.wasmZoom * 100) + '%';
+  const zoomText = Math.round(getActiveZoom() * 100) + '%';
   if (UI.zoomLevel) UI.zoomLevel.textContent = zoomText;
   if (UI.sbZoomVal) UI.sbZoomVal.textContent = zoomText;
+}
+
+function applyDomZoom(newZoom, options = {}) {
+  newZoom = Math.max(ZOOM_MIN, Math.min(ZOOM_MAX, newZoom));
+  if (!options.force && Math.abs(newZoom - (state.viewZoom || 1)) < 0.001) return;
+  state.viewZoom = newZoom;
+  if (UI.documentCanvas) {
+    // ChromeHWP targets Chromium; CSS zoom keeps scroll/layout dimensions aligned
+    // with the WebHWP-style page surface better than transform scaling.
+    UI.documentCanvas.style.zoom = Math.abs(newZoom - 1) < 0.001 ? '' : String(newZoom);
+  }
+  updateZoomUI();
+  requestAnimationFrame(drawGuidelineRulers);
 }
 
 async function applyWasmZoom(newZoom) {
@@ -1874,6 +2038,84 @@ function wasmZoomPageFit() {
   applyWasmZoom(Math.max(ZOOM_MIN, fit));
 }
 
+function getDomPageBaseRect() {
+  const pageEl = UI.documentCanvas?.querySelector('.hwp-page');
+  if (!pageEl) return null;
+  const rect = pageEl.getBoundingClientRect();
+  const zoom = state.viewZoom || 1;
+  return {
+    width: rect.width / zoom,
+    height: rect.height / zoom,
+  };
+}
+
+function domZoomFitWidth() {
+  const panelWidth = UI.viewerPanel?.clientWidth || 860;
+  const pageRect = getDomPageBaseRect();
+  if (!pageRect?.width) {
+    applyDomZoom(1.0);
+    return;
+  }
+  const fit = Math.min(ZOOM_MAX, (panelWidth - 72) / pageRect.width);
+  applyDomZoom(Math.max(ZOOM_MIN, fit));
+}
+
+function domZoomPageFit() {
+  const panelWidth = UI.viewerPanel?.clientWidth || 860;
+  const panelHeight = UI.viewerPanel?.clientHeight || 900;
+  const pageRect = getDomPageBaseRect();
+  if (!pageRect?.width || !pageRect.height) {
+    applyDomZoom(1.0);
+    return;
+  }
+  const fitWidth = (panelWidth - 80) / pageRect.width;
+  const fitHeight = (panelHeight - 80) / pageRect.height;
+  const fit = Math.min(ZOOM_MAX, fitWidth, fitHeight);
+  applyDomZoom(Math.max(ZOOM_MIN, fit));
+}
+
+function viewerZoomIn() {
+  if (state.wasmRenderResult) {
+    wasmZoomIn();
+    return;
+  }
+  const next = ZOOM_STEPS.find(s => s > (state.viewZoom || 1) + 0.01);
+  applyDomZoom(next || ZOOM_MAX);
+}
+
+function viewerZoomOut() {
+  if (state.wasmRenderResult) {
+    wasmZoomOut();
+    return;
+  }
+  const prev = [...ZOOM_STEPS].reverse().find(s => s < (state.viewZoom || 1) - 0.01);
+  applyDomZoom(prev || ZOOM_MIN);
+}
+
+function viewerZoomFitWidth() {
+  if (state.wasmRenderResult) {
+    wasmZoomFit();
+    return;
+  }
+  domZoomFitWidth();
+}
+
+function viewerZoomPageFit() {
+  if (state.wasmRenderResult) {
+    wasmZoomPageFit();
+    return;
+  }
+  domZoomPageFit();
+}
+
+function viewerZoomReset() {
+  if (state.wasmRenderResult) {
+    applyWasmZoom(1.0);
+    return;
+  }
+  applyDomZoom(1.0);
+}
+
 /* ── WASM 텍스트 검색 ── */
 let _wasmSearchDebounce = null;
 
@@ -1932,6 +2174,12 @@ function scrollToWasmSearchResult(idx) {
 /* ── 버퍼 처리 (공통 코어) ── */
 async function processBuffer(buffer, filename, sizeBytes, options = {}) {
   showLoading(`파싱 중... (${(sizeBytes/1024).toFixed(0)} KB)`);
+  state.viewZoom = 1.0;
+  state.wasmZoom = 1.0;
+  state.oracleManifest = null;
+  state.oracleManifestUrl = '';
+  if (UI.documentCanvas) UI.documentCanvas.style.zoom = '';
+  updateZoomUI();
 
   // 공식 경로는 TotalDocs 내부 JS 파서/DOM 렌더러다. 외부 WASM 실험 경로는 비활성화한다.
   const ext = (filename.split('.').pop() || '').toLowerCase();
@@ -2064,6 +2312,99 @@ function addRecentFileLocal(filename) {
   }
 }
 
+function resolveOraclePageSrc(page = {}, manifestUrl = '') {
+  const src = String(readOracleField(page.src, page.image, page.url, page.href)).trim();
+  if (!src) return '';
+  try {
+    return new URL(src, manifestUrl || location.href).toString();
+  } catch {
+    return src;
+  }
+}
+
+function normalizeOracleManifest(raw = {}, manifestUrl = '') {
+  const pages = Array.isArray(raw.pages) ? raw.pages : [];
+  const documentInfo = raw.document || {};
+  const captureInfo = raw.capture || {};
+  const id = readOracleField(raw.id, raw.documentId, documentInfo.id, 'oracle-document');
+  const title = readOracleField(raw.title, raw.filename, documentInfo.filename, documentInfo.title, id);
+  return {
+    version: Number(raw.version) || 1,
+    mode: raw.mode || 'oracle-raster',
+    generatedAt: raw.generatedAt || '',
+    id: String(id),
+    title: String(title || 'oracle-document'),
+    source: raw.source || captureInfo.source || null,
+    capture: captureInfo,
+    charCount: Number.isFinite(Number(raw.charCount)) ? Number(raw.charCount) : 0,
+    pageCount: pages.length,
+    pages: pages.map((page, index) => ({
+      index: Number.isFinite(Number(page.index)) ? Number(page.index) : (
+        Number.isFinite(Number(page.page)) ? Number(page.page) - 1 : index
+      ),
+      page: Number.isFinite(Number(page.page)) ? Number(page.page) : index + 1,
+      width: Math.max(1, Number(page.width) || 794),
+      height: Math.max(1, Number(page.height) || 1123),
+      src: resolveOraclePageSrc(page, manifestUrl),
+      sha256: page.sha256 || '',
+      label: page.label || `${index + 1} 페이지`,
+    })),
+  };
+}
+
+async function loadOracleManifest(manifestUrl) {
+  assertOracleRasterQaEnabled();
+  if (!manifestUrl) throw new Error('oracle manifest URL이 비어 있사옵니다.');
+  showLoading('QA 캡처 페이지를 불러오는 중...');
+  const resp = await fetch(manifestUrl);
+  if (!resp.ok) throw new Error(`oracle manifest HTTP ${resp.status} ${resp.statusText}`);
+  const manifest = normalizeOracleManifest(await resp.json(), resp.url || manifestUrl);
+  if (!manifest.pages.length) throw new Error('oracle manifest에 pages가 없사옵니다.');
+
+  state.viewZoom = 1.0;
+  state.wasmZoom = 1.0;
+  state.doc = null;
+  state.wasmRenderResult = null;
+  state.wasmBuffer = null;
+  state.oracleManifest = manifest;
+  state.oracleManifestUrl = resp.url || manifestUrl;
+  state.filename = manifest.title;
+  state.mode = 'view';
+  state.currentPage = 0;
+  state.renderedPages = manifest.pageCount || manifest.pages.length;
+  state.documentInfo = {
+    sectionCount: 1,
+    pageCount: state.renderedPages,
+    version: 'oracle-raster',
+    charCount: manifest.charCount || 0,
+  };
+  state.editedDoc = null;
+  state.editedHtml = '';
+  state.editedDelta = null;
+  state.editBaseline = '';
+  state.hasUnsavedChanges = false;
+  state.wasmCursor = null;
+  state.wasmComposing = false;
+  state.wasmEditQueue = Promise.resolve();
+  state.wasmDiagnostics = null;
+  state.documentLocked = false;
+  state.documentLockReason = '';
+  state.fileHandle = null;
+  state.fileSource = 'oracle-raster';
+  state.fileInfoText = `${state.renderedPages}쪽 · QA 캡처`;
+  state.wasmDiagnostics = collectOracleRasterDiagnostics(manifest);
+  setCurrentFilename(manifest.title);
+  UI.wasmToolbar?.classList.add('hidden');
+  document.body.classList.remove('wasm-toolbar-visible');
+  hideLoading();
+  renderOracleRaster(manifest);
+  refreshWasmDiagnostics();
+  setWasmEditVisualState(false);
+  updateUiAfterLoad(manifest.title, NaN);
+  state.fileInfoText = `${state.renderedPages}쪽 · QA 캡처`;
+  updateStatusBar();
+}
+
 /* ── 파일 처리 ── */
 async function processFile(file, options = {}) {
   if (!/\.(hwp|hwpx|owpml)$/i.test(file.name)) {
@@ -2086,6 +2427,15 @@ async function processFile(file, options = {}) {
 async function autoLoadFromParams() {
   const params = new URLSearchParams(location.search);
   const hasExtensionRuntime = typeof chrome !== 'undefined' && chrome.runtime?.id;
+  const oracleUrl = params.get('oracle') || params.get('oracleManifest');
+
+  if (oracleUrl) {
+    showError(
+      '캡처 이미지 기반 oracle-raster 로드는 완전히 비활성화되어 있습니다. '
+      + '문서 편집기는 실제 .hwp/.hwpx 파일을 열어 DOM으로 렌더링합니다.',
+    );
+    return;
+  }
 
   // 방법 1: background.js가 session storage에 저장해 둔 파일 데이터 가져오기
   if (params.get('fromContext') === '1' && hasExtensionRuntime) {
@@ -2149,6 +2499,53 @@ function createPageSections(pageEl) {
   return { headerEl, bodyEl, footerEl };
 }
 
+function renderOracleRaster(manifest) {
+  UI.documentCanvas.innerHTML = '';
+  UI.pageThumbnails.innerHTML = '';
+  const pages = Array.isArray(manifest?.pages) ? manifest.pages : [];
+  state.renderedPages = pages.length || 1;
+
+  pages.forEach((page, pi) => {
+    const pageEl = document.createElement('div');
+    pageEl.className = 'hwp-page hwp-page-oracle';
+    pageEl.id = 'page-' + pi;
+    pageEl.dataset.pageIndex = String(pi);
+    pageEl.dataset.sourceFormat = 'oracle-raster';
+    if (pi === 0) pageEl.dataset.pageRole = 'first';
+    pageEl.style.width = `${Math.max(1, Number(page.width) || 794)}px`;
+    pageEl.style.minHeight = `${Math.max(1, Number(page.height) || 1123)}px`;
+
+    const img = document.createElement('img');
+    img.className = 'hwp-oracle-page-image';
+    img.src = page.src;
+    img.alt = page.label || `${pi + 1} 페이지`;
+    img.decoding = 'async';
+    img.loading = pi < 2 ? 'eager' : 'lazy';
+    pageEl.appendChild(img);
+    UI.documentCanvas.appendChild(pageEl);
+
+    const thumb = document.createElement('div');
+    thumb.className = 'page-thumb' + (pi === 0 ? ' active' : '');
+    thumb.dataset.page = pi;
+    thumb.onclick = () => scrollToPage(pi);
+
+    const preview = document.createElement('div');
+    preview.className = 'page-thumb-preview page-thumb-preview-oracle';
+    const thumbImg = document.createElement('img');
+    thumbImg.src = page.src;
+    thumbImg.alt = page.label || `${pi + 1} 페이지`;
+    preview.appendChild(thumbImg);
+
+    thumb.appendChild(preview);
+    thumb.appendChild(document.createTextNode(`${pi + 1} 페이지`));
+    UI.pageThumbnails.appendChild(thumb);
+  });
+
+  applyDomZoom(state.viewZoom || 1, { force: true });
+  updateStatusBar();
+  requestAnimationFrame(drawGuidelineRulers);
+}
+
 function renderDocument(doc) {
   UI.documentCanvas.innerHTML = '';
   UI.pageThumbnails.innerHTML = '';
@@ -2198,6 +2595,7 @@ function renderDocument(doc) {
   });
 
   requestAnimationFrame(() => applyDeferredObjectLayouts(UI.documentCanvas));
+  applyDomZoom(state.viewZoom || 1, { force: true });
   updateStatusBar();
   requestAnimationFrame(drawGuidelineRulers);
 }
@@ -2361,6 +2759,9 @@ function updateStatusBar() {
   const diagnosticsSummary = getWasmDiagnosticsSummaryText();
 
   UI.statusPageInfo.textContent = `${state.currentPage + 1} / ${totalPages} 쪽`;
+  if (UI.statusCharInfo) {
+    UI.statusCharInfo.textContent = `${getDocumentCharCount().toLocaleString('ko-KR')} 글자`;
+  }
   if (UI.statusSectionInfo) {
     UI.statusSectionInfo.textContent = `구역: ${currentSection} / ${totalSections}`;
   }
@@ -2423,19 +2824,19 @@ document.addEventListener('click', (event) => {
       if (UI.btnViewMode.style.display !== 'none') UI.btnViewMode.click();
       break;
     case 'zoom-fit':
-      if (state.wasmRenderResult) wasmZoomFit();
+      if (hasLoadedDocument()) viewerZoomFitWidth();
       break;
     case 'zoom-page-fit':
-      if (state.wasmRenderResult) wasmZoomPageFit();
+      if (hasLoadedDocument()) viewerZoomPageFit();
       break;
     case 'zoom-in':
-      if (state.wasmRenderResult) wasmZoomIn();
+      if (hasLoadedDocument()) viewerZoomIn();
       break;
     case 'zoom-out':
-      if (state.wasmRenderResult) wasmZoomOut();
+      if (hasLoadedDocument()) viewerZoomOut();
       break;
     case 'zoom-reset':
-      if (state.wasmRenderResult) applyWasmZoom(1.0);
+      if (hasLoadedDocument()) viewerZoomReset();
       break;
     case 'first-page':
       scrollToPage(0);
@@ -2606,30 +3007,30 @@ document.addEventListener('keydown', e => {
   }
   if (e.key==='Escape' && state.mode==='edit') enterViewMode();
 
-  // WASM 줌 단축키 (Ctrl+= / Ctrl+- / Ctrl+0)
-  if (state.wasmRenderResult) {
-    if (e.ctrlKey && (e.key === '=' || e.key === '+')) { e.preventDefault(); wasmZoomIn(); }
-    if (e.ctrlKey && e.key === '-') { e.preventDefault(); wasmZoomOut(); }
-    if (e.ctrlKey && e.key === '0') { e.preventDefault(); applyWasmZoom(1.0); }
+  // 한컴웹처럼 DOM/WASM 경로 모두 Ctrl 줌을 지원한다.
+  if (hasLoadedDocument()) {
+    if (e.ctrlKey && (e.key === '=' || e.key === '+')) { e.preventDefault(); viewerZoomIn(); }
+    if (e.ctrlKey && e.key === '-') { e.preventDefault(); viewerZoomOut(); }
+    if (e.ctrlKey && e.key === '0') { e.preventDefault(); viewerZoomReset(); }
     // Ctrl+F: 검색 포커스
     if (e.ctrlKey && e.key === 'f') { e.preventDefault(); UI.wasmSearchInput?.focus(); }
   }
 });
 
-// WASM 보조 툴바 이벤트 리스너
-if (UI.btnZoomIn)  UI.btnZoomIn.onclick  = wasmZoomIn;
-if (UI.btnZoomOut) UI.btnZoomOut.onclick = wasmZoomOut;
-if (UI.btnZoomFit) UI.btnZoomFit.onclick = wasmZoomFit;
-if (UI.sbZoomIn) UI.sbZoomIn.onclick = wasmZoomIn;
-if (UI.sbZoomOut) UI.sbZoomOut.onclick = wasmZoomOut;
-if (UI.sbZoomFitWidth) UI.sbZoomFitWidth.onclick = wasmZoomFit;
-if (UI.sbZoomFit) UI.sbZoomFit.onclick = wasmZoomPageFit;
+// 줌 툴바 이벤트 리스너
+if (UI.btnZoomIn)  UI.btnZoomIn.onclick  = viewerZoomIn;
+if (UI.btnZoomOut) UI.btnZoomOut.onclick = viewerZoomOut;
+if (UI.btnZoomFit) UI.btnZoomFit.onclick = viewerZoomFitWidth;
+if (UI.sbZoomIn) UI.sbZoomIn.onclick = viewerZoomIn;
+if (UI.sbZoomOut) UI.sbZoomOut.onclick = viewerZoomOut;
+if (UI.sbZoomFitWidth) UI.sbZoomFitWidth.onclick = viewerZoomFitWidth;
+if (UI.sbZoomFit) UI.sbZoomFit.onclick = viewerZoomPageFit;
 
 // Ctrl+휠 줌
 UI.viewerPanel?.addEventListener('wheel', e => {
-  if (!e.ctrlKey || !state.wasmRenderResult) return;
+  if (!e.ctrlKey || !hasLoadedDocument()) return;
   e.preventDefault();
-  if (e.deltaY < 0) wasmZoomIn(); else wasmZoomOut();
+  if (e.deltaY < 0) viewerZoomIn(); else viewerZoomOut();
 }, { passive: false });
 
 if (UI.wasmSearchInput) {
@@ -2693,8 +3094,11 @@ window.addEventListener('resize', () => {
 });
 
 window.__TotalDocsDiagnostics = {
-  getCurrent: () => state.wasmDiagnostics || collectParsedDocumentDiagnostics(state.doc),
+  getCurrent: () => state.wasmDiagnostics
+    || collectOracleRasterDiagnostics(state.oracleManifest)
+    || collectParsedDocumentDiagnostics(state.doc),
   collect: (options = {}) => {
+    if (state.oracleManifest) return collectOracleRasterDiagnostics(state.oracleManifest);
     const renderer = getHwpWasmRenderer();
     if (renderer?.collectDocumentDiagnostics) return renderer.collectDocumentDiagnostics(options);
     return collectParsedDocumentDiagnostics(state.doc);

@@ -79,6 +79,8 @@ interface HwpxLineSegment {
 interface HwpxPositionLayout {
   readonly leftPx: number;
   readonly topPx: number;
+  readonly offsetLeftPx?: number;
+  readonly offsetTopPx?: number;
   readonly widthPx?: number;
   readonly heightPx?: number;
   readonly zIndex?: number;
@@ -87,6 +89,10 @@ interface HwpxPositionLayout {
   readonly verticalRelTo?: string;
   readonly horizontalAlign?: string;
   readonly verticalAlign?: string;
+  readonly textWrap?: string;
+  readonly flowWithText?: boolean;
+  readonly allowOverlap?: boolean;
+  readonly margin?: BoxSpacing;
 }
 
 interface HwpxParagraphLineMetrics {
@@ -743,7 +749,9 @@ function paginateSectionBlocks(blocks: readonly HwpxDocumentBlock[], pageProfile
 function updateRenderedFlowBottom(currentBottom: number, block: HwpxDocumentBlock): number {
   const renderedHeight = estimateRenderedBlockHeight(block);
   const position = block._hwpxLayout?.position;
-  if (position) return Math.max(currentBottom, position.topPx + renderedHeight);
+  if (position && !isHwpxPositionedTableFlowBlock(block)) {
+    return Math.max(currentBottom, position.topPx + renderedHeight);
+  }
   return currentBottom + renderedHeight;
 }
 
@@ -752,6 +760,7 @@ function avoidHwpxPositionedTableOverlap(block: HwpxDocumentBlock, currentFlowBo
   const layout = block._hwpxLayout;
   const position = layout?.position;
   if (!position || currentFlowBottom <= 0) return block;
+  if (isHwpxPositionedTableFlowBlock(block)) return block;
   if (position.topPx >= currentFlowBottom) return block;
   return {
     ...block,
@@ -763,6 +772,15 @@ function avoidHwpxPositionedTableOverlap(block: HwpxDocumentBlock, currentFlowBo
       }
     }
   };
+}
+
+function isHwpxPositionedTableFlowBlock(block: HwpxDocumentBlock): boolean {
+  if (block.type !== 'table') return false;
+  const position = block._hwpxLayout?.position;
+  return Boolean(position
+    && isTopAndBottomTextWrap(position.textWrap)
+    && position.flowWithText === true
+    && position.allowOverlap !== true);
 }
 
 function estimateRenderedBlockHeight(block: HwpxDocumentBlock): number {
@@ -786,7 +804,10 @@ function estimateRenderedParagraphHeight(block: HwpxParagraphBlock): number {
 function estimateRenderedTableHeight(table: HwpxTableBlock): number {
   const layoutHeight = table._hwpxLayout?.heightPx ?? 0;
   const rowHeight = table.rows.reduce((sum, row) => sum + estimateRenderedTableRowHeight(row), 0);
-  return Math.max(1, layoutHeight, rowHeight);
+  const flowMargin = isHwpxPositionedTableFlowBlock(table)
+    ? boxVertical(table._hwpxLayout?.position?.margin)
+    : 0;
+  return Math.max(1, layoutHeight, rowHeight) + flowMargin;
 }
 
 function estimateRenderedTableRowHeight(row: HwpxTableRow): number {
@@ -1630,10 +1651,16 @@ function readHwpxObjectPosition(
   const positionOffsetTop = signedHwpUnitAttributeToPx(pos, 'vertOffset');
   const shapeOffsetLeft = signedHwpUnitAttributeToPx(offset, 'x');
   const shapeOffsetTop = signedHwpUnitAttributeToPx(offset, 'y');
+  const objectOffsetLeft = Math.round(positionOffsetLeft + shapeOffsetLeft);
+  const objectOffsetTop = Math.round(positionOffsetTop + shapeOffsetTop);
   const hasOffset = positionOffsetLeft !== 0
     || positionOffsetTop !== 0
     || shapeOffsetLeft !== 0
     || shapeOffsetTop !== 0;
+  const textWrap = readAttributeObject(node, 'textWrap') || readAttributeObject(pos, 'textWrap');
+  const flowWithText = readOptionalBooleanAttribute(pos, 'flowWithText');
+  const allowOverlap = readOptionalBooleanAttribute(pos, 'allowOverlap');
+  const margin = readObjectOutMargin(firstDirectChild(node, 'outMargin'));
 
   if (!floatingOnly && treatAsChar && !hasOffset) return undefined;
 
@@ -1643,8 +1670,10 @@ function readHwpxObjectPosition(
   const zIndex = readNonNegativeIntegerAttribute(node, 'zOrder', 0);
 
   return {
-    leftPx: Math.round(baseLeft + positionOffsetLeft + shapeOffsetLeft),
-    topPx: Math.round(baseTop + positionOffsetTop + shapeOffsetTop),
+    leftPx: Math.round(baseLeft + objectOffsetLeft),
+    topPx: Math.round(baseTop + objectOffsetTop),
+    offsetLeftPx: objectOffsetLeft,
+    offsetTopPx: objectOffsetTop,
     ...(size.widthPx > 0 ? { widthPx: size.widthPx } : {}),
     ...(size.heightPx > 0 ? { heightPx: size.heightPx } : {}),
     ...(zIndex > 0 ? { zIndex } : {}),
@@ -1652,7 +1681,21 @@ function readHwpxObjectPosition(
     ...(horizontalRelTo ? { horizontalRelTo } : {}),
     ...(verticalRelTo ? { verticalRelTo } : {}),
     ...(horizontalAlign ? { horizontalAlign } : {}),
-    ...(verticalAlign ? { verticalAlign } : {})
+    ...(verticalAlign ? { verticalAlign } : {}),
+    ...(textWrap ? { textWrap } : {}),
+    ...(flowWithText !== undefined ? { flowWithText } : {}),
+    ...(allowOverlap !== undefined ? { allowOverlap } : {}),
+    ...(margin ? { margin } : {})
+  };
+}
+
+function readObjectOutMargin(node: unknown): BoxSpacing | undefined {
+  if (!node) return undefined;
+  return {
+    left: hwpUnitAttributeToPx(node, 'left'),
+    right: hwpUnitAttributeToPx(node, 'right'),
+    top: hwpUnitAttributeToPx(node, 'top'),
+    bottom: hwpUnitAttributeToPx(node, 'bottom')
   };
 }
 
@@ -1787,7 +1830,9 @@ function estimatePaginationHeight(block: HwpxDocumentBlock): number {
   if (block.type !== 'table') return estimateBlockHeight(block);
   const layout = block._hwpxLayout;
   if (!layout) return tableHeightForPagination(estimateBlockHeight(block));
-  return Math.max(1, layout.rowHeightsPx.reduce((sum, height) => sum + tableHeightForPagination(height), 0));
+  const tableHeight = layout.rowHeightsPx.reduce((sum, height) => sum + tableHeightForPagination(height), 0);
+  const flowMargin = isHwpxPositionedTableFlowBlock(block) ? boxVertical(layout.position?.margin) : 0;
+  return Math.max(1, tableHeight + flowMargin);
 }
 
 function tableRowHeightForPagination(table: HwpxTableBlock, rowIndex: number): number {
@@ -2099,6 +2144,12 @@ function readBooleanAttribute(node: unknown, name: string): boolean {
   return value === '1' || value === 'TRUE' || value === 'YES';
 }
 
+function readOptionalBooleanAttribute(node: unknown, name: string): boolean | undefined {
+  const value = readAttributeObject(node, name).trim().toUpperCase();
+  if (!value) return undefined;
+  return value === '1' || value === 'TRUE' || value === 'YES';
+}
+
 function readPositiveIntegerAttribute(node: unknown, name: string, fallback: number): number {
   const value = readNumberAttribute(node, name);
   return Number.isInteger(value) && value > 0 ? value : fallback;
@@ -2173,6 +2224,11 @@ function normalizeVerticalAlign(value: string): TableCell['verticalAlign'] | und
   if (upper === 'BOTTOM') return 'bottom';
   if (upper === 'TOP') return 'top';
   return undefined;
+}
+
+function isTopAndBottomTextWrap(value: string | undefined): boolean {
+  const normalized = value?.trim().replace(/_/g, '-').toLowerCase();
+  return normalized === 'top-and-bottom';
 }
 
 function normalizeColor(value: string): string {

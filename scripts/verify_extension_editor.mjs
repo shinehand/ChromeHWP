@@ -237,7 +237,10 @@ function runEditorProbe(url) {
 	          uniqueExportableSrc: new Set(exportableImages.map(sourceOf).filter(Boolean)).size
 	        };
 	        return {
+          renderedFilename: preview?.dataset?.filename || "",
           pages: pages.length,
+          oraclePages: document.querySelectorAll(".hwp-page-oracle").length,
+          canvasPages: document.querySelectorAll(".hwp-page-canvas canvas").length,
           paragraphs: document.querySelectorAll(".hwp-paragraph").length,
           lineSegmentParagraphs: document.querySelectorAll('.hwp-paragraph[data-layout-mode="line-segments"]').length,
           lineSegments: document.querySelectorAll(".hwp-line-segment").length,
@@ -282,11 +285,12 @@ function runEditorProbe(url) {
       while (Date.now() - started < timeoutMs) {
         lastState = await collectState(sample);
         const loadedRequestedFile = lastState.filenameValue === sampleFilename(sample);
+        const renderedRequestedFile = lastState.renderedFilename === sampleFilename(sample);
         const loadedFormat = lastState.formatKind === sample.expectedFormat;
         const loadedCounts = lastState.paragraphs >= sample.minParagraphs
           && lastState.tables >= sample.minTables
           && lastState.images >= sample.minImages;
-        if (loadedRequestedFile && loadedFormat && lastState.pages > 0 && loadedCounts) {
+        if (loadedRequestedFile && renderedRequestedFile && loadedFormat && lastState.pages > 0 && loadedCounts) {
           return {
             ...lastState,
             elapsedMs: Date.now() - started
@@ -427,6 +431,12 @@ function evaluateProbeResult(result, roundTrip) {
     }
     if (actual.images < sample.minImages) {
       issues.push(`이미지 수 부족 ${actual.images} < ${sample.minImages}`);
+    }
+    if (actual.oraclePages > 0) {
+      issues.push(`캡처 이미지 페이지 렌더링 감지 ${actual.oraclePages}쪽`);
+    }
+    if (actual.canvasPages > 0) {
+      issues.push(`캔버스 페이지 렌더링 감지 ${actual.canvasPages}쪽`);
     }
     if (actual.missingImages > 0) {
       issues.push(`이미지 렌더링 실패 ${actual.missingImages}개`);

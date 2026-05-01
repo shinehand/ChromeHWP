@@ -112,7 +112,9 @@ function showParsedDocument(filename: string, size: number, format: string, pars
   showDocumentShell(filename, size, format);
   disposeRenderedDocument?.();
   disposeRenderedDocument = renderDocumentToDom(parsed, documentPreview);
+  documentPreview.dataset.filename = filename;
   documentPreview.dataset.parser = parsed.metadata.parser;
+  delete documentPreview.dataset.plainText;
   currentDocument = {
     filename,
     size,
@@ -127,7 +129,9 @@ function showPlainTextDocument(filename: string, size: number, format: string, p
   disposeRenderedDocument?.();
   disposeRenderedDocument = undefined;
   documentPreview.textContent = previewText;
+  documentPreview.dataset.filename = filename;
   documentPreview.dataset.plainText = previewText;
+  delete documentPreview.dataset.parser;
   currentDocument = { filename, size, format: 'plain' };
   setExportControlsEnabled(true);
 }
@@ -144,6 +148,10 @@ function showDocumentShell(filename: string, size: number, format: string): void
 function showEmptyState(message: string): void {
   disposeRenderedDocument?.();
   disposeRenderedDocument = undefined;
+  documentPreview.replaceChildren();
+  delete documentPreview.dataset.filename;
+  delete documentPreview.dataset.parser;
+  delete documentPreview.dataset.plainText;
   currentDocument = undefined;
   dropZone.hidden = false;
   workspace.hidden = true;

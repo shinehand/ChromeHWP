@@ -17,6 +17,24 @@ STRUCTURE_TARGET_WIDTH = 360
 STRUCTURE_DARK_THRESHOLD = 220
 STRUCTURE_BLUR_RADIUS = 0.55
 STRUCTURE_DILATION_SIZE = 3
+RAW_CLOSE_MAX = 18.0
+RAW_REVIEW_MAX = 32.0
+LAYOUT_REVIEW_BLUR_MAX = 32.0
+LAYOUT_REVIEW_PROJECTION_MAX = 30.0
+STRICT_FAILURE_VERDICTS = {"mismatch", "capture-error", "capture-review"}
+ADVISORY_VERDICTS = {"review", "layout-review"}
+PASS_VERDICTS = {"close"}
+VERDICT_NOTES = {
+    "close": "pass: raw pixel diff is inside the close band.",
+    "review": "advisory: raw pixel diff requires human visual review; this is not a clean pass.",
+    "layout-review": (
+        "advisory: raw pixel diff is above the review band, but blur/layout metrics are within "
+        "the relaxed layout-review band; this is not a clean pass."
+    ),
+    "mismatch": "strict-failure: raw/blur/layout evidence does not meet the visual guard.",
+    "capture-error": "strict-failure: comparison capture failed or could not be measured.",
+    "capture-review": "strict-failure: capture geometry is suspicious and must be inspected.",
+}
 
 
 def longest_true_run(values):
@@ -471,9 +489,9 @@ def verdict_for_score(score, quality=None, metrics=None):
         return quality["status"]
     if score is None:
         return "capture-error"
-    if score <= 18:
+    if score <= RAW_CLOSE_MAX:
         return "close"
-    if score <= 32:
+    if score <= RAW_REVIEW_MAX:
         return "review"
     if is_layout_review(metrics):
         return "layout-review"
@@ -487,7 +505,67 @@ def is_layout_review(metrics):
     projection_diff = (metrics.get("projectionDiff") or {}).get("combined")
     if not isinstance(blur_diff, (int, float)) or not isinstance(projection_diff, (int, float)):
         return False
-    return blur_diff <= 32.0 and projection_diff <= 30.0
+    return blur_diff <= LAYOUT_REVIEW_BLUR_MAX and projection_diff <= LAYOUT_REVIEW_PROJECTION_MAX
+
+
+def verdict_severity(verdict):
+    if verdict in STRICT_FAILURE_VERDICTS:
+        return "strict-failure"
+    if verdict in ADVISORY_VERDICTS:
+        return "advisory"
+    if verdict in PASS_VERDICTS:
+        return "pass"
+    return "unknown"
+
+
+def verdict_note(verdict):
+    return VERDICT_NOTES.get(verdict, "unknown verdict: inspect this page before claiming visual fidelity.")
+
+
+def page_raw_diff(page):
+    return (page.get("visualMetrics") or {}).get("rawDiff", page.get("diff"))
+
+
+def page_blur_diff(page):
+    return (page.get("visualMetrics") or {}).get("blurDiff")
+
+
+def page_layout_diff(page):
+    return ((page.get("visualMetrics") or {}).get("projectionDiff") or {}).get("combined")
+
+
+def format_metric(value):
+    return "n/a" if value is None else f"{value:.3f}"
+
+
+def compact_page_ref(page):
+    return {
+        "page": page["pageIndex"] + 1,
+        "verdict": page.get("verdict"),
+        "severity": page.get("severity", verdict_severity(page.get("verdict"))),
+        "rawDiff": page_raw_diff(page),
+        "blurDiff": page_blur_diff(page),
+        "layoutDiff": page_layout_diff(page),
+        "compare": page.get("pageCompare", ""),
+    }
+
+
+def verdict_policy():
+    return {
+        "passVerdicts": sorted(PASS_VERDICTS),
+        "advisoryVerdicts": sorted(ADVISORY_VERDICTS),
+        "strictFailureVerdicts": sorted(STRICT_FAILURE_VERDICTS),
+        "thresholds": {
+            "rawCloseMax": RAW_CLOSE_MAX,
+            "rawReviewMax": RAW_REVIEW_MAX,
+            "layoutReviewBlurMax": LAYOUT_REVIEW_BLUR_MAX,
+            "layoutReviewProjectionMax": LAYOUT_REVIEW_PROJECTION_MAX,
+        },
+        "note": (
+            "review/layout-review are advisory states. They may keep automation exit status green, "
+            "but they are not clean visual-fidelity passes and must be reported with raw/blur/layout metrics."
+        ),
+    }
 
 
 def make_compare_image(hancom_page, chrome_page, output_path, title, target_width):
@@ -556,17 +634,26 @@ def build_report(manifest, output_dir, target_width):
                     "verdict": "capture-error",
                     "error": str(error),
                 })
+            item["severity"] = verdict_severity(item["verdict"])
+            item["verdictNote"] = verdict_note(item["verdict"])
             doc_results.append(item)
 
         counts = {}
+        severity_counts = {}
         for item in doc_results:
             counts[item["verdict"]] = counts.get(item["verdict"], 0) + 1
+            severity_counts[item["severity"]] = severity_counts.get(item["severity"], 0) + 1
+        advisory_pages = [compact_page_ref(item) for item in doc_results if item["severity"] == "advisory"]
+        strict_failure_pages = [compact_page_ref(item) for item in doc_results if item["severity"] == "strict-failure"]
         results.append({
             "id": doc["id"],
             "filename": doc["filename"],
             "sourcePath": doc["sourcePath"],
             "pageCount": doc["pageCount"],
             "verdictCounts": counts,
+            "severityCounts": severity_counts,
+            "advisoryPages": advisory_pages,
+            "strictFailurePages": strict_failure_pages,
             "pages": doc_results,
         })
     return results
@@ -577,6 +664,17 @@ def write_markdown(results, report_path):
         "# Hancom Page Audit",
         "",
         "한컴 Viewer를 기준으로 테스트 문서의 모든 페이지를 페이지 단위로 캡처한 비교 결과입니다.",
+        "`review`와 `layout-review`는 자동화가 계속 진행될 수 있는 advisory일 뿐, clean visual pass가 아닙니다.",
+        "",
+        "## Verdict Policy",
+        "",
+        f"- pass: {', '.join(sorted(PASS_VERDICTS))}",
+        f"- advisory: {', '.join(sorted(ADVISORY_VERDICTS))} (raw/blur/layout 지표를 보고 사람이 확인해야 함)",
+        f"- strict failure: {', '.join(sorted(STRICT_FAILURE_VERDICTS))}",
+        (
+            f"- thresholds: close raw<={RAW_CLOSE_MAX:.1f}, review raw<={RAW_REVIEW_MAX:.1f}, "
+            f"layout-review blur<={LAYOUT_REVIEW_BLUR_MAX:.1f} and layout<={LAYOUT_REVIEW_PROJECTION_MAX:.1f}"
+        ),
         "",
     ]
     for doc in results:
@@ -585,19 +683,32 @@ def write_markdown(results, report_path):
         lines.append(f"- source: `{doc['sourcePath']}`")
         lines.append(f"- pages: {doc['pageCount']}")
         lines.append(f"- verdicts: {doc['verdictCounts']}")
+        lines.append(f"- severity: {doc['severityCounts']}")
+        if doc["advisoryPages"]:
+            advisory_refs = ", ".join(
+                f"p{page['page']} {page['verdict']} raw={format_metric(page['rawDiff'])} "
+                f"blur={format_metric(page['blurDiff'])} layout={format_metric(page['layoutDiff'])}"
+                for page in doc["advisoryPages"][:8]
+            )
+            more = len(doc["advisoryPages"]) - 8
+            lines.append(f"- advisory pages: {advisory_refs}{f', +{more} more' if more > 0 else ''}")
+        if doc["strictFailurePages"]:
+            failure_refs = ", ".join(
+                f"p{page['page']} {page['verdict']} raw={format_metric(page['rawDiff'])} "
+                f"blur={format_metric(page['blurDiff'])} layout={format_metric(page['layoutDiff'])}"
+                for page in doc["strictFailurePages"][:8]
+            )
+            more = len(doc["strictFailurePages"]) - 8
+            lines.append(f"- strict failure pages: {failure_refs}{f', +{more} more' if more > 0 else ''}")
         lines.append("")
-        lines.append("| page | verdict | raw diff | blur diff | layout diff | compare |")
-        lines.append("| ---: | --- | ---: | ---: | ---: | --- |")
+        lines.append("| page | severity | verdict | raw diff | blur diff | layout diff | note | compare |")
+        lines.append("| ---: | --- | --- | ---: | ---: | ---: | --- | --- |")
         for page in doc["pages"]:
-            diff = "" if page["diff"] is None else f"{page['diff']:.3f}"
-            metrics = page.get("visualMetrics") or {}
-            blur = metrics.get("blurDiff")
-            layout = (metrics.get("projectionDiff") or {}).get("combined")
-            blur_text = "" if blur is None else f"{blur:.3f}"
-            layout_text = "" if layout is None else f"{layout:.3f}"
             compare = page.get("pageCompare", "")
             lines.append(
-                f"| {page['pageIndex'] + 1} | {page['verdict']} | {diff} | {blur_text} | {layout_text} | `{compare}` |"
+                f"| {page['pageIndex'] + 1} | {page['severity']} | {page['verdict']} | "
+                f"{format_metric(page_raw_diff(page))} | {format_metric(page_blur_diff(page))} | "
+                f"{format_metric(page_layout_diff(page))} | {page['verdictNote']} | `{compare}` |"
             )
         lines.append("")
     report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -610,18 +721,18 @@ def write_html(results, html_path):
         for page in doc["pages"]:
             compare = page.get("pageCompare")
             image = f'<img src="{html.escape(str(Path(compare).relative_to(html_path.parent)))}" alt="page compare">' if compare else ""
-            diff = "" if page["diff"] is None else f"{page['diff']:.3f}"
-            metrics = page.get("visualMetrics") or {}
-            blur = metrics.get("blurDiff")
-            layout = (metrics.get("projectionDiff") or {}).get("combined")
+            diff = format_metric(page_raw_diff(page))
+            blur = page_blur_diff(page)
+            layout = page_layout_diff(page)
             detail = f"raw {diff}"
             if blur is not None:
                 detail += f" · blur {blur:.3f}"
             if layout is not None:
                 detail += f" · layout {layout:.3f}"
             page_rows.append(f"""
-              <section class="page-card {html.escape(page['verdict'])}">
-                <h3>{page['pageIndex'] + 1}쪽 · {html.escape(page['verdict'])} · {html.escape(detail)}</h3>
+              <section class="page-card {html.escape(page['severity'])} {html.escape(page['verdict'])}">
+                <h3>{page['pageIndex'] + 1}쪽 · {html.escape(page['severity'])} · {html.escape(page['verdict'])} · {html.escape(detail)}</h3>
+                <p class="verdict-note">{html.escape(page['verdictNote'])}</p>
                 {image}
               </section>
             """)
@@ -629,7 +740,7 @@ def write_html(results, html_path):
           <article class="doc-card">
             <h2>{html.escape(doc['filename'])}</h2>
             <p>{html.escape(doc['sourcePath'])}</p>
-            <p>pages {doc['pageCount']} · verdicts {html.escape(str(doc['verdictCounts']))}</p>
+            <p>pages {doc['pageCount']} · severity {html.escape(str(doc['severityCounts']))} · verdicts {html.escape(str(doc['verdictCounts']))}</p>
             <div class="page-grid">{''.join(page_rows)}</div>
           </article>
         """)
@@ -644,16 +755,17 @@ def write_html(results, html_path):
     body {{ margin: 0; background: #eee8dc; color: #171410; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }}
     main {{ width: min(1800px, calc(100vw - 40px)); margin: 0 auto; padding: 28px 0 60px; }}
     h1 {{ margin: 0 0 8px; }}
+    .policy {{ background: #fff7e0; border: 1px solid #d9a441; padding: 12px 14px; margin: 18px 0; }}
     .doc-card {{ background: #fffaf2; border: 1px solid #d6c9b8; border-radius: 18px; padding: 18px; margin: 20px 0; }}
     .doc-card p {{ color: #665d52; }}
     .page-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 16px; }}
     .page-card {{ background: white; border: 1px solid #d8d0c3; border-radius: 14px; overflow: hidden; }}
     .page-card h3 {{ margin: 0; padding: 10px 12px; font-size: 15px; background: #f7f2eb; }}
-    .page-card.mismatch h3 {{ background: #ffe2df; }}
-    .page-card.capture-review h3 {{ background: #ffe9c7; }}
-    .page-card.review h3 {{ background: #fff1c2; }}
-    .page-card.layout-review h3 {{ background: #e7f0ff; }}
-    .page-card.close h3 {{ background: #e8f5df; }}
+    .page-card.strict-failure h3 {{ background: #ffe2df; }}
+    .page-card.advisory h3 {{ background: #fff1c2; }}
+    .page-card.pass h3 {{ background: #e8f5df; }}
+    .page-card.layout-review h3 {{ background: #ffe9c7; }}
+    .verdict-note {{ margin: 0; padding: 9px 12px; color: #5f5143; background: #fffaf2; font-size: 13px; }}
     img {{ width: 100%; display: block; }}
   </style>
 </head>
@@ -661,6 +773,12 @@ def write_html(results, html_path):
 <main>
   <h1>Hancom Page Audit</h1>
   <p>모든 테스트 문서를 한컴 Viewer와 TotalDocs 페이지 단위로 대조한 산출물입니다.</p>
+  <section class="policy">
+    <strong>Verdict policy:</strong>
+    <span>pass={html.escape(', '.join(sorted(PASS_VERDICTS)))}</span> ·
+    <span>advisory={html.escape(', '.join(sorted(ADVISORY_VERDICTS)))} (clean pass 아님)</span> ·
+    <span>strict failure={html.escape(', '.join(sorted(STRICT_FAILURE_VERDICTS)))}</span>
+  </section>
   {''.join(cards)}
 </main>
 </body>
@@ -689,15 +807,39 @@ def main():
     report_json.write_text(json.dumps({
         "generatedAt": manifest.get("generatedAt"),
         "sourceManifest": str(manifest_path),
+        "verdictPolicy": verdict_policy(),
         "documentCount": len(results),
         "totalPages": sum(doc["pageCount"] for doc in results),
+        "severityCounts": {
+            "pass": sum(doc["severityCounts"].get("pass", 0) for doc in results),
+            "advisory": sum(doc["severityCounts"].get("advisory", 0) for doc in results),
+            "strict-failure": sum(doc["severityCounts"].get("strict-failure", 0) for doc in results),
+            "unknown": sum(doc["severityCounts"].get("unknown", 0) for doc in results),
+        },
         "results": results,
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_markdown(results, report_md)
     write_html(results, report_html)
 
     for doc in results:
-        print(f"{doc['id']}: pages={doc['pageCount']} verdicts={doc['verdictCounts']}")
+        print(
+            f"{doc['id']}: pages={doc['pageCount']} "
+            f"severity={doc['severityCounts']} verdicts={doc['verdictCounts']}"
+        )
+        if doc["advisoryPages"]:
+            preview = ", ".join(
+                f"p{page['page']} {page['verdict']} raw={format_metric(page['rawDiff'])} "
+                f"blur={format_metric(page['blurDiff'])} layout={format_metric(page['layoutDiff'])}"
+                for page in doc["advisoryPages"][:5]
+            )
+            print(f"  advisory: {preview}{' ...' if len(doc['advisoryPages']) > 5 else ''}")
+        if doc["strictFailurePages"]:
+            preview = ", ".join(
+                f"p{page['page']} {page['verdict']} raw={format_metric(page['rawDiff'])} "
+                f"blur={format_metric(page['blurDiff'])} layout={format_metric(page['layoutDiff'])}"
+                for page in doc["strictFailurePages"][:5]
+            )
+            print(f"  strict-failure: {preview}{' ...' if len(doc['strictFailurePages']) > 5 else ''}")
     print(f"report={report_json}")
     print(f"markdown={report_md}")
     print(f"html={report_html}")

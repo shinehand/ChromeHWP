@@ -106,3 +106,69 @@
   - `npm run typecheck` passed.
   - `STRICT_PAGE_EXPECTATIONS=1 npm run verify:extension` passed.
   - `STRICT_VISUAL_FIDELITY=1 npm run verify:visual` passed with `strictFailures: []`.
+
+## 2026-05-01 23:15 KST
+
+- Took over only the verification/report wording scope: `scripts/check_fidelity_guard.mjs`, `scripts/build_hancom_page_audit.py`, and `5hr_work_log.md`.
+- Tightened the visual guard language so `review` and `layout-review` are reported as advisory states, not clean visual passes. The guard now prints visual pass/advisory/strict-failure page counts and ends with an explicit warnings/advisories status when any remain.
+- Made `STRICT_VISUAL_FIDELITY=1` imply a required visual audit in `scripts/check_fidelity_guard.mjs`, while keeping advisory verdicts non-fatal and strict failures limited to `mismatch`, `capture-error`, and `capture-review`.
+- Expanded advisory/strict-failure detail lines to include worst pages with `raw`, `blur`, `layout`, and compare artifact paths.
+- Strengthened `scripts/build_hancom_page_audit.py` reports:
+  - JSON now includes `verdictPolicy`, aggregate `severityCounts`, per-document `severityCounts`, `advisoryPages`, `strictFailurePages`, and per-page `severity`/`verdictNote`.
+  - Markdown/HTML reports label `review` and `layout-review` as advisory and show raw/blur/layout metrics in the page table.
+  - CLI output now previews advisory and strict-failure pages with raw/blur/layout metrics.
+- Verification:
+  - `node --check scripts/check_fidelity_guard.mjs` passed.
+  - `python3 -m py_compile scripts/build_hancom_page_audit.py` passed.
+  - `node scripts/check_fidelity_guard.mjs` completed with warnings/advisories instead of clean-pass wording on the stale baseline audit.
+  - `STRICT_VISUAL_FIDELITY=1 HANCOM_PAGE_AUDIT_REPORT_PATH=output/hancom-oracle/extension-visual-current/hancom-page-audit-report.json node scripts/check_fidelity_guard.mjs` passed with advisory metrics surfaced.
+  - `npm run typecheck` passed.
+  - `npm run build` passed.
+  - `STRICT_PAGE_EXPECTATIONS=1 ... npm run verify:extension` passed using `/tmp` report paths to avoid overwriting shared output artifacts.
+  - `STRICT_VISUAL_FIDELITY=1 npm run verify:visual` passed with `strictFailures: []`; the generated audit report records `severityCounts` as `pass=4`, `advisory=32`, `strict-failure=0`.
+
+## 2026-05-01 23:45 KST
+
+- Stopped treating prior visual/reporting work as document fidelity completion. The remaining real target is still DOM document fidelity, not clean wording.
+- Found an actual legacy product-path hazard in `js/app.js`: `?oracle=` / `?oracleManifest=` could load Hancom/Oracle raster captures as document pages through `renderOracleRaster`.
+- Disabled that raster page path for normal product use. It now requires explicit local QA opt-in with `enableOracleRaster=1`; otherwise it shows an error and does not create `.hwp-page-oracle` image pages.
+- Added verification guards so extension visual/functional checks wait for the requested rendered filename and reject oracle-raster or canvas page rendering.
+- Changed the fidelity guard default visual-audit path to `output/hancom-oracle/extension-visual-current/hancom-page-audit-report.json`, so the default strict command reads the latest extension-rendered audit instead of a stale baseline folder.
+- Browser check:
+  - Served `viewer.html` locally and opened it with an `oracle` manifest URL.
+  - Confirmed `.hwp-page-oracle` count stayed `0`, no `.hwp-page` was created, and the UI showed the disabled raster-path error.
+
+## 2026-05-01 23:55 KST
+
+- Removed the remaining local QA escape for oracle-raster. Even `enableOracleRaster=1` plus `oracle=` is now blocked in `js/app.js`.
+- Added fail-safe printing behavior: if an oracle manifest ever reaches state, print/PDF is disabled and export no longer treats oracle DOM as a printable canvas document.
+- Hardened audit scripts:
+  - `scripts/capture_hancom_page_audit.mjs` now fails immediately if `.hwp-page-oracle img` exists and captures only real renderer canvas output for that legacy audit path.
+  - `scripts/verify_samples.mjs` now records `oraclePageCount`/`oracleImageCount` and fails when either appears.
+- Browser regression probe:
+  - Opened `pages/viewer.html?enableOracleRaster=1&oracle=...`.
+  - Confirmed `.hwp-page-oracle = 0`, oracle images `0`, rendered pages `0`, and the UI showed the full-disable error.
+- Verification completed so far:
+  - `node --check js/app.js` passed.
+  - `node --check scripts/capture_hancom_page_audit.mjs` passed.
+  - `node --check scripts/verify_samples.mjs` passed.
+  - `npm run build` passed.
+
+## 2026-05-02 00:09 KST
+
+- Integrated the HWP/HWPX parser/rendering work from the worker agents and fixed the conflicts that initially broke `npm run typecheck`.
+- HWPX:
+  - Preserved `textWrap`, `flowWithText`, `allowOverlap`, object offsets, and out margins from HWPX positioning.
+  - `TOP_AND_BOTTOM + flowWithText + allowOverlap !== true` tables now remain in normal DOM flow instead of being forced into absolute positioning.
+- HWP:
+  - Preserved `head`/`foot`/`secd` control metadata and surfaced header/footer content as read-only decoration blocks.
+  - Preserved HWP table split policy bits as `_hwpxLayout.pageBreak` and metadata counters.
+  - Fixed a real regression in `goyeopje.hwp`: a one-line paragraph was receiving a 922px min-height from an oversized HWP line-segment height. HWP line segment heights are now capped consistently with the renderer, restoring top-level overlap count to 0.
+- Verification:
+  - `npm run typecheck` passed.
+  - `npm run build` passed.
+  - `STRICT_PAGE_EXPECTATIONS=1 npm run verify:extension` passed. All samples still have `oraclePages=0` and `canvasPages=0`.
+  - `STRICT_VISUAL_FIDELITY=1 npm run verify:visual` passed with `strictFailures: []`.
+  - `STRICT_VISUAL_FIDELITY=1 node scripts/check_fidelity_guard.mjs` passed but still reports visual advisories: pass=4, advisory=32, strict-failure=0.
+- Remaining honest state:
+  - This is still not a clean visual copy. Worst current advisory pages include `incheon-2a` page 16 and `attachment-sale-notice` page 1.
