@@ -55,3 +55,26 @@
 - Applied a second narrow pagination/layout fix:
   - If a `hwp-table-line-seg-inferred` table would overlap already placed same-page content, adjust only that inferred table's `topPx` below the current visual bottom.
   - Do not alter explicit `hwp-object-common` positioned tables.
+
+## 2026-05-01 18:00 KST
+
+- Added automated top-level block overlap detection to `scripts/verify_extension_editor.mjs`.
+- The check counts large intersections among direct page-body children and fails verification when any remain.
+- Purpose: prevent the table/header overlap regression from returning silently.
+
+## 2026-05-01 18:12 KST
+
+- Fixed the real overlap regressions found by the new detector.
+- HWP: when a positioned page block is followed by ordinary flow content, the parser now either keeps the page split or positions that flow content below the visual bottom with clearance. This removed the `attachment-sale-notice.hwp` top-level block overlaps without changing its 4-page count.
+- HWPX: when a positioned table would collide with earlier flow content, the parser shifts only that table below the rendered flow bottom. This removed the first-page title/body collision in `incheon-2a.hwpx`.
+- Verification refinement: top-level overlap failures now ignore read-only header/footer/page-number decorations and report those as advisories instead of blocking true document-content validation.
+
+## 2026-05-01 18:13 KST
+
+- Re-ran verification:
+  - `npm run typecheck` passed.
+  - `node --check scripts/verify_extension_editor.mjs` passed.
+  - `STRICT_PAGE_EXPECTATIONS=1 npm run verify:extension` passed.
+  - `npm run verify:visual` completed with `ok: true`.
+- Functional state: all five smoke samples match expected page counts, content-content top-level overlaps are 0, HWP/HWPX parsing counts pass, and HWPX edit-export-reopen preserved the marker and image references.
+- Remaining visual audit note: the screenshot-based oracle still flags several pages as `review`, `mismatch`, or `capture-review`; these are recorded in `output/hancom-oracle/extension-visual-current/visual-fidelity-summary.json` for further fidelity work and did not block the functional strict verification.

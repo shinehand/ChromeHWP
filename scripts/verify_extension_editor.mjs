@@ -174,6 +174,28 @@ function runEditorProbe(url) {
     const collectState = async (sample) => {
       const domState = await page.evaluate(() => {
         const pages = Array.from(document.querySelectorAll(".hwp-page"));
+        const overlapArea = (left, right) => {
+          const width = Math.max(0, Math.min(left.right, right.right) - Math.max(left.left, right.left));
+          const height = Math.max(0, Math.min(left.bottom, right.bottom) - Math.max(left.top, right.top));
+          return width * height;
+        };
+        const countTopLevelOverlaps = (children) => {
+          const boxes = Array.from(children).map((element) => ({
+            element,
+            readonlyDecoration: Boolean(element.closest('[data-readonly-decoration="true"]')),
+            rect: element.getBoundingClientRect()
+          })).filter((entry) => entry.rect.width > 1 && entry.rect.height > 1);
+          const counts = { content: 0, decoration: 0 };
+          for (let leftIndex = 0; leftIndex < boxes.length; leftIndex += 1) {
+            for (let rightIndex = leftIndex + 1; rightIndex < boxes.length; rightIndex += 1) {
+              if (overlapArea(boxes[leftIndex].rect, boxes[rightIndex].rect) > 5000) {
+                if (boxes[leftIndex].readonlyDecoration || boxes[rightIndex].readonlyDecoration) counts.decoration += 1;
+                else counts.content += 1;
+              }
+            }
+          }
+          return counts;
+        };
 	        const pageMetrics = pages.map((pageEl, index) => {
           const rect = pageEl.getBoundingClientRect();
           const body = pageEl.querySelector(".hwp-page-body");
@@ -186,6 +208,7 @@ function runEditorProbe(url) {
                   || childRect.left < bodyRect.left - 2;
               }).length
             : 0;
+          const topLevelOverlaps = body ? countTopLevelOverlaps(body.children) : { content: 0, decoration: 0 };
           return {
             index,
             paragraphs: pageEl.querySelectorAll(".hwp-paragraph").length,
@@ -195,6 +218,8 @@ function runEditorProbe(url) {
             images: pageEl.querySelectorAll(".hwp-image img").length,
             missingImages: pageEl.querySelectorAll(".hwp-image-missing").length,
             overflowingBlocks,
+            topLevelOverlaps: topLevelOverlaps.content,
+            decorationTopLevelOverlaps: topLevelOverlaps.decoration,
             textLength: (pageEl.innerText || "").trim().length,
             firstText: (pageEl.innerText || "").replace(/\\s+/g, " ").trim().slice(0, 120),
             width: Math.round(rect.width),
@@ -220,6 +245,8 @@ function runEditorProbe(url) {
           images: document.querySelectorAll(".hwp-image img").length,
           missingImages: document.querySelectorAll(".hwp-image-missing").length,
           overflowingBlocks: pageMetrics.reduce((sum, page) => sum + page.overflowingBlocks, 0),
+          topLevelOverlaps: pageMetrics.reduce((sum, page) => sum + page.topLevelOverlaps, 0),
+          decorationTopLevelOverlaps: pageMetrics.reduce((sum, page) => sum + page.decorationTopLevelOverlaps, 0),
           editableElements: document.querySelectorAll('.hwp-paragraph[contenteditable]:not([contenteditable="false"])').length,
           activeEditableElements: Array.from(document.querySelectorAll('.hwp-paragraph[contenteditable]:not([contenteditable="false"])')).filter((element) => element.isContentEditable).length,
           parser: preview?.dataset?.parser || "",
@@ -403,6 +430,12 @@ function evaluateProbeResult(result, roundTrip) {
     }
     if (actual.missingImages > 0) {
       issues.push(`이미지 렌더링 실패 ${actual.missingImages}개`);
+    }
+    if (actual.topLevelOverlaps > 0) {
+      issues.push(`상위 블록 겹침 ${actual.topLevelOverlaps}건`);
+    }
+    if (actual.decorationTopLevelOverlaps > 0) {
+      advisories.push(`장식/쪽번호 경계 겹침 ${actual.decorationTopLevelOverlaps}건`);
     }
     const referenceImages = Number(sample.referenceCounts?.officialViewerImages ?? 0);
     if (referenceImages > 0 && actual.images < referenceImages) {

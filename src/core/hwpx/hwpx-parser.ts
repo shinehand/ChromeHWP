@@ -167,6 +167,7 @@ interface ParsedSection {
 const HWPUNIT_PER_PX = 75;
 const HWPX_TABLE_PAGINATION_SCALE = 1.00;
 const HWPX_LONG_ROW_PAGINATION_SCALE = 0.60;
+const HWPX_POSITIONED_TABLE_FLOW_CLEARANCE_PX = 72;
 const DEFAULT_PAGE_LAYOUT: PageLayout = {
   width: 794,
   height: 1123,
@@ -703,6 +704,7 @@ function paginateSectionBlocks(blocks: readonly HwpxDocumentBlock[], pageProfile
   const pages: DocumentPage[] = [];
   let current: HwpxDocumentBlock[] = [];
   let currentHeight = 0;
+  let currentRenderedBottom = 0;
 
   const flush = (): void => {
     pages.push({
@@ -712,22 +714,100 @@ function paginateSectionBlocks(blocks: readonly HwpxDocumentBlock[], pageProfile
     });
     current = [];
     currentHeight = 0;
+    currentRenderedBottom = 0;
   };
 
   for (const block of expandedBlocks) {
-    const layout = block._hwpxLayout;
+    let blockToPlace = block;
+    let layout = blockToPlace._hwpxLayout;
     if (layout?.breakBefore && current.length) flush();
 
-    const blockHeight = Math.max(1, estimatePaginationHeight(block));
+    const blockHeight = Math.max(1, estimatePaginationHeight(blockToPlace));
     if (current.length && currentHeight + blockHeight > pageHeight) flush();
 
-    current.push(block);
+    if (current.length) {
+      blockToPlace = avoidHwpxPositionedTableOverlap(blockToPlace, currentRenderedBottom);
+      layout = blockToPlace._hwpxLayout;
+    }
+
+    current.push(blockToPlace);
     currentHeight += Math.min(blockHeight, pageHeight);
+    currentRenderedBottom = updateRenderedFlowBottom(currentRenderedBottom, blockToPlace);
     if (layout?.breakAfter && current.length) flush();
   }
 
   if (current.length || !pages.length) flush();
   return pages;
+}
+
+function updateRenderedFlowBottom(currentBottom: number, block: HwpxDocumentBlock): number {
+  const renderedHeight = estimateRenderedBlockHeight(block);
+  const position = block._hwpxLayout?.position;
+  if (position) return Math.max(currentBottom, position.topPx + renderedHeight);
+  return currentBottom + renderedHeight;
+}
+
+function avoidHwpxPositionedTableOverlap(block: HwpxDocumentBlock, currentFlowBottom: number): HwpxDocumentBlock {
+  if (block.type !== 'table') return block;
+  const layout = block._hwpxLayout;
+  const position = layout?.position;
+  if (!position || currentFlowBottom <= 0) return block;
+  if (position.topPx >= currentFlowBottom) return block;
+  return {
+    ...block,
+    _hwpxLayout: {
+      ...layout,
+      position: {
+        ...position,
+        topPx: currentFlowBottom + HWPX_POSITIONED_TABLE_FLOW_CLEARANCE_PX
+      }
+    }
+  };
+}
+
+function estimateRenderedBlockHeight(block: HwpxDocumentBlock): number {
+  if (block.type === 'table') return estimateRenderedTableHeight(block);
+  if (block.type === 'paragraph') return estimateRenderedParagraphHeight(block);
+  return estimateBlockHeight(block);
+}
+
+function estimateRenderedParagraphHeight(block: HwpxParagraphBlock): number {
+  const baseHeight = estimateBlockHeight(block);
+  const text = block.runs.map((run) => run.text).join('');
+  const charCount = text.replace(/\s+/g, '').length;
+  if (!charCount) return baseHeight;
+  const fontSizePt = block.runs.reduce((max, run) => Math.max(max, run.fontSizePt ?? 0), 0) || 11;
+  const lineHeightPx = Math.max(14, Math.round(fontSizePt * (96 / 72) * 1.35));
+  const charsPerLine = Math.max(12, Math.round(80 * (11 / Math.max(8, fontSizePt))));
+  const renderedLines = Math.max(1, Math.ceil(charCount / charsPerLine));
+  return Math.max(baseHeight, renderedLines * lineHeightPx + boxVertical(block.margin));
+}
+
+function estimateRenderedTableHeight(table: HwpxTableBlock): number {
+  const layoutHeight = table._hwpxLayout?.heightPx ?? 0;
+  const rowHeight = table.rows.reduce((sum, row) => sum + estimateRenderedTableRowHeight(row), 0);
+  return Math.max(1, layoutHeight, rowHeight);
+}
+
+function estimateRenderedTableRowHeight(row: HwpxTableRow): number {
+  const rowHeight = row._hwpxLayout?.heightPx ?? 0;
+  const cellHeight = row.cells.reduce((max, cell) => {
+    return Math.max(max, estimateRenderedTableCellHeight(cell));
+  }, 0);
+  return Math.max(1, rowHeight, cellHeight);
+}
+
+function estimateRenderedTableCellHeight(cell: HwpxTableCell): number {
+  const explicitHeight = cell.height ?? 0;
+  const layoutHeight = cell._hwpxLayout?.renderHeightPx
+    ?? cell._hwpxLayout?.heightPx
+    ?? cell._hwpxLayout?.sourceHeightPx
+    ?? 0;
+  const contentHeight = Math.max(
+    cell._hwpxLayout?.contentHeightPx ?? 0,
+    estimateBlocksHeight(cell.blocks)
+  ) + boxVertical(cell.padding);
+  return Math.max(1, explicitHeight, layoutHeight, contentHeight);
 }
 
 function splitTableForPagination(table: HwpxTableBlock, pageHeight: number): HwpxDocumentBlock[] {

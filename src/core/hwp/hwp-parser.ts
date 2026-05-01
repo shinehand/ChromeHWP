@@ -207,6 +207,7 @@ const TABLE_SPLIT_TOLERANCE = 1.2;
 const PAGE_COORDINATE_RESET_TOP_PX = 140;
 const PAGE_COORDINATE_RESET_MIN_PREVIOUS_BOTTOM_PX = 480;
 const PAGE_COORDINATE_RESET_OVERLAP_PX = 80;
+const POSITIONED_FLOW_CLEARANCE_PX = 48;
 const DEFAULT_PAGE_LAYOUT: PageLayout = {
   width: 794,
   height: 1123,
@@ -412,6 +413,7 @@ function paginateBlocks(blocks: readonly DocumentBlock[], layout: PageLayout, co
   let current: DocumentBlock[] = [];
   let usedHeight = 0;
   let visualBottom = 0;
+  let positionedContentBottom = 0;
   let resetAnchorBottom = 0;
 
   const flush = (): void => {
@@ -420,6 +422,7 @@ function paginateBlocks(blocks: readonly DocumentBlock[], layout: PageLayout, co
     current = [];
     usedHeight = 0;
     visualBottom = 0;
+    positionedContentBottom = 0;
     resetAnchorBottom = 0;
   };
 
@@ -429,11 +432,27 @@ function paginateBlocks(blocks: readonly DocumentBlock[], layout: PageLayout, co
     let visualMetrics = blockVisualMetrics(blockToPlace, bodyWidth, blockHeight);
     const gap = current.length ? BLOCK_GAP_PX : 0;
     const coordinateReset = shouldSplitOnPageCoordinateReset(visualMetrics, resetAnchorBottom);
-    if (current.length && (coordinateReset || usedHeight + gap + blockHeight > pageBudget * PAGE_PACK_TOLERANCE)) {
+    const flowAfterPositionedContent = shouldPlaceFlowBlockAfterPositionedContent(visualMetrics, positionedContentBottom);
+    const projectedHeight = flowAfterPositionedContent
+      ? positionedContentBottom + POSITIONED_FLOW_CLEARANCE_PX + blockHeight
+      : usedHeight + gap + blockHeight;
+    if (current.length && (coordinateReset || projectedHeight > pageBudget * PAGE_PACK_TOLERANCE)) {
       flush();
       context.stats.pageSplitCount += 1;
     }
     if (current.length) {
+      const flowAdjustedBlock = shouldPlaceFlowBlockAfterPositionedContent(visualMetrics, positionedContentBottom)
+        ? positionFlowBlockAfterPositionedContent(
+            blockToPlace,
+            positionedContentBottom + POSITIONED_FLOW_CLEARANCE_PX,
+            bodyWidth,
+            blockHeight
+          )
+        : blockToPlace;
+      if (flowAdjustedBlock !== blockToPlace) {
+        blockToPlace = flowAdjustedBlock;
+        visualMetrics = blockVisualMetrics(blockToPlace, bodyWidth, blockHeight);
+      }
       const adjustedBlock = avoidInferredTableOverlap(blockToPlace, visualMetrics, visualBottom);
       if (adjustedBlock !== blockToPlace) {
         blockToPlace = adjustedBlock;
@@ -443,6 +462,7 @@ function paginateBlocks(blocks: readonly DocumentBlock[], layout: PageLayout, co
     current.push(blockToPlace);
     usedHeight += (usedHeight > 0 ? BLOCK_GAP_PX : 0) + blockHeight;
     visualBottom = Math.max(visualBottom, blockVisualBottom(visualMetrics, usedHeight));
+    positionedContentBottom = Math.max(positionedContentBottom, blockPositionedVisualBottom(visualMetrics));
     resetAnchorBottom = Math.max(resetAnchorBottom, blockResetAnchorBottom(blockToPlace, visualMetrics));
   }
 
@@ -450,11 +470,20 @@ function paginateBlocks(blocks: readonly DocumentBlock[], layout: PageLayout, co
   return pages.length ? pages : [[]];
 }
 
+function shouldPlaceFlowBlockAfterPositionedContent(metrics: BlockVisualMetrics | null, currentPositionedBottom: number): boolean {
+  return !metrics && currentPositionedBottom > 0;
+}
+
 function shouldSplitOnPageCoordinateReset(metrics: BlockVisualMetrics | null, currentVisualBottom: number): boolean {
   if (!metrics) return false;
   if (metrics.topPx > PAGE_COORDINATE_RESET_TOP_PX) return false;
   if (currentVisualBottom < PAGE_COORDINATE_RESET_MIN_PREVIOUS_BOTTOM_PX) return false;
   return metrics.topPx + Math.min(metrics.heightPx, PAGE_COORDINATE_RESET_TOP_PX) < currentVisualBottom - PAGE_COORDINATE_RESET_OVERLAP_PX;
+}
+
+function blockPositionedVisualBottom(metrics: BlockVisualMetrics | null): number {
+  if (!metrics) return 0;
+  return metrics.topPx + metrics.heightPx;
 }
 
 function blockVisualBottom(metrics: BlockVisualMetrics | null, fallbackBottom: number): number {
@@ -490,6 +519,58 @@ function avoidInferredTableOverlap(
       }
     }
   };
+}
+
+function positionFlowBlockAfterPositionedContent(
+  block: DocumentBlock,
+  topPx: number,
+  availableWidth: number,
+  estimatedHeight: number
+): DocumentBlock {
+  const position = {
+    leftPx: 0,
+    topPx: Math.max(0, Math.round(topPx)),
+    widthPx: resolveFlowBlockWidth(block, availableWidth),
+    heightPx: Math.max(1, Math.round(estimatedHeight)),
+    source: 'hwp-flow-after-positioned'
+  };
+
+  if (block.type === 'paragraph') {
+    return {
+      ...block,
+      _hwpxLayout: {
+        ...(block._hwpxLayout ?? { heightPx: estimatedHeight }),
+        heightPx: block._hwpxLayout?.heightPx ?? estimatedHeight,
+        position
+      }
+    };
+  }
+
+  if (block.type === 'table') {
+    return {
+      ...block,
+      _hwpxLayout: {
+        ...(block._hwpxLayout ?? { heightPx: estimatedHeight }),
+        heightPx: block._hwpxLayout?.heightPx ?? estimatedHeight,
+        position
+      }
+    };
+  }
+
+  return {
+    ...block,
+    _hwpxLayout: {
+      ...(block._hwpxLayout ?? { heightPx: estimatedHeight }),
+      heightPx: block._hwpxLayout?.heightPx ?? estimatedHeight,
+      position
+    }
+  };
+}
+
+function resolveFlowBlockWidth(block: DocumentBlock, availableWidth: number): number {
+  if (block.type === 'table') return resolveEstimatedTableWidth(block, availableWidth);
+  if (block.type === 'image') return Math.max(1, Math.min(block.width ?? availableWidth, availableWidth));
+  return availableWidth;
 }
 
 function splitOversizedBlock(
