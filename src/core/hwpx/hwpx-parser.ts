@@ -1476,7 +1476,7 @@ function parseTable(node: unknown, styles: HwpxStyleContext, anchor?: HwpxParagr
   const tablePaint = styles.borderFills.get(readAttributeObject(node, 'borderFillIDRef'));
   const tableSize = firstDirectChild(node, 'sz');
   const tableWidth = hwpUnitAttributeToPx(tableSize, 'width');
-  const tableHeight = hwpUnitAttributeToPx(tableSize, 'height');
+  const tableHeight = hwpUnitAttributeToFractionalPx(tableSize, 'height');
   const tablePosition = readHwpxObjectPosition(node, {
     widthPx: tableWidth,
     heightPx: tableHeight,
@@ -1504,8 +1504,8 @@ function parseTable(node: unknown, styles: HwpxStyleContext, anchor?: HwpxParagr
       const colSpan = readPositiveIntegerAttribute(cellSpan, 'colSpan', 1);
       const rowSpan = readPositiveIntegerAttribute(cellSpan, 'rowSpan', 1);
       const width = hwpUnitAttributeToPx(cellSize, 'width');
-      const sourceHeight = hwpUnitAttributeToPx(cellSize, 'height');
-      const contentHeight = hwpUnitAttributeToPx(subList, 'textHeight');
+      const sourceHeight = hwpUnitAttributeToFractionalPx(cellSize, 'height');
+      const contentHeight = hwpUnitAttributeToFractionalPx(subList, 'textHeight');
       const nestedHeight = estimateBlocksHeight(nestedBlocks);
       const layoutHeight = Math.max(sourceHeight, contentHeight);
       const height = layoutHeight || nestedHeight;
@@ -1899,6 +1899,11 @@ function computeRowSpanAwareRowHeights(rows: readonly HwpxTableRow[]): number[] 
   const rowCount = rows.length;
   const heights = Array.from({ length: rowCount }, () => 0);
   if (!rowCount) return heights;
+  const spanningCells: Array<{
+    readonly rowIndex: number;
+    readonly rowSpan: number;
+    readonly totalHeight: number;
+  }> = [];
 
   rows.forEach((row, physicalRowIndex) => {
     row.cells.forEach((cell) => {
@@ -1906,27 +1911,47 @@ function computeRowSpanAwareRowHeights(rows: readonly HwpxTableRow[]): number[] 
       const rawRowIndex = layout?.rowIndex ?? physicalRowIndex;
       const rowIndex = Math.min(rowCount - 1, Math.max(0, rawRowIndex));
       const rowSpan = Math.max(1, Math.min(layout?.rowSpan ?? cell.rowSpan, rowCount - rowIndex));
-      const declaredHeight = Math.max(
-        layout?.sourceHeightPx ?? 0,
-        layout?.contentHeightPx ?? 0,
-        cell.height ?? 0
-      );
+      const declaredHeight = declaredCellHeight(cell);
       const totalHeight = declaredHeight > 0
         ? declaredHeight
         : estimateBlocksHeight(cell.blocks as HwpxDocumentBlock[]);
-      const perRowHeight = Math.max(1, Math.round(totalHeight / rowSpan));
-
-      for (let offset = 0; offset < rowSpan; offset += 1) {
-        const targetIndex = rowIndex + offset;
-        heights[targetIndex] = Math.max(heights[targetIndex], perRowHeight);
+      if (rowSpan > 1) {
+        spanningCells.push({ rowIndex, rowSpan, totalHeight });
+        return;
       }
+
+      heights[rowIndex] = Math.max(heights[rowIndex], totalHeight);
     });
   });
 
+  for (const cell of spanningCells) {
+    const coveredIndexes = Array.from({ length: cell.rowSpan }, (_value, offset) => cell.rowIndex + offset)
+      .filter((index) => index >= 0 && index < rowCount);
+    if (!coveredIndexes.length) continue;
+
+    const coveredHeight = coveredIndexes.reduce((sum, index) => sum + heights[index], 0);
+    const deficit = Math.max(0, cell.totalHeight - coveredHeight);
+    if (deficit <= 0) continue;
+
+    const distributed = deficit / coveredIndexes.length;
+    for (const index of coveredIndexes) {
+      heights[index] += distributed;
+    }
+  }
+
   return heights.map((height, rowIndex) => {
-    if (height > 0) return height;
+    if (height > 0) return Math.max(1, height);
     return Math.max(1, estimateBlocksHeight(rows[rowIndex]?.cells.flatMap((cell) => cell.blocks) ?? []));
   });
+}
+
+function declaredCellHeight(cell: HwpxTableCell): number {
+  const layout = cell._hwpxLayout;
+  return Math.max(
+    layout?.sourceHeightPx ?? 0,
+    layout?.contentHeightPx ?? 0,
+    cell.height ?? 0
+  );
 }
 
 function countRepeatHeaderRows(rows: readonly HwpxTableRow[], repeatHeaderRequested: boolean): number {
@@ -2163,6 +2188,11 @@ function readNonNegativeIntegerAttribute(node: unknown, name: string, fallback: 
 function hwpUnitAttributeToPx(node: unknown, name: string): number {
   const value = readNumberAttribute(node, name);
   return hwpUnitToPx(value);
+}
+
+function hwpUnitAttributeToFractionalPx(node: unknown, name: string): number {
+  const value = readNumberAttribute(node, name);
+  return value > 0 ? value / HWPUNIT_PER_PX : 0;
 }
 
 function signedHwpUnitAttributeToPx(node: unknown, name: string): number {

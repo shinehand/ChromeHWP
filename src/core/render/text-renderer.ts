@@ -80,6 +80,8 @@ export function renderDocumentToDom(document: ParsedDocument, target: HTMLElemen
     const { layout, bodyWidth } = normalizePageLayout(page.layout);
     const pageElement = documentElement('section', 'hwp-page');
     const bodyElement = documentElement('div', 'hwp-page-body');
+    const decorationBlocks: DocumentBlock[] = [];
+    const bodyBlocks: DocumentBlock[] = [];
     const context: RenderContext = {
       assetUrls,
       availableWidth: bodyWidth,
@@ -96,11 +98,24 @@ export function renderDocumentToDom(document: ParsedDocument, target: HTMLElemen
     applyPageLayout(pageElement, bodyElement, layout, bodyWidth);
 
     for (const block of page.blocks) {
-      bodyElement.append(renderBlockDom(block, withBlockRenderMode(block, context)));
+      if (isReadOnlyDecorationBlock(block)) decorationBlocks.push(block);
+      else bodyBlocks.push(block);
+    }
+
+    for (const block of bodyBlocks) {
+      bodyElement.append(renderBlockDom(block, context));
     }
     if (!bodyElement.childNodes.length) bodyElement.append(renderEmptyParagraphDom());
 
     pageElement.append(bodyElement);
+    if (decorationBlocks.length) {
+      const decorationLayer = documentElement('div', 'hwp-page-decoration-layer');
+      setReadOnlyDecorationHost(decorationLayer);
+      for (const block of decorationBlocks) {
+        decorationLayer.append(renderBlockDom(block, { ...context, locked: true }));
+      }
+      pageElement.append(decorationLayer);
+    }
     fragments.push(pageElement);
   }
 
@@ -130,12 +145,6 @@ function renderBlockDom(block: DocumentBlock, context: RenderContext): HTMLEleme
   if (block.type === 'paragraph') return renderParagraphDom(block, context);
   if (block.type === 'table') return renderTableDom(block, context);
   return renderImageDom(block, context);
-}
-
-function withBlockRenderMode(block: DocumentBlock, context: RenderContext): RenderContext {
-  return isReadOnlyDecorationBlock(block) && !context.locked
-    ? { ...context, locked: true }
-    : context;
 }
 
 function isReadOnlyDecorationBlock(block: DocumentBlock): boolean {
@@ -394,6 +403,10 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   wrapper.style.width = `${tableWidth}px`;
   wrapper.style.maxWidth = '100%';
   applyPositionedTableLayout(wrapper, layout, context);
+  if (contentKind === 'hwpx-body-container') {
+    wrapper.style.margin = '0';
+    wrapper.style.overflow = 'visible';
+  }
 
   table.dataset.nestingLevel = String(context.nestingLevel);
   table.dataset.sourceFormat = context.sourceFormat;
@@ -406,9 +419,9 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   }
   const renderHeight = layout?.renderHeightPx ?? layout?.heightPx;
   if (renderHeight && renderHeight > 0) {
-    wrapper.dataset.layoutHeight = String(Math.round(renderHeight));
-    wrapper.style.minHeight = `${Math.round(renderHeight)}px`;
-    table.style.height = `${Math.round(renderHeight)}px`;
+    wrapper.dataset.layoutHeight = formatDataNumber(renderHeight);
+    wrapper.style.minHeight = formatCssPx(renderHeight);
+    table.style.height = formatCssPx(renderHeight);
   }
   if (layout?.repeatHeaderRows) table.dataset.repeatHeaderRows = String(layout.repeatHeaderRows);
   if (block.border) table.style.border = block.border;
@@ -442,8 +455,8 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
       ?? layout?.rowHeightsPx?.[rowIndex]
       ?? 0;
     if (rowHeight > 0) {
-      rowElement.dataset.layoutHeight = String(Math.round(rowHeight));
-      rowElement.style.height = `${Math.round(rowHeight)}px`;
+      rowElement.dataset.layoutHeight = formatDataNumber(rowHeight);
+      rowElement.style.height = formatCssPx(rowHeight);
     }
     let columnOffset = 0;
     for (const cell of row.cells) {
@@ -545,14 +558,14 @@ function renderCellDom(cell: TableCell, context: RenderContext): HTMLElement {
   if (cell.colSpan > 1) cellElement.colSpan = cell.colSpan;
   if (cell.rowSpan > 1) cellElement.rowSpan = cell.rowSpan;
   const width = normalizeCssLength(cell.width, context.availableWidth);
-  const renderHeight = normalizeCssLength(cell._hwpxLayout?.renderHeightPx, MAX_CELL_HEIGHT);
+  const renderHeight = normalizeCssLengthExact(cell._hwpxLayout?.renderHeightPx, MAX_CELL_HEIGHT);
   const height = shouldApplyTableCellHeight(cell, context, renderHeight)
-    ? normalizeCssLength(cell._hwpxLayout?.renderHeightPx ?? cell.height, MAX_CELL_HEIGHT)
+    ? normalizeCssLengthExact(cell._hwpxLayout?.renderHeightPx ?? cell.height, MAX_CELL_HEIGHT)
     : 0;
   if (width) cellElement.style.width = `${width}px`;
   if (height) {
-    cellElement.dataset.layoutHeight = String(Math.round(height));
-    cellElement.style.height = `${height}px`;
+    cellElement.dataset.layoutHeight = formatDataNumber(height);
+    cellElement.style.height = formatCssPx(height);
   }
   if (cell.verticalAlign) cellElement.style.verticalAlign = cell.verticalAlign;
   if (cell.align) cellElement.style.textAlign = cell.align;
@@ -563,7 +576,7 @@ function renderCellDom(cell: TableCell, context: RenderContext): HTMLElement {
 
   const contentHost = documentElement('div', 'hwp-table-cell-content');
   if (height && shouldClipTableCellContent(cell, context, renderHeight)) {
-    contentHost.style.maxHeight = `${height}px`;
+    contentHost.style.maxHeight = formatCssPx(height);
     contentHost.style.overflow = 'hidden';
   }
 
@@ -590,6 +603,7 @@ function shouldClipTableCellContent(
 function shouldApplyTableCellHeight(cell: TableCell, context: RenderContext, renderHeight: number): boolean {
   if (renderHeight > 0) return true;
   if (context.sourceFormat === 'hwp' && cell.rowSpan > 1) return false;
+  if (context.sourceFormat === 'hwpx' && cell.rowSpan > 1) return false;
   return Boolean(cell.height);
 }
 
@@ -705,6 +719,11 @@ function applyPageLayout(pageElement: HTMLElement, bodyElement: HTMLElement, lay
   pageElement.style.setProperty('--hwp-page-width', `${layout.width}px`);
   pageElement.style.setProperty('--hwp-page-height', `${layout.height}px`);
   pageElement.style.setProperty('--hwp-page-ratio', `${layout.width} / ${layout.height}`);
+  pageElement.style.setProperty('--hwp-body-width', `${bodyWidth}px`);
+  pageElement.style.setProperty('--hwp-margin-top', `${layout.margin.top ?? 0}px`);
+  pageElement.style.setProperty('--hwp-margin-right', `${layout.margin.right ?? 0}px`);
+  pageElement.style.setProperty('--hwp-margin-bottom', `${layout.margin.bottom ?? 0}px`);
+  pageElement.style.setProperty('--hwp-margin-left', `${layout.margin.left ?? 0}px`);
   bodyElement.style.setProperty('--hwp-body-width', `${bodyWidth}px`);
   bodyElement.style.setProperty('--hwp-margin-top', `${layout.margin.top ?? 0}px`);
   bodyElement.style.setProperty('--hwp-margin-right', `${layout.margin.right ?? 0}px`);
@@ -867,6 +886,25 @@ function isTopAndBottomTextWrap(value: string | undefined): boolean {
 function normalizeCssLength(value: number | undefined, maxPx: number): number {
   const px = rawLengthToPx(value);
   return px > 0 ? clamp(px, 1, maxPx) : 0;
+}
+
+function normalizeCssLengthExact(value: number | undefined, maxPx: number): number {
+  const px = rawLengthToCssPx(value);
+  return px > 0 ? clamp(px, 1, maxPx) : 0;
+}
+
+function rawLengthToCssPx(value: number | undefined): number {
+  if (!Number.isFinite(value) || Number(value) <= 0) return 0;
+  const numeric = Number(value);
+  return numeric > 5000 ? numeric / HWPUNIT_PER_PX : numeric;
+}
+
+function formatDataNumber(value: number): string {
+  return Number.isInteger(value) ? String(value) : value.toFixed(2);
+}
+
+function formatCssPx(value: number): string {
+  return `${formatDataNumber(value)}px`;
 }
 
 function normalizeImageSize(block: ImageBlock, availableWidth: number): { readonly width: number; readonly height: number } {

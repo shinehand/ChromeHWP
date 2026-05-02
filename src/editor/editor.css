@@ -168,6 +168,16 @@ dd {
   text-rendering: geometricPrecision;
 }
 
+.hwp-page-decoration-layer {
+  box-sizing: border-box;
+  content-visibility: visible;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 5;
+}
+
 .hwp-paragraph {
   margin: 0 0 7px;
   max-width: 100%;
@@ -228,6 +238,15 @@ dd {
 
 .hwp-table-wrap-nested {
   margin: 2px 0 1px;
+}
+
+.hwp-table-wrap[data-content-kind="hwpx-body-container"] {
+  margin: 0;
+  overflow: visible;
+}
+
+.hwp-table-wrap[data-content-kind="hwpx-body-container"] .hwp-table-wrap-nested {
+  margin-top: 0;
 }
 
 .hwp-table {

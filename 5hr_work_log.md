@@ -172,3 +172,29 @@
   - `STRICT_VISUAL_FIDELITY=1 node scripts/check_fidelity_guard.mjs` passed but still reports visual advisories: pass=4, advisory=32, strict-failure=0.
 - Remaining honest state:
   - This is still not a clean visual copy. Worst current advisory pages include `incheon-2a` page 16 and `attachment-sale-notice` page 1.
+
+## 2026-05-02 00:55 KST
+
+- Continued from the interrupted run and focused on the remaining real fidelity gap rather than claiming completion.
+- HWP/HWPX renderer:
+  - Split read-only header/footer/page-number decorations out of `.hwp-page-body` into `.hwp-page-decoration-layer`.
+  - This keeps editable body content and document decorations in separate DOM layers and removed decoration overlap advisories from `verify:extension`.
+- HWPX table fidelity:
+  - Preserved fractional table/cell heights for HWPX table layout instead of rounding every row to an integer pixel.
+  - Reworked rowSpan-aware row height calculation so rowSpan cells only distribute missing height, instead of inflating every covered row.
+  - Stopped applying explicit cell height to HWPX rowSpan cells unless a continuation fragment has a render height.
+  - Treated `hwpx-body-container` as a body layout container in renderer/CSS with zero wrapper margin and visible overflow.
+  - Added CSS coverage for the actual `.hwp-table .hwp-paragraph` DOM class used by the renderer.
+- Tested and rejected a separate HWPX header-inset experiment:
+  - It moved page 16 body content closer by DOM coordinates but worsened real visual diff from `32.345` to `37.289`.
+  - Reverted that experiment and kept only the row-height/body-container fixes.
+- Verification:
+  - `npm run typecheck` passed.
+  - `npm run build` passed.
+  - `STRICT_PAGE_EXPECTATIONS=1 npm run verify:extension` passed with `oraclePages=0`, `canvasPages=0`, `topLevelOverlaps=0`, and `decorationTopLevelOverlaps=0`.
+  - `STRICT_VISUAL_FIDELITY=1 npm run verify:visual` passed with `strictFailures: []`.
+  - `STRICT_VISUAL_FIDELITY=1 node scripts/check_fidelity_guard.mjs` passed but still reports visual advisories: pass=3, advisory=33, strict-failure=0.
+- Current measured improvement:
+  - `incheon-2a.hwpx` page 16 improved from the prior committed state: raw diff `36.123 -> 32.345`, layout diff `22.531 -> 19.307`.
+- Remaining honest state:
+  - Still not a clean copy. The strict guard passes, but visual advisory pages remain and need further parser/layout work.
