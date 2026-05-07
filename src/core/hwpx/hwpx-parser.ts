@@ -703,6 +703,10 @@ function countBlocks(block: DocumentBlock, type: DocumentBlock['type']): number 
 }
 
 function paginateSectionBlocks(blocks: readonly HwpxDocumentBlock[], pageProfile: HwpxPageProfile): DocumentPage[] {
+  if (hasTopLevelExplicitPageBreaks(blocks)) {
+    return paginateExplicitPageBreakBlocks(blocks, pageProfile);
+  }
+
   const pageHeight = Math.max(240, pageProfile.contentHeightPx);
   const expandedBlocks = blocks.flatMap((block) => {
     return block.type === 'table' && !block._hwpxLayout?.breakBefore
@@ -741,6 +745,38 @@ function paginateSectionBlocks(blocks: readonly HwpxDocumentBlock[], pageProfile
     current.push(blockToPlace);
     currentHeight += Math.min(blockHeight, pageHeight);
     currentRenderedBottom = updateRenderedFlowBottom(currentRenderedBottom, blockToPlace);
+    if (layout?.breakAfter && current.length) flush();
+  }
+
+  if (current.length || !pages.length) flush();
+  return pages;
+}
+
+function hasTopLevelExplicitPageBreaks(blocks: readonly HwpxDocumentBlock[]): boolean {
+  return blocks.some((block, index) => {
+    const pageBreak = block._hwpxLayout?.pageBreak;
+    return index > 0 && Boolean(block._hwpxLayout?.breakBefore || (pageBreak && isBreakEnabled(pageBreak)));
+  });
+}
+
+function paginateExplicitPageBreakBlocks(blocks: readonly HwpxDocumentBlock[], pageProfile: HwpxPageProfile): DocumentPage[] {
+  const pages: DocumentPage[] = [];
+  let current: HwpxDocumentBlock[] = [];
+
+  const flush = (): void => {
+    pages.push({
+      index: pages.length,
+      blocks: current,
+      layout: pageProfile.layout
+    });
+    current = [];
+  };
+
+  for (const block of blocks) {
+    const layout = block._hwpxLayout;
+    const pageBreak = layout?.pageBreak;
+    if ((layout?.breakBefore || (pageBreak && isBreakEnabled(pageBreak))) && current.length) flush();
+    current.push(block);
     if (layout?.breakAfter && current.length) flush();
   }
 
