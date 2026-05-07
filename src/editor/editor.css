@@ -1002,6 +1002,18 @@ dd {
   display: none;
 }
 
+.hwp-page[data-document-layout="lh-sale-notice"] .hwp-table-wrap[data-readonly-decoration="true"][data-layout-source="hwpx-header-hwp-control"],
+.hwp-page[data-document-layout="lh-sale-notice"] .hwp-table-wrap[data-readonly-decoration="true"][data-layout-source="hwpx-header-hwp-control"] .hwp-table,
+.hwp-page[data-document-layout="lh-sale-notice"] .hwp-table-wrap[data-readonly-decoration="true"][data-layout-source="hwpx-header-hwp-control"] .hwp-table-cell,
+.hwp-page[data-document-layout="lh-sale-notice"] .hwp-table-wrap[data-readonly-decoration="true"][data-layout-source="hwpx-header-hwp-control"] td {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+.hwp-page[data-document-layout="lh-sale-notice"] .hwp-table-wrap[data-readonly-decoration="true"][data-layout-source="hwpx-header-hwp-control"] .hwp-paragraph-empty {
+  display: none;
+}
+
 @media (max-width: 840px) {
   .topbar {
     align-items: flex-start;
