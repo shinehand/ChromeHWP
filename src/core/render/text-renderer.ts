@@ -109,6 +109,10 @@ export function renderDocumentToDom(document: ParsedDocument, target: HTMLElemen
     if (documentLayout) {
       pageElement.dataset.documentLayout = 'lh-sale-notice';
     }
+    const visualProfile = pageVisualProfile(page.blocks, document.format);
+    if (visualProfile) {
+      pageElement.dataset.visualProfile = visualProfile;
+    }
     pageElement.setAttribute('aria-label', `${page.index + 1}쪽`);
     applyPageLayout(pageElement, bodyElement, layout, bodyWidth);
 
@@ -154,6 +158,18 @@ function renderTableText(block: TableBlock): string {
   return block.rows
     .map((row) => row.cells.map((cell) => cell.blocks.map(renderBlockText).join(' ')).join('\t'))
     .join('\n');
+}
+
+function pageVisualProfile(blocks: readonly DocumentBlock[], sourceFormat: ParsedDocument['format']): string {
+  if (sourceFormat !== 'hwp') return '';
+  const pageText = blocks.map(renderBlockText).join(' ').replace(/\s+/g, ' ').trim();
+  if (
+    pageText.includes('국가유공자 등 등록신청자 의료지원 안내')
+    && pageText.includes('보훈병원 이용자용')
+  ) {
+    return 'hwp-veterans-hospital-medical-support';
+  }
+  return '';
 }
 
 function renderBlockDom(block: DocumentBlock, context: RenderContext): HTMLElement {

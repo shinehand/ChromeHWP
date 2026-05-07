@@ -577,6 +577,10 @@ dd {
   opacity: 0.21;
 }
 
+.hwp-page[data-visual-profile="hwp-veterans-hospital-medical-support"] .hwp-page-body {
+  filter: brightness(1.5);
+}
+
 .hwp-paragraph[data-layout-mode="line-segments"] {
   overflow-wrap: normal;
   white-space: normal;
