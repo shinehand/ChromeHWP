@@ -86,6 +86,8 @@ declare module '../document-model' {
     readonly _hwpxLayout?: {
       readonly heightPx: number;
       readonly source?: string;
+      readonly flowWithText?: boolean;
+      readonly allowOverlap?: boolean;
       readonly position?: {
         readonly leftPx: number;
         readonly topPx: number;

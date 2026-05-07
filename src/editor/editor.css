@@ -753,6 +753,19 @@ dd {
   min-height: 1.2em;
 }
 
+.hwp-table[data-content-kind="lh-sale-notice-supply-summary"] > tbody > tr > .hwp-table-cell:last-child {
+  border-left: 2px solid #e1261c !important;
+  border-right: 2px solid #e1261c !important;
+}
+
+.hwp-table[data-content-kind="lh-sale-notice-supply-summary"] > tbody > tr:first-child > .hwp-table-cell:last-child {
+  border-top: 2px solid #e1261c !important;
+}
+
+.hwp-table[data-content-kind="lh-sale-notice-supply-summary"] > tbody > tr:last-child > .hwp-table-cell:last-child {
+  border-bottom: 2px solid #e1261c !important;
+}
+
 .hwp-table[data-layout="lh-sale-notice-primary"] {
   border-color: #1f1f1f;
 }
@@ -879,6 +892,10 @@ dd {
 .hwp-image[data-inline="true"] img {
   display: inline-block;
   vertical-align: middle;
+}
+
+.hwp-page[data-document-layout="lh-sale-notice"] > .hwp-page-body > .hwp-image[data-suppressed-anchor-image="true"] {
+  display: none;
 }
 
 @media (max-width: 840px) {

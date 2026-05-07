@@ -889,6 +889,12 @@ function tableContentKind(block: TableBlock, context: RenderContext): string {
   if (context.sourceFormat === 'hwpx' && context.nestingLevel > 0 && isHwpxEligibilityHeadingTable(block)) {
     return 'hwpx-eligibility-heading';
   }
+  if (context.sourceFormat === 'hwp'
+    && context.documentLayout === 'lh-sale-notice'
+    && context.nestingLevel === 0
+    && isLhSaleNoticeSupplySummaryTable(block)) {
+    return 'lh-sale-notice-supply-summary';
+  }
   if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxGeneralNoticeSectionTable(block)) {
     return 'hwpx-general-notice-section';
   }
@@ -905,6 +911,16 @@ function tableContentKind(block: TableBlock, context: RenderContext): string {
     return 'hwpx-body-container';
   }
   return '';
+}
+
+function isLhSaleNoticeSupplySummaryTable(block: TableBlock): boolean {
+  if (block.rows.length < 4 || tableColumnCount(block) < 5) return false;
+  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
+  return text.includes('지역')
+    && text.includes('단지코드')
+    && text.includes('사용승인연도')
+    && text.includes('건설호수')
+    && text.includes('금회공급호수');
 }
 
 function isHwpxPerformanceGradeTable(block: TableBlock): boolean {
@@ -1009,6 +1025,8 @@ function renderImageDom(block: ImageBlock, context: RenderContext): HTMLElement 
   const normalizedSize = normalizeImageSize(block, context.availableWidth);
   figure.contentEditable = 'false';
   figure.dataset.inline = block.inline ? 'true' : 'false';
+  if (block._hwpxLayout?.source) figure.dataset.layoutSource = block._hwpxLayout.source;
+  if (shouldSuppressLhSaleNoticeAnchorImage(block, context)) figure.dataset.suppressedAnchorImage = 'true';
   if (context.locked) figure.dataset.readonlyDecoration = 'true';
 
   if (renderedAsset) {
@@ -1029,6 +1047,14 @@ function renderImageDom(block: ImageBlock, context: RenderContext): HTMLElement 
 
   applyPositionedImageLayout(figure, block, block._hwpxLayout, context, normalizedSize);
   return figure;
+}
+
+function shouldSuppressLhSaleNoticeAnchorImage(block: ImageBlock, context: RenderContext): boolean {
+  return context.sourceFormat === 'hwp'
+    && context.documentLayout === 'lh-sale-notice'
+    && context.nestingLevel === 0
+    && block._hwpxLayout?.source === 'hwp-floating-inline-anchor-image'
+    && block._hwpxLayout.allowOverlap === true;
 }
 
 function applyPositionedImageLayout(

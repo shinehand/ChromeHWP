@@ -75,6 +75,10 @@ interface HwpParseContext {
   readonly nonBodyControls: HwpNonBodyControlSummary[];
 }
 
+interface HwpFlowScope {
+  readonly topLevelBody: boolean;
+}
+
 interface ParsedRange {
   readonly blocks: DocumentBlock[];
   readonly nextIndex: number;
@@ -126,6 +130,8 @@ interface HwpObjectInfo {
   readonly zIndex: number;
   readonly description: string;
   readonly inline: boolean;
+  readonly flowWithText: boolean;
+  readonly allowOverlap: boolean;
   readonly textWrap: string;
 }
 
@@ -443,7 +449,7 @@ function parseSection(
     context.stats.pageNumParaCount += records.filter((record) => record.tagId === HWP_TAG.PAGE_NUM_PARA).length;
   }
   const artifacts = emptySectionArtifacts();
-  const parsed = parseBlockRange(records, 0, null, context, artifacts);
+  const parsed = parseBlockRange(records, 0, null, context, artifacts, { topLevelBody: true });
   const blocks = parsed.blocks;
   const headerDecorations = buildHeaderFooterDecorations(artifacts.headerAreas, 'header', layout ?? DEFAULT_PAGE_LAYOUT, context);
   const footerDecorations = buildHeaderFooterDecorations(artifacts.footerAreas, 'footer', layout ?? DEFAULT_PAGE_LAYOUT, context);
@@ -1044,14 +1050,16 @@ function parseBlockRange(
   startIndex: number,
   stopLevel: number | null,
   context: HwpParseContext,
-  artifacts?: HwpSectionArtifacts
+  artifacts?: HwpSectionArtifacts,
+  scope: HwpFlowScope = { topLevelBody: false }
 ): ParsedRange {
   return parseFlowRecords(
     records,
     startIndex,
     context,
     (record) => stopLevel !== null && record.level <= stopLevel,
-    artifacts
+    artifacts,
+    scope
   );
 }
 
@@ -1060,7 +1068,8 @@ function parseFlowRecords(
   startIndex: number,
   context: HwpParseContext,
   shouldStop: (record: HwpRecord, index: number) => boolean,
-  artifacts?: HwpSectionArtifacts
+  artifacts?: HwpSectionArtifacts,
+  scope: HwpFlowScope = { topLevelBody: false }
 ): ParsedRange {
   const blocks: DocumentBlock[] = [];
   let currentParagraph: HwpParagraphDraft | null = null;
@@ -1114,7 +1123,7 @@ function parseFlowRecords(
 
     if (record.tagId === HWP_TAG.CTRL_HEADER) {
       flush();
-      const parsed = parseControlSubtree(records, index, context, artifacts);
+      const parsed = parseControlSubtree(records, index, context, artifacts, scope);
       blocks.push(...parsed.blocks);
       index = parsed.nextIndex;
       continue;
@@ -1123,7 +1132,7 @@ function parseFlowRecords(
     if (record.tagId === HWP_TAG.LIST_HEADER) {
       flush();
       context.stats.listHeaderCount += 1;
-      const parsed = parseListContent(records, index, record.level - 1, context, artifacts);
+      const parsed = parseListContent(records, index, record.level - 1, context, artifacts, scope);
       blocks.push(...parsed.blocks);
       index = parsed.nextIndex;
       continue;
@@ -1156,7 +1165,8 @@ function parseControlSubtree(
   records: HwpRecord[],
   controlIndex: number,
   context: HwpParseContext,
-  artifacts?: HwpSectionArtifacts
+  artifacts?: HwpSectionArtifacts,
+  scope: HwpFlowScope = { topLevelBody: false }
 ): ParsedRange {
   const control = records[controlIndex];
   const controlId = readControlId(control.body);
@@ -1170,7 +1180,7 @@ function parseControlSubtree(
   }
 
   if (controlId === 'gso ') {
-    return parseGsoControl(records, controlIndex + 1, control.level, control.body, context, artifacts);
+    return parseGsoControl(records, controlIndex + 1, control.level, control.body, context, artifacts, scope);
   }
 
   if (controlId === 'head' || controlId === 'foot') {
@@ -1204,7 +1214,7 @@ function parseControlSubtree(
     return { blocks: [], nextIndex };
   }
 
-  return parseBlockRange(records, controlIndex + 1, control.level, context, artifacts);
+  return parseBlockRange(records, controlIndex + 1, control.level, context, artifacts, scope);
 }
 
 function parseGsoControl(
@@ -1213,7 +1223,8 @@ function parseGsoControl(
   controlLevel: number,
   controlBody: Uint8Array,
   context: HwpParseContext,
-  artifacts?: HwpSectionArtifacts
+  artifacts?: HwpSectionArtifacts,
+  scope: HwpFlowScope = { topLevelBody: false }
 ): ParsedRange {
   const objectInfo = parseObjectInfo(controlBody);
   const nestedBlocks: DocumentBlock[] = [];
@@ -1249,7 +1260,7 @@ function parseGsoControl(
   }
 
   if (pictureBody) {
-    const image = parsePictureBlock(pictureBody, objectInfo, context);
+    const image = parsePictureBlock(pictureBody, objectInfo, context, scope);
     return {
       blocks: [image ?? createParagraphBlock(objectInfo.description || '그림 개체', context)],
       nextIndex: index
@@ -1356,7 +1367,8 @@ function parseListContent(
   listHeaderIndex: number,
   parentLevel: number,
   context: HwpParseContext,
-  artifacts?: HwpSectionArtifacts
+  artifacts?: HwpSectionArtifacts,
+  scope: HwpFlowScope = { topLevelBody: false }
 ): ParsedRange {
   const listHeader = records[listHeaderIndex];
   return parseFlowRecords(
@@ -1365,7 +1377,8 @@ function parseListContent(
     context,
     (record, index) => record.level <= parentLevel
       || (index > listHeaderIndex + 1 && record.level === listHeader.level && record.tagId === HWP_TAG.LIST_HEADER),
-    artifacts
+    artifacts,
+    scope
   );
 }
 
@@ -1597,6 +1610,8 @@ function parseObjectInfo(body: Uint8Array): HwpObjectInfo {
     zIndex: body.length >= 28 ? readInt32(body, 24) : 0,
     description: decodeUtf16String(body, 46, descLen),
     inline: Boolean(attr & 1),
+    flowWithText: Boolean((attr >> 13) & 0x1),
+    allowOverlap: Boolean((attr >> 14) & 0x1),
     textWrap: hwpObjectTextWrap((attr >> 21) & 0x7)
   };
 }
@@ -1612,7 +1627,12 @@ function hwpObjectTextWrap(code = 0): string {
   ][Number(code) || 0] || 'top-and-bottom';
 }
 
-function parsePictureBlock(body: Uint8Array, objectInfo: HwpObjectInfo | null, context: HwpParseContext): ImageBlock | null {
+function parsePictureBlock(
+  body: Uint8Array,
+  objectInfo: HwpObjectInfo | null,
+  context: HwpParseContext,
+  scope: HwpFlowScope = { topLevelBody: false }
+): ImageBlock | null {
   context.stats.pictureRecordCount += 1;
   const asset = context.imageResolver.resolve(body);
   if (!asset) {
@@ -1650,6 +1670,14 @@ function parsePictureBlock(body: Uint8Array, objectInfo: HwpObjectInfo | null, c
         }
       }
     : undefined;
+  const floatingInlineAnchor = objectInfo
+    && scope.topLevelBody
+    && objectInfo.inline
+    && objectInfo.flowWithText
+    && objectInfo.allowOverlap
+    && objectInfo.zIndex > 0
+    && objectInfo.horizontalOffset === 0
+    && objectInfo.verticalOffset === 0;
   return {
     type: 'image',
     assetId: asset.id,
@@ -1657,7 +1685,18 @@ function parsePictureBlock(body: Uint8Array, objectInfo: HwpObjectInfo | null, c
     ...(width > 0 ? { width } : {}),
     ...(height > 0 ? { height } : {}),
     ...(objectInfo ? { inline: objectInfo.inline } : {}),
-    ...(positioned ? { _hwpxLayout: positioned } : {})
+    ...(positioned
+      ? { _hwpxLayout: positioned }
+      : floatingInlineAnchor
+        ? {
+            _hwpxLayout: {
+              heightPx: height,
+              source: 'hwp-floating-inline-anchor-image',
+              flowWithText: objectInfo.flowWithText,
+              allowOverlap: objectInfo.allowOverlap
+            }
+          }
+        : {})
   };
 }
 
