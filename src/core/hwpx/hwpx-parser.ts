@@ -2050,7 +2050,7 @@ function readParagraphLineMetrics(node: unknown): HwpxParagraphLineMetrics {
         horizontalPosition: readNumberAttribute(segmentNode, 'horzpos'),
         horizontalSize: readNumberAttribute(segmentNode, 'horzsize'),
         flags: readNumberAttribute(segmentNode, 'flags'),
-        heightPx: hwpUnitToPx(heightHwpUnit)
+        heightPx: hwpxLineSegmentHeightToPx(heightHwpUnit)
       };
       return segment;
     })
@@ -2504,6 +2504,10 @@ function signedHwpUnitAttributeToPx(node: unknown, name: string): number {
 
 function hwpUnitToPx(value: number): number {
   return value > 0 ? Math.round(value / HWPUNIT_PER_PX) : 0;
+}
+
+function hwpxLineSegmentHeightToPx(value: number): number {
+  return value > 0 ? Math.max(1, Math.round((value / HWPUNIT_PER_PX) * 0.97)) : 0;
 }
 
 function normalizeSigned32(value: number): number {
