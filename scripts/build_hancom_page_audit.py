@@ -193,7 +193,7 @@ def detect_page_rects(image):
     return detect_page_bands(image)
 
 
-def crop_hancom_page(image, target_band):
+def crop_hancom_page(image, target_band, dark_row_run_min=3):
     bands = normalize_page_rects(image, detect_page_rects(image), target_band)
     # At 50% zoom Hancom can show two pages. The capture manifest tells us
     # whether the target is the first visible page or the final visible page.
@@ -220,7 +220,7 @@ def crop_hancom_page(image, target_band):
         bottom = min(image.height, top + expected_height)
     if bottom <= top + 120:
         bottom = image.height
-    return trim_hancom_page_shadow(image.crop((left, top, right + 1, bottom)))
+    return trim_hancom_page_shadow(image.crop((left, top, right + 1, bottom)), dark_row_run_min)
 
 
 def normalize_page_rects(image, rects, target_band):
@@ -314,7 +314,7 @@ def cluster_page_bands(bands):
     return clusters
 
 
-def trim_hancom_page_shadow(image):
+def trim_hancom_page_shadow(image, dark_row_run_min=3):
     width, height = image.size
     pixels = image.load()
 
@@ -348,11 +348,11 @@ def trim_hancom_page_shadow(image):
         bottom -= 1
 
     if right - left < width * 0.65 or bottom - top < height * 0.65:
-        return remove_bottom_dark_band(image)
-    return remove_bottom_dark_band(image.crop((left, top, right + 1, bottom + 1)))
+        return remove_bottom_dark_band(image, dark_row_run_min)
+    return remove_bottom_dark_band(image.crop((left, top, right + 1, bottom + 1)), dark_row_run_min)
 
 
-def remove_bottom_dark_band(image):
+def remove_bottom_dark_band(image, dark_row_run_min=3):
     width, height = image.size
     pixels = image.load()
     cut_y = height
@@ -367,13 +367,13 @@ def remove_bottom_dark_band(image):
         if dark >= width * 0.35:
             dark_run += 1
             cut_y = y
-        elif dark_run >= 3:
+        elif dark_run >= dark_row_run_min:
             break
         else:
             dark_run = 0
             cut_y = height
 
-    if dark_run >= 3 and cut_y > height * 0.78:
+    if dark_run >= dark_row_run_min and cut_y > height * 0.78:
         return image.crop((0, 0, width, cut_y))
     return image
 
@@ -610,7 +610,8 @@ def build_report(manifest, output_dir, target_width):
             try:
                 hancom_raw = Image.open(item["hancomScreenshot"]).convert("RGB")
                 chrome_page = Image.open(item["chromePage"]).convert("RGB")
-                hancom_page = crop_hancom_page(hancom_raw, item["targetBand"])
+                dark_row_run_min = 2 if doc.get("filename", "").lower().endswith(".hwpx") else 3
+                hancom_page = crop_hancom_page(hancom_raw, item["targetBand"], dark_row_run_min)
                 hancom_crop_path = doc_dir / f"hancom-crop-page-{page_index + 1:03d}.png"
                 hancom_crop_path.parent.mkdir(parents=True, exist_ok=True)
                 hancom_page.save(hancom_crop_path)
