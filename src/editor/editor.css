@@ -840,7 +840,7 @@ dd {
 
 .hwp-table-wrap[data-content-kind="lh-sale-notice-price-detail"][data-layout-position="absolute"] {
   overflow: visible;
-  transform: translateY(40px);
+  transform: translateY(70px);
 }
 
 .hwp-table-wrap[data-content-kind="lh-sale-notice-price-detail"][data-layout-position="absolute"]::before {
