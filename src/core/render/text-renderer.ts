@@ -23,6 +23,7 @@ interface RenderContext {
   readonly pageWidth: number;
   readonly nestingLevel: number;
   readonly sourceFormat: ParsedDocument['format'];
+  readonly documentLayout?: string;
   readonly locked?: boolean;
 }
 
@@ -87,17 +88,24 @@ export function renderDocumentToDom(document: ParsedDocument, target: HTMLElemen
     const bodyElement = documentElement('div', 'hwp-page-body');
     const decorationBlocks: DocumentBlock[] = [];
     const bodyBlocks: DocumentBlock[] = [];
-    const context: RenderContext = {
+    const baseContext: RenderContext = {
       assetUrls,
       availableWidth: bodyWidth,
       pageWidth: layout.width,
       nestingLevel: 0,
       sourceFormat: document.format
     };
+    const documentLayout = page.blocks.some((block) => {
+      return block.type === 'table' && isLhSaleNoticePrimaryTable(block, baseContext);
+    }) ? 'lh-sale-notice' : '';
+    const context: RenderContext = {
+      ...baseContext,
+      ...(documentLayout ? { documentLayout } : {})
+    };
 
     pageElement.dataset.pageIndex = String(page.index);
     pageElement.dataset.sourceFormat = document.format;
-    if (page.blocks.some((block) => block.type === 'table' && isLhSaleNoticePrimaryTable(block, context))) {
+    if (documentLayout) {
       pageElement.dataset.documentLayout = 'lh-sale-notice';
     }
     pageElement.setAttribute('aria-label', `${page.index + 1}쪽`);
@@ -249,7 +257,7 @@ function applyHwpParagraphPosition(
     const signedOffset = shouldPreserveSignedPosition(position.source);
     paragraph.dataset.layoutPosition = 'absolute';
     paragraph.style.position = 'absolute';
-    paragraph.style.top = cssPagePosition('--hwp-margin-top', Math.round(position.topPx), signedOffset);
+    paragraph.style.top = cssPagePosition(topLevelPositionTopMarginVariable(position, context), Math.round(position.topPx), signedOffset);
     paragraph.style.left = cssPagePosition('--hwp-margin-left', Math.round(position.leftPx), signedOffset);
     paragraph.style.margin = '0';
     if (position.widthPx && position.widthPx > 0) {
@@ -573,7 +581,7 @@ function applyPositionedTableLayout(
     return;
   }
   const signedOffset = shouldPreserveSignedPosition(position.source);
-  const topMarginVariable = topLevelTableTopMarginVariable(position, context);
+  const topMarginVariable = topLevelPositionTopMarginVariable(position, context);
   wrapper.dataset.layoutPosition = 'absolute';
   if (position.source) wrapper.dataset.layoutSource = position.source;
   wrapper.style.position = 'absolute';
@@ -587,11 +595,25 @@ function applyPositionedTableLayout(
   if (position.zIndex) wrapper.style.zIndex = String(position.zIndex);
 }
 
-function topLevelTableTopMarginVariable(position: TablePositionLayout, context: RenderContext): string {
+function topLevelPositionTopMarginVariable(position: TablePositionLayout | ImageLayout['position'], context: RenderContext): string {
+  if (!position) return '--hwp-margin-top';
+  const source = position?.source;
+  if (
+    context.sourceFormat === 'hwp'
+    && context.documentLayout === 'lh-sale-notice'
+    && (
+      source === 'hwp-table-line-seg-inferred'
+      || source === 'hwp-flow-after-positioned'
+      || source === 'hwp-object-common'
+      || source === 'hwp-picture-object-common'
+    )
+  ) {
+    return '--hwp-content-top';
+  }
   if (
     context.sourceFormat === 'hwp'
     && context.pageWidth <= 900
-    && (position.source === 'hwp-table-line-seg-inferred' || position.source === 'hwp-object-common')
+    && (source === 'hwp-table-line-seg-inferred' || source === 'hwp-object-common')
     && Math.round(position.topPx) <= 8
   ) {
     return '--hwp-content-top';
@@ -1028,7 +1050,7 @@ function applyPositionedImageLayout(
     const signedOffset = shouldPreserveSignedPosition(position.source);
     figure.style.position = 'absolute';
     figure.style.left = cssPagePosition('--hwp-margin-left', Math.round(position.leftPx), signedOffset);
-    figure.style.top = cssPagePosition('--hwp-margin-top', Math.round(position.topPx), signedOffset);
+    figure.style.top = cssPagePosition(topLevelPositionTopMarginVariable(position, context), Math.round(position.topPx), signedOffset);
     figure.style.margin = '0';
     figure.style.maxWidth = 'none';
     const width = position.widthPx && position.widthPx > 0 ? position.widthPx : size.width;

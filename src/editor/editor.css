@@ -774,6 +774,15 @@ dd {
   position: relative;
 }
 
+.hwp-table[data-layout="lh-sale-notice-primary"] .hwp-table-cell[data-empty="true"] {
+  min-height: 0;
+}
+
+.hwp-table[data-layout="lh-sale-notice-primary"] .hwp-table-cell[data-empty="true"] .hwp-paragraph-empty {
+  line-height: 0;
+  min-height: 0;
+}
+
 .hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child::before {
   content: "살고 싶은 집과 도시로 국민의 희망을 가꾸는 기업";
   color: #67a80f;
