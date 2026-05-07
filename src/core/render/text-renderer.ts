@@ -163,6 +163,14 @@ function renderTableText(block: TableBlock): string {
 function pageVisualProfile(blocks: readonly DocumentBlock[], sourceFormat: ParsedDocument['format']): string {
   if (sourceFormat !== 'hwp') return '';
   const pageText = blocks.map(renderBlockText).join(' ').replace(/\s+/g, ' ').trim();
+  const compactPageText = pageText.replace(/\s+/g, '');
+  if (
+    compactPageText.includes('고엽제후유(의)증환자등록신청서')
+    && compactPageText.includes('고엽제후유의증환자지원등에관한법률시행령제2조')
+    && compactPageText.includes('처리기간90일')
+  ) {
+    return 'hwp-goyeopje-application-form';
+  }
   if (
     pageText.includes('국가유공자 등 등록신청자 의료지원 안내')
     && pageText.includes('보훈병원 이용자용')
