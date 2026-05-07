@@ -24,6 +24,7 @@ interface RenderContext {
   readonly nestingLevel: number;
   readonly sourceFormat: ParsedDocument['format'];
   readonly documentLayout?: string;
+  readonly tableLayout?: string;
   readonly locked?: boolean;
 }
 
@@ -534,7 +535,8 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   const childContext: RenderContext = {
     ...context,
     availableWidth: tableWidth,
-    nestingLevel: context.nestingLevel + 1
+    nestingLevel: context.nestingLevel + 1,
+    ...(tableLayout ? { tableLayout } : {})
   };
 
   for (const [rowIndex, row] of rows.entries()) {
@@ -796,6 +798,7 @@ function hwpCellParagraphSourceLineBox(
     context.sourceFormat !== 'hwp'
     || context.pageWidth <= 900
     || context.nestingLevel <= 0
+    || context.tableLayout === 'lh-sale-notice-primary'
     || block.type !== 'paragraph'
   ) {
     return undefined;
