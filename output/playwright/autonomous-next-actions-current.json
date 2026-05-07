@@ -1,0 +1,288 @@
+{
+  "generatedAt": "2026-05-07T14:18:34.931Z",
+  "gateState": {
+    "strictVisualGeneratedAt": "2026-05-07T14:17:55.234Z",
+    "strictFailures": 0,
+    "advisoryPages": 22,
+    "saleNotice": {
+      "verdictCounts": {
+        "layout-review": 1,
+        "review": 3
+      },
+      "averageDiff": 26.48122764510423,
+      "maxDiff": 32.5563082437276,
+      "worst": {
+        "page": 1,
+        "verdict": "layout-review",
+        "diff": 32.5563082437276,
+        "blurDiff": 27.959493836873854,
+        "layoutDiff": 29.61450131233596,
+        "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/compare/page-001-compare.png"
+      }
+    },
+    "incheon2a": {
+      "verdictCounts": {
+        "review": 9,
+        "close": 9
+      },
+      "averageDiff": 20.34486314835759,
+      "maxDiff": 29.74284875569576,
+      "worst": [
+        {
+          "page": 16,
+          "verdict": "review",
+          "diff": 29.74284875569576,
+          "blurDiff": 28.61846915527515,
+          "layoutDiff": 42.81941705018622,
+          "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/compare/page-016-compare.png"
+        },
+        {
+          "page": 17,
+          "verdict": "review",
+          "diff": 27.304466351209253,
+          "blurDiff": 24.99982474588153,
+          "layoutDiff": 34.27733946964715,
+          "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/compare/page-017-compare.png"
+        },
+        {
+          "page": 3,
+          "verdict": "review",
+          "diff": 26.514016824395373,
+          "blurDiff": 25.406755169996494,
+          "layoutDiff": 45.313390313390315,
+          "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/compare/page-003-compare.png"
+        }
+      ]
+    }
+  },
+  "nextBestTasks": [
+    {
+      "id": "CHWP-SALE-ROW5-SOURCE-GEOMETRY",
+      "priority": 1,
+      "target": "attachment-sale-notice.hwp page 1 table 0 row 5",
+      "evidence": {
+        "rowHeight": 59961,
+        "textPreview": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를",
+        "oversizedControlAnchor": {
+          "table": 0,
+          "row": 5,
+          "cell": 0,
+          "paragraph": 1,
+          "segIndex": 1,
+          "height": 8974,
+          "y": 7240,
+          "textHeight": 8974,
+          "baseline": 7628,
+          "chpos": 40,
+          "hasTableControl": true,
+          "controls": [
+            {
+              "kind": "lineBreak",
+              "controlKind": "",
+              "controlId": "",
+              "offset": 39
+            },
+            {
+              "kind": "extendedControl",
+              "controlKind": "table",
+              "controlId": "tbl ",
+              "offset": 40
+            },
+            {
+              "kind": "paragraphBreak",
+              "controlKind": "",
+              "controlId": "",
+              "offset": 40
+            }
+          ],
+          "textPreview": "■ 선착순 동·호지정 방식으로 공급하며, 주요 일정은 다음과 같습니다.",
+          "tablePreview": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하여 정확하지 않은 정보 제공으로 청약 알 려 드 립 니 다 ■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공"
+        },
+        "focusedDiagnostic": "output/playwright/attachment-sale-notice-row5-source-geometry-current.json",
+        "rowHeightMatch": -0.48,
+        "conclusion": [
+          "The renderer row height (799px) closely matches source row height (799.48px), so row-level height conversion is not the main mismatch.",
+          "The nested schedule table itself is three rows with source heights 2046/3323/3323 units (~27.28/44.31/44.31px, total ~115.91px).",
+          "Paragraph 1 has a table-control anchor line segment at y=7240/96.53px, height=8974/119.65px, only ~3.75px taller than the nested table rows; next probes should focus on anchor/table baseline, margins, and border-box placement inside the row.",
+          "Avoid outer row padding, whole-page movement, or global ink suppression; row height and nested table source height are already internally consistent."
+        ],
+        "nestedScheduleTable": {
+          "rows": 3,
+          "cols": 3,
+          "rowHeights": [
+            2046,
+            3323,
+            3323
+          ],
+          "totalRowHeightPx": 115.89333333333335,
+          "anchorVsNestedTableHeightPx": 3.76
+        },
+        "sharedSignal": "signals.parsed.duplicateNestedTableAnchorCandidates",
+        "sharedCandidates": {
+          "saleNotice": {
+            "table": 0,
+            "row": 5,
+            "cell": 0,
+            "paragraph": 1,
+            "nestedParagraph": 2,
+            "anchorHeight": 8974,
+            "nestedHeight": 8692,
+            "anchorHeightPx": 119.65,
+            "nestedHeightPx": 115.89,
+            "deltaPx": 3.76,
+            "anchorY": 7240,
+            "anchorChpos": 40,
+            "nestedRows": 3,
+            "nestedCols": 3,
+            "nestedRowHeights": [
+              2046,
+              3323,
+              3323
+            ],
+            "textPreview": "■ 선착순 동·호지정 방식으로 공급하며, 주요 일정은 다음과 같습니다.",
+            "nestedTextPreview": "공 고 사 전 주 택 개 방 동·호지정 및 계약체결 2025. 12. 30(화) 2026. 1. 13(화) 10시 ~ 16시 2026. 1. 15(목) ~ 공고 중단 시까지 매주 목요일 13:30 ~ 16:00 LH 청약플러스 홈페이지(apply.lh.or.kr) 및 모바일앱 2026. 1. 8(목) 16시까지 사전 열람",
+            "tablePreview": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하여 정확하지 않은 정보 제공으로 청약 알 려 드 립 니 다 ■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공"
+          },
+          "goyeopjeFull2024": {
+            "table": 5,
+            "row": 1,
+            "cell": 0,
+            "paragraph": 0,
+            "nestedParagraph": 1,
+            "anchorHeight": 63127,
+            "nestedHeight": 64795,
+            "anchorHeightPx": 841.69,
+            "nestedHeightPx": 863.93,
+            "deltaPx": -22.24,
+            "anchorY": 500,
+            "anchorChpos": 0,
+            "nestedRows": 14,
+            "nestedCols": 3,
+            "nestedRowHeights": [
+              2231,
+              5182,
+              6482,
+              2131,
+              5182,
+              7782,
+              2582,
+              2131,
+              3882,
+              2582,
+              2582,
+              2582,
+              7782,
+              11682
+            ],
+            "textPreview": "",
+            "nestedTextPreview": "사업명 자격요건 6.25자녀수당 1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군경의 자녀와 1954. 10. 25부터 1955. 6. 30까지 사이에 서남지구전투경찰대 소속으로 참전하여 전사하거나 순직한 경찰공무원의 자녀 중에서 ‘98. 1. 1. 이후 유족이",
+            "tablePreview": "(뒷 면) 사업명 자격요건 6.25자녀수당 1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군경의 자녀와 1954. 10. 25부터 1955. 6. 30까지 사이에 서"
+          },
+          "gyeolseokgye": {
+            "table": 0,
+            "row": 3,
+            "cell": 1,
+            "paragraph": 0,
+            "nestedParagraph": 1,
+            "anchorHeight": 23118,
+            "nestedHeight": 22221,
+            "anchorHeightPx": 308.24,
+            "nestedHeightPx": 296.28,
+            "deltaPx": 11.96,
+            "anchorY": 0,
+            "anchorChpos": 0,
+            "nestedRows": 8,
+            "nestedCols": 5,
+            "nestedRowHeights": [
+              2482,
+              2414,
+              2414,
+              2414,
+              2414,
+              3148,
+              3121,
+              3814
+            ],
+            "textPreview": "",
+            "nestedTextPreview": "결석 구분 내 용 해당 사항에 √ 표시 제출서류 출석인정결석 - 경조사 결석계, 경조사관련 증빙서류 - 법정 감염병 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류) - 감염병 심각・경계 단계 시 고위험군 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류) 생리통(월 1일) 결석계 질병으로 인한 결",
+            "tablePreview": "결 석 계 결 재 담 임 교 무 교 감 전결 인 적 사 항 학년 반 학년 반 이 름 결 석 일 수 2026년 월 일( 요일) ~ 2026년 월 일( 요일) ( )일간 결 석 종 류 결석 구분 내 용 해당 사항에 √ 표시 제출서류 출석인정결석 - 경조사 결석계, 경조사관련 증빙서류 - 법정 감염병 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류) - 감염병 심각・경계 단계 시 고위험 위와 같이 사유로 결석하여 결석계"
+          }
+        }
+      },
+      "avoid": [
+        "whole-page shifts",
+        "row padding-only shifts",
+        "global ink/border suppression"
+      ],
+      "suggestedNextStep": "Continue source diagnostics around nested table anchor baseline/border-box placement; simple overlap/deduping of following nested table flow was insufficient and reverted.",
+      "rejectedProbes": [
+        {
+          "id": "shared-nested-table-anchor-overlap",
+          "result": "reverted",
+          "note": "strict green and sale page 1 raw improved 32.704->32.565, but advisory count stayed 22 and layout-review remained"
+        }
+      ]
+    },
+    {
+      "id": "CHWP-HWPX-CONTINUATION-LAYOUT",
+      "priority": 2,
+      "target": "incheon-2a.hwpx pages 16-17 continuation tables",
+      "evidence": {
+        "bestHistoricalProbe": {
+          "probe": "hwpx-nested-borders-hidden-run-opacity-000",
+          "generatedAt": "2026-05-07T01:55:49.023Z",
+          "advisories": 22,
+          "avgDelta": -0.607,
+          "maxDelta": -0.332,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.417943392919735
+        },
+        "currentWorst": [
+          {
+            "page": 16,
+            "verdict": "review",
+            "diff": 29.74284875569576,
+            "blurDiff": 28.61846915527515,
+            "layoutDiff": 42.81941705018622,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/compare/page-016-compare.png"
+          },
+          {
+            "page": 17,
+            "verdict": "review",
+            "diff": 27.304466351209253,
+            "blurDiff": 24.99982474588153,
+            "layoutDiff": 34.27733946964715,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/compare/page-017-compare.png"
+          },
+          {
+            "page": 3,
+            "verdict": "review",
+            "diff": 26.514016824395373,
+            "blurDiff": 25.406755169996494,
+            "layoutDiff": 45.313390313390315,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/compare/page-003-compare.png"
+          }
+        ]
+      },
+      "avoid": [
+        "further opacity-only tuning unless it crosses close threshold",
+        "pagination scale changes that risk 18-page contract"
+      ],
+      "suggestedNextStep": "Use table metrics/DOM snapshots to find source-level continuation cell padding/row-span mismatch rather than dense-tail scale sweeps."
+    },
+    {
+      "id": "PAM-QA-040-DEVICE-EVIDENCE",
+      "priority": 3,
+      "target": "3MatchGame physical viewport/device QA",
+      "evidence": "Automated layout/scene validation is green; final acceptance is manual device/simulator evidence.",
+      "avoid": [
+        "more headless-only checks as final proof"
+      ],
+      "suggestedNextStep": "When device/simulator access is available, capture portrait/landscape board/HUD/expression overlap evidence."
+    }
+  ]
+}

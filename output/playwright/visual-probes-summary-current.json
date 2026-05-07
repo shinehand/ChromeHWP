@@ -1,0 +1,2116 @@
+{
+  "generatedAt": "2026-05-07T10:37:27.709Z",
+  "current": {
+    "generatedAt": "2026-05-07T10:32:49.382Z",
+    "advisories": 22,
+    "strictFailures": 0,
+    "docs": {
+      "goyeopje": {
+        "counts": {
+          "review": 1,
+          "close": 1
+        },
+        "avg": 18.75269700714402,
+        "max": 22.837691299790357,
+        "worst": {
+          "page": 1,
+          "verdict": "review",
+          "diff": 22.837691299790357,
+          "blurDiff": 22.059893431167016,
+          "layoutDiff": 32.1087098886706,
+          "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje/compare/page-001-compare.png"
+        }
+      },
+      "goyeopje-full-2024": {
+        "counts": {
+          "close": 4,
+          "review": 7
+        },
+        "avg": 20.116586115914025,
+        "max": 27.0005791776028,
+        "worst": {
+          "page": 11,
+          "verdict": "review",
+          "diff": 27.0005791776028,
+          "blurDiff": 25.70601224846894,
+          "layoutDiff": 42.25667104111989,
+          "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/compare/page-011-compare.png"
+        }
+      },
+      "gyeolseokgye": {
+        "counts": {
+          "review": 1
+        },
+        "avg": 18.523205800139763,
+        "max": 18.523205800139763,
+        "worst": {
+          "page": 1,
+          "verdict": "review",
+          "diff": 18.523205800139763,
+          "blurDiff": 18.04806254367575,
+          "layoutDiff": 23.96037982973153,
+          "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/gyeolseokgye/compare/page-001-compare.png"
+        }
+      },
+      "attachment-sale-notice": {
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        },
+        "avg": 26.518248363698515,
+        "max": 32.70439111810473,
+        "worst": {
+          "page": 1,
+          "verdict": "layout-review",
+          "diff": 32.70439111810473,
+          "blurDiff": 27.999865372847278,
+          "layoutDiff": 29.685039370078734,
+          "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/compare/page-001-compare.png"
+        }
+      },
+      "incheon-2a": {
+        "counts": {
+          "review": 9,
+          "close": 9
+        },
+        "avg": 20.345272756177813,
+        "max": 29.750221696459867,
+        "worst": {
+          "page": 16,
+          "verdict": "review",
+          "diff": 29.750221696459867,
+          "blurDiff": 28.749893971258324,
+          "layoutDiff": 43.269778654393974,
+          "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/compare/page-016-compare.png"
+        }
+      }
+    }
+  },
+  "bestByDoc": {
+    "goyeopje": [
+      {
+        "probe": "a4-hwp-border-alpha-000-after-content-top",
+        "generatedAt": "2026-05-07T00:44:59.841Z",
+        "advisories": 23,
+        "avgDelta": -0.778,
+        "maxDelta": -0.851,
+        "counts": {
+          "review": 1,
+          "close": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 21.986703354297696
+      },
+      {
+        "probe": "a4-hwp-run-opacity-018-after-content-top-border030",
+        "generatedAt": "2026-05-07T00:47:56.045Z",
+        "advisories": 23,
+        "avgDelta": -0.053,
+        "maxDelta": -0.056,
+        "counts": {
+          "review": 1,
+          "close": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 22.78186757512229
+      },
+      {
+        "probe": "hancom-fonts-current",
+        "generatedAt": "2026-05-07T05:00:37.625Z",
+        "advisories": 22,
+        "avgDelta": -0.001,
+        "maxDelta": -0.001,
+        "counts": {
+          "review": 1,
+          "close": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 22.83688067784766
+      },
+      {
+        "probe": "a4-hwp-border-alpha-030-after-content-top",
+        "generatedAt": "2026-05-07T00:43:29.168Z",
+        "advisories": 23,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "review": 1,
+          "close": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 22.837789133473095
+      },
+      {
+        "probe": "a4-hwp-inferred-content-top-midrange-v1",
+        "generatedAt": "2026-05-07T00:57:53.405Z",
+        "advisories": 23,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "review": 1,
+          "close": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 22.837789133473095
+      },
+      {
+        "probe": "a4-hwp-nested-table-cell-autoheight-v1",
+        "generatedAt": "2026-05-07T00:55:56.455Z",
+        "advisories": 23,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "review": 1,
+          "close": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 22.837789133473095
+      },
+      {
+        "probe": "explicit-empty-layout-height-zero-linebox",
+        "generatedAt": "2026-05-07T01:26:32.538Z",
+        "advisories": 23,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "review": 1,
+          "close": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 22.837789133473095
+      },
+      {
+        "probe": "hwp-attendance-form-border-transparent-run-000",
+        "generatedAt": "2026-05-07T02:06:02.317Z",
+        "advisories": 22,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "review": 1,
+          "close": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 22.837789133473095
+      },
+      {
+        "probe": "hwp-attendance-form-border-transparent-run-010",
+        "generatedAt": "2026-05-07T02:04:00.624Z",
+        "advisories": 22,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "review": 1,
+          "close": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 22.837789133473095
+      },
+      {
+        "probe": "hwp-attendance-form-table-border-transparent",
+        "generatedAt": "2026-05-07T02:01:53.682Z",
+        "advisories": 22,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "review": 1,
+          "close": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 22.837789133473095
+      }
+    ],
+    "goyeopje-full-2024": [
+      {
+        "probe": "a4-hwp-border-alpha-000-after-content-top",
+        "generatedAt": "2026-05-07T00:44:59.841Z",
+        "advisories": 23,
+        "avgDelta": -0.13,
+        "maxDelta": -0.094,
+        "counts": {
+          "close": 4,
+          "review": 7
+        },
+        "worstPage": 6,
+        "worstDiff": 26.906538529050376
+      },
+      {
+        "probe": "hwp-disable-trailing-control-line-current",
+        "generatedAt": "2026-05-07T09:18:47.735Z",
+        "advisories": 22,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "close": 4,
+          "review": 7
+        },
+        "worstPage": 11,
+        "worstDiff": 27.0005791776028
+      },
+      {
+        "probe": "hwp-page-outline-none-current",
+        "generatedAt": "2026-05-07T04:24:54.496Z",
+        "advisories": 22,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "close": 4,
+          "review": 7
+        },
+        "worstPage": 11,
+        "worstDiff": 27.0005791776028
+      },
+      {
+        "probe": "hwpx-empty-explicit-height-current",
+        "generatedAt": "2026-05-07T04:33:04.939Z",
+        "advisories": 23,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "close": 4,
+          "review": 7
+        },
+        "worstPage": 11,
+        "worstDiff": 27.00065966754156
+      },
+      {
+        "probe": "hwpx-flow-center-align-current",
+        "generatedAt": "2026-05-07T05:04:26.712Z",
+        "advisories": 22,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "close": 4,
+          "review": 7
+        },
+        "worstPage": 11,
+        "worstDiff": 27.00065966754156
+      },
+      {
+        "probe": "hwpx-header-page-top-current",
+        "generatedAt": "2026-05-07T04:45:52.113Z",
+        "advisories": 22,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "close": 4,
+          "review": 7
+        },
+        "worstPage": 11,
+        "worstDiff": 27.00065966754156
+      },
+      {
+        "probe": "hwpx-noadjust-clone-render-heights-current",
+        "generatedAt": "2026-05-07T04:41:20.560Z",
+        "advisories": 22,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "close": 4,
+          "review": 7
+        },
+        "worstPage": 11,
+        "worstDiff": 27.00065966754156
+      },
+      {
+        "probe": "hwpx-noadjust-render-heights-current",
+        "generatedAt": "2026-05-07T04:37:09.558Z",
+        "advisories": 22,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "close": 4,
+          "review": 7
+        },
+        "worstPage": 11,
+        "worstDiff": 27.00065966754156
+      },
+      {
+        "probe": "hwpx-noadjust-source-render-heights-current",
+        "generatedAt": "2026-05-07T04:39:50.688Z",
+        "advisories": 22,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "close": 4,
+          "review": 7
+        },
+        "worstPage": 11,
+        "worstDiff": 27.00065966754156
+      },
+      {
+        "probe": "hwpx-page-border-none-current",
+        "generatedAt": "2026-05-07T04:22:09.940Z",
+        "advisories": 22,
+        "avgDelta": 0,
+        "maxDelta": 0,
+        "counts": {
+          "close": 4,
+          "review": 7
+        },
+        "worstPage": 11,
+        "worstDiff": 27.00065966754156
+      }
+    ],
+    "gyeolseokgye": [
+      {
+        "probe": "hwp-attendance-form-border-transparent-run-000",
+        "generatedAt": "2026-05-07T02:06:02.317Z",
+        "advisories": 22,
+        "avgDelta": -0.381,
+        "maxDelta": -0.381,
+        "counts": {
+          "review": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 18.142609189378057
+      },
+      {
+        "probe": "hwp-attendance-form-border-transparent-run-010",
+        "generatedAt": "2026-05-07T02:04:00.624Z",
+        "advisories": 22,
+        "avgDelta": -0.337,
+        "maxDelta": -0.337,
+        "counts": {
+          "review": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 18.18616177498253
+      },
+      {
+        "probe": "a4-hwp-border-alpha-000-after-content-top",
+        "generatedAt": "2026-05-07T00:44:59.841Z",
+        "advisories": 23,
+        "avgDelta": -0.267,
+        "maxDelta": -0.267,
+        "counts": {
+          "review": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 18.256577568134173
+      },
+      {
+        "probe": "hwp-attendance-form-table-border-transparent-specific",
+        "generatedAt": "2026-05-07T02:02:57.268Z",
+        "advisories": 22,
+        "avgDelta": -0.267,
+        "maxDelta": -0.267,
+        "counts": {
+          "review": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 18.256577568134173
+      },
+      {
+        "probe": "hancom-fonts-current",
+        "generatedAt": "2026-05-07T05:00:37.625Z",
+        "advisories": 22,
+        "avgDelta": -0.027,
+        "maxDelta": -0.027,
+        "counts": {
+          "review": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 18.496658805031448
+      },
+      {
+        "probe": "hwp-nested-positioned-zindex-1",
+        "generatedAt": "2026-05-07T03:23:23.930Z",
+        "advisories": 22,
+        "avgDelta": -0.001,
+        "maxDelta": -0.001,
+        "counts": {
+          "review": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 18.522606568832984
+      },
+      {
+        "probe": "hwp-nested-through-right-12-top",
+        "generatedAt": "2026-05-07T02:43:57.980Z",
+        "advisories": 22,
+        "avgDelta": -0.001,
+        "maxDelta": -0.001,
+        "counts": {
+          "review": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 18.522606568832984
+      },
+      {
+        "probe": "hwpx-cell-textheight-row-heights",
+        "generatedAt": "2026-05-07T03:17:09.567Z",
+        "advisories": 22,
+        "avgDelta": -0.001,
+        "maxDelta": -0.001,
+        "counts": {
+          "review": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 18.522606568832984
+      },
+      {
+        "probe": "hwpx-performance-grade-emphasis-075",
+        "generatedAt": "2026-05-07T03:09:46.115Z",
+        "advisories": 22,
+        "avgDelta": -0.001,
+        "maxDelta": -0.001,
+        "counts": {
+          "review": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 18.522606568832984
+      },
+      {
+        "probe": "hwpx-site-condition-section-opacity-001",
+        "generatedAt": "2026-05-07T03:06:25.415Z",
+        "advisories": 22,
+        "avgDelta": -0.001,
+        "maxDelta": -0.001,
+        "counts": {
+          "review": 1
+        },
+        "worstPage": 1,
+        "worstDiff": 18.522606568832984
+      }
+    ],
+    "attachment-sale-notice": [
+      {
+        "probe": "lh-page0-shift-50",
+        "generatedAt": "2026-05-06T23:20:07.418Z",
+        "advisories": 24,
+        "avgDelta": 0.003,
+        "maxDelta": -0.374,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        },
+        "worstPage": 1,
+        "worstDiff": 32.33026750590086
+      },
+      {
+        "probe": "hwp-disable-trailing-control-line-current",
+        "generatedAt": "2026-05-07T09:18:47.735Z",
+        "advisories": 22,
+        "avgDelta": 0.014,
+        "maxDelta": 0.058,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        },
+        "worstPage": 1,
+        "worstDiff": 32.76192586764577
+      },
+      {
+        "probe": "lh-page0-shift-55",
+        "generatedAt": "2026-05-06T23:21:29.535Z",
+        "advisories": 24,
+        "avgDelta": 0.059,
+        "maxDelta": -0.149,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        },
+        "worstPage": 1,
+        "worstDiff": 32.555367602063114
+      },
+      {
+        "probe": "hwp-page-outline-none-current",
+        "generatedAt": "2026-05-07T04:24:54.496Z",
+        "advisories": 22,
+        "avgDelta": 0.111,
+        "maxDelta": 0.139,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        },
+        "worstPage": 1,
+        "worstDiff": 32.843359559402046
+      },
+      {
+        "probe": "hwp-nested-positioned-zindex-1",
+        "generatedAt": "2026-05-07T03:23:23.930Z",
+        "advisories": 22,
+        "avgDelta": 0.132,
+        "maxDelta": 0.166,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        },
+        "worstPage": 1,
+        "worstDiff": 32.87019494711076
+      },
+      {
+        "probe": "a4-hwp-border-alpha-000-after-content-top",
+        "generatedAt": "2026-05-07T00:44:59.841Z",
+        "advisories": 23,
+        "avgDelta": 0.138,
+        "maxDelta": 0.166,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        },
+        "worstPage": 1,
+        "worstDiff": 32.87019494711076
+      },
+      {
+        "probe": "a4-hwp-border-alpha-030-after-content-top",
+        "generatedAt": "2026-05-07T00:43:29.168Z",
+        "advisories": 23,
+        "avgDelta": 0.138,
+        "maxDelta": 0.166,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        },
+        "worstPage": 1,
+        "worstDiff": 32.87019494711076
+      },
+      {
+        "probe": "a4-hwp-border-alpha-070-after-content-top",
+        "generatedAt": "2026-05-07T00:42:30.714Z",
+        "advisories": 24,
+        "avgDelta": 0.138,
+        "maxDelta": 0.166,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        },
+        "worstPage": 1,
+        "worstDiff": 32.87019494711076
+      },
+      {
+        "probe": "a4-hwp-inferred-content-top-midrange-v1",
+        "generatedAt": "2026-05-07T00:57:53.405Z",
+        "advisories": 23,
+        "avgDelta": 0.138,
+        "maxDelta": 0.166,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        },
+        "worstPage": 1,
+        "worstDiff": 32.87019494711076
+      },
+      {
+        "probe": "a4-hwp-nested-table-cell-autoheight-v1",
+        "generatedAt": "2026-05-07T00:55:56.455Z",
+        "advisories": 23,
+        "avgDelta": 0.138,
+        "maxDelta": 0.166,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        },
+        "worstPage": 1,
+        "worstDiff": 32.87019494711076
+      }
+    ],
+    "incheon-2a": [
+      {
+        "probe": "hwpx-nested-borders-hidden-run-opacity-000",
+        "generatedAt": "2026-05-07T01:55:49.023Z",
+        "advisories": 22,
+        "avgDelta": -0.607,
+        "maxDelta": -0.332,
+        "counts": {
+          "review": 9,
+          "close": 9
+        },
+        "worstPage": 16,
+        "worstDiff": 29.417943392919735
+      },
+      {
+        "probe": "hwpx-nested-borders-hidden-run-opacity-005",
+        "generatedAt": "2026-05-07T01:54:31.095Z",
+        "advisories": 22,
+        "avgDelta": -0.582,
+        "maxDelta": -0.372,
+        "counts": {
+          "review": 9,
+          "close": 9
+        },
+        "worstPage": 16,
+        "worstDiff": 29.37834209603926
+      },
+      {
+        "probe": "hwpx-body-container-nested-borders-hidden",
+        "generatedAt": "2026-05-07T01:53:13.047Z",
+        "advisories": 22,
+        "avgDelta": -0.419,
+        "maxDelta": -0.399,
+        "counts": {
+          "review": 9,
+          "close": 9
+        },
+        "worstPage": 16,
+        "worstDiff": 29.35157903960743
+      },
+      {
+        "probe": "hwpx-page-frame-none-current",
+        "generatedAt": "2026-05-07T05:17:41.984Z",
+        "advisories": 22,
+        "avgDelta": -0.009,
+        "maxDelta": 0.186,
+        "counts": {
+          "review": 9,
+          "close": 9
+        },
+        "worstPage": 16,
+        "worstDiff": 29.93657816333684
+      },
+      {
+        "probe": "hwpx-page-border-none-current",
+        "generatedAt": "2026-05-07T04:22:09.940Z",
+        "advisories": 22,
+        "avgDelta": 0.015,
+        "maxDelta": 0.21,
+        "counts": {
+          "review": 9,
+          "close": 9
+        },
+        "worstPage": 16,
+        "worstDiff": 29.96031983876621
+      },
+      {
+        "probe": "hwp-disable-trailing-control-line-current",
+        "generatedAt": "2026-05-07T09:18:47.735Z",
+        "advisories": 22,
+        "avgDelta": 0.048,
+        "maxDelta": 0,
+        "counts": {
+          "review": 9,
+          "close": 9
+        },
+        "worstPage": 16,
+        "worstDiff": 29.750221696459867
+      },
+      {
+        "probe": "hwpx-site-condition-section-opacity-001",
+        "generatedAt": "2026-05-07T03:06:25.415Z",
+        "advisories": 22,
+        "avgDelta": 0.125,
+        "maxDelta": 0.086,
+        "counts": {
+          "review": 9,
+          "close": 9
+        },
+        "worstPage": 16,
+        "worstDiff": 29.836496670171748
+      },
+      {
+        "probe": "hwpx-table-scale-096-current",
+        "generatedAt": "2026-05-07T05:22:31.298Z",
+        "advisories": 22,
+        "avgDelta": 0.167,
+        "maxDelta": 0.086,
+        "counts": {
+          "review": 9,
+          "close": 9
+        },
+        "worstPage": 16,
+        "worstDiff": 29.836496670171748
+      },
+      {
+        "probe": "hwp-attendance-form-border-transparent-run-000",
+        "generatedAt": "2026-05-07T02:06:02.317Z",
+        "advisories": 22,
+        "avgDelta": 0.172,
+        "maxDelta": 0.086,
+        "counts": {
+          "review": 9,
+          "close": 9
+        },
+        "worstPage": 16,
+        "worstDiff": 29.836496670171748
+      },
+      {
+        "probe": "hwp-attendance-form-border-transparent-run-010",
+        "generatedAt": "2026-05-07T02:04:00.624Z",
+        "advisories": 22,
+        "avgDelta": 0.172,
+        "maxDelta": 0.086,
+        "counts": {
+          "review": 9,
+          "close": 9
+        },
+        "worstPage": 16,
+        "worstDiff": 29.836496670171748
+      }
+    ]
+  },
+  "worstByDoc": {
+    "goyeopje": [
+      {
+        "probe": "hwp-a4-inferred-table-content-top-v1",
+        "avgDelta": 2.297,
+        "maxDelta": 2.778,
+        "counts": {
+          "review": 1,
+          "close": 1
+        }
+      },
+      {
+        "probe": "body-blur-018",
+        "avgDelta": 1.884,
+        "maxDelta": 2.199,
+        "counts": {
+          "review": 1,
+          "close": 1
+        }
+      },
+      {
+        "probe": "dense-tail-scale-0p70",
+        "avgDelta": 1.884,
+        "maxDelta": 2.199,
+        "counts": {
+          "review": 1,
+          "close": 1
+        }
+      },
+      {
+        "probe": "hwp-a4-inferred-table-content-top-v2",
+        "avgDelta": 1.884,
+        "maxDelta": 2.199,
+        "counts": {
+          "review": 1,
+          "close": 1
+        }
+      },
+      {
+        "probe": "hwp-attendance-run-071",
+        "avgDelta": 1.884,
+        "maxDelta": 2.199,
+        "counts": {
+          "review": 1,
+          "close": 1
+        }
+      }
+    ],
+    "goyeopje-full-2024": [
+      {
+        "probe": "body-blur-018",
+        "avgDelta": 3.633,
+        "maxDelta": 3.388,
+        "counts": {
+          "review": 8,
+          "close": 3
+        }
+      },
+      {
+        "probe": "dense-tail-scale-0p70",
+        "avgDelta": 3.633,
+        "maxDelta": 3.388,
+        "counts": {
+          "review": 8,
+          "close": 3
+        }
+      },
+      {
+        "probe": "hwp-attendance-run-071",
+        "avgDelta": 3.633,
+        "maxDelta": 3.388,
+        "counts": {
+          "review": 8,
+          "close": 3
+        }
+      },
+      {
+        "probe": "hwp-attendance-run-071-v2",
+        "avgDelta": 3.633,
+        "maxDelta": 3.388,
+        "counts": {
+          "review": 8,
+          "close": 3
+        }
+      },
+      {
+        "probe": "hwp-attendance-run-071-v3",
+        "avgDelta": 3.633,
+        "maxDelta": 3.388,
+        "counts": {
+          "review": 8,
+          "close": 3
+        }
+      }
+    ],
+    "gyeolseokgye": [
+      {
+        "probe": "hwp-attendance-run-071-v3",
+        "avgDelta": 2.389,
+        "maxDelta": 2.389,
+        "counts": {
+          "review": 1
+        }
+      },
+      {
+        "probe": "body-blur-018",
+        "avgDelta": 1.781,
+        "maxDelta": 1.781,
+        "counts": {
+          "review": 1
+        }
+      },
+      {
+        "probe": "dense-tail-scale-0p70",
+        "avgDelta": 1.781,
+        "maxDelta": 1.781,
+        "counts": {
+          "review": 1
+        }
+      },
+      {
+        "probe": "hwp-attendance-run-071",
+        "avgDelta": 1.781,
+        "maxDelta": 1.781,
+        "counts": {
+          "review": 1
+        }
+      },
+      {
+        "probe": "hwp-attendance-run-071-v2",
+        "avgDelta": 1.781,
+        "maxDelta": 1.781,
+        "counts": {
+          "review": 1
+        }
+      }
+    ],
+    "attachment-sale-notice": [
+      {
+        "probe": "hwp-nested-through-right-top-singleline-center",
+        "avgDelta": 0.166,
+        "maxDelta": 0.232,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        }
+      },
+      {
+        "probe": "a4-hwp-border-alpha-000-after-content-top",
+        "avgDelta": 0.138,
+        "maxDelta": 0.166,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        }
+      },
+      {
+        "probe": "a4-hwp-border-alpha-030-after-content-top",
+        "avgDelta": 0.138,
+        "maxDelta": 0.166,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        }
+      },
+      {
+        "probe": "a4-hwp-border-alpha-070-after-content-top",
+        "avgDelta": 0.138,
+        "maxDelta": 0.166,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        }
+      },
+      {
+        "probe": "a4-hwp-inferred-content-top-midrange-v1",
+        "avgDelta": 0.138,
+        "maxDelta": 0.166,
+        "counts": {
+          "layout-review": 1,
+          "review": 3
+        }
+      }
+    ],
+    "incheon-2a": [
+      {
+        "probe": "body-blur-018",
+        "avgDelta": 0.706,
+        "maxDelta": 0.479,
+        "counts": {
+          "review": 10,
+          "close": 8
+        }
+      },
+      {
+        "probe": "hwpx-noadjust-dense-scale-058",
+        "avgDelta": 0.544,
+        "maxDelta": 1.226,
+        "counts": {
+          "review": 10,
+          "close": 8
+        }
+      },
+      {
+        "probe": "hwpx-site-condition-run-030-v2",
+        "avgDelta": 0.541,
+        "maxDelta": 0.245,
+        "counts": {
+          "review": 10,
+          "close": 8
+        }
+      },
+      {
+        "probe": "hwpx-run-opacity-030",
+        "avgDelta": 0.536,
+        "maxDelta": 0.124,
+        "counts": {
+          "review": 12,
+          "close": 6
+        }
+      },
+      {
+        "probe": "hwpx-noadjust-dense-scale-035",
+        "avgDelta": 0.533,
+        "maxDelta": 1.033,
+        "counts": {
+          "review": 10,
+          "close": 8
+        }
+      }
+    ]
+  },
+  "lowAdvisoryProbes": [
+    {
+      "probe": "hwp-disable-trailing-control-line-current",
+      "generatedAt": "2026-05-07T09:18:47.735Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837691299790357
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.0005791776028
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523205800139763
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.014,
+          "maxDelta": 0.058,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.76192586764577
+        },
+        "incheon-2a": {
+          "avgDelta": 0.048,
+          "maxDelta": 0,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.750221696459867
+        }
+      }
+    },
+    {
+      "probe": "hwpx-table-scale-096-current",
+      "generatedAt": "2026-05-07T05:22:31.298Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.00065966754156
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523305380852552
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.167,
+          "maxDelta": 0.086,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.836496670171748
+        }
+      }
+    },
+    {
+      "probe": "hwpx-performance-moderate-current",
+      "generatedAt": "2026-05-07T05:19:42.596Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.00065966754156
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523305380852552
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.183,
+          "maxDelta": 0.276,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 30.02588415702769
+        }
+      }
+    },
+    {
+      "probe": "hwpx-page-frame-none-current",
+      "generatedAt": "2026-05-07T05:17:41.984Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.00065966754156
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523305380852552
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": -0.009,
+          "maxDelta": 0.186,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.93657816333684
+        }
+      }
+    },
+    {
+      "probe": "hwpx-flow-center-align-current",
+      "generatedAt": "2026-05-07T05:04:26.712Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.00065966754156
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523305380852552
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.172,
+          "maxDelta": 0.086,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.836496670171748
+        }
+      }
+    },
+    {
+      "probe": "hancom-fonts-current",
+      "generatedAt": "2026-05-07T05:00:37.625Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": -0.001,
+          "maxDelta": -0.001,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.83688067784766
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0.005,
+          "maxDelta": 0.035,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.03549868766404
+        },
+        "gyeolseokgye": {
+          "avgDelta": -0.027,
+          "maxDelta": -0.027,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.496658805031448
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.165,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.86981379491214
+        },
+        "incheon-2a": {
+          "avgDelta": 0.183,
+          "maxDelta": 0.511,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 30.261320539782684
+        }
+      }
+    },
+    {
+      "probe": "hwpx-performance-border-045-current",
+      "generatedAt": "2026-05-07T04:56:38.383Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.00065966754156
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523305380852552
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.246,
+          "maxDelta": 1.413,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 31.162726077812827
+        }
+      }
+    },
+    {
+      "probe": "hwpx-header-page-top-current",
+      "generatedAt": "2026-05-07T04:45:52.113Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.00065966754156
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523305380852552
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.235,
+          "maxDelta": 0.279,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 30.029493515597615
+        }
+      }
+    },
+    {
+      "probe": "hwpx-noadjust-clone-render-heights-current",
+      "generatedAt": "2026-05-07T04:41:20.560Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.00065966754156
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523305380852552
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.224,
+          "maxDelta": 1.001,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 30.751565019277955
+        }
+      }
+    },
+    {
+      "probe": "hwpx-noadjust-source-render-heights-current",
+      "generatedAt": "2026-05-07T04:39:50.688Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.00065966754156
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523305380852552
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.172,
+          "maxDelta": 0.086,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.836496670171748
+        }
+      }
+    },
+    {
+      "probe": "hwpx-performance-grade-compact-current",
+      "generatedAt": "2026-05-07T04:38:09.303Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.00065966754156
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523305380852552
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.172,
+          "maxDelta": 0.086,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.836496670171748
+        }
+      }
+    },
+    {
+      "probe": "hwpx-noadjust-render-heights-current",
+      "generatedAt": "2026-05-07T04:37:09.558Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.00065966754156
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523305380852552
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.172,
+          "maxDelta": 0.086,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.836496670171748
+        }
+      }
+    },
+    {
+      "probe": "hwp-page-outline-none-current",
+      "generatedAt": "2026-05-07T04:24:54.496Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837691299790357
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.0005791776028
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523205800139763
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.111,
+          "maxDelta": 0.139,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.843359559402046
+        },
+        "incheon-2a": {
+          "avgDelta": 0.172,
+          "maxDelta": 0.086,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.836496670171748
+        }
+      }
+    },
+    {
+      "probe": "hwpx-page-border-none-current",
+      "generatedAt": "2026-05-07T04:22:09.940Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 11,
+          "worstDiff": 27.00065966754156
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.523305380852552
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.015,
+          "maxDelta": 0.21,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.96031983876621
+        }
+      }
+    },
+    {
+      "probe": "hwp-nested-positioned-zindex-1",
+      "generatedAt": "2026-05-07T03:23:23.930Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0.197,
+          "maxDelta": 0.072,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 6,
+          "worstDiff": 27.072322274881518
+        },
+        "gyeolseokgye": {
+          "avgDelta": -0.001,
+          "maxDelta": -0.001,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.522606568832984
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.132,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.172,
+          "maxDelta": 0.086,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.836496670171748
+        }
+      }
+    },
+    {
+      "probe": "hwpx-cell-textheight-row-heights",
+      "generatedAt": "2026-05-07T03:17:09.567Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0.197,
+          "maxDelta": 0.072,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 6,
+          "worstDiff": 27.072322274881518
+        },
+        "gyeolseokgye": {
+          "avgDelta": -0.001,
+          "maxDelta": -0.001,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.522606568832984
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.172,
+          "maxDelta": 0.086,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.836496670171748
+        }
+      }
+    },
+    {
+      "probe": "hwpx-performance-grade-emphasis-075",
+      "generatedAt": "2026-05-07T03:09:46.115Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0.197,
+          "maxDelta": 0.072,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 6,
+          "worstDiff": 27.072322274881518
+        },
+        "gyeolseokgye": {
+          "avgDelta": -0.001,
+          "maxDelta": -0.001,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.522606568832984
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.359,
+          "maxDelta": 3.454,
+          "counts": {
+            "review": 8,
+            "close": 9,
+            "layout-review": 1
+          },
+          "worstPage": 16,
+          "worstDiff": 33.20448738170347
+        }
+      }
+    },
+    {
+      "probe": "hwpx-site-condition-section-opacity-001",
+      "generatedAt": "2026-05-07T03:06:25.415Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0.197,
+          "maxDelta": 0.072,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 6,
+          "worstDiff": 27.072322274881518
+        },
+        "gyeolseokgye": {
+          "avgDelta": -0.001,
+          "maxDelta": -0.001,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.522606568832984
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.125,
+          "maxDelta": 0.086,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.836496670171748
+        }
+      }
+    },
+    {
+      "probe": "hwpx-two-fragment-page-fill-092",
+      "generatedAt": "2026-05-07T02:56:37.636Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0.197,
+          "maxDelta": 0.072,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 6,
+          "worstDiff": 27.072322274881518
+        },
+        "gyeolseokgye": {
+          "avgDelta": -0.001,
+          "maxDelta": -0.001,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.522606568832984
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.172,
+          "maxDelta": 0.086,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.836496670171748
+        }
+      }
+    },
+    {
+      "probe": "hwp-through-right-title-center",
+      "generatedAt": "2026-05-07T02:44:59.100Z",
+      "advisories": 22,
+      "strictFailures": 0,
+      "docs": {
+        "goyeopje": {
+          "avgDelta": 0,
+          "maxDelta": 0,
+          "counts": {
+            "review": 1,
+            "close": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 22.837789133473095
+        },
+        "goyeopje-full-2024": {
+          "avgDelta": 0.197,
+          "maxDelta": 0.072,
+          "counts": {
+            "close": 4,
+            "review": 7
+          },
+          "worstPage": 6,
+          "worstDiff": 27.072322274881518
+        },
+        "gyeolseokgye": {
+          "avgDelta": 0.001,
+          "maxDelta": 0.001,
+          "counts": {
+            "review": 1
+          },
+          "worstPage": 1,
+          "worstDiff": 18.5239535290007
+        },
+        "attachment-sale-notice": {
+          "avgDelta": 0.138,
+          "maxDelta": 0.166,
+          "counts": {
+            "layout-review": 1,
+            "review": 3
+          },
+          "worstPage": 1,
+          "worstDiff": 32.87019494711076
+        },
+        "incheon-2a": {
+          "avgDelta": 0.172,
+          "maxDelta": 0.086,
+          "counts": {
+            "review": 9,
+            "close": 9
+          },
+          "worstPage": 16,
+          "worstDiff": 29.836496670171748
+        }
+      }
+    }
+  ]
+}

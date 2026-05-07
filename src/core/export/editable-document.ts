@@ -1,6 +1,7 @@
 export interface EditableExportDocument {
   readonly title: string;
   readonly pages: EditablePage[];
+  readonly headerDecorations?: EditableImageBlock[];
 }
 
 export interface EditablePage {
@@ -21,11 +22,13 @@ export interface EditableParagraphBlock {
   readonly type: 'paragraph';
   readonly runs: EditableTextRun[];
   readonly align?: EditableTextAlign;
+  readonly textIndent?: number;
   readonly lineHeight?: string;
 }
 
 export interface EditableTextRun {
   readonly text: string;
+  readonly href?: string;
   readonly fontFamily?: string;
   readonly fontSizePt?: number;
   readonly color?: string;
@@ -96,10 +99,12 @@ export function extractEditableDocumentFromDom(root: HTMLElement, title: string)
     layout: extractPageLayout(container),
     blocks: extractBlockChildren(container)
   }));
+  const headerDecorations = extractRepeatedReadonlyDecorationImages(pageContainers);
 
   return {
     title,
-    pages: pages.length ? pages : [{ index: 0, blocks: [] }]
+    pages: pages.length ? pages : [{ index: 0, blocks: [] }],
+    ...(headerDecorations.length ? { headerDecorations } : {})
   };
 }
 
@@ -193,6 +198,47 @@ function extractDirectNestedBlocks(element: HTMLElement): EditableBlock[] {
   return blocks;
 }
 
+function extractRepeatedReadonlyDecorationImages(pageContainers: readonly HTMLElement[]): EditableImageBlock[] {
+  if (pageContainers.length < 2) return [];
+
+  const groups = new Map<string, { block: EditableImageBlock; pages: Set<number> }>();
+  for (const [pageIndex, container] of pageContainers.entries()) {
+    const pageElement = container.closest<HTMLElement>('.hwp-page');
+    const decorationLayer = pageElement?.querySelector<HTMLElement>(':scope > .hwp-page-decoration-layer');
+    if (!decorationLayer) continue;
+
+    const hosts = new Set<HTMLElement>();
+    for (const image of Array.from(decorationLayer.querySelectorAll<HTMLImageElement>('.hwp-image img, img'))) {
+      const host = image.closest<HTMLElement>('.hwp-image') ?? image;
+      if (!isReadonlyDecorationElement(host)) continue;
+      hosts.add(host);
+    }
+
+    for (const host of hosts) {
+      const block = extractImageBlock(host);
+      if (!block.src || !block.width || !block.height) continue;
+      const key = readonlyDecorationImageKey(block);
+      const group = groups.get(key) ?? { block: { ...block, inline: false }, pages: new Set<number>() };
+      group.pages.add(pageIndex);
+      groups.set(key, group);
+    }
+  }
+
+  const minimumPageCoverage = Math.max(2, Math.ceil(pageContainers.length * 0.8));
+  return Array.from(groups.values())
+    .filter((group) => group.pages.size >= minimumPageCoverage)
+    .map((group) => group.block);
+}
+
+function readonlyDecorationImageKey(block: EditableImageBlock): string {
+  return [
+    block.src ?? '',
+    Math.round(block.width ?? 0),
+    Math.round(block.height ?? 0),
+    block.altText
+  ].join('|');
+}
+
 function isReadonlyDecorationElement(element: HTMLElement): boolean {
   return element.matches(READONLY_DECORATION_SELECTOR)
     || Boolean(element.closest(READONLY_DECORATION_SELECTOR));
@@ -204,6 +250,7 @@ function extractParagraphBlock(element: HTMLElement): EditableParagraphBlock {
   return {
     type: 'paragraph',
     align: normalizeTextAlign(style.textAlign),
+    textIndent: readTextIndent(element),
     lineHeight: style.lineHeight,
     runs: runs.length ? runs : [{ text: '' }]
   };
@@ -222,7 +269,12 @@ function extractTextRuns(node: Node, inheritedStyle: EditableInlineStyle): Edita
     return altText ? [{ ...inheritedStyle, text: altText }] : [];
   }
 
-  const style = { ...inheritedStyle, ...readElementStyle(node).text };
+  const linkHref = readSafeLinkHref(node);
+  const style = {
+    ...inheritedStyle,
+    ...readElementStyle(node).text,
+    ...(linkHref ? { href: linkHref } : {})
+  };
   return Array.from(node.childNodes).flatMap((child) => extractTextRuns(child, style));
 }
 
@@ -342,6 +394,7 @@ function mergeAdjacentRuns(runs: EditableTextRun[]): EditableTextRun[] {
 function sameRunStyle(left: EditableTextRun, right: EditableTextRun): boolean {
   return left.fontFamily === right.fontFamily
     && left.fontSizePt === right.fontSizePt
+    && left.href === right.href
     && left.color === right.color
     && left.backgroundColor === right.backgroundColor
     && left.bold === right.bold
@@ -352,6 +405,20 @@ function sameRunStyle(left: EditableTextRun, right: EditableTextRun): boolean {
 
 function normalizePlainText(text: string): string {
   return text.replace(/\u00a0/g, ' ');
+}
+
+function readSafeLinkHref(element: HTMLElement): string | undefined {
+  if (!element.matches('a[href]')) return undefined;
+  return normalizeEditableHref((element as HTMLAnchorElement).getAttribute('href') || (element as HTMLAnchorElement).href || '');
+}
+
+function normalizeEditableHref(value: string): string | undefined {
+  const href = value.trim();
+  if (!href || /[\u0000-\u001f\u007f]/.test(href)) return undefined;
+  if (/^javascript:/i.test(href)) return undefined;
+  if (/^(https?:|mailto:|tel:|#)/i.test(href)) return href;
+  if (/^www\./i.test(href)) return `https://${href}`;
+  return undefined;
 }
 
 function normalizeTextAlign(value: string): EditableTextAlign | undefined {
@@ -404,6 +471,11 @@ function readPixelLength(element: HTMLElement, property: 'width' | 'height'): nu
   return positiveNumber(property === 'width' ? rect.width : rect.height);
 }
 
+function readTextIndent(element: HTMLElement): number | undefined {
+  const computed = safeComputedStyle(element);
+  return cssSignedLengthToPx(element.style.textIndent || computed?.textIndent || '');
+}
+
 function cssLengthToPx(value: string): number | undefined {
   const trimmed = value.trim();
   if (!trimmed || trimmed.endsWith('%') || trimmed === 'auto') return undefined;
@@ -411,6 +483,17 @@ function cssLengthToPx(value: string): number | undefined {
   if (!Number.isFinite(numeric) || numeric <= 0) return undefined;
   if (trimmed.endsWith('pt')) return Math.round(numeric / 0.75);
   if (trimmed.endsWith('px') || /^[\d.]+$/.test(trimmed)) return Math.round(numeric);
+  if (trimmed.endsWith('mm')) return Math.round(numeric * 3.78);
+  return Math.round(numeric);
+}
+
+function cssSignedLengthToPx(value: string): number | undefined {
+  const trimmed = value.trim();
+  if (!trimmed || trimmed.endsWith('%') || trimmed === 'auto') return undefined;
+  const numeric = Number.parseFloat(trimmed);
+  if (!Number.isFinite(numeric) || numeric === 0) return undefined;
+  if (trimmed.endsWith('pt')) return Math.round(numeric / 0.75);
+  if (trimmed.endsWith('px') || /^-?[\d.]+$/.test(trimmed)) return Math.round(numeric);
   if (trimmed.endsWith('mm')) return Math.round(numeric * 3.78);
   return Math.round(numeric);
 }

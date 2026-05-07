@@ -126,6 +126,7 @@ interface HwpObjectInfo {
   readonly zIndex: number;
   readonly description: string;
   readonly inline: boolean;
+  readonly textWrap: string;
 }
 
 interface HwpTableInfo {
@@ -183,7 +184,14 @@ interface HwpBorderFill {
   readonly top: HwpBorderSpec;
   readonly bottom: HwpBorderSpec;
   readonly fillColor: string;
+  readonly fillGradient?: HwpFillGradient | null;
   readonly fillType: number;
+}
+
+interface HwpFillGradient {
+  readonly type: 'LINEAR' | 'RADIAL';
+  readonly angle: number;
+  readonly colors: string[];
 }
 
 interface HwpCellPaint {
@@ -207,6 +215,7 @@ interface HwpCharShape {
 interface HwpParaShape {
   readonly align: ParagraphBlock['align'];
   readonly margin: BoxSpacing;
+  readonly textIndent: number;
   readonly lineSpacingType: 'percent' | 'fixed' | 'space-only' | 'minimum' | '';
   readonly lineSpacing: number;
 }
@@ -617,6 +626,8 @@ function paginateSections(sections: readonly ParsedSection[], context: HwpParseC
 function paginateBlocks(blocks: readonly DocumentBlock[], layout: PageLayout, context: HwpParseContext): DocumentBlock[][] {
   const bodyWidth = pageBodyWidth(layout);
   const pageBudget = pageBodyHeight(layout);
+  const pageCoordinateSpan = pageCoordinateSpanPx(layout);
+  const flowContentTopOffset = Math.max(0, layout.decorationInset?.top ?? 0);
   const flowBlocks = blocks.flatMap((block) => splitOversizedBlock(block, pageBudget, bodyWidth, context));
   const pages: DocumentBlock[][] = [];
   let current: DocumentBlock[] = [];
@@ -639,6 +650,20 @@ function paginateBlocks(blocks: readonly DocumentBlock[], layout: PageLayout, co
     let blockToPlace = block;
     const blockHeight = estimateBlockHeight(blockToPlace, bodyWidth);
     let visualMetrics = blockVisualMetrics(blockToPlace, bodyWidth, blockHeight);
+    const fittedBlock = fitPositionedBlockWithinPage(blockToPlace, visualMetrics, pageCoordinateSpan, visualBottom);
+    if (fittedBlock !== blockToPlace) {
+      blockToPlace = fittedBlock;
+      visualMetrics = blockVisualMetrics(blockToPlace, bodyWidth, blockHeight);
+    }
+    const rebasedBlock = rebaseBlockPageCoordinate(blockToPlace, visualMetrics, pageCoordinateSpan);
+    if (rebasedBlock) {
+      if (current.length) {
+        flush();
+        context.stats.pageSplitCount += 1;
+      }
+      blockToPlace = rebasedBlock;
+      visualMetrics = blockVisualMetrics(blockToPlace, bodyWidth, blockHeight);
+    }
     const gap = current.length ? BLOCK_GAP_PX : 0;
     const coordinateReset = shouldSplitOnPageCoordinateReset(visualMetrics, resetAnchorBottom);
     const flowAfterPositionedContent = shouldPlaceFlowBlockAfterPositionedContent(visualMetrics, positionedContentBottom);
@@ -662,21 +687,124 @@ function paginateBlocks(blocks: readonly DocumentBlock[], layout: PageLayout, co
         blockToPlace = flowAdjustedBlock;
         visualMetrics = blockVisualMetrics(blockToPlace, bodyWidth, blockHeight);
       }
-      const adjustedBlock = avoidInferredTableOverlap(blockToPlace, visualMetrics, visualBottom);
-      if (adjustedBlock !== blockToPlace) {
-        blockToPlace = adjustedBlock;
+      const fittedFlowBlock = fitPositionedBlockWithinPage(blockToPlace, visualMetrics, pageCoordinateSpan, visualBottom);
+      if (fittedFlowBlock !== blockToPlace) {
+        blockToPlace = fittedFlowBlock;
         visualMetrics = blockVisualMetrics(blockToPlace, bodyWidth, blockHeight);
+      }
+      const rebasedFlowBlock = rebaseBlockPageCoordinate(blockToPlace, visualMetrics, pageCoordinateSpan);
+      if (rebasedFlowBlock) {
+        flush();
+        context.stats.pageSplitCount += 1;
+        blockToPlace = rebasedFlowBlock;
+        visualMetrics = blockVisualMetrics(blockToPlace, bodyWidth, blockHeight);
+      }
+      if (current.length) {
+        const adjustedBlock = avoidPositionedContentOverlap(blockToPlace, visualMetrics, visualBottom, bodyWidth, blockHeight);
+        if (adjustedBlock !== blockToPlace) {
+          blockToPlace = adjustedBlock;
+          visualMetrics = blockVisualMetrics(blockToPlace, bodyWidth, blockHeight);
+        }
+        const rebasedAdjustedBlock = rebaseBlockPageCoordinate(blockToPlace, visualMetrics, pageCoordinateSpan);
+        if (rebasedAdjustedBlock) {
+          flush();
+          context.stats.pageSplitCount += 1;
+          blockToPlace = rebasedAdjustedBlock;
+          visualMetrics = blockVisualMetrics(blockToPlace, bodyWidth, blockHeight);
+        }
       }
     }
     current.push(blockToPlace);
     usedHeight += (usedHeight > 0 ? BLOCK_GAP_PX : 0) + blockHeight;
-    visualBottom = Math.max(visualBottom, blockVisualBottom(visualMetrics, usedHeight));
+    visualBottom = Math.max(visualBottom, blockVisualBottom(blockToPlace, visualMetrics, usedHeight, flowContentTopOffset));
     positionedContentBottom = Math.max(positionedContentBottom, blockPositionedVisualBottom(visualMetrics));
     resetAnchorBottom = Math.max(resetAnchorBottom, blockResetAnchorBottom(blockToPlace, visualMetrics));
   }
 
   flush();
   return pages.length ? pages : [[]];
+}
+
+function pageCoordinateSpanPx(layout: PageLayout): number {
+  const marginTop = layout.margin?.top ?? 0;
+  return Math.max(pageBodyHeight(layout), layout.height - marginTop);
+}
+
+function rebaseBlockPageCoordinate(
+  block: DocumentBlock,
+  metrics: BlockVisualMetrics | null,
+  pageCoordinateSpan: number
+): DocumentBlock | null {
+  if (!metrics || pageCoordinateSpan <= 0 || metrics.topPx < pageCoordinateSpan) return null;
+  const pageOffset = Math.floor(metrics.topPx / pageCoordinateSpan) * pageCoordinateSpan;
+  if (pageOffset <= 0) return null;
+  return offsetBlockVerticalCoordinate(block, pageOffset);
+}
+
+function offsetBlockVerticalCoordinate(block: DocumentBlock, offsetPx: number): DocumentBlock {
+  if (block.type === 'paragraph') return offsetParagraphVerticalCoordinate(block, offsetPx);
+  if (block.type === 'table') return offsetTableVerticalCoordinate(block, offsetPx);
+  return offsetImageVerticalCoordinate(block, offsetPx);
+}
+
+function offsetParagraphVerticalCoordinate(block: ParagraphBlock, offsetPx: number): ParagraphBlock {
+  const layout = block._hwpxLayout;
+  if (!layout) return block;
+  const offsetUnits = Math.round(offsetPx * HWPUNIT_PER_PX);
+  return {
+    ...block,
+    _hwpxLayout: {
+      ...layout,
+      ...(layout.position
+        ? {
+            position: {
+              ...layout.position,
+              topPx: layout.position.topPx - offsetPx
+            }
+          }
+        : {}),
+      ...(layout.lineSegments?.length
+        ? {
+            lineSegments: layout.lineSegments.map((segment) => ({
+              ...segment,
+              verticalPosition: segment.verticalPosition - offsetUnits
+            }))
+          }
+        : {})
+    }
+  };
+}
+
+function offsetTableVerticalCoordinate(block: TableBlock, offsetPx: number): TableBlock {
+  const layout = block._hwpxLayout;
+  const position = layout?.position;
+  if (!layout || !position) return block;
+  return {
+    ...block,
+    _hwpxLayout: {
+      ...layout,
+      position: {
+        ...position,
+        topPx: position.topPx - offsetPx
+      }
+    }
+  };
+}
+
+function offsetImageVerticalCoordinate(block: ImageBlock, offsetPx: number): ImageBlock {
+  const layout = block._hwpxLayout;
+  const position = layout?.position;
+  if (!layout || !position) return block;
+  return {
+    ...block,
+    _hwpxLayout: {
+      ...layout,
+      position: {
+        ...position,
+        topPx: position.topPx - offsetPx
+      }
+    }
+  };
 }
 
 function createPageNumberDecorationBlock(pageNumber: number, layout: PageLayout): ParagraphBlock {
@@ -717,9 +845,21 @@ function blockPositionedVisualBottom(metrics: BlockVisualMetrics | null): number
   return metrics.topPx + metrics.heightPx;
 }
 
-function blockVisualBottom(metrics: BlockVisualMetrics | null, fallbackBottom: number): number {
+function blockVisualBottom(
+  block: DocumentBlock,
+  metrics: BlockVisualMetrics | null,
+  fallbackBottom: number,
+  flowContentTopOffset: number
+): number {
+  if (isFlowRenderedBlock(block)) return fallbackBottom + flowContentTopOffset;
   if (!metrics) return fallbackBottom;
   return Math.max(fallbackBottom, metrics.topPx + metrics.heightPx);
+}
+
+function isFlowRenderedBlock(block: DocumentBlock): boolean {
+  if (block.type === 'paragraph') return !block._hwpxLayout?.position;
+  if (block.type === 'table') return !block._hwpxLayout?.position;
+  return block.inline !== false && !block._hwpxLayout?.position;
 }
 
 function blockResetAnchorBottom(block: DocumentBlock, metrics: BlockVisualMetrics | null): number {
@@ -728,16 +868,99 @@ function blockResetAnchorBottom(block: DocumentBlock, metrics: BlockVisualMetric
   return metrics.topPx + metrics.heightPx;
 }
 
-function avoidInferredTableOverlap(
+function fitPositionedBlockWithinPage(
   block: DocumentBlock,
   metrics: BlockVisualMetrics | null,
+  pageCoordinateSpan: number,
   currentVisualBottom: number
 ): DocumentBlock {
-  if (block.type !== 'table' || !metrics) return block;
+  const fittedTable = fitInferredTableWithinPage(block, metrics, pageCoordinateSpan, currentVisualBottom);
+  if (fittedTable !== block) return fittedTable;
+  return fitFlowPositionedImageWithinPage(block, metrics, pageCoordinateSpan, currentVisualBottom);
+}
+
+function fitInferredTableWithinPage(
+  block: DocumentBlock,
+  metrics: BlockVisualMetrics | null,
+  pageCoordinateSpan: number,
+  currentVisualBottom: number
+): DocumentBlock {
+  if (block.type !== 'table' || !metrics || pageCoordinateSpan <= 0) return block;
   const layout = block._hwpxLayout;
   const position = layout?.position;
   if (position?.source !== 'hwp-table-line-seg-inferred') return block;
-  if (currentVisualBottom <= 0 || metrics.topPx >= currentVisualBottom - BLOCK_GAP_PX) return block;
+  if (metrics.topPx + metrics.heightPx <= pageCoordinateSpan + BLOCK_GAP_PX) return block;
+
+  const fitTop = Math.max(0, pageCoordinateSpan - metrics.heightPx - BLOCK_GAP_PX);
+  const clearTop = currentVisualBottom > 0 ? currentVisualBottom + BLOCK_GAP_PX : 0;
+  const topPx = Math.max(fitTop, clearTop);
+  if (topPx >= metrics.topPx) return block;
+
+  return {
+    ...block,
+    _hwpxLayout: {
+      ...layout,
+      heightPx: layout?.heightPx ?? metrics.heightPx,
+      position: {
+        ...position,
+        topPx
+      }
+    }
+  };
+}
+
+function fitFlowPositionedImageWithinPage(
+  block: DocumentBlock,
+  metrics: BlockVisualMetrics | null,
+  pageCoordinateSpan: number,
+  currentVisualBottom: number
+): DocumentBlock {
+  if (block.type !== 'image' || !metrics || pageCoordinateSpan <= 0) return block;
+  const layout = block._hwpxLayout;
+  const position = layout?.position;
+  if (position?.source !== 'hwp-flow-after-positioned') return block;
+  if (metrics.topPx + metrics.heightPx <= pageCoordinateSpan + BLOCK_GAP_PX) return block;
+
+  const fitTop = Math.max(0, pageCoordinateSpan - metrics.heightPx - BLOCK_GAP_PX);
+  const clearTop = currentVisualBottom > 0 ? currentVisualBottom + BLOCK_GAP_PX : 0;
+  const topPx = Math.max(fitTop, clearTop);
+  if (topPx >= metrics.topPx) return block;
+
+  return {
+    ...block,
+    _hwpxLayout: {
+      ...layout,
+      heightPx: layout?.heightPx ?? metrics.heightPx,
+      position: {
+        ...position,
+        topPx
+      }
+    }
+  };
+}
+
+function avoidPositionedContentOverlap(
+  block: DocumentBlock,
+  metrics: BlockVisualMetrics | null,
+  currentVisualBottom: number,
+  availableWidth: number,
+  estimatedHeight: number
+): DocumentBlock {
+  if (!metrics || currentVisualBottom <= 0 || metrics.topPx >= currentVisualBottom - BLOCK_GAP_PX) return block;
+
+  if (block.type === 'paragraph' && block._hwpxLayout?.source === 'hwp-para-line-seg') {
+    return positionFlowBlockAfterPositionedContent(
+      block,
+      currentVisualBottom + BLOCK_GAP_PX,
+      availableWidth,
+      estimatedHeight
+    );
+  }
+
+  if (block.type !== 'table') return block;
+  const layout = block._hwpxLayout;
+  const position = layout?.position;
+  if (position?.source !== 'hwp-table-line-seg-inferred') return block;
 
   return {
     ...block,
@@ -1186,13 +1409,13 @@ function buildTableBlock(
     ? {
         leftPx: objectInfo.horizontalOffset,
         topPx: objectInfo.verticalOffset,
-        ...(objectWidth > 0 ? { widthPx: objectWidth } : {}),
-        ...(objectHeight > 0 ? { heightPx: objectHeight } : {}),
-        ...(objectInfo.zIndex ? { zIndex: objectInfo.zIndex } : {}),
-        source: 'hwp-object-common'
-      }
+    ...(objectWidth > 0 ? { widthPx: objectWidth } : {}),
+    ...(objectHeight > 0 ? { heightPx: objectHeight } : {}),
+    ...(objectInfo.zIndex ? { zIndex: objectInfo.zIndex } : {}),
+    source: 'hwp-object-common'
+  }
     : null;
-  const inferredPosition = objectPosition ? null : inferHwpTablePosition(rows);
+  const inferredPosition = objectPosition ? null : inferHwpTablePosition(rows, objectInfo);
   const tablePosition = objectPosition ?? inferredPosition;
   const tablePaint = resolveHwpCellPaint(context.docInfo, tableInfo?.borderFillId ?? 0);
   const rawRowSizes = tableInfo?.rowSizes ?? [];
@@ -1256,7 +1479,10 @@ function tableRowSizesLookLikeHeights(
   return maxValue >= 100;
 }
 
-function inferHwpTablePosition(rows: readonly TableRow[]): HwpRenderedTablePosition | null {
+function inferHwpTablePosition(
+  rows: readonly TableRow[],
+  objectInfo: HwpObjectInfo | null = null
+): HwpRenderedTablePosition | null {
   const points: Array<{ left: number; top: number }> = [];
   for (const row of rows) {
     for (const cell of row.cells) {
@@ -1271,7 +1497,8 @@ function inferHwpTablePosition(rows: readonly TableRow[]): HwpRenderedTablePosit
   return {
     leftPx: Math.max(0, hwpUnitToPx(left) - 6),
     topPx: Math.max(0, hwpUnitToPx(top) - 8),
-    source: 'hwp-table-line-seg-inferred'
+    source: 'hwp-table-line-seg-inferred',
+    ...(objectInfo?.textWrap ? { textWrap: objectInfo.textWrap } : {})
   };
 }
 
@@ -1369,8 +1596,20 @@ function parseObjectInfo(body: Uint8Array): HwpObjectInfo {
     height: body.length >= 24 ? hwpUnitToPx(readUInt32(body, 20)) : 0,
     zIndex: body.length >= 28 ? readInt32(body, 24) : 0,
     description: decodeUtf16String(body, 46, descLen),
-    inline: Boolean(attr & 1)
+    inline: Boolean(attr & 1),
+    textWrap: hwpObjectTextWrap((attr >> 21) & 0x7)
   };
+}
+
+function hwpObjectTextWrap(code = 0): string {
+  return [
+    'top-and-bottom',
+    'square',
+    'tight',
+    'through',
+    'behind-text',
+    'in-front-of-text'
+  ][Number(code) || 0] || 'top-and-bottom';
 }
 
 function parsePictureBlock(body: Uint8Array, objectInfo: HwpObjectInfo | null, context: HwpParseContext): ImageBlock | null {
@@ -1427,12 +1666,15 @@ function createParagraphBlock(text: string, context: HwpParseContext, draft?: Hw
   const paraShape = context.docInfo.paraShapes[draft?.paraShapeId ?? -1] ?? null;
   const margin = paraShape?.margin && hasAnyBoxValue(paraShape.margin) ? paraShape.margin : undefined;
   const lineHeight = resolveParagraphLineHeight(draft, paraShape);
-  const segmentLayout = createParagraphLineSegmentLayout(draft);
+  const runs = buildTextRuns(text, draft, context);
+  const fallbackLineHeightPx = paragraphLineHeightPx({ type: 'paragraph', runs, lineHeight }, textRunsFontSizePx(runs));
+  const segmentLayout = createParagraphLineSegmentLayout(draft, fallbackLineHeightPx);
   const block: ParagraphBlock = {
     type: 'paragraph',
-    runs: buildTextRuns(text, draft, context),
+    runs,
     ...(paraShape?.align ? { align: paraShape.align } : {}),
     ...(margin ? { margin } : {}),
+    ...(paraShape?.textIndent ? { textIndent: paraShape.textIndent } : {}),
     ...(lineHeight ? { lineHeight } : {}),
     ...(segmentLayout ? { _hwpxLayout: segmentLayout } : {})
   };
@@ -1440,9 +1682,13 @@ function createParagraphBlock(text: string, context: HwpParseContext, draft?: Hw
   return block;
 }
 
-function createParagraphLineSegmentLayout(draft: HwpParagraphDraft | undefined): ParagraphBlock['_hwpxLayout'] | undefined {
+function createParagraphLineSegmentLayout(
+  draft: HwpParagraphDraft | undefined,
+  fallbackLineHeightPx: number
+): ParagraphBlock['_hwpxLayout'] | undefined {
   const sourceSegments = draft?.lineSegments ?? [];
   if (!sourceSegments.length) return undefined;
+  const maxSegmentHeightPx = Math.max(24, Math.min(MAX_LINE_SEGMENT_HEIGHT_PX, Math.round(fallbackLineHeightPx * 3)));
 
   const lineSegments = sourceSegments
     .map((segment, index) => {
@@ -1458,7 +1704,7 @@ function createParagraphLineSegmentLayout(draft: HwpParagraphDraft | undefined):
         horizontalPosition: Math.max(0, segment.x),
         horizontalSize: Math.max(0, segment.width),
         flags: segment.flags,
-        heightPx: Math.min(MAX_LINE_SEGMENT_HEIGHT_PX, hwpUnitToPx(verticalSize))
+        heightPx: Math.min(maxSegmentHeightPx, hwpUnitToPx(verticalSize))
       };
     })
     .filter((segment) => segment.heightPx > 0);
@@ -1681,32 +1927,55 @@ function parseBorderFill(body: Uint8Array): HwpBorderFill | null {
     top: borderAt(2),
     bottom: borderAt(3),
     fillColor: fill.fillColor,
+    fillGradient: fill.fillGradient,
     fillType: fill.fillType
   };
 }
 
-function parseBorderFillBrush(body: Uint8Array, offset: number): { readonly fillColor: string; readonly fillType: number } {
-  if (offset + 4 > body.length) return { fillColor: '', fillType: 0 };
+function parseBorderFillBrush(
+  body: Uint8Array,
+  offset: number
+): { readonly fillColor: string; readonly fillGradient: HwpFillGradient | null; readonly fillType: number } {
+  if (offset + 4 > body.length) return { fillColor: '', fillGradient: null, fillType: 0 };
   const fillType = readUInt32(body, offset);
   let cursor = offset + 4;
   let fillColor = '';
+  let fillGradient: HwpFillGradient | null = null;
 
   if ((fillType & 0x00000001) && cursor + 12 <= body.length) {
     fillColor = hwpColorRefToCss(readUInt32(body, cursor));
     cursor += 12;
   }
 
-  if (!fillColor && (fillType & 0x00000004) && cursor + 21 <= body.length) {
-    cursor += 17;
-    const colorCount = Math.max(0, readUInt32(body, cursor));
-    cursor += 4;
-    if (colorCount > 2) cursor += colorCount * 4;
-    if (colorCount > 0 && cursor + 4 <= body.length) {
-      fillColor = hwpColorRefToCss(readUInt32(body, cursor));
+  if ((fillType & 0x00000004) && cursor + 21 <= body.length) {
+    const gradientType = body[cursor] ?? 0;
+    const angle = readUInt32(body, cursor + 1);
+    const gradientColorCount = Math.max(0, readUInt32(body, cursor + 17));
+    cursor += 21;
+
+    const positionBytes = gradientColorCount > 2 ? gradientColorCount * 4 : 0;
+    if (positionBytes && cursor + positionBytes + (gradientColorCount * 4) <= body.length) {
+      cursor += positionBytes;
+    }
+
+    const colors: string[] = [];
+    for (let index = 0; index < gradientColorCount && cursor + 4 <= body.length; index += 1, cursor += 4) {
+      const color = hwpColorRefToCss(readUInt32(body, cursor));
+      if (color) colors.push(color);
+    }
+
+    if (colors.length >= 2) {
+      fillGradient = {
+        type: gradientType === 2 ? 'RADIAL' : 'LINEAR',
+        angle,
+        colors
+      };
+    } else if (!fillColor && colors[0]) {
+      fillColor = colors[0];
     }
   }
 
-  return { fillColor, fillType };
+  return { fillColor, fillGradient, fillType };
 }
 
 function parseCharShape(body: Uint8Array, fonts: readonly string[]): HwpCharShape | null {
@@ -1750,6 +2019,7 @@ function parseParaShape(body: Uint8Array): HwpParaShape | null {
       top: hwpSignedUnitToPx(readInt32(body, 16)),
       bottom: hwpSignedUnitToPx(readInt32(body, 20))
     },
+    textIndent: hwpSignedUnitToPx(readInt32(body, 12)),
     lineSpacingType,
     lineSpacing
   };
@@ -1862,6 +2132,7 @@ function mergeAdjacentRuns(runs: TextRun[]): TextRun[] {
 function sameRunStyle(left: TextRun, right: TextRun): boolean {
   return left.fontFamily === right.fontFamily
     && left.fontSizePt === right.fontSizePt
+    && left.href === right.href
     && left.color === right.color
     && left.letterSpacing === right.letterSpacing
     && left.bold === right.bold
@@ -1947,12 +2218,30 @@ function paragraphVisualMetrics(block: ParagraphBlock, estimatedHeight: number):
   const top = Math.min(...layout.lineSegments.map((segment) => segment.verticalPosition));
   const bottom = Math.max(...layout.lineSegments.map((segment) => segment.verticalPosition + Math.max(0, segment.verticalSize)));
   const topPx = hwpUnitToPx(Math.max(0, top));
+  const rawSpanPx = hwpUnitToPx(Math.max(0, bottom - top));
+  const stackedHeightPx = lineSegmentStackedHeightPx(layout);
+  if (isImplausibleLineSegmentSpan(rawSpanPx, stackedHeightPx)) {
+    return {
+      topPx: 0,
+      heightPx: Math.max(estimatedHeight, stackedHeightPx, Math.round(layout.heightPx ?? 0))
+    };
+  }
   const heightPx = Math.max(
     estimatedHeight,
-    hwpUnitToPx(Math.max(0, bottom - top)),
+    rawSpanPx,
+    stackedHeightPx,
     Math.round(layout.heightPx ?? 0)
   );
   return { topPx, heightPx };
+}
+
+function lineSegmentStackedHeightPx(layout: NonNullable<ParagraphBlock['_hwpxLayout']>): number {
+  return layout.lineSegments?.reduce((sum, segment) => sum + Math.max(0, Math.round(segment.heightPx)), 0) ?? 0;
+}
+
+function isImplausibleLineSegmentSpan(rawSpanPx: number, stackedHeightPx: number): boolean {
+  if (rawSpanPx <= MAX_LINE_SEGMENT_HEIGHT_PX) return false;
+  return rawSpanPx > Math.max(MAX_LINE_SEGMENT_HEIGHT_PX, stackedHeightPx * 4);
 }
 
 function tableVisualMetrics(block: TableBlock, availableWidth: number, estimatedHeight: number): BlockVisualMetrics | null {
@@ -2004,7 +2293,11 @@ function estimateParagraphHeight(block: ParagraphBlock, availableWidth: number):
 }
 
 function paragraphFontSizePx(block: ParagraphBlock): number {
-  const fontSizes = block.runs
+  return textRunsFontSizePx(block.runs);
+}
+
+function textRunsFontSizePx(runs: readonly TextRun[]): number {
+  const fontSizes = runs
     .map((run) => run.fontSizePt)
     .filter((value): value is number => Number.isFinite(value) && Number(value) > 0);
   if (!fontSizes.length) return 12 * PT_TO_PX;
@@ -2366,14 +2659,26 @@ function resolveHwpCellPaint(docInfo: HwpDocInfoSummary, borderFillId: number): 
   if (!borderFill) return {};
   const borderEdges = hwpBorderFillToCssEdges(borderFill);
   const border = firstVisibleBorderEdge(borderEdges);
-  const background = borderFill.fillColor && borderFill.fillColor.toLowerCase() !== '#ffffff'
-    ? borderFill.fillColor
-    : undefined;
+  const gradient = hwpFillGradientToCss(borderFill.fillGradient);
+  const background = gradient
+    || (borderFill.fillColor && borderFill.fillColor.toLowerCase() !== '#ffffff'
+      ? borderFill.fillColor
+      : undefined);
   return {
     ...(border ? { border } : {}),
     ...(borderEdges ? { borderEdges } : {}),
     ...(background ? { background } : {})
   };
+}
+
+function hwpFillGradientToCss(fillGradient: HwpFillGradient | null | undefined): string {
+  const colors = fillGradient?.colors.filter(Boolean) ?? [];
+  if (colors.length < 2) return '';
+  const angle = Number.isFinite(fillGradient?.angle)
+    ? 90 - Number(fillGradient?.angle)
+    : 90;
+  if (fillGradient?.type === 'RADIAL') return `radial-gradient(circle, ${colors.join(', ')})`;
+  return `linear-gradient(${angle}deg, ${colors.join(', ')})`;
 }
 
 function hwpBorderFillToCssEdges(borderFill: HwpBorderFill): BorderEdges | undefined {
@@ -2663,7 +2968,7 @@ function findSubtreeEnd(records: HwpRecord[], startIndex: number, parentLevel: n
 }
 
 function cellVerticalAlign(flags: number): TableCell['verticalAlign'] {
-  const value = (flags >>> 21) & 0x3;
+  const value = (flags >>> 5) & 0x3;
   if (value === 1) return 'middle';
   if (value === 2) return 'bottom';
   return 'top';

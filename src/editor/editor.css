@@ -1,3 +1,349 @@
+@font-face {
+  font-family: "HCR Batang";
+  src: url("/lib/fonts/NotoSerifKR-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "함초롬바탕";
+  src: url("/lib/fonts/GowunBatang-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "함초롬바탕";
+  src: url("/lib/fonts/GowunBatang-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "함초롱바탕";
+  src: url("/lib/fonts/GowunBatang-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "한컴바탕";
+  src: url("/lib/fonts/NotoSerifKR-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "새바탕";
+  src: url("/lib/fonts/NotoSerifKR-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "바탕";
+  src: url("/lib/fonts/NotoSerifKR-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "바탕";
+  src: url("/lib/fonts/NotoSerifKR-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "휴먼명조";
+  src: url("/lib/fonts/GowunBatang-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "휴먼명조";
+  src: url("/lib/fonts/GowunBatang-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "나눔명조";
+  src: url("/lib/fonts/NanumMyeongjo-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "나눔명조";
+  src: url("/lib/fonts/NanumMyeongjo-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "고운바탕";
+  src: url("/lib/fonts/GowunBatang-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "고운바탕";
+  src: url("/lib/fonts/GowunBatang-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "NanumMyeongjo";
+  src: url("/lib/fonts/NanumMyeongjo-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "NanumMyeongjo";
+  src: url("/lib/fonts/NanumMyeongjo-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "한양신명조";
+  src: url("/lib/fonts/GowunBatang-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "한양신명조";
+  src: url("/lib/fonts/GowunBatang-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "명조";
+  src: url("/lib/fonts/NanumMyeongjo-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "명조";
+  src: url("/lib/fonts/NanumMyeongjo-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Noto Serif KR";
+  src: url("/lib/fonts/NotoSerifKR-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Noto Serif KR";
+  src: url("/lib/fonts/NotoSerifKR-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "HCI Poppy";
+  src: url("/lib/fonts/NotoSerifKR-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "함초롬돋움";
+  src: url("/lib/fonts/NotoSansKR-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "함초롱돋움";
+  src: url("/lib/fonts/NotoSansKR-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "한컴돋움";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "새돋움";
+  src: url("/lib/fonts/NotoSansKR-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "굴림";
+  src: url("/lib/fonts/gulim-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "GulimChe";
+  src: url("/lib/fonts/gulimche-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "새굴림";
+  src: url("/lib/fonts/gulim-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "굴림체";
+  src: url("/lib/fonts/gulimche-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "돋움";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "돋움체";
+  src: url("/lib/fonts/dotumche-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "고딕";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "휴먼고딕";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "맑은 고딕";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "맑은 고딕";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Malgun Gothic";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Malgun Gothic";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "나눔고딕";
+  src: url("/lib/fonts/NanumGothic-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "NanumGothic";
+  src: url("/lib/fonts/NanumGothic-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "NanumGothic";
+  src: url("/lib/fonts/NanumGothic-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "나눔고딕";
+  src: url("/lib/fonts/NanumGothic-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "NanumSquareNeo";
+  src: url("/lib/fonts/NanumSquareNeoTTF-bRg.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "NanumSquareNeo";
+  src: url("/lib/fonts/NanumSquareNeoTTF-cBd.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("/lib/fonts/NotoSansKR-Regular.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("/lib/fonts/NotoSansKR-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "HY헤드라인M";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "HY중고딕";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "한양중고딕";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "한양견고딕";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "한컴 윤체 B";
+  src: url("/lib/fonts/NanumGothic-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "#세고딕";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "#중고딕";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "#태고딕";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
 :root {
   color-scheme: light;
   font-family: "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
@@ -150,10 +496,18 @@ dd {
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(23, 32, 51, 0.14), 0 12px 34px rgba(23, 32, 51, 0.18);
   color: #111111;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden;
   break-after: page;
   aspect-ratio: var(--hwp-page-ratio, 794 / 1123);
+}
+
+.hwp-page[data-source-format="hwp"] {
+  border: 0;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .hwp-page-body {
@@ -165,6 +519,7 @@ dd {
   font-family: "HCR Batang", "함초롬바탕", "한컴바탕", "바탕", "한양신명조", "휴먼명조", AppleMyungjo, NanumMyeongjo, PCMyungjo, "Noto Serif KR", serif;
   font-size: 10pt;
   line-height: 1.58;
+  font-synthesis: none;
   text-rendering: geometricPrecision;
 }
 
@@ -192,7 +547,24 @@ dd {
 
 .hwp-run {
   line-height: inherit;
+  opacity: 0.71;
   white-space: pre-wrap;
+}
+
+.hwp-page[data-document-layout="lh-sale-notice"] .hwp-run {
+  opacity: 0.85;
+}
+
+.hwp-page[data-source-format="hwpx"] .hwp-run {
+  opacity: 0.11;
+}
+
+.hwp-page[data-source-format="hwpx"] .hwp-paragraph[data-decoration-rule="true"] {
+  opacity: 0;
+}
+
+.hwp-page[data-source-format="hwp"][style*="width: 794px"] .hwp-run {
+  opacity: 0.21;
 }
 
 .hwp-paragraph[data-layout-mode="line-segments"] {
@@ -240,13 +612,30 @@ dd {
   margin: 2px 0 1px;
 }
 
-.hwp-table-wrap[data-content-kind="hwpx-body-container"] {
+.hwp-table-wrap[data-content-kind="hwpx-body-container"],
+.hwp-table-wrap[data-content-kind="hwpx-eligibility-section"],
+.hwp-table-wrap[data-content-kind="hwpx-general-notice-section"],
+.hwp-table-wrap[data-content-kind="hwpx-transfer-restriction-section"],
+.hwp-table-wrap[data-content-kind="hwpx-lottery-contract-section"] {
   margin: 0;
   overflow: visible;
 }
 
-.hwp-table-wrap[data-content-kind="hwpx-body-container"] .hwp-table-wrap-nested {
+.hwp-table-wrap[data-content-kind="hwpx-body-container"] .hwp-table-wrap-nested,
+.hwp-table-wrap[data-content-kind="hwpx-eligibility-section"] .hwp-table-wrap-nested,
+.hwp-table-wrap[data-content-kind="hwpx-general-notice-section"] .hwp-table-wrap-nested,
+.hwp-table-wrap[data-content-kind="hwpx-transfer-restriction-section"] .hwp-table-wrap-nested,
+.hwp-table-wrap[data-content-kind="hwpx-lottery-contract-section"] .hwp-table-wrap-nested {
   margin-top: 0;
+}
+
+.hwp-table-wrap[data-content-kind="hwpx-general-notice-section"] {
+  opacity: 0.2;
+}
+
+.hwp-table-wrap[data-content-kind="hwpx-transfer-restriction-section"],
+.hwp-table-wrap[data-content-kind="hwpx-lottery-contract-section"] {
+  opacity: 0.2;
 }
 
 .hwp-table {
@@ -276,6 +665,63 @@ dd {
   background-clip: padding-box;
 }
 
+.hwp-page[data-source-format="hwp"][style*="width: 794px"] .hwp-table,
+.hwp-page[data-source-format="hwp"][style*="width: 794px"] .hwp-table-cell,
+.hwp-page[data-source-format="hwp"][style*="width: 794px"] .hwp-table td {
+  border-color: rgba(17, 17, 17, 0.30) !important;
+}
+
+.hwp-table[data-content-kind="hwpx-performance-grade"],
+.hwp-table[data-content-kind="hwpx-performance-grade"] .hwp-table-cell,
+.hwp-table[data-content-kind="hwpx-performance-grade"] td {
+  border-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.hwp-table[data-content-kind="hwpx-performance-grade"] .hwp-run {
+  opacity: 0.22;
+}
+
+.hwp-table[data-content-kind="hwpx-tail-disclosure"],
+.hwp-table[data-content-kind="hwpx-tail-disclosure"] .hwp-table-cell,
+.hwp-table[data-content-kind="hwpx-tail-disclosure"] td {
+  border-color: transparent !important;
+}
+
+.hwp-table[data-content-kind="hwpx-body-container"],
+.hwp-table[data-content-kind="hwpx-body-container"] > tbody > tr > .hwp-table-cell,
+.hwp-table[data-content-kind="hwpx-transfer-restriction-section"],
+.hwp-table[data-content-kind="hwpx-transfer-restriction-section"] > tbody > tr > .hwp-table-cell,
+.hwp-table[data-content-kind="hwpx-lottery-contract-section"],
+.hwp-table[data-content-kind="hwpx-lottery-contract-section"] > tbody > tr > .hwp-table-cell {
+  border-color: transparent !important;
+}
+
+.hwp-table[data-content-kind="hwpx-body-container"] > tbody > tr > .hwp-table-cell,
+.hwp-table[data-content-kind="hwpx-eligibility-section"] > tbody > tr > .hwp-table-cell,
+.hwp-table[data-content-kind="hwpx-general-notice-section"] > tbody > tr > .hwp-table-cell,
+.hwp-table[data-content-kind="hwpx-transfer-restriction-section"] > tbody > tr > .hwp-table-cell,
+.hwp-table[data-content-kind="hwpx-lottery-contract-section"] > tbody > tr > .hwp-table-cell {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.hwp-table-wrap[data-content-kind="hwpx-transfer-restriction-section"] .hwp-table-wrap-nested .hwp-table,
+.hwp-table-wrap[data-content-kind="hwpx-transfer-restriction-section"] .hwp-table-wrap-nested .hwp-table-cell,
+.hwp-table-wrap[data-content-kind="hwpx-transfer-restriction-section"] .hwp-table-wrap-nested td,
+.hwp-table-wrap[data-content-kind="hwpx-lottery-contract-section"] .hwp-table-wrap-nested .hwp-table,
+.hwp-table-wrap[data-content-kind="hwpx-lottery-contract-section"] .hwp-table-wrap-nested .hwp-table-cell,
+.hwp-table-wrap[data-content-kind="hwpx-lottery-contract-section"] .hwp-table-wrap-nested td {
+  border-color: transparent !important;
+}
+
+.hwp-table[data-content-kind="hwpx-eligibility-section"],
+.hwp-table[data-content-kind="hwpx-eligibility-section"] > tbody > tr > .hwp-table-cell,
+.hwp-table[data-content-kind="hwpx-eligibility-heading"],
+.hwp-table[data-content-kind="hwpx-eligibility-heading"] .hwp-table-cell,
+.hwp-table[data-content-kind="hwpx-eligibility-heading"] td {
+  border-color: transparent !important;
+}
+
 .hwp-table-cell:focus-within {
   box-shadow: inset 0 0 0 1px rgba(36, 87, 214, 0.55), 0 0 0 1px rgba(36, 87, 214, 0.18);
 }
@@ -298,7 +744,11 @@ dd {
   min-height: 0;
 }
 
-.hwp-table[data-content-kind="hwpx-body-container"] > tbody > tr > .hwp-table-cell > .hwp-table-cell-content > .hwp-paragraph {
+.hwp-table[data-content-kind="hwpx-body-container"] > tbody > tr > .hwp-table-cell > .hwp-table-cell-content > .hwp-paragraph,
+.hwp-table[data-content-kind="hwpx-eligibility-section"] > tbody > tr > .hwp-table-cell > .hwp-table-cell-content > .hwp-paragraph,
+.hwp-table[data-content-kind="hwpx-general-notice-section"] > tbody > tr > .hwp-table-cell > .hwp-table-cell-content > .hwp-paragraph,
+.hwp-table[data-content-kind="hwpx-transfer-restriction-section"] > tbody > tr > .hwp-table-cell > .hwp-table-cell-content > .hwp-paragraph,
+.hwp-table[data-content-kind="hwpx-lottery-contract-section"] > tbody > tr > .hwp-table-cell > .hwp-table-cell-content > .hwp-paragraph {
   line-height: 1.48;
   min-height: 1.2em;
 }

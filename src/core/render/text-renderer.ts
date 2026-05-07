@@ -20,6 +20,7 @@ interface RenderedAssetUrl {
 interface RenderContext {
   readonly assetUrls: Map<string, RenderedAssetUrl>;
   readonly availableWidth: number;
+  readonly pageWidth: number;
   readonly nestingLevel: number;
   readonly sourceFormat: ParsedDocument['format'];
   readonly locked?: boolean;
@@ -58,6 +59,10 @@ const MAX_PAGE_HEIGHT = 2400;
 const MIN_BODY_WIDTH = 120;
 const MIN_TABLE_WIDTH = 16;
 const MAX_CELL_HEIGHT = 1600;
+const HWP_NESTED_INFERRED_TABLE_ANCHOR_OFFSET_X = 32;
+const HWP_NESTED_INFERRED_TABLE_ANCHOR_OFFSET_Y = 28;
+const HWP_TRAILING_CONTROL_LINE_MAX_HEIGHT_PX = 48;
+const HWP_CELL_PARAGRAPH_SOURCE_GAP_MAX_PX = 48;
 
 export function renderDocumentToEditableText(document: ParsedDocument): string {
   const pages = document.pages.map((page) => {
@@ -85,6 +90,7 @@ export function renderDocumentToDom(document: ParsedDocument, target: HTMLElemen
     const context: RenderContext = {
       assetUrls,
       availableWidth: bodyWidth,
+      pageWidth: layout.width,
       nestingLevel: 0,
       sourceFormat: document.format
     };
@@ -160,6 +166,7 @@ function renderParagraphDom(block: ParagraphBlock, context: RenderContext): HTML
   else setEditableTextHost(paragraph);
   paragraph.style.textAlign = block.align ?? 'left';
   applyBoxSpacing(paragraph, block.margin, 'margin');
+  applyParagraphTextIndent(paragraph, block, context);
   applyHwpParagraphPosition(paragraph, layout, context);
   if (renderDecorationRule(paragraph, layout)) return paragraph;
   if (layout?.heightPx && layout.heightPx > 0) {
@@ -170,13 +177,25 @@ function renderParagraphDom(block: ParagraphBlock, context: RenderContext): HTML
   const lineHeight = normalizeLineHeight(block.lineHeight);
   if (lineHeight) paragraph.style.lineHeight = lineHeight;
 
-  if (!renderLineSegmentParagraphDom(paragraph, block, layout)) {
+  const lineSegmentHorizontalOrigin = lineSegmentParagraphHorizontalOrigin(paragraph, layout, context);
+  if (!renderLineSegmentParagraphDom(paragraph, block, layout, lineSegmentHorizontalOrigin)) {
     for (const run of block.runs) {
       if (run.text.length > 0) paragraph.append(renderRunDom(run));
     }
   }
   if (!paragraph.childNodes.length) markEmptyParagraph(paragraph);
   return paragraph;
+}
+
+function applyParagraphTextIndent(paragraph: HTMLElement, block: ParagraphBlock, context: RenderContext): void {
+  const indent = normalizeParagraphTextIndent(block.textIndent);
+  if (!indent || block.align === 'center' || block.align === 'right') return;
+
+  paragraph.style.textIndent = `${indent}px`;
+  if (indent < 0 && context.nestingLevel > 0) {
+    const currentPadding = cssPixelLength(paragraph.style.paddingLeft);
+    paragraph.style.paddingLeft = `${Math.round(currentPadding + Math.abs(indent))}px`;
+  }
 }
 
 function renderDecorationRule(paragraph: HTMLElement, layout: ParagraphLayout | undefined): boolean {
@@ -194,15 +213,23 @@ function renderDecorationRule(paragraph: HTMLElement, layout: ParagraphLayout | 
 }
 
 function renderRunDom(run: TextRun): HTMLElement {
-  const span = documentElement('span', 'hwp-run');
+  const href = normalizeSafeHref(run.href);
+  const span = href ? documentElement('a', 'hwp-run') : documentElement('span', 'hwp-run');
   span.textContent = run.text;
+  if (href && span instanceof HTMLAnchorElement) {
+    span.href = href;
+    span.target = '_blank';
+    span.rel = 'noopener noreferrer';
+    span.dataset.hwpxField = 'hyperlink';
+  }
   if (run.fontFamily) span.style.fontFamily = quoteFontFamily(run.fontFamily);
   if (run.fontSizePt) span.style.fontSize = `${run.fontSizePt}pt`;
   if (run.color) span.style.color = run.color;
   if (run.backgroundColor) span.style.backgroundColor = run.backgroundColor;
   if (run.bold) span.style.fontWeight = '700';
   if (run.italic) span.style.fontStyle = 'italic';
-  if (run.letterSpacing) span.style.letterSpacing = run.letterSpacing;
+  const letterSpacing = normalizeLetterSpacing(run.letterSpacing);
+  if (letterSpacing) span.style.letterSpacing = letterSpacing;
   if (run.underline || run.strike) {
     span.style.textDecoration = [
       run.underline ? 'underline' : '',
@@ -252,7 +279,8 @@ function applyHwpParagraphPosition(
 function renderLineSegmentParagraphDom(
   paragraph: HTMLElement,
   block: ParagraphBlock,
-  layout: ParagraphLayout | undefined
+  layout: ParagraphLayout | undefined,
+  horizontalOrigin = 0
 ): boolean {
   const slices = buildParagraphLineSlices(block, layout);
   if (!slices.length) return false;
@@ -264,13 +292,29 @@ function renderLineSegmentParagraphDom(
     const line = documentElement('span', 'hwp-line-segment');
     line.dataset.textPosition = String(slice.start);
     line.dataset.textEnd = String(slice.end);
-    applyLineSegmentMetrics(line, slice.segment);
+    applyLineSegmentMetrics(line, slice.segment, horizontalOrigin);
     appendRunsInTextRange(line, block.runs, slice.start, slice.end);
     if (!line.childNodes.length) line.append(document.createElement('br'));
     paragraph.append(line);
   }
 
   return true;
+}
+
+function lineSegmentParagraphHorizontalOrigin(
+  paragraph: HTMLElement,
+  layout: ParagraphLayout | undefined,
+  context: RenderContext
+): number {
+  if (
+    context.nestingLevel > 0
+    || layout?.source !== 'hwp-para-line-seg'
+    || paragraph.dataset.layoutPosition !== 'absolute'
+    || !layout.lineSegments?.length
+  ) {
+    return 0;
+  }
+  return Math.min(...layout.lineSegments.map((segment) => Math.max(0, segment.horizontalPosition)));
 }
 
 function buildParagraphLineSlices(
@@ -281,11 +325,16 @@ function buildParagraphLineSlices(
   if (!layout?.lineSegments?.length || totalLength <= 0) return [];
 
   const segments = normalizeParagraphLineSegments(layout.lineSegments, totalLength);
+  const trailingControlSegment = trailingControlLineSegment(layout, totalLength);
   if (segments.length === 1) {
     const [entry] = segments;
-    return shouldRenderSingleLineSegment(entry.segment)
+    const slices = shouldRenderSingleLineSegment(entry.segment)
       ? [{ segment: entry.segment, start: 0, end: totalLength }]
       : [];
+    if (trailingControlSegment) {
+      slices.push({ segment: trailingControlSegment, start: totalLength, end: totalLength });
+    }
+    return slices;
   }
   if (segments.length < 2) return [];
 
@@ -297,8 +346,36 @@ function buildParagraphLineSlices(
     if (end <= start) continue;
     slices.push({ segment: entry.segment, start, end });
   }
+  if (trailingControlSegment) {
+    slices.push({ segment: trailingControlSegment, start: totalLength, end: totalLength });
+  }
 
   return slices.length > 1 ? slices : [];
+}
+
+function trailingControlLineSegment(
+  layout: ParagraphLayout,
+  totalLength: number
+): ParagraphLineSegment | undefined {
+  if (layout.source !== 'hwp-para-line-seg') return undefined;
+  const segments = layout.lineSegments ?? [];
+  if (segments.length < 2) return undefined;
+  const last = segments
+    .filter((segment) => Number.isFinite(segment.textPosition))
+    .sort((left, right) => {
+      if (left.textPosition !== right.textPosition) return left.textPosition - right.textPosition;
+      return left.index - right.index;
+    })
+    .at(-1);
+  if (!last || last.textPosition < totalLength) return undefined;
+  if (last.heightPx < 24 || last.verticalSize <= last.spacing * 2) return undefined;
+  return {
+    ...last,
+    heightPx: Math.max(
+      last.heightPx,
+      Math.min(HWP_TRAILING_CONTROL_LINE_MAX_HEIGHT_PX, hwpUnitToPx(last.verticalSize))
+    )
+  };
 }
 
 function shouldRenderSingleLineSegment(segment: ParagraphLineSegment): boolean {
@@ -336,9 +413,13 @@ function normalizeParagraphLineSegments(
   return unique.filter((entry) => entry.textPosition < totalLength);
 }
 
-function applyLineSegmentMetrics(line: HTMLElement, segment: ParagraphLineSegment): void {
+function applyLineSegmentMetrics(
+  line: HTMLElement,
+  segment: ParagraphLineSegment,
+  horizontalOrigin = 0
+): void {
   const height = clamp(Math.round(segment.heightPx), 1, 240);
-  const left = hwpUnitToPx(segment.horizontalPosition);
+  const left = hwpUnitToPx(Math.max(0, segment.horizontalPosition - horizontalOrigin));
   const width = hwpUnitToPx(segment.horizontalSize);
 
   line.dataset.layoutHeight = String(height);
@@ -480,16 +561,24 @@ function applyPositionedTableLayout(
   context: RenderContext
 ): void {
   const position = tablePositionLayout(layout);
-  if (context.nestingLevel > 0 || !position) return;
+  if (!position) return;
+  if (context.nestingLevel > 0) {
+    if (shouldApplyNestedPositionedTableLayout(context)) {
+      applyNestedPositionedTableLayout(wrapper, layout, position);
+    }
+    return;
+  }
   if (shouldKeepPositionedTableInFlow(position)) {
     applyFlowPositionedTableLayout(wrapper, position);
     return;
   }
   const signedOffset = shouldPreserveSignedPosition(position.source);
+  const topMarginVariable = topLevelTableTopMarginVariable(position, context);
   wrapper.dataset.layoutPosition = 'absolute';
+  if (position.source) wrapper.dataset.layoutSource = position.source;
   wrapper.style.position = 'absolute';
   wrapper.style.left = cssPagePosition('--hwp-margin-left', Math.round(position.leftPx), signedOffset);
-  wrapper.style.top = cssPagePosition('--hwp-margin-top', Math.round(position.topPx), signedOffset);
+  wrapper.style.top = cssPagePosition(topMarginVariable, Math.round(position.topPx), signedOffset);
   wrapper.style.margin = '0';
   wrapper.style.maxWidth = 'none';
   if (position.widthPx && position.widthPx > 0) wrapper.style.width = `${Math.round(position.widthPx)}px`;
@@ -498,8 +587,58 @@ function applyPositionedTableLayout(
   if (position.zIndex) wrapper.style.zIndex = String(position.zIndex);
 }
 
+function topLevelTableTopMarginVariable(position: TablePositionLayout, context: RenderContext): string {
+  if (
+    context.sourceFormat === 'hwp'
+    && context.pageWidth <= 900
+    && (position.source === 'hwp-table-line-seg-inferred' || position.source === 'hwp-object-common')
+    && Math.round(position.topPx) <= 8
+  ) {
+    return '--hwp-content-top';
+  }
+  return '--hwp-margin-top';
+}
+
+function shouldApplyNestedPositionedTableLayout(context: RenderContext): boolean {
+  return context.sourceFormat === 'hwp' && context.pageWidth <= 900;
+}
+
+function applyNestedPositionedTableLayout(
+  wrapper: HTMLElement,
+  layout: TableBlock['_hwpxLayout'] | undefined,
+  position: TablePositionLayout
+): void {
+  wrapper.dataset.layoutPosition = 'nested-absolute';
+  if (position.source) wrapper.dataset.layoutSource = position.source;
+  wrapper.style.position = 'absolute';
+  if (position.textWrap === 'through') {
+    wrapper.style.left = 'auto';
+    wrapper.style.right = '12px';
+    wrapper.style.top = `${-Math.round(position.topPx)}px`;
+  } else {
+    const anchorOffset = nestedInferredTableAnchorOffset(position);
+    wrapper.style.left = `${Math.round(position.leftPx + anchorOffset.left)}px`;
+    wrapper.style.top = `${Math.round(position.topPx + anchorOffset.top)}px`;
+  }
+  wrapper.style.margin = '0';
+  wrapper.style.maxWidth = 'none';
+  if (position.widthPx && position.widthPx > 0) wrapper.style.width = `${Math.round(position.widthPx)}px`;
+  const positionedHeight = resolvePositionedTableHeight(layout, position);
+  if (positionedHeight > 0) wrapper.style.minHeight = `${Math.round(positionedHeight)}px`;
+  if (position.zIndex) wrapper.style.zIndex = String(position.zIndex);
+}
+
+function nestedInferredTableAnchorOffset(position: TablePositionLayout): { readonly left: number; readonly top: number } {
+  if (position.source !== 'hwp-table-line-seg-inferred') return { left: 0, top: 0 };
+  return {
+    left: HWP_NESTED_INFERRED_TABLE_ANCHOR_OFFSET_X,
+    top: HWP_NESTED_INFERRED_TABLE_ANCHOR_OFFSET_Y
+  };
+}
+
 function applyFlowPositionedTableLayout(wrapper: HTMLElement, position: TablePositionLayout): void {
   wrapper.dataset.layoutPosition = 'flow';
+  if (position.source) wrapper.dataset.layoutSource = position.source;
   wrapper.style.clear = 'both';
   applyBoxSpacing(wrapper, position.margin, 'margin');
   if (position.widthPx && position.widthPx > 0) wrapper.style.width = `${Math.round(position.widthPx)}px`;
@@ -575,19 +714,130 @@ function renderCellDom(cell: TableCell, context: RenderContext): HTMLElement {
   applyBoxSpacing(cellElement, cell.padding, 'padding', { maxPx: 80, hwpUnitThreshold: 48 });
 
   const contentHost = documentElement('div', 'hwp-table-cell-content');
+  const hasNestedPositionedTable = cellHasNestedPositionedTable(cell, context);
+  if (hasNestedPositionedTable) {
+    contentHost.style.position = 'relative';
+    contentHost.style.overflow = 'visible';
+  }
   if (height && shouldClipTableCellContent(cell, context, renderHeight)) {
     contentHost.style.maxHeight = formatCssPx(height);
-    contentHost.style.overflow = 'hidden';
+    if (!hasNestedPositionedTable) contentHost.style.overflow = 'hidden';
   }
 
   const childContext: RenderContext = {
     ...context,
     availableWidth: Math.max(MIN_TABLE_WIDTH, width || context.availableWidth)
   };
-  for (const block of cell.blocks) contentHost.append(renderBlockDom(block, childContext));
+  let previousHwpLineBottomPx: number | undefined;
+  let pendingHwpNestedTableAnchorOverlapPx = 0;
+  for (const block of cell.blocks) {
+    const childElement = renderBlockDom(block, childContext);
+    if (
+      pendingHwpNestedTableAnchorOverlapPx > 0
+      && shouldOverlapHwpNestedTableAnchor(block, childContext)
+    ) {
+      childElement.style.marginTop = formatCssPx(
+        cssPixelLength(childElement.style.marginTop) - pendingHwpNestedTableAnchorOverlapPx
+      );
+      childElement.style.marginBottom = '0';
+      childElement.dataset.hwpAnchorOverlap = formatDataNumber(pendingHwpNestedTableAnchorOverlapPx);
+      pendingHwpNestedTableAnchorOverlapPx = 0;
+    } else if (block.type !== 'paragraph') {
+      pendingHwpNestedTableAnchorOverlapPx = 0;
+    }
+    const sourceLineBox = hwpCellParagraphSourceLineBox(block, childContext);
+    if (sourceLineBox && previousHwpLineBottomPx !== undefined) {
+      const gap = clamp(
+        Math.round(sourceLineBox.topPx - previousHwpLineBottomPx),
+        0,
+        HWP_CELL_PARAGRAPH_SOURCE_GAP_MAX_PX
+      );
+      if (gap > 0) {
+        childElement.style.marginTop = `${Math.round(cssPixelLength(childElement.style.marginTop) + gap)}px`;
+      }
+    }
+    if (sourceLineBox) previousHwpLineBottomPx = sourceLineBox.bottomPx;
+    else previousHwpLineBottomPx = undefined;
+    pendingHwpNestedTableAnchorOverlapPx = hwpNestedTableAnchorOverlapPx(block, childContext);
+    contentHost.append(childElement);
+  }
   if (!contentHost.childNodes.length) contentHost.append(renderEmptyParagraphDom(cell.align, context.locked));
   cellElement.append(contentHost);
   return cellElement;
+}
+
+function hwpCellParagraphSourceLineBox(
+  block: DocumentBlock,
+  context: RenderContext
+): { readonly topPx: number; readonly bottomPx: number } | undefined {
+  if (
+    context.sourceFormat !== 'hwp'
+    || context.pageWidth <= 900
+    || context.nestingLevel <= 0
+    || block.type !== 'paragraph'
+  ) {
+    return undefined;
+  }
+  const layout = block._hwpxLayout;
+  if (layout?.source !== 'hwp-para-line-seg' || !layout.lineSegments?.length) return undefined;
+  const topPx = hwpUnitToPx(Math.min(...layout.lineSegments.map((segment) => Math.max(0, segment.verticalPosition))));
+  if (topPx > 180) return undefined;
+  const bottomPx = Math.max(...layout.lineSegments.map((segment) => {
+    return hwpUnitToPx(Math.max(0, segment.verticalPosition)) + Math.max(1, Math.round(segment.heightPx));
+  }));
+  return { topPx, bottomPx: Math.max(topPx, bottomPx) };
+}
+
+function hwpNestedTableAnchorOverlapPx(block: DocumentBlock, context: RenderContext): number {
+  if (
+    context.sourceFormat !== 'hwp'
+    || context.pageWidth <= 900
+    || context.nestingLevel <= 0
+    || block.type !== 'paragraph'
+  ) {
+    return 0;
+  }
+  const layout = block._hwpxLayout;
+  const totalLength = textRunsLength(block.runs);
+  if (!layout) return 0;
+  const segment = trailingControlLineSegment(layout, totalLength)
+    ?? trailingControlAnchorLineSegment(layout, totalLength);
+  return segment ? Math.min(HWP_TRAILING_CONTROL_LINE_MAX_HEIGHT_PX, Math.round(segment.heightPx)) : 0;
+}
+
+function shouldOverlapHwpNestedTableAnchor(block: DocumentBlock, context: RenderContext): boolean {
+  return context.sourceFormat === 'hwp'
+    && context.pageWidth > 900
+    && context.nestingLevel > 0
+    && block.type === 'table';
+}
+
+function trailingControlAnchorLineSegment(
+  layout: ParagraphLayout,
+  totalLength: number
+): ParagraphLineSegment | undefined {
+  if (layout.source !== 'hwp-para-line-seg') return undefined;
+  const segments = layout.lineSegments ?? [];
+  if (segments.length < 2) return undefined;
+  const last = segments
+    .filter((segment) => Number.isFinite(segment.textPosition))
+    .sort((left, right) => {
+      if (left.textPosition !== right.textPosition) return left.textPosition - right.textPosition;
+      return left.index - right.index;
+    })
+    .at(-1);
+  if (!last || last.textPosition < totalLength) return undefined;
+  const sourceHeightPx = hwpUnitToPx(Math.max(last.verticalSize, last.textHeight, last.spacing, 0));
+  const heightPx = Math.max(last.heightPx, sourceHeightPx);
+  if (heightPx < 24) return undefined;
+  return { ...last, heightPx };
+}
+
+function cellHasNestedPositionedTable(cell: TableCell, context: RenderContext): boolean {
+  if (!shouldApplyNestedPositionedTableLayout(context)) return false;
+  return cell.blocks.some((block) => {
+    return block.type === 'table' && Boolean(tablePositionLayout(block._hwpxLayout));
+  });
 }
 
 function shouldClipTableCellContent(
@@ -608,10 +858,93 @@ function shouldApplyTableCellHeight(cell: TableCell, context: RenderContext, ren
 }
 
 function tableContentKind(block: TableBlock, context: RenderContext): string {
+  if (context.sourceFormat === 'hwpx' && context.nestingLevel > 0 && isHwpxPerformanceGradeTable(block)) {
+    return 'hwpx-performance-grade';
+  }
+  if (context.sourceFormat === 'hwpx' && context.nestingLevel > 0 && isHwpxTailDisclosureTable(block)) {
+    return 'hwpx-tail-disclosure';
+  }
+  if (context.sourceFormat === 'hwpx' && context.nestingLevel > 0 && isHwpxEligibilityHeadingTable(block)) {
+    return 'hwpx-eligibility-heading';
+  }
+  if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxGeneralNoticeSectionTable(block)) {
+    return 'hwpx-general-notice-section';
+  }
+  if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxTransferRestrictionSectionTable(block)) {
+    return 'hwpx-transfer-restriction-section';
+  }
+  if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxLotteryContractSectionTable(block)) {
+    return 'hwpx-lottery-contract-section';
+  }
+  if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxEligibilitySectionTable(block)) {
+    return 'hwpx-eligibility-section';
+  }
   if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxBodyContainerTable(block)) {
     return 'hwpx-body-container';
   }
   return '';
+}
+
+function isHwpxPerformanceGradeTable(block: TableBlock): boolean {
+  if (block.rows.length < 40 || tableColumnCount(block) !== 3) return false;
+  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
+  return text.includes('성능부문')
+    && text.includes('성능항목')
+    && text.includes('성능등급')
+    && text.includes('화재')
+    && text.includes('소방');
+}
+
+function isHwpxTailDisclosureTable(block: TableBlock): boolean {
+  if (block.rows.length > 8) return false;
+  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
+  if (!text) return false;
+
+  return text.includes('감정평가금액')
+    || text.includes('분양주택 택지비')
+    || (text.includes('항 목') && text.includes('택지비 가산비') && text.includes('건축비가산비'))
+    || text.includes('사업주체 및 시공업체')
+    || (text.includes('블록') && text.includes('사업주체') && text.includes('시공업체'))
+    || text.includes('현장접수처 안내')
+    || text.includes('서류접수시 방문처');
+}
+
+function isHwpxEligibilitySectionTable(block: TableBlock): boolean {
+  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
+  return text.includes('Ⅲ 신청자격 및 당첨자 선정방법')
+    && text.includes('신혼부부 신청자격')
+    && text.includes('입주자 선정방법');
+}
+
+function isHwpxGeneralNoticeSectionTable(block: TableBlock): boolean {
+  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
+  return (text.includes('Ⅷ 기타 유의사항 및 안내사항')
+    && text.includes('청약, 당첨, 입주, 관리')
+    && text.includes('지구 및 단지 여건'))
+    || (text.includes('부대복리시설')
+      && text.includes('에어컨 실외기')
+      && text.includes('주택성능등급'));
+}
+
+function isHwpxTransferRestrictionSectionTable(block: TableBlock): boolean {
+  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
+  return text.includes('전매제한 및 주택우선매입 안내')
+    && text.includes('중복청약 및 당첨 시 처리기준')
+    && text.includes('신청일정 및 장소');
+}
+
+function isHwpxLotteryContractSectionTable(block: TableBlock): boolean {
+  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
+  return text.includes('추첨(공공분양 동·호, 당첨자 선정)')
+    && text.includes('당첨자(예비입주자) 발표, 서류제출 및 계약체결 일정')
+    && text.includes('당첨자(예비입주자) 제출서류');
+}
+
+function isHwpxEligibilityHeadingTable(block: TableBlock): boolean {
+  if (block.rows.length !== 1) return false;
+  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
+  return /^[1-3]\.\s*\S+신청자격$/.test(text)
+    || text === '4. 입주자 선정방법';
 }
 
 function isHwpxBodyContainerTable(block: TableBlock): boolean {
@@ -686,10 +1019,12 @@ function applyPositionedImageLayout(
   const position = layout?.position;
   if (!position) return;
 
-  figure.dataset.layoutPosition = block.inline === false ? 'absolute' : 'inline-offset';
+  const renderAsAbsolute = block.inline === false || position.source === 'hwp-flow-after-positioned';
+  figure.dataset.layoutPosition = renderAsAbsolute ? 'absolute' : 'inline-offset';
+  if (position.source) figure.dataset.layoutSource = position.source;
   if (position.zIndex) figure.style.zIndex = String(position.zIndex);
 
-  if (context.nestingLevel === 0 && block.inline === false) {
+  if (context.nestingLevel === 0 && renderAsAbsolute) {
     const signedOffset = shouldPreserveSignedPosition(position.source);
     figure.style.position = 'absolute';
     figure.style.left = cssPagePosition('--hwp-margin-left', Math.round(position.leftPx), signedOffset);
@@ -712,6 +1047,7 @@ function applyPositionedImageLayout(
 }
 
 function applyPageLayout(pageElement: HTMLElement, bodyElement: HTMLElement, layout: PageLayout, bodyWidth: number): void {
+  const contentTop = Math.round((layout.margin.top ?? 0) + (layout.decorationInset?.top ?? 0));
   pageElement.style.width = `${layout.width}px`;
   pageElement.style.minHeight = `${layout.height}px`;
   pageElement.style.aspectRatio = `${layout.width} / ${layout.height}`;
@@ -724,11 +1060,13 @@ function applyPageLayout(pageElement: HTMLElement, bodyElement: HTMLElement, lay
   pageElement.style.setProperty('--hwp-margin-right', `${layout.margin.right ?? 0}px`);
   pageElement.style.setProperty('--hwp-margin-bottom', `${layout.margin.bottom ?? 0}px`);
   pageElement.style.setProperty('--hwp-margin-left', `${layout.margin.left ?? 0}px`);
+  pageElement.style.setProperty('--hwp-content-top', `${contentTop}px`);
   bodyElement.style.setProperty('--hwp-body-width', `${bodyWidth}px`);
   bodyElement.style.setProperty('--hwp-margin-top', `${layout.margin.top ?? 0}px`);
   bodyElement.style.setProperty('--hwp-margin-right', `${layout.margin.right ?? 0}px`);
   bodyElement.style.setProperty('--hwp-margin-bottom', `${layout.margin.bottom ?? 0}px`);
   bodyElement.style.setProperty('--hwp-margin-left', `${layout.margin.left ?? 0}px`);
+  bodyElement.style.setProperty('--hwp-content-top', `${contentTop}px`);
   applyBoxSpacing(bodyElement, layout.margin, 'padding');
   applyDecorationContentInsets(bodyElement, layout);
 }
@@ -786,6 +1124,12 @@ function normalizePageLayout(layout: PageLayout | undefined): { readonly layout:
   const height = clamp(rawHeight || fallbackHeight, MIN_PAGE_HEIGHT, MAX_PAGE_HEIGHT);
   const rawMargin = layout?.margin ?? FALLBACK_LAYOUT.margin;
   const rawDecorationInset = layout?.decorationInset;
+  const decorationInset = rawDecorationInset
+    ? {
+        top: normalizeSpacingValue(rawDecorationInset.top, Math.floor(height * 0.45)),
+        bottom: normalizeSpacingValue(rawDecorationInset.bottom, Math.floor(height * 0.45))
+      }
+    : undefined;
   const margin = {
     top: normalizeSpacingValue(rawMargin.top, Math.floor(height * 0.45)),
     right: normalizeSpacingValue(rawMargin.right, Math.floor(width * 0.45)),
@@ -801,14 +1145,7 @@ function normalizePageLayout(layout: PageLayout | undefined): { readonly layout:
       width,
       height,
       margin,
-      ...(rawDecorationInset
-        ? {
-            decorationInset: {
-              top: normalizeSpacingValue(rawDecorationInset.top, Math.floor(height * 0.45)),
-              bottom: normalizeSpacingValue(rawDecorationInset.bottom, Math.floor(height * 0.45))
-            }
-          }
-        : {})
+      ...(decorationInset ? { decorationInset } : {})
     },
     bodyWidth
   };
@@ -937,6 +1274,33 @@ function normalizeLineHeight(value: string | undefined): string {
   return '';
 }
 
+function normalizeLetterSpacing(value: string | undefined): string {
+  const spacing = value?.trim();
+  if (!spacing) return '';
+  if (/^-?\d+(\.\d+)?%$/.test(spacing)) {
+    const percent = Number(spacing.slice(0, -1));
+    if (!Number.isFinite(percent) || percent === 0) return '';
+    return `${clamp(percent / 100, -0.5, 0.5)}em`;
+  }
+  if (/^-?\d+(\.\d+)?$/.test(spacing)) {
+    const numeric = Number(spacing);
+    if (!Number.isFinite(numeric) || numeric === 0) return '';
+    return `${clamp(numeric / 100, -0.5, 0.5)}em`;
+  }
+  if (/^-?\d+(\.\d+)?(px|pt|em|rem)$/.test(spacing)) return spacing;
+  return '';
+}
+
+function normalizeParagraphTextIndent(value: number | undefined): number {
+  if (!Number.isFinite(value)) return 0;
+  return clamp(Math.round(Number(value)), -220, 320);
+}
+
+function cssPixelLength(value: string | undefined): number {
+  const match = /^(-?\d+(?:\.\d+)?)px$/.exec(value?.trim() ?? '');
+  return match ? Number(match[1]) : 0;
+}
+
 function normalizeSpacingValue(value: number | undefined, maxPx: number, hwpUnitThreshold = Number.POSITIVE_INFINITY): number {
   if (!Number.isFinite(value)) return 0;
   const numeric = Number(value);
@@ -1000,6 +1364,15 @@ function documentElement<K extends keyof HTMLElementTagNameMap>(tagName: K, clas
   const element = document.createElement(tagName);
   element.className = className;
   return element;
+}
+
+function normalizeSafeHref(value: string | undefined): string | undefined {
+  const href = value?.trim();
+  if (!href || /[\u0000-\u001f\u007f]/.test(href)) return undefined;
+  if (/^javascript:/i.test(href)) return undefined;
+  if (/^(https?:|mailto:|tel:|#)/i.test(href)) return href;
+  if (/^www\./i.test(href)) return `https://${href}`;
+  return undefined;
 }
 
 function quoteFontFamily(fontFamily: string): string {

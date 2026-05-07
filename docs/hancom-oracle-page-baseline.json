@@ -1,32 +1,92 @@
 {
   "generatedAt": "2026-04-19T00:12:09+09:00",
   "source": "Hancom Office HWP Viewer screenshots in output/hancom-oracle",
-  "notes": "한컴 Viewer 상태바를 정답으로 삼은 페이지 수 기준선이다. TotalDocs QA는 이 값과 다르면 조판 불일치로 보고해야 한다.",
+  "notes": "한컴 Viewer 상태바를 정답으로 삼은 페이지 수 기준선이다. TotalDocs QA는 이 값과 다르면 조판 불일치로 보고해야 한다. extensionEditorSmoke는 src/editor 확장 에디터의 구조 스모크 하한선이며, 페이지 수는 한컴 기준선과 정확히 맞아야 한다.",
   "documents": {
     "goyeopje": {
       "filename": "goyeopje.hwp",
       "hancomPageCount": 2,
-      "evidence": "/Users/shinehandmac/Github/TotalDocs/output/hancom-oracle/goyeopje-hancom.png"
+      "evidence": "/Users/shinehandmac/Github/TotalDocs/output/hancom-oracle/goyeopje-hancom.png",
+      "extensionEditorSmoke": {
+        "expectedFormat": "HWP",
+        "expectedPages": 2,
+        "minimumParagraphs": 80,
+        "minimumTables": 1,
+        "minimumImages": 0,
+        "referenceCounts": {
+          "officialViewerTextRuns": 139,
+          "officialViewerTables": 2,
+          "officialViewerImages": 0
+        }
+      }
     },
     "goyeopje-full-2024": {
       "filename": "goyeopje-full-2024.hwp",
       "hancomPageCount": 11,
-      "evidence": "/Users/shinehandmac/Github/TotalDocs/output/hancom-oracle/goyeopje-full-2024-hancom.png"
+      "evidence": "/Users/shinehandmac/Github/TotalDocs/output/hancom-oracle/goyeopje-full-2024-hancom.png",
+      "extensionEditorSmoke": {
+        "expectedFormat": "HWP",
+        "expectedPages": 11,
+        "minimumParagraphs": 500,
+        "minimumTables": 10,
+        "minimumImages": 0,
+        "referenceCounts": {
+          "officialViewerTextRuns": 768,
+          "officialViewerTables": 14,
+          "officialViewerImages": 0
+        }
+      }
     },
     "gyeolseokgye": {
       "filename": "gyeolseokgye.hwp",
       "hancomPageCount": 1,
-      "evidence": "/Users/shinehandmac/Github/TotalDocs/output/hancom-oracle/gyeolseokgye-hancom.png"
+      "evidence": "/Users/shinehandmac/Github/TotalDocs/output/hancom-oracle/gyeolseokgye-hancom.png",
+      "extensionEditorSmoke": {
+        "expectedFormat": "HWP",
+        "expectedPages": 1,
+        "minimumParagraphs": 40,
+        "minimumTables": 2,
+        "minimumImages": 0,
+        "referenceCounts": {
+          "officialViewerTextRuns": 62,
+          "officialViewerTables": 3,
+          "officialViewerImages": 0
+        }
+      }
     },
     "attachment-sale-notice": {
       "filename": "attachment-sale-notice.hwp",
       "hancomPageCount": 4,
-      "evidence": "/Users/shinehandmac/Github/TotalDocs/output/hancom-oracle/attachment-sale-notice-hancom.png"
+      "evidence": "/Users/shinehandmac/Github/TotalDocs/output/hancom-oracle/attachment-sale-notice-hancom.png",
+      "extensionEditorSmoke": {
+        "expectedFormat": "HWP",
+        "expectedPages": 4,
+        "minimumParagraphs": 300,
+        "minimumTables": 8,
+        "minimumImages": 1,
+        "referenceCounts": {
+          "officialViewerTextRuns": 920,
+          "officialViewerTables": 14,
+          "officialViewerImages": 2
+        }
+      }
     },
     "incheon-2a": {
       "filename": "incheon-2a.hwpx",
       "hancomPageCount": 18,
-      "evidence": "/Users/shinehandmac/Github/TotalDocs/output/hancom-oracle/incheon-2a-hancom.png"
+      "evidence": "/Users/shinehandmac/Github/TotalDocs/output/hancom-oracle/incheon-2a-hancom.png",
+      "extensionEditorSmoke": {
+        "expectedFormat": "HWPX",
+        "expectedPages": 18,
+        "minimumParagraphs": 800,
+        "minimumTables": 20,
+        "minimumImages": 4,
+        "referenceCounts": {
+          "officialViewerTextRuns": 2404,
+          "officialViewerTables": 78,
+          "officialViewerImages": 5
+        }
+      }
     }
   }
 }

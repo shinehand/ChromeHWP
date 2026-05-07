@@ -3,7 +3,6 @@
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
-import { createRequire } from 'node:module';
 import path from 'node:path';
 import process from 'node:process';
 import { format as formatConsole } from 'node:util';
@@ -23,10 +22,9 @@ const PARSER_FILES = [
 const RECORD_EXAMPLE_LIMIT_PER_TAG = 5;
 const RAW_RECORD_DETAIL_LIMIT = 200;
 const OBJECT_BLOCK_TYPES = new Set(['image', 'shape', 'textbox', 'equation', 'ole', 'chart', 'video']);
+const HWP_UNIT_TO_PX = 96 / 7200;
 const OBJECT_CONTROL_IDS = new Set(['tbl ', 'gso ']);
 const OBJECT_PAYLOAD_TAG_IDS = new Set([78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 95, 98]);
-
-const require = createRequire(import.meta.url);
 
 process.stdout.on('error', error => {
   if (error?.code === 'EPIPE') {
@@ -207,6 +205,27 @@ function textLength(block = {}) {
   return (block.texts || []).reduce((sum, run) => sum + String(run?.text || '').length, 0);
 }
 
+function blockTextPreview(block = {}, limit = 120) {
+  const parts = [];
+  const visit = item => {
+    if (!item || parts.join(' ').length >= limit) return;
+    if (Array.isArray(item.texts)) {
+      const text = item.texts.map(run => String(run?.text || '')).join('');
+      if (text.trim()) parts.push(text.trim());
+    }
+    if (Array.isArray(item.paragraphs)) {
+      for (const child of item.paragraphs) visit(child);
+    }
+    if (item.type === 'table') {
+      for (const row of item.rows || []) {
+        for (const cell of row.cells || []) visit(cell);
+      }
+    }
+  };
+  visit(block);
+  return parts.join(' ').replace(/\s+/g, ' ').trim().slice(0, limit);
+}
+
 function summarizeLineSegs(lineSegs = []) {
   const segments = Array.isArray(lineSegs) ? lineSegs : [];
   if (!segments.length) {
@@ -346,6 +365,74 @@ function objectMetric(block = {}, locator = {}) {
   });
 }
 
+function collectParagraphMetrics(blocks = [], limit = 80) {
+  const out = [];
+  const visit = (block, depth = 0, context = 'cell') => {
+    if (!block || out.length >= limit) return;
+    if (block.type === 'paragraph') {
+      out.push(paragraphMetric(block, { paragraphIndex: out.length, depth, context }));
+      return;
+    }
+    if (isObjectBlock(block)) {
+      for (const child of block.paragraphs || []) visit(child, depth + 1, `${context}/object:${block.type || 'object'}`);
+      return;
+    }
+    if (block.type === 'table') {
+      out.push(stripEmpty({
+        index: out.length,
+        depth,
+        context: `${context}/nested-table`,
+        tableRows: block.rowCount ?? block.rows?.length,
+        tableCols: block.colCount ?? block.columnWidths?.length,
+        width: block.width,
+        height: block.height,
+        contentHeight: block.contentHeight,
+        columnWidths: cleanJson(block.columnWidths || []),
+        rowHeights: cleanJson(block.rowHeights || []),
+        rowSizes: cleanJson(block.rowSizes || []),
+        defaultCellPadding: cleanJson(block.defaultCellPadding),
+        cellSpacing: block.cellSpacing,
+        layout: objectLayout(block),
+        rawLayout: cleanJson(block.rawLayout),
+        rowsPreview: summarizeNestedTableRows(block),
+        textPreview: blockTextPreview(block, 180),
+      }));
+      return;
+    }
+    for (const child of block.paragraphs || []) visit(child, depth + 1, context);
+  };
+
+  for (const block of blocks || []) visit(block);
+  return out;
+}
+
+function summarizeNestedTableRows(table = {}, limit = 12) {
+  return (table.rows || []).slice(0, limit).map((row = {}, rowIndex) => {
+    const cells = (row.cells || []).map((cell = {}, cellIndex) => stripEmpty({
+      index: cellIndex,
+      row: cell.row,
+      col: cell.col,
+      rowSpan: cell.rowSpan,
+      colSpan: cell.colSpan,
+      width: cell.width,
+      height: cell.height,
+      contentHeight: cell.contentHeight,
+      paragraphCount: countBlocks(cell.paragraphs || []).paragraphCount,
+      lineSegCount: countBlocks(cell.paragraphs || []).lineSegCount,
+      nestedTableCount: countBlocks(cell.paragraphs || []).tableCount,
+      textPreview: blockTextPreview(cell, 120),
+    }));
+    const heights = cells.map(cell => Number(cell.height) || 0).filter(Boolean);
+    return stripEmpty({
+      index: row.index ?? rowIndex,
+      cellCount: cells.length,
+      height: heights.length ? Math.max(...heights) : null,
+      textPreview: cells.map(cell => cell.textPreview || '').filter(Boolean).join(' ').replace(/\s+/g, ' ').trim().slice(0, 180),
+      cells,
+    });
+  });
+}
+
 function cellMetric(cell = {}, rowIndex = 0, cellIndex = 0) {
   const nestedCounts = countBlocks(cell.paragraphs || []);
   return stripEmpty({
@@ -365,6 +452,8 @@ function cellMetric(cell = {}, rowIndex = 0, cellIndex = 0) {
     paragraphCount: nestedCounts.paragraphCount,
     lineSegCount: nestedCounts.lineSegCount,
     nestedTableCount: nestedCounts.tableCount,
+    textPreview: blockTextPreview(cell),
+    paragraphSummaries: collectParagraphMetrics(cell.paragraphs || []),
     listFlags: cell.listFlags,
     unknownWidth: cell.unknownWidth,
   });
@@ -375,10 +464,18 @@ function rowMetric(row = {}) {
   const cellHeights = cells
     .map(cell => Number(cell.height) || 0)
     .filter(height => height > 0);
+  const textPreview = cells
+    .map(cell => cell.textPreview || '')
+    .filter(Boolean)
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, 180);
   return {
     index: row.index,
     cellCount: cells.length,
     height: cellHeights.length ? Math.max(...cellHeights) : null,
+    textPreview,
     cells,
   };
 }
@@ -406,8 +503,11 @@ function buildTableMetric(table = {}, locator = {}) {
     spanCount,
     mergedCellCount: spanCount,
     columnWidths: cleanJson(table.columnWidths || []),
+    rowSizes: cleanJson(table.rowSizes || []),
+    rowCellStartCounts: cleanJson(table.rowCellStartCounts || []),
     rowHeights: cleanJson(table.rowHeights || []),
     rowCellCounts: cleanJson(table.rowCellCounts || []),
+    rowHeightSource: table.rowHeightSource,
     cellSpacing: table.cellSpacing,
     defaultCellPadding: cleanJson(table.defaultCellPadding),
     borderFillId: table.borderFillId,
@@ -420,6 +520,18 @@ function buildTableMetric(table = {}, locator = {}) {
       policy: pageSplitPolicy(rawSplitPage),
       hasSplitSignal: rawSplitPage > 0 || !['', '0', 'NONE'].includes(pageBreak),
     },
+    textPreview: rows
+      .map(row => row.textPreview || '')
+      .filter(Boolean)
+      .join(' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .slice(0, 240),
+    tallestRows: rows
+      .filter(row => Number.isFinite(Number(row.height)))
+      .sort((left, right) => Number(right.height || 0) - Number(left.height || 0))
+      .slice(0, 5)
+      .map(row => ({ index: row.index, height: row.height, textPreview: row.textPreview })),
     layout: objectLayout(table),
     rawLayout: cleanJson(table.rawLayout),
     rows,
@@ -444,6 +556,7 @@ function paragraphMetric(block = {}, locator = {}) {
     styleName: block.styleName,
     textRunCount: Array.isArray(block.texts) ? block.texts.length : 0,
     textLength: textLength(block),
+    textPreview: blockTextPreview(block, 180),
     lineHeightPx: block.lineHeightPx,
     layoutHeightPx: block.layoutHeightPx,
     lineSegCount: lineSegs.length,
@@ -632,6 +745,8 @@ function aggregateParsedSignals(tables = [], paragraphs = [], objects = []) {
   let paragraphControlBreakCount = 0;
   const paragraphControlKinds = {};
   const lineSegFlagCounts = {};
+  const oversizedControlAnchorLineSegs = [];
+  const duplicateNestedTableAnchorCandidates = [];
 
   for (const table of tables) {
     increment(tablePageBreakPolicies, table.pageBreak || 'NONE');
@@ -639,7 +754,77 @@ function aggregateParsedSignals(tables = [], paragraphs = [], objects = []) {
     if (table.repeatHeader) repeatHeaderTableCount += 1;
     if (table.split?.hasSplitSignal) splitTableCount += 1;
     mergedCellCount += Number(table.mergedCellCount) || 0;
+
+    for (const row of table.rows || []) {
+      for (const cell of row.cells || []) {
+        const paragraphSummaries = cell.paragraphSummaries || [];
+        for (const [paragraphIndex, paragraph] of paragraphSummaries.entries()) {
+          const controls = paragraph.controls || [];
+          const hasTableControl = controls.some(control => control.controlKind === 'table' || control.controlId === 'tbl ');
+          const nextNestedTable = paragraphSummaries.slice(paragraphIndex + 1).find(next => next?.context?.includes('/nested-table'));
+          if (hasTableControl && nextNestedTable) {
+            const anchorSegment = [...(paragraph.lineSegs || [])]
+              .sort((left, right) => (Number(right.height) || 0) - (Number(left.height) || 0))[0];
+            const anchorHeight = Number(anchorSegment?.height) || 0;
+            const nestedRowHeights = Array.isArray(nextNestedTable.rowHeights) ? nextNestedTable.rowHeights : [];
+            const nestedHeight = nestedRowHeights.reduce((sum, height) => sum + (Number(height) || 0), 0);
+            if (anchorHeight > 0 && nestedHeight > 0) {
+              const anchorHeightPx = anchorHeight * HWP_UNIT_TO_PX;
+              const nestedHeightPx = nestedHeight * HWP_UNIT_TO_PX;
+              duplicateNestedTableAnchorCandidates.push(stripEmpty({
+                table: table.index,
+                row: row.index,
+                cell: cell.index,
+                paragraph: paragraph.index,
+                nestedParagraph: nextNestedTable.index,
+                anchorHeight,
+                nestedHeight,
+                anchorHeightPx: Number(anchorHeightPx.toFixed(2)),
+                nestedHeightPx: Number(nestedHeightPx.toFixed(2)),
+                deltaPx: Number((anchorHeightPx - nestedHeightPx).toFixed(2)),
+                anchorY: anchorSegment?.y,
+                anchorChpos: anchorSegment?.chpos,
+                nestedRows: nextNestedTable.tableRows,
+                nestedCols: nextNestedTable.tableCols,
+                nestedRowHeights,
+                textPreview: paragraph.textPreview,
+                nestedTextPreview: nextNestedTable.textPreview,
+                tablePreview: table.textPreview,
+              }));
+            }
+          }
+          for (const [segIndex, segment] of (paragraph.lineSegs || []).entries()) {
+            const height = Number(segment?.height) || 0;
+            if (height < 4000 && (!hasTableControl || height < 2000)) continue;
+            oversizedControlAnchorLineSegs.push(stripEmpty({
+              table: table.index,
+              row: row.index,
+              cell: cell.index,
+              paragraph: paragraph.index,
+              segIndex,
+              height,
+              y: segment.y,
+              textHeight: segment.textHeight,
+              baseline: segment.baseline,
+              chpos: segment.chpos,
+              hasTableControl,
+              controls: controls.map(control => stripEmpty({
+                kind: control.kind,
+                controlKind: control.controlKind,
+                controlId: control.controlId,
+                offset: control.offset,
+              })),
+              textPreview: paragraph.textPreview,
+              tablePreview: table.textPreview,
+            }));
+          }
+        }
+      }
+    }
   }
+
+  oversizedControlAnchorLineSegs.sort((left, right) => Number(right.height || 0) - Number(left.height || 0));
+  duplicateNestedTableAnchorCandidates.sort((left, right) => Math.abs(Number(right.deltaPx || 0)) - Math.abs(Number(left.deltaPx || 0)));
 
   for (const paragraph of paragraphs) {
     for (const [kind, count] of Object.entries(paragraph.controlKindCounts || {})) {
@@ -669,6 +854,8 @@ function aggregateParsedSignals(tables = [], paragraphs = [], objects = []) {
     paragraphControlBreakCount,
     paragraphControlKinds: sortObjectByKey(paragraphControlKinds),
     lineSegFlagCounts: sortObjectByKey(lineSegFlagCounts),
+    oversizedControlAnchorLineSegs: oversizedControlAnchorLineSegs.slice(0, 20),
+    duplicateNestedTableAnchorCandidates: duplicateNestedTableAnchorCandidates.slice(0, 20),
   };
 }
 
@@ -679,7 +866,6 @@ function loadExistingParser(diagnostics) {
     });
   }
 
-  const pako = existsSync(PAKO_PATH) ? require(PAKO_PATH) : undefined;
   const capturedConsole = {};
   for (const level of ['log', 'warn', 'error']) {
     capturedConsole[level] = (...args) => {
@@ -691,7 +877,6 @@ function loadExistingParser(diagnostics) {
 
   const context = vm.createContext({
     console: capturedConsole,
-    pako,
     TextDecoder,
     TextEncoder,
     Uint8Array,
@@ -710,6 +895,16 @@ function loadExistingParser(diagnostics) {
   });
   context.globalThis = context;
   context.self = context;
+
+  if (existsSync(PAKO_PATH)) {
+    const pakoCode = readFileSync(PAKO_PATH, 'utf8');
+    vm.runInContext(pakoCode, context, { filename: 'lib/pako.min.js' });
+    if (typeof context.pako?.inflateRaw !== 'function' || typeof context.pako?.inflate !== 'function') {
+      pushDiagnostic(diagnostics, 'warn', 'lib/pako.min.js loaded, but inflate APIs were not exposed in the parser VM.', {
+        todo: 'Verify the bundled pako UMD build before relying on Node-side HWP inflation.',
+      });
+    }
+  }
 
   for (const relativePath of PARSER_FILES) {
     const scriptPath = path.join(ROOT_DIR, relativePath);
@@ -875,6 +1070,8 @@ function compactTableInfo(tableInfo = {}, record = {}) {
     colCount: tableInfo?.colCount,
     cellSpacing: tableInfo?.cellSpacing,
     defaultCellPadding: cleanJson(tableInfo?.defaultCellPadding),
+    rowSizes: cleanJson(tableInfo?.rowSizes || []),
+    rowCellStartCounts: cleanJson(tableInfo?.rowCellStartCounts || []),
     rowCellCounts: cleanJson(tableInfo?.rowCellCounts || []),
     borderFillId: tableInfo?.borderFillId,
     repeatHeader: Boolean(tableInfo?.repeatHeader),
@@ -886,6 +1083,8 @@ function compactTableInfo(tableInfo = {}, record = {}) {
       attr: tableInfo?.attr,
       splitPage: tableInfo?.splitPage,
       repeatHeader: Boolean(tableInfo?.repeatHeader),
+      rowSizes: tableInfo?.rowSizes || [],
+      rowCellStartCounts: tableInfo?.rowCellStartCounts || [],
       rowCellCounts: tableInfo?.rowCellCounts || [],
       borderFillId: tableInfo?.borderFillId,
       validZoneInfoSize: tableInfo?.validZoneInfoSize,

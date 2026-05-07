@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm run build",
     "verify:extension": "npm run build && node scripts/verify_extension_editor.mjs",
-    "verify:visual": "npm run build && node scripts/verify_visual_fidelity.mjs"
+    "verify:visual": "npm run build && node scripts/verify_visual_fidelity.mjs",
+    "verify:completion": "node scripts/check_editor_completion.mjs"
   },
   "dependencies": {
     "fast-xml-parser": "^5.7.2",

@@ -320,12 +320,14 @@ function buildParaStyleMap(headerXml: unknown): Map<string, HwpxParagraphStyle> 
 
     if (align) style.align = align;
     if (marginNode) {
+      const textIndent = signedHwpUnitAttributeToPx(firstDirectChild(marginNode, 'intent'), 'value');
       style.margin = {
         left: hwpUnitAttributeToPx(firstDirectChild(marginNode, 'left'), 'value'),
         right: hwpUnitAttributeToPx(firstDirectChild(marginNode, 'right'), 'value'),
         top: hwpUnitAttributeToPx(firstDirectChild(marginNode, 'prev'), 'value'),
         bottom: hwpUnitAttributeToPx(firstDirectChild(marginNode, 'next'), 'value')
       };
+      if (textIndent) style.textIndent = textIndent;
     }
     if (lineSpacingType === 'PERCENT' && lineSpacingValue > 0) {
       style.lineHeight = `${lineSpacingValue}%`;
@@ -946,7 +948,12 @@ function appendBodyRowsToTableChunk(
   };
 }
 
-function splitLongTableRow(table: HwpxTableBlock, rowIndex: number, pageHeight: number, repeatHeader: boolean): HwpxDocumentBlock[] {
+function splitLongTableRow(
+  table: HwpxTableBlock,
+  rowIndex: number,
+  pageHeight: number,
+  repeatHeader: boolean
+): HwpxDocumentBlock[] {
   const layout = table._hwpxLayout;
   const row = table.rows[rowIndex];
   if (!layout || !row) return [];
@@ -962,9 +969,15 @@ function splitLongTableRow(table: HwpxTableBlock, rowIndex: number, pageHeight: 
     : 0;
   const availableHeight = Math.max(120, pageHeight - headerHeight);
   const sourceHeight = Math.max(row._hwpxLayout?.heightPx ?? 0, candidate.height ?? 0);
-  const fragmentCount = Math.max(1, Math.min(20, Math.ceil(tableHeightForLongRowContinuation(sourceHeight) / availableHeight)));
+  const baseFragmentCount = Math.max(1, Math.ceil(tableHeightForLongRowContinuation(sourceHeight) / availableHeight));
+  const fragmentCount = Math.min(20, baseFragmentCount);
   if (fragmentCount <= 1) return [];
-  const fragments = splitBlocksIntoFragments(candidate.blocks as HwpxDocumentBlock[], fragmentCount, availableHeight);
+  const trailingRowsHeight = trailingShortRowsHeightForReserve(table, rowIndex, availableHeight, baseFragmentCount);
+  const fragments = splitLastFragmentForTrailingRows(
+    splitBlocksIntoFragments(candidate.blocks as HwpxDocumentBlock[], fragmentCount, availableHeight),
+    availableHeight,
+    trailingRowsHeight
+  );
   if (fragments.length <= 1) return [];
 
   return fragments.map((fragment, fragmentIndex) => {
@@ -1029,6 +1042,152 @@ function splitLongTableRow(table: HwpxTableBlock, rowIndex: number, pageHeight: 
       }
     };
   });
+}
+
+function trailingShortRowsHeightForReserve(
+  table: HwpxTableBlock,
+  rowIndex: number,
+  availableHeight: number,
+  fragmentCount: number
+): number {
+  if (fragmentCount < 3 || rowIndex >= table.rows.length - 1) return 0;
+
+  const trailingRowsHeight = table.rows.slice(rowIndex + 1).reduce((sum, _row, offset) => {
+    return sum + tableRowHeightForPagination(table, rowIndex + 1 + offset);
+  }, 0);
+  if (trailingRowsHeight <= 0 || trailingRowsHeight > availableHeight * 0.25) return 0;
+
+  const row = table.rows[rowIndex];
+  const rowHeight = tableRowHeightForPagination(table, rowIndex);
+  const longRowDominatesTail = rowHeight > availableHeight * 2 && rowHeight > trailingRowsHeight * 8;
+  const isSingleBodyCell = row?.cells.length === 1 && row.cells[0].colSpan >= Math.max(1, table._hwpxLayout?.colCount ?? 1);
+  if (!longRowDominatesTail || !isSingleBodyCell) return 0;
+
+  return trailingRowsHeight;
+}
+
+function splitLastFragmentForTrailingRows(
+  fragments: HwpxDocumentBlock[][],
+  availableHeight: number,
+  trailingRowsHeight: number
+): HwpxDocumentBlock[][] {
+  if (trailingRowsHeight <= 0 || fragments.length < 2) return fragments;
+
+  const last = fragments[fragments.length - 1];
+  if (!last?.length || estimateBlocksHeight(last) <= availableHeight * 1.08) return fragments;
+
+  const compactLast = last.map((block) => compactDenseTableForTrailingFragment(block));
+  const expandedLast = compactLast.flatMap((block) => splitBlockForTrailingFragment(block, availableHeight));
+  const splitIndex = findTrailingFragmentSplitIndex(expandedLast, availableHeight, trailingRowsHeight);
+  if (splitIndex <= 0 || splitIndex >= expandedLast.length) return fragments;
+
+  return [
+    ...fragments.slice(0, -1),
+    expandedLast.slice(0, splitIndex).map(cloneBlock),
+    expandedLast.slice(splitIndex).map(cloneBlock)
+  ];
+}
+
+function compactDenseTableForTrailingFragment(block: HwpxDocumentBlock): HwpxDocumentBlock {
+  if (block.type !== 'table') return block;
+
+  const rows = block.rows.map((row) => ({
+    ...row,
+    cells: row.cells.map((cell) => ({
+      ...cell,
+      blocks: (cell.blocks as HwpxDocumentBlock[]).map(compactDenseTableForTrailingFragment)
+    }))
+  }));
+  const rowHeightsPx = block._hwpxLayout?.rowHeightsPx
+    ?? rows.map((row) => row._hwpxLayout?.heightPx ?? estimateBlocksHeight(row.cells.flatMap((cell) => cell.blocks)));
+  const scale = denseTrailingTableRowHeightScale(rowHeightsPx);
+  if (scale >= 1) return { ...block, rows };
+
+  const scaledRowHeightsPx = rowHeightsPx.map((height) => Math.max(8, height * scale));
+  const scaledRows = rows.map((row, rowIndex): HwpxTableRow => ({
+    ...row,
+    cells: row.cells.map((cell) => normalizeTrailingDenseCellHeight(cell, scaledRowHeightsPx)),
+    _hwpxLayout: {
+      ...(row._hwpxLayout ?? { rowIndex }),
+      heightPx: scaledRowHeightsPx[rowIndex] ?? row._hwpxLayout?.heightPx ?? 1,
+      renderHeightPx: scaledRowHeightsPx[rowIndex] ?? row._hwpxLayout?.renderHeightPx
+    }
+  }));
+  const scaledHeight = scaledRowHeightsPx.reduce((sum, height) => sum + height, 0);
+
+  return {
+    ...block,
+    rows: scaledRows,
+    _hwpxLayout: block._hwpxLayout
+      ? {
+          ...block._hwpxLayout,
+          heightPx: scaledHeight,
+          renderHeightPx: scaledHeight,
+          rowHeightsPx: scaledRowHeightsPx,
+          source: block._hwpxLayout.source ? `${block._hwpxLayout.source}:dense-tail` : 'dense-tail'
+        }
+      : undefined
+  };
+}
+
+function denseTrailingTableRowHeightScale(rowHeightsPx: readonly number[]): number {
+  const rowCount = rowHeightsPx.length;
+  if (rowCount < 40) return 1;
+
+  const totalHeight = rowHeightsPx.reduce((sum, height) => sum + height, 0);
+  const compactRows = rowHeightsPx.filter((height) => height <= 28).length;
+  if (compactRows / rowCount < 0.78 || totalHeight > rowCount * 36) return 1;
+
+  return 0.70;
+}
+
+function normalizeTrailingDenseCellHeight(
+  cell: HwpxTableCell,
+  rowHeightsPx: readonly number[]
+): HwpxTableCell {
+  if (!cell._hwpxLayout) return cell;
+
+  const rowIndex = Math.max(0, cell._hwpxLayout.rowIndex);
+  const rowSpan = Math.max(1, cell._hwpxLayout.rowSpan);
+  const renderHeightPx = rowHeightsPx
+    .slice(rowIndex, rowIndex + rowSpan)
+    .reduce((sum, height) => sum + height, 0);
+
+  return {
+    ...cell,
+    _hwpxLayout: {
+      ...cell._hwpxLayout,
+      renderHeightPx: Math.max(8, renderHeightPx)
+    }
+  };
+}
+
+function splitBlockForTrailingFragment(block: HwpxDocumentBlock, availableHeight: number): HwpxDocumentBlock[] {
+  if (block.type !== 'table' || estimateBlockHeight(block) <= availableHeight * 0.92) return [block];
+  const splitHeight = Math.max(120, availableHeight * 0.84);
+  const chunks = splitTableForPagination(block, splitHeight) as HwpxDocumentBlock[];
+  return chunks.length > 1 ? chunks : [block];
+}
+
+function findTrailingFragmentSplitIndex(
+  blocks: readonly HwpxDocumentBlock[],
+  availableHeight: number,
+  trailingRowsHeight: number
+): number {
+  const finalBudget = Math.max(120, availableHeight - trailingRowsHeight);
+  const heights = blocks.map((block) => Math.max(1, estimateBlockHeight(block)));
+  const totalHeight = heights.reduce((sum, height) => sum + height, 0);
+  let headHeight = 0;
+  let fallback = -1;
+
+  for (let index = 0; index < heights.length - 1; index += 1) {
+    headHeight += heights[index];
+    const tailHeight = totalHeight - headHeight;
+    if (headHeight <= availableHeight * 1.08) fallback = index + 1;
+    if (headHeight <= availableHeight * 1.08 && tailHeight <= finalBudget * 1.08) return index + 1;
+  }
+
+  return fallback;
 }
 
 function normalizeLongRowFragmentBlocks(blocks: readonly HwpxDocumentBlock[]): HwpxDocumentBlock[] {
@@ -1099,6 +1258,7 @@ function splitBlocksIntoFragments(
         return splitTableForPagination(block, maxFragmentHeight) as HwpxDocumentBlock[];
       })
     : flowBlocks;
+
   if (fragmentCount <= 1 || expandedBlocks.length <= 1) return [expandedBlocks.map(cloneBlock)];
 
   const weighted = expandedBlocks.map((block) => ({ block, height: Math.max(1, estimateBlockHeight(block)) }));
@@ -1137,16 +1297,43 @@ function rebalanceSectionPreludeFragments(
   for (let index = 0; index < balanced.length - 1; index += 1) {
     const current = balanced[index];
     const next = balanced[index + 1];
-    if (!current.length || !next.length || !startsWithTable(next)) continue;
+    if (!current.length || !next.length) continue;
+    const nextStartsSectionBody = startsWithTable(next) || startsWithSectionBodyContent(next);
+    if (!nextStartsSectionBody) continue;
 
     const preludeStart = trailingSectionPreludeStart(current, maxFragmentHeight);
-    if (preludeStart <= 0) continue;
+    const danglingHeadingStart = preludeStart > 0
+      ? preludeStart
+      : trailingDanglingSectionHeadingStart(current, next);
+    if (danglingHeadingStart <= 0) continue;
 
-    const moved = current.splice(preludeStart);
+    const moved = current.splice(danglingHeadingStart);
     balanced[index + 1] = [...moved, ...next];
   }
 
   return balanced.filter((fragment) => fragment.length > 0);
+}
+
+function trailingDanglingSectionHeadingStart(
+  fragment: readonly HwpxDocumentBlock[],
+  next: readonly HwpxDocumentBlock[]
+): number {
+  if (!startsWithSectionBodyContent(next)) return -1;
+  for (let index = fragment.length - 1; index >= 0; index -= 1) {
+    const block = fragment[index];
+    if (!visibleBlockText(block)) continue;
+    return isSectionHeadingBlock(block) ? index : -1;
+  }
+  return -1;
+}
+
+function startsWithSectionBodyContent(fragment: readonly HwpxDocumentBlock[]): boolean {
+  const meaningful = fragment.filter((block) => visibleBlockText(block).length > 0 || block.type === 'table').slice(0, 4);
+  if (!meaningful.length) return false;
+  if (meaningful[0].type === 'table') return true;
+  const firstText = visibleBlockText(meaningful[0]);
+  if (!/^[■※\-ㆍ•]/.test(firstText)) return false;
+  return meaningful.slice(1).some((block) => block.type === 'table');
 }
 
 function trailingSectionPreludeStart(fragment: readonly HwpxDocumentBlock[], maxFragmentHeight: number): number {
@@ -1367,6 +1554,7 @@ function parseParagraphFlow(node: unknown, styles: HwpxStyleContext): HwpxDocume
     || isBreakEnabled(pageBreak)
     || hasParagraphBreakControl(node);
   let runs: TextRun[] = [];
+  let activeHref = '';
 
   const paragraphLayout = (heightPx: number): HwpxBlockLayout => ({
     heightPx,
@@ -1408,6 +1596,7 @@ function parseParagraphFlow(node: unknown, styles: HwpxStyleContext): HwpxDocume
       styleId: paraStyleId || undefined,
       align: readParagraphAlign(node, paragraphStyle),
       margin: paragraphStyle?.margin,
+      textIndent: paragraphStyle?.textIndent,
       lineHeight: paragraphStyle?.lineHeight || (lineMetrics.lineHeightPx > 0 ? `${lineMetrics.lineHeightPx}px` : undefined),
       runs: finalRuns,
       _hwpxLayout: paragraphLayout(heightPx)
@@ -1423,28 +1612,42 @@ function parseParagraphFlow(node: unknown, styles: HwpxStyleContext): HwpxDocume
   for (const runNode of directChildren(node, 'run')) {
     const charStyleId = readAttributeObject(runNode, 'charPrIDRef');
     const charStyle = charStyleId ? styles.charStyles.get(charStyleId) : undefined;
+    const styledRun = (text: string): TextRun => ({
+      ...charStyle,
+      styleId: charStyleId || charStyle?.styleId,
+      ...(activeHref ? { href: activeHref } : {}),
+      text
+    });
 
     for (const [key, value] of objectEntries(runNode)) {
-      if (isInternalKey(key) || key === 'secPr' || key === 'ctrl' || key === 'linesegarray') continue;
+      if (isInternalKey(key) || key === 'secPr' || key === 'linesegarray') continue;
+      if (key === 'ctrl') {
+        for (const ctrlNode of asArray(value)) {
+          const hyperlink = readHyperlinkFieldHref(ctrlNode);
+          if (hyperlink) activeHref = hyperlink;
+          if (activeHref && hasHyperlinkFieldEnd(ctrlNode)) activeHref = '';
+        }
+        continue;
+      }
       if (key === 't') {
         for (const textNode of asArray(value)) {
-          runs.push({ ...charStyle, styleId: charStyleId || charStyle?.styleId, text: textValue(textNode) });
+          runs.push(styledRun(textValue(textNode)));
         }
         continue;
       }
       if (key === 'compose') {
         for (const composeNode of asArray(value)) {
           const text = textValue(composeNode);
-          if (text) runs.push({ ...charStyle, styleId: charStyleId || charStyle?.styleId, text });
+          if (text) runs.push(styledRun(text));
         }
         continue;
       }
       if (key === 'tab') {
-        runs.push({ ...charStyle, styleId: charStyleId || charStyle?.styleId, text: '\t' });
+        runs.push(styledRun('\t'));
         continue;
       }
       if (key === 'lineBreak') {
-        runs.push({ ...charStyle, styleId: charStyleId || charStyle?.styleId, text: '\n' });
+        runs.push(styledRun('\n'));
         continue;
       }
       if (key === 'pic') {
@@ -1468,6 +1671,42 @@ function parseParagraphFlow(node: unknown, styles: HwpxStyleContext): HwpxDocume
     && (lineMetrics.heightPx > 0 || breakBeforePending || directChildren(node, 'run').length > 0);
   flushParagraph(shouldKeepEmptyParagraph);
   return blocks;
+}
+
+function readHyperlinkFieldHref(ctrlNode: unknown): string {
+  for (const fieldBegin of directChildren(ctrlNode, 'fieldBegin')) {
+    if (readAttributeObject(fieldBegin, 'type').toUpperCase() !== 'HYPERLINK') continue;
+    const parameters = firstDirectChild(fieldBegin, 'parameters');
+    const path = readStringParam(parameters, 'Path');
+    const command = readStringParam(parameters, 'Command').split(';')[0] || '';
+    const href = normalizeHwpxHyperlinkHref(path || command);
+    if (href) return href;
+  }
+  return '';
+}
+
+function hasHyperlinkFieldEnd(ctrlNode: unknown): boolean {
+  return directChildren(ctrlNode, 'fieldEnd').some((fieldEnd) => {
+    const fieldId = readAttributeObject(fieldEnd, 'fieldid');
+    return !fieldId || fieldId === '627600491';
+  });
+}
+
+function readStringParam(parametersNode: unknown, name: string): string {
+  for (const param of directChildren(parametersNode, 'stringParam')) {
+    if (readAttributeObject(param, 'name') === name) return textValue(param);
+  }
+  return '';
+}
+
+function normalizeHwpxHyperlinkHref(value: string): string {
+  const href = value.trim();
+  if (!href || /[\u0000-\u001f\u007f]/.test(href)) return '';
+  if (/^javascript:/i.test(href)) return '';
+  if (/^(https?:|mailto:|tel:|#)/i.test(href)) return href;
+  if (/^www\./i.test(href)) return `https://${href}`;
+  if (/^[a-z0-9.-]+\.[a-z]{2,}(?:[/:?#].*)?$/i.test(href)) return `https://${href}`;
+  return '';
 }
 
 function parseTable(node: unknown, styles: HwpxStyleContext, anchor?: HwpxParagraphLineMetrics): HwpxTableBlock {
@@ -1732,10 +1971,6 @@ function readPageProfile(root: unknown): HwpxPageProfile {
       right: hwpUnitAttributeToPx(marginNode, 'right') || DEFAULT_PAGE_LAYOUT.margin.right,
       bottom: hwpUnitAttributeToPx(marginNode, 'bottom') || DEFAULT_PAGE_LAYOUT.margin.bottom,
       left: hwpUnitAttributeToPx(marginNode, 'left') || DEFAULT_PAGE_LAYOUT.margin.left
-    },
-    decorationInset: {
-      top: headerHeightPx,
-      bottom: footerHeightPx
     }
   };
   const contentHeightPx = Math.max(
@@ -1912,9 +2147,8 @@ function computeRowSpanAwareRowHeights(rows: readonly HwpxTableRow[]): number[] 
       const rowIndex = Math.min(rowCount - 1, Math.max(0, rawRowIndex));
       const rowSpan = Math.max(1, Math.min(layout?.rowSpan ?? cell.rowSpan, rowCount - rowIndex));
       const declaredHeight = declaredCellHeight(cell);
-      const totalHeight = declaredHeight > 0
-        ? declaredHeight
-        : estimateBlocksHeight(cell.blocks as HwpxDocumentBlock[]);
+      const estimatedContentHeight = estimateBlocksHeight(cell.blocks as HwpxDocumentBlock[]) + boxVertical(cell.padding);
+      const totalHeight = Math.max(declaredHeight, estimatedContentHeight);
       if (rowSpan > 1) {
         spanningCells.push({ rowIndex, rowSpan, totalHeight });
         return;
@@ -2044,7 +2278,7 @@ function borderEdgeFromNode(node: unknown): string | undefined {
   if (!borderType || borderType === 'NONE') return '0 none transparent';
   const width = readAttributeObject(node, 'width') || '0.12 mm';
   const color = normalizeColor(readAttributeObject(node, 'color')) || '#000000';
-  return `${borderWidthToPx(width)}px solid ${color}`;
+  return `${borderWidthToPx(width)}px ${hwpxBorderTypeToCss(borderType)} ${color}`;
 }
 
 function firstVisibleBorderEdge(edges: BorderEdges | undefined): string | undefined {
@@ -2060,8 +2294,30 @@ function hasAnyBorderEdge(edges: BorderEdges): boolean {
 function borderWidthToPx(width: string): number {
   const numeric = Number(width.replace(/[^\d.]/g, ''));
   if (!Number.isFinite(numeric) || numeric <= 0) return 1;
-  if (width.includes('mm')) return Math.max(1, Math.round(numeric * 3.78));
-  return Math.max(1, Math.round(numeric));
+  if (width.includes('mm')) return Math.max(0.5, Math.min(8, Math.round(numeric * 3.78 * 10) / 10));
+  return Math.max(0.5, Math.min(8, Math.round(numeric * 10) / 10));
+}
+
+function hwpxBorderTypeToCss(type: string): string {
+  switch (type) {
+    case 'SOLID':
+      return 'solid';
+    case 'DASH':
+    case 'DASH_DOT':
+    case 'DASH_DOT_DOT':
+    case 'LONG_DASH':
+      return 'dashed';
+    case 'DOT':
+      return 'dotted';
+    case 'DOUBLE':
+    case 'DOUBLE_SLIM':
+    case 'SLIM_THICK':
+    case 'THICK_SLIM':
+    case 'SLIM_THICK_SLIM':
+      return 'double';
+    default:
+      return 'solid';
+  }
 }
 
 function findNamedChildren(node: unknown, name: string): unknown[] {

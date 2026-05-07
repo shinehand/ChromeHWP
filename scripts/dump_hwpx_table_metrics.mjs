@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import process from 'node:process';
+import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -14,7 +15,28 @@ const JSZIP_PATH = path.join(ROOT_DIR, 'lib', 'jszip.min.js');
 const PACKAGE_JSON_PATH = path.join(ROOT_DIR, 'package.json');
 
 const require = createRequire(import.meta.url);
-const JSZip = require(JSZIP_PATH);
+const JSZip = loadBundledJsZip();
+
+function loadBundledJsZip() {
+  const required = require(JSZIP_PATH);
+  if (required?.loadAsync) return required;
+
+  const sandbox = {};
+  sandbox.window = sandbox;
+  sandbox.self = sandbox;
+  sandbox.globalThis = sandbox;
+  sandbox.ArrayBuffer = ArrayBuffer;
+  sandbox.Buffer = Buffer;
+  sandbox.clearImmediate = clearImmediate;
+  sandbox.clearTimeout = clearTimeout;
+  sandbox.setImmediate = setImmediate;
+  sandbox.setTimeout = setTimeout;
+  sandbox.Uint8Array = Uint8Array;
+  vm.runInNewContext(readFileSync(JSZIP_PATH, 'utf8'), sandbox, { filename: JSZIP_PATH });
+  if (sandbox.JSZip?.loadAsync) return sandbox.JSZip;
+
+  throw new Error(`JSZip bundle did not expose loadAsync: ${JSZIP_PATH}`);
+}
 
 function printUsage() {
   console.log(`Usage:
@@ -282,6 +304,15 @@ function isBreakEnabled(value) {
   return value != null && value !== '' && String(value) !== '0';
 }
 
+function nodeTextPreview(xml, node, maxLength = 160) {
+  if (!xml || !node || !Number.isFinite(node.start) || !Number.isFinite(node.end)) return '';
+  const source = xml.slice(node.start, node.end);
+  const text = decodeXmlEntities(source.replace(/<[^<>]+>/g, ' '))
+    .replace(/\s+/g, ' ')
+    .trim();
+  return text.length > maxLength ? `${text.slice(0, maxLength - 1)}…` : text;
+}
+
 function paragraphBreakMetrics(paragraphs = []) {
   const breaks = [];
   paragraphs.forEach((paragraph, paragraphIndex) => {
@@ -298,7 +329,57 @@ function paragraphBreakMetrics(paragraphs = []) {
   return breaks;
 }
 
-function buildCellMetrics(cellNode, rowIndex, cellIndex) {
+function lineSegmentFlowMetrics(paragraphs = [], xml = '') {
+  const pageSpanParagraphs = [];
+  let lineSegmentCount = 0;
+  let pageFlowBreakCount = 0;
+  let maxPageSpanCount = 0;
+
+  paragraphs.forEach((paragraph, paragraphIndex) => {
+    const segments = collectDescendants(paragraph, 'lineseg')
+      .map((segmentNode) => normalizeAttrs(segmentNode.attrs))
+      .map((attrs) => ({
+        textPosition: Number(attrs.textpos ?? attrs.textPosition ?? 0),
+        verticalPosition: Number(attrs.vertpos ?? attrs.verticalPosition ?? 0),
+        verticalSize: Number(attrs.vertsize ?? attrs.verticalSize ?? 0),
+        textHeight: Number(attrs.textheight ?? attrs.textHeight ?? 0),
+        spacing: Number(attrs.spacing ?? 0),
+        horizontalPosition: Number(attrs.horzpos ?? attrs.horizontalPosition ?? 0),
+        horizontalSize: Number(attrs.horzsize ?? attrs.horizontalSize ?? 0),
+      }))
+      .filter((segment) => Number.isFinite(segment.verticalPosition));
+
+    if (!segments.length) return;
+    lineSegmentCount += segments.length;
+
+    let pageSpanCount = 1;
+    let previousTop = Number.NEGATIVE_INFINITY;
+    for (const segment of segments) {
+      if (segment.verticalPosition < previousTop) pageSpanCount += 1;
+      previousTop = segment.verticalPosition;
+    }
+
+    maxPageSpanCount = Math.max(maxPageSpanCount, pageSpanCount);
+    if (pageSpanCount <= 1) return;
+
+    pageFlowBreakCount += pageSpanCount - 1;
+    pageSpanParagraphs.push({
+      paragraphIndex,
+      lineSegmentCount: segments.length,
+      pageSpanCount,
+      textPreview: nodeTextPreview(xml, paragraph, 180),
+    });
+  });
+
+  return {
+    lineSegmentCount,
+    pageFlowBreakCount,
+    maxPageSpanCount,
+    pageSpanParagraphs,
+  };
+}
+
+function buildCellMetrics(cellNode, rowIndex, cellIndex, xml = '') {
   const cellAttrs = normalizeAttrs(cellNode.attrs);
   const cellAddrAttrs = childAttrs(cellNode, 'cellAddr');
   const cellSpanAttrs = childAttrs(cellNode, 'cellSpan');
@@ -308,6 +389,7 @@ function buildCellMetrics(cellNode, rowIndex, cellIndex) {
   const subListAttrs = subListNode?.attrs || {};
   const paragraphs = directChildren(subListNode, 'p');
   const breaks = paragraphBreakMetrics(paragraphs);
+  const lineSegmentFlow = lineSegmentFlowMetrics(paragraphs, xml);
 
   const width = numberAttr(cellSizeAttrs, 'width');
   const height = numberAttr(cellSizeAttrs, 'height');
@@ -330,6 +412,7 @@ function buildCellMetrics(cellNode, rowIndex, cellIndex) {
     cellSpan: normalizeAttrs(cellSpanAttrs),
     cellSz: normalizeAttrs(cellSizeAttrs),
     cellMargin: normalizeAttrs(cellMarginAttrs),
+    textPreview: nodeTextPreview(xml, subListNode || cellNode),
     subList: {
       attrs: normalizeAttrs(subListAttrs),
       textWidth: numberAttr(subListAttrs, 'textWidth'),
@@ -338,13 +421,14 @@ function buildCellMetrics(cellNode, rowIndex, cellIndex) {
       pageBreakParagraphCount: breaks.filter((entry) => isBreakEnabled(entry.pageBreak)).length,
       columnBreakParagraphCount: breaks.filter((entry) => isBreakEnabled(entry.columnBreak)).length,
       paragraphBreaks: breaks,
+      lineSegmentFlow,
     },
     subListParagraphCount: paragraphs.length,
     nestedTableCount: Math.max(0, countDescendants(subListNode, 'tbl')),
   };
 }
 
-function buildTableMetrics(tableNode, tableIndex, sectionIndex, sectionTableIndex, xmlPath, tableIndexByNode) {
+function buildTableMetrics(tableNode, tableIndex, sectionIndex, sectionTableIndex, xmlPath, tableIndexByNode, xml = '') {
   const tableAttrs = normalizeAttrs(tableNode.attrs);
   const rowNodes = directChildren(tableNode, 'tr');
   const parentTable = nearestAncestor(tableNode, 'tbl');
@@ -352,7 +436,7 @@ function buildTableMetrics(tableNode, tableIndex, sectionIndex, sectionTableInde
 
   const rows = rowNodes.map((rowNode, rowIndex) => {
     const cells = directChildren(rowNode, 'tc').map((cellNode, cellIndex) => {
-      const cell = buildCellMetrics(cellNode, rowIndex, cellIndex);
+      const cell = buildCellMetrics(cellNode, rowIndex, cellIndex, xml);
       for (const paragraphBreak of cell.subList.paragraphBreaks) {
         paragraphBreaks.push({
           rowIndex,
@@ -371,6 +455,8 @@ function buildTableMetrics(tableNode, tableIndex, sectionIndex, sectionTableInde
       cellCount: cells.length,
       height: rowHeights.length ? Math.max(...rowHeights) : null,
       cellHeights: cells.map((cell) => cell.height),
+      lineSegmentFlow: summarizeRowLineSegmentFlow(cells),
+      textPreview: nodeTextPreview(xml, rowNode, 180),
       cells,
     };
   });
@@ -385,6 +471,7 @@ function buildTableMetrics(tableNode, tableIndex, sectionIndex, sectionTableInde
     sectionTableIndex,
     xmlPath,
     context: tableContext(tableNode),
+    textPreview: nodeTextPreview(xml, tableNode, 240),
     nestingDepth: countTableAncestors(tableNode),
     parentTableIndex: parentTable ? tableIndexByNode.get(parentTable) ?? null : null,
     id: tableAttrs.id ?? null,
@@ -411,6 +498,106 @@ function buildTableMetrics(tableNode, tableIndex, sectionIndex, sectionTableInde
     inMargin: normalizeAttrs(childAttrs(tableNode, 'inMargin')),
     rows,
   };
+}
+
+function summarizeRowLineSegmentFlow(cells) {
+  const pageSpanParagraphs = [];
+  let lineSegmentCount = 0;
+  let pageFlowBreakCount = 0;
+  let maxPageSpanCount = 0;
+
+  cells.forEach((cell) => {
+    const flow = cell.subList?.lineSegmentFlow;
+    if (!flow) return;
+    lineSegmentCount += Number(flow.lineSegmentCount || 0);
+    pageFlowBreakCount += Number(flow.pageFlowBreakCount || 0);
+    maxPageSpanCount = Math.max(maxPageSpanCount, Number(flow.maxPageSpanCount || 0));
+    for (const paragraph of flow.pageSpanParagraphs || []) {
+      pageSpanParagraphs.push({
+        cellIndex: cell.index,
+        row: cell.row,
+        col: cell.col,
+        ...paragraph,
+      });
+    }
+  });
+
+  return {
+    lineSegmentCount,
+    pageFlowBreakCount,
+    maxPageSpanCount,
+    pageSpanParagraphs: pageSpanParagraphs.slice(0, 12),
+  };
+}
+
+function summarizeTableDiagnostics(tables) {
+  const diagnostics = {
+    cellPageBreakTableCount: 0,
+    repeatHeaderTableCount: 0,
+    rowSpanTableCount: 0,
+    nestedTableCount: 0,
+    suspiciousDeclaredHeightTables: [],
+    longestTablesByRows: [],
+    longestTablesByHeight: [],
+  };
+
+  const tableSummaries = tables.map((table) => {
+    const cells = table.rows.flatMap((row) => row.cells);
+    const rowSpanCellCount = cells.filter((cell) => Number(cell.rowSpan) > 1).length;
+    const nestedTableCount = cells.reduce((sum, cell) => sum + Number(cell.nestedTableCount || 0), 0);
+    const declaredHeight = Number(table.tableSize?.height || 0);
+    const rowHeightSum = table.rowHeights
+      .filter((height) => Number.isFinite(height))
+      .reduce((sum, height) => sum + Number(height), 0);
+    const tallRows = table.rows
+      .map((row) => ({
+        index: row.index,
+        height: Number(row.height || 0),
+        cellCount: row.cellCount,
+        pageFlowBreakCount: row.lineSegmentFlow?.pageFlowBreakCount || 0,
+        maxPageSpanCount: row.lineSegmentFlow?.maxPageSpanCount || 0,
+        textPreview: row.textPreview,
+      }))
+      .filter((row) => row.height > 0)
+      .sort((a, b) => b.height - a.height)
+      .slice(0, 8);
+
+    return {
+      index: table.index,
+      sectionIndex: table.sectionIndex,
+      sectionTableIndex: table.sectionTableIndex,
+      rowCount: table.rowCount,
+      cellCount: table.cellCount,
+      pageBreak: table.pagination?.pageBreak || null,
+      repeatHeader: table.pagination?.repeatHeader || 0,
+      noAdjust: table.pagination?.noAdjust || 0,
+      rowSpanCellCount,
+      nestedTableCount,
+      declaredHeight,
+      rowHeightSum,
+      declaredToRowsRatio: rowHeightSum > 0 && declaredHeight > 0 ? Number((declaredHeight / rowHeightSum).toFixed(4)) : null,
+      position: table.position,
+      textPreview: table.textPreview,
+      tallRows,
+    };
+  });
+
+  diagnostics.cellPageBreakTableCount = tableSummaries.filter((table) => table.pageBreak === 'CELL').length;
+  diagnostics.repeatHeaderTableCount = tableSummaries.filter((table) => Number(table.repeatHeader || 0) > 0).length;
+  diagnostics.rowSpanTableCount = tableSummaries.filter((table) => table.rowSpanCellCount > 0).length;
+  diagnostics.nestedTableCount = tableSummaries.reduce((sum, table) => sum + table.nestedTableCount, 0);
+  diagnostics.suspiciousDeclaredHeightTables = tableSummaries
+    .filter((table) => table.rowCount >= 8 && table.declaredHeight > 0 && table.rowHeightSum > 0 && table.declaredHeight / table.rowHeightSum < 0.2)
+    .sort((a, b) => a.declaredToRowsRatio - b.declaredToRowsRatio)
+    .slice(0, 12);
+  diagnostics.longestTablesByRows = [...tableSummaries]
+    .sort((a, b) => b.rowCount - a.rowCount)
+    .slice(0, 12);
+  diagnostics.longestTablesByHeight = [...tableSummaries]
+    .sort((a, b) => b.rowHeightSum - a.rowHeightSum)
+    .slice(0, 12);
+
+  return diagnostics;
 }
 
 function countTableAncestors(node) {
@@ -479,7 +666,7 @@ async function buildReport(inputPath, sectionFilters = []) {
   if (!existsSync(JSZIP_PATH)) fail(`JSZip bundle not found: ${JSZIP_PATH}`);
 
   const buffer = await readFile(resolvedInputPath);
-  const zip = await JSZip.loadAsync(buffer);
+  const zip = await JSZip.loadAsync(buffer.buffer.slice(buffer.byteOffset, buffer.byteOffset + buffer.byteLength));
   let sectionPaths = await orderedSectionPaths(zip);
 
   if (sectionFilters.length) {
@@ -516,6 +703,7 @@ async function buildReport(inputPath, sectionFilters = []) {
         sectionTableIndex,
         xmlPath,
         tableIndexByNode,
+        xml,
       ));
     });
 
@@ -539,6 +727,7 @@ async function buildReport(inputPath, sectionFilters = []) {
     },
     sectionCount: sections.length,
     tableCount: tables.length,
+    diagnostics: summarizeTableDiagnostics(tables),
     sections,
     tables,
   };

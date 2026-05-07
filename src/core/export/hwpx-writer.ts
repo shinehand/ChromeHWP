@@ -49,10 +49,19 @@ interface BorderFillRecord {
   readonly background?: string;
 }
 
+interface ParaStyleRecord {
+  readonly id: number;
+  readonly align?: EditableParagraphBlock['align'];
+  readonly textIndent?: number;
+  readonly lineHeight?: string;
+}
+
 interface StyleRegistry {
   readonly fonts: FontRecord[];
   readonly charStyles: CharStyleRecord[];
   readonly charStyleIds: Map<string, number>;
+  readonly paraStyles: ParaStyleRecord[];
+  readonly paraStyleIds: Map<string, number>;
   readonly borderFills: BorderFillRecord[];
   readonly borderFillIds: Map<string, number>;
 }
@@ -60,9 +69,11 @@ interface StyleRegistry {
 interface RenderContext {
   readonly imageAssets: Map<EditableImageBlock, HwpxImageAsset>;
   readonly styles: StyleRegistry;
+  readonly headerDecorations: readonly EditableImageBlock[];
   nextParagraphId: number;
   nextTableId: number;
   nextPictureId: number;
+  nextFieldId: number;
 }
 
 interface BlockRenderOptions {
@@ -84,9 +95,11 @@ export async function writeHwpxPackage(document: EditableExportDocument, options
   const context: RenderContext = {
     imageAssets,
     styles,
+    headerDecorations: document.headerDecorations ?? [],
     nextParagraphId: 1,
     nextTableId: 1,
-    nextPictureId: 1
+    nextPictureId: 1,
+    nextFieldId: 1
   };
   const preservedEntries = buildBaseEntries(options.sourceBytes);
   removeManagedEntries(preservedEntries);
@@ -175,6 +188,8 @@ function renderSectionProperties(layout: EditablePageLayout | undefined, context
   const pageWidth = pxToHwpUnit(layout.width) || pxToHwpUnit(794);
   const pageHeight = pxToHwpUnit(layout.height) || pxToHwpUnit(1123);
   const margin = normalizePadding(layout.margin);
+  const headerHeightPx = headerDecorationHeightPx(context.headerDecorations);
+  const headerHeight = pxToHwpUnit(headerHeightPx);
   const orientation = layout.width > layout.height ? 'WIDELY' : 'NARROWLY';
 
   return [
@@ -182,13 +197,45 @@ function renderSectionProperties(layout: EditablePageLayout | undefined, context
     `${runIndent}<hp:run charPrIDRef="0">`,
     `${sectionIndent}<hp:secPr id="" textDirection="HORIZONTAL" spaceColumns="1134" tabStop="8000" tabStopVal="4000" tabStopUnit="HWPUNIT">`,
     `${pageIndent}<hp:pagePr landscape="${orientation}" width="${pageWidth}" height="${pageHeight}" gutterType="LEFT_ONLY">`,
-    `${pageIndent}  <hp:margin header="0" footer="0" gutter="0" left="${margin.left}" right="${margin.right}" top="${margin.top}" bottom="${margin.bottom}"/>`,
+    `${pageIndent}  <hp:margin header="${headerHeight}" footer="0" gutter="0" left="${margin.left}" right="${margin.right}" top="${margin.top}" bottom="${margin.bottom}"/>`,
     `${pageIndent}</hp:pagePr>`,
     `${sectionIndent}</hp:secPr>`,
+    renderHeaderDecorationControl(context, layout, depth + 2),
     `${runIndent}</hp:run>`,
     `${indent}</hp:p>`,
     ''
   ].join('\n');
+}
+
+function headerDecorationHeightPx(decorations: readonly EditableImageBlock[]): number {
+  const heights = decorations
+    .map((block) => Math.round(block.height ?? 0))
+    .filter((height) => height > 0);
+  if (!heights.length) return 0;
+  return Math.max(...heights) + 50;
+}
+
+function renderHeaderDecorationControl(context: RenderContext, layout: EditablePageLayout, depth: number): string {
+  const decorations = context.headerDecorations.filter((block) => context.imageAssets.has(block));
+  if (!decorations.length) return '';
+
+  const indent = '  '.repeat(depth);
+  const subListIndent = '  '.repeat(depth + 1);
+  const bodyWidth = pxToHwpUnit(Math.max(1, layout.width - (layout.margin?.left ?? 0) - (layout.margin?.right ?? 0)));
+  const headerHeight = pxToHwpUnit(headerDecorationHeightPx(decorations));
+  const blocks = decorations
+    .map((block) => renderImageBlock(block, context, depth + 2))
+    .join('');
+
+  return [
+    `${indent}<hp:ctrl>`,
+    `${subListIndent}<hp:header id="0" applyPageType="BOTH">`,
+    `${subListIndent}  <hp:subList id="" textDirection="HORIZONTAL" lineWrap="BREAK" vertAlign="TOP" textWidth="${bodyWidth}" textHeight="${headerHeight}">`,
+    blocks.trimEnd(),
+    `${subListIndent}  </hp:subList>`,
+    `${subListIndent}</hp:header>`,
+    `${indent}</hp:ctrl>`
+  ].filter(Boolean).join('\n');
 }
 
 function renderBlock(
@@ -209,21 +256,27 @@ function renderParagraphBlock(
   options: BlockRenderOptions = {}
 ): string {
   const indent = '  '.repeat(depth);
+  const paraPrId = context.styles.paraStyleIds.get(paraStyleKey(block)) ?? 0;
   const align = block.align ? ` align="${alignToHwpx(block.align)}"` : '';
   const lineHeight = block.lineHeight ? ` lineHeight="${escapeXmlAttribute(block.lineHeight)}"` : '';
   const pageBreak = options.pageBreakBefore ? ' pageBreak="1"' : '';
   const runs = block.runs
-    .map((run) => renderTextRun(run, context.styles, depth + 1))
-    .join('') || renderTextRun({ text: '' }, context.styles, depth + 1);
+    .map((run) => renderTextRun(run, context, depth + 1))
+    .join('') || renderTextRun({ text: '' }, context, depth + 1);
 
-  return `${indent}<hp:p id="${context.nextParagraphId++}" paraPrIDRef="0" styleIDRef="0"${pageBreak}${align}${lineHeight}>\n${runs}${indent}</hp:p>\n`;
+  return `${indent}<hp:p id="${context.nextParagraphId++}" paraPrIDRef="${paraPrId}" styleIDRef="0"${pageBreak}${align}${lineHeight}>\n${runs}${indent}</hp:p>\n`;
 }
 
-function renderTextRun(run: EditableTextRun, styles: StyleRegistry, depth: number): string {
+function renderTextRun(run: EditableTextRun, context: RenderContext, depth: number): string {
   const indent = '  '.repeat(depth);
-  const charPrId = styles.charStyleIds.get(charStyleKey(run)) ?? 0;
+  const charPrId = context.styles.charStyleIds.get(charStyleKey(run)) ?? 0;
   const pieces = renderTextPieces(run.text, depth + 1);
-  return `${indent}<hp:run charPrIDRef="${charPrId}">\n${pieces || `${indent}  <hp:t></hp:t>\n`}${indent}</hp:run>\n`;
+  const fallbackPiece = `${indent}  <hp:t></hp:t>\n`;
+  const href = normalizeHwpxHyperlinkHref(run.href);
+  const body = href
+    ? renderHyperlinkField(href, context, depth + 1, pieces || fallbackPiece)
+    : pieces || fallbackPiece;
+  return `${indent}<hp:run charPrIDRef="${charPrId}">\n${body}${indent}</hp:run>\n`;
 }
 
 function renderTextPieces(text: string, depth: number): string {
@@ -234,6 +287,32 @@ function renderTextPieces(text: string, depth: number): string {
     if (piece === '\t') return `${indent}<hp:tab/>\n`;
     return piece ? `${indent}<hp:t>${escapeXmlText(piece)}</hp:t>\n` : '';
   }).join('');
+}
+
+function renderHyperlinkField(href: string, context: RenderContext, depth: number, body: string): string {
+  const indent = '  '.repeat(depth);
+  const paramIndent = '  '.repeat(depth + 1);
+  const fieldId = 627600491;
+  const beginId = 1900000000 + context.nextFieldId++;
+  const escapedHref = escapeXmlText(href);
+  return [
+    `${indent}<hp:ctrl>`,
+    `${paramIndent}<hp:fieldBegin id="${beginId}" type="HYPERLINK" name="" editable="0" dirty="1" zorder="-1" fieldid="${fieldId}" metaTag="">`,
+    `${paramIndent}  <hp:parameters cnt="6" name="">`,
+    `${paramIndent}    <hp:integerParam name="Prop">0</hp:integerParam>`,
+    `${paramIndent}    <hp:stringParam name="Command">${escapedHref};1;0;0;</hp:stringParam>`,
+    `${paramIndent}    <hp:stringParam name="Path">${escapedHref}</hp:stringParam>`,
+    `${paramIndent}    <hp:stringParam name="Category">HWPHYPERLINK_TYPE_URL</hp:stringParam>`,
+    `${paramIndent}    <hp:stringParam name="TargetType">HWPHYPERLINK_TARGET_BOOKMARK</hp:stringParam>`,
+    `${paramIndent}    <hp:stringParam name="DocOpenType">HWPHYPERLINK_JUMP_CURRENTTAB</hp:stringParam>`,
+    `${paramIndent}  </hp:parameters>`,
+    `${paramIndent}</hp:fieldBegin>`,
+    `${indent}</hp:ctrl>`,
+    body,
+    `${indent}<hp:ctrl>`,
+    `${paramIndent}<hp:fieldEnd beginIDRef="${beginId}" fieldid="${fieldId}"/>`,
+    `${indent}</hp:ctrl>`
+  ].join('\n') + '\n';
 }
 
 function renderTableBlock(
@@ -371,6 +450,7 @@ async function collectImageAssets(document: EditableExportDocument): Promise<Map
 
 function collectBlocks(document: EditableExportDocument): EditableBlock[] {
   const blocks: EditableBlock[] = [];
+  if (document.headerDecorations?.length) appendBlocks(document.headerDecorations, blocks);
   for (const page of document.pages) appendBlocks(page.blocks, blocks);
   return blocks;
 }
@@ -427,11 +507,14 @@ function buildStyleRegistry(document: EditableExportDocument): StyleRegistry {
   const fontIds = new Map<string, number>([[DEFAULT_FONT, 0]]);
   const charStyles: CharStyleRecord[] = [createCharStyle(0, 0, DEFAULT_FONT_SIZE_PT, DEFAULT_TEXT_COLOR, undefined, false, false, false, false)];
   const charStyleIds = new Map<string, number>([[defaultCharStyleKey(), 0]]);
+  const paraStyles: ParaStyleRecord[] = [{ id: 0, align: 'left', lineHeight: '160%' }];
+  const paraStyleIds = new Map<string, number>([[paraStyleKey(paraStyles[0]), 0]]);
   const borderFills: BorderFillRecord[] = [{ id: 0, border: '1px solid #000000' }];
   const borderFillIds = new Map<string, number>([[borderFillKey('1px solid #000000', undefined), 0]]);
 
   for (const block of collectBlocks(document)) {
     if (block.type === 'paragraph') {
+      registerParaStyle(block, paraStyles, paraStyleIds);
       for (const run of block.runs) {
         const key = charStyleKey(run);
         if (charStyleIds.has(key)) continue;
@@ -470,7 +553,7 @@ function buildStyleRegistry(document: EditableExportDocument): StyleRegistry {
     }
   }
 
-  return { fonts, charStyles, charStyleIds, borderFills, borderFillIds };
+  return { fonts, charStyles, charStyleIds, paraStyles, paraStyleIds, borderFills, borderFillIds };
 }
 
 function createCharStyle(
@@ -519,6 +602,34 @@ function borderFillKey(border: string | undefined, background: string | undefine
   return `${normalizeBorder(border) || ''}|${normalizeColor(background) || ''}`;
 }
 
+function registerParaStyle(
+  block: Pick<EditableParagraphBlock, 'align' | 'textIndent' | 'lineHeight'>,
+  records: ParaStyleRecord[],
+  ids: Map<string, number>
+): number {
+  const key = paraStyleKey(block);
+  const existing = ids.get(key);
+  if (existing !== undefined) return existing;
+
+  const id = records.length;
+  records.push({
+    id,
+    align: block.align,
+    textIndent: normalizeTextIndent(block.textIndent),
+    lineHeight: normalizeParaLineHeight(block.lineHeight)
+  });
+  ids.set(key, id);
+  return id;
+}
+
+function paraStyleKey(block: Pick<EditableParagraphBlock, 'align' | 'textIndent' | 'lineHeight'>): string {
+  return [
+    block.align || 'left',
+    normalizeTextIndent(block.textIndent),
+    normalizeParaLineHeight(block.lineHeight)
+  ].join('|');
+}
+
 function charStyleKey(run: EditableTextRun): string {
   return [
     normalizeFontFamily(run.fontFamily) || DEFAULT_FONT,
@@ -556,13 +667,14 @@ function buildHeaderXml(
     `        <hh:font id="${font.id}" face="${escapeXmlAttribute(font.name)}" type="TTF"/>`
   )).join('\n');
   const charProperties = styles.charStyles.map(renderCharStyle).join('\n');
+  const paraProperties = styles.paraStyles.map(renderParaStyle).join('\n');
   const borderFills = styles.borderFills.map(renderBorderFill).join('\n');
   const binItems = Array.from(imageAssets.values()).map((asset) => (
     `        <hh:binItem id="${escapeXmlAttribute(asset.id)}" href="${escapeXmlAttribute(asset.path)}" media-type="${escapeXmlAttribute(asset.mimeType)}"/>`
   )).join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<hh:head xmlns:hh="http://www.hancom.co.kr/hwpml/2011/head" xmlns:hp="http://www.hancom.co.kr/hwpml/2011/paragraph">
+<hh:head xmlns:hh="http://www.hancom.co.kr/hwpml/2011/head" xmlns:hp="http://www.hancom.co.kr/hwpml/2011/paragraph" xmlns:hc="http://www.hancom.co.kr/hwpml/2011/core">
   <hh:meta>
     <hh:title>${escapeXmlText(title)}</hh:title>
     <hh:generator>ChromeHWP</hh:generator>
@@ -582,11 +694,8 @@ ${borderFills}
     <hh:charProperties itemCnt="${styles.charStyles.length}">
 ${charProperties}
     </hh:charProperties>
-    <hh:paraProperties itemCnt="1">
-      <hh:paraPr id="0">
-        <hh:align horizontal="LEFT" vertical="BASELINE"/>
-        <hh:lineSpacing type="PERCENT" value="160"/>
-      </hh:paraPr>
+    <hh:paraProperties itemCnt="${styles.paraStyles.length}">
+${paraProperties}
     </hh:paraProperties>
     <hh:styles itemCnt="1">
       <hh:style id="0" type="PARA" name="바탕글" engName="Normal" paraPrIDRef="0" charPrIDRef="0" nextStyleIDRef="0" langID="1042" lockForm="0"/>
@@ -613,6 +722,31 @@ function renderCharStyle(style: CharStyleRecord): string {
     `        <hh:fontRef hangul="${style.fontId}" latin="${style.fontId}" hanja="${style.fontId}" japanese="${style.fontId}" other="${style.fontId}" symbol="${style.fontId}" user="${style.fontId}"/>`,
     decorations,
     '      </hh:charPr>'
+  ].filter(Boolean).join('\n');
+}
+
+function renderParaStyle(style: ParaStyleRecord): string {
+  const align = alignToHwpx(style.align || 'left');
+  const lineSpacing = lineHeightToPercent(style.lineHeight);
+  const textIndent = pxToSignedHwpUnit(style.textIndent);
+  const margin = textIndent
+    ? [
+        '        <hh:margin>',
+        `          <hc:intent value="${textIndent}" unit="HWPUNIT"/>`,
+        '          <hc:left value="0" unit="HWPUNIT"/>',
+        '          <hc:right value="0" unit="HWPUNIT"/>',
+        '          <hc:prev value="0" unit="HWPUNIT"/>',
+        '          <hc:next value="0" unit="HWPUNIT"/>',
+        '        </hh:margin>'
+      ].join('\n')
+    : '';
+
+  return [
+    `      <hh:paraPr id="${style.id}">`,
+    `        <hh:align horizontal="${align}" vertical="BASELINE"/>`,
+    margin,
+    `        <hh:lineSpacing type="PERCENT" value="${lineSpacing}" unit="HWPUNIT"/>`,
+    '      </hh:paraPr>'
   ].filter(Boolean).join('\n');
 }
 
@@ -724,6 +858,40 @@ function normalizeFontSize(value: number | undefined): number {
   return Number.isFinite(value) && Number(value) > 0 ? Math.max(1, Math.round(Number(value) * 10) / 10) : DEFAULT_FONT_SIZE_PT;
 }
 
+function normalizeTextIndent(value: number | undefined): number {
+  if (!Number.isFinite(value)) return 0;
+  return Math.max(-220, Math.min(320, Math.round(Number(value))));
+}
+
+function normalizeParaLineHeight(value: string | undefined): string {
+  const trimmed = value?.trim();
+  if (!trimmed) return '160%';
+  if (/^\d+(\.\d+)?$/.test(trimmed)) {
+    const numeric = Number(trimmed);
+    return `${Math.max(80, Math.min(300, Math.round(numeric > 10 ? numeric : numeric * 100)))}%`;
+  }
+  if (/^\d+(\.\d+)?%$/.test(trimmed)) {
+    return `${Math.max(80, Math.min(300, Math.round(Number.parseFloat(trimmed))))}%`;
+  }
+  return trimmed;
+}
+
+function normalizeHwpxHyperlinkHref(value: string | undefined): string {
+  const href = value?.trim() || '';
+  if (!href || /[\u0000-\u001f\u007f]/.test(href)) return '';
+  if (/^javascript:/i.test(href)) return '';
+  if (/^(https?:|mailto:|tel:|#)/i.test(href)) return href;
+  if (/^www\./i.test(href)) return `https://${href}`;
+  if (/^[a-z0-9.-]+\.[a-z]{2,}(?:[/:?#].*)?$/i.test(href)) return `https://${href}`;
+  return '';
+}
+
+function lineHeightToPercent(value: string | undefined): number {
+  const normalized = normalizeParaLineHeight(value);
+  if (/^\d+%$/.test(normalized)) return Number(normalized.slice(0, -1));
+  return 160;
+}
+
 function normalizeBorder(value: string | undefined): string | undefined {
   if (!value) return undefined;
   const parsed = parseBorder(value);
@@ -792,6 +960,10 @@ function mimeTypeToExtension(mimeType: string): string {
 
 function pxToHwpUnit(value: number | undefined): number {
   return Number.isFinite(value) && Number(value) > 0 ? Math.round(Number(value) * HWPUNIT_PER_PX) : 0;
+}
+
+function pxToSignedHwpUnit(value: number | undefined): number {
+  return Number.isFinite(value) && Number(value) !== 0 ? Math.round(Number(value) * HWPUNIT_PER_PX) : 0;
 }
 
 function sumPositive(values: readonly number[] | undefined): number {

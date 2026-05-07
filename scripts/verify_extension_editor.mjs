@@ -510,14 +510,32 @@ function evaluateProbeResult(result, roundTrip) {
     const reopenedExportableImages = Number(
       roundTrip.reopened?.imageInventory?.exportable ?? roundTrip.reopened?.images ?? 0
     );
-    if (zipImages.picCount !== reopenedExportableImages) {
-      failures.push(`HWPX roundtrip ZIP/DOM 이미지 수 불일치: hp:pic ${zipImages.picCount}, exportable DOM ${reopenedExportableImages}`);
+    const reopenedTotalImages = Number(
+      roundTrip.reopened?.imageInventory?.total ?? roundTrip.reopened?.images ?? 0
+    );
+    if (zipImages.picCount < reopenedExportableImages || zipImages.picCount > reopenedTotalImages) {
+      failures.push(`HWPX roundtrip ZIP/DOM 이미지 수 불일치: hp:pic ${zipImages.picCount}, exportable DOM ${reopenedExportableImages}, total DOM ${reopenedTotalImages}`);
     }
     if (zipImages.binItems < zipImages.uniqueBinaryRefs) {
       failures.push(`HWPX roundtrip binary 참조 누락: binItems ${zipImages.binItems}, unique refs ${zipImages.uniqueBinaryRefs}`);
     }
     if (zipImages.missingContentHpfFiles?.length) {
       failures.push(`HWPX roundtrip content.hpf stale 참조: ${zipImages.missingContentHpfFiles.join(', ')}`);
+    }
+    if (zipImages.paraStyleCount <= 1 || zipImages.usedParaStyleCount <= 1) {
+      failures.push(`HWPX roundtrip 문단 속성 손실: paraPr ${zipImages.paraStyleCount}, used ${zipImages.usedParaStyleCount}`);
+    }
+    if (zipImages.intentCount < 1) {
+      failures.push('HWPX roundtrip 문단 들여쓰기(hc:intent) 보존 누락');
+    }
+    if (zipImages.hyperlinkFieldCount < 1) {
+      failures.push('HWPX roundtrip 하이퍼링크 필드 보존 누락');
+    }
+    if (zipImages.hyperlinkFieldCount !== zipImages.hyperlinkFieldEndCount) {
+      failures.push(`HWPX roundtrip 하이퍼링크 필드 시작/종료 불일치: begin ${zipImages.hyperlinkFieldCount}, end ${zipImages.hyperlinkFieldEndCount}`);
+    }
+    if (zipImages.hyperlinkPathCount < zipImages.hyperlinkFieldCount) {
+      failures.push(`HWPX roundtrip 하이퍼링크 Path 누락: field ${zipImages.hyperlinkFieldCount}, path ${zipImages.hyperlinkPathCount}`);
     }
   }
   return { results: checked, failures, warnings };
@@ -531,6 +549,9 @@ function inspectHwpxImages(filePath) {
     const section = text('Contents/section0.xml');
     const contentHpf = text('Contents/content.hpf');
     const binaryRefs = [...section.matchAll(/binaryItemIDRef="([^"]+)"/g)].map((match) => match[1]);
+    const paraStyleIds = [...header.matchAll(/<hh:paraPr\b[^>]*\bid="([^"]+)"/g)].map((match) => match[1]);
+    const usedParaStyleRefs = [...section.matchAll(/paraPrIDRef="([^"]+)"/g)].map((match) => match[1]);
+    const hyperlinkFieldCount = [...section.matchAll(/<hp:fieldBegin\b[^>]*\btype="HYPERLINK"/g)].length;
     const contentHpfFiles = [...contentHpf.matchAll(/\bhref="([^"]+)"/g)]
       .map((match) => match[1])
       .filter((href) => href && !/^(https?:|data:)/i.test(href));
@@ -540,6 +561,14 @@ function inspectHwpxImages(filePath) {
       picCount: [...section.matchAll(/<hp:pic\b/g)].length,
       binaryRefCount: binaryRefs.length,
       uniqueBinaryRefs: new Set(binaryRefs).size,
+      paraStyleCount: paraStyleIds.length,
+      usedParaStyleCount: new Set(usedParaStyleRefs).size,
+      intentCount: [...header.matchAll(/<hc:intent\b/g)].length,
+      fieldBeginCount: [...section.matchAll(/<hp:fieldBegin\b/g)].length,
+      fieldEndCount: [...section.matchAll(/<hp:fieldEnd\b/g)].length,
+      hyperlinkFieldCount,
+      hyperlinkFieldEndCount: [...section.matchAll(/<hp:fieldEnd\b[^>]*\bfieldid="627600491"/g)].length,
+      hyperlinkPathCount: [...section.matchAll(/<hp:stringParam\b[^>]*\bname="Path"/g)].length,
       contentHpfFiles: contentHpfFiles.length,
       missingContentHpfFiles
     };
@@ -550,6 +579,11 @@ function inspectHwpxImages(filePath) {
       picCount: 0,
       binaryRefCount: 0,
       uniqueBinaryRefs: 0,
+      fieldBeginCount: 0,
+      fieldEndCount: 0,
+      hyperlinkFieldCount: 0,
+      hyperlinkFieldEndCount: 0,
+      hyperlinkPathCount: 0,
       contentHpfFiles: 0,
       missingContentHpfFiles: []
     };

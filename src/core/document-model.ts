@@ -30,6 +30,7 @@ export interface ParagraphBlock {
   readonly align?: 'left' | 'center' | 'right' | 'justify';
   readonly styleId?: string;
   readonly margin?: BoxSpacing;
+  readonly textIndent?: number;
   readonly lineHeight?: string;
 }
 
@@ -55,6 +56,7 @@ export interface ImageBlock {
 export interface TextRun {
   readonly text: string;
   readonly styleId?: string;
+  readonly href?: string;
   readonly fontFamily?: string;
   readonly fontSizePt?: number;
   readonly color?: string;

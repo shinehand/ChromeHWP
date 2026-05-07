@@ -285,11 +285,16 @@ Object.assign(HwpParser, {
 
   /* ── zlib 압축 해제 ── */
   async _decompressZlib(data) {
-    if (typeof pako !== 'undefined') {
+    if (
+      typeof pako !== 'undefined'
+      && (typeof pako.inflateRaw === 'function' || typeof pako.inflate === 'function')
+    ) {
       try {
+        if (typeof pako.inflateRaw !== 'function') throw new Error('pako.inflateRaw unavailable');
         return pako.inflateRaw(data);
       } catch (rawErr) {
         try {
+          if (typeof pako.inflate !== 'function') throw new Error('pako.inflate unavailable');
           return pako.inflate(data);
         } catch (wrappedErr) {
           throw new Error(`zlib 압축 해제 실패: ${rawErr?.message || wrappedErr?.message || wrappedErr || rawErr}`);
@@ -1865,11 +1870,11 @@ Object.assign(HwpParser, {
       HwpParser._i16(body, 14), // top
       HwpParser._i16(body, 16), // bottom
     ];
-    const rowCellCounts = [];
+    const rowSizes = [];
 
     let off = 18;
     for (let i = 0; i < rowCount && off + 2 <= body.length; i++, off += 2) {
-      rowCellCounts.push(HwpParser._u16(body, off));
+      rowSizes.push(HwpParser._u16(body, off));
     }
 
     const borderFillId = off + 2 <= body.length ? HwpParser._u16(body, off) : 0;
@@ -1913,7 +1918,10 @@ Object.assign(HwpParser, {
       colCount,
       cellSpacing,
       defaultCellPadding,
-      rowCellCounts,
+      rowSizes,
+      // Compatibility: older diagnostics used rowCellCounts for this raw table slot.
+      // Keep it as an alias until downstream reports have moved to rowSizes/rowCellStartCounts.
+      rowCellCounts: rowSizes,
       borderFillId,
       validZoneInfoSize,
       validZoneCount,
@@ -2122,6 +2130,15 @@ Object.assign(HwpParser, {
       rowHeights: rowEntries.map(entry => (
         entry.repeatedHeader ? 1 : ((tableBlock.rowHeights || [])[entry.sourceIndex] || 0)
       )),
+      rowSizes: Array.isArray(tableBlock.rowSizes)
+        ? rowEntries.map(entry => tableBlock.rowSizes[entry.sourceIndex] || 0)
+        : tableBlock.rowSizes,
+      rowCellStartCounts: Array.isArray(tableBlock.rowCellStartCounts)
+        ? rowEntries.map(entry => tableBlock.rowCellStartCounts[entry.sourceIndex] || 0)
+        : tableBlock.rowCellStartCounts,
+      rowCellCounts: Array.isArray(tableBlock.rowCellCounts)
+        ? rowEntries.map(entry => tableBlock.rowCellCounts[entry.sourceIndex] || 0)
+        : tableBlock.rowCellCounts,
       hwpxRowHeights: Array.isArray(tableBlock.hwpxRowHeights)
         ? rowEntries.map(entry => {
           const height = tableBlock.hwpxRowHeights[entry.sourceIndex] || 0;
@@ -2326,6 +2343,25 @@ Object.assign(HwpParser, {
     return chunks;
   },
 
+  _tableRowSizesLookLikeHeights(rowSizes = [], context = {}) {
+    if (!Array.isArray(rowSizes) || !rowSizes.length) return false;
+    const rowCount = Math.max(0, Number(context.rowCount) || 0);
+    if (rowCount > 0 && rowSizes.length !== rowCount) return false;
+    const values = rowSizes.map(value => Number(value) || 0);
+    if (!values.some(value => value > 0)) return false;
+
+    const sum = values.reduce((total, value) => total + value, 0);
+    const cellCount = Math.max(0, Number(context.cellCount) || 0);
+    const colCount = Math.max(0, Number(context.colCount) || 0);
+    const maxValue = Math.max(...values);
+
+    // Some real-world HWP files expose this slot as per-row cell/list counts on
+    // the current parser path. Preserve those raw values, but do not apply them
+    // as HWPUNIT heights.
+    if (cellCount > 0 && sum === cellCount && maxValue <= Math.max(colCount + 2, 16)) return false;
+    return maxValue >= 100;
+  },
+
   _buildTableBlock(tableInfo, cells) {
     if (!cells.length) return null;
 
@@ -2407,7 +2443,20 @@ Object.assign(HwpParser, {
       rows[cell.row].cells.push(cell);
     }
 
-    const rowHeights = Array.from({ length: rowCount }, () => 0);
+    const rawRowSizes = Array.isArray(tableInfo?.rowSizes)
+      ? tableInfo.rowSizes.slice(0, rowCount).map(value => Math.max(0, Number(value) || 0))
+      : [];
+    const rowSizesAreHeights = HwpParser._tableRowSizesLookLikeHeights(rawRowSizes, {
+      rowCount,
+      colCount,
+      cellCount: sortedCells.length,
+    });
+    const rowCellStartCounts = !rowSizesAreHeights && rawRowSizes.length === rowCount
+      ? rawRowSizes.slice()
+      : [];
+    const rowHeights = Array.from({ length: rowCount }, (_, rowIndex) => (
+      rowSizesAreHeights ? (rawRowSizes[rowIndex] || 0) : 0
+    ));
     for (const cell of sortedCells) {
       const startRow = Math.max(0, Number(cell.row) || 0);
       const span = Math.max(1, Number(cell.rowSpan) || 1);
@@ -2433,8 +2482,11 @@ Object.assign(HwpParser, {
       columnWidths,
       cellSpacing: tableInfo?.cellSpacing || 0,
       defaultCellPadding: tableInfo?.defaultCellPadding || null,
+      rowSizes: rawRowSizes,
+      rowCellStartCounts,
       rowHeights,
       rowCellCounts: tableInfo?.rowCellCounts || [],
+      rowHeightSource: rowSizesAreHeights ? 'table-row-sizes' : 'cell-height-synthesis',
       numHeaderRows: Math.max(0, Number(tableInfo?.numHeaderRows) || 0),
       pageBreak: tableInfo?.pageBreak || (tableInfo?.splitPage === 1 ? 'CELL' : (tableInfo?.splitPage === 2 ? 'SPLIT' : 'NONE')),
       repeatHeader: Boolean(tableInfo?.repeatHeader),
@@ -2444,7 +2496,10 @@ Object.assign(HwpParser, {
         attr: tableInfo?.attr || 0,
         splitPage: tableInfo?.splitPage || 0,
         repeatHeader: Boolean(tableInfo?.repeatHeader),
+        rowSizes: rawRowSizes,
+        rowCellStartCounts,
         rowCellCounts: tableInfo?.rowCellCounts || [],
+        rowHeightSource: rowSizesAreHeights ? 'table-row-sizes' : 'cell-height-synthesis',
         borderFillId: tableInfo?.borderFillId || 0,
         validZoneInfoSize: tableInfo?.validZoneInfoSize || 0,
         validZones: tableInfo?.validZones || [],

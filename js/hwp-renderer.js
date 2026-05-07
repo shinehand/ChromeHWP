@@ -5,6 +5,11 @@
  */
 
 /* ── 뷰어 렌더링 ── */
+const HWP_UNITS_PER_INCH = 7200;
+const CSS_PX_PER_INCH = 96;
+const HWPUNIT_TO_PX_SCALE = CSS_PX_PER_INCH / HWP_UNITS_PER_INCH;
+const CSS_PX_PER_MM = CSS_PX_PER_INCH / 25.4;
+
 function textDecorationStyleFromShape(shape = '') {
   switch (String(shape || '').trim().toUpperCase()) {
     case 'DOT':
@@ -60,8 +65,17 @@ function appendRunSpan(parent, run) {
     // 라틴 전용 폰트가 따로 지정된 경우 CSS 폰트 스택 앞에 배치한다.
     // 브라우저는 각 문자에 대해 스택 앞 폰트를 우선 시도하므로,
     // 라틴 문자는 라틴 폰트로, 한글 문자는 한글 폰트로 각각 렌더링된다.
-    const latinPrefix = run.fontNameLatin ? `'${run.fontNameLatin}', ` : '';
-    span.style.fontFamily = `${latinPrefix}'${run.fontName}', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif`;
+    const fontModule = globalThis.FontSubstitution || null;
+    const resolveFont = fontModule?.resolveFont || ((fontName) => fontName);
+    const fontFamilyWithFallback = fontModule?.fontFamilyWithFallback || ((fontName) => (
+      `"${fontName}", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif`
+    ));
+    const resolvedHangulFont = resolveFont(run.fontName, run.fontType || 0, run.langId || 0);
+    const resolvedLatinFont = run.fontNameLatin
+      ? resolveFont(run.fontNameLatin, run.fontTypeLatin || run.fontType || 0, 1)
+      : '';
+    const latinPrefix = resolvedLatinFont ? `"${resolvedLatinFont}", ` : '';
+    span.style.fontFamily = `${latinPrefix}${fontFamilyWithFallback(resolvedHangulFont)}`;
   }
   if (run.color && run.color !== '#000000') span.style.color = run.color;
   if (decorationLines.length) {
@@ -193,23 +207,23 @@ function appendParagraphBlock(parent, para, className = '', options = {}) {
     // TabDef에 정의된 실제 HWPUNIT 위치를 px로 환산해 정렬 정확도를 높인다.
     const TAB_PX_MIN = 20;
     const TAB_PX_MAX = 400;
-    const HWPUNIT_TO_PX = 75; // 1 HWPUNIT = 1/7200 inch @ 96 DPI = 1/75 px
+    const HWPUNIT_PER_CSS_PX = HWP_UNITS_PER_INCH / CSS_PX_PER_INCH;
     const firstLeftTab = (para.tabStops || []).find(t => !t.kind || t.kind === 'left');
     if (firstLeftTab && firstLeftTab.position > 0) {
-      const tabPx = Math.max(TAB_PX_MIN, Math.min(TAB_PX_MAX, Math.round(firstLeftTab.position / HWPUNIT_TO_PX)));
+      const tabPx = Math.max(TAB_PX_MIN, Math.min(TAB_PX_MAX, Math.round(firstLeftTab.position / HWPUNIT_PER_CSS_PX)));
       p.style.tabSize = `${tabPx}px`;
     } else {
       p.style.tabSize = '4';
     }
   }
   if (Number.isFinite(para.marginLeft) && !['center', 'right'].includes(p.style.textAlign)) {
-    p.style.paddingLeft = `${Math.max(0, hwpSignedUnitToPx(para.marginLeft, -34, 310, 1 / 75, 0))}px`;
+    p.style.paddingLeft = `${Math.max(0, hwpSignedUnitToPx(para.marginLeft, -34, 310, HWPUNIT_TO_PX_SCALE, 0))}px`;
   }
   if (Number.isFinite(para.marginRight) && para.marginRight > 0) {
-    p.style.paddingRight = `${hwpUnitToPx(para.marginRight, 0, 310, 1 / 75, 0)}px`;
+    p.style.paddingRight = `${hwpUnitToPx(para.marginRight, 0, 310, HWPUNIT_TO_PX_SCALE, 0)}px`;
   }
   if (Number.isFinite(para.textIndent) && !['center', 'right'].includes(p.style.textAlign)) {
-    const textIndentPx = hwpSignedUnitToPx(para.textIndent, -170, 226, 1 / 75, 0);
+    const textIndentPx = hwpSignedUnitToPx(para.textIndent, -170, 226, HWPUNIT_TO_PX_SCALE, 0);
     p.style.textIndent = `${textIndentPx}px`;
     if (textIndentPx < 0 && String(className || '').includes('hwp-table-paragraph')) {
       const currentPaddingLeft = Number.parseFloat(p.style.paddingLeft || '0') || 0;
@@ -217,10 +231,10 @@ function appendParagraphBlock(parent, para, className = '', options = {}) {
     }
   }
   if (Number.isFinite(para.spacingBefore) && para.spacingBefore > 0) {
-    p.style.marginTop = `${hwpUnitToPx(para.spacingBefore, 0, 120, 1 / 75, 0)}px`;
+    p.style.marginTop = `${hwpUnitToPx(para.spacingBefore, 0, 120, HWPUNIT_TO_PX_SCALE, 0)}px`;
   }
   if (!suppressSpacingAfter && Number.isFinite(para.spacingAfter) && para.spacingAfter > 0) {
-    p.style.marginBottom = `${hwpUnitToPx(para.spacingAfter, 0, 120, 1 / 75, 4)}px`;
+    p.style.marginBottom = `${hwpUnitToPx(para.spacingAfter, 0, 120, HWPUNIT_TO_PX_SCALE, 4)}px`;
   }
   // When HWP line-segment heights are available they reflect actual HWP rendering and
   // should take priority over the abstract lineSpacing formula (which can be affected by
@@ -366,8 +380,8 @@ function appendAnchoredInlineImage(parent, block) {
   if (widthPx) img.style.width = `${widthPx}px`;
   if (heightPx) img.style.maxHeight = `${heightPx}px`;
 
-  const leftPx = objectSignedUnitToPx(block, block.offsetX, -120, 520, 1 / 75, 0);
-  const topPx = objectSignedUnitToPx(block, block.offsetY, -80, 220, 1 / 75, 0);
+  const leftPx = objectSignedUnitToPx(block, block.offsetX, -120, 520, 0);
+  const topPx = objectSignedUnitToPx(block, block.offsetY, -80, 220, 0);
   wrap.style.left = `${Math.max(0, leftPx)}px`;
   if (topPx) {
     wrap.style.top = `${Math.max(0, topPx)}px`;
@@ -393,7 +407,14 @@ function appendObjectTextBlock(parent, block, kind = 'equation', className = '')
   if (kind === 'equation') {
     const firstRun = (block.texts || [])[0] || {};
     if (firstRun.fontName) {
-      box.style.fontFamily = `'${firstRun.fontName}', 'Cambria Math', 'Times New Roman', serif`;
+      const fontModule = globalThis.FontSubstitution || null;
+      const resolvedFont = fontModule?.resolveFont
+        ? fontModule.resolveFont(firstRun.fontName, firstRun.fontType || 0, firstRun.langId || 0)
+        : firstRun.fontName;
+      const family = fontModule?.fontFamilyWithFallback
+        ? fontModule.fontFamilyWithFallback(resolvedFont)
+        : `"${resolvedFont}", "Cambria Math", "Times New Roman", serif`;
+      box.style.fontFamily = family;
     }
     if (firstRun.color && firstRun.color !== '#000000') {
       box.style.color = firstRun.color;
@@ -404,7 +425,7 @@ function appendObjectTextBlock(parent, block, kind = 'equation', className = '')
   }
 
   const widthPx = block.sourceFormat === 'hwp'
-    ? hwpUnitToPx(block.width, 48, 720, 1 / 75, 0)
+    ? hwpUnitToPx(block.width, 48, 720, HWPUNIT_TO_PX_SCALE, 0)
     : 0;
   if (widthPx > 0) {
     box.style.maxWidth = `${widthPx}px`;
@@ -472,7 +493,7 @@ function appendShapePlaceholder(parent, block) {
   const lineWidthMm = Number(block.lineWidthMm) || 0;
   if (lineColor) {
     const lineWidthPx = lineWidthMm > 0
-      ? Math.max(0.5, Math.min(8, lineWidthMm * 3.78)) // mm → px at 96 DPI
+      ? Math.max(0.5, Math.min(8, lineWidthMm * CSS_PX_PER_MM)) // mm → px at 96 DPI
       : 1;
     box.style.border = `${lineWidthPx}px solid ${lineColor}`;
     box.style.boxSizing = 'border-box';
@@ -609,7 +630,7 @@ function hwpUnitToPx(value, minPx, maxPx, scale, fallbackPx = 0) {
   return Math.max(minPx, Math.min(maxPx, px));
 }
 
-function hwpUnitToExactPx(value, scale = 1 / 75, fallbackPx = 0) {
+function hwpUnitToExactPx(value, scale = HWPUNIT_TO_PX_SCALE, fallbackPx = 0) {
   const num = Number(value);
   if (!Number.isFinite(num) || num <= 0) return fallbackPx;
   return Math.max(1, Math.round(num * scale));
@@ -623,16 +644,15 @@ function hwpSignedUnitToPx(value, minPx, maxPx, scale, fallbackPx = 0) {
 }
 
 function hwpPageUnitToPx(value, minPx, maxPx, fallbackPx = 0) {
-  return hwpUnitToPx(value, minPx, maxPx, 1 / 106, fallbackPx);
+  return hwpUnitToPx(value, minPx, maxPx, HWPUNIT_TO_PX_SCALE, fallbackPx);
 }
 
 function hwpSignedPageUnitToPx(value, minPx, maxPx, fallbackPx = 0) {
-  return hwpSignedUnitToPx(value, minPx, maxPx, 1 / 106, fallbackPx);
+  return hwpSignedUnitToPx(value, minPx, maxPx, HWPUNIT_TO_PX_SCALE, fallbackPx);
 }
 
 function objectUnitScale(block, kind = 'size') {
-  if (block?.sourceFormat === 'hwpx') return 1 / 75;
-  return 1 / 75;
+  return HWPUNIT_TO_PX_SCALE;
 }
 
 function objectUnitToPx(block, value, minPx, maxPx, fallbackPx = 0, kind = 'size') {
@@ -656,7 +676,7 @@ function paragraphBaseFontPx(para) {
     10.5,
     ...(para?.texts || []).map(run => Math.max(0, resolveRunFontSize(run))),
   );
-  return fontPt * (96 / 72);
+  return fontPt * (CSS_PX_PER_INCH / 72);
 }
 
 function resolveInlineLineHeightPx(lineHeightValue, baseFontPx) {
@@ -693,30 +713,30 @@ function resolveParagraphLineHeight(para) {
   const baseFontPx = paragraphBaseFontPx(para);
 
   if (type === 'fixed') {
-    const px = hwpUnitToPx(spacing, 0, 200, 1 / 75, 0);
+    const px = hwpUnitToPx(spacing, 0, 200, HWPUNIT_TO_PX_SCALE, 0);
     return px > 0 ? `${px}px` : '';
   }
 
   if (type === 'minimum') {
-    const minPx = hwpUnitToPx(spacing, 0, 200, 1 / 75, 0);
+    const minPx = hwpUnitToPx(spacing, 0, 200, HWPUNIT_TO_PX_SCALE, 0);
     return `${Math.max(Math.round(baseFontPx * 1.2), minPx)}px`;
   }
 
   if (type === 'space-only') {
-    const extraPx = hwpUnitToPx(spacing, 0, 112, 1 / 75, 0);
+    const extraPx = hwpUnitToPx(spacing, 0, 112, HWPUNIT_TO_PX_SCALE, 0);
     return `${Math.max(Math.round(baseFontPx * 1.2), Math.round(baseFontPx + extraPx))}px`;
   }
 
   return `${Math.max(1, Math.min(4, spacing / 100))}`;
 }
 
-function tableRowSourceHeightPx(tableBlock, rowIndex, scale = 1 / 75) {
+function tableRowSourceHeightPx(tableBlock, rowIndex, scale = HWPUNIT_TO_PX_SCALE) {
   if (!tableBlock || !Number.isFinite(Number(rowIndex))) return 0;
   const rowHeight = Number(tableBlock.rowHeights?.[rowIndex]) || 0;
   return hwpUnitToExactPx(rowHeight, scale, 0);
 }
 
-function tableCellSourceHeightPx(tableBlock, cell, fallbackPx = 0, scale = 1 / 75) {
+function tableCellSourceHeightPx(tableBlock, cell, fallbackPx = 0, scale = HWPUNIT_TO_PX_SCALE) {
   const explicitCellHeight = hwpUnitToExactPx(cell?.height, scale, 0);
   if (explicitCellHeight > 0) return explicitCellHeight;
 
@@ -732,8 +752,8 @@ function tableCellSourceHeightPx(tableBlock, cell, fallbackPx = 0, scale = 1 / 7
 function applyImageOffsetStyles(el, imageLike, inline = false) {
   const offsetX = Number(imageLike?.offsetX) || 0;
   const offsetY = Number(imageLike?.offsetY) || 0;
-  const translateX = hwpSignedUnitToPx(offsetX, inline ? -280 : -520, inline ? 280 : 520, 1 / 75, 0);
-  const translateY = hwpSignedUnitToPx(offsetY, -120, 120, 1 / 75, 0);
+  const translateX = hwpSignedUnitToPx(offsetX, inline ? -280 : -520, inline ? 280 : 520, HWPUNIT_TO_PX_SCALE, 0);
+  const translateY = hwpSignedUnitToPx(offsetY, -120, 120, HWPUNIT_TO_PX_SCALE, 0);
   if (!translateX && !translateY) return;
   el.style.transform = `translate(${translateX}px, ${translateY}px)`;
 }
@@ -1092,8 +1112,8 @@ function applyPageStyle(pageEl, page, pageIndex) {
 
   if (pageStyle.sourceFormat === 'hwp') {
     const margins = pageStyle.margins || {};
-    // HWP 단위: HWPUNIT = 1/7200 inch, 96 DPI 기준 1/75 px
-    const HWP_SCALE = 1 / 75;
+    // HWP 단위: HWPUNIT = 1/7200 inch, 96 CSS px/inch 기준 1/75 px
+    const HWP_SCALE = HWPUNIT_TO_PX_SCALE;
     pageEl.dataset.sourceFormat = 'hwp';
     if (pageStyle.width > 0) {
       pageEl.style.width = `${Math.max(1, Math.round(pageStyle.width * HWP_SCALE))}px`;
@@ -1124,8 +1144,8 @@ function applyPageStyle(pageEl, page, pageIndex) {
   const borderOffset = pageBorder?.offset || {};
   const margins = pageStyle.margins || {};
 
-  // HWP·HWPX 모두 HWPUNIT (1/7200 inch) 기준: 96 DPI 환산 스케일 = 1/75
-  const HWPX_SCALE = 1 / 75;
+  // HWP·HWPX 모두 HWPUNIT (1/7200 inch) 기준: 96 CSS px/inch 환산 스케일 = 1/75
+  const HWPX_SCALE = HWPUNIT_TO_PX_SCALE;
   pageEl.dataset.sourceFormat = 'hwpx';
   if (pageStyle.width > 0) {
     pageEl.style.width = `${Math.max(1, Math.round(pageStyle.width * HWPX_SCALE))}px`;
@@ -1208,7 +1228,7 @@ function hwpxBorderWidthToPx(widthMm) {
   if (!Number.isFinite(mm) || mm <= 0) return '0px';
   // 0.1mm(최세선) ≈ 0.38px → 시각적으로 표시되는 최소값 0.5px 보장, 8px 상한
   // (이전 4px 상한은 2.0mm 이상 굵은 선을 너무 얇게 렌더링하는 원인이었음)
-  return `${Math.max(0.5, Math.min(8, Math.round(mm * 3.78 * 10) / 10))}px`;
+  return `${Math.max(0.5, Math.min(8, Math.round(mm * CSS_PX_PER_MM * 10) / 10))}px`;
 }
 
 function applyCellBorderStyle(td, cell) {
@@ -1528,12 +1548,12 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
   table.dataset.pageIndex = String(pageIndex);
   table.dataset.tableIndex = String(tableIndex);
   if (tableBlock.sourceFormat) table.dataset.sourceFormat = tableBlock.sourceFormat;
+  if (tableBlock.rowHeightSource) table.dataset.rowHeightSource = tableBlock.rowHeightSource;
   if (usePrimaryFormLayout) table.dataset.layout = 'first-page-primary';
   const isHwpxTable = tableBlock.sourceFormat === 'hwpx';
   const isHwpTable = tableBlock.sourceFormat === 'hwp';
-  // HWP·HWPX 모두 HWPUNIT (1/7200 inch) 기준 단위 사용 확인됨 (실제 HWPX XML 분석 기준)
-  // 96 DPI 환산 스케일 = 1/75 (1 HWPUNIT = 96/7200 ≈ 1/75 px)
-  const TABLE_UNIT_SCALE = 1 / 75;
+  // HWP·HWPX 모두 HWPUNIT (1/7200 inch) 기준: 96 CSS px/inch 환산 스케일 = 1/75
+  const TABLE_UNIT_SCALE = HWPUNIT_TO_PX_SCALE;
   // 얇은 구분선 행 임계값 (HWPUNIT → px): 1125 HWPUNIT 미만 = 약 15px
   const THIN_ROW_THRESHOLD_PX = 15;
   const cellSpacingPx = Math.max(0, Math.min(48, Math.round((Number(tableBlock.cellSpacing) || 0) * TABLE_UNIT_SCALE)));
