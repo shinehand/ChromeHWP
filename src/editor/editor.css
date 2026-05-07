@@ -512,7 +512,10 @@ dd {
 }
 
 .hwp-page[data-source-format="hwpx"] {
+  border: 0;
   box-shadow: none;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .hwp-page-body {
