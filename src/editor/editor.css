@@ -858,6 +858,10 @@ dd {
   width: calc(var(--hwp-page-width, 1123px) - 58px) !important;
 }
 
+.hwp-page[data-document-layout="lh-sale-notice"] .hwp-page-body > .hwp-table-wrap[data-content-kind="lh-sale-notice-supply-summary"][data-layout-position="absolute"] {
+  transform: translateY(-24px);
+}
+
 .hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child {
   background:
     linear-gradient(90deg, rgba(241, 252, 255, 0.96), rgba(222, 246, 255, 0.92) 45%, rgba(255, 255, 255, 0.96)),
