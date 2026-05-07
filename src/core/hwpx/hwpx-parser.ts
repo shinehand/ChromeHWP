@@ -754,8 +754,7 @@ function paginateSectionBlocks(blocks: readonly HwpxDocumentBlock[], pageProfile
 
 function hasTopLevelExplicitPageBreaks(blocks: readonly HwpxDocumentBlock[]): boolean {
   return blocks.some((block, index) => {
-    const pageBreak = block._hwpxLayout?.pageBreak;
-    return index > 0 && Boolean(block._hwpxLayout?.breakBefore || (pageBreak && isBreakEnabled(pageBreak)));
+    return index > 0 && hasExplicitPageBreakBefore(block._hwpxLayout);
   });
 }
 
@@ -774,14 +773,25 @@ function paginateExplicitPageBreakBlocks(blocks: readonly HwpxDocumentBlock[], p
 
   for (const block of blocks) {
     const layout = block._hwpxLayout;
-    const pageBreak = layout?.pageBreak;
-    if ((layout?.breakBefore || (pageBreak && isBreakEnabled(pageBreak))) && current.length) flush();
+    if (hasExplicitPageBreakBefore(layout) && current.length) flush();
     current.push(block);
     if (layout?.breakAfter && current.length) flush();
   }
 
   if (current.length || !pages.length) flush();
   return pages;
+}
+
+function hasExplicitPageBreakBefore(layout: HwpxBlockLayout | undefined): boolean {
+  if (!layout) return false;
+  const pageBreak = layout.pageBreak;
+  if (pageBreak) return isPageBreakBeforeValue(pageBreak);
+  return Boolean(layout.breakBefore);
+}
+
+function isPageBreakBeforeValue(value: string): boolean {
+  const normalized = value.trim().toUpperCase();
+  return normalized === '1' || normalized === 'TRUE' || normalized === 'PAGE';
 }
 
 function updateRenderedFlowBottom(currentBottom: number, block: HwpxDocumentBlock): number {
