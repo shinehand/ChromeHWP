@@ -192,7 +192,10 @@ function renderParagraphDom(block: ParagraphBlock, context: RenderContext): HTML
       if (run.text.length > 0) paragraph.append(renderRunDom(run));
     }
   }
-  if (!paragraph.childNodes.length) markEmptyParagraph(paragraph);
+  if (!paragraph.childNodes.length) {
+    if (isHwpxExactSpacerParagraph(block, context)) markHwpxExactSpacerParagraph(paragraph, layout?.heightPx ?? 0);
+    else markEmptyParagraph(paragraph);
+  }
   return paragraph;
 }
 
@@ -1426,6 +1429,33 @@ function markEmptyParagraph(paragraph: HTMLElement): void {
   paragraph.classList.add('hwp-paragraph-empty');
   paragraph.dataset.empty = 'true';
   paragraph.append(document.createElement('br'));
+}
+
+function isHwpxExactSpacerParagraph(block: ParagraphBlock, context: RenderContext): boolean {
+  if (context.sourceFormat !== 'hwpx' || context.nestingLevel <= 0) return false;
+  if (block.runs.some((run) => run.text.trim().length > 0)) return false;
+
+  const layout = block._hwpxLayout;
+  const segments = layout?.lineSegments ?? [];
+  if (!layout || !segments.length || layout.position) return false;
+
+  const maxSegmentHeight = Math.max(...segments.map((segment) => segment.heightPx));
+  return layout.heightPx <= 8 && maxSegmentHeight <= 8;
+}
+
+function markHwpxExactSpacerParagraph(paragraph: HTMLElement, heightPx: number): void {
+  const height = Math.max(0, Math.min(8, Math.round(heightPx)));
+  const cssHeight = formatCssPx(height);
+  paragraph.classList.add('hwp-paragraph-empty');
+  paragraph.dataset.empty = 'true';
+  paragraph.dataset.hwpxSpacer = 'true';
+  paragraph.style.setProperty('--hwpx-spacer-height', cssHeight);
+  paragraph.style.height = cssHeight;
+  paragraph.style.minHeight = cssHeight;
+  paragraph.style.lineHeight = '0';
+  paragraph.style.fontSize = '0';
+  paragraph.style.margin = '0';
+  paragraph.style.padding = '0';
 }
 
 function isEmptyCell(cell: TableCell): boolean {

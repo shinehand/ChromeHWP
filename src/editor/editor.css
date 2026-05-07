@@ -610,6 +610,12 @@ dd {
   min-height: 1.2em;
 }
 
+.hwp-page[data-source-format="hwpx"] .hwp-paragraph[data-hwpx-spacer="true"] {
+  min-height: var(--hwpx-spacer-height, 0px);
+  line-height: 0;
+  font-size: 0;
+}
+
 .hwp-table-wrap {
   box-sizing: border-box;
   width: 100%;
