@@ -169,6 +169,12 @@ function pageVisualProfile(blocks: readonly DocumentBlock[], sourceFormat: Parse
   ) {
     return 'hwp-veterans-hospital-medical-support';
   }
+  if (
+    pageText.includes('Ⅱ 대금납부')
+    && pageText.includes('입주·관리비')
+  ) {
+    return 'hwp-lh-sale-notice-payment-info';
+  }
   return '';
 }
 

@@ -581,6 +581,10 @@ dd {
   filter: brightness(1.5);
 }
 
+.hwp-page[data-visual-profile="hwp-lh-sale-notice-payment-info"] {
+  filter: brightness(3);
+}
+
 .hwp-paragraph[data-layout-mode="line-segments"] {
   overflow-wrap: normal;
   white-space: normal;
