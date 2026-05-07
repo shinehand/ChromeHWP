@@ -173,8 +173,7 @@ interface ParsedSection {
 const HWPUNIT_PER_PX = 75;
 const HWPX_TABLE_PAGINATION_SCALE = 1.00;
 const HWPX_LONG_ROW_PAGINATION_SCALE = 0.60;
-const HWPX_PRICE_DISCLOSURE_CONTINUATION_HEADER_RESERVE_PX = 72;
-const HWPX_PERFORMANCE_CONTINUATION_HEADER_RESERVE_PX = 36;
+const HWPX_CONTINUATION_HEADER_RESERVE_PX = 72;
 const HWPX_POSITIONED_TABLE_FLOW_CLEARANCE_PX = 72;
 const DEFAULT_PAGE_LAYOUT: PageLayout = {
   width: 794,
@@ -1252,16 +1251,11 @@ function addLongRowContinuationHeaderReserve(
   blocks: readonly HwpxDocumentBlock[],
   fragmentIndex: number
 ): HwpxDocumentBlock[] {
-  const reserveHeight = longRowContinuationHeaderReserveHeight(blocks, fragmentIndex);
-  if (reserveHeight <= 0) return [...blocks];
-  return [createHwpxFlowSpacer(reserveHeight, 'long-row-continuation-header'), ...blocks];
+  if (fragmentIndex <= 0 || !needsLongRowContinuationHeaderReserve(blocks)) return [...blocks];
+  return [createHwpxFlowSpacer(HWPX_CONTINUATION_HEADER_RESERVE_PX, 'long-row-continuation-header'), ...blocks];
 }
 
-function longRowContinuationHeaderReserveHeight(
-  blocks: readonly HwpxDocumentBlock[],
-  fragmentIndex: number
-): number {
-  if (fragmentIndex <= 0) return 0;
+function needsLongRowContinuationHeaderReserve(blocks: readonly HwpxDocumentBlock[]): boolean {
   const text = blocks
     .slice(0, 3)
     .map(visibleBlockText)
@@ -1269,13 +1263,7 @@ function longRowContinuationHeaderReserveHeight(
     .replace(/\s+/g, ' ')
     .trim();
 
-  if (text.includes('분양가상한제 적용주택의 분양가 공개')) {
-    return HWPX_PRICE_DISCLOSURE_CONTINUATION_HEADER_RESERVE_PX;
-  }
-  if (text.includes('성능부문 성능항목 성능등급')) {
-    return HWPX_PERFORMANCE_CONTINUATION_HEADER_RESERVE_PX;
-  }
-  return 0;
+  return text.includes('분양가상한제 적용주택의 분양가 공개');
 }
 
 function createHwpxFlowSpacer(heightPx: number, source: string): HwpxParagraphBlock {
