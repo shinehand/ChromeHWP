@@ -506,8 +506,13 @@ dd {
 
 .hwp-page[data-source-format="hwp"] {
   border: 0;
+  box-shadow: none;
   outline: 0;
   outline-offset: 0;
+}
+
+.hwp-page[data-source-format="hwpx"] {
+  box-shadow: none;
 }
 
 .hwp-page-body {
