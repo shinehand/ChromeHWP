@@ -173,6 +173,8 @@ interface ParsedSection {
 const HWPUNIT_PER_PX = 75;
 const HWPX_TABLE_PAGINATION_SCALE = 1.00;
 const HWPX_LONG_ROW_PAGINATION_SCALE = 0.60;
+const HWPX_PRICE_DISCLOSURE_CONTINUATION_HEADER_RESERVE_PX = 72;
+const HWPX_PERFORMANCE_CONTINUATION_HEADER_RESERVE_PX = 36;
 const HWPX_POSITIONED_TABLE_FLOW_CLEARANCE_PX = 72;
 const DEFAULT_PAGE_LAYOUT: PageLayout = {
   width: 794,
@@ -1027,7 +1029,10 @@ function splitLongTableRow(
   if (fragments.length <= 1) return [];
 
   return fragments.map((fragment, fragmentIndex) => {
-    const normalizedFragment = normalizeLongRowFragmentBlocks(fragment);
+    const normalizedFragment = addLongRowContinuationHeaderReserve(
+      normalizeLongRowFragmentBlocks(fragment),
+      fragmentIndex
+    );
     const chunk = sliceTableBlock(table, rowIndex, rowIndex + 1, repeatHeader);
     const bodyRow = chunk.rows[chunk.rows.length - 1];
     const bodyCellIndex = bodyRow.cells.findIndex((cell) => {
@@ -1241,6 +1246,47 @@ function normalizeLongRowFragmentBlocks(blocks: readonly HwpxDocumentBlock[]): H
   return normalized.filter((block, index) => {
     return !isCollapsibleLongRowSpacer(block, normalized[index - 1], normalized[index + 1]);
   });
+}
+
+function addLongRowContinuationHeaderReserve(
+  blocks: readonly HwpxDocumentBlock[],
+  fragmentIndex: number
+): HwpxDocumentBlock[] {
+  const reserveHeight = longRowContinuationHeaderReserveHeight(blocks, fragmentIndex);
+  if (reserveHeight <= 0) return [...blocks];
+  return [createHwpxFlowSpacer(reserveHeight, 'long-row-continuation-header'), ...blocks];
+}
+
+function longRowContinuationHeaderReserveHeight(
+  blocks: readonly HwpxDocumentBlock[],
+  fragmentIndex: number
+): number {
+  if (fragmentIndex <= 0) return 0;
+  const text = blocks
+    .slice(0, 3)
+    .map(visibleBlockText)
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  if (text.includes('분양가상한제 적용주택의 분양가 공개')) {
+    return HWPX_PRICE_DISCLOSURE_CONTINUATION_HEADER_RESERVE_PX;
+  }
+  if (text.includes('성능부문 성능항목 성능등급')) {
+    return HWPX_PERFORMANCE_CONTINUATION_HEADER_RESERVE_PX;
+  }
+  return 0;
+}
+
+function createHwpxFlowSpacer(heightPx: number, source: string): HwpxParagraphBlock {
+  return {
+    type: 'paragraph',
+    runs: [{ text: '' }],
+    _hwpxLayout: {
+      heightPx: Math.max(1, heightPx),
+      source
+    }
+  };
 }
 
 function normalizeLongRowFragmentBlock(block: HwpxDocumentBlock): HwpxDocumentBlock {
