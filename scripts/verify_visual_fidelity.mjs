@@ -43,7 +43,13 @@ async function run() {
       documents: captureResult.documents
     };
     writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
-    execFileSync('python3', [builderPath, '--manifest', manifestPath, '--output-dir', outputDir, '--target-width', '900'], {
+    execFileSync('python3', [
+      builderPath,
+      '--manifest', manifestPath,
+      '--output-dir', outputDir,
+      '--target-width', '900',
+      '--metric-width', 'native',
+    ], {
       cwd: rootDir,
       encoding: 'utf8',
       stdio: ['ignore', 'pipe', 'pipe'],

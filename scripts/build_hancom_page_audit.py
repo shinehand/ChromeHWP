@@ -458,12 +458,14 @@ def projection_diff_score(left_image, right_image):
 
 
 def visual_similarity_metrics(hancom_page, chrome_page, target_width):
-    hancom_norm = resize_to_width(hancom_page, target_width)
-    chrome_norm = resize_to_width(chrome_page, target_width)
+    metric_width = hancom_page.width if target_width == "native" else target_width
+    hancom_norm = resize_to_width(hancom_page, metric_width)
+    chrome_norm = resize_to_width(chrome_page, metric_width)
     return {
         "rawDiff": normalized_diff_score(hancom_norm, chrome_norm),
         "blurDiff": blurred_diff_score(hancom_norm, chrome_norm),
         "projectionDiff": projection_diff_score(hancom_page, chrome_page),
+        "metricWidth": metric_width,
     }
 
 
@@ -591,7 +593,7 @@ def make_compare_image(hancom_page, chrome_page, output_path, title, target_widt
     canvas.save(output_path)
 
 
-def build_report(manifest, output_dir, target_width):
+def build_report(manifest, output_dir, target_width, metric_width):
     results = []
     for doc in manifest.get("documents", []):
         doc_results = []
@@ -617,7 +619,7 @@ def build_report(manifest, output_dir, target_width):
                 hancom_page.save(hancom_crop_path)
                 compare_path = compare_dir / f"page-{page_index + 1:03d}-compare.png"
                 make_compare_image(hancom_page, chrome_page, compare_path, title, target_width)
-                metrics = visual_similarity_metrics(hancom_page, chrome_page, target_width)
+                metrics = visual_similarity_metrics(hancom_page, chrome_page, metric_width)
                 score = metrics["rawDiff"]
                 quality = capture_quality(hancom_page, chrome_page)
                 item.update({
@@ -796,12 +798,16 @@ def main():
     )
     parser.add_argument("--output-dir", default="output/hancom-oracle/page-audit")
     parser.add_argument("--target-width", type=int, default=900)
+    parser.add_argument("--metric-width", default=None)
     args = parser.parse_args()
 
     manifest_path = Path(args.manifest)
     output_dir = Path(args.output_dir)
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    results = build_report(manifest, output_dir, args.target_width)
+    metric_width = args.target_width
+    if args.metric_width:
+        metric_width = "native" if args.metric_width == "native" else int(args.metric_width)
+    results = build_report(manifest, output_dir, args.target_width, metric_width)
 
     report_json = output_dir / "hancom-page-audit-report.json"
     report_md = output_dir / "hancom-page-audit-report.md"
