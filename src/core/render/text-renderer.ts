@@ -893,6 +893,16 @@ function tableContentKind(block: TableBlock, context: RenderContext): string {
     return 'hwpx-eligibility-heading';
   }
   if (context.sourceFormat === 'hwp'
+    && context.nestingLevel === 0
+    && isLhSaleNoticeSupplyAmountHeadingTable(block)) {
+    return 'lh-sale-notice-supply-amount-heading';
+  }
+  if (context.sourceFormat === 'hwp'
+    && context.nestingLevel === 0
+    && isLhSaleNoticePriceDetailTable(block)) {
+    return 'lh-sale-notice-price-detail';
+  }
+  if (context.sourceFormat === 'hwp'
     && context.documentLayout === 'lh-sale-notice'
     && context.nestingLevel === 0
     && isLhSaleNoticeSupplySummaryTable(block)) {
@@ -916,6 +926,20 @@ function tableContentKind(block: TableBlock, context: RenderContext): string {
   return '';
 }
 
+function isLhSaleNoticeSupplyAmountHeadingTable(block: TableBlock): boolean {
+  if (block.rows.length > 2) return false;
+  return compactTableText(block).includes('공급대상세대및공급금액');
+}
+
+function isLhSaleNoticePriceDetailTable(block: TableBlock): boolean {
+  if (block.rows.length < 20 || tableColumnCount(block) < 8) return false;
+  const text = compactTableText(block);
+  return text.includes('세대별계약면적')
+    && text.includes('공급가격')
+    && text.includes('계약금')
+    && text.includes('잔금');
+}
+
 function isLhSaleNoticeSupplySummaryTable(block: TableBlock): boolean {
   if (block.rows.length < 4 || tableColumnCount(block) < 5) return false;
   const text = renderTableText(block).replace(/\s+/g, ' ').trim();
@@ -924,6 +948,10 @@ function isLhSaleNoticeSupplySummaryTable(block: TableBlock): boolean {
     && text.includes('사용승인연도')
     && text.includes('건설호수')
     && text.includes('금회공급호수');
+}
+
+function compactTableText(block: TableBlock): string {
+  return renderTableText(block).replace(/\s+/g, '');
 }
 
 function isHwpxPerformanceGradeTable(block: TableBlock): boolean {

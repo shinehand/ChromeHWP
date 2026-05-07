@@ -13,6 +13,7 @@ PAGE_RATIO = 1.414
 PAGE_RATIO_TOLERANCE = 0.10
 PAGE_MIN_WIDTH_RATIO = 0.20
 PAGE_HEIGHT_MIN_RATIO = 0.88
+PAGE_COMPONENT_MIN_FILL = 0.22
 STRUCTURE_TARGET_WIDTH = 360
 STRUCTURE_DARK_THRESHOLD = 220
 STRUCTURE_BLUR_RADIUS = 0.55
@@ -176,7 +177,7 @@ def detect_page_rects(image):
                 comp_w >= width * PAGE_MIN_WIDTH_RATIO
                 and comp_w <= width * 0.82
                 and comp_h >= comp_w * 0.70
-                and fill >= 0.32
+                and fill >= PAGE_COMPONENT_MIN_FILL
             ):
                 rects.append((
                     min_x * scale,

@@ -776,6 +776,58 @@ dd {
   border-bottom: 2px solid #e1261c !important;
 }
 
+.hwp-table-wrap[data-content-kind="lh-sale-notice-supply-amount-heading"] {
+  overflow: visible;
+}
+
+.hwp-table[data-content-kind="lh-sale-notice-supply-amount-heading"] {
+  background: transparent;
+  border: 0;
+  height: 31px !important;
+}
+
+.hwp-table[data-content-kind="lh-sale-notice-supply-amount-heading"] > tbody > tr > .hwp-table-cell {
+  background:
+    linear-gradient(90deg, rgba(176, 210, 248, 0.96), rgba(232, 243, 255, 0.92) 68%, rgba(255, 255, 255, 0));
+  border: 0 !important;
+  border-left: 10px solid #003f9d !important;
+  box-sizing: border-box;
+  height: 31px !important;
+  padding: 0 8px 0 10px !important;
+  vertical-align: middle;
+}
+
+.hwp-table[data-content-kind="lh-sale-notice-supply-amount-heading"] .hwp-table-cell-content {
+  align-items: center;
+  display: flex;
+  height: 31px;
+}
+
+.hwp-table[data-content-kind="lh-sale-notice-supply-amount-heading"] .hwp-paragraph {
+  color: #111111;
+  font-family: "HY헤드라인M", "NanumGothic", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  font-size: 10pt;
+  font-weight: 700;
+  line-height: 31px !important;
+  margin: 0;
+  min-height: 31px;
+}
+
+.hwp-table[data-content-kind="lh-sale-notice-supply-amount-heading"] .hwp-line-segment {
+  line-height: 31px !important;
+  max-width: none !important;
+  min-height: 31px !important;
+  padding-left: 0 !important;
+}
+
+.hwp-table-wrap[data-content-kind="lh-sale-notice-price-detail"][data-layout-position="absolute"] {
+  transform: translateY(40px);
+}
+
+.hwp-table[data-content-kind="lh-sale-notice-price-detail"] {
+  filter: brightness(1.12);
+}
+
 .hwp-table[data-layout="lh-sale-notice-primary"] {
   border-color: #1f1f1f;
 }
