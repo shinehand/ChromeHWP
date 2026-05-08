@@ -37,6 +37,8 @@ interface CharStyleRecord {
   readonly fontSizePt: number;
   readonly color: string;
   readonly backgroundColor?: string;
+  readonly letterSpacingPercent?: number;
+  readonly widthRatioPercent?: number;
   readonly bold: boolean;
   readonly italic: boolean;
   readonly underline: boolean;
@@ -505,7 +507,7 @@ function base64ToBytes(value: string): Uint8Array {
 function buildStyleRegistry(document: EditableExportDocument): StyleRegistry {
   const fonts: FontRecord[] = [{ id: 0, name: DEFAULT_FONT }];
   const fontIds = new Map<string, number>([[DEFAULT_FONT, 0]]);
-  const charStyles: CharStyleRecord[] = [createCharStyle(0, 0, DEFAULT_FONT_SIZE_PT, DEFAULT_TEXT_COLOR, undefined, false, false, false, false)];
+  const charStyles: CharStyleRecord[] = [createCharStyle(0, 0, DEFAULT_FONT_SIZE_PT, DEFAULT_TEXT_COLOR, undefined, undefined, undefined, false, false, false, false)];
   const charStyleIds = new Map<string, number>([[defaultCharStyleKey(), 0]]);
   const paraStyles: ParaStyleRecord[] = [{ id: 0, align: 'left', lineHeight: '160%' }];
   const paraStyleIds = new Map<string, number>([[paraStyleKey(paraStyles[0]), 0]]);
@@ -535,6 +537,8 @@ function buildStyleRegistry(document: EditableExportDocument): StyleRegistry {
           normalizeFontSize(run.fontSizePt),
           normalizeColor(run.color) || DEFAULT_TEXT_COLOR,
           normalizeColor(run.backgroundColor) || undefined,
+          normalizeLetterSpacingPercent(run.letterSpacing),
+          normalizeWidthRatioPercent(run.fontStretch),
           run.bold === true,
           run.italic === true,
           run.underline === true,
@@ -562,12 +566,14 @@ function createCharStyle(
   fontSizePt: number,
   color: string,
   backgroundColor: string | undefined,
+  letterSpacingPercent: number | undefined,
+  widthRatioPercent: number | undefined,
   bold: boolean,
   italic: boolean,
   underline: boolean,
   strike: boolean
 ): CharStyleRecord {
-  return { id, fontId, fontSizePt, color, backgroundColor, bold, italic, underline, strike };
+  return { id, fontId, fontSizePt, color, backgroundColor, letterSpacingPercent, widthRatioPercent, bold, italic, underline, strike };
 }
 
 function registerBorderFill(
@@ -636,6 +642,8 @@ function charStyleKey(run: EditableTextRun): string {
     normalizeFontSize(run.fontSizePt),
     normalizeColor(run.color) || DEFAULT_TEXT_COLOR,
     normalizeColor(run.backgroundColor) || '',
+    normalizeLetterSpacingPercent(run.letterSpacing) ?? '',
+    normalizeWidthRatioPercent(run.fontStretch) ?? '',
     run.bold === true ? 1 : 0,
     run.italic === true ? 1 : 0,
     run.underline === true ? 1 : 0,
@@ -648,6 +656,8 @@ function defaultCharStyleKey(): string {
     DEFAULT_FONT,
     DEFAULT_FONT_SIZE_PT,
     DEFAULT_TEXT_COLOR,
+    '',
+    '',
     '',
     0,
     0,
@@ -716,13 +726,27 @@ function renderCharStyle(style: CharStyleRecord): string {
     style.strike ? '        <hh:strikeout shape="SOLID"/>' : ''
   ].filter(Boolean).join('\n');
   const height = Math.max(100, Math.round(style.fontSizePt * 100));
+  const ratio = style.widthRatioPercent && style.widthRatioPercent !== 100
+    ? renderLanguageMetric('ratio', style.widthRatioPercent)
+    : '';
+  const spacing = style.letterSpacingPercent
+    ? renderLanguageMetric('spacing', style.letterSpacingPercent)
+    : '';
 
   return [
     `      <hh:charPr id="${style.id}" height="${height}" textColor="${escapeXmlAttribute(style.color)}"${style.backgroundColor ? ` shadeColor="${escapeXmlAttribute(style.backgroundColor)}"` : ''}>`,
     `        <hh:fontRef hangul="${style.fontId}" latin="${style.fontId}" hanja="${style.fontId}" japanese="${style.fontId}" other="${style.fontId}" symbol="${style.fontId}" user="${style.fontId}"/>`,
+    ratio,
+    spacing,
     decorations,
     '      </hh:charPr>'
   ].filter(Boolean).join('\n');
+}
+
+function renderLanguageMetric(name: 'ratio' | 'spacing', value: number): string {
+  const rounded = Math.round(value * 100) / 100;
+  const formatted = Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(2).replace(/0+$/, '').replace(/\.$/, '');
+  return `        <hh:${name} hangul="${formatted}" latin="${formatted}" hanja="${formatted}" japanese="${formatted}" other="${formatted}" symbol="${formatted}" user="${formatted}"/>`;
 }
 
 function renderParaStyle(style: ParaStyleRecord): string {
@@ -856,6 +880,35 @@ function normalizeFontFamily(value: string | undefined): string {
 
 function normalizeFontSize(value: number | undefined): number {
   return Number.isFinite(value) && Number(value) > 0 ? Math.max(1, Math.round(Number(value) * 10) / 10) : DEFAULT_FONT_SIZE_PT;
+}
+
+function normalizeLetterSpacingPercent(value: string | undefined): number | undefined {
+  const parsed = parseCssPercentMetric(value);
+  if (parsed === undefined || parsed === 0) return undefined;
+  return Math.max(-50, Math.min(50, parsed));
+}
+
+function normalizeWidthRatioPercent(value: string | undefined): number | undefined {
+  const parsed = parseCssPercentMetric(value);
+  if (parsed === undefined || parsed <= 0 || parsed === 100) return undefined;
+  return Math.max(50, Math.min(200, parsed));
+}
+
+function parseCssPercentMetric(value: string | undefined): number | undefined {
+  const trimmed = value?.trim();
+  if (!trimmed || trimmed === 'normal') return undefined;
+  const percentMatch = trimmed.match(/^(-?\d+(?:\.\d+)?)%$/);
+  if (percentMatch) {
+    const value = Number(percentMatch[1]);
+    return Number.isFinite(value) ? value : undefined;
+  }
+  const emMatch = trimmed.match(/^(-?\d+(?:\.\d+)?)em$/);
+  if (emMatch) {
+    const value = Number(emMatch[1]);
+    return Number.isFinite(value) ? value * 100 : undefined;
+  }
+  const numeric = Number(trimmed);
+  return Number.isFinite(numeric) ? numeric : undefined;
 }
 
 function normalizeTextIndent(value: number | undefined): number {

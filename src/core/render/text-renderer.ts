@@ -1203,6 +1203,7 @@ function applyFontStretch(span: HTMLElement, value: string | undefined): void {
   const percent = Number(stretch.slice(0, -1));
   if (!Number.isFinite(percent) || percent <= 0 || percent === 100) return;
   const scale = clamp(percent / 100, 0.5, 2);
+  span.style.fontStretch = stretch;
   span.style.display = 'inline-block';
   span.style.transform = `scaleX(${scale})`;
   span.style.transformOrigin = 'left center';

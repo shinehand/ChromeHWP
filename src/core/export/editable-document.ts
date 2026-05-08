@@ -39,6 +39,8 @@ export interface EditableTextRun {
   readonly fontSizePt?: number;
   readonly color?: string;
   readonly backgroundColor?: string;
+  readonly letterSpacing?: string;
+  readonly fontStretch?: string;
   readonly bold?: boolean;
   readonly italic?: boolean;
   readonly underline?: boolean;
@@ -385,6 +387,8 @@ function readTextStyle(element: HTMLElement, computed: CSSStyleDeclaration | und
   const fontSizePt = cssLengthToPt(element.style.fontSize || computed?.fontSize || '');
   const color = element.style.color || computed?.color || '';
   const backgroundColor = readBackgroundColor(element, computed);
+  const letterSpacing = element.style.letterSpacing || computed?.letterSpacing || '';
+  const fontStretch = element.style.fontStretch || computed?.fontStretch || '';
   const decoration = element.style.textDecorationLine
     || element.style.textDecoration
     || computed?.textDecorationLine
@@ -397,6 +401,8 @@ function readTextStyle(element: HTMLElement, computed: CSSStyleDeclaration | und
   if (fontSizePt) style.fontSizePt = fontSizePt;
   if (color) style.color = color;
   if (backgroundColor) style.backgroundColor = backgroundColor;
+  if (letterSpacing && letterSpacing !== 'normal') style.letterSpacing = letterSpacing;
+  if (fontStretch && fontStretch !== 'normal' && fontStretch !== '100%') style.fontStretch = fontStretch;
   if (fontWeight === 'bold' || Number(fontWeight) >= 600) style.bold = true;
   if (fontStyle === 'italic') style.italic = true;
   if (decoration.includes('underline')) style.underline = true;
@@ -424,6 +430,8 @@ function sameRunStyle(left: EditableTextRun, right: EditableTextRun): boolean {
     && left.href === right.href
     && left.color === right.color
     && left.backgroundColor === right.backgroundColor
+    && left.letterSpacing === right.letterSpacing
+    && left.fontStretch === right.fontStretch
     && left.bold === right.bold
     && left.italic === right.italic
     && left.underline === right.underline
