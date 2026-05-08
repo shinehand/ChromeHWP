@@ -270,3 +270,18 @@ The first implementation pass adds non-rendering model contracts:
 
 This pass intentionally does not change rendering behavior.
 Its purpose is to give parser, editor, exporter, and QA code a shared source-identity contract before deeper save-path work begins.
+
+## 2026-05-08 Editor Fidelity Guardrail Update
+
+The next implementation pass connects source identity to the editable DOM and removes sample-shaped rendering behavior:
+
+- The text renderer writes `data-source-ref` and `data-layout-box-id` onto pages, bodies, paragraphs, runs, tables, rows, cells, and images.
+- The editable document extractor preserves those fields, and run merging refuses to merge across different source references.
+- HWP source references are attached after pagination so parser-owned paragraph metrics remain attached to their original objects during page assembly.
+- HWPX long-row continuation spacing is now derived from repeated header row heights instead of sample text.
+- Editor CSS no longer uses HWP/HWPX text opacity, page brightness, or content-kind selectors to make specific documents visually pass.
+- Viewer CSS no longer carries dead `data-content-kind="hwpx-body-container"` table rules.
+
+Any future fidelity fix must name the source format field it uses. Acceptable examples are line segment positions, char shape, paragraph shape, border fill, row height, cell margin, repeat header, object anchor, page definition, and section decoration values.
+
+The remaining visual gap is not considered solved. The next work should focus on common font/ink density, LineSeg baseline placement, HWP table row height distribution, HWPX long-table continuation, and object anchoring without sample names or sample text.

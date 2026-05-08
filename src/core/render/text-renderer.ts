@@ -472,7 +472,6 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   const wrapper = documentElement('div', 'hwp-table-wrap');
   const table = documentElement('table', 'hwp-table');
   const layout = block._hwpxLayout;
-  const contentKind = tableContentKind(block, context);
   const columnCount = tableColumnCount(block);
   const normalizedWidths = normalizeColumnWidths(block.columnWidths, columnCount);
   const position = tablePositionLayout(layout);
@@ -486,18 +485,12 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   if (context.locked) setReadOnlyDecorationHost(wrapper);
   if (context.nestingLevel > 0) wrapper.classList.add('hwp-table-wrap-nested');
   wrapper.dataset.nestingLevel = String(context.nestingLevel);
-  if (contentKind) wrapper.dataset.contentKind = contentKind;
   wrapper.style.width = `${tableWidth}px`;
   wrapper.style.maxWidth = '100%';
   applyPositionedTableLayout(wrapper, layout, context);
-  if (contentKind === 'hwpx-body-container') {
-    wrapper.style.margin = '0';
-    wrapper.style.overflow = 'visible';
-  }
 
   table.dataset.nestingLevel = String(context.nestingLevel);
   table.dataset.sourceFormat = context.sourceFormat;
-  if (contentKind) table.dataset.contentKind = contentKind;
   table.style.width = '100%';
   if (context.locked) {
     table.contentEditable = 'false';
@@ -857,39 +850,6 @@ function shouldApplyTableCellHeight(cell: TableCell, context: RenderContext, ren
   if (context.sourceFormat === 'hwp' && cell.rowSpan > 1) return false;
   if (context.sourceFormat === 'hwpx' && cell.rowSpan > 1) return false;
   return Boolean(cell.height);
-}
-
-function tableContentKind(block: TableBlock, context: RenderContext): string {
-  if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxBodyContainerTable(block)) {
-    return 'hwpx-body-container';
-  }
-  return '';
-}
-
-function isHwpxBodyContainerTable(block: TableBlock): boolean {
-  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
-  if (!text) return false;
-  const cellCount = block.rows.reduce((sum, row) => sum + row.cells.length, 0);
-  const hasNestedTable = block.rows.some((row) => {
-    return row.cells.some((cell) => cell.blocks.some((child) => child.type === 'table'));
-  });
-  const paragraphTexts = block.rows.flatMap((row) => {
-    return row.cells.flatMap((cell) => directParagraphText(cell.blocks));
-  });
-  const longestParagraph = paragraphTexts.reduce((max, paragraph) => Math.max(max, paragraph.length), 0);
-  const averageCellText = text.length / Math.max(1, cellCount);
-
-  return hasNestedTable
-    || text.length > 500
-    || longestParagraph > 180
-    || (block.rows.length <= 4 && averageCellText > 120);
-}
-
-function directParagraphText(blocks: readonly DocumentBlock[]): string[] {
-  return blocks.flatMap((block) => {
-    if (block.type === 'paragraph') return [renderParagraphText(block).replace(/\s+/g, ' ').trim()];
-    return [];
-  }).filter(Boolean);
 }
 
 function applyBorderEdges(element: HTMLElement, edges: BorderEdges | undefined): void {

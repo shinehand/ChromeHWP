@@ -35,6 +35,8 @@
 ## Regression Rule
 - Renderer fixes must not hard-code document names, file names, page numbers, sample-specific coordinates, or sample text.
 - A fix is acceptable only when it is derived from HWP/HWPX records and applies as a reusable layout rule.
+- The editor must not use CSS opacity, brightness, hidden text, or ad-hoc content-kind selectors as visual shortcuts for particular documents.
+- Visual fidelity work must be traced back to source fields such as char shape, para shape, line segments, row/cell metrics, border/fill, object anchors, repeat headers, and page/section definitions.
 - Minimum smoke verification:
   - `node --check js/hwp-parser.js`
   - `node --check js/hwp-parser-hwp5-records.js`
@@ -213,3 +215,18 @@
 - Always run `close-all` before verification.
 - Always use one fixed session name: `verify-current`.
 - Do not keep stale verification sessions open after checks.
+
+## 2026-05-08 Editor Source Metadata and Hardcoding Cleanup
+- Completed:
+  - Added editable DOM source metadata coverage for pages, paragraphs, runs, tables, rows, cells, and images.
+  - Preserved that metadata through editable extraction so future saves can patch source-owned structures instead of rebuilding blind output.
+  - Removed editor CSS brightness/opacity/content-kind visual shortcuts that made specific HWP/HWPX pages diverge from actual source rendering.
+  - Replaced HWPX long-row continuation sample-text detection with repeated-header-derived spacing.
+  - Moved HWP source-reference attachment after pagination to avoid breaking parser `WeakMap` paragraph metrics.
+- Verified:
+  - `npm run typecheck`
+  - `STRICT_PAGE_EXPECTATIONS=1 npm run verify:extension`
+  - `STRICT_VISUAL_FIDELITY=1 npm run verify:visual`
+- Remaining:
+  - `verify:completion` still cannot be treated as complete while Hancom visual advisory/layout-review pages remain.
+  - Next passes must improve font/ink density, LineSeg baseline placement, HWP table row-height distribution, HWPX continuation geometry, and object anchoring through source-derived rules only.

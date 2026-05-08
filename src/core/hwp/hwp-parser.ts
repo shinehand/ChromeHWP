@@ -304,39 +304,10 @@ export async function parseHwp(input: HwpParseInput): Promise<ParsedDocument> {
     nonBodyControls: []
   };
 
-  const sections = sectionEntries.map((entry, sectionIndex) => {
+  const sections = sectionEntries.map((entry) => {
     const sectionBytes = cfb.readStream(entry);
     const decoded = decodeRecordStream(sectionBytes, fileHeader.flags.compressed);
-    const entryPath = entry.path || entry.name;
-    const section = parseSection(decoded.records, decoded.bytes, warnings, context);
-    return {
-      ...section,
-      blocks: attachSourceReferencesToBlocks(section.blocks, {
-        format: 'hwp',
-        path: entryPath,
-        sectionIndex
-      }),
-      ...(section.headerDecorations
-        ? {
-            headerDecorations: attachSourceReferencesToBlocks(section.headerDecorations, {
-              format: 'hwp',
-              path: entryPath,
-              sectionIndex,
-              prefix: 'header'
-            })
-          }
-        : {}),
-      ...(section.footerDecorations
-        ? {
-            footerDecorations: attachSourceReferencesToBlocks(section.footerDecorations, {
-              format: 'hwp',
-              path: entryPath,
-              sectionIndex,
-              prefix: 'footer'
-            })
-          }
-        : {})
-    };
+    return parseSection(decoded.records, decoded.bytes, warnings, context);
   });
   const pages = paginateSections(sections, context);
 
@@ -736,15 +707,22 @@ function paginateSections(sections: readonly ParsedSection[], context: HwpParseC
         ...blocks,
         ...(section.footerDecorations ?? [])
       ];
+      const pageBlocks = section.pageNumbering
+        ? [...decoratedBlocks, createPageNumberDecorationBlock(pageNumber, layout)]
+        : decoratedBlocks;
+      const sourcePath = `BodyText/Section${sectionIndex}`;
       pages.push({
         index: pages.length,
-        blocks: section.pageNumbering
-          ? [...decoratedBlocks, createPageNumberDecorationBlock(pageNumber, layout)]
-          : decoratedBlocks,
+        blocks: attachSourceReferencesToBlocks(pageBlocks, {
+          format: 'hwp',
+          path: sourcePath,
+          sectionIndex,
+          prefix: `page-${pageNumber - 1}`
+        }),
         layout,
         sourceRef: {
           format: 'hwp',
-          path: `BodyText/Section${sectionIndex}`,
+          path: sourcePath,
           role: 'section',
           sectionIndex,
           nodeName: 'page',

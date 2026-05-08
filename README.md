@@ -28,10 +28,12 @@
 - 복합 헤더 판정은 텍스트 키워드보다 표 구조 제약(행/열 범위, 중첩 표 구조)을 우선하도록 정리했사옵니다.
 - README/상태 문서에서도 동일하게 “하드코딩 금지, 형식 데이터 기반 일반 규칙” 원칙을 유지하옵니다.
 - `src/` 에디터 렌더러와 구형 `js/` 렌더러에서 특정 문서 문구, `lh-sale-notice`, `goyeopje` 같은 샘플 전용 visual profile, brightness/translate 보정을 제거했사옵니다.
+- 크롬 확장 에디터의 DOM에는 `sourceRef` / `layoutBoxId`를 보존하여, 편집·검증·향후 저장 경로가 원본 레코드와 XML 구조를 추적할 수 있게 했사옵니다.
+- 시각 보정은 CSS `opacity`, `brightness`, 문서명, 페이지 번호, 샘플 문구, 임의 `content-kind`가 아니라 원본 포맷에서 읽은 font, border/fill, line segment, row/cell, anchor 값으로만 해야 하옵니다.
 - 앞으로 샘플 문서는 회귀검증 입력으로만 쓰고, production 렌더링은 표/문단/셀/개체 anchor 등 형식 데이터에서 파생되는 구조 규칙으로만 보정하옵니다.
 - 에디터 저장 경로 고도화를 위해 `SourceDocument` / `LayoutTree` 타입 계약과 HWP/HWPX 소스 요약 메타데이터를 추가하기 시작했사옵니다. 이 변경은 렌더링 동작을 바꾸지 않고, 원본 레코드·XML·패키지 항목 보존을 위한 기반이옵니다.
 
-아직 남은 핵심 과제는 `페이지 내부 레이아웃 충실도`(표 높이, 개체 위치, 글자 조판 정밀화)이옵니다.
+아직 남은 핵심 과제는 `페이지 내부 레이아웃 충실도`(표 높이, 개체 위치, 글자 조판 정밀화)이옵니다. 현재 구조 검증은 통과할 수 있으나, 한컴 Viewer와 육안상 동일하다고 선언하려면 남은 visual advisory 페이지를 줄여야 하옵니다.
 
 ## 프로젝트 원칙 및 개발 플랜
 
@@ -77,7 +79,7 @@
 1. diff가 큰 페이지부터 보되, 수정은 항상 HWP/HWPX 형식의 일반 규칙으로 만든다.
 2. 한 페이지를 맞추기 위해 다른 문서의 페이지 흐름이 깨지지 않도록 먼저 최소 원인 단위를 분리한다.
 3. 원인 분류 순서는 `페이지 흐름`, `표/셀 분할`, `개체 anchor`, `문단 조판`, `폰트 계량`, `색/선/농도` 순서로 한다.
-4. 수정 후에는 JS 문법 검사, 다운로드 샘플 검증, 한컴 전 페이지 감사를 순서대로 수행한다.
+4. 수정 후에는 `npm run typecheck`, `STRICT_PAGE_EXPECTATIONS=1 npm run verify:extension`, `STRICT_VISUAL_FIDELITY=1 npm run verify:visual`을 우선 수행한다.
 5. 검증 결과와 다음 우선순위는 README와 `docs/rendering-status.md`에 계속 갱신한다.
 
 ## 핵심 구조

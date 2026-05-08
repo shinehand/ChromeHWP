@@ -520,10 +520,6 @@ dd {
   outline-offset: 0;
 }
 
-.hwp-page[data-source-format="hwpx"] .hwp-page-body {
-  filter: brightness(1.3);
-}
-
 .hwp-page-body {
   box-sizing: border-box;
   width: 100%;
@@ -561,20 +557,7 @@ dd {
 
 .hwp-run {
   line-height: inherit;
-  opacity: 0.71;
   white-space: pre-wrap;
-}
-
-.hwp-page[data-source-format="hwpx"] .hwp-run {
-  opacity: 0.11;
-}
-
-.hwp-page[data-source-format="hwpx"] .hwp-paragraph[data-decoration-rule="true"] {
-  opacity: 0;
-}
-
-.hwp-page[data-source-format="hwp"][style*="width: 794px"] .hwp-run {
-  opacity: 0.21;
 }
 
 .hwp-paragraph[data-layout-mode="line-segments"] {
@@ -628,32 +611,6 @@ dd {
   margin: 2px 0 1px;
 }
 
-.hwp-table-wrap[data-content-kind="hwpx-body-container"],
-.hwp-table-wrap[data-content-kind="hwpx-eligibility-section"],
-.hwp-table-wrap[data-content-kind="hwpx-general-notice-section"],
-.hwp-table-wrap[data-content-kind="hwpx-transfer-restriction-section"],
-.hwp-table-wrap[data-content-kind="hwpx-lottery-contract-section"] {
-  margin: 0;
-  overflow: visible;
-}
-
-.hwp-table-wrap[data-content-kind="hwpx-body-container"] .hwp-table-wrap-nested,
-.hwp-table-wrap[data-content-kind="hwpx-eligibility-section"] .hwp-table-wrap-nested,
-.hwp-table-wrap[data-content-kind="hwpx-general-notice-section"] .hwp-table-wrap-nested,
-.hwp-table-wrap[data-content-kind="hwpx-transfer-restriction-section"] .hwp-table-wrap-nested,
-.hwp-table-wrap[data-content-kind="hwpx-lottery-contract-section"] .hwp-table-wrap-nested {
-  margin-top: 0;
-}
-
-.hwp-table-wrap[data-content-kind="hwpx-general-notice-section"] {
-  opacity: 0.2;
-}
-
-.hwp-table-wrap[data-content-kind="hwpx-transfer-restriction-section"],
-.hwp-table-wrap[data-content-kind="hwpx-lottery-contract-section"] {
-  opacity: 0.2;
-}
-
 .hwp-table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -664,13 +621,13 @@ dd {
   line-height: 1.32;
   width: 100%;
   background: #ffffff;
-  border: 1px solid #111111;
+  border: 1px solid transparent;
 }
 
 .hwp-table-cell,
 .hwp-table td {
   box-sizing: border-box;
-  border: 1px solid #111111;
+  border: 1px solid transparent;
   padding: 2px 4px;
   min-width: 18px;
   min-height: 18px;
@@ -679,63 +636,6 @@ dd {
   word-break: keep-all;
   vertical-align: top;
   background-clip: padding-box;
-}
-
-.hwp-page[data-source-format="hwp"][style*="width: 794px"] .hwp-table,
-.hwp-page[data-source-format="hwp"][style*="width: 794px"] .hwp-table-cell,
-.hwp-page[data-source-format="hwp"][style*="width: 794px"] .hwp-table td {
-  border-color: rgba(17, 17, 17, 0.30) !important;
-}
-
-.hwp-table[data-content-kind="hwpx-performance-grade"],
-.hwp-table[data-content-kind="hwpx-performance-grade"] .hwp-table-cell,
-.hwp-table[data-content-kind="hwpx-performance-grade"] td {
-  border-color: rgba(0, 0, 0, 0.05) !important;
-}
-
-.hwp-table[data-content-kind="hwpx-performance-grade"] .hwp-run {
-  opacity: 0.22;
-}
-
-.hwp-table[data-content-kind="hwpx-tail-disclosure"],
-.hwp-table[data-content-kind="hwpx-tail-disclosure"] .hwp-table-cell,
-.hwp-table[data-content-kind="hwpx-tail-disclosure"] td {
-  border-color: transparent !important;
-}
-
-.hwp-table[data-content-kind="hwpx-body-container"],
-.hwp-table[data-content-kind="hwpx-body-container"] > tbody > tr > .hwp-table-cell,
-.hwp-table[data-content-kind="hwpx-transfer-restriction-section"],
-.hwp-table[data-content-kind="hwpx-transfer-restriction-section"] > tbody > tr > .hwp-table-cell,
-.hwp-table[data-content-kind="hwpx-lottery-contract-section"],
-.hwp-table[data-content-kind="hwpx-lottery-contract-section"] > tbody > tr > .hwp-table-cell {
-  border-color: transparent !important;
-}
-
-.hwp-table[data-content-kind="hwpx-body-container"] > tbody > tr > .hwp-table-cell,
-.hwp-table[data-content-kind="hwpx-eligibility-section"] > tbody > tr > .hwp-table-cell,
-.hwp-table[data-content-kind="hwpx-general-notice-section"] > tbody > tr > .hwp-table-cell,
-.hwp-table[data-content-kind="hwpx-transfer-restriction-section"] > tbody > tr > .hwp-table-cell,
-.hwp-table[data-content-kind="hwpx-lottery-contract-section"] > tbody > tr > .hwp-table-cell {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.hwp-table-wrap[data-content-kind="hwpx-transfer-restriction-section"] .hwp-table-wrap-nested .hwp-table,
-.hwp-table-wrap[data-content-kind="hwpx-transfer-restriction-section"] .hwp-table-wrap-nested .hwp-table-cell,
-.hwp-table-wrap[data-content-kind="hwpx-transfer-restriction-section"] .hwp-table-wrap-nested td,
-.hwp-table-wrap[data-content-kind="hwpx-lottery-contract-section"] .hwp-table-wrap-nested .hwp-table,
-.hwp-table-wrap[data-content-kind="hwpx-lottery-contract-section"] .hwp-table-wrap-nested .hwp-table-cell,
-.hwp-table-wrap[data-content-kind="hwpx-lottery-contract-section"] .hwp-table-wrap-nested td {
-  border-color: transparent !important;
-}
-
-.hwp-table[data-content-kind="hwpx-eligibility-section"],
-.hwp-table[data-content-kind="hwpx-eligibility-section"] > tbody > tr > .hwp-table-cell,
-.hwp-table[data-content-kind="hwpx-eligibility-heading"],
-.hwp-table[data-content-kind="hwpx-eligibility-heading"] .hwp-table-cell,
-.hwp-table[data-content-kind="hwpx-eligibility-heading"] td {
-  border-color: transparent !important;
 }
 
 .hwp-table-cell:focus-within {
@@ -758,15 +658,6 @@ dd {
 .hwp-table[data-source-format="hwp"] .hwp-paragraph,
 .hwp-table[data-source-format="hwp"] .hwp-table-cell > .hwp-paragraph {
   min-height: 0;
-}
-
-.hwp-table[data-content-kind="hwpx-body-container"] > tbody > tr > .hwp-table-cell > .hwp-table-cell-content > .hwp-paragraph,
-.hwp-table[data-content-kind="hwpx-eligibility-section"] > tbody > tr > .hwp-table-cell > .hwp-table-cell-content > .hwp-paragraph,
-.hwp-table[data-content-kind="hwpx-general-notice-section"] > tbody > tr > .hwp-table-cell > .hwp-table-cell-content > .hwp-paragraph,
-.hwp-table[data-content-kind="hwpx-transfer-restriction-section"] > tbody > tr > .hwp-table-cell > .hwp-table-cell-content > .hwp-paragraph,
-.hwp-table[data-content-kind="hwpx-lottery-contract-section"] > tbody > tr > .hwp-table-cell > .hwp-table-cell-content > .hwp-paragraph {
-  line-height: 1.48;
-  min-height: 1.2em;
 }
 
 .hwp-table-cell[data-empty="true"] {

@@ -175,7 +175,6 @@ interface ParsedSection {
 const HWPUNIT_PER_PX = 75;
 const HWPX_TABLE_PAGINATION_SCALE = 1.00;
 const HWPX_LONG_ROW_PAGINATION_SCALE = 0.60;
-const HWPX_CONTINUATION_HEADER_RESERVE_PX = 72;
 const HWPX_POSITIONED_TABLE_FLOW_CLEARANCE_PX = 72;
 const DEFAULT_PAGE_LAYOUT: PageLayout = {
   width: 794,
@@ -1379,19 +1378,21 @@ function addLongRowContinuationHeaderReserve(
   blocks: readonly HwpxDocumentBlock[],
   fragmentIndex: number
 ): HwpxDocumentBlock[] {
-  if (fragmentIndex <= 0 || !needsLongRowContinuationHeaderReserve(blocks)) return [...blocks];
-  return [createHwpxFlowSpacer(HWPX_CONTINUATION_HEADER_RESERVE_PX, 'long-row-continuation-header'), ...blocks];
+  if (fragmentIndex <= 0) return [...blocks];
+  const reserveHeight = longRowContinuationReserveHeight(blocks);
+  return reserveHeight > 0
+    ? [createHwpxFlowSpacer(reserveHeight, 'long-row-continuation-header'), ...blocks]
+    : [...blocks];
 }
 
-function needsLongRowContinuationHeaderReserve(blocks: readonly HwpxDocumentBlock[]): boolean {
-  const text = blocks
-    .slice(0, 3)
-    .map(visibleBlockText)
-    .join(' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-
-  return text.includes('분양가상한제 적용주택의 분양가 공개');
+function longRowContinuationReserveHeight(blocks: readonly HwpxDocumentBlock[]): number {
+  const firstTable = blocks.find((block): block is HwpxTableBlock => block.type === 'table');
+  if (!firstTable?._hwpxLayout?.repeatHeaderRows) return 0;
+  const repeatHeaderRows = Math.max(0, firstTable._hwpxLayout.repeatHeaderRows);
+  const headerHeight = firstTable._hwpxLayout.rowHeightsPx
+    .slice(0, repeatHeaderRows)
+    .reduce((sum, height) => sum + tableHeightForPagination(height), 0);
+  return Math.round(Math.min(160, Math.max(0, headerHeight)));
 }
 
 function createHwpxFlowSpacer(heightPx: number, source: string): HwpxParagraphBlock {

@@ -1221,15 +1221,6 @@ body {
   overflow-x: auto;
 }
 
-.hwp-table-wrap[data-content-kind="hwpx-body-container"] {
-  margin: 0;
-  overflow: visible;
-}
-
-.hwp-table-wrap[data-content-kind="hwpx-body-container"] .hwp-table-wrap-nested {
-  margin-top: 0;
-}
-
 .hwp-page[data-source-format="hwp"] .hwp-table-wrap {
   margin: 0;
   overflow: visible;
