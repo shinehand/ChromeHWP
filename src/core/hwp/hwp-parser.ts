@@ -3155,7 +3155,7 @@ function hwpBorderWidthMm(widthId: number): number {
 }
 
 function hwpBorderWidthToPx(widthMm: number): number {
-  return Math.max(0.5, Math.min(8, Math.round(widthMm * 3.78 * 10) / 10));
+  return Math.max(0.5, Math.min(8, Math.round(widthMm * 2.5 * 10) / 10));
 }
 
 function hwpBorderColorForCssWidth(color: string, widthPx: number): string {
