@@ -472,6 +472,7 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   const wrapper = documentElement('div', 'hwp-table-wrap');
   const table = documentElement('table', 'hwp-table');
   const layout = block._hwpxLayout;
+  const contentKind = tableContentKind(block, context);
   const columnCount = tableColumnCount(block);
   const normalizedWidths = normalizeColumnWidths(block.columnWidths, columnCount);
   const position = tablePositionLayout(layout);
@@ -485,12 +486,18 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   if (context.locked) setReadOnlyDecorationHost(wrapper);
   if (context.nestingLevel > 0) wrapper.classList.add('hwp-table-wrap-nested');
   wrapper.dataset.nestingLevel = String(context.nestingLevel);
+  if (contentKind) wrapper.dataset.contentKind = contentKind;
   wrapper.style.width = `${tableWidth}px`;
   wrapper.style.maxWidth = '100%';
   applyPositionedTableLayout(wrapper, layout, context);
+  if (contentKind === 'hwpx-body-container') {
+    wrapper.style.margin = '0';
+    wrapper.style.overflow = 'visible';
+  }
 
   table.dataset.nestingLevel = String(context.nestingLevel);
   table.dataset.sourceFormat = context.sourceFormat;
+  if (contentKind) table.dataset.contentKind = contentKind;
   table.style.width = '100%';
   if (context.locked) {
     table.contentEditable = 'false';
@@ -850,6 +857,23 @@ function shouldApplyTableCellHeight(cell: TableCell, context: RenderContext, ren
   if (context.sourceFormat === 'hwp' && cell.rowSpan > 1) return false;
   if (context.sourceFormat === 'hwpx' && cell.rowSpan > 1) return false;
   return Boolean(cell.height);
+}
+
+function tableContentKind(block: TableBlock, context: RenderContext): string {
+  if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxStructuralBodyContainerTable(block)) {
+    return 'hwpx-body-container';
+  }
+  return '';
+}
+
+function isHwpxStructuralBodyContainerTable(block: TableBlock): boolean {
+  const cellCount = block.rows.reduce((sum, row) => sum + row.cells.length, 0);
+  if (cellCount < 1 || cellCount > 4) return false;
+  if (!block.rows.some((row) => row.cells.some((cell) => cell.blocks.some((child) => child.type === 'table')))) {
+    return false;
+  }
+  const columnCount = Math.max(tableColumnCount(block), block._hwpxLayout?.colCount ?? 0, 1);
+  return block.rows.every((row) => row.cells.every((cell) => Math.max(1, cell.colSpan) >= columnCount));
 }
 
 function applyBorderEdges(element: HTMLElement, edges: BorderEdges | undefined): void {
