@@ -504,6 +504,27 @@ function textRunsLength(runs: readonly TextRun[]): number {
   return runs.reduce((sum, run) => sum + run.text.length, 0);
 }
 
+function sourceRowGridHeightPx(block: TableBlock): number {
+  return block.rows.reduce((sum, row) => {
+    const rowLayoutHeight = normalizeCssLengthExact(
+      row._hwpxLayout?.renderHeightPx ?? row._hwpxLayout?.heightPx,
+      MAX_CELL_HEIGHT
+    );
+    if (rowLayoutHeight > 0) return sum + rowLayoutHeight;
+
+    let rowHeight = 0;
+    for (const cell of row.cells) {
+      const span = Math.max(1, cell.rowSpan || 1);
+      const cellHeight = normalizeCssLengthExact(
+        cell._hwpxLayout?.renderHeightPx ?? cell.height,
+        MAX_CELL_HEIGHT
+      );
+      if (cellHeight > 0) rowHeight = Math.max(rowHeight, cellHeight / span);
+    }
+    return sum + rowHeight;
+  }, 0);
+}
+
 function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement {
   const wrapper = documentElement('div', 'hwp-table-wrap');
   const table = documentElement('table', 'hwp-table');
@@ -541,10 +562,13 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
     table.dataset.readonlyDecoration = 'true';
   }
   const renderHeight = layout?.renderHeightPx ?? layout?.heightPx;
-  if (renderHeight && renderHeight > 0) {
-    wrapper.dataset.layoutHeight = formatDataNumber(renderHeight);
-    wrapper.style.minHeight = formatCssPx(renderHeight);
-    table.style.height = formatCssPx(renderHeight);
+  const tableHeight = contentKind === 'lh-sale-notice-price-detail'
+    ? Math.max(renderHeight ?? 0, sourceRowGridHeightPx(block))
+    : renderHeight;
+  if (tableHeight && tableHeight > 0) {
+    wrapper.dataset.layoutHeight = formatDataNumber(tableHeight);
+    wrapper.style.minHeight = formatCssPx(tableHeight);
+    table.style.height = formatCssPx(tableHeight);
   }
   if (layout?.repeatHeaderRows) table.dataset.repeatHeaderRows = String(layout.repeatHeaderRows);
   if (block.border) table.style.border = block.border;
