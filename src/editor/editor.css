@@ -624,6 +624,16 @@ dd {
   border: 1px solid transparent;
 }
 
+.hwp-table[data-content-kind="hwpx-body-container"],
+.hwp-table[data-content-kind="hwpx-body-container"] > tbody > tr > .hwp-table-cell {
+  border-color: transparent !important;
+}
+
+.hwp-table[data-content-kind="hwpx-body-container"] > tbody > tr > .hwp-table-cell {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .hwp-table-cell,
 .hwp-table td {
   box-sizing: border-box;
