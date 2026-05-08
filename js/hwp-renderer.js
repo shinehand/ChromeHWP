@@ -156,6 +156,8 @@ const COMPACT_TABLE_HEADER_MAX_CELLS = 6;
 const COMPACT_TABLE_HEADER_MAX_TEXT_LENGTH = 18;
 const TITLE_CELL_MIN_CONTENT_HEIGHT_PX = 48;
 const COMPACT_CELL_MIN_CONTENT_HEIGHT_PX = 24;
+// Composite header title cells in current document corpus remain short;
+// cap length to avoid misclassifying long body cells as header titles.
 const COMPOSITE_HEADER_MAX_TITLE_TEXT_LENGTH = 24;
 
 // rowspan 라벨은 compact header와 같은 길이 제한을 쓰되 줄 수만 더 엄격하게 본다.
@@ -1524,8 +1526,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       const isGroupedLabelCell = !resolvedCellRole
         && !isStackedLabelCell
         && isGroupedRowLabelCell(cell, text, rawText);
-      const isFieldLabelCell = resolvedCellRoleLower === 'field-label'
-        || /^[①-⑳⑴-⒇<]\s*/.test(text);
+      const isFieldLabelCell = resolvedCellRoleLower === 'field-label';
       const isFieldInlineNoteCell = resolvedCellRole === 'field-inline-note';
       const isTitleRowMainCell = rowLooksLikeTitle
         && (isTitleLabelCell || isOptionCell || (cell.colSpan || 1) >= Math.max(2, Math.floor((tableBlock.colCount || 2) / 2)));
