@@ -236,6 +236,34 @@ function runEditorProbe(url) {
 	          exportable: exportableImages.length,
 	          uniqueExportableSrc: new Set(exportableImages.map(sourceOf).filter(Boolean)).size
 	        };
+	        const parseSourceRef = (element) => {
+	          try {
+	            const raw = element.getAttribute("data-source-ref");
+	            if (!raw) return null;
+	            const parsed = JSON.parse(raw);
+	            return parsed && typeof parsed === "object" ? parsed : null;
+	          } catch {
+	            return null;
+	          }
+	        };
+	        const sourceRefElements = Array.from(document.querySelectorAll("[data-source-ref]"));
+	        const layoutBoxIdElements = Array.from(document.querySelectorAll("[data-layout-box-id]"));
+	        const parsedSourceRefs = sourceRefElements.map(parseSourceRef);
+	        const sourceMetadata = {
+	          sourceRefElements: sourceRefElements.length,
+	          layoutBoxIdElements: layoutBoxIdElements.length,
+	          pageSourceRefs: document.querySelectorAll(".hwp-page[data-source-ref]").length,
+	          bodySourceRefs: document.querySelectorAll(".hwp-page-body[data-source-ref]").length,
+	          paragraphSourceRefs: document.querySelectorAll(".hwp-paragraph[data-source-ref]").length,
+	          runSourceRefs: document.querySelectorAll(".hwp-run[data-source-ref]").length,
+	          tableSourceRefs: document.querySelectorAll(".hwp-table[data-source-ref]").length,
+	          rowSourceRefs: document.querySelectorAll("tr[data-source-ref]").length,
+	          cellSourceRefs: document.querySelectorAll(".hwp-table-cell[data-source-ref]").length,
+	          imageSourceRefs: document.querySelectorAll(".hwp-image[data-source-ref]").length,
+	          malformedSourceRefs: parsedSourceRefs.filter((value) => !value).length,
+	          sourceFormats: Array.from(new Set(parsedSourceRefs.map((value) => value?.format).filter(Boolean))).sort(),
+	          sourceRoles: Array.from(new Set(parsedSourceRefs.map((value) => value?.role).filter(Boolean))).sort()
+	        };
 	        return {
           renderedFilename: preview?.dataset?.filename || "",
           pages: pages.length,
@@ -257,6 +285,7 @@ function runEditorProbe(url) {
 	          bodyTextLength: (preview?.innerText || "").trim().length,
 	          firstText: (pages[0]?.innerText || "").replace(/\\s+/g, " ").trim().slice(0, 180),
 	          imageInventory,
+	          sourceMetadata,
 	          pageMetrics
 	        };
       });
@@ -443,6 +472,35 @@ function evaluateProbeResult(result, roundTrip) {
     }
     if (actual.topLevelOverlaps > 0) {
       issues.push(`상위 블록 겹침 ${actual.topLevelOverlaps}건`);
+    }
+    const sourceMetadata = actual.sourceMetadata || {};
+    const expectedSourceFormat = sample.expectedFormat.toLowerCase();
+    if (actual.pages > 0 && Number(sourceMetadata.sourceRefElements || 0) < actual.pages) {
+      issues.push(`원본 좌표 메타데이터 부족 ${sourceMetadata.sourceRefElements || 0} < 페이지 ${actual.pages}`);
+    }
+    if (actual.pages > 0 && Number(sourceMetadata.layoutBoxIdElements || 0) < actual.pages) {
+      issues.push(`레이아웃 박스 메타데이터 부족 ${sourceMetadata.layoutBoxIdElements || 0} < 페이지 ${actual.pages}`);
+    }
+    if (Number(sourceMetadata.malformedSourceRefs || 0) > 0) {
+      issues.push(`원본 좌표 JSON 파싱 실패 ${sourceMetadata.malformedSourceRefs}건`);
+    }
+    if (actual.pages > 0 && Number(sourceMetadata.pageSourceRefs || 0) < actual.pages) {
+      issues.push(`페이지 원본 좌표 누락 ${sourceMetadata.pageSourceRefs || 0} < ${actual.pages}`);
+    }
+    if (actual.paragraphs > 0 && Number(sourceMetadata.paragraphSourceRefs || 0) < 1) {
+      issues.push('문단 원본 좌표 메타데이터가 없습니다.');
+    }
+    if (actual.tables > 0 && Number(sourceMetadata.tableSourceRefs || 0) < 1) {
+      issues.push('표 원본 좌표 메타데이터가 없습니다.');
+    }
+    if (actual.tables > 0 && Number(sourceMetadata.cellSourceRefs || 0) < 1) {
+      issues.push('셀 원본 좌표 메타데이터가 없습니다.');
+    }
+    if (Number(actual.imageInventory?.exportable || 0) > 0 && Number(sourceMetadata.imageSourceRefs || 0) < 1) {
+      issues.push('이미지 원본 좌표 메타데이터가 없습니다.');
+    }
+    if (sourceMetadata.sourceFormats?.length && !sourceMetadata.sourceFormats.includes(expectedSourceFormat)) {
+      issues.push(`원본 좌표 형식 불일치: ${sourceMetadata.sourceFormats.join(', ')} / expected ${expectedSourceFormat}`);
     }
     if (actual.decorationTopLevelOverlaps > 0) {
       advisories.push(`장식/쪽번호 경계 겹침 ${actual.decorationTopLevelOverlaps}건`);
