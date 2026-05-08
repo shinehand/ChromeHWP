@@ -565,10 +565,6 @@ dd {
   white-space: pre-wrap;
 }
 
-.hwp-page[data-document-layout="lh-sale-notice"] .hwp-run {
-  opacity: 0.85;
-}
-
 .hwp-page[data-source-format="hwpx"] .hwp-run {
   opacity: 0.11;
 }
@@ -579,24 +575,6 @@ dd {
 
 .hwp-page[data-source-format="hwp"][style*="width: 794px"] .hwp-run {
   opacity: 0.21;
-}
-
-.hwp-page[data-visual-profile="hwp-veterans-hospital-medical-support"] .hwp-page-body {
-  filter: brightness(1.5);
-}
-
-.hwp-page[data-visual-profile="hwp-goyeopje-application-form"] {
-  filter: brightness(1.5);
-}
-
-.hwp-page[data-visual-profile="hwp-lh-sale-notice-payment-info"] {
-  filter: brightness(3);
-}
-
-.hwp-page[data-visual-profile="hwp-lh-sale-notice-cover"],
-.hwp-page[data-visual-profile="hwp-lh-sale-notice-price-list"],
-.hwp-page[data-visual-profile="hwp-lh-sale-notice-contract-info"] {
-  filter: brightness(3);
 }
 
 .hwp-paragraph[data-layout-mode="line-segments"] {
@@ -791,173 +769,6 @@ dd {
   min-height: 1.2em;
 }
 
-.hwp-table[data-content-kind="lh-sale-notice-supply-summary"] > tbody > tr > .hwp-table-cell:last-child {
-  border-left: 2px solid #e1261c !important;
-  border-right: 2px solid #e1261c !important;
-}
-
-.hwp-table[data-content-kind="lh-sale-notice-supply-summary"] > tbody > tr:first-child > .hwp-table-cell:last-child {
-  border-top: 2px solid #e1261c !important;
-}
-
-.hwp-table[data-content-kind="lh-sale-notice-supply-summary"] > tbody > tr:last-child > .hwp-table-cell:last-child {
-  border-bottom: 2px solid #e1261c !important;
-}
-
-.hwp-table-wrap[data-content-kind="lh-sale-notice-supply-amount-heading"] {
-  overflow: visible;
-}
-
-.hwp-table[data-content-kind="lh-sale-notice-supply-amount-heading"] {
-  background: transparent;
-  border: 0;
-  height: 31px !important;
-}
-
-.hwp-table[data-content-kind="lh-sale-notice-supply-amount-heading"] > tbody > tr > .hwp-table-cell {
-  background:
-    linear-gradient(90deg, rgba(176, 210, 248, 0.96), rgba(232, 243, 255, 0.92) 68%, rgba(255, 255, 255, 0));
-  border: 0 !important;
-  border-left: 10px solid #003f9d !important;
-  box-sizing: border-box;
-  height: 31px !important;
-  padding: 0 8px 0 10px !important;
-  vertical-align: middle;
-}
-
-.hwp-table[data-content-kind="lh-sale-notice-supply-amount-heading"] .hwp-table-cell-content {
-  align-items: center;
-  display: flex;
-  height: 31px;
-}
-
-.hwp-table[data-content-kind="lh-sale-notice-supply-amount-heading"] .hwp-paragraph {
-  color: #111111;
-  font-family: "HY헤드라인M", "NanumGothic", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-  font-size: 10pt;
-  font-weight: 700;
-  line-height: 31px !important;
-  margin: 0;
-  min-height: 31px;
-}
-
-.hwp-table[data-content-kind="lh-sale-notice-supply-amount-heading"] .hwp-line-segment {
-  line-height: 31px !important;
-  max-width: none !important;
-  min-height: 31px !important;
-  padding-left: 0 !important;
-}
-
-.hwp-table-wrap[data-content-kind="lh-sale-notice-price-detail"][data-layout-position="absolute"] {
-  overflow: visible;
-  transform: translateY(70px);
-}
-
-.hwp-table-wrap[data-content-kind="lh-sale-notice-price-detail"][data-layout-position="absolute"]::before {
-  background: linear-gradient(90deg, rgba(176, 210, 248, 0.96), rgba(232, 243, 255, 0.92) 68%, rgba(255, 255, 255, 0));
-  border-left: 10px solid #003f9d;
-  box-sizing: border-box;
-  color: #111111;
-  content: "공급대상세대 및 공급금액";
-  display: block;
-  font-family: "HY헤드라인M", "NanumGothic", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-  font-size: 10pt;
-  font-weight: 700;
-  height: 31px;
-  left: 0;
-  line-height: 31px;
-  padding: 0 8px 0 10px;
-  position: absolute;
-  top: -40px;
-  width: 100%;
-}
-
-.hwp-table[data-content-kind="lh-sale-notice-price-detail"] {
-  filter: brightness(1.12);
-}
-
-.hwp-table[data-layout="lh-sale-notice-primary"] {
-  border-color: #1f1f1f;
-}
-
-.hwp-page[data-document-layout="lh-sale-notice"] .hwp-page-body > .hwp-table-wrap[data-layout-position="absolute"] {
-  left: 30px !important;
-  max-width: none !important;
-  width: calc(var(--hwp-page-width, 1123px) - 58px) !important;
-}
-
-.hwp-page[data-document-layout="lh-sale-notice"] .hwp-page-body > .hwp-table-wrap[data-content-kind="lh-sale-notice-supply-summary"][data-layout-position="absolute"] {
-  transform: translateY(-24px);
-}
-
-.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child {
-  background:
-    linear-gradient(90deg, rgba(241, 252, 255, 0.96), rgba(222, 246, 255, 0.92) 45%, rgba(255, 255, 255, 0.96)),
-    #eaf8ff;
-  border-top: 7px solid #1496e8;
-  border-bottom: 7px solid #1496e8;
-  overflow: visible;
-  padding: 0 18px;
-  position: relative;
-}
-
-.hwp-table[data-layout="lh-sale-notice-primary"] .hwp-table-cell[data-empty="true"] {
-  min-height: 0;
-}
-
-.hwp-table[data-layout="lh-sale-notice-primary"] .hwp-table-cell[data-empty="true"] .hwp-paragraph-empty {
-  line-height: 0;
-  min-height: 0;
-}
-
-.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child::before {
-  content: "살고 싶은 집과 도시로 국민의 희망을 가꾸는 기업";
-  color: #67a80f;
-  font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-  font-size: 10pt;
-  font-weight: 700;
-  position: absolute;
-  right: 18px;
-  top: -24px;
-  white-space: nowrap;
-}
-
-.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child .hwp-table-cell-content {
-  height: 100%;
-  position: relative;
-}
-
-.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child .hwp-paragraph {
-  color: #111111;
-  font-family: "HCR Batang", "함초롬바탕", "한컴바탕", "Noto Serif KR", serif;
-  font-weight: 700;
-  line-height: 1.18;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
-.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child .hwp-paragraph:first-child {
-  font-size: 19pt;
-  left: 0;
-  top: 34px;
-}
-
-.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child .hwp-paragraph:last-child {
-  color: #0c55b8;
-  font-size: 12pt;
-  left: 0;
-  top: 72px;
-}
-
-.hwp-table[data-layout="lh-sale-notice-primary"] > tbody > tr:first-child > .hwp-table-cell:first-child .hwp-image-inline {
-  left: 16px;
-  margin: 0;
-  position: absolute;
-  top: 39px;
-  z-index: 1;
-}
-
 .hwp-table-cell[data-empty="true"] {
   min-height: 22px;
 }
@@ -1006,22 +817,6 @@ dd {
 .hwp-image[data-inline="true"] img {
   display: inline-block;
   vertical-align: middle;
-}
-
-.hwp-page[data-document-layout="lh-sale-notice"] > .hwp-page-body > .hwp-image[data-suppressed-anchor-image="true"] {
-  display: none;
-}
-
-.hwp-page[data-document-layout="lh-sale-notice"] .hwp-table-wrap[data-readonly-decoration="true"][data-layout-source="hwpx-header-hwp-control"],
-.hwp-page[data-document-layout="lh-sale-notice"] .hwp-table-wrap[data-readonly-decoration="true"][data-layout-source="hwpx-header-hwp-control"] .hwp-table,
-.hwp-page[data-document-layout="lh-sale-notice"] .hwp-table-wrap[data-readonly-decoration="true"][data-layout-source="hwpx-header-hwp-control"] .hwp-table-cell,
-.hwp-page[data-document-layout="lh-sale-notice"] .hwp-table-wrap[data-readonly-decoration="true"][data-layout-source="hwpx-header-hwp-control"] td {
-  background: transparent !important;
-  border-color: transparent !important;
-}
-
-.hwp-page[data-document-layout="lh-sale-notice"] .hwp-table-wrap[data-readonly-decoration="true"][data-layout-source="hwpx-header-hwp-control"] .hwp-paragraph-empty {
-  display: none;
 }
 
 @media (max-width: 840px) {

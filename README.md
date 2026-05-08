@@ -27,6 +27,8 @@
 - 특정 문서명/문구 매칭에 의존하던 표 렌더링 분기를 축소하고, role/구조 기반 판단을 우선 적용했사옵니다.
 - 복합 헤더 판정은 텍스트 키워드보다 표 구조 제약(행/열 범위, 중첩 표 구조)을 우선하도록 정리했사옵니다.
 - README/상태 문서에서도 동일하게 “하드코딩 금지, 형식 데이터 기반 일반 규칙” 원칙을 유지하옵니다.
+- `src/` 에디터 렌더러와 구형 `js/` 렌더러에서 특정 문서 문구, `lh-sale-notice`, `goyeopje` 같은 샘플 전용 visual profile, brightness/translate 보정을 제거했사옵니다.
+- 앞으로 샘플 문서는 회귀검증 입력으로만 쓰고, production 렌더링은 표/문단/셀/개체 anchor 등 형식 데이터에서 파생되는 구조 규칙으로만 보정하옵니다.
 
 아직 남은 핵심 과제는 `페이지 내부 레이아웃 충실도`(표 높이, 개체 위치, 글자 조판 정밀화)이옵니다.
 
@@ -160,6 +162,30 @@ cd /path/to/TotalDocs
 npm install
 npm run check
 node scripts/verify_samples.mjs
+```
+
+### 크롬 확장 에디터 실행
+
+개발 중 실제 확장 에디터를 확인하려면 아래 순서로 실행하옵니다.
+
+```bash
+cd /path/to/TotalDocs
+npm install
+npm run build
+```
+
+그 뒤 Chrome에서 `chrome://extensions` 를 열고, `개발자 모드`를 켠 다음 `압축해제된 확장 프로그램을 로드`로 저장소의 `dist/` 폴더를 선택하옵니다. 확장 팝업 또는 에디터 페이지에서 `.hwp` / `.hwpx` 문서를 열어 렌더링, 편집, 내보내기 동작을 확인하옵니다.
+
+개발 중 빠른 빌드 확인은 `npm run build`를 기준으로 하고, 구조 회귀검증은 아래 명령을 사용하옵니다.
+
+```bash
+STRICT_PAGE_EXPECTATIONS=1 npm run verify:extension
+```
+
+한컴 Viewer 기준 시각 충실도까지 확인할 때는 아래 명령을 사용하옵니다.
+
+```bash
+STRICT_VISUAL_FIDELITY=1 npm run verify:visual
 ```
 
 ### 한컴 기준선 캡처

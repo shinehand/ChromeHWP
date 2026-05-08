@@ -255,12 +255,6 @@ function appendParagraphBlock(parent, para, className = '', options = {}) {
     p.style.minHeight = `${para.layoutHeightPx}px`;
   }
 
-  if (/^\s*※\s*본적\s*:/.test(textContent)) {
-    p.classList.add('hwp-origin-label');
-    p.style.fontWeight = '600';
-    p.style.marginBottom = '16px';
-  }
-
   if (effectiveRole === 'title-label') {
     p.style.textAlign = 'center';
     p.style.fontWeight = '500';
@@ -598,8 +592,7 @@ function isGroupedRowLabelCell(cell, text, rawText) {
   if ((cell?.colSpan || 1) !== 1) return false;
   if ((cell?.col || 0) > 1) return false;
   if (!normalized || normalized.length > GROUPED_ROW_LABEL_MAX_TEXT_LENGTH) return false;
-  // 현재 실샘플의 그룹 라벨은 숫자가 없는 범주명(예: 출석인정결석, 질병으로 인한 결석)이라
-  // 숫자가 섞인 텍스트는 번호/세부 항목 본문일 가능성이 높다고 보고 후보에서 제외한다.
+  // Group labels are category names; numbered text is more likely to be itemized body content.
   if (/[0-9]/.test(normalized)) return false;
   if ((cell?.paragraphs || []).some(block => block?.type === 'table')) return false;
   const lineCount = String(rawText || text || '')
@@ -1513,7 +1506,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       const isPeriodCell = resolvedCellRoleLower === 'process-period';
       const isMetaCell = resolvedCellRoleLower === 'meta';
       const stackedLabelLines = getStackedHangulLabelLines(rawText);
-      // "결 석 종 류" 같은 세로 라벨은 원문 공백 패턴을 살려 2글자씩 줄바꿈해 준다.
+      // Preserve source spacing for compact stacked labels by wrapping two glyphs per line.
       const isStackedLabelCell = !resolvedCellRole
         && !isTitleLabelCell
         && !isOptionCell

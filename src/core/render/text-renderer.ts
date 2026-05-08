@@ -23,8 +23,6 @@ interface RenderContext {
   readonly pageWidth: number;
   readonly nestingLevel: number;
   readonly sourceFormat: ParsedDocument['format'];
-  readonly documentLayout?: string;
-  readonly tableLayout?: string;
   readonly locked?: boolean;
 }
 
@@ -96,23 +94,10 @@ export function renderDocumentToDom(document: ParsedDocument, target: HTMLElemen
       nestingLevel: 0,
       sourceFormat: document.format
     };
-    const documentLayout = page.blocks.some((block) => {
-      return block.type === 'table' && isLhSaleNoticePrimaryTable(block, baseContext);
-    }) ? 'lh-sale-notice' : '';
-    const context: RenderContext = {
-      ...baseContext,
-      ...(documentLayout ? { documentLayout } : {})
-    };
+    const context: RenderContext = baseContext;
 
     pageElement.dataset.pageIndex = String(page.index);
     pageElement.dataset.sourceFormat = document.format;
-    if (documentLayout) {
-      pageElement.dataset.documentLayout = 'lh-sale-notice';
-    }
-    const visualProfile = pageVisualProfile(page.blocks, document.format);
-    if (visualProfile) {
-      pageElement.dataset.visualProfile = visualProfile;
-    }
     pageElement.setAttribute('aria-label', `${page.index + 1}쪽`);
     applyPageLayout(pageElement, bodyElement, layout, bodyWidth);
 
@@ -158,52 +143,6 @@ function renderTableText(block: TableBlock): string {
   return block.rows
     .map((row) => row.cells.map((cell) => cell.blocks.map(renderBlockText).join(' ')).join('\t'))
     .join('\n');
-}
-
-function pageVisualProfile(blocks: readonly DocumentBlock[], sourceFormat: ParsedDocument['format']): string {
-  if (sourceFormat !== 'hwp') return '';
-  const pageText = blocks.map(renderBlockText).join(' ').replace(/\s+/g, ' ').trim();
-  const compactPageText = pageText.replace(/\s+/g, '');
-  if (
-    compactPageText.includes('고엽제후유(의)증환자등록신청서')
-    && compactPageText.includes('고엽제후유의증환자지원등에관한법률시행령제2조')
-    && compactPageText.includes('처리기간90일')
-  ) {
-    return 'hwp-goyeopje-application-form';
-  }
-  if (
-    pageText.includes('국가유공자 등 등록신청자 의료지원 안내')
-    && pageText.includes('보훈병원 이용자용')
-  ) {
-    return 'hwp-veterans-hospital-medical-support';
-  }
-  if (
-    pageText.includes('대구·경북 다세대주택')
-    && pageText.includes('잔여세대 선착순 일반매각 공고')
-  ) {
-    return 'hwp-lh-sale-notice-cover';
-  }
-  if (
-    pageText.includes('공급대상세대 및 공급금액')
-    && pageText.includes('공급가격(원)')
-    && pageText.includes('대구 남구 대명동')
-  ) {
-    return 'hwp-lh-sale-notice-price-list';
-  }
-  if (
-    pageText.includes('Ⅱ 대금납부')
-    && pageText.includes('입주·관리비')
-  ) {
-    return 'hwp-lh-sale-notice-payment-info';
-  }
-  if (
-    pageText.includes('매주 목요일 13:30')
-    && pageText.includes('마이홈센터')
-    && pageText.includes('동·호지정 및 계약체결')
-  ) {
-    return 'hwp-lh-sale-notice-contract-info';
-  }
-  return '';
 }
 
 function renderBlockDom(block: DocumentBlock, context: RenderContext): HTMLElement {
@@ -524,32 +463,10 @@ function textRunsLength(runs: readonly TextRun[]): number {
   return runs.reduce((sum, run) => sum + run.text.length, 0);
 }
 
-function sourceRowGridHeightPx(block: TableBlock): number {
-  return block.rows.reduce((sum, row) => {
-    const rowLayoutHeight = normalizeCssLengthExact(
-      row._hwpxLayout?.renderHeightPx ?? row._hwpxLayout?.heightPx,
-      MAX_CELL_HEIGHT
-    );
-    if (rowLayoutHeight > 0) return sum + rowLayoutHeight;
-
-    let rowHeight = 0;
-    for (const cell of row.cells) {
-      const span = Math.max(1, cell.rowSpan || 1);
-      const cellHeight = normalizeCssLengthExact(
-        cell._hwpxLayout?.renderHeightPx ?? cell.height,
-        MAX_CELL_HEIGHT
-      );
-      if (cellHeight > 0) rowHeight = Math.max(rowHeight, cellHeight / span);
-    }
-    return sum + rowHeight;
-  }, 0);
-}
-
 function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement {
   const wrapper = documentElement('div', 'hwp-table-wrap');
   const table = documentElement('table', 'hwp-table');
   const layout = block._hwpxLayout;
-  const tableLayout = isLhSaleNoticePrimaryTable(block, context) ? 'lh-sale-notice-primary' : '';
   const contentKind = tableContentKind(block, context);
   const columnCount = tableColumnCount(block);
   const normalizedWidths = normalizeColumnWidths(block.columnWidths, columnCount);
@@ -562,7 +479,6 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   if (context.locked) setReadOnlyDecorationHost(wrapper);
   if (context.nestingLevel > 0) wrapper.classList.add('hwp-table-wrap-nested');
   wrapper.dataset.nestingLevel = String(context.nestingLevel);
-  if (tableLayout) wrapper.dataset.layout = tableLayout;
   if (contentKind) wrapper.dataset.contentKind = contentKind;
   wrapper.style.width = `${tableWidth}px`;
   wrapper.style.maxWidth = '100%';
@@ -574,7 +490,6 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
 
   table.dataset.nestingLevel = String(context.nestingLevel);
   table.dataset.sourceFormat = context.sourceFormat;
-  if (tableLayout) table.dataset.layout = tableLayout;
   if (contentKind) table.dataset.contentKind = contentKind;
   table.style.width = '100%';
   if (context.locked) {
@@ -582,9 +497,7 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
     table.dataset.readonlyDecoration = 'true';
   }
   const renderHeight = layout?.renderHeightPx ?? layout?.heightPx;
-  const tableHeight = contentKind === 'lh-sale-notice-price-detail'
-    ? Math.max(renderHeight ?? 0, sourceRowGridHeightPx(block))
-    : renderHeight;
+  const tableHeight = renderHeight;
   if (tableHeight && tableHeight > 0) {
     wrapper.dataset.layoutHeight = formatDataNumber(tableHeight);
     wrapper.style.minHeight = formatCssPx(tableHeight);
@@ -612,8 +525,7 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   const childContext: RenderContext = {
     ...context,
     availableWidth: tableWidth,
-    nestingLevel: context.nestingLevel + 1,
-    ...(tableLayout ? { tableLayout } : {})
+    nestingLevel: context.nestingLevel + 1
   };
 
   for (const [rowIndex, row] of rows.entries()) {
@@ -677,18 +589,6 @@ function applyPositionedTableLayout(
 function topLevelPositionTopMarginVariable(position: TablePositionLayout | ImageLayout['position'], context: RenderContext): string {
   if (!position) return '--hwp-margin-top';
   const source = position?.source;
-  if (
-    context.sourceFormat === 'hwp'
-    && context.documentLayout === 'lh-sale-notice'
-    && (
-      source === 'hwp-table-line-seg-inferred'
-      || source === 'hwp-flow-after-positioned'
-      || source === 'hwp-object-common'
-      || source === 'hwp-picture-object-common'
-    )
-  ) {
-    return '--hwp-content-top';
-  }
   if (
     context.sourceFormat === 'hwp'
     && context.pageWidth <= 900
@@ -776,14 +676,6 @@ function resolvePositionedTableHeight(
   }
 
   return frameHeight;
-}
-
-function isLhSaleNoticePrimaryTable(block: TableBlock, context: RenderContext): boolean {
-  if (context.sourceFormat !== 'hwp' || context.nestingLevel !== 0) return false;
-  const text = renderTableText(block).replace(/\s+/g, ' ');
-  return text.includes('잔여세대')
-    && text.includes('일반매각 공고')
-    && text.includes('LH에서는 콜센터');
 }
 
 function renderCellDom(cell: TableCell, context: RenderContext): HTMLElement {
@@ -875,7 +767,6 @@ function hwpCellParagraphSourceLineBox(
     context.sourceFormat !== 'hwp'
     || context.pageWidth <= 900
     || context.nestingLevel <= 0
-    || context.tableLayout === 'lh-sale-notice-primary'
     || block.type !== 'paragraph'
   ) {
     return undefined;
@@ -960,137 +851,10 @@ function shouldApplyTableCellHeight(cell: TableCell, context: RenderContext, ren
 }
 
 function tableContentKind(block: TableBlock, context: RenderContext): string {
-  if (context.sourceFormat === 'hwpx' && context.nestingLevel > 0 && isHwpxPerformanceGradeTable(block)) {
-    return 'hwpx-performance-grade';
-  }
-  if (context.sourceFormat === 'hwpx' && context.nestingLevel > 0 && isHwpxTailDisclosureTable(block)) {
-    return 'hwpx-tail-disclosure';
-  }
-  if (context.sourceFormat === 'hwpx' && context.nestingLevel > 0 && isHwpxEligibilityHeadingTable(block)) {
-    return 'hwpx-eligibility-heading';
-  }
-  if (context.sourceFormat === 'hwp'
-    && context.nestingLevel === 0
-    && isLhSaleNoticeSupplyAmountHeadingTable(block)) {
-    return 'lh-sale-notice-supply-amount-heading';
-  }
-  if (context.sourceFormat === 'hwp'
-    && context.nestingLevel === 0
-    && isLhSaleNoticePriceDetailTable(block)) {
-    return 'lh-sale-notice-price-detail';
-  }
-  if (context.sourceFormat === 'hwp'
-    && context.documentLayout === 'lh-sale-notice'
-    && context.nestingLevel === 0
-    && isLhSaleNoticeSupplySummaryTable(block)) {
-    return 'lh-sale-notice-supply-summary';
-  }
-  if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxGeneralNoticeSectionTable(block)) {
-    return 'hwpx-general-notice-section';
-  }
-  if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxTransferRestrictionSectionTable(block)) {
-    return 'hwpx-transfer-restriction-section';
-  }
-  if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxLotteryContractSectionTable(block)) {
-    return 'hwpx-lottery-contract-section';
-  }
-  if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxEligibilitySectionTable(block)) {
-    return 'hwpx-eligibility-section';
-  }
   if (context.sourceFormat === 'hwpx' && context.nestingLevel === 0 && isHwpxBodyContainerTable(block)) {
     return 'hwpx-body-container';
   }
   return '';
-}
-
-function isLhSaleNoticeSupplyAmountHeadingTable(block: TableBlock): boolean {
-  if (block.rows.length > 2) return false;
-  return compactTableText(block).includes('공급대상세대및공급금액');
-}
-
-function isLhSaleNoticePriceDetailTable(block: TableBlock): boolean {
-  if (block.rows.length < 20 || tableColumnCount(block) < 8) return false;
-  const text = compactTableText(block);
-  return text.includes('세대별계약면적')
-    && text.includes('공급가격')
-    && text.includes('계약금')
-    && text.includes('잔금');
-}
-
-function isLhSaleNoticeSupplySummaryTable(block: TableBlock): boolean {
-  if (block.rows.length < 4 || tableColumnCount(block) < 5) return false;
-  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
-  return text.includes('지역')
-    && text.includes('단지코드')
-    && text.includes('사용승인연도')
-    && text.includes('건설호수')
-    && text.includes('금회공급호수');
-}
-
-function compactTableText(block: TableBlock): string {
-  return renderTableText(block).replace(/\s+/g, '');
-}
-
-function isHwpxPerformanceGradeTable(block: TableBlock): boolean {
-  if (block.rows.length < 40 || tableColumnCount(block) !== 3) return false;
-  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
-  return text.includes('성능부문')
-    && text.includes('성능항목')
-    && text.includes('성능등급')
-    && text.includes('화재')
-    && text.includes('소방');
-}
-
-function isHwpxTailDisclosureTable(block: TableBlock): boolean {
-  if (block.rows.length > 8) return false;
-  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
-  if (!text) return false;
-
-  return text.includes('감정평가금액')
-    || text.includes('분양주택 택지비')
-    || (text.includes('항 목') && text.includes('택지비 가산비') && text.includes('건축비가산비'))
-    || text.includes('사업주체 및 시공업체')
-    || (text.includes('블록') && text.includes('사업주체') && text.includes('시공업체'))
-    || text.includes('현장접수처 안내')
-    || text.includes('서류접수시 방문처');
-}
-
-function isHwpxEligibilitySectionTable(block: TableBlock): boolean {
-  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
-  return text.includes('Ⅲ 신청자격 및 당첨자 선정방법')
-    && text.includes('신혼부부 신청자격')
-    && text.includes('입주자 선정방법');
-}
-
-function isHwpxGeneralNoticeSectionTable(block: TableBlock): boolean {
-  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
-  return (text.includes('Ⅷ 기타 유의사항 및 안내사항')
-    && text.includes('청약, 당첨, 입주, 관리')
-    && text.includes('지구 및 단지 여건'))
-    || (text.includes('부대복리시설')
-      && text.includes('에어컨 실외기')
-      && text.includes('주택성능등급'));
-}
-
-function isHwpxTransferRestrictionSectionTable(block: TableBlock): boolean {
-  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
-  return text.includes('전매제한 및 주택우선매입 안내')
-    && text.includes('중복청약 및 당첨 시 처리기준')
-    && text.includes('신청일정 및 장소');
-}
-
-function isHwpxLotteryContractSectionTable(block: TableBlock): boolean {
-  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
-  return text.includes('추첨(공공분양 동·호, 당첨자 선정)')
-    && text.includes('당첨자(예비입주자) 발표, 서류제출 및 계약체결 일정')
-    && text.includes('당첨자(예비입주자) 제출서류');
-}
-
-function isHwpxEligibilityHeadingTable(block: TableBlock): boolean {
-  if (block.rows.length !== 1) return false;
-  const text = renderTableText(block).replace(/\s+/g, ' ').trim();
-  return /^[1-3]\.\s*\S+신청자격$/.test(text)
-    || text === '4. 입주자 선정방법';
 }
 
 function isHwpxBodyContainerTable(block: TableBlock): boolean {
@@ -1134,7 +898,6 @@ function renderImageDom(block: ImageBlock, context: RenderContext): HTMLElement 
   figure.contentEditable = 'false';
   figure.dataset.inline = block.inline ? 'true' : 'false';
   if (block._hwpxLayout?.source) figure.dataset.layoutSource = block._hwpxLayout.source;
-  if (shouldSuppressLhSaleNoticeAnchorImage(block, context)) figure.dataset.suppressedAnchorImage = 'true';
   if (context.locked) figure.dataset.readonlyDecoration = 'true';
 
   if (renderedAsset) {
@@ -1155,14 +918,6 @@ function renderImageDom(block: ImageBlock, context: RenderContext): HTMLElement 
 
   applyPositionedImageLayout(figure, block, block._hwpxLayout, context, normalizedSize);
   return figure;
-}
-
-function shouldSuppressLhSaleNoticeAnchorImage(block: ImageBlock, context: RenderContext): boolean {
-  return context.sourceFormat === 'hwp'
-    && context.documentLayout === 'lh-sale-notice'
-    && context.nestingLevel === 0
-    && block._hwpxLayout?.source === 'hwp-floating-inline-anchor-image'
-    && block._hwpxLayout.allowOverlap === true;
 }
 
 function applyPositionedImageLayout(
