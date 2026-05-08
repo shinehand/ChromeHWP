@@ -2700,8 +2700,10 @@ function borderEdgeFromNode(node: unknown): string | undefined {
   const borderType = readAttributeObject(node, 'type');
   if (!borderType || borderType === 'NONE') return '0 none transparent';
   const width = readAttributeObject(node, 'width') || '0.12 mm';
-  const color = normalizeColor(readAttributeObject(node, 'color')) || '#000000';
-  return `${borderWidthToPx(width)}px ${hwpxBorderTypeToCss(borderType)} ${color}`;
+  const widthPx = borderWidthToPx(width);
+  const color = hwpxBorderColorForCssWidth(normalizeColor(readAttributeObject(node, 'color')) || '#000000', widthPx);
+  const cssWidth = widthPx < 1 ? 1 : widthPx;
+  return `${cssWidth}px ${hwpxBorderTypeToCss(borderType)} ${color}`;
 }
 
 function firstVisibleBorderEdge(edges: BorderEdges | undefined): string | undefined {
@@ -2719,6 +2721,18 @@ function borderWidthToPx(width: string): number {
   if (!Number.isFinite(numeric) || numeric <= 0) return 1;
   if (width.includes('mm')) return Math.max(0.5, Math.min(8, Math.round(numeric * 3.78 * 10) / 10));
   return Math.max(0.5, Math.min(8, Math.round(numeric * 10) / 10));
+}
+
+function hwpxBorderColorForCssWidth(color: string, widthPx: number): string {
+  if (widthPx >= 1) return color;
+  const match = /^#([0-9a-f]{6})$/i.exec(color);
+  if (!match) return color;
+  const hex = match[1];
+  const red = Number.parseInt(hex.slice(0, 2), 16);
+  const green = Number.parseInt(hex.slice(2, 4), 16);
+  const blue = Number.parseInt(hex.slice(4, 6), 16);
+  const alpha = Math.max(0.25, Math.min(0.95, Math.round(widthPx * 100) / 100));
+  return `rgba(${red}, ${green}, ${blue}, ${alpha})`;
 }
 
 function hwpxBorderTypeToCss(type: string): string {
