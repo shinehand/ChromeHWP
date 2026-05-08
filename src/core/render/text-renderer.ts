@@ -10,6 +10,7 @@ import type {
   SourceReference,
   TableBlock,
   TableCell,
+  TableRow,
   TextRun
 } from '../document-model';
 
@@ -469,6 +470,29 @@ function textRunsLength(runs: readonly TextRun[]): number {
   return runs.reduce((sum, run) => sum + run.text.length, 0);
 }
 
+function sourceRowGridHeightPx(block: TableBlock): number {
+  return block.rows.reduce((sum, row) => sum + sourceRowHeightPx(row), 0);
+}
+
+function sourceRowHeightPx(row: TableRow): number {
+  const rowLayoutHeight = normalizeCssLengthExact(
+    row._hwpxLayout?.renderHeightPx ?? row._hwpxLayout?.heightPx,
+    MAX_CELL_HEIGHT
+  );
+  if (rowLayoutHeight > 0) return rowLayoutHeight;
+
+  let rowHeight = 0;
+  for (const cell of row.cells) {
+    const span = Math.max(1, cell.rowSpan || 1);
+    const cellHeight = normalizeCssLengthExact(
+      cell._hwpxLayout?.renderHeightPx ?? cell.height,
+      MAX_CELL_HEIGHT
+    );
+    if (cellHeight > 0) rowHeight = Math.max(rowHeight, cellHeight / span);
+  }
+  return rowHeight;
+}
+
 function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement {
   const wrapper = documentElement('div', 'hwp-table-wrap');
   const table = documentElement('table', 'hwp-table');
@@ -505,7 +529,12 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
     table.dataset.readonlyDecoration = 'true';
   }
   const renderHeight = layout?.renderHeightPx ?? layout?.heightPx;
-  const tableHeight = renderHeight;
+  const sourceGridHeight = context.sourceFormat === 'hwp' && block.rows.length >= 40
+    ? sourceRowGridHeightPx(block)
+    : 0;
+  const tableHeight = sourceGridHeight > 0
+    ? Math.max(renderHeight ?? 0, sourceGridHeight)
+    : renderHeight;
   if (tableHeight && tableHeight > 0) {
     wrapper.dataset.layoutHeight = formatDataNumber(tableHeight);
     wrapper.style.minHeight = formatCssPx(tableHeight);
@@ -542,6 +571,7 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
     const rowHeight = row._hwpxLayout?.renderHeightPx
       ?? row._hwpxLayout?.heightPx
       ?? layout?.rowHeightsPx?.[rowIndex]
+      ?? (context.sourceFormat === 'hwp' && rows.length >= 40 ? sourceRowHeightPx(row) : 0)
       ?? 0;
     if (rowHeight > 0) {
       rowElement.dataset.layoutHeight = formatDataNumber(rowHeight);
