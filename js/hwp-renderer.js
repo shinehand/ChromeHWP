@@ -156,6 +156,7 @@ const COMPACT_TABLE_HEADER_MAX_CELLS = 6;
 const COMPACT_TABLE_HEADER_MAX_TEXT_LENGTH = 18;
 const TITLE_CELL_MIN_CONTENT_HEIGHT_PX = 48;
 const COMPACT_CELL_MIN_CONTENT_HEIGHT_PX = 24;
+const COMPOSITE_HEADER_MAX_TITLE_TEXT_LENGTH = 24;
 
 // rowspan 라벨은 compact header와 같은 길이 제한을 쓰되 줄 수만 더 엄격하게 본다.
 const GROUPED_ROW_LABEL_MAX_TEXT_LENGTH = COMPACT_TABLE_HEADER_MAX_TEXT_LENGTH;
@@ -1278,7 +1279,7 @@ function getCompositeHeaderCellModel(tableBlock, row, cell, rowVisualIndex) {
     .join(' ')
     .replace(/\s+/g, ' ')
     .trim();
-  if (!titleText || titleText.length > 24) return null;
+  if (!titleText || titleText.length > COMPOSITE_HEADER_MAX_TITLE_TEXT_LENGTH) return null;
   if (!(nestedTables[0]?.rows || []).length) return null;
 
   return {
@@ -1394,11 +1395,11 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
     const cells = [...(row.cells || [])].sort((a, b) => a.col - b.col);
     if (!cells.length) return;
 
-    const declaredRowRole = String(row.syntheticRowRole || row.rowRole || '').trim().toLowerCase();
-    const rowLooksLikeTitle = declaredRowRole === 'title';
-    const rowLooksLikeOptions = declaredRowRole === 'title-options';
-    const rowLooksLikeMeta = declaredRowRole === 'meta';
-    const rowLooksLikePersonForm = declaredRowRole === 'person-form';
+    const resolvedRowRole = String(row.syntheticRowRole || row.rowRole || '').trim().toLowerCase();
+    const rowLooksLikeTitle = resolvedRowRole === 'title';
+    const rowLooksLikeOptions = resolvedRowRole === 'title-options';
+    const rowLooksLikeMeta = resolvedRowRole === 'meta';
+    const rowLooksLikePersonForm = resolvedRowRole === 'person-form';
     const rowLooksLikeCompactHeader = isCompactTableHeaderRow(rowVisualIndex, cells);
 
     const tr = document.createElement('tr');
@@ -1491,16 +1492,16 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
 
       const text = getCellTextInline(cell);
       const rawText = HwpParser._cellText(cell);
-      const explicitCellRole = String(cell.syntheticRole || cell.role || '').trim();
-      const explicitCellRoleLower = explicitCellRole.toLowerCase();
-      const isTitleLabelCell = explicitCellRoleLower === 'title-label';
-      const isOptionCell = explicitCellRoleLower === 'title-options' || rowLooksLikeOptions;
-      const isCombinedTitleBlock = isTitleLabelCell && isOptionCell;
-      const isPeriodCell = explicitCellRoleLower === 'process-period';
-      const isMetaCell = explicitCellRoleLower === 'meta';
+      const resolvedCellRole = String(cell.syntheticRole || cell.role || '').trim();
+      const resolvedCellRoleLower = resolvedCellRole.toLowerCase();
+      const isTitleLabelCell = resolvedCellRoleLower === 'title-label';
+      const isTitleBlockCell = resolvedCellRoleLower === 'title-block';
+      const isOptionCell = resolvedCellRoleLower === 'title-options' || rowLooksLikeOptions;
+      const isPeriodCell = resolvedCellRoleLower === 'process-period';
+      const isMetaCell = resolvedCellRoleLower === 'meta';
       const stackedLabelLines = getStackedHangulLabelLines(rawText);
       // "결 석 종 류" 같은 세로 라벨은 원문 공백 패턴을 살려 2글자씩 줄바꿈해 준다.
-      const isStackedLabelCell = !explicitCellRole
+      const isStackedLabelCell = !resolvedCellRole
         && !isTitleLabelCell
         && !isOptionCell
         && !isPeriodCell
@@ -1509,20 +1510,19 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
         && (cell.rowSpan || 1) === 1
         && (cell.col || 0) === 0
         && Boolean(stackedLabelLines);
-      const isGroupedLabelCell = !explicitCellRole
+      const isGroupedLabelCell = !resolvedCellRole
         && !isStackedLabelCell
         && isGroupedRowLabelCell(cell, text, rawText);
-      const isFieldLabelCell = explicitCellRole === 'field-label'
+      const isFieldLabelCell = resolvedCellRole === 'field-label'
         || /^[①-⑳⑴-⒇<]\s*/.test(text);
-      const isFieldInlineNoteCell = explicitCellRole === 'field-inline-note';
+      const isFieldInlineNoteCell = resolvedCellRole === 'field-inline-note';
       const isTitleRowMainCell = rowLooksLikeTitle
         && (isTitleLabelCell || isOptionCell || (cell.colSpan || 1) >= Math.max(2, Math.floor((tableBlock.colCount || 2) / 2)));
-      const shouldCenterCell = isTitleLabelCell || isOptionCell || isCombinedTitleBlock || isTitleRowMainCell;
+      const shouldCenterCell = isTitleLabelCell || isTitleBlockCell || isOptionCell || isTitleRowMainCell;
       const shouldMiddleCell = rowLooksLikeTitle || rowLooksLikeMeta || shouldCenterCell || (cell.rowSpan || 1) > 1;
 
       if (shouldCenterCell) td.classList.add('hwp-table-cell-centered');
-      if (explicitCellRole) td.dataset.role = explicitCellRole;
-      else if (isCombinedTitleBlock) td.dataset.role = 'title-block';
+      if (resolvedCellRole) td.dataset.role = resolvedCellRole;
       else if (isTitleLabelCell) td.dataset.role = 'title-label';
       else if (isOptionCell) td.dataset.role = 'title-options';
       else if (isPeriodCell) td.dataset.role = 'process-period';
