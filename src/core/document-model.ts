@@ -23,6 +23,7 @@ export interface DocumentPage {
   readonly blocks: DocumentBlock[];
   readonly layout?: PageLayout;
   readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export type DocumentBlock = ParagraphBlock | TableBlock | ImageBlock;
@@ -36,6 +37,7 @@ export interface ParagraphBlock {
   readonly textIndent?: number;
   readonly lineHeight?: string;
   readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface TableBlock {
@@ -47,6 +49,7 @@ export interface TableBlock {
   readonly borderEdges?: BorderEdges;
   readonly background?: string;
   readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface ImageBlock {
@@ -57,6 +60,7 @@ export interface ImageBlock {
   readonly height?: number;
   readonly inline?: boolean;
   readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface TextRun {
@@ -73,11 +77,13 @@ export interface TextRun {
   readonly underline?: boolean;
   readonly strike?: boolean;
   readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface TableRow {
   readonly cells: TableCell[];
   readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface TableCell {
@@ -93,6 +99,7 @@ export interface TableCell {
   readonly borderEdges?: BorderEdges;
   readonly background?: string;
   readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface DocumentAsset {
@@ -101,6 +108,7 @@ export interface DocumentAsset {
   readonly bytes: Uint8Array;
   readonly path?: string;
   readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface PageLayout {

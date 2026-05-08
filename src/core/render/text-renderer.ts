@@ -7,6 +7,7 @@ import type {
   PageLayout,
   ParagraphBlock,
   ParsedDocument,
+  SourceReference,
   TableBlock,
   TableCell,
   TextRun
@@ -96,6 +97,8 @@ export function renderDocumentToDom(document: ParsedDocument, target: HTMLElemen
     };
     const context: RenderContext = baseContext;
 
+    applySourceMetadata(pageElement, page.sourceRef, page.layoutBoxId);
+    applySourceMetadata(bodyElement, page.sourceRef, page.layoutBoxId);
     pageElement.dataset.pageIndex = String(page.index);
     pageElement.dataset.sourceFormat = document.format;
     pageElement.setAttribute('aria-label', `${page.index + 1}쪽`);
@@ -160,6 +163,7 @@ function isReadOnlyDecorationBlock(block: DocumentBlock): boolean {
 function renderParagraphDom(block: ParagraphBlock, context: RenderContext): HTMLElement {
   const paragraph = documentElement('p', 'hwp-paragraph');
   const layout = block._hwpxLayout;
+  applySourceMetadata(paragraph, block.sourceRef, block.layoutBoxId);
   if (context.locked) setReadOnlyDecorationHost(paragraph);
   else setEditableTextHost(paragraph);
   paragraph.style.textAlign = block.align ?? 'left';
@@ -216,6 +220,7 @@ function renderDecorationRule(paragraph: HTMLElement, layout: ParagraphLayout | 
 function renderRunDom(run: TextRun): HTMLElement {
   const href = normalizeSafeHref(run.href);
   const span = href ? documentElement('a', 'hwp-run') : documentElement('span', 'hwp-run');
+  applySourceMetadata(span, run.sourceRef, run.layoutBoxId);
   span.textContent = run.text;
   if (href && span instanceof HTMLAnchorElement) {
     span.href = href;
@@ -476,6 +481,8 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
     ? clamp(positionedWidth, MIN_TABLE_WIDTH, MAX_PAGE_WIDTH)
     : resolveTableWidth(block, context.availableWidth);
 
+  applySourceMetadata(wrapper, block.sourceRef, block.layoutBoxId);
+  applySourceMetadata(table, block.sourceRef, block.layoutBoxId);
   if (context.locked) setReadOnlyDecorationHost(wrapper);
   if (context.nestingLevel > 0) wrapper.classList.add('hwp-table-wrap-nested');
   wrapper.dataset.nestingLevel = String(context.nestingLevel);
@@ -530,6 +537,7 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
 
   for (const [rowIndex, row] of rows.entries()) {
     const rowElement = document.createElement('tr');
+    applySourceMetadata(rowElement, row.sourceRef, row.layoutBoxId);
     const rowHeight = row._hwpxLayout?.renderHeightPx
       ?? row._hwpxLayout?.heightPx
       ?? layout?.rowHeightsPx?.[rowIndex]
@@ -681,6 +689,7 @@ function resolvePositionedTableHeight(
 function renderCellDom(cell: TableCell, context: RenderContext): HTMLElement {
   const cellElement = documentElement('td', 'hwp-table-cell');
   const emptyCell = isEmptyCell(cell);
+  applySourceMetadata(cellElement, cell.sourceRef, cell.layoutBoxId);
   cellElement.spellcheck = false;
   if (context.locked) {
     cellElement.contentEditable = 'false';
@@ -895,6 +904,7 @@ function renderImageDom(block: ImageBlock, context: RenderContext): HTMLElement 
   const figure = documentElement('figure', block.inline ? 'hwp-image hwp-image-inline' : 'hwp-image');
   const renderedAsset = context.assetUrls.get(block.assetId);
   const normalizedSize = normalizeImageSize(block, context.availableWidth);
+  applySourceMetadata(figure, block.sourceRef, block.layoutBoxId);
   figure.contentEditable = 'false';
   figure.dataset.inline = block.inline ? 'true' : 'false';
   if (block._hwpxLayout?.source) figure.dataset.layoutSource = block._hwpxLayout.source;
@@ -1252,6 +1262,11 @@ function setReadOnlyDecorationHost(element: HTMLElement): void {
   element.contentEditable = 'false';
   element.spellcheck = false;
   element.dataset.readonlyDecoration = 'true';
+}
+
+function applySourceMetadata(element: HTMLElement, sourceRef: SourceReference | undefined, layoutBoxId: string | undefined): void {
+  if (sourceRef) element.dataset.sourceRef = JSON.stringify(sourceRef);
+  if (layoutBoxId) element.dataset.layoutBoxId = layoutBoxId;
 }
 
 function markEmptyParagraph(paragraph: HTMLElement): void {

@@ -1,3 +1,5 @@
+import type { SourceReference } from '../document-model';
+
 export interface EditableExportDocument {
   readonly title: string;
   readonly pages: EditablePage[];
@@ -8,6 +10,8 @@ export interface EditablePage {
   readonly index: number;
   readonly blocks: EditableBlock[];
   readonly layout?: EditablePageLayout;
+  readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface EditablePageLayout {
@@ -24,6 +28,8 @@ export interface EditableParagraphBlock {
   readonly align?: EditableTextAlign;
   readonly textIndent?: number;
   readonly lineHeight?: string;
+  readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface EditableTextRun {
@@ -37,6 +43,8 @@ export interface EditableTextRun {
   readonly italic?: boolean;
   readonly underline?: boolean;
   readonly strike?: boolean;
+  readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface EditableTableBlock {
@@ -46,10 +54,14 @@ export interface EditableTableBlock {
   readonly columnWidths?: number[];
   readonly border?: string;
   readonly background?: string;
+  readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface EditableTableRow {
   readonly cells: EditableTableCell[];
+  readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface EditableTableCell {
@@ -63,6 +75,8 @@ export interface EditableTableCell {
   readonly verticalAlign?: EditableVerticalAlign;
   readonly border?: string;
   readonly background?: string;
+  readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export interface EditableImageBlock {
@@ -72,6 +86,8 @@ export interface EditableImageBlock {
   readonly width?: number;
   readonly height?: number;
   readonly inline?: boolean;
+  readonly sourceRef?: SourceReference;
+  readonly layoutBoxId?: string;
 }
 
 export type EditableTextAlign = 'left' | 'center' | 'right' | 'justify';
@@ -94,11 +110,15 @@ const READONLY_DECORATION_SELECTOR = '[data-readonly-decoration="true"]';
 export function extractEditableDocumentFromDom(root: HTMLElement, title: string): EditableExportDocument {
   const pageBodies = Array.from(root.querySelectorAll<HTMLElement>('.hwp-page-body'));
   const pageContainers = pageBodies.length ? pageBodies : [root];
-  const pages = pageContainers.map((container, index) => ({
-    index,
-    layout: extractPageLayout(container),
-    blocks: extractBlockChildren(container)
-  }));
+  const pages = pageContainers.map((container, index) => {
+    const pageElement = container.closest<HTMLElement>('.hwp-page') ?? container;
+    return {
+      index,
+      layout: extractPageLayout(container),
+      blocks: extractBlockChildren(container),
+      ...readEditableMetadata(pageElement)
+    };
+  });
   const headerDecorations = extractRepeatedReadonlyDecorationImages(pageContainers);
 
   return {
@@ -149,7 +169,7 @@ function extractBlockChildren(container: HTMLElement): EditableBlock[] {
 
   if (!blocks.length) {
     const text = normalizePlainText(container.textContent || '');
-    if (text) blocks.push({ type: 'paragraph', runs: [{ text }] });
+    if (text) blocks.push({ type: 'paragraph', runs: [{ text }], ...readEditableMetadata(container) });
   }
 
   return blocks;
@@ -252,7 +272,8 @@ function extractParagraphBlock(element: HTMLElement): EditableParagraphBlock {
     align: normalizeTextAlign(style.textAlign),
     textIndent: readTextIndent(element),
     lineHeight: style.lineHeight,
-    runs: runs.length ? runs : [{ text: '' }]
+    runs: runs.length ? runs : [{ text: '' }],
+    ...readEditableMetadata(element)
   };
 }
 
@@ -273,7 +294,8 @@ function extractTextRuns(node: Node, inheritedStyle: EditableInlineStyle): Edita
   const style = {
     ...inheritedStyle,
     ...readElementStyle(node).text,
-    ...(linkHref ? { href: linkHref } : {})
+    ...(linkHref ? { href: linkHref } : {}),
+    ...readEditableMetadata(node)
   };
   return Array.from(node.childNodes).flatMap((child) => extractTextRuns(child, style));
 }
@@ -284,7 +306,8 @@ function extractTableBlock(table: HTMLTableElement, wrapper?: HTMLElement): Edit
   const width = readPixelLength(widthSource, 'width') || readPixelLength(table, 'width');
   const columnWidths = readColumnWidths(table, width);
   const rows = Array.from(table.rows).map((row) => ({
-    cells: Array.from(row.cells).map(extractTableCell)
+    cells: Array.from(row.cells).map(extractTableCell),
+    ...readEditableMetadata(row)
   })).filter((row) => row.cells.length > 0);
 
   return {
@@ -293,7 +316,8 @@ function extractTableBlock(table: HTMLTableElement, wrapper?: HTMLElement): Edit
     columnWidths: columnWidths.length ? columnWidths : undefined,
     border: style.border,
     background: style.background,
-    rows
+    rows,
+    ...readEditableMetadata(wrapper ?? table)
   };
 }
 
@@ -310,7 +334,8 @@ function extractTableCell(cell: HTMLTableCellElement): EditableTableCell {
     align: normalizeTextAlign(style.textAlign),
     verticalAlign: normalizeVerticalAlign(style.verticalAlign),
     border: style.border,
-    background: style.background
+    background: style.background,
+    ...readEditableMetadata(cell)
   };
 }
 
@@ -319,7 +344,8 @@ function extractImageBlock(element: HTMLElement): EditableImageBlock {
   if (!image) {
     return {
       type: 'image',
-      altText: normalizePlainText(element.textContent || '이미지')
+      altText: normalizePlainText(element.textContent || '이미지'),
+      ...readEditableMetadata(element)
     };
   }
 
@@ -329,7 +355,8 @@ function extractImageBlock(element: HTMLElement): EditableImageBlock {
     src: image.currentSrc || image.src || image.getAttribute('src') || undefined,
     width: readPixelLength(image, 'width') || positiveNumber(image.width),
     height: readPixelLength(image, 'height') || positiveNumber(image.height),
-    inline: element.classList.contains('hwp-image-inline')
+    inline: element.classList.contains('hwp-image-inline'),
+    ...readEditableMetadata(element)
   };
 }
 
@@ -400,7 +427,45 @@ function sameRunStyle(left: EditableTextRun, right: EditableTextRun): boolean {
     && left.bold === right.bold
     && left.italic === right.italic
     && left.underline === right.underline
-    && left.strike === right.strike;
+    && left.strike === right.strike
+    && left.layoutBoxId === right.layoutBoxId
+    && sourceReferenceKey(left.sourceRef) === sourceReferenceKey(right.sourceRef);
+}
+
+function readEditableMetadata(element: HTMLElement): Pick<EditablePage, 'sourceRef' | 'layoutBoxId'> {
+  const sourceRef = parseSourceReference(element.dataset.sourceRef);
+  const layoutBoxId = normalizeLayoutBoxId(element.dataset.layoutBoxId);
+  return {
+    ...(sourceRef ? { sourceRef } : {}),
+    ...(layoutBoxId ? { layoutBoxId } : {})
+  };
+}
+
+function parseSourceReference(value: string | undefined): SourceReference | undefined {
+  if (!value) return undefined;
+  try {
+    const parsed: unknown = JSON.parse(value);
+    if (!isSourceReference(parsed)) return undefined;
+    return parsed;
+  } catch {
+    return undefined;
+  }
+}
+
+function isSourceReference(value: unknown): value is SourceReference {
+  return Boolean(value)
+    && typeof value === 'object'
+    && (value as SourceReference).format !== undefined
+    && ((value as SourceReference).format === 'hwp' || (value as SourceReference).format === 'hwpx');
+}
+
+function normalizeLayoutBoxId(value: string | undefined): string | undefined {
+  const normalized = value?.trim();
+  return normalized ? normalized : undefined;
+}
+
+function sourceReferenceKey(value: SourceReference | undefined): string {
+  return value ? JSON.stringify(value) : '';
 }
 
 function normalizePlainText(text: string): string {
