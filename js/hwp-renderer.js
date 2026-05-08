@@ -1280,11 +1280,21 @@ function getCompositeHeaderCellModel(tableBlock, row, cell, rowVisualIndex) {
     .replace(/\s+/g, ' ')
     .trim();
   if (!titleText || titleText.length > COMPOSITE_HEADER_MAX_TITLE_TEXT_LENGTH) return null;
-  if (!(nestedTables[0]?.rows || []).length) return null;
+  const approvalTable = nestedTables[0];
+  const approvalRows = approvalTable?.rows || [];
+  const approvalRowCount = Math.max(0, Number(approvalTable?.rowCount) || approvalRows.length || 0);
+  const approvalColCount = Math.max(
+    0,
+    Number(approvalTable?.colCount) || approvalRows.reduce((max, tableRow) => (
+      Math.max(max, (tableRow?.cells || []).reduce((sum, tableCell) => sum + (Number(tableCell?.colSpan) || 1), 0))
+    ), 0),
+  );
+  if (approvalRowCount < 1 || approvalRowCount > 3) return null;
+  if (approvalColCount < 2 || approvalColCount > 12) return null;
 
   return {
     titleParagraphs,
-    approvalTable: nestedTables[0],
+    approvalTable,
   };
 }
 
@@ -1514,7 +1524,8 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       const isGroupedLabelCell = !resolvedCellRole
         && !isStackedLabelCell
         && isGroupedRowLabelCell(cell, text, rawText);
-      const isFieldLabelCell = resolvedCellRoleLower === 'field-label';
+      const isFieldLabelCell = resolvedCellRoleLower === 'field-label'
+        || /^[①-⑳⑴-⒇<]\s*/.test(text);
       const isFieldInlineNoteCell = resolvedCellRole === 'field-inline-note';
       const isTitleRowMainCell = rowLooksLikeTitle
         && (isTitleLabelCell || isOptionCell || (cell.colSpan || 1) >= Math.max(2, Math.floor((tableBlock.colCount || 2) / 2)));
@@ -1562,6 +1573,20 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
         rightPx  = Math.max(0, Math.min(36, Math.round((Number(dR) || 0) * TABLE_UNIT_SCALE)));
         bottomPx = Math.max(0, Math.min(30, Math.round((Number(dB) || 0) * TABLE_UNIT_SCALE)));
         leftPx   = Math.max(0, Math.min(36, Math.round((Number(dL) || 0) * TABLE_UNIT_SCALE)));
+      } else if (rowLooksLikeTitle) {
+        if (isTitleLabelCell || isTitleBlockCell) {
+          topPx = 16; rightPx = 10; bottomPx = 16; leftPx = 10;
+        } else if (isOptionCell) {
+          topPx = 16; rightPx = 18; bottomPx = 16; leftPx = 18;
+        } else if (isPeriodCell) {
+          topPx = 12; rightPx = 10; bottomPx = 12; leftPx = 10;
+        } else {
+          topPx = 14; rightPx = 12; bottomPx = 14; leftPx = 12;
+        }
+      } else if (rowLooksLikeMeta) {
+        topPx = 8; rightPx = 10; bottomPx = 8; leftPx = 10;
+      } else if (rowLooksLikePersonForm) {
+        topPx = 7; rightPx = 8; bottomPx = 7; leftPx = 8;
       } else {
         topPx = 3; rightPx = 4; bottomPx = 3; leftPx = 4;
       }
