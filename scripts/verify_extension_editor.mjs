@@ -281,6 +281,8 @@ function runEditorProbe(url) {
           editableElements: document.querySelectorAll('.hwp-paragraph[contenteditable]:not([contenteditable="false"])').length,
           activeEditableElements: Array.from(document.querySelectorAll('.hwp-paragraph[contenteditable]:not([contenteditable="false"])')).filter((element) => element.isContentEditable).length,
           parser: preview?.dataset?.parser || "",
+          layoutTreePages: Number(preview?.dataset?.layoutTreePages || 0),
+          layoutDiagnostics: Number(preview?.dataset?.layoutDiagnostics || 0),
           plainTextLength: Number(preview?.dataset?.plainText?.length || 0),
 	          bodyTextLength: (preview?.innerText || "").trim().length,
 	          firstText: (pages[0]?.innerText || "").replace(/\\s+/g, " ").trim().slice(0, 180),
@@ -501,6 +503,9 @@ function evaluateProbeResult(result, roundTrip) {
     }
     if (sourceMetadata.sourceFormats?.length && !sourceMetadata.sourceFormats.includes(expectedSourceFormat)) {
       issues.push(`원본 좌표 형식 불일치: ${sourceMetadata.sourceFormats.join(', ')} / expected ${expectedSourceFormat}`);
+    }
+    if (sample.expectedFormat === 'HWPX' && actual.layoutTreePages !== actual.pages) {
+      issues.push(`HWPX LayoutTree 페이지 수 불일치 ${actual.layoutTreePages} !== ${actual.pages}`);
     }
     if (actual.decorationTopLevelOverlaps > 0) {
       advisories.push(`장식/쪽번호 경계 겹침 ${actual.decorationTopLevelOverlaps}건`);

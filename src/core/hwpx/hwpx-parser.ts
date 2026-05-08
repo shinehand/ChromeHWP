@@ -5,6 +5,10 @@ import type {
   DocumentBlock,
   DocumentPage,
   ImageBlock,
+  LayoutBox,
+  LayoutDiagnostic,
+  LayoutPage,
+  LayoutTree,
   PageLayout,
   ParagraphBlock,
   ParsedDocument,
@@ -235,9 +239,207 @@ export async function parseHwpx(input: HwpxParseInput): Promise<ParsedDocument> 
       }
     },
     source: buildHwpxSourceDocument(pkg, sectionPaths, pages, assets),
+    layoutTree: buildHwpxLayoutTree(pages),
     pages,
     assets
   };
+}
+
+function buildHwpxLayoutTree(pages: readonly DocumentPage[]): LayoutTree {
+  const diagnostics: LayoutDiagnostic[] = [];
+  const layoutPages = pages.map((page) => buildHwpxLayoutPage(page, diagnostics));
+  return {
+    pages: layoutPages,
+    ...(diagnostics.length ? { diagnostics } : {})
+  };
+}
+
+function buildHwpxLayoutPage(page: DocumentPage, diagnostics: LayoutDiagnostic[]): LayoutPage {
+  const layout = page.layout ?? DEFAULT_PAGE_LAYOUT;
+  const bodyRect = pageBodyRect(layout);
+  const bodyChildren: LayoutBox[] = [];
+  let flowTop = bodyRect.top;
+
+  page.blocks.forEach((block, blockIndex) => {
+    const box = buildHwpxBlockLayoutBox(block as HwpxDocumentBlock, {
+      idPrefix: `p${page.index}-b${blockIndex}`,
+      pageLayout: layout,
+      bodyRect,
+      flowTop,
+      diagnostics
+    });
+    bodyChildren.push(box);
+    if (box.flow !== 'absolute') flowTop = Math.max(flowTop, box.rect.top + box.rect.height);
+  });
+
+  const bodyBox: LayoutBox = {
+    id: `page-${page.index}-body`,
+    kind: 'body',
+    rect: bodyRect,
+    children: bodyChildren,
+    sourceRef: page.sourceRef,
+    overflow: flowTop > bodyRect.top + bodyRect.height ? 'visible' : undefined
+  };
+  if (flowTop > bodyRect.top + bodyRect.height) {
+    diagnostics.push({
+      severity: 'warning',
+      code: 'hwpx-page-flow-overflow',
+      message: 'HWPX page flow exceeds the section body box derived from pagePr margins.',
+      boxId: bodyBox.id,
+      sourceRef: page.sourceRef
+    });
+  }
+
+  return {
+    index: page.index,
+    layout,
+    sourceRef: page.sourceRef,
+    boxes: [{
+      id: `page-${page.index}`,
+      kind: 'page',
+      rect: { left: 0, top: 0, width: layout.width, height: layout.height },
+      children: [bodyBox],
+      sourceRef: page.sourceRef,
+      flow: 'flow'
+    }]
+  };
+}
+
+interface HwpxLayoutBuildContext {
+  readonly idPrefix: string;
+  readonly pageLayout: PageLayout;
+  readonly bodyRect: LayoutRect;
+  readonly flowTop: number;
+  readonly diagnostics: LayoutDiagnostic[];
+}
+
+interface LayoutRect {
+  readonly left: number;
+  readonly top: number;
+  readonly width: number;
+  readonly height: number;
+}
+
+function buildHwpxBlockLayoutBox(block: HwpxDocumentBlock, context: HwpxLayoutBuildContext): LayoutBox {
+  const layout = block._hwpxLayout;
+  const position = layout?.position;
+  const sourceHeight = Math.max(1, layout?.renderHeightPx ?? layout?.heightPx ?? estimateBlockHeight(block));
+  const sourceWidth = Math.max(1, block.type === 'table'
+    ? (position?.widthPx ?? block.width ?? context.bodyRect.width)
+    : block.type === 'image'
+      ? (position?.widthPx ?? block.width ?? 96)
+      : context.bodyRect.width);
+  const rect = position
+    ? {
+        left: context.bodyRect.left + Math.round(position.leftPx),
+        top: context.bodyRect.top + Math.round(position.topPx),
+        width: sourceWidth,
+        height: Math.max(1, position.heightPx ?? sourceHeight)
+      }
+    : {
+        left: context.bodyRect.left,
+        top: context.flowTop,
+        width: sourceWidth,
+        height: sourceHeight
+      };
+  const box: LayoutBox = {
+    id: context.idPrefix,
+    kind: block.type === 'paragraph' ? 'paragraph' : block.type,
+    rect,
+    sourceRef: block.sourceRef,
+    flow: position ? objectFlowFromPosition(position) : 'flow',
+    ...(position?.zIndex ? { zIndex: position.zIndex } : {}),
+    ...(block.type === 'table' ? { children: buildHwpxTableLayoutChildren(block, context.idPrefix, rect) } : {})
+  };
+
+  if (position && rect.top + rect.height > context.pageLayout.height) {
+    context.diagnostics.push({
+      severity: 'warning',
+      code: 'hwpx-positioned-block-page-overflow',
+      message: 'HWPX positioned block exceeds the page frame using pos/offset-derived coordinates.',
+      boxId: box.id,
+      sourceRef: block.sourceRef
+    });
+  }
+  return box;
+}
+
+function buildHwpxTableLayoutChildren(table: HwpxTableBlock, tableId: string, tableRect: LayoutRect): LayoutBox[] {
+  const rowHeights = table.rows.map((row, index) => {
+    return Math.max(1, row._hwpxLayout?.renderHeightPx ?? row._hwpxLayout?.heightPx ?? table._hwpxLayout?.rowHeightsPx[index] ?? estimateBlocksHeight(row.cells.flatMap((cell) => cell.blocks)));
+  });
+  const columnWidths = resolveLayoutColumnWidths(table, tableRect.width);
+  const children: LayoutBox[] = [];
+  let top = tableRect.top;
+
+  table.rows.forEach((row, rowIndex) => {
+    const rowHeight = rowHeights[rowIndex] ?? 1;
+    const rowId = `${tableId}-r${rowIndex}`;
+    const rowChildren: LayoutBox[] = [];
+    let colIndex = 0;
+
+    row.cells.forEach((cell, cellIndex) => {
+      const colSpan = Math.max(1, cell.colSpan);
+      const rowSpan = Math.max(1, cell.rowSpan);
+      const left = tableRect.left + columnWidths.slice(0, colIndex).reduce((sum, width) => sum + width, 0);
+      const width = columnWidths.slice(colIndex, colIndex + colSpan).reduce((sum, value) => sum + value, 0) || tableRect.width;
+      const height = rowHeights.slice(rowIndex, rowIndex + rowSpan).reduce((sum, value) => sum + value, 0) || rowHeight;
+      rowChildren.push({
+        id: `${rowId}-c${cellIndex}`,
+        kind: 'table-cell',
+        rect: { left, top, width, height },
+        sourceRef: cell.sourceRef,
+        flow: 'flow'
+      });
+      colIndex += colSpan;
+    });
+
+    children.push({
+      id: rowId,
+      kind: 'table-row',
+      rect: { left: tableRect.left, top, width: tableRect.width, height: rowHeight },
+      children: rowChildren,
+      sourceRef: row.sourceRef,
+      flow: 'flow'
+    });
+    top += rowHeight;
+  });
+
+  return children;
+}
+
+function pageBodyRect(layout: PageLayout): LayoutRect {
+  const margin = layout.margin;
+  const left = margin.left ?? 0;
+  const top = margin.top ?? 0;
+  const right = margin.right ?? 0;
+  const bottom = margin.bottom ?? 0;
+  return {
+    left,
+    top,
+    width: Math.max(1, layout.width - left - right),
+    height: Math.max(1, layout.height - top - bottom)
+  };
+}
+
+function objectFlowFromPosition(position: HwpxPositionLayout): NonNullable<LayoutBox['flow']> {
+  if (isTopAndBottomTextWrap(position.textWrap) && position.flowWithText === true && position.allowOverlap !== true) {
+    return 'flow';
+  }
+  return 'absolute';
+}
+
+function resolveLayoutColumnWidths(table: HwpxTableBlock, tableWidth: number): number[] {
+  const colCount = Math.max(
+    table.columnWidths?.length ?? 0,
+    table._hwpxLayout?.colCount ?? 0,
+    ...table.rows.flatMap((row) => row.cells.map((cell) => (cell._hwpxLayout?.colIndex ?? 0) + cell.colSpan)),
+    1
+  );
+  const sourceWidths = table.columnWidths?.length ? table.columnWidths : Array.from({ length: colCount }, () => 1);
+  const padded = Array.from({ length: colCount }, (_value, index) => Math.max(1, sourceWidths[index] ?? 1));
+  const total = padded.reduce((sum, value) => sum + value, 0) || colCount;
+  return padded.map((value) => tableWidth * (value / total));
 }
 
 function buildHwpxSourceDocument(

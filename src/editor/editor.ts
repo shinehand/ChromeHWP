@@ -114,6 +114,8 @@ function showParsedDocument(filename: string, size: number, format: string, pars
   disposeRenderedDocument = renderDocumentToDom(parsed, documentPreview);
   documentPreview.dataset.filename = filename;
   documentPreview.dataset.parser = parsed.metadata.parser;
+  documentPreview.dataset.layoutTreePages = String(parsed.layoutTree?.pages.length ?? 0);
+  documentPreview.dataset.layoutDiagnostics = String(parsed.layoutTree?.diagnostics?.length ?? 0);
   delete documentPreview.dataset.plainText;
   currentDocument = {
     filename,
@@ -132,6 +134,8 @@ function showPlainTextDocument(filename: string, size: number, format: string, p
   documentPreview.dataset.filename = filename;
   documentPreview.dataset.plainText = previewText;
   delete documentPreview.dataset.parser;
+  delete documentPreview.dataset.layoutTreePages;
+  delete documentPreview.dataset.layoutDiagnostics;
   currentDocument = { filename, size, format: 'plain' };
   setExportControlsEnabled(true);
 }
@@ -152,6 +156,8 @@ function showEmptyState(message: string): void {
   delete documentPreview.dataset.filename;
   delete documentPreview.dataset.parser;
   delete documentPreview.dataset.plainText;
+  delete documentPreview.dataset.layoutTreePages;
+  delete documentPreview.dataset.layoutDiagnostics;
   currentDocument = undefined;
   dropZone.hidden = false;
   workspace.hidden = true;
