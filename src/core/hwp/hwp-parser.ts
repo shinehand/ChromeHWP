@@ -14,6 +14,7 @@ import type {
   TableRow,
   TextRun
 } from '../document-model';
+import { attachSourceReferencesToAssets, attachSourceReferencesToBlocks } from '../source-references';
 import { CfbReader, type CfbEntry } from './cfb-reader';
 import { decompressSync, inflateSync } from 'fflate';
 import { decodeParaText, HWP_TAG, scanUtf16Text } from './hwp-records';
@@ -294,7 +295,7 @@ export async function parseHwp(input: HwpParseInput): Promise<ParsedDocument> {
   const sectionEntries = findSectionEntries(cfb, fileHeader.flags.distributed);
   if (!sectionEntries.length) throw new Error('HWP 본문 Section 스트림을 찾지 못했습니다.');
 
-  const assets = collectBinDataAssets(cfb, docInfo);
+  const assets = attachSourceReferencesToAssets(collectBinDataAssets(cfb, docInfo), 'hwp');
   const stats = emptyParseStats();
   const context: HwpParseContext = {
     docInfo,
@@ -303,10 +304,39 @@ export async function parseHwp(input: HwpParseInput): Promise<ParsedDocument> {
     nonBodyControls: []
   };
 
-  const sections = sectionEntries.map((entry) => {
+  const sections = sectionEntries.map((entry, sectionIndex) => {
     const sectionBytes = cfb.readStream(entry);
     const decoded = decodeRecordStream(sectionBytes, fileHeader.flags.compressed);
-    return parseSection(decoded.records, decoded.bytes, warnings, context);
+    const entryPath = entry.path || entry.name;
+    const section = parseSection(decoded.records, decoded.bytes, warnings, context);
+    return {
+      ...section,
+      blocks: attachSourceReferencesToBlocks(section.blocks, {
+        format: 'hwp',
+        path: entryPath,
+        sectionIndex
+      }),
+      ...(section.headerDecorations
+        ? {
+            headerDecorations: attachSourceReferencesToBlocks(section.headerDecorations, {
+              format: 'hwp',
+              path: entryPath,
+              sectionIndex,
+              prefix: 'header'
+            })
+          }
+        : {}),
+      ...(section.footerDecorations
+        ? {
+            footerDecorations: attachSourceReferencesToBlocks(section.footerDecorations, {
+              format: 'hwp',
+              path: entryPath,
+              sectionIndex,
+              prefix: 'footer'
+            })
+          }
+        : {})
+    };
   });
   const pages = paginateSections(sections, context);
 
@@ -696,7 +726,7 @@ function decorationInsetHeight(blocks: readonly DocumentBlock[], layout: PageLay
 
 function paginateSections(sections: readonly ParsedSection[], context: HwpParseContext): DocumentPage[] {
   const pages: DocumentPage[] = [];
-  for (const section of sections) {
+  for (const [sectionIndex, section] of sections.entries()) {
     const layout = section.layout ?? DEFAULT_PAGE_LAYOUT;
     const pageBlocks = paginateBlocks(section.blocks, layout, context);
     for (const blocks of pageBlocks) {
@@ -711,11 +741,37 @@ function paginateSections(sections: readonly ParsedSection[], context: HwpParseC
         blocks: section.pageNumbering
           ? [...decoratedBlocks, createPageNumberDecorationBlock(pageNumber, layout)]
           : decoratedBlocks,
-        layout
+        layout,
+        sourceRef: {
+          format: 'hwp',
+          path: `BodyText/Section${sectionIndex}`,
+          role: 'section',
+          sectionIndex,
+          nodeName: 'page',
+          nodeId: `page-${pageNumber - 1}`,
+          rawPreserved: true
+        },
+        layoutBoxId: `hwp:${sectionIndex}:page-${pageNumber - 1}`
       });
     }
   }
-  if (!pages.length) pages.push({ index: 0, blocks: [], layout: DEFAULT_PAGE_LAYOUT });
+  if (!pages.length) {
+    pages.push({
+      index: 0,
+      blocks: [],
+      layout: DEFAULT_PAGE_LAYOUT,
+      sourceRef: {
+        format: 'hwp',
+        path: 'BodyText',
+        role: 'section',
+        sectionIndex: 0,
+        nodeName: 'page',
+        nodeId: 'page-0',
+        rawPreserved: true
+      },
+      layoutBoxId: 'hwp:0:page-0'
+    });
+  }
   context.stats.estimatedPageCount = pages.length;
   return pages;
 }

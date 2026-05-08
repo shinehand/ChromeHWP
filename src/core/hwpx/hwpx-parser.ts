@@ -14,6 +14,7 @@ import type {
   TableRow,
   TextRun
 } from '../document-model';
+import { attachSourceReferencesToAssets, attachSourceReferencesToBlocks } from '../source-references';
 import { openHwpxPackage } from './hwpx-package';
 
 export interface HwpxParseInput {
@@ -192,7 +193,7 @@ export async function parseHwpx(input: HwpxParseInput): Promise<ParsedDocument> 
 
   const headerXml = pkg.has('Contents/header.xml') ? pkg.readXml('Contents/header.xml') : null;
   const styles = buildStyleContext(headerXml);
-  const assets = collectAssets(pkg, styles.binDataMap);
+  const assets = attachSourceReferencesToAssets(collectAssets(pkg, styles.binDataMap), 'hwpx');
   let tableCount = 0;
   let imageCount = 0;
   let explicitPageBreakCount = 0;
@@ -202,7 +203,7 @@ export async function parseHwpx(input: HwpxParseInput): Promise<ParsedDocument> 
 
   const pages: DocumentPage[] = [];
   sectionPaths.forEach((sectionPath, sectionIndex) => {
-    const section = parseSection(pkg.readXml(sectionPath), sectionIndex, styles, warnings);
+    const section = parseSection(pkg.readXml(sectionPath), sectionIndex, sectionPath, styles, warnings);
     tableCount += section.tableCount;
     imageCount += section.imageCount;
     explicitPageBreakCount += section.metrics.explicitPageBreakCount;
@@ -504,7 +505,13 @@ function normalizeContentPath(path: string): string {
   return normalized.startsWith('Contents/') ? normalized : `Contents/${normalized}`;
 }
 
-function parseSection(sectionXml: unknown, index: number, styles: HwpxStyleContext, warnings: string[]): ParsedSection {
+function parseSection(
+  sectionXml: unknown,
+  index: number,
+  sectionPath: string,
+  styles: HwpxStyleContext,
+  warnings: string[]
+): ParsedSection {
   const root = unwrapKnownRoot(sectionXml, ['sec', 'section']);
   const pageProfile = readPageProfile(root);
   const blocks: HwpxDocumentBlock[] = [];
@@ -512,7 +519,7 @@ function parseSection(sectionXml: unknown, index: number, styles: HwpxStyleConte
   if (!isObject(root)) {
     warnings.push('섹션 XML 루트를 해석하지 못했습니다.');
     return {
-      pages: [{ index, blocks, layout: pageProfile.layout }],
+      pages: attachPageSourceReferences([{ index, blocks, layout: pageProfile.layout }], sectionPath, index),
       tableCount: 0,
       imageCount: 0,
       metrics: emptySectionMetrics()
@@ -520,13 +527,37 @@ function parseSection(sectionXml: unknown, index: number, styles: HwpxStyleConte
   }
 
   blocks.push(...parseContainerFlow(root, styles));
+  const sourcedBlocks = attachSourceReferencesToBlocks(blocks, {
+    format: 'hwpx',
+    path: sectionPath,
+    sectionIndex: index
+  });
 
-  const tableCount = blocks.reduce((count, block) => count + countBlocks(block, 'table'), 0);
-  const imageCount = blocks.reduce((count, block) => count + countBlocks(block, 'image'), 0);
-  if (!blocks.length) warnings.push('섹션에서 표시 가능한 본문 블록을 찾지 못했습니다.');
-  const decorations = collectSectionDecorations(root, styles, pageProfile);
-  const pages = decorateSectionPages(paginateSectionBlocks(blocks, pageProfile), decorations, pageProfile);
-  const metrics = collectSectionMetrics(blocks, Math.max(0, pages.length - 1));
+  const tableCount = sourcedBlocks.reduce((count, block) => count + countBlocks(block, 'table'), 0);
+  const imageCount = sourcedBlocks.reduce((count, block) => count + countBlocks(block, 'image'), 0);
+  if (!sourcedBlocks.length) warnings.push('섹션에서 표시 가능한 본문 블록을 찾지 못했습니다.');
+  const rawDecorations = collectSectionDecorations(root, styles, pageProfile);
+  const decorations: HwpxSectionDecorations = {
+    header: attachSourceReferencesToBlocks(rawDecorations.header, {
+      format: 'hwpx',
+      path: sectionPath,
+      sectionIndex: index,
+      prefix: 'header'
+    }),
+    footer: attachSourceReferencesToBlocks(rawDecorations.footer, {
+      format: 'hwpx',
+      path: sectionPath,
+      sectionIndex: index,
+      prefix: 'footer'
+    }),
+    pageNumber: rawDecorations.pageNumber
+  };
+  const pages = attachPageSourceReferences(
+    decorateSectionPages(paginateSectionBlocks(sourcedBlocks, pageProfile), decorations, pageProfile),
+    sectionPath,
+    index
+  );
+  const metrics = collectSectionMetrics(sourcedBlocks, Math.max(0, pages.length - 1));
 
   return {
     pages: pages.map((page, pageIndex) => ({ ...page, index: pageIndex })),
@@ -534,6 +565,27 @@ function parseSection(sectionXml: unknown, index: number, styles: HwpxStyleConte
     imageCount,
     metrics
   };
+}
+
+function attachPageSourceReferences(
+  pages: readonly DocumentPage[],
+  sectionPath: string,
+  sectionIndex: number
+): DocumentPage[] {
+  return pages.map((page, pageIndex) => ({
+    ...page,
+    sourceRef: page.sourceRef ?? {
+      format: 'hwpx',
+      path: sectionPath,
+      role: 'section',
+      sectionIndex,
+      nodeName: 'page',
+      nodeId: `page-${pageIndex}`,
+      xmlPath: `${sectionPath}#page-${pageIndex}`,
+      rawPreserved: true
+    },
+    layoutBoxId: page.layoutBoxId ?? `hwpx:${sectionIndex}:page-${pageIndex}`
+  }));
 }
 
 function collectSectionDecorations(
