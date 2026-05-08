@@ -226,6 +226,7 @@ interface HwpCharShape {
   readonly fontSizePt: number;
   readonly color: string;
   readonly letterSpacing: string;
+  readonly fontStretch: string;
   readonly bold: boolean;
   readonly italic: boolean;
   readonly underline: boolean;
@@ -2370,6 +2371,7 @@ function parseCharShape(body: Uint8Array, fonts: readonly string[]): HwpCharShap
   const fontFamily = fonts[readUInt16(body, 0)] || '';
   const fontFamilyLatin = fonts[readUInt16(body, 2)] || '';
   const fontSizeRaw = readUInt32(body, 42);
+  const widthRatio = body[14] ?? 100;
   const letterSpacing = readSignedByte(body[21] ?? 0);
 
   return {
@@ -2378,6 +2380,7 @@ function parseCharShape(body: Uint8Array, fonts: readonly string[]): HwpCharShap
     fontSizePt: fontSizeRaw > 0 ? Math.round(fontSizeRaw / 10) / 10 : 0,
     color: hwpColorRefToCss(readUInt32(body, 52)),
     letterSpacing: letterSpacing ? `${letterSpacing}%` : '',
+    fontStretch: widthRatio > 0 && widthRatio !== 100 ? `${Math.max(50, Math.min(200, widthRatio))}%` : '',
     bold: Boolean(attr & (1 << 1)),
     italic: Boolean(attr & 1),
     underline: ((attr >> 2) & 0x3) !== 0,
@@ -2494,6 +2497,7 @@ function textRunStyle(charShapeId: number, context: HwpParseContext): Partial<Te
     ...(shape.fontSizePt > 0 ? { fontSizePt: shape.fontSizePt } : {}),
     ...(shape.color ? { color: shape.color } : {}),
     ...(shape.letterSpacing ? { letterSpacing: shape.letterSpacing } : {}),
+    ...(shape.fontStretch ? { fontStretch: shape.fontStretch } : {}),
     ...(shape.bold ? { bold: true } : {}),
     ...(shape.italic ? { italic: true } : {}),
     ...(shape.underline ? { underline: true } : {}),
@@ -2521,6 +2525,7 @@ function sameRunStyle(left: TextRun, right: TextRun): boolean {
     && left.href === right.href
     && left.color === right.color
     && left.letterSpacing === right.letterSpacing
+    && left.fontStretch === right.fontStretch
     && left.bold === right.bold
     && left.italic === right.italic
     && left.underline === right.underline

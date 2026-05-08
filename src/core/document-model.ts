@@ -72,6 +72,7 @@ export interface TextRun {
   readonly color?: string;
   readonly backgroundColor?: string;
   readonly letterSpacing?: string;
+  readonly fontStretch?: string;
   readonly bold?: boolean;
   readonly italic?: boolean;
   readonly underline?: boolean;

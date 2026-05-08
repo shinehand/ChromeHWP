@@ -234,6 +234,7 @@ function renderRunDom(run: TextRun): HTMLElement {
   if (run.backgroundColor) span.style.backgroundColor = run.backgroundColor;
   if (run.bold) span.style.fontWeight = '700';
   if (run.italic) span.style.fontStyle = 'italic';
+  applyFontStretch(span, run.fontStretch);
   const letterSpacing = normalizeLetterSpacing(run.letterSpacing);
   if (letterSpacing) span.style.letterSpacing = letterSpacing;
   if (run.underline || run.strike) {
@@ -1194,6 +1195,17 @@ function normalizeLetterSpacing(value: string | undefined): string {
   }
   if (/^-?\d+(\.\d+)?(px|pt|em|rem)$/.test(spacing)) return spacing;
   return '';
+}
+
+function applyFontStretch(span: HTMLElement, value: string | undefined): void {
+  const stretch = value?.trim();
+  if (!stretch || !/^\d+(\.\d+)?%$/.test(stretch)) return;
+  const percent = Number(stretch.slice(0, -1));
+  if (!Number.isFinite(percent) || percent <= 0 || percent === 100) return;
+  const scale = clamp(percent / 100, 0.5, 2);
+  span.style.display = 'inline-block';
+  span.style.transform = `scaleX(${scale})`;
+  span.style.transformOrigin = 'left center';
 }
 
 function normalizeParagraphTextIndent(value: number | undefined): number {
