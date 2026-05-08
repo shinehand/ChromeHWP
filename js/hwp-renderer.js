@@ -1260,166 +1260,6 @@ function applyCellBorderStyle(td, cell) {
 }
 
 
-function buildSyntheticRow(baseRow, cells, syntheticRowRole = 'body') {
-  let colCursor = 0;
-  return {
-    ...(baseRow || {}),
-    syntheticRowRole,
-    cells: cells.map(cell => {
-      const next = cloneTableCell(cell, {
-        row: baseRow?.index ?? 0,
-        col: colCursor,
-      });
-      colCursor += Number(next.colSpan) || 1;
-      return next;
-    }),
-  };
-}
-
-function scaleSpans(total, bases) {
-  const safeTotal = Math.max(1, Number(total) || bases.reduce((sum, base) => sum + base, 0) || 1);
-  const baseSum = bases.reduce((sum, base) => sum + base, 0) || 1;
-  const spans = bases.map((base, index) => {
-    if (index === bases.length - 1) return 0;
-    return Math.max(1, Math.round((safeTotal * base) / baseSum));
-  });
-  const used = spans.reduce((sum, span) => sum + span, 0);
-  spans[spans.length - 1] = Math.max(1, safeTotal - used);
-  return spans;
-}
-
-function createSyntheticTextCell(baseCell, text, colSpan, syntheticRole = 'body') {
-  return cloneTableCell(baseCell, {
-    colSpan,
-    syntheticRole,
-    paragraphs: [HwpParser._createParagraphBlock(text)],
-  });
-}
-
-function createSyntheticParagraphCell(baseCell, lines, colSpan, syntheticRole = 'body') {
-  return cloneTableCell(baseCell, {
-    colSpan,
-    syntheticRole,
-    paragraphs: (lines || ['']).map(line => HwpParser._createParagraphBlock(line)),
-  });
-}
-
-function createSyntheticBlankCell(baseCell, colSpan, syntheticRole = 'field-input') {
-  return cloneTableCell(baseCell, {
-    colSpan,
-    syntheticRole,
-    paragraphs: [HwpParser._createParagraphBlock('')],
-  });
-}
-
-function normalizeApplicationFormRows(tableBlock, rows) {
-  if (!rows?.length) return rows || [];
-
-  const normalizedRows = [];
-  rows.forEach(row => {
-    const cells = [...(row.cells || [])].sort((a, b) => a.col - b.col);
-    if (!cells.length) return;
-
-    const rowText = cells.map(cell => getCellTextInline(cell)).join(' ');
-    const totalSpan = cells.reduce((sum, cell) => sum + (Number(cell.colSpan) || 1), 0);
-
-    if (/①/.test(rowText) && /②/.test(rowText) && /③/.test(rowText) && cells.length >= 6) {
-      const upperSpans = scaleSpans(totalSpan, [4, 10, 8, 10]);
-      const lowerSpans = scaleSpans(totalSpan, [4, 18, 10]);
-      normalizedRows.push(
-        buildSyntheticRow(row, [
-          createSyntheticTextCell(cells[0], '①성명', upperSpans[0], 'field-label'),
-          createSyntheticBlankCell(cells[1], upperSpans[1]),
-          createSyntheticTextCell(cells[2], '②주민등록번호', upperSpans[2], 'field-label'),
-          createSyntheticBlankCell(cells[3], upperSpans[3]),
-        ], 'person-form-upper'),
-      );
-      normalizedRows.push(
-        buildSyntheticRow(row, [
-          createSyntheticTextCell(cells[4], '③주소', lowerSpans[0], 'field-label'),
-          createSyntheticBlankCell(cells[1], lowerSpans[1]),
-          cloneTableCell(cells[5], {
-            colSpan: lowerSpans[2],
-            syntheticRole: 'field-inline-note',
-          }),
-        ], 'person-form-lower'),
-      );
-      return;
-    }
-
-    if (/④/.test(rowText) && /⑤/.test(rowText) && /⑥/.test(rowText) && /⑦/.test(rowText) && cells.length >= 8) {
-      const rowSpans = scaleSpans(totalSpan, [4, 12, 4, 12]);
-      normalizedRows.push(
-        buildSyntheticRow(row, [
-          createSyntheticTextCell(cells[0], '④입대일자', rowSpans[0], 'field-label'),
-          createSyntheticBlankCell(cells[1], rowSpans[1]),
-          createSyntheticTextCell(cells[2], '⑤계급', rowSpans[2], 'field-label'),
-          createSyntheticBlankCell(cells[3], rowSpans[3]),
-        ], 'military-form-upper'),
-      );
-      normalizedRows.push(
-        buildSyntheticRow(row, [
-          createSyntheticTextCell(cells[4], '⑥군별', rowSpans[0], 'field-label'),
-          createSyntheticBlankCell(cells[5], rowSpans[1]),
-          createSyntheticTextCell(cells[6], '⑦군번', rowSpans[2], 'field-label'),
-          createSyntheticBlankCell(cells[7], rowSpans[3]),
-        ], 'military-form-lower'),
-      );
-      return;
-    }
-
-    if (/⑧질병명/.test(rowText) && cells.length >= 5) {
-      const diseaseSpans = scaleSpans(totalSpan, [4, 9, 9, 10]);
-      normalizedRows.push(
-        buildSyntheticRow(row, [
-          createSyntheticTextCell(cells[0], '⑧질병명', diseaseSpans[0], 'field-label'),
-          cloneTableCell(cells[1], { colSpan: diseaseSpans[1] }),
-          cloneTableCell(cells[2], { colSpan: diseaseSpans[2] }),
-          cloneTableCell(cells[3], { colSpan: diseaseSpans[3] }),
-        ], 'body'),
-      );
-      return;
-    }
-
-    if (/⑬/.test(rowText) && /⑭/.test(rowText) && /⑮/.test(rowText) && cells.length >= 6) {
-      const familyHeaderSpans = scaleSpans(totalSpan, [8, 4, 9, 3, 3, 5]);
-      normalizedRows.push(
-        buildSyntheticRow(row, [
-          createSyntheticParagraphCell(cells[0], ['⑬고엽제후유(의)증', '환자 등과의 관계'], familyHeaderSpans[0], 'field-label'),
-          createSyntheticTextCell(cells[1], '⑭성명', familyHeaderSpans[1], 'field-label'),
-          createSyntheticTextCell(cells[2], '⑮주민등록번호', familyHeaderSpans[2], 'field-label'),
-          createSyntheticTextCell(cells[3], '학 력', familyHeaderSpans[3], 'field-label'),
-          createSyntheticTextCell(cells[4], '직 업', familyHeaderSpans[4], 'field-label'),
-          createSyntheticTextCell(cells[5], '월소득(천원)', familyHeaderSpans[5], 'field-label'),
-        ], 'body'),
-      );
-      return;
-    }
-
-    normalizedRows.push(row);
-  });
-
-  return normalizedRows;
-}
-
-function getTableBlockText(tableBlock) {
-  return (tableBlock?.rows || [])
-    .flatMap(row => row.cells || [])
-    .map(cell => getCellTextInline(cell))
-    .filter(Boolean)
-    .join(' ');
-}
-
-function shouldUsePrimaryFormLayout(tableBlock) {
-  const tableText = getTableBlockText(tableBlock);
-  if (!tableText) return false;
-  if (/등\s*록\s*신\s*청\s*서/.test(tableText)) return true;
-  return /접수번호|접수일시|처리기간/.test(tableText)
-    && /①/.test(tableText)
-    && /②/.test(tableText)
-    && /③/.test(tableText);
-}
-
 function getCompositeHeaderCellModel(tableBlock, row, cell, rowVisualIndex) {
   if (rowVisualIndex !== 0) return null;
   if ((Number(cell?.colSpan) || 1) < Math.max(2, Number(tableBlock?.colCount) || 0)) return null;
@@ -1438,54 +1278,13 @@ function getCompositeHeaderCellModel(tableBlock, row, cell, rowVisualIndex) {
     .join(' ')
     .replace(/\s+/g, ' ')
     .trim();
-  if (!titleText || titleText.length > 24 || /등록신청서/.test(titleText)) return null;
-
-  const approvalText = getTableBlockText(nestedTables[0]).replace(/\s+/g, ' ').trim();
-  if (!/결\s*재|담\s*임|교\s*무|교\s*감|전\s*결|검\s*토|승\s*인|원\s*장|부\s*장|과\s*장|팀\s*장/.test(approvalText)) {
-    return null;
-  }
+  if (!titleText || titleText.length > 24) return null;
+  if (!(nestedTables[0]?.rows || []).length) return null;
 
   return {
     titleParagraphs,
     approvalTable: nestedTables[0],
   };
-}
-
-function renderApplicationTitleCell(parent, cell) {
-  const rawLines = (cell?.paragraphs || [])
-    .map(getParagraphText)
-    .map(text => text.replace(/\s+/g, ' ').trim())
-    .filter(Boolean);
-
-  const options = [];
-  rawLines.forEach(line => {
-    if (/등\s*록\s*신\s*청\s*서/.test(line)) {
-      const cleaned = line.replace(/등\s*록\s*신\s*청\s*서/g, '').trim();
-      if (cleaned) options.push(cleaned);
-      return;
-    }
-    options.push(line);
-  });
-
-  const grid = document.createElement('div');
-  grid.className = 'hwp-form-title-grid';
-
-  const label = document.createElement('p');
-  label.className = 'hwp-form-title-label';
-  label.textContent = '등록신청서';
-  grid.appendChild(label);
-
-  const optionList = document.createElement('div');
-  optionList.className = 'hwp-form-title-options';
-  options.forEach(text => {
-    const line = document.createElement('p');
-    line.className = 'hwp-form-title-option';
-    line.textContent = text.replace(/□\s*/g, '□ ').replace(/\s+/g, ' ').trim();
-    optionList.appendChild(line);
-  });
-  grid.appendChild(optionList);
-
-  parent.appendChild(grid);
 }
 
 function renderCompositeHeaderCell(parent, model, tableContext) {
@@ -1520,17 +1319,14 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
   const {
     pageIndex = Number(parent?.dataset?.pageIndex ?? 0),
     tableIndex = 0,
-    isFirstTableOnFirstPage = pageIndex === 0 && tableIndex === 0,
     listStateRef = null,
   } = tableContext;
-  const usePrimaryFormLayout = isFirstTableOnFirstPage && shouldUsePrimaryFormLayout(tableBlock);
 
   const wrap = document.createElement('div');
   wrap.className = 'hwp-table-wrap';
   wrap.dataset.kind = 'hwp-table';
   wrap.dataset.pageIndex = String(pageIndex);
   wrap.dataset.tableIndex = String(tableIndex);
-  if (usePrimaryFormLayout) wrap.dataset.layout = 'first-page-primary';
   // 대부분의 본문 표는 자리차지(top-and-bottom) 배치로 float 없이 블록 흐름을 유지해야 한다.
   // applyDeferredObjectLayouts 실행 전(첫 번째 페인트)에도 올바른 레이아웃을 보장하기 위해
   // 비절대-배치 표에는 미리 clear: both 를 설정한다.
@@ -1549,7 +1345,6 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
   table.dataset.tableIndex = String(tableIndex);
   if (tableBlock.sourceFormat) table.dataset.sourceFormat = tableBlock.sourceFormat;
   if (tableBlock.rowHeightSource) table.dataset.rowHeightSource = tableBlock.rowHeightSource;
-  if (usePrimaryFormLayout) table.dataset.layout = 'first-page-primary';
   const isHwpxTable = tableBlock.sourceFormat === 'hwpx';
   const isHwpTable = tableBlock.sourceFormat === 'hwp';
   // HWP·HWPX 모두 HWPUNIT (1/7200 inch) 기준: 96 CSS px/inch 환산 스케일 = 1/75
@@ -1593,26 +1388,18 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
 
   let thead = null;
   const tbody = document.createElement('tbody');
-  const rowsToRender = usePrimaryFormLayout
-    ? normalizeApplicationFormRows(tableBlock, tableBlock.rows || [])
-    : (tableBlock.rows || []);
+  const rowsToRender = tableBlock.rows || [];
 
   rowsToRender.forEach((row, rowVisualIndex) => {
     const cells = [...(row.cells || [])].sort((a, b) => a.col - b.col);
     if (!cells.length) return;
 
-    const rowTexts = cells.map(cell => getCellTextInline(cell)).filter(Boolean).join(' ');
-    const rowLooksLikeTitle = rowVisualIndex === 0 && /등\s*록\s*신\s*청\s*서/.test(rowTexts);
-    const rowLooksLikeOptions = rowVisualIndex === 0 && /고엽제후유/.test(rowTexts);
-    const rowLooksLikeMeta = /접수번호|접수일시|처리기간/.test(rowTexts);
-    const rowLooksLikePersonForm = /①성\s*명|②주민등록번호|③주\s*소/.test(rowTexts);
+    const declaredRowRole = String(row.syntheticRowRole || row.rowRole || '').trim().toLowerCase();
+    const rowLooksLikeTitle = declaredRowRole === 'title';
+    const rowLooksLikeOptions = declaredRowRole === 'title-options';
+    const rowLooksLikeMeta = declaredRowRole === 'meta';
+    const rowLooksLikePersonForm = declaredRowRole === 'person-form';
     const rowLooksLikeCompactHeader = isCompactTableHeaderRow(rowVisualIndex, cells);
-    const rowLooksLikeTopSpacer = usePrimaryFormLayout
-      && rowVisualIndex <= 2
-      && cells.length === 1
-      && !rowTexts
-      && (Number(cells[0].colSpan) || 1) <= 2;
-    if (rowLooksLikeTopSpacer) return;
 
     const tr = document.createElement('tr');
     tr.className = 'hwp-table-row';
@@ -1627,7 +1414,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
 
     // Determine if this row is a header row (belongs in <thead>).
     // chunkHeaderCount > 0 means some rows at the top of this chunk are header rows.
-    const isHeaderRow = chunkHeaderCount > 0 && !usePrimaryFormLayout && rowVisualIndex < chunkHeaderCount;
+    const isHeaderRow = chunkHeaderCount > 0 && rowVisualIndex < chunkHeaderCount;
     if (isHeaderRow) {
       if (!thead) {
         thead = document.createElement('thead');
@@ -1704,12 +1491,13 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
 
       const text = getCellTextInline(cell);
       const rawText = HwpParser._cellText(cell);
-      const explicitCellRole = cell.syntheticRole || '';
-      const isTitleLabelCell = /등\s*록\s*신\s*청\s*서/.test(text);
-      const isOptionCell = rowLooksLikeTitle && /고엽제후유/.test(text);
+      const explicitCellRole = String(cell.syntheticRole || cell.role || '').trim();
+      const explicitCellRoleLower = explicitCellRole.toLowerCase();
+      const isTitleLabelCell = explicitCellRoleLower === 'title-label';
+      const isOptionCell = explicitCellRoleLower === 'title-options' || rowLooksLikeOptions;
       const isCombinedTitleBlock = isTitleLabelCell && isOptionCell;
-      const isPeriodCell = /처리기간|20\s*일|90\s*일/.test(text);
-      const isMetaCell = /접수번호|접수일시/.test(text);
+      const isPeriodCell = explicitCellRoleLower === 'process-period';
+      const isMetaCell = explicitCellRoleLower === 'meta';
       const stackedLabelLines = getStackedHangulLabelLines(rawText);
       // "결 석 종 류" 같은 세로 라벨은 원문 공백 패턴을 살려 2글자씩 줄바꿈해 준다.
       const isStackedLabelCell = !explicitCellRole
@@ -1725,10 +1513,8 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
         && !isStackedLabelCell
         && isGroupedRowLabelCell(cell, text, rawText);
       const isFieldLabelCell = explicitCellRole === 'field-label'
-        || /^[①-⑳⑴-⒇<]\s*/.test(text)
-        || /^(학\s*력|직\s*업|월\s*소득)/.test(text);
-      const isFieldInlineNoteCell = explicitCellRole === 'field-inline-note'
-        || /전화|휴대폰/.test(text);
+        || /^[①-⑳⑴-⒇<]\s*/.test(text);
+      const isFieldInlineNoteCell = explicitCellRole === 'field-inline-note';
       const isTitleRowMainCell = rowLooksLikeTitle
         && (isTitleLabelCell || isOptionCell || (cell.colSpan || 1) >= Math.max(2, Math.floor((tableBlock.colCount || 2) / 2)));
       const shouldCenterCell = isTitleLabelCell || isOptionCell || isCombinedTitleBlock || isTitleRowMainCell;
@@ -1749,11 +1535,6 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       td.dataset.rowRole = tr.dataset.rowRole || 'body';
       const compositeHeaderModel = getCompositeHeaderCellModel(tableBlock, row, cell, rowVisualIndex);
       if (compositeHeaderModel) td.dataset.role = 'form-header';
-
-      if (usePrimaryFormLayout && td.dataset.role === 'title-block' && td.rowSpan > 2) {
-        td.rowSpan = 2;
-        td.dataset.rowSpan = '2';
-      }
 
       const cellVerticalAlign = resolveCellVerticalAlign(cell, {
         isStackedLabelCell,
@@ -1781,20 +1562,6 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
         rightPx  = Math.max(0, Math.min(36, Math.round((Number(dR) || 0) * TABLE_UNIT_SCALE)));
         bottomPx = Math.max(0, Math.min(30, Math.round((Number(dB) || 0) * TABLE_UNIT_SCALE)));
         leftPx   = Math.max(0, Math.min(36, Math.round((Number(dL) || 0) * TABLE_UNIT_SCALE)));
-      } else if (rowLooksLikeTitle) {
-        if (isTitleLabelCell) {
-          topPx = 16; rightPx = 10; bottomPx = 16; leftPx = 10;
-        } else if (isOptionCell) {
-          topPx = 16; rightPx = 18; bottomPx = 16; leftPx = 18;
-        } else if (isPeriodCell) {
-          topPx = 12; rightPx = 10; bottomPx = 12; leftPx = 10;
-        } else {
-          topPx = 14; rightPx = 12; bottomPx = 14; leftPx = 12;
-        }
-      } else if (rowLooksLikeMeta) {
-        topPx = 8; rightPx = 10; bottomPx = 8; leftPx = 10;
-      } else if (rowLooksLikePersonForm) {
-        topPx = 7; rightPx = 8; bottomPx = 7; leftPx = 8;
       } else {
         topPx = 3; rightPx = 4; bottomPx = 3; leftPx = 4;
       }
@@ -1831,16 +1598,6 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
         }
       }
       if (isOptionCell) content.style.gap = '8px';
-
-      const shouldRenderTitleGrid = usePrimaryFormLayout
-        && td.dataset.role === 'title-block'
-        && /등\s*록\s*신\s*청\s*서/.test(text);
-      if (shouldRenderTitleGrid) {
-        renderApplicationTitleCell(content, cell);
-        td.appendChild(content);
-        tr.appendChild(td);
-        return;
-      }
 
       if (compositeHeaderModel) {
         renderCompositeHeaderCell(content, compositeHeaderModel, {
