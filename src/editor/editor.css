@@ -218,6 +218,12 @@
 }
 
 @font-face {
+  font-family: "휴먼옛체";
+  src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+@font-face {
   font-family: "맑은 고딕";
   src: url("/lib/fonts/dotum-Regular.ttf") format("truetype");
   font-display: block;

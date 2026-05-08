@@ -142,11 +142,16 @@ interface HwpObjectInfo {
   readonly horizontalOffset: number;
   readonly verticalOffset: number;
   readonly zIndex: number;
+  readonly margin: BoxSpacing;
   readonly description: string;
   readonly inline: boolean;
   readonly flowWithText: boolean;
   readonly allowOverlap: boolean;
   readonly textWrap: string;
+  readonly horizontalRelTo: string;
+  readonly verticalRelTo: string;
+  readonly horizontalAlign: string;
+  readonly verticalAlign: string;
 }
 
 interface HwpTableInfo {
@@ -1775,11 +1780,19 @@ function buildTableBlock(
     ? {
         leftPx: objectInfo.horizontalOffset,
         topPx: objectInfo.verticalOffset,
-    ...(objectWidth > 0 ? { widthPx: objectWidth } : {}),
-    ...(objectHeight > 0 ? { heightPx: objectHeight } : {}),
-    ...(objectInfo.zIndex ? { zIndex: objectInfo.zIndex } : {}),
-    source: 'hwp-object-common'
-  }
+        ...(objectWidth > 0 ? { widthPx: objectWidth } : {}),
+        ...(objectHeight > 0 ? { heightPx: objectHeight } : {}),
+        ...(objectInfo.zIndex ? { zIndex: objectInfo.zIndex } : {}),
+        textWrap: objectInfo.textWrap,
+        flowWithText: objectInfo.flowWithText,
+        allowOverlap: objectInfo.allowOverlap,
+        horizontalRelTo: objectInfo.horizontalRelTo,
+        verticalRelTo: objectInfo.verticalRelTo,
+        horizontalAlign: objectInfo.horizontalAlign,
+        verticalAlign: objectInfo.verticalAlign,
+        ...(hasAnyBoxValue(objectInfo.margin) ? { margin: objectInfo.margin } : {}),
+        source: 'hwp-object-common'
+      }
     : null;
   const inferredPosition = objectPosition ? null : inferHwpTablePosition(rows, objectInfo);
   const tablePosition = objectPosition ?? inferredPosition;
@@ -1954,6 +1967,14 @@ function parseTableCellInfo(body: Uint8Array, tableInfo: HwpTableInfo | null): H
 function parseObjectInfo(body: Uint8Array): HwpObjectInfo {
   const attr = body.length >= 8 ? readUInt32(body, 4) : 0;
   const descLen = body.length >= 46 ? readUInt16(body, 44) : 0;
+  const margin = body.length >= 36
+    ? {
+        left: hwpUnitToPx(readUInt16(body, 28)),
+        right: hwpUnitToPx(readUInt16(body, 30)),
+        top: hwpUnitToPx(readUInt16(body, 32)),
+        bottom: hwpUnitToPx(readUInt16(body, 34))
+      }
+    : {};
   return {
     controlId: readControlId(body),
     horizontalOffset: body.length >= 16 ? hwpSignedUnitToPx(readInt32(body, 12)) : 0,
@@ -1961,11 +1982,16 @@ function parseObjectInfo(body: Uint8Array): HwpObjectInfo {
     width: body.length >= 20 ? hwpUnitToPx(readUInt32(body, 16)) : 0,
     height: body.length >= 24 ? hwpUnitToPx(readUInt32(body, 20)) : 0,
     zIndex: body.length >= 28 ? readInt32(body, 24) : 0,
+    margin,
     description: decodeUtf16String(body, 46, descLen),
     inline: Boolean(attr & 1),
     flowWithText: Boolean((attr >> 13) & 0x1),
     allowOverlap: Boolean((attr >> 14) & 0x1),
-    textWrap: hwpObjectTextWrap((attr >> 21) & 0x7)
+    textWrap: hwpObjectTextWrap((attr >> 21) & 0x7),
+    horizontalRelTo: hwpObjectRelTo('horizontal', (attr >> 8) & 0x3),
+    verticalRelTo: hwpObjectRelTo('vertical', (attr >> 3) & 0x3),
+    horizontalAlign: hwpObjectAlign((attr >> 10) & 0x7),
+    verticalAlign: hwpObjectAlign((attr >> 5) & 0x7)
   };
 }
 
@@ -1978,6 +2004,15 @@ function hwpObjectTextWrap(code = 0): string {
     'behind-text',
     'in-front-of-text'
   ][Number(code) || 0] || 'top-and-bottom';
+}
+
+function hwpObjectRelTo(axis: 'horizontal' | 'vertical', code = 0): string {
+  if (axis === 'vertical') return ['paper', 'page', 'para'][code] || 'para';
+  return ['page', 'page', 'column', 'para'][code] || 'para';
+}
+
+function hwpObjectAlign(code = 0): string {
+  return ['left-or-top', 'center', 'right-or-bottom', 'inside', 'outside'][code] || 'left-or-top';
 }
 
 function parsePictureBlock(
@@ -2019,6 +2054,14 @@ function parsePictureBlock(
           ...(width > 0 ? { widthPx: width } : {}),
           ...(height > 0 ? { heightPx: height } : {}),
           ...(objectInfo.zIndex ? { zIndex: objectInfo.zIndex } : {}),
+          textWrap: objectInfo.textWrap,
+          flowWithText: objectInfo.flowWithText,
+          allowOverlap: objectInfo.allowOverlap,
+          horizontalRelTo: objectInfo.horizontalRelTo,
+          verticalRelTo: objectInfo.verticalRelTo,
+          horizontalAlign: objectInfo.horizontalAlign,
+          verticalAlign: objectInfo.verticalAlign,
+          ...(hasAnyBoxValue(objectInfo.margin) ? { margin: objectInfo.margin } : {}),
           source: 'hwp-picture-object-common'
         }
       }

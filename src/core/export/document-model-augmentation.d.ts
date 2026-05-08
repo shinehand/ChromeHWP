@@ -32,6 +32,10 @@ declare module '../document-model' {
         readonly verticalRelTo?: string;
         readonly horizontalAlign?: string;
         readonly verticalAlign?: string;
+        readonly textWrap?: string;
+        readonly flowWithText?: boolean;
+        readonly allowOverlap?: boolean;
+        readonly margin?: import('../document-model').BoxSpacing;
       };
     };
   }
@@ -56,6 +60,10 @@ declare module '../document-model' {
         readonly verticalRelTo?: string;
         readonly horizontalAlign?: string;
         readonly verticalAlign?: string;
+        readonly textWrap?: string;
+        readonly flowWithText?: boolean;
+        readonly allowOverlap?: boolean;
+        readonly margin?: import('../document-model').BoxSpacing;
       };
     };
   }

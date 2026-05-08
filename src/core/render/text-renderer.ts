@@ -1371,6 +1371,7 @@ function fallbackForKoreanFont(fontFamily: string): string {
     || normalized.includes('고딕')
     || normalized.includes('굴림')
     || normalized.includes('돋움')
+    || normalized.includes('옛체')
     || normalized.includes('headline')
   ) {
     return '"Malgun Gothic", "Apple SD Gothic Neo", NanumGothic, sans-serif';
