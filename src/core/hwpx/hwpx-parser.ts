@@ -2872,7 +2872,7 @@ function hwpUnitToPx(value: number): number {
 }
 
 function hwpxLineSegmentHeightToPx(value: number): number {
-  return value > 0 ? Math.max(1, Math.round((value / HWPUNIT_PER_PX) * 0.97)) : 0;
+  return value > 0 ? Math.max(1, Math.round((value / HWPUNIT_PER_PX) * 0.95)) : 0;
 }
 
 function normalizeSigned32(value: number): number {
