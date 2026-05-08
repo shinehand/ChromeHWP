@@ -89,6 +89,55 @@ def mean_dark_delta(hancom: Image.Image, chrome: Image.Image) -> float | None:
     return mean(chrome_values) - mean(hancom_values)
 
 
+def projection_hot_bands(hancom: Image.Image, chrome: Image.Image) -> dict[str, list[dict[str, float | int]]]:
+    hancom_gray = hancom.convert("L")
+    chrome_gray = chrome.convert("L").resize(hancom_gray.size)
+    width, height = hancom_gray.size
+    hancom_pixels = hancom_gray.load()
+    chrome_pixels = chrome_gray.load()
+    row_scores = []
+    for y in range(height):
+        delta = 0
+        for x in range(width):
+            delta += abs(int(hancom_pixels[x, y] < DARK_THRESHOLD) - int(chrome_pixels[x, y] < DARK_THRESHOLD))
+        row_scores.append(delta / max(1, width))
+    column_scores = []
+    for x in range(width):
+        delta = 0
+        for y in range(height):
+            delta += abs(int(hancom_pixels[x, y] < DARK_THRESHOLD) - int(chrome_pixels[x, y] < DARK_THRESHOLD))
+        column_scores.append(delta / max(1, height))
+    return {
+        "rows": top_bands(row_scores),
+        "columns": top_bands(column_scores),
+    }
+
+
+def top_bands(scores: list[float], limit: int = 5) -> list[dict[str, float | int]]:
+    if not scores:
+        return []
+    threshold = max(0.08, mean(scores) * 2.5)
+    runs: list[tuple[int, int, float]] = []
+    start = -1
+    total = 0.0
+    for index, score in enumerate(scores):
+        if score >= threshold:
+            if start < 0:
+                start = index
+                total = 0.0
+            total += score
+        elif start >= 0:
+            runs.append((start, index - 1, total / max(1, index - start)))
+            start = -1
+    if start >= 0:
+        runs.append((start, len(scores) - 1, total / max(1, len(scores) - start)))
+    runs.sort(key=lambda item: (item[2], item[1] - item[0]), reverse=True)
+    return [
+        {"start": start, "end": end, "score": round(score, 4)}
+        for start, end, score in runs[:limit]
+    ]
+
+
 def page_metrics(page: dict[str, Any]) -> dict[str, Any]:
     hancom = Image.open(page["hancomCrop"]).convert("RGB")
     chrome = Image.open(page["chromePage"]).convert("RGB")
@@ -104,6 +153,7 @@ def page_metrics(page: dict[str, Any]) -> dict[str, Any]:
         "blurDiff": raw_metrics.get("blurDiff"),
         "layoutDiff": projection.get("combined"),
         "inkMeanDelta": mean_dark_delta(hancom, chrome),
+        "hotBands": projection_hot_bands(hancom, chrome),
         "bbox": {
             "hancom": hancom_box,
             "chrome": chrome_box,

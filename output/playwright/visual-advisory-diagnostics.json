@@ -3,8 +3,8 @@
   "advisoryPageCount": 31,
   "classCounts": {
     "ink-density": 7,
-    "layout-or-scale": 14,
-    "mixed-or-minor": 10
+    "layout-or-scale": 12,
+    "mixed-or-minor": 12
   },
   "documents": [
     {
@@ -29,6 +29,52 @@
           "blurDiff": 18.391907276101005,
           "layoutDiff": 19.120825147347734,
           "inkMeanDelta": 39.39773677104094,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 35,
+                "end": 35,
+                "score": 0.8505
+              },
+              {
+                "start": 378,
+                "end": 378,
+                "score": 0.8505
+              },
+              {
+                "start": 253,
+                "end": 253,
+                "score": 0.847
+              },
+              {
+                "start": 130,
+                "end": 132,
+                "score": 0.841
+              },
+              {
+                "start": 173,
+                "end": 173,
+                "score": 0.8327
+              }
+            ],
+            "columns": [
+              {
+                "start": 260,
+                "end": 260,
+                "score": 0.8035
+              },
+              {
+                "start": 20,
+                "end": 22,
+                "score": 0.7448
+              },
+              {
+                "start": 257,
+                "end": 258,
+                "score": 0.7406
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               21,
@@ -73,6 +119,57 @@
           "blurDiff": 12.768682015953589,
           "layoutDiff": 14.162831470523777,
           "inkMeanDelta": 29.812198852772468,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 347,
+                "end": 347,
+                "score": 0.8571
+              },
+              {
+                "start": 372,
+                "end": 372,
+                "score": 0.8571
+              },
+              {
+                "start": 19,
+                "end": 20,
+                "score": 0.8536
+              },
+              {
+                "start": 67,
+                "end": 68,
+                "score": 0.8536
+              },
+              {
+                "start": 80,
+                "end": 81,
+                "score": 0.8518
+              }
+            ],
+            "columns": [
+              {
+                "start": 252,
+                "end": 252,
+                "score": 0.797
+              },
+              {
+                "start": 13,
+                "end": 13,
+                "score": 0.6117
+              },
+              {
+                "start": 44,
+                "end": 44,
+                "score": 0.5558
+              },
+              {
+                "start": 46,
+                "end": 46,
+                "score": 0.467
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               13,
@@ -100,6 +197,47 @@
           "blurDiff": 16.207052211747644,
           "layoutDiff": 13.626451895682687,
           "inkMeanDelta": 15.694284364666998,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 193,
+                "end": 194,
+                "score": 0.8571
+              },
+              {
+                "start": 339,
+                "end": 339,
+                "score": 0.8571
+              },
+              {
+                "start": 367,
+                "end": 367,
+                "score": 0.8571
+              },
+              {
+                "start": 185,
+                "end": 187,
+                "score": 0.8536
+              },
+              {
+                "start": 19,
+                "end": 20,
+                "score": 0.8536
+              }
+            ],
+            "columns": [
+              {
+                "start": 13,
+                "end": 13,
+                "score": 0.8782
+              },
+              {
+                "start": 251,
+                "end": 252,
+                "score": 0.7322
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               14,
@@ -127,6 +265,47 @@
           "blurDiff": 18.015237490935462,
           "layoutDiff": 17.98761779531013,
           "inkMeanDelta": 20.16791583095815,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 341,
+                "end": 341,
+                "score": 0.8857
+              },
+              {
+                "start": 330,
+                "end": 331,
+                "score": 0.8821
+              },
+              {
+                "start": 43,
+                "end": 43,
+                "score": 0.8821
+              },
+              {
+                "start": 12,
+                "end": 13,
+                "score": 0.8804
+              },
+              {
+                "start": 179,
+                "end": 180,
+                "score": 0.8661
+              }
+            ],
+            "columns": [
+              {
+                "start": 261,
+                "end": 261,
+                "score": 0.8147
+              },
+              {
+                "start": 259,
+                "end": 259,
+                "score": 0.7919
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               13,
@@ -154,6 +333,52 @@
           "blurDiff": 14.62115663524293,
           "layoutDiff": 14.75728687267151,
           "inkMeanDelta": 19.665583043464125,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 267,
+                "end": 268,
+                "score": 0.8857
+              },
+              {
+                "start": 270,
+                "end": 270,
+                "score": 0.8857
+              },
+              {
+                "start": 346,
+                "end": 346,
+                "score": 0.8857
+              },
+              {
+                "start": 342,
+                "end": 343,
+                "score": 0.8839
+              },
+              {
+                "start": 27,
+                "end": 27,
+                "score": 0.8821
+              }
+            ],
+            "columns": [
+              {
+                "start": 13,
+                "end": 14,
+                "score": 0.8135
+              },
+              {
+                "start": 259,
+                "end": 260,
+                "score": 0.8096
+              },
+              {
+                "start": 262,
+                "end": 262,
+                "score": 0.8071
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               14,
@@ -181,6 +406,62 @@
           "blurDiff": 16.573821609862218,
           "layoutDiff": 8.828621520929216,
           "inkMeanDelta": 28.70750978591795,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 335,
+                "end": 335,
+                "score": 0.9
+              },
+              {
+                "start": 332,
+                "end": 332,
+                "score": 0.8964
+              },
+              {
+                "start": 20,
+                "end": 21,
+                "score": 0.8929
+              },
+              {
+                "start": 28,
+                "end": 28,
+                "score": 0.8607
+              },
+              {
+                "start": 42,
+                "end": 42,
+                "score": 0.7857
+              }
+            ],
+            "columns": [
+              {
+                "start": 263,
+                "end": 263,
+                "score": 0.7919
+              },
+              {
+                "start": 13,
+                "end": 14,
+                "score": 0.7868
+              },
+              {
+                "start": 266,
+                "end": 266,
+                "score": 0.7766
+              },
+              {
+                "start": 246,
+                "end": 247,
+                "score": 0.7208
+              },
+              {
+                "start": 32,
+                "end": 33,
+                "score": 0.717
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               14,
@@ -208,6 +489,62 @@
           "blurDiff": 16.365732368896925,
           "layoutDiff": 18.055555555555554,
           "inkMeanDelta": 34.005541361117565,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 57,
+                "end": 57,
+                "score": 0.8964
+              },
+              {
+                "start": 330,
+                "end": 330,
+                "score": 0.8964
+              },
+              {
+                "start": 282,
+                "end": 283,
+                "score": 0.8893
+              },
+              {
+                "start": 91,
+                "end": 91,
+                "score": 0.8893
+              },
+              {
+                "start": 190,
+                "end": 190,
+                "score": 0.8893
+              }
+            ],
+            "columns": [
+              {
+                "start": 35,
+                "end": 35,
+                "score": 0.6835
+              },
+              {
+                "start": 13,
+                "end": 14,
+                "score": 0.6722
+              },
+              {
+                "start": 265,
+                "end": 265,
+                "score": 0.6633
+              },
+              {
+                "start": 263,
+                "end": 263,
+                "score": 0.6582
+              },
+              {
+                "start": 239,
+                "end": 239,
+                "score": 0.6557
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               13,
@@ -235,6 +572,42 @@
           "blurDiff": 18.62503616636528,
           "layoutDiff": 18.247484689413824,
           "inkMeanDelta": 35.332457775518264,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 43,
+                "end": 44,
+                "score": 0.8964
+              },
+              {
+                "start": 283,
+                "end": 283,
+                "score": 0.8964
+              },
+              {
+                "start": 59,
+                "end": 59,
+                "score": 0.8857
+              },
+              {
+                "start": 142,
+                "end": 142,
+                "score": 0.8857
+              },
+              {
+                "start": 50,
+                "end": 50,
+                "score": 0.8
+              }
+            ],
+            "columns": [
+              {
+                "start": 35,
+                "end": 35,
+                "score": 0.681
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               14,
@@ -262,6 +635,36 @@
           "blurDiff": 18.42227157360406,
           "layoutDiff": 17.061691869384184,
           "inkMeanDelta": 29.283060166245406,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 55,
+                "end": 56,
+                "score": 0.8679
+              },
+              {
+                "start": 138,
+                "end": 138,
+                "score": 0.8679
+              },
+              {
+                "start": 287,
+                "end": 287,
+                "score": 0.8607
+              },
+              {
+                "start": 284,
+                "end": 285,
+                "score": 0.8589
+              },
+              {
+                "start": 187,
+                "end": 189,
+                "score": 0.8571
+              }
+            ],
+            "columns": []
+          },
           "bbox": {
             "hancom": [
               13,
@@ -289,6 +692,47 @@
           "blurDiff": 18.491361493836113,
           "layoutDiff": 13.270874424720592,
           "inkMeanDelta": 30.89366726741656,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 53,
+                "end": 56,
+                "score": 0.8929
+              },
+              {
+                "start": 95,
+                "end": 96,
+                "score": 0.8929
+              },
+              {
+                "start": 319,
+                "end": 320,
+                "score": 0.8929
+              },
+              {
+                "start": 250,
+                "end": 250,
+                "score": 0.8929
+              },
+              {
+                "start": 19,
+                "end": 20,
+                "score": 0.8893
+              }
+            ],
+            "columns": [
+              {
+                "start": 13,
+                "end": 13,
+                "score": 0.9162
+              },
+              {
+                "start": 261,
+                "end": 263,
+                "score": 0.5406
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               14,
@@ -316,6 +760,47 @@
           "blurDiff": 18.98637432188065,
           "layoutDiff": 13.197178477690299,
           "inkMeanDelta": 23.662310350007516,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 377,
+                "end": 377,
+                "score": 0.8107
+              },
+              {
+                "start": 383,
+                "end": 384,
+                "score": 0.8089
+              },
+              {
+                "start": 28,
+                "end": 28,
+                "score": 0.8071
+              },
+              {
+                "start": 328,
+                "end": 328,
+                "score": 0.8071
+              },
+              {
+                "start": 304,
+                "end": 305,
+                "score": 0.8054
+              }
+            ],
+            "columns": [
+              {
+                "start": 26,
+                "end": 27,
+                "score": 0.8873
+              },
+              {
+                "start": 252,
+                "end": 252,
+                "score": 0.8228
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               27,
@@ -360,6 +845,52 @@
           "blurDiff": 15.4389504916769,
           "layoutDiff": 16.887688277668687,
           "inkMeanDelta": 66.95905256963516,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 242,
+                "end": 243,
+                "score": 0.8577
+              },
+              {
+                "start": 363,
+                "end": 363,
+                "score": 0.8541
+              },
+              {
+                "start": 280,
+                "end": 280,
+                "score": 0.8505
+              },
+              {
+                "start": 299,
+                "end": 299,
+                "score": 0.8505
+              },
+              {
+                "start": 61,
+                "end": 61,
+                "score": 0.8434
+              }
+            ],
+            "columns": [
+              {
+                "start": 20,
+                "end": 21,
+                "score": 0.7947
+              },
+              {
+                "start": 259,
+                "end": 261,
+                "score": 0.7204
+              },
+              {
+                "start": 45,
+                "end": 46,
+                "score": 0.4748
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               21,
@@ -387,14 +918,14 @@
       "filename": "attachment-sale-notice.hwp",
       "advisoryPageCount": 4,
       "averages": {
-        "rawDiff": 27.286315837794334,
-        "blurDiff": 19.789638349664294,
-        "layoutDiff": 26.296481929929787,
-        "inkMeanDelta": 20.169760194503382,
-        "bboxLeftDelta": -10.25,
+        "rawDiff": 27.06031765696227,
+        "blurDiff": 19.579129043149372,
+        "layoutDiff": 26.07552200628767,
+        "inkMeanDelta": 19.23616364524073,
+        "bboxLeftDelta": -15.5,
         "bboxTopDelta": -4.25,
-        "bboxWidthDelta": 3.5,
-        "bboxHeightDelta": 10.25
+        "bboxWidthDelta": 13.25,
+        "bboxHeightDelta": 10.0
       },
       "pages": [
         {
@@ -404,6 +935,10 @@
           "blurDiff": 20.28488740451106,
           "layoutDiff": 26.902257286872675,
           "inkMeanDelta": 19.141475416367825,
+          "hotBands": {
+            "rows": [],
+            "columns": []
+          },
           "bbox": {
             "hancom": [
               21,
@@ -431,6 +966,36 @@
           "blurDiff": 20.903012103012102,
           "layoutDiff": 31.59625962596259,
           "inkMeanDelta": 32.66014165355989,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 535,
+                "end": 536,
+                "score": 0.9242
+              },
+              {
+                "start": 505,
+                "end": 505,
+                "score": 0.899
+              },
+              {
+                "start": 22,
+                "end": 23,
+                "score": 0.8965
+              },
+              {
+                "start": 6,
+                "end": 7,
+                "score": 0.8939
+              },
+              {
+                "start": 19,
+                "end": 19,
+                "score": 0.8914
+              }
+            ],
+            "columns": []
+          },
           "bbox": {
             "hancom": [
               21,
@@ -454,29 +1019,59 @@
         {
           "page": 3,
           "verdict": "review",
-          "rawDiff": 23.00559809565186,
-          "blurDiff": 18.77481807320517,
-          "layoutDiff": 22.760245452553168,
-          "inkMeanDelta": 15.291523013562653,
+          "rawDiff": 22.101605372323604,
+          "blurDiff": 17.932780847145487,
+          "layoutDiff": 21.876405757984706,
+          "inkMeanDelta": 11.557136816512042,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 377,
+                "end": 384,
+                "score": 0.8984
+              },
+              {
+                "start": 310,
+                "end": 317,
+                "score": 0.8977
+              },
+              {
+                "start": 527,
+                "end": 527,
+                "score": 0.8965
+              },
+              {
+                "start": 278,
+                "end": 278,
+                "score": 0.8939
+              },
+              {
+                "start": 374,
+                "end": 374,
+                "score": 0.8939
+              }
+            ],
+            "columns": []
+          },
           "bbox": {
             "hancom": [
+              21,
               0,
-              0,
-              396,
-              549
+              378,
+              535
             ],
             "chrome": [
               0,
               6,
               376,
-              558
+              543
             ],
-            "leftDelta": 0,
+            "leftDelta": -21,
             "topDelta": 6,
-            "widthDelta": -20,
-            "heightDelta": 3
+            "widthDelta": 19,
+            "heightDelta": 2
           },
-          "class": "mixed-or-minor"
+          "class": "layout-or-scale"
         },
         {
           "page": 4,
@@ -485,6 +1080,36 @@
           "blurDiff": 19.19583581792884,
           "layoutDiff": 23.927165354330718,
           "inkMeanDelta": 13.585900694523161,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 6,
+                "end": 7,
+                "score": 0.8939
+              },
+              {
+                "start": 538,
+                "end": 545,
+                "score": 0.8924
+              },
+              {
+                "start": 450,
+                "end": 455,
+                "score": 0.8918
+              },
+              {
+                "start": 250,
+                "end": 266,
+                "score": 0.8567
+              },
+              {
+                "start": 222,
+                "end": 243,
+                "score": 0.851
+              }
+            ],
+            "columns": []
+          },
           "bbox": {
             "hancom": [
               21,
@@ -512,14 +1137,14 @@
       "filename": "incheon-2a.hwpx",
       "advisoryPageCount": 15,
       "averages": {
-        "rawDiff": 23.545819115082008,
-        "blurDiff": 18.494706866752505,
-        "layoutDiff": 29.50432764862933,
-        "inkMeanDelta": 24.729248660105124,
-        "bboxLeftDelta": 7.866666666666666,
+        "rawDiff": 23.369664121990322,
+        "blurDiff": 18.30111673079748,
+        "layoutDiff": 29.408263161152806,
+        "inkMeanDelta": 24.350738184684655,
+        "bboxLeftDelta": -0.9333333333333333,
         "bboxTopDelta": 1.1333333333333333,
-        "bboxWidthDelta": -17.933333333333334,
-        "bboxHeightDelta": -7.2
+        "bboxWidthDelta": -1.9333333333333333,
+        "bboxHeightDelta": -4.533333333333333
       },
       "pages": [
         {
@@ -529,6 +1154,36 @@
           "blurDiff": 20.72957622823214,
           "layoutDiff": 43.10267367959675,
           "inkMeanDelta": 49.11717300927407,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 284,
+                "end": 284,
+                "score": 0.899
+              },
+              {
+                "start": 294,
+                "end": 294,
+                "score": 0.899
+              },
+              {
+                "start": 541,
+                "end": 541,
+                "score": 0.8965
+              },
+              {
+                "start": 60,
+                "end": 62,
+                "score": 0.8939
+              },
+              {
+                "start": 282,
+                "end": 282,
+                "score": 0.8939
+              }
+            ],
+            "columns": []
+          },
           "bbox": {
             "hancom": [
               21,
@@ -556,6 +1211,42 @@
           "blurDiff": 18.93783993783994,
           "layoutDiff": 32.19597550306213,
           "inkMeanDelta": 32.591331028857724,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 35,
+                "end": 35,
+                "score": 0.899
+              },
+              {
+                "start": 26,
+                "end": 28,
+                "score": 0.8965
+              },
+              {
+                "start": 540,
+                "end": 540,
+                "score": 0.8914
+              },
+              {
+                "start": 544,
+                "end": 545,
+                "score": 0.8788
+              },
+              {
+                "start": 38,
+                "end": 38,
+                "score": 0.8763
+              }
+            ],
+            "columns": [
+              {
+                "start": 377,
+                "end": 377,
+                "score": 0.9034
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               22,
@@ -583,6 +1274,10 @@
           "blurDiff": 22.86214293472358,
           "layoutDiff": 36.70227920227921,
           "inkMeanDelta": 40.47894445135677,
+          "hotBands": {
+            "rows": [],
+            "columns": []
+          },
           "bbox": {
             "hancom": [
               22,
@@ -610,6 +1305,10 @@
           "blurDiff": 20.656633539698056,
           "layoutDiff": 26.498465921542845,
           "inkMeanDelta": 19.069839124246045,
+          "hotBands": {
+            "rows": [],
+            "columns": []
+          },
           "bbox": {
             "hancom": [
               22,
@@ -637,6 +1336,10 @@
           "blurDiff": 18.181935845914342,
           "layoutDiff": 31.677076484768776,
           "inkMeanDelta": 21.454538476300115,
+          "hotBands": {
+            "rows": [],
+            "columns": []
+          },
           "bbox": {
             "hancom": [
               22,
@@ -664,6 +1367,42 @@
           "blurDiff": 15.553179645921581,
           "layoutDiff": 25.248191978961216,
           "inkMeanDelta": 16.346669675217527,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 30,
+                "end": 30,
+                "score": 0.899
+              },
+              {
+                "start": 539,
+                "end": 540,
+                "score": 0.8965
+              },
+              {
+                "start": 23,
+                "end": 23,
+                "score": 0.8965
+              },
+              {
+                "start": 157,
+                "end": 157,
+                "score": 0.8965
+              },
+              {
+                "start": 536,
+                "end": 536,
+                "score": 0.8965
+              }
+            ],
+            "columns": [
+              {
+                "start": 377,
+                "end": 377,
+                "score": 0.8835
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               22,
@@ -691,6 +1430,47 @@
           "blurDiff": 16.471867960177313,
           "layoutDiff": 22.395489548954867,
           "inkMeanDelta": 10.167839393790274,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 121,
+                "end": 121,
+                "score": 0.899
+              },
+              {
+                "start": 538,
+                "end": 539,
+                "score": 0.8965
+              },
+              {
+                "start": 535,
+                "end": 535,
+                "score": 0.8965
+              },
+              {
+                "start": 442,
+                "end": 443,
+                "score": 0.8939
+              },
+              {
+                "start": 8,
+                "end": 8,
+                "score": 0.8939
+              }
+            ],
+            "columns": [
+              {
+                "start": 377,
+                "end": 377,
+                "score": 0.8651
+              },
+              {
+                "start": 21,
+                "end": 22,
+                "score": 0.8615
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               22,
@@ -718,6 +1498,47 @@
           "blurDiff": 17.602470652470654,
           "layoutDiff": 22.483498349834978,
           "inkMeanDelta": 9.529332726030503,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 28,
+                "end": 28,
+                "score": 0.899
+              },
+              {
+                "start": 118,
+                "end": 118,
+                "score": 0.899
+              },
+              {
+                "start": 103,
+                "end": 112,
+                "score": 0.8987
+              },
+              {
+                "start": 537,
+                "end": 538,
+                "score": 0.8965
+              },
+              {
+                "start": 533,
+                "end": 533,
+                "score": 0.8965
+              }
+            ],
+            "columns": [
+              {
+                "start": 21,
+                "end": 21,
+                "score": 0.9045
+              },
+              {
+                "start": 377,
+                "end": 377,
+                "score": 0.8505
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               22,
@@ -745,6 +1566,42 @@
           "blurDiff": 16.921804091641047,
           "layoutDiff": 31.80223550243469,
           "inkMeanDelta": 29.473564133174136,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 350,
+                "end": 350,
+                "score": 0.899
+              },
+              {
+                "start": 533,
+                "end": 535,
+                "score": 0.8965
+              },
+              {
+                "start": 316,
+                "end": 316,
+                "score": 0.8965
+              },
+              {
+                "start": 323,
+                "end": 323,
+                "score": 0.8864
+              },
+              {
+                "start": 344,
+                "end": 344,
+                "score": 0.8813
+              }
+            ],
+            "columns": [
+              {
+                "start": 377,
+                "end": 377,
+                "score": 0.8913
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
               22,
@@ -768,97 +1625,151 @@
         {
           "page": 12,
           "verdict": "review",
-          "rawDiff": 20.63208486309752,
-          "blurDiff": 15.61215683051126,
-          "layoutDiff": 22.719240114866366,
-          "inkMeanDelta": 9.50392257916738,
+          "rawDiff": 20.338008029478083,
+          "blurDiff": 15.300307979981302,
+          "layoutDiff": 22.316478154801498,
+          "inkMeanDelta": 8.693255915762307,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 532,
+                "end": 533,
+                "score": 0.8965
+              },
+              {
+                "start": 15,
+                "end": 15,
+                "score": 0.8965
+              },
+              {
+                "start": 294,
+                "end": 294,
+                "score": 0.8763
+              },
+              {
+                "start": 268,
+                "end": 269,
+                "score": 0.8725
+              },
+              {
+                "start": 505,
+                "end": 505,
+                "score": 0.8712
+              }
+            ],
+            "columns": [
+              {
+                "start": 377,
+                "end": 377,
+                "score": 0.9183
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
-              0,
+              22,
               5,
-              396,
-              553
+              378,
+              543
             ],
             "chrome": [
               21,
               16,
               375,
-              542
+              540
             ],
-            "leftDelta": 21,
+            "leftDelta": -1,
             "topDelta": 11,
-            "widthDelta": -42,
-            "heightDelta": -22
+            "widthDelta": -2,
+            "heightDelta": -14
           },
-          "class": "layout-or-scale"
+          "class": "mixed-or-minor"
         },
         {
           "page": 13,
           "verdict": "review",
-          "rawDiff": 19.575811882263494,
-          "blurDiff": 16.576545020093405,
-          "layoutDiff": 35.662941047556416,
-          "inkMeanDelta": 27.46891713072725,
+          "rawDiff": 18.72171717171717,
+          "blurDiff": 15.684481175390266,
+          "layoutDiff": 34.89888888888887,
+          "inkMeanDelta": 25.06063870501353,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 14,
+                "end": 15,
+                "score": 0.8977
+              },
+              {
+                "start": 531,
+                "end": 532,
+                "score": 0.8965
+              },
+              {
+                "start": 282,
+                "end": 282,
+                "score": 0.8939
+              },
+              {
+                "start": 100,
+                "end": 100,
+                "score": 0.8864
+              },
+              {
+                "start": 222,
+                "end": 223,
+                "score": 0.8851
+              }
+            ],
+            "columns": [
+              {
+                "start": 22,
+                "end": 22,
+                "score": 0.9236
+              },
+              {
+                "start": 377,
+                "end": 377,
+                "score": 0.92
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
-              0,
+              22,
               4,
-              396,
-              555
+              378,
+              542
             ],
             "chrome": [
               21,
               8,
               375,
-              546
+              539
             ],
-            "leftDelta": 21,
+            "leftDelta": -1,
             "topDelta": 4,
-            "widthDelta": -42,
-            "heightDelta": -13
+            "widthDelta": -2,
+            "heightDelta": -7
           },
           "class": "layout-or-scale"
         },
         {
           "page": 14,
           "verdict": "review",
-          "rawDiff": 26.352797690163282,
-          "blurDiff": 17.643491365265557,
-          "layoutDiff": 20.68923953539339,
-          "inkMeanDelta": -6.271458458986729,
-          "bbox": {
-            "hancom": [
-              0,
-              2,
-              396,
-              553
-            ],
-            "chrome": [
-              21,
-              8,
-              375,
-              546
-            ],
-            "leftDelta": 21,
-            "topDelta": 6,
-            "widthDelta": -42,
-            "heightDelta": -13
+          "rawDiff": 25.690702646907027,
+          "blurDiff": 16.82939799454398,
+          "layoutDiff": 20.86401160196341,
+          "inkMeanDelta": -8.080521509368452,
+          "hotBands": {
+            "rows": [],
+            "columns": []
           },
-          "class": "layout-or-scale"
-        },
-        {
-          "page": 15,
-          "verdict": "review",
-          "rawDiff": 23.811873294993735,
-          "blurDiff": 17.753451485659514,
-          "layoutDiff": 20.134426595269982,
-          "inkMeanDelta": 5.390673469155871,
           "bbox": {
             "hancom": [
-              0,
-              0,
-              396,
-              548
+              22,
+              2,
+              378,
+              540
             ],
             "chrome": [
               21,
@@ -866,53 +1777,145 @@
               375,
               537
             ],
-            "leftDelta": 21,
-            "topDelta": 8,
-            "widthDelta": -42,
-            "heightDelta": -19
+            "leftDelta": -1,
+            "topDelta": 6,
+            "widthDelta": -2,
+            "heightDelta": -9
           },
-          "class": "layout-or-scale"
+          "class": "mixed-or-minor"
         },
         {
-          "page": 16,
+          "page": 15,
           "verdict": "review",
-          "rawDiff": 28.570840950639855,
-          "blurDiff": 21.620630435986925,
-          "layoutDiff": 35.809859154929605,
-          "inkMeanDelta": 56.44105649602284,
+          "rawDiff": 23.527264402264404,
+          "blurDiff": 17.451784326784328,
+          "layoutDiff": 19.83366935483873,
+          "inkMeanDelta": 4.686290127090757,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 528,
+                "end": 529,
+                "score": 0.8965
+              },
+              {
+                "start": 236,
+                "end": 236,
+                "score": 0.8561
+              },
+              {
+                "start": 243,
+                "end": 243,
+                "score": 0.8561
+              },
+              {
+                "start": 515,
+                "end": 515,
+                "score": 0.851
+              },
+              {
+                "start": 522,
+                "end": 522,
+                "score": 0.8485
+              }
+            ],
+            "columns": [
+              {
+                "start": 377,
+                "end": 377,
+                "score": 0.9267
+              },
+              {
+                "start": 22,
+                "end": 22,
+                "score": 0.9084
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
+              22,
               0,
-              0,
-              396,
-              547
+              378,
+              539
             ],
             "chrome": [
               21,
               8,
               375,
-              536
+              535
             ],
-            "leftDelta": 21,
+            "leftDelta": -1,
             "topDelta": 8,
-            "widthDelta": -42,
-            "heightDelta": -19
+            "widthDelta": -2,
+            "heightDelta": -12
           },
-          "class": "layout-or-scale"
+          "class": "mixed-or-minor"
         },
         {
-          "page": 17,
+          "page": 16,
           "verdict": "review",
-          "rawDiff": 24.81697247706422,
-          "blurDiff": 20.296877027152256,
-          "layoutDiff": 35.44332210998877,
-          "inkMeanDelta": 50.176386667243094,
+          "rawDiff": 28.3045547215272,
+          "blurDiff": 21.333342600315078,
+          "layoutDiff": 35.79012345679015,
+          "inkMeanDelta": 56.94918954482924,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 527,
+                "end": 528,
+                "score": 0.8965
+              },
+              {
+                "start": 8,
+                "end": 10,
+                "score": 0.8384
+              },
+              {
+                "start": 376,
+                "end": 381,
+                "score": 0.8274
+              },
+              {
+                "start": 52,
+                "end": 54,
+                "score": 0.8165
+              },
+              {
+                "start": 80,
+                "end": 80,
+                "score": 0.8106
+              }
+            ],
+            "columns": [
+              {
+                "start": 377,
+                "end": 377,
+                "score": 0.9266
+              },
+              {
+                "start": 21,
+                "end": 21,
+                "score": 0.855
+              },
+              {
+                "start": 89,
+                "end": 89,
+                "score": 0.7138
+              },
+              {
+                "start": 270,
+                "end": 270,
+                "score": 0.6899
+              }
+            ]
+          },
           "bbox": {
             "hancom": [
+              22,
               0,
-              0,
-              396,
-              545
+              378,
+              538
             ],
             "chrome": [
               21,
@@ -920,10 +1923,93 @@
               375,
               534
             ],
-            "leftDelta": 21,
+            "leftDelta": -1,
             "topDelta": 8,
-            "widthDelta": -42,
-            "heightDelta": -19
+            "widthDelta": -2,
+            "heightDelta": -12
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 17,
+          "verdict": "review",
+          "rawDiff": 24.535809289952937,
+          "blurDiff": 19.99998604832859,
+          "layoutDiff": 35.31488978857399,
+          "inkMeanDelta": 49.722987968695264,
+          "hotBands": {
+            "rows": [
+              {
+                "start": 524,
+                "end": 526,
+                "score": 0.8965
+              },
+              {
+                "start": 7,
+                "end": 7,
+                "score": 0.8965
+              },
+              {
+                "start": 9,
+                "end": 13,
+                "score": 0.8758
+              },
+              {
+                "start": 44,
+                "end": 45,
+                "score": 0.875
+              },
+              {
+                "start": 39,
+                "end": 39,
+                "score": 0.8586
+              }
+            ],
+            "columns": [
+              {
+                "start": 377,
+                "end": 377,
+                "score": 0.93
+              },
+              {
+                "start": 32,
+                "end": 32,
+                "score": 0.8692
+              },
+              {
+                "start": 174,
+                "end": 174,
+                "score": 0.8582
+              },
+              {
+                "start": 368,
+                "end": 368,
+                "score": 0.8379
+              },
+              {
+                "start": 79,
+                "end": 79,
+                "score": 0.825
+              }
+            ]
+          },
+          "bbox": {
+            "hancom": [
+              22,
+              0,
+              378,
+              535
+            ],
+            "chrome": [
+              21,
+              8,
+              375,
+              532
+            ],
+            "leftDelta": -1,
+            "topDelta": 8,
+            "widthDelta": -2,
+            "heightDelta": -11
           },
           "class": "layout-or-scale"
         }

@@ -2,8 +2,8 @@
   "viewerUrl": "http://127.0.0.1:4173/pages/viewer.html",
   "viewerFontOverrides": "",
   "sessionName": "verify-current",
-  "strictPageExpectations": true,
-  "generatedAt": "2026-05-06T12:41:11.821Z",
+  "strictPageExpectations": false,
+  "generatedAt": "2026-05-08T20:29:34.660Z",
   "downloadsDirectory": "/Users/shinehandmac/Downloads",
   "hancomOracleBaselinePath": "/Users/shinehandmac/Github/ChromeHWP/docs/hancom-oracle-page-baseline.json",
   "downloadsInventory": [
@@ -216,55 +216,38 @@
       "diagnosticFontsUsed": [],
       "renderedFontsUsed": [
         "한양신명조",
-        "Noto Serif KR",
+        "휴먼명조",
         "고운바탕",
         "나눔명조",
-        "휴먼명조",
-        "휴먼옛체",
         "AppleMyungjo",
         "Batang",
-        "Malgun Gothic",
-        "Apple SD Gothic Neo",
-        "나눔고딕",
-        "돋움",
-        "한양중고딕",
-        "휴먼고딕",
-        "NanumSquareNeo",
-        "Noto Sans KR",
-        "Pretendard",
-        "Wanted Sans",
-        "함초롬돋움",
-        "함초롬바탕",
-        "HCR Batang"
+        "Noto Serif KR",
+        "휴먼옛체"
       ],
       "renderedFontDiagnostics": {
-        "inspectedElementCount": 665,
-        "totalElementCount": 665,
-        "textElementCount": 123,
-        "styledElementCount": 123,
+        "inspectedElementCount": 681,
+        "totalElementCount": 681,
+        "textElementCount": 126,
+        "styledElementCount": 126,
         "truncated": false,
         "fontFamilyHistogram": [
           {
             "value": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
-            "count": 103
+            "count": 125
           },
           {
-            "value": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "count": 15
-          },
-          {
-            "value": "\"HCR Batang\", 함초롬바탕, 함초롬돋움, \"Noto Serif KR\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", serif",
-            "count": 5
+            "value": "휴먼명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "count": 1
           }
         ],
         "fontSizeHistogram": [
           {
             "value": "14.6667px",
-            "count": 76
+            "count": 61
           },
           {
             "value": "14px",
-            "count": 32
+            "count": 50
           },
           {
             "value": "16px",
@@ -272,10 +255,10 @@
           },
           {
             "value": "13.3333px",
-            "count": 3
+            "count": 4
           },
           {
-            "value": "14.5px",
+            "value": "17.3333px",
             "count": 3
           },
           {
@@ -283,45 +266,37 @@
             "count": 1
           },
           {
-            "value": "12.7px",
-            "count": 1
-          },
-          {
-            "value": "19px",
+            "value": "21.3333px",
             "count": 1
           }
         ],
         "lineHeightHistogram": [
           {
             "value": "23.1733px",
-            "count": 76
+            "count": 61
           },
           {
             "value": "22.12px",
-            "count": 32
+            "count": 50
           },
           {
             "value": "25.28px",
             "count": 6
           },
           {
-            "value": "15.08px",
-            "count": 3
-          },
-          {
             "value": "21.0667px",
-            "count": 3
+            "count": 4
           },
           {
-            "value": "14.986px",
-            "count": 1
+            "value": "27.3867px",
+            "count": 3
           },
           {
             "value": "16.8533px",
             "count": 1
           },
           {
-            "value": "20.14px",
+            "value": "33.7067px",
             "count": 1
           }
         ],
@@ -335,36 +310,36 @@
             "lineHeight": "16.8533px"
           },
           {
-            "tagName": "p",
-            "className": "hwp-form-title-label",
-            "text": "등록신청서",
-            "fontFamily": "\"HCR Batang\", 함초롬바탕, 함초롬돋움, \"Noto Serif KR\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", serif",
-            "fontSize": "19px",
-            "lineHeight": "20.14px"
-          },
-          {
-            "tagName": "p",
-            "className": "hwp-form-title-option",
+            "tagName": "span",
+            "className": "",
             "text": "□ 고엽제후유(의)증환자",
-            "fontFamily": "\"HCR Batang\", 함초롬바탕, 함초롬돋움, \"Noto Serif KR\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", serif",
-            "fontSize": "14.5px",
-            "lineHeight": "15.08px"
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "17.3333px",
+            "lineHeight": "27.3867px"
           },
           {
-            "tagName": "p",
-            "className": "hwp-form-title-option",
+            "tagName": "span",
+            "className": "",
+            "text": "등 록 신 청 서",
+            "fontFamily": "휴먼명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "21.3333px",
+            "lineHeight": "33.7067px"
+          },
+          {
+            "tagName": "span",
+            "className": "",
             "text": "□ 고엽제후유증환자 유족",
-            "fontFamily": "\"HCR Batang\", 함초롬바탕, 함초롬돋움, \"Noto Serif KR\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", serif",
-            "fontSize": "14.5px",
-            "lineHeight": "15.08px"
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "17.3333px",
+            "lineHeight": "27.3867px"
           },
           {
-            "tagName": "p",
-            "className": "hwp-form-title-option",
+            "tagName": "span",
+            "className": "",
             "text": "□ 고엽제후유증 2세환자",
-            "fontFamily": "\"HCR Batang\", 함초롬바탕, 함초롬돋움, \"Noto Serif KR\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", serif",
-            "fontSize": "14.5px",
-            "lineHeight": "15.08px"
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "17.3333px",
+            "lineHeight": "27.3867px"
           },
           {
             "tagName": "span",
@@ -375,36 +350,44 @@
             "lineHeight": "21.0667px"
           },
           {
-            "tagName": "p",
-            "className": "hwp-table-paragraph",
-            "text": "90일",
-            "fontFamily": "\"HCR Batang\", 함초롬바탕, 함초롬돋움, \"Noto Serif KR\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", serif",
-            "fontSize": "12.7px",
-            "lineHeight": "14.986px"
+            "tagName": "span",
+            "className": "",
+            "text": "90 일",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "13.3333px",
+            "lineHeight": "21.0667px"
           },
           {
             "tagName": "span",
             "className": "",
-            "text": "①성명",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "text": "①성 명",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
             "className": "",
-            "text": "②주민등록번호",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "text": "②",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
             "className": "",
-            "text": "③주소",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "text": "주민등록번호",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
+          },
+          {
+            "tagName": "span",
+            "className": "",
+            "text": "③주 소",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
@@ -417,42 +400,50 @@
           {
             "tagName": "span",
             "className": "",
-            "text": "④입대일자",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "text": "④ 입 대",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
             "className": "",
-            "text": "⑤계급",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "text": "일 자",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
             "className": "",
-            "text": "⑥군별",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "text": "⑤계 급",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
             "className": "",
-            "text": "⑦군번",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "text": "⑥군 별",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
+          },
+          {
+            "tagName": "span",
+            "className": "",
+            "text": "⑦군 번",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
             "className": "",
             "text": "⑧질병명",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
@@ -474,6 +465,14 @@
             "tagName": "span",
             "className": "",
             "text": "3.",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
+          },
+          {
+            "tagName": "span",
+            "className": "",
+            "text": "4.",
             "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
             "fontSize": "14px",
             "lineHeight": "22.12px"
@@ -530,57 +529,57 @@
             "tagName": "span",
             "className": "",
             "text": "⑬고엽제후유(의)증",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
             "className": "",
             "text": "환자 등과의 관계",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
             "className": "",
-            "text": "⑭성명",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "text": "⑭성 명",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
             "className": "",
-            "text": "⑮주민등록번호",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "text": "⑮주 민 등 록 번 호",
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
             "className": "",
             "text": "학 력",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
             "className": "",
             "text": "직 업",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
             "className": "",
             "text": "월소득(천원)",
-            "fontFamily": "\"Malgun Gothic\", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
+            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
+            "fontSize": "14px",
+            "lineHeight": "22.12px"
           },
           {
             "tagName": "span",
@@ -781,55 +780,18 @@
             "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
             "fontSize": "14.6667px",
             "lineHeight": "23.1733px"
-          },
-          {
-            "tagName": "span",
-            "className": "",
-            "text": "(지)청장",
-            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
-          },
-          {
-            "tagName": "span",
-            "className": "",
-            "text": "소",
-            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
-          },
-          {
-            "tagName": "span",
-            "className": "",
-            "text": "견",
-            "fontFamily": "휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, \"Noto Serif KR\", Batang, AppleMyungjo, serif",
-            "fontSize": "14.6667px",
-            "lineHeight": "23.1733px"
           }
         ]
       },
       "fontsUsed": [
         "한양신명조",
-        "Noto Serif KR",
+        "휴먼명조",
         "고운바탕",
         "나눔명조",
-        "휴먼명조",
-        "휴먼옛체",
         "AppleMyungjo",
         "Batang",
-        "Malgun Gothic",
-        "Apple SD Gothic Neo",
-        "나눔고딕",
-        "돋움",
-        "한양중고딕",
-        "휴먼고딕",
-        "NanumSquareNeo",
-        "Noto Sans KR",
-        "Pretendard",
-        "Wanted Sans",
-        "함초롬돋움",
-        "함초롬바탕",
-        "HCR Batang"
+        "Noto Serif KR",
+        "휴먼옛체"
       ],
       "fontsUsedSource": "rendered-dom",
       "resolvedFonts": [],
@@ -1565,9 +1527,9 @@
       ],
       "renderedFontDiagnostics": {
         "inspectedElementCount": 2400,
-        "totalElementCount": 2989,
-        "textElementCount": 589,
-        "styledElementCount": 589,
+        "totalElementCount": 2990,
+        "textElementCount": 588,
+        "styledElementCount": 588,
         "truncated": true,
         "fontFamilyHistogram": [
           {
@@ -1588,7 +1550,7 @@
           },
           {
             "value": "돋움, 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
-            "count": 47
+            "count": 46
           },
           {
             "value": "한양견고딕, 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, \"Wanted Sans\", \"Malgun Gothic\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", Pretendard, sans-serif",
@@ -1610,7 +1572,7 @@
         "fontSizeHistogram": [
           {
             "value": "13.3333px",
-            "count": 260
+            "count": 259
           },
           {
             "value": "16px",
@@ -1652,7 +1614,7 @@
         "lineHeightHistogram": [
           {
             "value": "21.0667px",
-            "count": 260
+            "count": 259
           },
           {
             "value": "25.28px",

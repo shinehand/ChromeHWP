@@ -374,7 +374,47 @@ def remove_bottom_dark_band(image, dark_row_run_min=3):
             cut_y = height
 
     if dark_run >= dark_row_run_min and cut_y > height * 0.78:
-        return image.crop((0, 0, width, cut_y))
+        image = image.crop((0, 0, width, cut_y))
+    return remove_bottom_uniform_shadow_band(image)
+
+
+def remove_bottom_uniform_shadow_band(image):
+    width, height = image.size
+    pixels = image.load()
+    shadow_rows = []
+
+    for y in range(max(0, height - 90), height):
+        values = []
+        for x in range(width):
+            red, green, blue = pixels[x, y][:3]
+            values.append(round((red + green + blue) / 3))
+        non_white = sum(1 for value in values if value < 245)
+        if non_white < width * 0.95:
+            continue
+        if max(values) - min(values) > 4:
+            continue
+        if sum(values) / max(1, width) >= 245:
+            continue
+        shadow_rows.append(y)
+
+    if not shadow_rows:
+        return image
+
+    runs = []
+    start = previous = shadow_rows[0]
+    for y in shadow_rows[1:]:
+        if y == previous + 1:
+            previous = y
+            continue
+        runs.append((start, previous))
+        start = previous = y
+    runs.append((start, previous))
+
+    trailing_runs = [run for run in runs if run[1] > height * 0.78]
+    if trailing_runs:
+        cut_y = trailing_runs[-1][0]
+        if 0 < cut_y < height:
+            return image.crop((0, 0, width, cut_y))
     return image
 
 

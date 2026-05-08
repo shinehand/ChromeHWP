@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "generatedAt": "2026-05-08T20:07:05.056Z",
-  "url": "http://127.0.0.1:60060/src/editor/editor.html",
-  "session": "ext-moxcj3ki",
-  "strictPageExpectations": false,
+  "generatedAt": "2026-05-08T20:36:36.441Z",
+  "url": "http://127.0.0.1:61356/src/editor/editor.html",
+  "session": "ext-moxdl4rt",
+  "strictPageExpectations": true,
   "baselinePath": "/Users/shinehandmac/Github/ChromeHWP/docs/hancom-oracle-page-baseline.json",
   "distDir": "/Users/shinehandmac/Github/ChromeHWP/dist",
   "expectations": [
@@ -177,7 +177,7 @@
           "height": 1123
         }
       ],
-      "elapsedMs": 52,
+      "elapsedMs": 35,
       "expectations": {
         "format": "HWP",
         "pages": 2,
@@ -437,7 +437,7 @@
           "height": 1123
         }
       ],
-      "elapsedMs": 217,
+      "elapsedMs": 85,
       "expectations": {
         "format": "HWP",
         "pages": 11,
@@ -537,7 +537,7 @@
           "height": 1123
         }
       ],
-      "elapsedMs": 20,
+      "elapsedMs": 22,
       "expectations": {
         "format": "HWP",
         "pages": 1,
@@ -761,7 +761,7 @@
           "height": 1587
         }
       ],
-      "elapsedMs": 95,
+      "elapsedMs": 67,
       "expectations": {
         "format": "HWP",
         "pages": 4,
@@ -1166,7 +1166,7 @@
           "height": 1587
         }
       ],
-      "elapsedMs": 521,
+      "elapsedMs": 313,
       "expectations": {
         "format": "HWPX",
         "pages": 18,
