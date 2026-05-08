@@ -520,6 +520,10 @@ dd {
   outline-offset: 0;
 }
 
+.hwp-page[data-source-format="hwpx"] .hwp-page-body {
+  filter: brightness(1.2);
+}
+
 .hwp-page-body {
   box-sizing: border-box;
   width: 100%;
