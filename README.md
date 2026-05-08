@@ -215,6 +215,7 @@ python3 scripts/build_hancom_page_audit.py
 
 ### 형식 분석
 
+- [Editor Deep Research 2026-05-08](docs/editor-deep-research-2026-05-08.md)
 - [HWP 5.0 분석](docs/hwp-spec-analysis/hwp-5.0-revision1.3.md)
 - [HWPML 3.0 분석](docs/hwp-spec-analysis/hwpml-3.0-revision1.2.md)
 - [수식 분석](docs/hwp-spec-analysis/hwp-equation-revision1.3.md)
@@ -243,10 +244,11 @@ python3 scripts/build_hancom_page_audit.py
 
 ## 다음 우선순위
 
-1. 특정 문서명/문구에 의존하지 않는 일반 규칙으로 표/문단/개체 레이아웃 충실도를 높인다.
-2. HWP/HWPX 원본 메트릭(`lineSeg`, row/cell height, padding, anchor, caption)을 우선 사용하도록 파서·렌더러를 계속 정밀화한다.
-3. 대표 샘플의 페이지 흐름 불일치와 표 분할/반복 머리행/continuation 오차를 줄인다.
-4. 한컴 기준 전 페이지 감사에서 `mismatch`와 `review` 항목을 단계적으로 줄인다.
-5. 수식/차트/배포용 문서까지 동일 QA 기준을 확대 적용한다.
+1. [Editor Deep Research 2026-05-08](docs/editor-deep-research-2026-05-08.md)의 순서대로 `SourceDocument`와 `LayoutTree` 모델을 먼저 고정한다.
+2. 특정 문서명/문구에 의존하지 않는 일반 규칙으로 표/문단/개체 레이아웃 충실도를 높인다.
+3. HWP/HWPX 원본 메트릭(`lineSeg`, row/cell height, padding, anchor, caption)을 우선 사용하도록 파서·렌더러를 계속 정밀화한다.
+4. 대표 샘플의 페이지 흐름 불일치와 표 분할/반복 머리행/continuation 오차를 줄인다.
+5. 한컴 기준 전 페이지 감사에서 `mismatch`와 `review` 항목을 단계적으로 줄인다.
+6. 수식/차트/배포용 문서까지 동일 QA 기준을 확대 적용한다.
 
 주군, 이 README는 현재 전황과 기준 문서를 빠르게 찾기 위한 입구이옵니다. 실제 구현 판단은 반드시 위 연결 문서들과 최신 QA 리포트를 함께 보고 내리는 것이 옳사옵니다.
