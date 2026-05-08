@@ -599,6 +599,10 @@ dd {
   font-size: 0;
 }
 
+.hwp-page[data-source-format="hwpx"] .hwp-paragraph[data-decoration-rule="true"] {
+  opacity: 0;
+}
+
 .hwp-table-wrap {
   box-sizing: border-box;
   width: 100%;
