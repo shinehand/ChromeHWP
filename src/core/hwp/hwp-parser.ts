@@ -239,6 +239,7 @@ interface HwpParaShape {
   readonly textIndent: number;
   readonly lineSpacingType: 'percent' | 'fixed' | 'space-only' | 'minimum' | '';
   readonly lineSpacing: number;
+  readonly breakBefore: boolean;
 }
 
 interface HwpCharShapeRange {
@@ -1002,6 +1003,10 @@ function paginateBlocks(blocks: readonly DocumentBlock[], layout: PageLayout, co
 
   for (const block of flowBlocks) {
     let blockToPlace = block;
+    if (blockToPlace.type === 'paragraph' && blockToPlace._hwpxLayout?.breakBefore && current.length) {
+      flush();
+      context.stats.pageSplitCount += 1;
+    }
     const blockHeight = estimateBlockHeight(blockToPlace, bodyWidth);
     let visualMetrics = blockVisualMetrics(blockToPlace, bodyWidth, blockHeight);
     const fittedBlock = fitPositionedBlockWithinPage(blockToPlace, visualMetrics, pageCoordinateSpan, visualBottom);
@@ -2056,6 +2061,15 @@ function createParagraphBlock(text: string, context: HwpParseContext, draft?: Hw
   const runs = buildTextRuns(text, draft, context);
   const fallbackLineHeightPx = paragraphLineHeightPx({ type: 'paragraph', runs, lineHeight }, textRunsFontSizePx(runs));
   const segmentLayout = createParagraphLineSegmentLayout(draft, fallbackLineHeightPx);
+  const layout = paraShape?.breakBefore
+    ? {
+        ...(segmentLayout ?? {
+          heightPx: Math.max(MIN_PARAGRAPH_HEIGHT_PX, Math.round(fallbackLineHeightPx)),
+          source: 'hwp-para-shape-break-before'
+        }),
+        breakBefore: true
+      }
+    : segmentLayout;
   const block: ParagraphBlock = {
     type: 'paragraph',
     runs,
@@ -2063,7 +2077,7 @@ function createParagraphBlock(text: string, context: HwpParseContext, draft?: Hw
     ...(margin ? { margin } : {}),
     ...(paraShape?.textIndent ? { textIndent: paraShape.textIndent } : {}),
     ...(lineHeight ? { lineHeight } : {}),
-    ...(segmentLayout ? { _hwpxLayout: segmentLayout } : {})
+    ...(layout ? { _hwpxLayout: layout } : {})
   };
   paragraphMetrics.set(block, createParagraphMetrics(text, block, draft));
   return block;
@@ -2399,6 +2413,7 @@ function parseParaShape(body: Uint8Array): HwpParaShape | null {
   const lineSpacing = modernLineSpacing
     ? (lineSpacingType === 'percent' ? Math.round(modernLineSpacing / 100) : modernLineSpacing)
     : legacyLineSpacing;
+  const breakBefore = Boolean(attr & (1 << 19));
 
   return {
     align: hwpAlignFromAttr(attr),
@@ -2410,7 +2425,8 @@ function parseParaShape(body: Uint8Array): HwpParaShape | null {
     },
     textIndent: hwpSignedUnitToPx(readInt32(body, 12)),
     lineSpacingType,
-    lineSpacing
+    lineSpacing,
+    breakBefore
   };
 }
 

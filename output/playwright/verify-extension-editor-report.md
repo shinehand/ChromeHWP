@@ -1,8 +1,8 @@
 # Extension Editor Verification
 
-Generated: 2026-05-07T11:00:16.879Z
-URL: http://127.0.0.1:58221/src/editor/editor.html
-STRICT_PAGE_EXPECTATIONS: 0
+Generated: 2026-05-08T19:28:45.536Z
+URL: http://127.0.0.1:58899/src/editor/editor.html
+STRICT_PAGE_EXPECTATIONS: 1
 Baseline: /Users/shinehandmac/Github/ChromeHWP/docs/hancom-oracle-page-baseline.json
 
 | sample | format | pages | paragraphs | tables | images | status |
@@ -11,7 +11,7 @@ Baseline: /Users/shinehandmac/Github/ChromeHWP/docs/hancom-oracle-page-baseline.
 | HWP goyeopje-full-2024 | HWP 읽기 / HWPX 내보내기 / HWP | 11 / 11 | 745 / >=500 | 13 / >=10 | 0 / >=0 | ok |
 | HWP gyeolseokgye | HWP 읽기 / HWPX 내보내기 / HWP | 1 / 1 | 63 / >=40 | 3 / >=2 | 0 / >=0 | ok |
 | HWP attachment-sale-notice | HWP 읽기 / HWPX 내보내기 / HWP | 4 / 4 | 795 / >=300 | 22 / >=8 | 6 / >=1 | ok |
-| HWPX incheon-2a | HWPX / HWPX | 18 / 18 | 1846 / >=800 | 78 / >=20 | 24 / >=4 | ok |
+| HWPX incheon-2a | HWPX / HWPX | 18 / 18 | 1847 / >=800 | 78 / >=20 | 24 / >=4 | ok |
 
 ## Round Trip
 

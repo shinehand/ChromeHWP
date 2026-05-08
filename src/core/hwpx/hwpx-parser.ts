@@ -2603,7 +2603,12 @@ function computeRowSpanAwareRowHeights(rows: readonly HwpxTableRow[]): number[] 
       const rowSpan = Math.max(1, Math.min(layout?.rowSpan ?? cell.rowSpan, rowCount - rowIndex));
       const declaredHeight = declaredCellHeight(cell);
       const estimatedContentHeight = estimateBlocksHeight(cell.blocks as HwpxDocumentBlock[]) + boxVertical(cell.padding);
-      const totalHeight = Math.max(declaredHeight, estimatedContentHeight);
+      const shouldTrustDeclaredHeight = declaredHeight > 0
+        && rowSpan === 1
+        && declaredHeight >= estimatedContentHeight * 0.85;
+      const totalHeight = shouldTrustDeclaredHeight
+        ? declaredHeight
+        : Math.max(declaredHeight, estimatedContentHeight);
       if (rowSpan > 1) {
         spanningCells.push({ rowIndex, rowSpan, totalHeight });
         return;

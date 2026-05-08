@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "generatedAt": "2026-05-07T11:00:16.879Z",
-  "url": "http://127.0.0.1:58221/src/editor/editor.html",
-  "session": "ext-movdk4ti",
-  "strictPageExpectations": false,
+  "generatedAt": "2026-05-08T19:28:45.536Z",
+  "url": "http://127.0.0.1:58899/src/editor/editor.html",
+  "session": "ext-moxb5vn5",
+  "strictPageExpectations": true,
   "baselinePath": "/Users/shinehandmac/Github/ChromeHWP/docs/hancom-oracle-page-baseline.json",
   "distDir": "/Users/shinehandmac/Github/ChromeHWP/dist",
   "expectations": [
@@ -112,6 +112,9 @@
       "editableElements": 167,
       "activeEditableElements": 167,
       "parser": "hwp-ms-cfb-records",
+      "layoutTreePages": 2,
+      "layoutDiagnostics": 0,
+      "layoutDiagnosticEntries": [],
       "plainTextLength": 0,
       "bodyTextLength": 2140,
       "firstText": "※ 본적 : □ 고엽제후유(의)증환자 등 록 신 청 서 □ 고엽제후유증환자 유족 □ 고엽제후유증 2세환자 처리기간 90 일 ①성 명 ②주민등록번호 ③주 소 (전화 휴대폰 ) ④ 입 대 일 자 ⑤계 급 ⑥군 별 ⑦군 번 ⑧질병명 1. 2. 3. 4. 복 무 기 록 ⑨소속부대(중대까지) ⑩복 무 기 간 ⑪복 무 장 소 ⑫직 ",
@@ -120,6 +123,25 @@
         "readonly": 0,
         "exportable": 0,
         "uniqueExportableSrc": 0
+      },
+      "sourceMetadata": {
+        "sourceRefElements": 435,
+        "layoutBoxIdElements": 435,
+        "pageSourceRefs": 2,
+        "bodySourceRefs": 2,
+        "paragraphSourceRefs": 117,
+        "runSourceRefs": 143,
+        "tableSourceRefs": 2,
+        "rowSourceRefs": 34,
+        "cellSourceRefs": 133,
+        "imageSourceRefs": 0,
+        "malformedSourceRefs": 0,
+        "sourceFormats": [
+          "hwp"
+        ],
+        "sourceRoles": [
+          "section"
+        ]
       },
       "pageMetrics": [
         {
@@ -155,7 +177,7 @@
           "height": 1123
         }
       ],
-      "elapsedMs": 33,
+      "elapsedMs": 36,
       "expectations": {
         "format": "HWP",
         "pages": 2,
@@ -206,6 +228,9 @@
       "editableElements": 745,
       "activeEditableElements": 745,
       "parser": "hwp-ms-cfb-records",
+      "layoutTreePages": 11,
+      "layoutDiagnostics": 0,
+      "layoutDiagnosticEntries": [],
       "plainTextLength": 0,
       "bodyTextLength": 15446,
       "firstText": "[별지 제1호서식] <개정 2021. 2. 19.> 정부24(www.gov.kr)에서도 신청할 수 있습니다. 고엽제후유(의)증환자 등 등록신청서 ※ [ ]에는 해당하는 곳에 √표시를 합니다. (3쪽 중 1쪽) 접수번호 접수일시 처리기간 20일(사실확인 및 검진기간 제외) [ ] 고엽제후유(의)증환자 [ ] 고엽제후유증환자",
@@ -214,6 +239,25 @@
         "readonly": 0,
         "exportable": 0,
         "uniqueExportableSrc": 0
+      },
+      "sourceMetadata": {
+        "sourceRefElements": 2097,
+        "layoutBoxIdElements": 2097,
+        "pageSourceRefs": 11,
+        "bodySourceRefs": 11,
+        "paragraphSourceRefs": 531,
+        "runSourceRefs": 830,
+        "tableSourceRefs": 13,
+        "rowSourceRefs": 169,
+        "cellSourceRefs": 519,
+        "imageSourceRefs": 0,
+        "malformedSourceRefs": 0,
+        "sourceFormats": [
+          "hwp"
+        ],
+        "sourceRoles": [
+          "section"
+        ]
       },
       "pageMetrics": [
         {
@@ -393,7 +437,7 @@
           "height": 1123
         }
       ],
-      "elapsedMs": 76,
+      "elapsedMs": 106,
       "expectations": {
         "format": "HWP",
         "pages": 11,
@@ -444,6 +488,9 @@
       "editableElements": 63,
       "activeEditableElements": 63,
       "parser": "hwp-ms-cfb-records",
+      "layoutTreePages": 1,
+      "layoutDiagnostics": 0,
+      "layoutDiagnosticEntries": [],
       "plainTextLength": 0,
       "bodyTextLength": 833,
       "firstText": "결 석 계 결 재 담 임 교 무 교 감 전결 인 적 사 항 학년 반 학년 반 이 름 결 석 일 수 2026년 월 일( 요일) ~ 2026년 월 일( 요일) ( )일간 결 석 종 류 결석 구분 내 용 해당 사항에 √ 표시 제출서류 출석인정 결석 - 경조사 결석계, 경조사관련 증빙서류 - 법정 감염병 결석계, 확인서 또는 진",
@@ -452,6 +499,25 @@
         "readonly": 0,
         "exportable": 0,
         "uniqueExportableSrc": 0
+      },
+      "sourceMetadata": {
+        "sourceRefElements": 189,
+        "layoutBoxIdElements": 189,
+        "pageSourceRefs": 1,
+        "bodySourceRefs": 1,
+        "paragraphSourceRefs": 52,
+        "runSourceRefs": 63,
+        "tableSourceRefs": 3,
+        "rowSourceRefs": 17,
+        "cellSourceRefs": 49,
+        "imageSourceRefs": 0,
+        "malformedSourceRefs": 0,
+        "sourceFormats": [
+          "hwp"
+        ],
+        "sourceRoles": [
+          "section"
+        ]
       },
       "pageMetrics": [
         {
@@ -471,7 +537,7 @@
           "height": 1123
         }
       ],
-      "elapsedMs": 11,
+      "elapsedMs": 21,
       "expectations": {
         "format": "HWP",
         "pages": 1,
@@ -522,6 +588,85 @@
       "editableElements": 779,
       "activeEditableElements": 779,
       "parser": "hwp-ms-cfb-records",
+      "layoutTreePages": 4,
+      "layoutDiagnostics": 5,
+      "layoutDiagnosticEntries": [
+        {
+          "severity": "warning",
+          "code": "hwp-positioned-block-page-overflow",
+          "message": "HWP positioned block exceeds the page frame using parsed object or line-segment coordinates.",
+          "boxId": "p0-b4",
+          "sourceRef": {
+            "format": "hwp",
+            "path": "BodyText/Section0",
+            "role": "section",
+            "sectionIndex": 0,
+            "nodeName": "table",
+            "nodeId": "page-0-block-4",
+            "rawPreserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "hwp-positioned-block-page-overflow",
+          "message": "HWP positioned block exceeds the page frame using parsed object or line-segment coordinates.",
+          "boxId": "p1-b5",
+          "sourceRef": {
+            "format": "hwp",
+            "path": "BodyText/Section0",
+            "role": "section",
+            "sectionIndex": 0,
+            "nodeName": "table",
+            "nodeId": "page-1-block-5",
+            "rawPreserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "hwp-positioned-block-page-overflow",
+          "message": "HWP positioned block exceeds the page frame using parsed object or line-segment coordinates.",
+          "boxId": "p2-b32",
+          "sourceRef": {
+            "format": "hwp",
+            "path": "BodyText/Section0",
+            "role": "section",
+            "sectionIndex": 0,
+            "nodeName": "table",
+            "nodeId": "page-2-block-32",
+            "rawPreserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "hwp-positioned-block-page-overflow",
+          "message": "HWP positioned block exceeds the page frame using parsed object or line-segment coordinates.",
+          "boxId": "p3-b19",
+          "sourceRef": {
+            "format": "hwp",
+            "path": "BodyText/Section0",
+            "role": "section",
+            "sectionIndex": 0,
+            "nodeName": "table",
+            "nodeId": "page-3-block-19",
+            "rawPreserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "hwp-page-flow-overflow",
+          "message": "HWP page flow exceeds the body box derived from page definition margins.",
+          "boxId": "page-3-body",
+          "sourceRef": {
+            "format": "hwp",
+            "path": "BodyText/Section0",
+            "role": "section",
+            "sectionIndex": 0,
+            "nodeName": "page",
+            "nodeId": "page-3",
+            "rawPreserved": true
+          }
+        }
+      ],
       "plainTextLength": 0,
       "bodyTextLength": 14593,
       "firstText": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보",
@@ -530,6 +675,25 @@
         "readonly": 4,
         "exportable": 2,
         "uniqueExportableSrc": 2
+      },
+      "sourceMetadata": {
+        "sourceRefElements": 2574,
+        "layoutBoxIdElements": 2574,
+        "pageSourceRefs": 4,
+        "bodySourceRefs": 4,
+        "paragraphSourceRefs": 754,
+        "runSourceRefs": 937,
+        "tableSourceRefs": 22,
+        "rowSourceRefs": 120,
+        "cellSourceRefs": 705,
+        "imageSourceRefs": 6,
+        "malformedSourceRefs": 0,
+        "sourceFormats": [
+          "hwp"
+        ],
+        "sourceRoles": [
+          "section"
+        ]
       },
       "pageMetrics": [
         {
@@ -597,7 +761,7 @@
           "height": 1587
         }
       ],
-      "elapsedMs": 52,
+      "elapsedMs": 80,
       "expectations": {
         "format": "HWP",
         "pages": 4,
@@ -636,7 +800,7 @@
       "pages": 18,
       "oraclePages": 0,
       "canvasPages": 0,
-      "paragraphs": 1846,
+      "paragraphs": 1847,
       "lineSegmentParagraphs": 1606,
       "lineSegments": 1833,
       "tables": 78,
@@ -645,17 +809,72 @@
       "overflowingBlocks": 0,
       "topLevelOverlaps": 0,
       "decorationTopLevelOverlaps": 0,
-      "editableElements": 1792,
-      "activeEditableElements": 1792,
+      "editableElements": 1793,
+      "activeEditableElements": 1793,
       "parser": "hwpx-zip-xml",
+      "layoutTreePages": 18,
+      "layoutDiagnostics": 2,
+      "layoutDiagnosticEntries": [
+        {
+          "severity": "warning",
+          "code": "hwpx-page-flow-overflow",
+          "message": "HWPX page flow exceeds the section body box derived from pagePr margins.",
+          "boxId": "page-1-body",
+          "sourceRef": {
+            "format": "hwpx",
+            "path": "Contents/section0.xml",
+            "role": "section",
+            "sectionIndex": 0,
+            "nodeName": "page",
+            "nodeId": "page-1",
+            "xmlPath": "Contents/section0.xml#page-1",
+            "rawPreserved": true
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "hwpx-page-flow-overflow",
+          "message": "HWPX page flow exceeds the section body box derived from pagePr margins.",
+          "boxId": "page-6-body",
+          "sourceRef": {
+            "format": "hwpx",
+            "path": "Contents/section0.xml",
+            "role": "section",
+            "sectionIndex": 0,
+            "nodeName": "page",
+            "nodeId": "page-6",
+            "xmlPath": "Contents/section0.xml#page-6",
+            "rawPreserved": true
+          }
+        }
+      ],
       "plainTextLength": 0,
-      "bodyTextLength": 65269,
+      "bodyTextLength": 65146,
       "firstText": "인천가정2지구 A-2블록 신혼희망타운(공공분양) 잔여세대 추가 입주자모집공고 ❚공급위치 : 인천광역시 서구 가정동, 심곡동, 연희동, 청라동 일원 인천가정2 공공주택지구내 A-2블록 534세대 ❚공급대상 : A-2블록 801호 중 신혼희망타운(공공분양) 3세대 (전용면적 55㎡ 3세대) LH에서는 콜센터(1600-1004",
       "imageInventory": {
         "total": 24,
         "readonly": 18,
         "exportable": 6,
         "uniqueExportableSrc": 3
+      },
+      "sourceMetadata": {
+        "sourceRefElements": 6340,
+        "layoutBoxIdElements": 6340,
+        "pageSourceRefs": 18,
+        "bodySourceRefs": 18,
+        "paragraphSourceRefs": 1828,
+        "runSourceRefs": 2872,
+        "tableSourceRefs": 78,
+        "rowSourceRefs": 348,
+        "cellSourceRefs": 1076,
+        "imageSourceRefs": 24,
+        "malformedSourceRefs": 0,
+        "sourceFormats": [
+          "hwpx"
+        ],
+        "sourceRoles": [
+          "section"
+        ]
       },
       "pageMetrics": [
         {
@@ -717,7 +936,7 @@
           "overflowingBlocks": 0,
           "topLevelOverlaps": 0,
           "decorationTopLevelOverlaps": 0,
-          "textLength": 3941,
+          "textLength": 3929,
           "firstText": "1. 공급규모 ■ 인천가정2 A-2블록 801세대 중 : 신혼희망타운(공공분양) 11~24층 11개동 전용면적 60㎡이하 534 세대 중 3세대 2. 공급대상 블록 주택형 타입 세대당 주택면적(㎡) 발코니 공유 대지",
           "width": 1123,
           "height": 1587
@@ -829,14 +1048,14 @@
           "overflowingBlocks": 0,
           "topLevelOverlaps": 0,
           "decorationTopLevelOverlaps": 0,
-          "textLength": 2647,
+          "textLength": 2629,
           "firstText": "1. 추첨(공공분양 동·호, 당첨자 선정) • 추첨 일시 : 2026년 4월 16일(목) • 추첨 내용 : 공공분양주택의 당첨자, 예비입주자, 당첨자의 동·호수 2. 당첨자(예비입주자) 발표, 서류제출 및 계약체결 ",
           "width": 1123,
           "height": 1587
         },
         {
           "index": 11,
-          "paragraphs": 163,
+          "paragraphs": 164,
           "lineSegmentParagraphs": 134,
           "lineSegments": 146,
           "tables": 6,
@@ -845,88 +1064,88 @@
           "overflowingBlocks": 0,
           "topLevelOverlaps": 0,
           "decorationTopLevelOverlaps": 0,
-          "textLength": 3913,
+          "textLength": 3838,
           "firstText": "해당서류 서류유형 발급기준 서류 제출대상 및 유의사항 ① 당첨자 본인 신분증 필수 본인 • 주민등록증, 운전면허증, 여권 ※ 2020.12.21. 이후 발급한 여권은 여권정보증명서를 함께 구비해야 인정 ※ 전자신분증",
           "width": 1123,
           "height": 1587
         },
         {
           "index": 12,
-          "paragraphs": 98,
-          "lineSegmentParagraphs": 82,
-          "lineSegments": 105,
+          "paragraphs": 38,
+          "lineSegmentParagraphs": 24,
+          "lineSegments": 33,
           "tables": 5,
           "images": 1,
           "missingImages": 0,
           "overflowingBlocks": 0,
           "topLevelOverlaps": 0,
           "decorationTopLevelOverlaps": 0,
-          "textLength": 7088,
+          "textLength": 2035,
           "firstText": "Ⅷ 기타 유의사항 및 안내사항 1. 청약, 당첨, 입주, 관리 등 ■ 이 공고에 명시되지 않은 사항은 「주택법」,「주택공급에 관한 규칙」,「공공주택 특별법」,「공공주택 특별법 시행규칙」,「주택도시기금법」등 관계법령에",
           "width": 1123,
           "height": 1587
         },
         {
           "index": 13,
-          "paragraphs": 92,
-          "lineSegmentParagraphs": 88,
-          "lineSegments": 117,
+          "paragraphs": 149,
+          "lineSegmentParagraphs": 143,
+          "lineSegments": 185,
           "tables": 1,
           "images": 1,
           "missingImages": 0,
           "overflowingBlocks": 0,
           "topLevelOverlaps": 0,
           "decorationTopLevelOverlaps": 0,
-          "textLength": 8153,
-          "firstText": "- 단지 경계 담장, 옹벽 등은 지구단위계획지침 또는 현장여건 등에 따라 재질, 형태 등이 변경될 수 있음 - 보도, 조경, 주차장 등 공동으로 사용하는 부분에 대해 점유 등의 권리행사를 할 수 없음 - 단지 내 도",
+          "textLength": 12919,
+          "firstText": "■ 지구 여건 - 인천가정2 공공주택지구 기반시설은 국토교통부고시(제2024-859호)로 변경승인된 ‘공공주택지구 지구변경(3차) 및 지구계획 변경(3차) 승인’에 따라 설치될 예정이나, 도로선형 변경, 승인조건이행",
           "width": 1123,
           "height": 1587
         },
         {
           "index": 14,
-          "paragraphs": 83,
-          "lineSegmentParagraphs": 77,
-          "lineSegments": 94,
+          "paragraphs": 86,
+          "lineSegmentParagraphs": 80,
+          "lineSegments": 98,
           "tables": 3,
           "images": 1,
           "missingImages": 0,
           "overflowingBlocks": 0,
           "topLevelOverlaps": 0,
           "decorationTopLevelOverlaps": 0,
-          "textLength": 5590,
-          "firstText": "- 시공 시 주방 상부장이 가스배관, 주방용 자동소화장치 또는 레인지후드 배기덕트 등과 겹칠 경우 상부장 일부가 조정되어 수납공간이 줄어들 수 있음 - 부대복리시설 중 일부시설은 입주 전‧후 한시적으로 입주지원시설(",
+          "textLength": 5862,
+          "firstText": "- 석고보드 설치 공법 상 이음부위 테이핑 시공 시 일부구간 평활도가 고르지 못할 수 있으며, 이로 인해 벽체 및 천장에 음영이 질 수 있음 - 세대내부 일부 벽체는 경량벽체 또는 단열재 설치 등으로 입주 후 중량물",
           "width": 1123,
           "height": 1587
         },
         {
           "index": 15,
-          "paragraphs": 142,
-          "lineSegmentParagraphs": 134,
-          "lineSegments": 135,
-          "tables": 5,
+          "paragraphs": 137,
+          "lineSegmentParagraphs": 131,
+          "lineSegments": 131,
+          "tables": 4,
           "images": 1,
           "missingImages": 0,
           "overflowingBlocks": 0,
           "topLevelOverlaps": 0,
           "decorationTopLevelOverlaps": 0,
-          "textLength": 1813,
+          "textLength": 1555,
           "firstText": "성능부문 성능항목 성능등급 소음관련 등급 경량충격음 ★★★★ 중량충격음 ★★ 화장실 급배수소음 ★★ 세대간 경계벽의 차음성능 ★ 교통소음(도로, 철도)에 대한 실내외 소음 ★★ 구조관련 등급 가변성 ★★ 수리용이성 ",
           "width": 1123,
           "height": 1587
         },
         {
           "index": 16,
-          "paragraphs": 161,
-          "lineSegmentParagraphs": 155,
-          "lineSegments": 155,
-          "tables": 3,
+          "paragraphs": 166,
+          "lineSegmentParagraphs": 158,
+          "lineSegments": 159,
+          "tables": 4,
           "images": 1,
           "missingImages": 0,
           "overflowingBlocks": 0,
           "topLevelOverlaps": 0,
           "decorationTopLevelOverlaps": 0,
-          "textLength": 2050,
-          "firstText": "8. 분양가상한제 적용주택의 분양가 공개 ■ 「주택법」 제57조 및 「공동주택 분양가격의 산정 등에 관한 규칙」 제15조의 규정에 의거 다음과 같이 공개하며, 분양가격의 항목별 공시내용은 사업의 실제 소요된 비용과 ",
+          "textLength": 2305,
+          "firstText": "7. 마감자재 목록표 ■ 「주택법」 제54조제4항제1호 규정에 따라 (사이버)견본주택에 사용된 마감자재 목록표는 팸플릿을 참고하시기 바랍니다. ■ 견본주택, 팸플릿, 모형 등 각종 홍보물에 적용된 마감자재는 입주자의",
           "width": 1123,
           "height": 1587
         },
@@ -941,13 +1160,13 @@
           "overflowingBlocks": 0,
           "topLevelOverlaps": 0,
           "decorationTopLevelOverlaps": 0,
-          "textLength": 1571,
+          "textLength": 1565,
           "firstText": "■ 택지비 감정평가금액 산출내역 감정평가금액(산술평균액) 가. 나라감정평가법인 나. 제일감정평가법인 71,568,596,153원 71,221,737,040원 71,915,455,266원 9. 분양주택 택지비 및 건축",
           "width": 1123,
           "height": 1587
         }
       ],
-      "elapsedMs": 279,
+      "elapsedMs": 350,
       "expectations": {
         "format": "HWPX",
         "pages": 18,
@@ -962,7 +1181,7 @@
       },
       "diffs": {
         "pages": 0,
-        "paragraphsVsMinimum": 1046,
+        "paragraphsVsMinimum": 1047,
         "tablesVsMinimum": 58,
         "imagesVsMinimum": 20
       },
@@ -986,8 +1205,8 @@
         "exportable": 6,
         "uniqueExportableSrc": 3
       },
-      "editableElements": 1792,
-      "activeEditableElements": 1792,
+      "editableElements": 1793,
+      "activeEditableElements": 1793,
       "originalTextLength": 27
     },
     "download": {
@@ -999,7 +1218,7 @@
       "formatKind": "HWPX",
       "pages": 18,
       "expectedPages": 18,
-      "paragraphs": 1811,
+      "paragraphs": 1812,
       "tables": 78,
       "images": 24,
       "imageInventory": {
@@ -1009,16 +1228,16 @@
         "uniqueExportableSrc": 6
       },
       "markerFound": true,
-      "bodyTextLength": 64937
+      "bodyTextLength": 64940
     },
     "hwpxImages": {
       "binItems": 7,
       "picCount": 7,
       "binaryRefCount": 14,
       "uniqueBinaryRefs": 7,
-      "paraStyleCount": 101,
-      "usedParaStyleCount": 101,
-      "intentCount": 77,
+      "paraStyleCount": 106,
+      "usedParaStyleCount": 106,
+      "intentCount": 80,
       "fieldBeginCount": 1,
       "fieldEndCount": 1,
       "hyperlinkFieldCount": 1,
