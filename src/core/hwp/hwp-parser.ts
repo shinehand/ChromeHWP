@@ -8,6 +8,7 @@ import type {
   PageLayout,
   ParagraphBlock,
   ParsedDocument,
+  SourceDocument,
   TableBlock,
   TableCell,
   TableRow,
@@ -17,7 +18,14 @@ import { CfbReader, type CfbEntry } from './cfb-reader';
 import { decompressSync, inflateSync } from 'fflate';
 import { decodeParaText, HWP_TAG, scanUtf16Text } from './hwp-records';
 import type { HwpRecord } from './hwp-records';
-import { assertReadableHwpHeader, decodeRecordStream, parseHwpFileHeader, readUInt16, readUInt32 } from './hwp-streams';
+import {
+  assertReadableHwpHeader,
+  decodeRecordStream,
+  parseHwpFileHeader,
+  readUInt16,
+  readUInt32,
+  type HwpFileHeader
+} from './hwp-streams';
 
 type HwpRenderedTablePosition = NonNullable<NonNullable<TableBlock['_hwpxLayout']>['position']>;
 
@@ -358,9 +366,92 @@ export async function parseHwp(input: HwpParseInput): Promise<ParsedDocument> {
         pageHeights: pages.map((page) => page.layout?.height ?? 0)
       }
     },
+    source: buildHwpSourceDocument(cfb, fileHeader, sections, sectionEntries, pages, assets),
     pages,
     assets
   };
+}
+
+function buildHwpSourceDocument(
+  cfb: CfbReader,
+  fileHeader: HwpFileHeader,
+  sections: readonly ParsedSection[],
+  sectionEntries: readonly CfbEntry[],
+  pages: readonly DocumentPage[],
+  assets: readonly DocumentAsset[]
+): SourceDocument {
+  const entries = cfb.entries
+    .filter((entry) => entry.type !== 'empty')
+    .map((entry) => ({
+      path: entry.path || entry.name,
+      kind: hwpSourceEntryKind(entry),
+      role: hwpSourceEntryRole(entry),
+      byteLength: entry.size,
+      preserved: true,
+      sourceRef: {
+        format: 'hwp' as const,
+        path: entry.path || entry.name,
+        role: hwpSourceEntryRole(entry),
+        byteLength: entry.size,
+        rawPreserved: true
+      }
+    }));
+
+  return {
+    format: 'hwp',
+    container: {
+      kind: 'cfb',
+      entryCount: entries.length,
+      signature: fileHeader.signature,
+      version: fileHeader.version,
+      compressed: fileHeader.flags.compressed,
+      encrypted: fileHeader.flags.passwordProtected || fileHeader.flags.drm || fileHeader.flags.certificateEncrypted,
+      distributed: fileHeader.flags.distributed
+    },
+    entries,
+    sections: sectionEntries.map((entry, index) => ({
+      id: `section-${index}`,
+      index,
+      entryPath: entry.path || entry.name,
+      blockCount: sections[index]?.blocks.length,
+      pageCount: pages.filter((page) => page.sourceRef?.sectionIndex === index).length || undefined,
+      sourceRef: {
+        format: 'hwp',
+        path: entry.path || entry.name,
+        role: 'section',
+        sectionIndex: index,
+        rawPreserved: true
+      }
+    })),
+    assets: assets.map((asset) => ({
+      id: asset.id,
+      path: asset.path,
+      mimeType: asset.mimeType,
+      byteLength: asset.bytes.byteLength,
+      sourceRef: asset.sourceRef ?? {
+        format: 'hwp',
+        path: asset.path,
+        role: 'asset',
+        rawPreserved: true
+      }
+    }))
+  };
+}
+
+function hwpSourceEntryRole(entry: CfbEntry): SourceDocument['entries'][number]['role'] {
+  const path = (entry.path || entry.name).toLowerCase();
+  if (path === 'fileheader') return 'file-header';
+  if (path === 'docinfo') return 'document-info';
+  if (/^bodytext\/section\d+$/i.test(entry.path)) return 'section';
+  if (path.startsWith('bindata/')) return 'asset';
+  if (path.includes('prvtext') || path.includes('preview')) return 'preview';
+  return 'unknown';
+}
+
+function hwpSourceEntryKind(entry: CfbEntry): SourceDocument['entries'][number]['kind'] {
+  if (entry.type === 'root') return 'root';
+  if (entry.type === 'storage') return 'storage';
+  return 'stream';
 }
 
 function parseDocInfo(cfb: CfbReader, compressed: boolean, warnings: string[]): HwpDocInfoSummary {

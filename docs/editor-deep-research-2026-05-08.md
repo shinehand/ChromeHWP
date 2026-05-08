@@ -248,11 +248,25 @@ Production changes must be committed and pushed in meaningful increments after v
 
 ## Immediate Next Development Steps
 
-1. Draft `SourceDocument` and `LayoutTree` TypeScript interfaces beside `src/core/document-model.ts`.
-2. Add source-id fields to paragraph/table/image blocks without changing rendering behavior.
-3. Teach HWPX parser to retain original package manifest/content/section node references in a source metadata object.
+1. Draft `SourceDocument` and `LayoutTree` TypeScript interfaces beside `src/core/document-model.ts`. Status: started.
+2. Add source-id fields to paragraph/table/image blocks without changing rendering behavior. Status: started.
+3. Teach HWPX parser to retain original package manifest/content/section node references in a source metadata object. Status: started with package/section/asset summaries.
 4. Add export tests that compare package entry preservation for no-edit and one-paragraph-edit cases.
 5. Replace DOM-scrape-only editor state with a model-backed edit session while keeping current DOM rendering UI.
 6. Continue visual fidelity work only through source-derived table/object/paragraph layout diagnostics.
 
 This sequence protects the editor contract first, then improves layout, then expands editing features.
+
+## 2026-05-08 Implementation Start
+
+The first implementation pass adds non-rendering model contracts:
+
+- `SourceDocument`, `SourceEntry`, `SourceSection`, `SourceAssetReference`, and `SourceReference` in `src/core/document-model.ts`.
+- `LayoutTree`, `LayoutPage`, `LayoutBox`, and layout diagnostics in `src/core/document-model.ts`.
+- Optional `source`, `layoutTree`, and `sourceRef` hooks on parsed documents, pages, blocks, runs, rows, cells, and assets.
+- `LayoutPage` carries full `PageLayout`, including decoration insets, and `LayoutBox` can identify flow mode plus split-fragment ownership.
+- HWP parser source summaries for CFB entries, FileHeader flags, sections, and assets.
+- HWPX parser source summaries for ZIP package entries, section XML paths, and assets.
+
+This pass intentionally does not change rendering behavior.
+Its purpose is to give parser, editor, exporter, and QA code a shared source-identity contract before deeper save-path work begins.

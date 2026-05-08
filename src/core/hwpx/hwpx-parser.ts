@@ -8,6 +8,7 @@ import type {
   PageLayout,
   ParagraphBlock,
   ParsedDocument,
+  SourceDocument,
   TableBlock,
   TableCell,
   TableRow,
@@ -233,9 +234,84 @@ export async function parseHwpx(input: HwpxParseInput): Promise<ParsedDocument> 
         paraStyleCount: styles.paraStyles.size
       }
     },
+    source: buildHwpxSourceDocument(pkg, sectionPaths, pages, assets),
     pages,
     assets
   };
+}
+
+function buildHwpxSourceDocument(
+  pkg: ReturnType<typeof openHwpxPackage>,
+  sectionPaths: readonly string[],
+  pages: readonly DocumentPage[],
+  assets: readonly DocumentAsset[]
+): SourceDocument {
+  const paths = pkg.listPaths();
+  return {
+    format: 'hwpx',
+    container: {
+      kind: 'zip-xml',
+      entryCount: paths.length
+    },
+    entries: paths.map((path) => ({
+      path,
+      kind: hwpxSourceEntryKind(path),
+      role: hwpxSourceEntryRole(path),
+      byteLength: pkg.readBytes(path).byteLength,
+      preserved: true,
+      sourceRef: {
+        format: 'hwpx' as const,
+        path,
+        role: hwpxSourceEntryRole(path),
+        byteLength: pkg.readBytes(path).byteLength,
+        rawPreserved: true
+      }
+    })),
+    sections: sectionPaths.map((path, index) => ({
+      id: `section-${index}`,
+      index,
+      entryPath: path,
+      pageCount: pages.filter((page) => page.sourceRef?.sectionIndex === index).length || undefined,
+      sourceRef: {
+        format: 'hwpx',
+        path,
+        role: 'section',
+        sectionIndex: index,
+        nodeName: 'sec',
+        rawPreserved: true
+      }
+    })),
+    assets: assets.map((asset) => ({
+      id: asset.id,
+      path: asset.path,
+      mimeType: asset.mimeType,
+      byteLength: asset.bytes.byteLength,
+      sourceRef: asset.sourceRef ?? {
+        format: 'hwpx',
+        path: asset.path,
+        role: 'asset',
+        rawPreserved: true
+      }
+    }))
+  };
+}
+
+function hwpxSourceEntryKind(path: string): SourceDocument['entries'][number]['kind'] {
+  if (/\.xml$/i.test(path)) return 'xml';
+  if (/\.txt$/i.test(path) || path === 'mimetype') return 'text';
+  if (/^BinData\//i.test(path)) return 'binary';
+  return 'package';
+}
+
+function hwpxSourceEntryRole(path: string): SourceDocument['entries'][number]['role'] {
+  if (/^Contents\/section\d+\.xml$/i.test(path)) return 'section';
+  if (path === 'Contents/header.xml') return 'styles';
+  if (path === 'META-INF/manifest.xml') return 'manifest';
+  if (path === 'Contents/content.hpf') return 'content';
+  if (/^BinData\//i.test(path)) return 'asset';
+  if (/^Preview\//i.test(path)) return 'preview';
+  if (/^META-INF\//i.test(path) || path === 'version.xml') return 'metadata';
+  return 'unknown';
 }
 
 function buildStyleContext(headerXml: unknown): HwpxStyleContext {
