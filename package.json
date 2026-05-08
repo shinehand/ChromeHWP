@@ -9,6 +9,7 @@
     "build": "vite build",
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm run build",
+    "verify:no-hardcoding": "node scripts/check_no_sample_hardcoding.mjs",
     "verify:extension": "npm run build && node scripts/verify_extension_editor.mjs",
     "verify:visual": "npm run build && node scripts/verify_visual_fidelity.mjs",
     "verify:completion": "node scripts/check_editor_completion.mjs"

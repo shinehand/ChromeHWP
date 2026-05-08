@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { existsSync, readFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -23,6 +24,7 @@ function main() {
   const verifyReport = readJson(verifyReportPath, 'extension verification report');
   const visualSummary = readJson(visualSummaryPath, 'visual fidelity summary');
 
+  checkNoSampleHardcoding();
   checkExtensionVerification(verifyReport);
   checkRoundTrip(verifyReport?.roundTrip);
   checkVisualFidelity(visualSummary);
@@ -43,6 +45,21 @@ function main() {
   }
 
   console.log('\nEditor completion gate passed.');
+}
+
+function checkNoSampleHardcoding() {
+  try {
+    const output = execFileSync(process.execPath, [join(rootDir, 'scripts/check_no_sample_hardcoding.mjs')], {
+      cwd: rootDir,
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'pipe']
+    }).trim();
+    record('production source has no sample-specific hardcoding', true, output);
+  } catch (error) {
+    const output = `${error?.stdout || ''}${error?.stderr || ''}`.trim();
+    record('production source has no sample-specific hardcoding', false, output);
+    fail('production source contains sample-specific rendering logic');
+  }
 }
 
 function readJson(path, label) {
