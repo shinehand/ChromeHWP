@@ -1,0 +1,933 @@
+{
+  "sourceReport": "output/hancom-oracle/extension-visual-current/hancom-page-audit-report.json",
+  "advisoryPageCount": 31,
+  "classCounts": {
+    "ink-density": 7,
+    "layout-or-scale": 14,
+    "mixed-or-minor": 10
+  },
+  "documents": [
+    {
+      "id": "goyeopje",
+      "filename": "goyeopje.hwp",
+      "advisoryPageCount": 1,
+      "averages": {
+        "rawDiff": 24.55047195604041,
+        "blurDiff": 18.391907276101005,
+        "layoutDiff": 19.120825147347734,
+        "inkMeanDelta": 39.39773677104094,
+        "bboxLeftDelta": -1.0,
+        "bboxTopDelta": 4.0,
+        "bboxWidthDelta": -1.0,
+        "bboxHeightDelta": 14.0
+      },
+      "pages": [
+        {
+          "page": 1,
+          "verdict": "review",
+          "rawDiff": 24.55047195604041,
+          "blurDiff": 18.391907276101005,
+          "layoutDiff": 19.120825147347734,
+          "inkMeanDelta": 39.39773677104094,
+          "bbox": {
+            "hancom": [
+              21,
+              35,
+              261,
+              361
+            ],
+            "chrome": [
+              20,
+              39,
+              259,
+              379
+            ],
+            "leftDelta": -1,
+            "topDelta": 4,
+            "widthDelta": -1,
+            "heightDelta": 14
+          },
+          "class": "ink-density"
+        }
+      ]
+    },
+    {
+      "id": "goyeopje-full-2024",
+      "filename": "goyeopje-full-2024.hwp",
+      "advisoryPageCount": 10,
+      "averages": {
+        "rawDiff": 23.29090694504365,
+        "blurDiff": 16.907672588832487,
+        "layoutDiff": 14.919559457188177,
+        "inkMeanDelta": 26.7224528798085,
+        "bboxLeftDelta": -3.1,
+        "bboxTopDelta": -2.5,
+        "bboxWidthDelta": 1.4,
+        "bboxHeightDelta": -6.4
+      },
+      "pages": [
+        {
+          "page": 1,
+          "verdict": "review",
+          "rawDiff": 18.647298767222626,
+          "blurDiff": 12.768682015953589,
+          "layoutDiff": 14.162831470523777,
+          "inkMeanDelta": 29.812198852772468,
+          "bbox": {
+            "hancom": [
+              13,
+              22,
+              254,
+              371
+            ],
+            "chrome": [
+              13,
+              19,
+              253,
+              373
+            ],
+            "leftDelta": 0,
+            "topDelta": -3,
+            "widthDelta": -1,
+            "heightDelta": 5
+          },
+          "class": "ink-density"
+        },
+        {
+          "page": 2,
+          "verdict": "review",
+          "rawDiff": 23.753245105148658,
+          "blurDiff": 16.207052211747644,
+          "layoutDiff": 13.626451895682687,
+          "inkMeanDelta": 15.694284364666998,
+          "bbox": {
+            "hancom": [
+              14,
+              23,
+              255,
+              368
+            ],
+            "chrome": [
+              13,
+              19,
+              253,
+              366
+            ],
+            "leftDelta": -1,
+            "topDelta": -4,
+            "widthDelta": -1,
+            "heightDelta": 2
+          },
+          "class": "mixed-or-minor"
+        },
+        {
+          "page": 4,
+          "verdict": "review",
+          "rawDiff": 20.72160079767948,
+          "blurDiff": 18.015237490935462,
+          "layoutDiff": 17.98761779531013,
+          "inkMeanDelta": 20.16791583095815,
+          "bbox": {
+            "hancom": [
+              13,
+              20,
+              262,
+              342
+            ],
+            "chrome": [
+              13,
+              12,
+              260,
+              332
+            ],
+            "leftDelta": 0,
+            "topDelta": -8,
+            "widthDelta": -2,
+            "heightDelta": -2
+          },
+          "class": "mixed-or-minor"
+        },
+        {
+          "page": 5,
+          "verdict": "review",
+          "rawDiff": 19.787916968817985,
+          "blurDiff": 14.62115663524293,
+          "layoutDiff": 14.75728687267151,
+          "inkMeanDelta": 19.665583043464125,
+          "bbox": {
+            "hancom": [
+              14,
+              21,
+              263,
+              347
+            ],
+            "chrome": [
+              13,
+              19,
+              261,
+              344
+            ],
+            "leftDelta": -1,
+            "topDelta": -2,
+            "widthDelta": -1,
+            "heightDelta": -1
+          },
+          "class": "mixed-or-minor"
+        },
+        {
+          "page": 6,
+          "verdict": "review",
+          "rawDiff": 25.257496374184193,
+          "blurDiff": 16.573821609862218,
+          "layoutDiff": 8.828621520929216,
+          "inkMeanDelta": 28.70750978591795,
+          "bbox": {
+            "hancom": [
+              14,
+              23,
+              267,
+              336
+            ],
+            "chrome": [
+              13,
+              20,
+              264,
+              333
+            ],
+            "leftDelta": -1,
+            "topDelta": -3,
+            "widthDelta": -2,
+            "heightDelta": 0
+          },
+          "class": "ink-density"
+        },
+        {
+          "page": 7,
+          "verdict": "review",
+          "rawDiff": 21.799801084990957,
+          "blurDiff": 16.365732368896925,
+          "layoutDiff": 18.055555555555554,
+          "inkMeanDelta": 34.005541361117565,
+          "bbox": {
+            "hancom": [
+              13,
+              20,
+              268,
+              352
+            ],
+            "chrome": [
+              7,
+              20,
+              267,
+              337
+            ],
+            "leftDelta": -6,
+            "topDelta": 0,
+            "widthDelta": 5,
+            "heightDelta": -15
+          },
+          "class": "ink-density"
+        },
+        {
+          "page": 8,
+          "verdict": "review",
+          "rawDiff": 25.500551537070525,
+          "blurDiff": 18.62503616636528,
+          "layoutDiff": 18.247484689413824,
+          "inkMeanDelta": 35.332457775518264,
+          "bbox": {
+            "hancom": [
+              14,
+              20,
+              268,
+              354
+            ],
+            "chrome": [
+              7,
+              20,
+              267,
+              339
+            ],
+            "leftDelta": -7,
+            "topDelta": 0,
+            "widthDelta": 6,
+            "heightDelta": -15
+          },
+          "class": "ink-density"
+        },
+        {
+          "page": 9,
+          "verdict": "review",
+          "rawDiff": 25.381064176939812,
+          "blurDiff": 18.42227157360406,
+          "layoutDiff": 17.061691869384184,
+          "inkMeanDelta": 29.283060166245406,
+          "bbox": {
+            "hancom": [
+              13,
+              20,
+              268,
+              390
+            ],
+            "chrome": [
+              0,
+              20,
+              267,
+              360
+            ],
+            "leftDelta": -13,
+            "topDelta": 0,
+            "widthDelta": 12,
+            "heightDelta": -30
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 10,
+          "verdict": "review",
+          "rawDiff": 22.59095358955765,
+          "blurDiff": 18.491361493836113,
+          "layoutDiff": 13.270874424720592,
+          "inkMeanDelta": 30.89366726741656,
+          "bbox": {
+            "hancom": [
+              14,
+              24,
+              265,
+              390
+            ],
+            "chrome": [
+              13,
+              19,
+              263,
+              382
+            ],
+            "leftDelta": -1,
+            "topDelta": -5,
+            "widthDelta": -1,
+            "heightDelta": -3
+          },
+          "class": "ink-density"
+        },
+        {
+          "page": 11,
+          "verdict": "review",
+          "rawDiff": 29.469141048824593,
+          "blurDiff": 18.98637432188065,
+          "layoutDiff": 13.197178477690299,
+          "inkMeanDelta": 23.662310350007516,
+          "bbox": {
+            "hancom": [
+              27,
+              28,
+              255,
+              390
+            ],
+            "chrome": [
+              26,
+              28,
+              253,
+              385
+            ],
+            "leftDelta": -1,
+            "topDelta": 0,
+            "widthDelta": -1,
+            "heightDelta": -5
+          },
+          "class": "mixed-or-minor"
+        }
+      ]
+    },
+    {
+      "id": "gyeolseokgye",
+      "filename": "gyeolseokgye.hwp",
+      "advisoryPageCount": 1,
+      "averages": {
+        "rawDiff": 18.51553914142546,
+        "blurDiff": 15.4389504916769,
+        "layoutDiff": 16.887688277668687,
+        "inkMeanDelta": 66.95905256963516,
+        "bboxLeftDelta": -1.0,
+        "bboxTopDelta": 0.0,
+        "bboxWidthDelta": 0.0,
+        "bboxHeightDelta": 0.0
+      },
+      "pages": [
+        {
+          "page": 1,
+          "verdict": "review",
+          "rawDiff": 18.51553914142546,
+          "blurDiff": 15.4389504916769,
+          "layoutDiff": 16.887688277668687,
+          "inkMeanDelta": 66.95905256963516,
+          "bbox": {
+            "hancom": [
+              21,
+              28,
+              262,
+              365
+            ],
+            "chrome": [
+              20,
+              28,
+              261,
+              365
+            ],
+            "leftDelta": -1,
+            "topDelta": 0,
+            "widthDelta": 0,
+            "heightDelta": 0
+          },
+          "class": "ink-density"
+        }
+      ]
+    },
+    {
+      "id": "attachment-sale-notice",
+      "filename": "attachment-sale-notice.hwp",
+      "advisoryPageCount": 4,
+      "averages": {
+        "rawDiff": 27.286315837794334,
+        "blurDiff": 19.789638349664294,
+        "layoutDiff": 26.296481929929787,
+        "inkMeanDelta": 20.169760194503382,
+        "bboxLeftDelta": -10.25,
+        "bboxTopDelta": -4.25,
+        "bboxWidthDelta": 3.5,
+        "bboxHeightDelta": 10.25
+      },
+      "pages": [
+        {
+          "page": 1,
+          "verdict": "review",
+          "rawDiff": 30.116084681944898,
+          "blurDiff": 20.28488740451106,
+          "layoutDiff": 26.902257286872675,
+          "inkMeanDelta": 19.141475416367825,
+          "bbox": {
+            "hancom": [
+              21,
+              16,
+              378,
+              555
+            ],
+            "chrome": [
+              21,
+              6,
+              376,
+              558
+            ],
+            "leftDelta": 0,
+            "topDelta": -10,
+            "widthDelta": -2,
+            "heightDelta": 13
+          },
+          "class": "mixed-or-minor"
+        },
+        {
+          "page": 2,
+          "verdict": "review",
+          "rawDiff": 30.88061243061243,
+          "blurDiff": 20.903012103012102,
+          "layoutDiff": 31.59625962596259,
+          "inkMeanDelta": 32.66014165355989,
+          "bbox": {
+            "hancom": [
+              21,
+              9,
+              378,
+              548
+            ],
+            "chrome": [
+              1,
+              6,
+              376,
+              555
+            ],
+            "leftDelta": -20,
+            "topDelta": -3,
+            "widthDelta": 18,
+            "heightDelta": 10
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 3,
+          "verdict": "review",
+          "rawDiff": 23.00559809565186,
+          "blurDiff": 18.77481807320517,
+          "layoutDiff": 22.760245452553168,
+          "inkMeanDelta": 15.291523013562653,
+          "bbox": {
+            "hancom": [
+              0,
+              0,
+              396,
+              549
+            ],
+            "chrome": [
+              0,
+              6,
+              376,
+              558
+            ],
+            "leftDelta": 0,
+            "topDelta": 6,
+            "widthDelta": -20,
+            "heightDelta": 3
+          },
+          "class": "mixed-or-minor"
+        },
+        {
+          "page": 4,
+          "verdict": "review",
+          "rawDiff": 25.142968142968144,
+          "blurDiff": 19.19583581792884,
+          "layoutDiff": 23.927165354330718,
+          "inkMeanDelta": 13.585900694523161,
+          "bbox": {
+            "hancom": [
+              21,
+              16,
+              378,
+              554
+            ],
+            "chrome": [
+              0,
+              6,
+              375,
+              559
+            ],
+            "leftDelta": -21,
+            "topDelta": -10,
+            "widthDelta": 18,
+            "heightDelta": 15
+          },
+          "class": "layout-or-scale"
+        }
+      ]
+    },
+    {
+      "id": "incheon-2a",
+      "filename": "incheon-2a.hwpx",
+      "advisoryPageCount": 15,
+      "averages": {
+        "rawDiff": 23.545819115082008,
+        "blurDiff": 18.494706866752505,
+        "layoutDiff": 29.50432764862933,
+        "inkMeanDelta": 24.729248660105124,
+        "bboxLeftDelta": 7.866666666666666,
+        "bboxTopDelta": 1.1333333333333333,
+        "bboxWidthDelta": -17.933333333333334,
+        "bboxHeightDelta": -7.2
+      },
+      "pages": [
+        {
+          "page": 1,
+          "verdict": "review",
+          "rawDiff": 24.2576164874552,
+          "blurDiff": 20.72957622823214,
+          "layoutDiff": 43.10267367959675,
+          "inkMeanDelta": 49.11717300927407,
+          "bbox": {
+            "hancom": [
+              21,
+              16,
+              378,
+              555
+            ],
+            "chrome": [
+              21,
+              8,
+              377,
+              546
+            ],
+            "leftDelta": 0,
+            "topDelta": -8,
+            "widthDelta": -1,
+            "heightDelta": -1
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 2,
+          "verdict": "review",
+          "rawDiff": 23.289202399667516,
+          "blurDiff": 18.93783993783994,
+          "layoutDiff": 32.19597550306213,
+          "inkMeanDelta": 32.591331028857724,
+          "bbox": {
+            "hancom": [
+              22,
+              16,
+              378,
+              555
+            ],
+            "chrome": [
+              21,
+              16,
+              375,
+              559
+            ],
+            "leftDelta": -1,
+            "topDelta": 0,
+            "widthDelta": -2,
+            "heightDelta": 4
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 3,
+          "verdict": "review",
+          "rawDiff": 27.245637377357806,
+          "blurDiff": 22.86214293472358,
+          "layoutDiff": 36.70227920227921,
+          "inkMeanDelta": 40.47894445135677,
+          "bbox": {
+            "hancom": [
+              22,
+              16,
+              378,
+              554
+            ],
+            "chrome": [
+              21,
+              8,
+              375,
+              547
+            ],
+            "leftDelta": -1,
+            "topDelta": -8,
+            "widthDelta": -2,
+            "heightDelta": 1
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 4,
+          "verdict": "review",
+          "rawDiff": 25.40539354114623,
+          "blurDiff": 20.656633539698056,
+          "layoutDiff": 26.498465921542845,
+          "inkMeanDelta": 19.069839124246045,
+          "bbox": {
+            "hancom": [
+              22,
+              16,
+              378,
+              554
+            ],
+            "chrome": [
+              21,
+              8,
+              375,
+              546
+            ],
+            "leftDelta": -1,
+            "topDelta": -8,
+            "widthDelta": -2,
+            "heightDelta": 0
+          },
+          "class": "mixed-or-minor"
+        },
+        {
+          "page": 5,
+          "verdict": "review",
+          "rawDiff": 24.821200354802507,
+          "blurDiff": 18.181935845914342,
+          "layoutDiff": 31.677076484768776,
+          "inkMeanDelta": 21.454538476300115,
+          "bbox": {
+            "hancom": [
+              22,
+              15,
+              378,
+              553
+            ],
+            "chrome": [
+              21,
+              8,
+              375,
+              547
+            ],
+            "leftDelta": -1,
+            "topDelta": -7,
+            "widthDelta": -2,
+            "heightDelta": 1
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 7,
+          "verdict": "review",
+          "rawDiff": 18.886150935882117,
+          "blurDiff": 15.553179645921581,
+          "layoutDiff": 25.248191978961216,
+          "inkMeanDelta": 16.346669675217527,
+          "bbox": {
+            "hancom": [
+              22,
+              12,
+              378,
+              550
+            ],
+            "chrome": [
+              21,
+              16,
+              375,
+              557
+            ],
+            "leftDelta": -1,
+            "topDelta": 4,
+            "widthDelta": -2,
+            "heightDelta": 3
+          },
+          "class": "mixed-or-minor"
+        },
+        {
+          "page": 8,
+          "verdict": "review",
+          "rawDiff": 21.44902260010174,
+          "blurDiff": 16.471867960177313,
+          "layoutDiff": 22.395489548954867,
+          "inkMeanDelta": 10.167839393790274,
+          "bbox": {
+            "hancom": [
+              22,
+              10,
+              378,
+              549
+            ],
+            "chrome": [
+              21,
+              8,
+              375,
+              545
+            ],
+            "leftDelta": -1,
+            "topDelta": -2,
+            "widthDelta": -2,
+            "heightDelta": -2
+          },
+          "class": "mixed-or-minor"
+        },
+        {
+          "page": 9,
+          "verdict": "review",
+          "rawDiff": 23.464077714077714,
+          "blurDiff": 17.602470652470654,
+          "layoutDiff": 22.483498349834978,
+          "inkMeanDelta": 9.529332726030503,
+          "bbox": {
+            "hancom": [
+              22,
+              9,
+              378,
+              548
+            ],
+            "chrome": [
+              21,
+              8,
+              375,
+              544
+            ],
+            "leftDelta": -1,
+            "topDelta": -1,
+            "widthDelta": -2,
+            "heightDelta": -3
+          },
+          "class": "mixed-or-minor"
+        },
+        {
+          "page": 11,
+          "verdict": "review",
+          "rawDiff": 20.608604157517203,
+          "blurDiff": 16.921804091641047,
+          "layoutDiff": 31.80223550243469,
+          "inkMeanDelta": 29.473564133174136,
+          "bbox": {
+            "hancom": [
+              22,
+              6,
+              378,
+              544
+            ],
+            "chrome": [
+              21,
+              8,
+              375,
+              540
+            ],
+            "leftDelta": -1,
+            "topDelta": 2,
+            "widthDelta": -2,
+            "heightDelta": -6
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 12,
+          "verdict": "review",
+          "rawDiff": 20.63208486309752,
+          "blurDiff": 15.61215683051126,
+          "layoutDiff": 22.719240114866366,
+          "inkMeanDelta": 9.50392257916738,
+          "bbox": {
+            "hancom": [
+              0,
+              5,
+              396,
+              553
+            ],
+            "chrome": [
+              21,
+              16,
+              375,
+              542
+            ],
+            "leftDelta": 21,
+            "topDelta": 11,
+            "widthDelta": -42,
+            "heightDelta": -22
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 13,
+          "verdict": "review",
+          "rawDiff": 19.575811882263494,
+          "blurDiff": 16.576545020093405,
+          "layoutDiff": 35.662941047556416,
+          "inkMeanDelta": 27.46891713072725,
+          "bbox": {
+            "hancom": [
+              0,
+              4,
+              396,
+              555
+            ],
+            "chrome": [
+              21,
+              8,
+              375,
+              546
+            ],
+            "leftDelta": 21,
+            "topDelta": 4,
+            "widthDelta": -42,
+            "heightDelta": -13
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 14,
+          "verdict": "review",
+          "rawDiff": 26.352797690163282,
+          "blurDiff": 17.643491365265557,
+          "layoutDiff": 20.68923953539339,
+          "inkMeanDelta": -6.271458458986729,
+          "bbox": {
+            "hancom": [
+              0,
+              2,
+              396,
+              553
+            ],
+            "chrome": [
+              21,
+              8,
+              375,
+              546
+            ],
+            "leftDelta": 21,
+            "topDelta": 6,
+            "widthDelta": -42,
+            "heightDelta": -13
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 15,
+          "verdict": "review",
+          "rawDiff": 23.811873294993735,
+          "blurDiff": 17.753451485659514,
+          "layoutDiff": 20.134426595269982,
+          "inkMeanDelta": 5.390673469155871,
+          "bbox": {
+            "hancom": [
+              0,
+              0,
+              396,
+              548
+            ],
+            "chrome": [
+              21,
+              8,
+              375,
+              537
+            ],
+            "leftDelta": 21,
+            "topDelta": 8,
+            "widthDelta": -42,
+            "heightDelta": -19
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 16,
+          "verdict": "review",
+          "rawDiff": 28.570840950639855,
+          "blurDiff": 21.620630435986925,
+          "layoutDiff": 35.809859154929605,
+          "inkMeanDelta": 56.44105649602284,
+          "bbox": {
+            "hancom": [
+              0,
+              0,
+              396,
+              547
+            ],
+            "chrome": [
+              21,
+              8,
+              375,
+              536
+            ],
+            "leftDelta": 21,
+            "topDelta": 8,
+            "widthDelta": -42,
+            "heightDelta": -19
+          },
+          "class": "layout-or-scale"
+        },
+        {
+          "page": 17,
+          "verdict": "review",
+          "rawDiff": 24.81697247706422,
+          "blurDiff": 20.296877027152256,
+          "layoutDiff": 35.44332210998877,
+          "inkMeanDelta": 50.176386667243094,
+          "bbox": {
+            "hancom": [
+              0,
+              0,
+              396,
+              545
+            ],
+            "chrome": [
+              21,
+              8,
+              375,
+              534
+            ],
+            "leftDelta": 21,
+            "topDelta": 8,
+            "widthDelta": -42,
+            "heightDelta": -19
+          },
+          "class": "layout-or-scale"
+        }
+      ]
+    }
+  ]
+}
