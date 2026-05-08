@@ -566,14 +566,16 @@ function buildCharStyleMap(headerXml: unknown, fonts: Map<string, string>): Map<
     const color = normalizeColor(readAttributeObject(node, 'textColor'));
     const backgroundColor = normalizeColor(readAttributeObject(node, 'shadeColor'));
     const fontFamily = readFontFamily(node, fonts);
-    const letterSpacing = readAttributeObject(node, 'spacing');
+    const letterSpacing = readLanguageMetric(node, 'spacing');
+    const widthRatio = readLanguageMetric(node, 'ratio');
     const style: TextRunDraft = { styleId: id };
 
     if (fontFamily) style.fontFamily = fontFamily;
     if (height > 0) style.fontSizePt = Math.max(1, height / 100);
     if (color) style.color = color;
     if (backgroundColor) style.backgroundColor = backgroundColor;
-    if (letterSpacing) style.letterSpacing = `${Number(letterSpacing) / 100}%`;
+    if (letterSpacing) style.letterSpacing = `${letterSpacing}%`;
+    if (widthRatio && widthRatio !== 100) style.fontStretch = `${Math.max(50, Math.min(200, widthRatio))}%`;
     if (hasDirectChild(node, 'bold')) style.bold = true;
     if (hasDirectChild(node, 'italic')) style.italic = true;
     if (isUnderlineEnabled(node)) style.underline = true;
@@ -2650,6 +2652,16 @@ function readFontFamily(node: unknown, fonts: Map<string, string>): string {
     || readAttributeObject(fontRef, 'other')
     || readAttributeObject(node, 'fontRef');
   return fontId ? (fonts.get(fontId) || '') : '';
+}
+
+function readLanguageMetric(node: unknown, childName: string): number {
+  const child = firstDirectChild(node, childName);
+  const rawValue = readAttributeObject(child, 'hangul')
+    || readAttributeObject(child, 'latin')
+    || readAttributeObject(child, 'other')
+    || readAttributeObject(node, childName);
+  const value = Number(rawValue);
+  return Number.isFinite(value) ? value : 0;
 }
 
 function readCellPadding(node: unknown): BoxSpacing | undefined {
