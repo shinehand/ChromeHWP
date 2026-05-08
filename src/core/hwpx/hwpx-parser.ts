@@ -1724,7 +1724,49 @@ function rebalanceSectionPreludeFragments(
     balanced[index + 1] = [...moved, ...next];
   }
 
-  return balanced.filter((fragment) => fragment.length > 0);
+  return spillTrailingSectionBodyAfterHeading(balanced, maxFragmentHeight)
+    .filter((fragment) => fragment.length > 0);
+}
+
+function spillTrailingSectionBodyAfterHeading(
+  fragments: HwpxDocumentBlock[][],
+  maxFragmentHeight: number
+): HwpxDocumentBlock[][] {
+  if (maxFragmentHeight <= 0 || fragments.length <= 1) return fragments;
+  const balanced = fragments.map((fragment) => [...fragment]);
+  const heightLimit = maxFragmentHeight * 1.01;
+
+  for (let index = 0; index < balanced.length - 1; index += 1) {
+    const current = balanced[index];
+    if (current.length < 2 || estimateBlocksHeight(current) <= heightLimit) continue;
+
+    const headingIndex = lastSectionHeadingIndex(current);
+    if (headingIndex < 0 || headingIndex >= current.length - 1) continue;
+
+    const trailing = current.slice(headingIndex + 1);
+    if (!trailing.length || !trailing.every(isMovableTrailingSectionBodyBlock)) continue;
+
+    const retainedHeight = estimateBlocksHeight(current.slice(0, headingIndex + 1));
+    if (retainedHeight > heightLimit) continue;
+
+    const moved = current.splice(headingIndex + 1);
+    balanced[index + 1] = [...moved, ...balanced[index + 1]];
+  }
+
+  return balanced;
+}
+
+function lastSectionHeadingIndex(fragment: readonly HwpxDocumentBlock[]): number {
+  for (let index = fragment.length - 2; index >= 0; index -= 1) {
+    if (isSectionHeadingBlock(fragment[index])) return index;
+  }
+  return -1;
+}
+
+function isMovableTrailingSectionBodyBlock(block: HwpxDocumentBlock): boolean {
+  if (block.type !== 'paragraph') return false;
+  const text = visibleBlockText(block);
+  return !text || estimateBlockHeight(block) <= 80;
 }
 
 function trailingDanglingSectionHeadingStart(
