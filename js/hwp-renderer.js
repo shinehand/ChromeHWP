@@ -1395,11 +1395,12 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
     const cells = [...(row.cells || [])].sort((a, b) => a.col - b.col);
     if (!cells.length) return;
 
-    const resolvedRowRole = String(row.syntheticRowRole || row.rowRole || '').trim().toLowerCase();
-    const rowLooksLikeTitle = resolvedRowRole === 'title';
-    const rowLooksLikeOptions = resolvedRowRole === 'title-options';
-    const rowLooksLikeMeta = resolvedRowRole === 'meta';
-    const rowLooksLikePersonForm = resolvedRowRole === 'person-form';
+    const resolvedRowRole = String(row.syntheticRowRole || row.rowRole || '').trim();
+    const resolvedRowRoleLower = resolvedRowRole.toLowerCase();
+    const rowLooksLikeTitle = resolvedRowRoleLower === 'title';
+    const rowLooksLikeOptions = resolvedRowRoleLower === 'title-options';
+    const rowLooksLikeMeta = resolvedRowRoleLower === 'meta';
+    const rowLooksLikePersonForm = resolvedRowRoleLower === 'person-form';
     const rowLooksLikeCompactHeader = isCompactTableHeaderRow(rowVisualIndex, cells);
 
     const tr = document.createElement('tr');
@@ -1513,8 +1514,7 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       const isGroupedLabelCell = !resolvedCellRole
         && !isStackedLabelCell
         && isGroupedRowLabelCell(cell, text, rawText);
-      const isFieldLabelCell = resolvedCellRole === 'field-label'
-        || /^[①-⑳⑴-⒇<]\s*/.test(text);
+      const isFieldLabelCell = resolvedCellRoleLower === 'field-label';
       const isFieldInlineNoteCell = resolvedCellRole === 'field-inline-note';
       const isTitleRowMainCell = rowLooksLikeTitle
         && (isTitleLabelCell || isOptionCell || (cell.colSpan || 1) >= Math.max(2, Math.floor((tableBlock.colCount || 2) / 2)));
