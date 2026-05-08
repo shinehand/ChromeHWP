@@ -593,6 +593,12 @@ dd {
   filter: brightness(3);
 }
 
+.hwp-page[data-visual-profile="hwp-lh-sale-notice-cover"],
+.hwp-page[data-visual-profile="hwp-lh-sale-notice-price-list"],
+.hwp-page[data-visual-profile="hwp-lh-sale-notice-contract-info"] {
+  filter: brightness(3);
+}
+
 .hwp-paragraph[data-layout-mode="line-segments"] {
   overflow-wrap: normal;
   white-space: normal;

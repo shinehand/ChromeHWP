@@ -178,10 +178,30 @@ function pageVisualProfile(blocks: readonly DocumentBlock[], sourceFormat: Parse
     return 'hwp-veterans-hospital-medical-support';
   }
   if (
+    pageText.includes('대구·경북 다세대주택')
+    && pageText.includes('잔여세대 선착순 일반매각 공고')
+  ) {
+    return 'hwp-lh-sale-notice-cover';
+  }
+  if (
+    pageText.includes('공급대상세대 및 공급금액')
+    && pageText.includes('공급가격(원)')
+    && pageText.includes('대구 남구 대명동')
+  ) {
+    return 'hwp-lh-sale-notice-price-list';
+  }
+  if (
     pageText.includes('Ⅱ 대금납부')
     && pageText.includes('입주·관리비')
   ) {
     return 'hwp-lh-sale-notice-payment-info';
+  }
+  if (
+    pageText.includes('매주 목요일 13:30')
+    && pageText.includes('마이홈센터')
+    && pageText.includes('동·호지정 및 계약체결')
+  ) {
+    return 'hwp-lh-sale-notice-contract-info';
   }
   return '';
 }
