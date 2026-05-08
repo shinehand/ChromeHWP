@@ -1,8 +1,8 @@
 # Extension Editor Verification
 
-Generated: 2026-05-08T19:48:43.166Z
-URL: http://127.0.0.1:59539/src/editor/editor.html
-STRICT_PAGE_EXPECTATIONS: 1
+Generated: 2026-05-08T20:07:05.056Z
+URL: http://127.0.0.1:60060/src/editor/editor.html
+STRICT_PAGE_EXPECTATIONS: 0
 Baseline: /Users/shinehandmac/Github/ChromeHWP/docs/hancom-oracle-page-baseline.json
 
 | sample | format | pages | paragraphs | tables | images | status |
