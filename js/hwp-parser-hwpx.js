@@ -492,10 +492,18 @@ Object.assign(HwpParser, {
    * 0xFFFFFFFF(-1, signed int32 표현)는 "테이블 기본값 상속"을 의미하므로 0으로 변환한다.
    * 0x80000000 이상 = signed int32로 음수 범위이며 모두 유효하지 않은 값으로 처리한다.
    */
-  _hwpxCellMarginVal(node, attr) {
+  _hwpxCellMarginVal(node, attr, fallbackNode = null) {
     const value = Number(node?.getAttribute?.(attr));
-    // 0x80000000 이상은 signed int32 음수 범위 → "inherit" 또는 미설정을 의미하므로 0 반환
-    if (!Number.isFinite(value) || value < 0 || value >= 0x80000000) return 0;
+    // 0x80000000 이상은 signed int32 음수 범위 → "inherit" 또는 미설정을 의미하므로 fallback 참조
+    if (!Number.isFinite(value) || value < 0 || value >= 0x80000000) {
+      if (fallbackNode) {
+        const fValue = Number(fallbackNode?.getAttribute?.(attr));
+        if (Number.isFinite(fValue) && fValue >= 0 && fValue < 0x80000000) {
+          return fValue;
+        }
+      }
+      return 0;
+    }
     return value;
   },
 
@@ -776,6 +784,46 @@ Object.assign(HwpParser, {
     };
   },
 
+  _hwpxShapeBlock(shpEl, header = {}) {
+    const objectInfo = HwpParser._hwpxParseObjectLayout(shpEl);
+    const width = Number(objectInfo?.rawObjectLayout?.size?.width) || 0;
+    const height = Number(objectInfo?.rawObjectLayout?.size?.height) || 0;
+
+    const subListEl = HwpParser._hwpxFirstChild(shpEl, 'subList');
+    if (subListEl) {
+      const blocks = HwpParser._hwpxBlocksFromContainer(subListEl, header);
+      return HwpParser._withObjectLayout({
+        type: 'textbox',
+        paragraphs: blocks,
+        width,
+        height,
+        sourceFormat: 'hwpx',
+        texts: blocks.flatMap(b => b.texts || []),
+      }, objectInfo);
+    }
+
+    const picEl = HwpParser._hwpxFirstChild(shpEl, 'pic');
+    if (picEl) {
+      const imageBlock = HwpParser._hwpxPictureBlock(picEl, header);
+      if (imageBlock) {
+        return HwpParser._withObjectLayout({
+          ...imageBlock,
+          width: imageBlock.width || width,
+          height: imageBlock.height || height,
+        }, objectInfo);
+      }
+    }
+
+    return HwpParser._withObjectLayout({
+      type: 'shape',
+      width,
+      height,
+      sourceFormat: 'hwpx',
+      description: HwpParser._hwpxFirstChild(shpEl, 'shapeComment')?.textContent?.trim?.() || '',
+      texts: [HwpParser._run('')],
+    }, objectInfo);
+  },
+
   _hwpxParagraphHasText(pEl) {
     return HwpParser._hwpxChildren(pEl, 'run').some(runEl => (
       HwpParser._hwpxChildren(runEl).some(child => {
@@ -863,6 +911,9 @@ Object.assign(HwpParser, {
         blocks.push(...HwpParser._hwpxParagraphBlocks(child, header));
       } else if (name === 'tbl') {
         blocks.push(...HwpParser._hwpxTableBlocks(child, header));
+      } else if (name === 'shp') {
+        const shapeBlock = HwpParser._hwpxShapeBlock(child, header);
+        if (shapeBlock) blocks.push(shapeBlock);
       }
     });
     return blocks;
@@ -1115,6 +1166,17 @@ Object.assign(HwpParser, {
           }
           flushText();
           if (imageBlock) blocks.push(imageBlock);
+        } else if (name === 'shp') {
+          const shapeBlock = HwpParser._hwpxShapeBlock(child, header);
+          const canInlineShape = shapeBlock && paragraphHasText && shapeBlock.inline;
+          if (canInlineShape) {
+            shapeBlock.inline = true;
+            shapeBlock.text = '';
+            runBuffer.push(shapeBlock);
+            return;
+          }
+          flushText();
+          if (shapeBlock) blocks.push(shapeBlock);
         } else if (name === 't') {
           HwpParser._hwpxPushTextRun(runBuffer, HwpParser._hwpxTElementText(child), charInfo || {});
         } else if (name === 'compose') {
@@ -1206,10 +1268,10 @@ Object.assign(HwpParser, {
             subListEl?.getAttribute?.('vertAlign') || tcEl?.getAttribute?.('vertAlign') || '',
           ),
           padding: [
-            HwpParser._hwpxCellMarginVal(marginEl, 'left'),
-            HwpParser._hwpxCellMarginVal(marginEl, 'right'),
-            HwpParser._hwpxCellMarginVal(marginEl, 'top'),
-            HwpParser._hwpxCellMarginVal(marginEl, 'bottom'),
+            HwpParser._hwpxCellMarginVal(marginEl, 'left', tblInMarginEl),
+            HwpParser._hwpxCellMarginVal(marginEl, 'right', tblInMarginEl),
+            HwpParser._hwpxCellMarginVal(marginEl, 'top', tblInMarginEl),
+            HwpParser._hwpxCellMarginVal(marginEl, 'bottom', tblInMarginEl),
           ],
           borderFillId: HwpParser._hwpxAttrNum(tcEl, 'borderFillIDRef', 0),
           borderStyle: header?.borderFills?.[HwpParser._hwpxAttrNum(tcEl, 'borderFillIDRef', 0)] || null,

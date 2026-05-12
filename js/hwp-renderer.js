@@ -779,9 +779,11 @@ function objectMarginPx(block) {
 }
 
 function objectOffsetPx(block) {
+  // HWP 오프셋은 HWPUNIT 기반 부호 있는 정수로, 큰 값(예: 15000 HWPUNIT ≈ 200px)도 유효하다.
+  // 이전 ±720px 상한은 오프셋이 큰 개체를 잘라내는 원인이었으므로 ±4000px 로 확장한다.
   return {
-    x: objectSignedUnitToPx(block, block?.offsetX, -720, 720, 0, 'position'),
-    y: objectSignedUnitToPx(block, block?.offsetY, -720, 720, 0, 'position'),
+    x: objectSignedUnitToPx(block, block?.offsetX, -4000, 4000, 0, 'position'),
+    y: objectSignedUnitToPx(block, block?.offsetY, -4000, 4000, 0, 'position'),
   };
 }
 
@@ -814,7 +816,11 @@ function resolvePositionBasisElement(wrap, block, axis = 'horz', context = resol
   if (relTo === 'column') {
     return context.areaEl || context.parentEl || context.pageEl || wrap.parentElement;
   }
-  return context.cellContentEl || context.parentEl || context.areaEl || context.pageEl || wrap.parentElement;
+  // 'para' 기준: 가장 가까운 단락 또는 셀 콘텐츠 요소를 기준 엘리먼트로 삼는다.
+  // wrap 자신의 직계 부모가 단락 .hwp-paragraph 이면 그것을 사용하고,
+  // 그렇지 않으면 closest() 로 올라가며 탐색한다.
+  const paraEl = wrap.parentElement?.closest?.('.hwp-paragraph') || null;
+  return paraEl || context.cellContentEl || context.parentEl || context.areaEl || context.pageEl || wrap.parentElement;
 }
 
 function resolveSizeBasisElement(wrap, block, axis = 'width', context = resolvePlacedBlockContext(wrap)) {
@@ -973,10 +979,14 @@ function shouldAbsolutePlaceBlock(block) {
   const wrapMode = HwpParser._normalizeObjectTextWrap(block.textWrap);
   const horzRelTo = HwpParser._normalizeObjectRelTo(block.horzRelTo, 'horz');
   const vertRelTo = HwpParser._normalizeObjectRelTo(block.vertRelTo, 'vert');
-  return ['paper', 'page'].includes(horzRelTo)
-    || ['paper', 'page'].includes(vertRelTo)
-    || ['behind-text', 'in-front-of-text'].includes(wrapMode)
-    || Boolean(block.allowOverlap && !block.flowWithText);
+  if (['paper', 'page'].includes(horzRelTo) || ['paper', 'page'].includes(vertRelTo)) return true;
+  if (['behind-text', 'in-front-of-text'].includes(wrapMode)) return true;
+  if (block.allowOverlap && !block.flowWithText) return true;
+  // column/para 기준이라도 명시적 오프셋이 있으면 정밀 절대 배치가 필요하다.
+  // flowWithText=true 인 경우(인라인 흐름)는 일반 float 처리로 충분하므로 제외한다.
+  const hasOffset = (Number(block.offsetX) !== 0) || (Number(block.offsetY) !== 0);
+  if (hasOffset && !block.flowWithText) return true;
+  return false;
 }
 
 function applyPlacedBlockFlowStyles(wrap, block) {
@@ -1556,17 +1566,17 @@ function appendTableBlock(parent, tableBlock, tableContext = {}) {
       let bottomPx = 3;
       let leftPx = 4;
       if (hasPaddingInfo) {
-        topPx    = Math.max(0, Math.min(30, Math.round((Number(padT) || 0) * TABLE_UNIT_SCALE)));
-        rightPx  = Math.max(0, Math.min(36, Math.round((Number(padR) || 0) * TABLE_UNIT_SCALE)));
-        bottomPx = Math.max(0, Math.min(30, Math.round((Number(padB) || 0) * TABLE_UNIT_SCALE)));
-        leftPx   = Math.max(0, Math.min(36, Math.round((Number(padL) || 0) * TABLE_UNIT_SCALE)));
+        topPx    = Math.max(0, Math.min(30, (Number(padT) || 0) * TABLE_UNIT_SCALE));
+        rightPx  = Math.max(0, Math.min(36, (Number(padR) || 0) * TABLE_UNIT_SCALE));
+        bottomPx = Math.max(0, Math.min(30, (Number(padB) || 0) * TABLE_UNIT_SCALE));
+        leftPx   = Math.max(0, Math.min(36, (Number(padL) || 0) * TABLE_UNIT_SCALE));
       } else if (Array.isArray(tableBlock.defaultCellPadding) && tableBlock.defaultCellPadding.some(v => Number(v) > 0)) {
         // HWP 표 수준 기본 셀 내부 여백 (tableInfo offset 10-17) 적용
         const [dL, dR, dT, dB] = tableBlock.defaultCellPadding;
-        topPx    = Math.max(0, Math.min(30, Math.round((Number(dT) || 0) * TABLE_UNIT_SCALE)));
-        rightPx  = Math.max(0, Math.min(36, Math.round((Number(dR) || 0) * TABLE_UNIT_SCALE)));
-        bottomPx = Math.max(0, Math.min(30, Math.round((Number(dB) || 0) * TABLE_UNIT_SCALE)));
-        leftPx   = Math.max(0, Math.min(36, Math.round((Number(dL) || 0) * TABLE_UNIT_SCALE)));
+        topPx    = Math.max(0, Math.min(30, (Number(dT) || 0) * TABLE_UNIT_SCALE));
+        rightPx  = Math.max(0, Math.min(36, (Number(dR) || 0) * TABLE_UNIT_SCALE));
+        bottomPx = Math.max(0, Math.min(30, (Number(dB) || 0) * TABLE_UNIT_SCALE));
+        leftPx   = Math.max(0, Math.min(36, (Number(dL) || 0) * TABLE_UNIT_SCALE));
       } else if (rowLooksLikeTitle) {
         if (isTitleLabelCell || isTitleBlockCell) {
           topPx = 16; rightPx = 10; bottomPx = 16; leftPx = 10;
