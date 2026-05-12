@@ -1,0 +1,5092 @@
+{
+  "filename": "goyeopje-full-2024.hwp",
+  "pages": 11,
+  "page": {
+    "index": 3,
+    "width": 794,
+    "height": 1123
+  },
+  "bodyRect": {
+    "top": 538,
+    "left": 633,
+    "width": 794,
+    "height": 1123,
+    "bottom": 1661,
+    "right": 1427
+  },
+  "text": "(3쪽 중 3쪽) ※ 아래 내용은 서식 작성 시 필요한 사항을 안내하는 부분으로 접수ㆍ보관되지 않습니다. 처리절차 신청인 처리기관 관할 보훈관서 각 군 본부 보훈병원 보훈심사위원회 신청서 ▶ 접수 (복무ㆍ확인 의뢰) ▶ 사실 확인 ◀ (복무사실 통보) 검진의뢰서 작성 (검진 의뢰) ▼ 검진 심의ㆍ의결 (검진결과 통보) ▲ 통지 ◀ 결정ㆍ 등록 ◀ (필요 시 심의 의뢰) ▲ (심의결과 통보)",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "1009"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 60,
+        "left": 38,
+        "width": 678,
+        "height": 1023.65625,
+        "bottom": 1083.65625,
+        "right": 716
+      },
+      "tableRect": {
+        "top": 60,
+        "left": 38,
+        "width": 678,
+        "height": 1023.65625,
+        "bottom": 1083.65625,
+        "right": 716
+      },
+      "rowCount": 31,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-0"
+          },
+          "rect": {
+            "top": 60.5,
+            "left": 38.5,
+            "width": 677,
+            "height": 22,
+            "bottom": 82.5,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": "(3쪽 중 3쪽)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-1"
+          },
+          "rect": {
+            "top": 82.5,
+            "left": 38.5,
+            "width": 677,
+            "height": 37,
+            "bottom": 119.5,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": "※ 아래 내용은 서식 작성 시 필요한 사항을 안내하는 부분으로 접수ㆍ보관되지 않습니다."
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-2"
+          },
+          "rect": {
+            "top": 119.5,
+            "left": 38.5,
+            "width": 677,
+            "height": 285,
+            "bottom": 404.5,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-3"
+          },
+          "rect": {
+            "top": 404.5,
+            "left": 38.5,
+            "width": 677,
+            "height": 8.5,
+            "bottom": 413,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-4"
+          },
+          "rect": {
+            "top": 413,
+            "left": 38.5,
+            "width": 677,
+            "height": 34,
+            "bottom": 447,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": "처리절차"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-5"
+          },
+          "rect": {
+            "top": 447,
+            "left": 38.5,
+            "width": 677,
+            "height": 31,
+            "bottom": 478,
+            "right": 715.5
+          },
+          "cellCount": 2,
+          "text": "신청인 처리기관"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-6"
+          },
+          "rect": {
+            "top": 478,
+            "left": 38.5,
+            "width": 677,
+            "height": 31,
+            "bottom": 509,
+            "right": 715.5
+          },
+          "cellCount": 4,
+          "text": "관할 보훈관서 각 군 본부 보훈병원 보훈심사위원회"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-7"
+          },
+          "rect": {
+            "top": 509,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 533,
+            "right": 715.5
+          },
+          "cellCount": 6,
+          "text": ""
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-8"
+          },
+          "rect": {
+            "top": 533,
+            "left": 38.5,
+            "width": 677,
+            "height": 43,
+            "bottom": 576,
+            "right": 715.5
+          },
+          "cellCount": 10,
+          "text": "신청서 ▶ 접수 (복무ㆍ확인 의뢰) ▶ 사실 확인"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-9"
+          },
+          "rect": {
+            "top": 576,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 600,
+            "right": 715.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-10"
+          },
+          "rect": {
+            "top": 600,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 624,
+            "right": 715.5
+          },
+          "cellCount": 6,
+          "text": "◀"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-11"
+          },
+          "rect": {
+            "top": 624,
+            "left": 38.5,
+            "width": 677,
+            "height": 43,
+            "bottom": 667,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": "(복무사실 통보)"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 23,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-23\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-23"
+          },
+          "rect": {
+            "top": 891.5,
+            "left": 38.5,
+            "width": 677,
+            "height": 22.078125,
+            "bottom": 913.578125,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 24,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-24\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-24"
+          },
+          "rect": {
+            "top": 913.578125,
+            "left": 38.5,
+            "width": 677,
+            "height": 0,
+            "bottom": 913.578125,
+            "right": 715.5
+          },
+          "cellCount": 13,
+          "text": "(필요 시 심의 의뢰)"
+        },
+        {
+          "rowIndex": 25,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-25\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-25"
+          },
+          "rect": {
+            "top": 913.578125,
+            "left": 38.5,
+            "width": 677,
+            "height": 43,
+            "bottom": 956.578125,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 26,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-26\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-26"
+          },
+          "rect": {
+            "top": 956.578125,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 980.578125,
+            "right": 715.5
+          },
+          "cellCount": 12,
+          "text": "▲"
+        },
+        {
+          "rowIndex": 27,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-27\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-27"
+          },
+          "rect": {
+            "top": 980.578125,
+            "left": 38.5,
+            "width": 677,
+            "height": 43,
+            "bottom": 1023.578125,
+            "right": 715.5
+          },
+          "cellCount": 9,
+          "text": "(심의결과 통보)"
+        },
+        {
+          "rowIndex": 28,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-28\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-28"
+          },
+          "rect": {
+            "top": 1023.578125,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 1047.578125,
+            "right": 715.5
+          },
+          "cellCount": 6,
+          "text": ""
+        },
+        {
+          "rowIndex": 29,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-29\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-29"
+          },
+          "rect": {
+            "top": 1047.578125,
+            "left": 38.5,
+            "width": 677,
+            "height": 13.5,
+            "bottom": 1061.078125,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 30,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-30\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-30"
+          },
+          "rect": {
+            "top": 1061.078125,
+            "left": 38.5,
+            "width": 677,
+            "height": 22.078125,
+            "bottom": 1083.15625,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-0"
+          },
+          "rect": {
+            "top": 60.5,
+            "left": 38.5,
+            "width": 677,
+            "height": 22,
+            "bottom": 82.5,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": "(3쪽 중 3쪽)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-1"
+          },
+          "rect": {
+            "top": 82.5,
+            "left": 38.5,
+            "width": 677,
+            "height": 37,
+            "bottom": 119.5,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": "※ 아래 내용은 서식 작성 시 필요한 사항을 안내하는 부분으로 접수ㆍ보관되지 않습니다."
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-2"
+          },
+          "rect": {
+            "top": 119.5,
+            "left": 38.5,
+            "width": 677,
+            "height": 285,
+            "bottom": 404.5,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-3"
+          },
+          "rect": {
+            "top": 404.5,
+            "left": 38.5,
+            "width": 677,
+            "height": 8.5,
+            "bottom": 413,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-4"
+          },
+          "rect": {
+            "top": 413,
+            "left": 38.5,
+            "width": 677,
+            "height": 34,
+            "bottom": 447,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": "처리절차"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-5"
+          },
+          "rect": {
+            "top": 447,
+            "left": 38.5,
+            "width": 677,
+            "height": 31,
+            "bottom": 478,
+            "right": 715.5
+          },
+          "cellCount": 2,
+          "text": "신청인 처리기관"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-6"
+          },
+          "rect": {
+            "top": 478,
+            "left": 38.5,
+            "width": 677,
+            "height": 31,
+            "bottom": 509,
+            "right": 715.5
+          },
+          "cellCount": 4,
+          "text": "관할 보훈관서 각 군 본부 보훈병원 보훈심사위원회"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-7"
+          },
+          "rect": {
+            "top": 509,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 533,
+            "right": 715.5
+          },
+          "cellCount": 6,
+          "text": ""
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-8"
+          },
+          "rect": {
+            "top": 533,
+            "left": 38.5,
+            "width": 677,
+            "height": 43,
+            "bottom": 576,
+            "right": 715.5
+          },
+          "cellCount": 10,
+          "text": "신청서 ▶ 접수 (복무ㆍ확인 의뢰) ▶ 사실 확인"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-9"
+          },
+          "rect": {
+            "top": 576,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 600,
+            "right": 715.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-10"
+          },
+          "rect": {
+            "top": 600,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 624,
+            "right": 715.5
+          },
+          "cellCount": 6,
+          "text": "◀"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-11"
+          },
+          "rect": {
+            "top": 624,
+            "left": 38.5,
+            "width": 677,
+            "height": 43,
+            "bottom": 667,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": "(복무사실 통보)"
+        },
+        {
+          "rowIndex": 12,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-12"
+          },
+          "rect": {
+            "top": 667,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 691,
+            "right": 715.5
+          },
+          "cellCount": 5,
+          "text": ""
+        },
+        {
+          "rowIndex": 13,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-13\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-13"
+          },
+          "rect": {
+            "top": 691,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 715,
+            "right": 715.5
+          },
+          "cellCount": 4,
+          "text": ""
+        },
+        {
+          "rowIndex": 14,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-14\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-14"
+          },
+          "rect": {
+            "top": 715,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 739,
+            "right": 715.5
+          },
+          "cellCount": 4,
+          "text": "검진의뢰서 작성"
+        },
+        {
+          "rowIndex": 15,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-15\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-15"
+          },
+          "rect": {
+            "top": 739,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 763,
+            "right": 715.5
+          },
+          "cellCount": 8,
+          "text": "(검진 의뢰)"
+        },
+        {
+          "rowIndex": 16,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-16\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-16"
+          },
+          "rect": {
+            "top": 763,
+            "left": 38.5,
+            "width": 677,
+            "height": 0,
+            "bottom": 763,
+            "right": 715.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 17,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-17\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-17"
+          },
+          "rect": {
+            "top": 763,
+            "left": 38.5,
+            "width": 677,
+            "height": 28,
+            "bottom": 791,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": "▼"
+        },
+        {
+          "rowIndex": 18,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-18\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-18"
+          },
+          "rect": {
+            "top": 791,
+            "left": 38.5,
+            "width": 677,
+            "height": 25,
+            "bottom": 816,
+            "right": 715.5
+          },
+          "cellCount": 10,
+          "text": "검진 심의ㆍ의결"
+        },
+        {
+          "rowIndex": 19,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-19\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-19"
+          },
+          "rect": {
+            "top": 816,
+            "left": 38.5,
+            "width": 677,
+            "height": 25,
+            "bottom": 841,
+            "right": 715.5
+          },
+          "cellCount": 9,
+          "text": "(검진결과 통보) ▲"
+        },
+        {
+          "rowIndex": 20,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-20\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-20"
+          },
+          "rect": {
+            "top": 841,
+            "left": 38.5,
+            "width": 677,
+            "height": 25.5,
+            "bottom": 866.5,
+            "right": 715.5
+          },
+          "cellCount": 17,
+          "text": "통지 ◀ 결정ㆍ 등록 ◀"
+        },
+        {
+          "rowIndex": 21,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-21\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-21"
+          },
+          "rect": {
+            "top": 866.5,
+            "left": 38.5,
+            "width": 677,
+            "height": 25,
+            "bottom": 891.5,
+            "right": 715.5
+          },
+          "cellCount": 13,
+          "text": ""
+        },
+        {
+          "rowIndex": 22,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-22\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-22"
+          },
+          "rect": {
+            "top": 891.5,
+            "left": 38.5,
+            "width": 677,
+            "height": 0,
+            "bottom": 891.5,
+            "right": 715.5
+          },
+          "cellCount": 13,
+          "text": ""
+        },
+        {
+          "rowIndex": 23,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-23\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-23"
+          },
+          "rect": {
+            "top": 891.5,
+            "left": 38.5,
+            "width": 677,
+            "height": 22.078125,
+            "bottom": 913.578125,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 24,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-24\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-24"
+          },
+          "rect": {
+            "top": 913.578125,
+            "left": 38.5,
+            "width": 677,
+            "height": 0,
+            "bottom": 913.578125,
+            "right": 715.5
+          },
+          "cellCount": 13,
+          "text": "(필요 시 심의 의뢰)"
+        },
+        {
+          "rowIndex": 25,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-25\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-25"
+          },
+          "rect": {
+            "top": 913.578125,
+            "left": 38.5,
+            "width": 677,
+            "height": 43,
+            "bottom": 956.578125,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 26,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-26\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-26"
+          },
+          "rect": {
+            "top": 956.578125,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 980.578125,
+            "right": 715.5
+          },
+          "cellCount": 12,
+          "text": "▲"
+        },
+        {
+          "rowIndex": 27,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-27\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-27"
+          },
+          "rect": {
+            "top": 980.578125,
+            "left": 38.5,
+            "width": 677,
+            "height": 43,
+            "bottom": 1023.578125,
+            "right": 715.5
+          },
+          "cellCount": 9,
+          "text": "(심의결과 통보)"
+        },
+        {
+          "rowIndex": 28,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-28\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-28"
+          },
+          "rect": {
+            "top": 1023.578125,
+            "left": 38.5,
+            "width": 677,
+            "height": 24,
+            "bottom": 1047.578125,
+            "right": 715.5
+          },
+          "cellCount": 6,
+          "text": ""
+        },
+        {
+          "rowIndex": 29,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-29\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-29"
+          },
+          "rect": {
+            "top": 1047.578125,
+            "left": 38.5,
+            "width": 677,
+            "height": 13.5,
+            "bottom": 1061.078125,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 30,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-2-block-0/row-30\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-2-block-0:row-30"
+          },
+          "rect": {
+            "top": 1061.078125,
+            "left": 38.5,
+            "width": 677,
+            "height": 22.078125,
+            "bottom": 1083.15625,
+            "right": 715.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "text": "(3쪽 중 3쪽) ※ 아래 내용은 서식 작성 시 필요한 사항을 안내하는 부분으로 접수ㆍ보관되지 않습니다. 처리절차 신청인 처리기관 관할 보훈관서 각 군 본부 보훈병원 보훈심사위원회 신청서 ▶ 접수 (복무ㆍ확인 의뢰) ▶ 사실 확인 ◀ (복무사실 통보) 검진의뢰서 작성 (검진 의뢰) ▼ 검진 심의ㆍ의결 (검진결과 통보) ▲ 통지 ◀ 결정ㆍ 등록 ◀ (필요 시 심의 의뢰) ▲ (심의결과 통보)",
+      "style": {
+        "height": "1009px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 65,
+        "left": 43,
+        "width": 668,
+        "height": 15,
+        "bottom": 80,
+        "right": 711
+      },
+      "text": "(3쪽 중 3쪽)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 93.75,
+        "left": 46,
+        "width": 669,
+        "height": 15,
+        "bottom": 108.75,
+        "right": 715
+      },
+      "text": "※ 아래 내용은 서식 작성 시 필요한 사항을 안내하는 부분으로 접수ㆍ보관되지 않습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 384.921875,
+        "left": 41,
+        "width": 672,
+        "height": 17.578125,
+        "bottom": 402.5,
+        "right": 713
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 406.5,
+        "left": 43,
+        "width": 668,
+        "height": 17.578125,
+        "bottom": 424.078125,
+        "right": 711
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-4-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 421,
+        "left": 43,
+        "width": 668,
+        "height": 18,
+        "bottom": 439,
+        "right": 711
+      },
+      "text": "처리절차",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-5-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 469.5,
+        "left": 43,
+        "width": 119.78125,
+        "height": 17,
+        "bottom": 486.5,
+        "right": 162.78125
+      },
+      "text": "신청인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-5-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-5-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 454,
+        "left": 171.78125,
+        "width": 539.21875,
+        "height": 17,
+        "bottom": 471,
+        "right": 711
+      },
+      "text": "처리기관",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-6-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-6-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 485,
+        "left": 171.78125,
+        "width": 132.625,
+        "height": 17,
+        "bottom": 502,
+        "right": 304.40625
+      },
+      "text": "관할 보훈관서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-6-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-6-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 485,
+        "left": 313.40625,
+        "width": 101.6875,
+        "height": 17,
+        "bottom": 502,
+        "right": 415.09375
+      },
+      "text": "각 군 본부",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-6-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-6-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 485,
+        "left": 424.09375,
+        "width": 137.890625,
+        "height": 17,
+        "bottom": 502,
+        "right": 561.984375
+      },
+      "text": "보훈병원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-6-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-6-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 485,
+        "left": 570.984375,
+        "width": 140.015625,
+        "height": 17,
+        "bottom": 502,
+        "right": 711
+      },
+      "text": "보훈심사위원회",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 512.203125,
+        "left": 41,
+        "width": 94.515625,
+        "height": 17.578125,
+        "bottom": 529.78125,
+        "right": 135.515625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 512.921875,
+        "left": 139.515625,
+        "width": 210.59375,
+        "height": 17.578125,
+        "bottom": 530.5,
+        "right": 350.109375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 512.453125,
+        "left": 354.109375,
+        "width": 9.890625,
+        "height": 17.578125,
+        "bottom": 530.03125,
+        "right": 364
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 512.203125,
+        "left": 368,
+        "width": 49.09375,
+        "height": 17.578125,
+        "bottom": 529.78125,
+        "right": 417.09375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 615.203125,
+        "left": 422.09375,
+        "width": 141.890625,
+        "height": 17.578125,
+        "bottom": 632.78125,
+        "right": 563.984375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 641.203125,
+        "left": 568.984375,
+        "width": 144.015625,
+        "height": 17.578125,
+        "bottom": 658.78125,
+        "right": 713
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 591.203125,
+        "left": 41,
+        "width": 15,
+        "height": 17.578125,
+        "bottom": 608.78125,
+        "right": 56
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-8-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-8-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 591.5,
+        "left": 61,
+        "width": 56.015625,
+        "height": 17,
+        "bottom": 608.5,
+        "right": 117.015625
+      },
+      "text": "신청서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 557.453125,
+        "left": 122.015625,
+        "width": 13.5,
+        "height": 17.578125,
+        "bottom": 575.03125,
+        "right": 135.515625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 557.453125,
+        "left": 139.515625,
+        "width": 9.34375,
+        "height": 17.578125,
+        "bottom": 575.03125,
+        "right": 148.859375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-8-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-8-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 591.5,
+        "left": 152.859375,
+        "width": 11.921875,
+        "height": 17,
+        "bottom": 608.5,
+        "right": 164.78125
+      },
+      "text": "▶",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-8-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-8-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 591.5,
+        "left": 169.78125,
+        "width": 57.015625,
+        "height": 17,
+        "bottom": 608.5,
+        "right": 226.796875
+      },
+      "text": "접수",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-8-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-8-cell-6-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 545.75,
+        "left": 231.796875,
+        "width": 118.3125,
+        "height": 17,
+        "bottom": 562.75,
+        "right": 350.109375
+      },
+      "text": "(복무ㆍ확인 의뢰)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-8-cell-7-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-8-cell-7-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 558,
+        "left": 354.109375,
+        "width": 9.390625,
+        "height": 17,
+        "bottom": 575,
+        "right": 363.5
+      },
+      "text": "▶",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-8-cell-8-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-8-cell-8-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 583,
+        "left": 368.5,
+        "width": 36.6875,
+        "height": 17,
+        "bottom": 600,
+        "right": 405.1875
+      },
+      "text": "사실",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-8-cell-8-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-8-cell-8-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 600,
+        "left": 368.5,
+        "width": 36.6875,
+        "height": 17,
+        "bottom": 617,
+        "right": 405.1875
+      },
+      "text": "확인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 591.203125,
+        "left": 410.1875,
+        "width": 6.90625,
+        "height": 17.578125,
+        "bottom": 608.78125,
+        "right": 417.09375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 579.453125,
+        "left": 231.796875,
+        "width": 15.59375,
+        "height": 17.578125,
+        "bottom": 597.03125,
+        "right": 247.390625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 579.453125,
+        "left": 251.390625,
+        "width": 55.515625,
+        "height": 17.578125,
+        "bottom": 597.03125,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 579.453125,
+        "left": 310.90625,
+        "width": 39.203125,
+        "height": 17.578125,
+        "bottom": 597.03125,
+        "right": 350.109375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 624.953125,
+        "left": 122.015625,
+        "width": 13.5,
+        "height": 17.578125,
+        "bottom": 642.53125,
+        "right": 135.515625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 624.953125,
+        "left": 139.515625,
+        "width": 9.34375,
+        "height": 17.578125,
+        "bottom": 642.53125,
+        "right": 148.859375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-10-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-10-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 602,
+        "left": 231.796875,
+        "width": 15.59375,
+        "height": 17,
+        "bottom": 619,
+        "right": 247.390625
+      },
+      "text": "◀",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 602.953125,
+        "left": 251.390625,
+        "width": 55.515625,
+        "height": 17.578125,
+        "bottom": 620.53125,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 602.953125,
+        "left": 310.90625,
+        "width": 39.203125,
+        "height": 17.578125,
+        "bottom": 620.53125,
+        "right": 350.109375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 602.953125,
+        "left": 354.109375,
+        "width": 9.390625,
+        "height": 17.578125,
+        "bottom": 620.53125,
+        "right": 363.5
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-11-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-11-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 637.25,
+        "left": 251.390625,
+        "width": 112.109375,
+        "height": 17,
+        "bottom": 654.25,
+        "right": 363.5
+      },
+      "text": "(복무사실 통보)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 694.453125,
+        "left": 41,
+        "width": 94.515625,
+        "height": 17.578125,
+        "bottom": 712.03125,
+        "right": 135.515625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 670.453125,
+        "left": 139.515625,
+        "width": 87.78125,
+        "height": 17.578125,
+        "bottom": 688.03125,
+        "right": 227.296875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 670.203125,
+        "left": 231.296875,
+        "width": 16.09375,
+        "height": 17.578125,
+        "bottom": 687.78125,
+        "right": 247.390625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 669,
+        "left": 251.390625,
+        "width": 98.71875,
+        "height": 17.578125,
+        "bottom": 686.578125,
+        "right": 350.109375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 670.453125,
+        "left": 354.109375,
+        "width": 62.984375,
+        "height": 17.578125,
+        "bottom": 688.03125,
+        "right": 417.09375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 694.203125,
+        "left": 139.515625,
+        "width": 25.765625,
+        "height": 17.578125,
+        "bottom": 711.78125,
+        "right": 165.28125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 693.953125,
+        "left": 169.28125,
+        "width": 58.015625,
+        "height": 17.578125,
+        "bottom": 711.53125,
+        "right": 227.296875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 693.953125,
+        "left": 231.296875,
+        "width": 75.609375,
+        "height": 17.578125,
+        "bottom": 711.53125,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 694.203125,
+        "left": 310.90625,
+        "width": 106.1875,
+        "height": 17.578125,
+        "bottom": 711.78125,
+        "right": 417.09375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 718.203125,
+        "left": 139.515625,
+        "width": 25.265625,
+        "height": 17.578125,
+        "bottom": 735.78125,
+        "right": 164.78125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-14-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-14-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 736,
+        "left": 169.78125,
+        "width": 94.921875,
+        "height": 17,
+        "bottom": 753,
+        "right": 264.703125
+      },
+      "text": "검진의뢰서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-14-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-14-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 753,
+        "left": 169.78125,
+        "width": 94.921875,
+        "height": 17,
+        "bottom": 770,
+        "right": 264.703125
+      },
+      "text": "작성",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 717.953125,
+        "left": 269.703125,
+        "width": 37.203125,
+        "height": 17.578125,
+        "bottom": 735.53125,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 717.953125,
+        "left": 310.90625,
+        "width": 106.1875,
+        "height": 17.578125,
+        "bottom": 735.53125,
+        "right": 417.09375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 756.203125,
+        "left": 41,
+        "width": 94.515625,
+        "height": 17.578125,
+        "bottom": 773.78125,
+        "right": 135.515625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 756.203125,
+        "left": 139.515625,
+        "width": 25.265625,
+        "height": 17.578125,
+        "bottom": 773.78125,
+        "right": 164.78125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 742.453125,
+        "left": 269.703125,
+        "width": 37.203125,
+        "height": 17.578125,
+        "bottom": 760.03125,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-15-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-15-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 747.5,
+        "left": 316.90625,
+        "width": 94.1875,
+        "height": 17,
+        "bottom": 764.5,
+        "right": 411.09375
+      },
+      "text": "(검진 의뢰)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 742.453125,
+        "left": 422.09375,
+        "width": 24.28125,
+        "height": 17.578125,
+        "bottom": 760.03125,
+        "right": 446.375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 742.453125,
+        "left": 450.375,
+        "width": 41.15625,
+        "height": 17.578125,
+        "bottom": 760.03125,
+        "right": 491.53125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 742.203125,
+        "left": 496.53125,
+        "width": 41.15625,
+        "height": 17.578125,
+        "bottom": 759.78125,
+        "right": 537.6875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 742.203125,
+        "left": 541.6875,
+        "width": 22.296875,
+        "height": 17.578125,
+        "bottom": 759.78125,
+        "right": 563.984375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 768.203125,
+        "left": 269.703125,
+        "width": 37.203125,
+        "height": 17.578125,
+        "bottom": 785.78125,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 768.203125,
+        "left": 422.09375,
+        "width": 24.28125,
+        "height": 17.578125,
+        "bottom": 785.78125,
+        "right": 446.375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 768.203125,
+        "left": 541.6875,
+        "width": 22.296875,
+        "height": 17.578125,
+        "bottom": 785.78125,
+        "right": 563.984375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 63,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-17-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-17-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 765,
+        "left": 450.375,
+        "width": 87.3125,
+        "height": 17,
+        "bottom": 782,
+        "right": 537.6875
+      },
+      "text": "▼",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 64,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 806.953125,
+        "left": 43,
+        "width": 90.515625,
+        "height": 17.578125,
+        "bottom": 824.53125,
+        "right": 133.515625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 65,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 807.203125,
+        "left": 141.515625,
+        "width": 151.1875,
+        "height": 17.578125,
+        "bottom": 824.78125,
+        "right": 292.703125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 66,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 807.203125,
+        "left": 300.703125,
+        "width": 4.203125,
+        "height": 17.578125,
+        "bottom": 824.78125,
+        "right": 304.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 67,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 794.703125,
+        "left": 312.90625,
+        "width": 102.1875,
+        "height": 17.578125,
+        "bottom": 812.28125,
+        "right": 415.09375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 68,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 794.703125,
+        "left": 422.09375,
+        "width": 23.78125,
+        "height": 17.578125,
+        "bottom": 812.28125,
+        "right": 445.875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 69,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-18-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-18-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 795,
+        "left": 450.875,
+        "width": 86.3125,
+        "height": 17,
+        "bottom": 812,
+        "right": 537.1875
+      },
+      "text": "검진",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 70,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 794.703125,
+        "left": 542.1875,
+        "width": 21.796875,
+        "height": 17.578125,
+        "bottom": 812.28125,
+        "right": 563.984375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 71,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 794.703125,
+        "left": 568.984375,
+        "width": 15.84375,
+        "height": 17.578125,
+        "bottom": 812.28125,
+        "right": 584.828125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 72,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-18-cell-8-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-18-cell-8-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 795,
+        "left": 589.828125,
+        "width": 95.21875,
+        "height": 17,
+        "bottom": 812,
+        "right": 685.046875
+      },
+      "text": "심의ㆍ의결",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 73,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 794.703125,
+        "left": 690.046875,
+        "width": 22.953125,
+        "height": 17.578125,
+        "bottom": 812.28125,
+        "right": 713
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 74,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-19-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-19-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 824,
+        "left": 316.90625,
+        "width": 94.1875,
+        "height": 17,
+        "bottom": 841,
+        "right": 411.09375
+      },
+      "text": "(검진결과",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 75,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-19-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-19-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 841,
+        "left": 316.90625,
+        "width": 94.1875,
+        "height": 17,
+        "bottom": 858,
+        "right": 411.09375
+      },
+      "text": "통보)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 76,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 819.703125,
+        "left": 422.09375,
+        "width": 24.28125,
+        "height": 17.578125,
+        "bottom": 837.28125,
+        "right": 446.375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 77,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 819.953125,
+        "left": 450.375,
+        "width": 41.15625,
+        "height": 17.578125,
+        "bottom": 837.53125,
+        "right": 491.53125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 78,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 819.953125,
+        "left": 496.53125,
+        "width": 41.15625,
+        "height": 17.578125,
+        "bottom": 837.53125,
+        "right": 537.6875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 79,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 819.703125,
+        "left": 541.6875,
+        "width": 22.296875,
+        "height": 17.578125,
+        "bottom": 837.28125,
+        "right": 563.984375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 80,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 819.703125,
+        "left": 568.984375,
+        "width": 16.34375,
+        "height": 17.578125,
+        "bottom": 837.28125,
+        "right": 585.328125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 81,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-19-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-19-cell-6-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 822,
+        "left": 589.328125,
+        "width": 61.984375,
+        "height": 17,
+        "bottom": 839,
+        "right": 651.3125
+      },
+      "text": "▲",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 82,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 819.953125,
+        "left": 656.3125,
+        "width": 29.234375,
+        "height": 17.578125,
+        "bottom": 837.53125,
+        "right": 685.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 83,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 819.703125,
+        "left": 689.546875,
+        "width": 23.453125,
+        "height": 17.578125,
+        "bottom": 837.28125,
+        "right": 713
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 84,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 935.25,
+        "left": 41,
+        "width": 15,
+        "height": 17.578125,
+        "bottom": 952.828125,
+        "right": 56
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 85,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-20-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-20-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 890.28125,
+        "left": 61,
+        "width": 56.015625,
+        "height": 17,
+        "bottom": 907.28125,
+        "right": 117.015625
+      },
+      "text": "통지",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 86,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-20-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-20-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 848,
+        "left": 122.015625,
+        "width": 13.5,
+        "height": 17,
+        "bottom": 865,
+        "right": 135.515625
+      },
+      "text": "◀",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 87,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 844.953125,
+        "left": 139.515625,
+        "width": 25.265625,
+        "height": 17.578125,
+        "bottom": 862.53125,
+        "right": 164.78125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 88,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-20-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-20-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 881.78125,
+        "left": 169.78125,
+        "width": 94.921875,
+        "height": 17,
+        "bottom": 898.78125,
+        "right": 264.703125
+      },
+      "text": "결정ㆍ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 89,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-20-cell-4-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-20-cell-4-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 898.78125,
+        "left": 169.78125,
+        "width": 94.921875,
+        "height": 17,
+        "bottom": 915.78125,
+        "right": 264.703125
+      },
+      "text": "등록",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 90,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-20-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-20-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 843,
+        "left": 269.703125,
+        "width": 12.796875,
+        "height": 17,
+        "bottom": 860,
+        "right": 282.5
+      },
+      "text": "◀",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 91,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 844.703125,
+        "left": 286.5,
+        "width": 8.203125,
+        "height": 17.578125,
+        "bottom": 862.28125,
+        "right": 294.703125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 92,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 844.703125,
+        "left": 298.703125,
+        "width": 8.203125,
+        "height": 17.578125,
+        "bottom": 862.28125,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 93,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 844.703125,
+        "left": 422.09375,
+        "width": 24.28125,
+        "height": 17.578125,
+        "bottom": 862.28125,
+        "right": 446.375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 94,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 844.703125,
+        "left": 450.375,
+        "width": 41.15625,
+        "height": 17.578125,
+        "bottom": 862.28125,
+        "right": 491.53125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 95,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 844.953125,
+        "left": 496.53125,
+        "width": 41.15625,
+        "height": 17.578125,
+        "bottom": 862.53125,
+        "right": 537.6875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 96,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 844.953125,
+        "left": 541.6875,
+        "width": 22.296875,
+        "height": 17.578125,
+        "bottom": 862.53125,
+        "right": 563.984375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 97,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 844.953125,
+        "left": 568.984375,
+        "width": 16.34375,
+        "height": 17.578125,
+        "bottom": 862.53125,
+        "right": 585.328125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 98,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 844.953125,
+        "left": 589.328125,
+        "width": 30.234375,
+        "height": 17.578125,
+        "bottom": 862.53125,
+        "right": 619.5625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 99,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 844.953125,
+        "left": 624.5625,
+        "width": 26.75,
+        "height": 17.578125,
+        "bottom": 862.53125,
+        "right": 651.3125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 100,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 844.953125,
+        "left": 656.3125,
+        "width": 29.234375,
+        "height": 17.578125,
+        "bottom": 862.53125,
+        "right": 685.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 101,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 844.953125,
+        "left": 689.546875,
+        "width": 23.453125,
+        "height": 17.578125,
+        "bottom": 862.53125,
+        "right": 713
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 102,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 869.953125,
+        "left": 139.515625,
+        "width": 25.265625,
+        "height": 17.578125,
+        "bottom": 887.53125,
+        "right": 164.78125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 103,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 870.453125,
+        "left": 286.5,
+        "width": 8.203125,
+        "height": 17.578125,
+        "bottom": 888.03125,
+        "right": 294.703125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 104,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 870.453125,
+        "left": 298.703125,
+        "width": 8.203125,
+        "height": 17.578125,
+        "bottom": 888.03125,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 105,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 870.453125,
+        "left": 310.90625,
+        "width": 106.1875,
+        "height": 17.578125,
+        "bottom": 888.03125,
+        "right": 417.09375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 106,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 870.453125,
+        "left": 422.09375,
+        "width": 24.28125,
+        "height": 17.578125,
+        "bottom": 888.03125,
+        "right": 446.375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 107,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 870.453125,
+        "left": 450.375,
+        "width": 41.65625,
+        "height": 17.578125,
+        "bottom": 888.03125,
+        "right": 492.03125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 108,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 870.203125,
+        "left": 496.03125,
+        "width": 41.65625,
+        "height": 17.578125,
+        "bottom": 887.78125,
+        "right": 537.6875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 109,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 870.203125,
+        "left": 541.6875,
+        "width": 22.296875,
+        "height": 17.578125,
+        "bottom": 887.78125,
+        "right": 563.984375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 110,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 870.203125,
+        "left": 568.984375,
+        "width": 16.34375,
+        "height": 17.578125,
+        "bottom": 887.78125,
+        "right": 585.328125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 111,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 870.203125,
+        "left": 589.328125,
+        "width": 30.234375,
+        "height": 17.578125,
+        "bottom": 887.78125,
+        "right": 619.5625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 112,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 870.203125,
+        "left": 624.5625,
+        "width": 26.75,
+        "height": 17.578125,
+        "bottom": 887.78125,
+        "right": 651.3125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 113,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 870.203125,
+        "left": 656.3125,
+        "width": 29.234375,
+        "height": 17.578125,
+        "bottom": 887.78125,
+        "right": 685.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 114,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 870.203125,
+        "left": 689.546875,
+        "width": 23.453125,
+        "height": 17.578125,
+        "bottom": 887.78125,
+        "right": 713
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 115,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.5,
+        "left": 269.703125,
+        "width": 12.796875,
+        "height": 17.578125,
+        "bottom": 911.078125,
+        "right": 282.5
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 116,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.5,
+        "left": 286.5,
+        "width": 8.203125,
+        "height": 17.578125,
+        "bottom": 911.078125,
+        "right": 294.703125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 117,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.5,
+        "left": 298.703125,
+        "width": 8.203125,
+        "height": 17.578125,
+        "bottom": 911.078125,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 118,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.5,
+        "left": 310.90625,
+        "width": 106.1875,
+        "height": 17.578125,
+        "bottom": 911.078125,
+        "right": 417.09375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 119,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.5,
+        "left": 422.09375,
+        "width": 24.28125,
+        "height": 17.578125,
+        "bottom": 911.078125,
+        "right": 446.375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 120,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.5,
+        "left": 450.375,
+        "width": 41.65625,
+        "height": 17.578125,
+        "bottom": 911.078125,
+        "right": 492.03125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 121,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.5,
+        "left": 496.03125,
+        "width": 41.65625,
+        "height": 17.578125,
+        "bottom": 911.078125,
+        "right": 537.6875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 122,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.5,
+        "left": 541.6875,
+        "width": 22.296875,
+        "height": 17.578125,
+        "bottom": 911.078125,
+        "right": 563.984375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 123,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.5,
+        "left": 568.984375,
+        "width": 16.34375,
+        "height": 17.578125,
+        "bottom": 911.078125,
+        "right": 585.328125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 124,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.5,
+        "left": 589.328125,
+        "width": 30.234375,
+        "height": 17.578125,
+        "bottom": 911.078125,
+        "right": 619.5625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 125,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.75,
+        "left": 624.5625,
+        "width": 26.75,
+        "height": 17.578125,
+        "bottom": 911.328125,
+        "right": 651.3125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 126,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.75,
+        "left": 656.3125,
+        "width": 29.234375,
+        "height": 17.578125,
+        "bottom": 911.328125,
+        "right": 685.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 127,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 893.75,
+        "left": 689.546875,
+        "width": 23.453125,
+        "height": 17.578125,
+        "bottom": 911.328125,
+        "right": 713
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 128,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 894,
+        "left": 139.515625,
+        "width": 25.265625,
+        "height": 17.578125,
+        "bottom": 911.578125,
+        "right": 164.78125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 129,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.53125,
+        "left": 269.703125,
+        "width": 12.796875,
+        "height": 17.578125,
+        "bottom": 944.109375,
+        "right": 282.5
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 130,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.53125,
+        "left": 286.5,
+        "width": 8.203125,
+        "height": 17.578125,
+        "bottom": 944.109375,
+        "right": 294.703125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 131,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.53125,
+        "left": 298.703125,
+        "width": 8.203125,
+        "height": 17.578125,
+        "bottom": 944.109375,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 132,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-24-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-24-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 920.578125,
+        "left": 310.90625,
+        "width": 106.1875,
+        "height": 17,
+        "bottom": 937.578125,
+        "right": 417.09375
+      },
+      "text": "(필요 시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 133,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-24-cell-3-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-24-cell-3-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 937.578125,
+        "left": 310.90625,
+        "width": 106.1875,
+        "height": 17,
+        "bottom": 954.578125,
+        "right": 417.09375
+      },
+      "text": "심의 의뢰)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 134,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.53125,
+        "left": 422.09375,
+        "width": 24.28125,
+        "height": 17.578125,
+        "bottom": 944.109375,
+        "right": 446.375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 135,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.53125,
+        "left": 450.375,
+        "width": 41.65625,
+        "height": 17.578125,
+        "bottom": 944.109375,
+        "right": 492.03125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 136,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.53125,
+        "left": 496.03125,
+        "width": 41.65625,
+        "height": 17.578125,
+        "bottom": 944.109375,
+        "right": 537.6875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 137,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.53125,
+        "left": 541.6875,
+        "width": 22.296875,
+        "height": 17.578125,
+        "bottom": 944.109375,
+        "right": 563.984375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 138,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.53125,
+        "left": 568.984375,
+        "width": 16.34375,
+        "height": 17.578125,
+        "bottom": 944.109375,
+        "right": 585.328125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 139,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.53125,
+        "left": 589.328125,
+        "width": 30.734375,
+        "height": 17.578125,
+        "bottom": 944.109375,
+        "right": 620.0625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 140,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.28125,
+        "left": 624.0625,
+        "width": 27.25,
+        "height": 17.578125,
+        "bottom": 943.859375,
+        "right": 651.3125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 141,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.28125,
+        "left": 656.3125,
+        "width": 29.234375,
+        "height": 17.578125,
+        "bottom": 943.859375,
+        "right": 685.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 142,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.28125,
+        "left": 689.546875,
+        "width": 23.453125,
+        "height": 17.578125,
+        "bottom": 943.859375,
+        "right": 713
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 143,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 926.28125,
+        "left": 139.515625,
+        "width": 25.265625,
+        "height": 17.578125,
+        "bottom": 943.859375,
+        "right": 164.78125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 144,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 993.28125,
+        "left": 60.5,
+        "width": 57.015625,
+        "height": 17.578125,
+        "bottom": 1010.859375,
+        "right": 117.515625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 145,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 993.03125,
+        "left": 121.515625,
+        "width": 14,
+        "height": 17.578125,
+        "bottom": 1010.609375,
+        "right": 135.515625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 146,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 993.03125,
+        "left": 139.515625,
+        "width": 25.765625,
+        "height": 17.578125,
+        "bottom": 1010.609375,
+        "right": 165.28125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 147,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-26-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-26-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 961.578125,
+        "left": 169.28125,
+        "width": 95.921875,
+        "height": 17,
+        "bottom": 978.578125,
+        "right": 265.203125
+      },
+      "text": "▲",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 148,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 959.78125,
+        "left": 269.203125,
+        "width": 37.703125,
+        "height": 17.578125,
+        "bottom": 977.359375,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 149,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 959.78125,
+        "left": 310.90625,
+        "width": 106.1875,
+        "height": 17.578125,
+        "bottom": 977.359375,
+        "right": 417.09375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 150,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 959.78125,
+        "left": 422.09375,
+        "width": 141.890625,
+        "height": 17.578125,
+        "bottom": 977.359375,
+        "right": 563.984375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 151,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 959.78125,
+        "left": 568.984375,
+        "width": 16.34375,
+        "height": 17.578125,
+        "bottom": 977.359375,
+        "right": 585.328125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 152,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 959.78125,
+        "left": 589.328125,
+        "width": 30.734375,
+        "height": 17.578125,
+        "bottom": 977.359375,
+        "right": 620.0625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 153,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 959.78125,
+        "left": 624.0625,
+        "width": 27.25,
+        "height": 17.578125,
+        "bottom": 977.359375,
+        "right": 651.3125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 154,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 959.78125,
+        "left": 656.3125,
+        "width": 29.234375,
+        "height": 17.578125,
+        "bottom": 977.359375,
+        "right": 685.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 155,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 993.03125,
+        "left": 689.546875,
+        "width": 23.453125,
+        "height": 17.578125,
+        "bottom": 1010.609375,
+        "right": 713
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 156,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 993.28125,
+        "left": 169.28125,
+        "width": 40.15625,
+        "height": 17.578125,
+        "bottom": 1010.859375,
+        "right": 209.4375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 157,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 993.03125,
+        "left": 214.4375,
+        "width": 50.765625,
+        "height": 17.578125,
+        "bottom": 1010.609375,
+        "right": 265.203125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 158,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 993.03125,
+        "left": 269.203125,
+        "width": 37.703125,
+        "height": 17.578125,
+        "bottom": 1010.609375,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 159,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-27-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-27-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 982.578125,
+        "left": 310.90625,
+        "width": 106.1875,
+        "height": 17,
+        "bottom": 999.578125,
+        "right": 417.09375
+      },
+      "text": "(심의결과",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 160,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-2-block-0-row-27-cell-3-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-2-block-0-row-27-cell-3-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 999.578125,
+        "left": 310.90625,
+        "width": 106.1875,
+        "height": 17,
+        "bottom": 1016.578125,
+        "right": 417.09375
+      },
+      "text": "통보)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 161,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 993.03125,
+        "left": 422.09375,
+        "width": 141.890625,
+        "height": 17.578125,
+        "bottom": 1010.609375,
+        "right": 563.984375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 162,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 993.03125,
+        "left": 568.984375,
+        "width": 16.34375,
+        "height": 17.578125,
+        "bottom": 1010.609375,
+        "right": 585.328125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 163,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 993.03125,
+        "left": 589.328125,
+        "width": 30.734375,
+        "height": 17.578125,
+        "bottom": 1010.609375,
+        "right": 620.0625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 164,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 993.03125,
+        "left": 624.0625,
+        "width": 27.25,
+        "height": 17.578125,
+        "bottom": 1010.609375,
+        "right": 651.3125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 165,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 993.28125,
+        "left": 656.3125,
+        "width": 29.234375,
+        "height": 17.578125,
+        "bottom": 1010.859375,
+        "right": 685.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 166,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1026.53125,
+        "left": 169.28125,
+        "width": 40.65625,
+        "height": 17.578125,
+        "bottom": 1044.109375,
+        "right": 209.9375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 167,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1026.78125,
+        "left": 213.9375,
+        "width": 51.265625,
+        "height": 17.578125,
+        "bottom": 1044.359375,
+        "right": 265.203125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 168,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1026.78125,
+        "left": 269.203125,
+        "width": 37.703125,
+        "height": 17.578125,
+        "bottom": 1044.359375,
+        "right": 306.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 169,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1026.78125,
+        "left": 310.90625,
+        "width": 106.1875,
+        "height": 17.578125,
+        "bottom": 1044.359375,
+        "right": 417.09375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 170,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1026.78125,
+        "left": 422.09375,
+        "width": 141.890625,
+        "height": 17.578125,
+        "bottom": 1044.359375,
+        "right": 563.984375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 171,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1026.78125,
+        "left": 568.984375,
+        "width": 116.5625,
+        "height": 17.578125,
+        "bottom": 1044.359375,
+        "right": 685.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 172,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1050.078125,
+        "left": 41,
+        "width": 672,
+        "height": 17.578125,
+        "bottom": 1067.65625,
+        "right": 713
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 173,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1063.078125,
+        "left": 41,
+        "width": 672,
+        "height": 17.578125,
+        "bottom": 1080.65625,
+        "right": 713
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 174
+}

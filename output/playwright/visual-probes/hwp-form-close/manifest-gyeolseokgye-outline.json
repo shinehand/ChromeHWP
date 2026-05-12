@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-05-06T22:35:13.999Z",
+  "auditId": "hwp-form-gyeolseokgye-outline",
+  "documents": [
+    {
+      "id": "gyeolseokgye",
+      "filename": "gyeolseokgye.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/gyeolseokgye.hwp",
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-outline-none.png",
+          "targetBand": "last"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-outline-none-border-0.png",
+          "targetBand": "last"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-outline-none-border-0-run-0p01.png",
+          "targetBand": "last"
+        }
+      ]
+    }
+  ]
+}

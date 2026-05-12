@@ -1,0 +1,6639 @@
+{
+  "filename": "attachment-sale-notice.hwp",
+  "pages": 4,
+  "page": {
+    "index": 2,
+    "width": 1123,
+    "height": 1587
+  },
+  "bodyRect": {
+    "left": 0,
+    "top": 0,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 1587
+  },
+  "text": "공급대상세대 및 공급금액\n\n지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10%)\n\n\t\n\n잔금(90%)\n\n\n\n\n공급면적\n\n\t\n\n기타공용\n\n면적\n\n\t\n\n총계\n\n\n\n\n주거전용\n\n\t\n\n주거공용\n\n\t\n\n소계\n\n\n\n\n대구\n\n남구\n\n\t\n\n대명동 554-4 102동\n\n(안지랑로2길10)\n\n\t\n\n301\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000\n\n\n\n\n401\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000\n\n\n\n\n402\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000\n\n\n\n\n502\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n108,500,000\n\n\t\n\n10,850,000\n\n\t\n\n97,650,000\n\n\n\n\n대명동 554-4 103동\n\n(안지랑로2길10)\n\n\t\n\n202\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000\n\n\n\n\n301\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000\n\n\n\n\n402\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000\n\n\n\n\n501\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n108,500,000\n\n\t\n\n10,850,000\n\n\t\n\n97,650,000\n\n\n\n\n502\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n108,500,000\n\n\t\n\n10,850,000\n\n\t\n\n97,650,000\n\n\n\n\n대구\n\n달서구\n\n\t\n\n상인동 438-9\n\n(월곡로35길74-15)\n\n\t\n\n201\n\n\t\n\n59.376\n\n\t\n\n16.5695\n\n\t\n\n75.9455\n\n\t\n\n0\n\n\t\n\n75.9455\n\n\t\n\n115,500,000\n\n\t\n\n11,550,000\n\n\t\n\n103,950,000\n\n\n\n\n202\n\n\t\n\n59.7642\n\n\t\n\n16.7803\n\n\t\n\n76.5445\n\n\t\n\n0\n\n\t\n\n76.5445\n\n\t\n\n116,500,000\n\n\t\n\n11,650,000\n\n\t\n\n104,850,000\n\n\n\n\n302\n\n\t\n\n59.7642\n\n\t\n\n16.7803\n\n\t\n\n76.5445\n\n\t\n\n0\n\n\t\n\n76.5445\n\n\t\n\n116,500,000\n\n\t\n\n11,650,000\n\n\t\n\n104,850,000\n",
+  "topChildren": [
+    {
+      "index": 0,
+      "tag": "DIV",
+      "cls": "hwp-table-wrap",
+      "dataset": {
+        "nestingLevel": "0",
+        "contentKind": "lh-sale-notice-supply-amount-heading",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-flow-after-positioned",
+        "layoutHeight": "30"
+      },
+      "rect": {
+        "left": 60,
+        "top": 27,
+        "width": 1001,
+        "height": 32,
+        "bottom": 59
+      },
+      "text": "공급대상세대 및 공급금액",
+      "style": {
+        "position": "absolute",
+        "display": "block",
+        "overflow": "visible",
+        "height": "32px",
+        "minHeight": "30px",
+        "lineHeight": "21.0667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 1,
+      "tag": "DIV",
+      "cls": "hwp-table-wrap",
+      "dataset": {
+        "nestingLevel": "0",
+        "contentKind": "lh-sale-notice-price-detail",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "1291"
+      },
+      "rect": {
+        "left": 60,
+        "top": 104,
+        "width": 1006,
+        "height": 1291,
+        "bottom": 1395
+      },
+      "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10%)\n\n\t\n\n잔금(90%)\n\n\n\n\n공급면적\n\n\t\n\n기타공용\n\n면적\n\n\t\n\n총계\n\n\n\n\n주거전용\n\n\t\n\n주거공용\n\n\t\n\n소계\n\n\n\n\n대구\n\n남구\n\n\t\n\n대명동 554-4 102동\n\n(안지랑로2길10)\n\n\t\n\n301\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n",
+      "style": {
+        "position": "absolute",
+        "display": "block",
+        "overflow": "visible",
+        "height": "1291px",
+        "minHeight": "1291px",
+        "lineHeight": "21.0667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 2,
+      "tag": "P",
+      "cls": "hwp-paragraph",
+      "dataset": {
+        "layoutPosition": "absolute",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 60,
+        "top": 1497,
+        "width": 1006,
+        "height": 13,
+        "bottom": 1510
+      },
+      "text": "※ 주택규모 표시 방법은 법정계량단위인 제곱미터(㎡)로 표기하였습니다. (㎡를 평으로 환산하는 방법 : ㎡ × 0.3025 또는 ㎡ ÷ 3.3058)",
+      "style": {
+        "position": "absolute",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 3,
+      "tag": "P",
+      "cls": "hwp-paragraph",
+      "dataset": {
+        "layoutPosition": "absolute",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 60,
+        "top": 1516,
+        "width": 1006,
+        "height": 26,
+        "bottom": 1542
+      },
+      "text": "※ 주거전용 면적은 주거의 용도로만 쓰이는 면적이며, 주거공용 면적은 계단, 복도, 주동 현관 등 공동주택의 지상층에 있는 공용면적이고, 그 밖의 공용면적은 주거공\n용 면적을 제외한 지하층 등의 공용면적입니다.",
+      "style": {
+        "position": "absolute",
+        "display": "block",
+        "overflow": "visible",
+        "height": "26px",
+        "minHeight": "26px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "nestingLevel": "0",
+        "contentKind": "lh-sale-notice-supply-amount-heading",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-flow-after-positioned",
+        "layoutHeight": "30"
+      },
+      "tableDataset": {
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "contentKind": "lh-sale-notice-supply-amount-heading",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "left": 60,
+        "top": 27,
+        "width": 1001,
+        "height": 32,
+        "bottom": 59
+      },
+      "tableRect": {
+        "left": 60,
+        "top": 27,
+        "width": 1001,
+        "height": 32,
+        "bottom": 59
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {},
+          "rect": {
+            "left": 65,
+            "top": 27.5,
+            "width": 995.5,
+            "height": 31,
+            "bottom": 58.5
+          },
+          "cellCount": 2,
+          "text": "공급대상세대 및 공급금액"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {},
+          "rect": {
+            "left": 65,
+            "top": 27.5,
+            "width": 995.5,
+            "height": 31,
+            "bottom": 58.5
+          },
+          "cellCount": 2,
+          "text": "공급대상세대 및 공급금액"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {},
+          "rect": {
+            "left": 65,
+            "top": 27.5,
+            "width": 995.5,
+            "height": 31,
+            "bottom": 58.5
+          },
+          "cellCount": 2,
+          "text": "공급대상세대 및 공급금액"
+        }
+      ],
+      "text": "공급대상세대 및 공급금액",
+      "style": {
+        "position": "absolute",
+        "display": "block",
+        "overflow": "visible",
+        "height": "32px",
+        "minHeight": "30px",
+        "lineHeight": "21.0667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      },
+      "tableStyle": {
+        "position": "static",
+        "display": "table",
+        "overflow": "visible",
+        "height": "32px",
+        "minHeight": "0px",
+        "lineHeight": "17.6px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(0, 0, 0)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 1,
+      "depth": 0,
+      "wrapDataset": {
+        "nestingLevel": "0",
+        "contentKind": "lh-sale-notice-price-detail",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "1291"
+      },
+      "tableDataset": {
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "contentKind": "lh-sale-notice-price-detail",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "left": 60,
+        "top": 104,
+        "width": 1006,
+        "height": 1291,
+        "bottom": 1395
+      },
+      "tableRect": {
+        "left": 60,
+        "top": 104,
+        "width": 1006,
+        "height": 1291,
+        "bottom": 1395
+      },
+      "rowCount": 60,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 104.5,
+            "width": 1005,
+            "height": 17,
+            "bottom": 121.5
+          },
+          "cellCount": 7,
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 121.5,
+            "width": 1005,
+            "height": 22,
+            "bottom": 143.5
+          },
+          "cellCount": 2,
+          "text": "계약금(10%)\n\n\t\n\n잔금(90%)"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 143.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 164.5
+          },
+          "cellCount": 3,
+          "text": "공급면적\n\n\t\n\n기타공용\n\n면적\n\n\t\n\n총계"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 164.5,
+            "width": 1005,
+            "height": 23,
+            "bottom": 187.5
+          },
+          "cellCount": 3,
+          "text": "주거전용\n\n\t\n\n주거공용\n\n\t\n\n소계"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 187.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 208.5
+          },
+          "cellCount": 11,
+          "text": "대구\n\n남구\n\n\t\n\n대명동 554-4 102동\n\n(안지랑로2길10)\n\n\t\n\n301\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 208.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 229.5
+          },
+          "cellCount": 9,
+          "text": "401\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 229.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 250.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 250.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 271.5
+          },
+          "cellCount": 9,
+          "text": "502\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n108,500,000\n\n\t\n\n10,850,000\n\n\t\n\n97,650,000"
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 271.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 292.5
+          },
+          "cellCount": 10,
+          "text": "대명동 554-4 103동\n\n(안지랑로2길10)\n\n\t\n\n202\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 292.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 313.5
+          },
+          "cellCount": 9,
+          "text": "301\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 313.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 334.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 334.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 355.5
+          },
+          "cellCount": 9,
+          "text": "501\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n108,500,000\n\n\t\n\n10,850,000\n\n\t\n\n97,650,000"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 52,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1195.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1216.5
+          },
+          "cellCount": 9,
+          "text": "301\n\n\t\n\n59.1084\n\n\t\n\n11.0006\n\n\t\n\n70.109\n\n\t\n\n0\n\n\t\n\n70.109\n\n\t\n\n68,500,000\n\n\t\n\n6,850,000\n\n\t\n\n61,650,000"
+        },
+        {
+          "rowIndex": 53,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1216.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1237.5
+          },
+          "cellCount": 9,
+          "text": "401\n\n\t\n\n59.1084\n\n\t\n\n11.0006\n\n\t\n\n70.109\n\n\t\n\n0\n\n\t\n\n70.109\n\n\t\n\n68,000,000\n\n\t\n\n6,800,000\n\n\t\n\n61,200,000"
+        },
+        {
+          "rowIndex": 54,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1237.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1258.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n59.1084\n\n\t\n\n11.0006\n\n\t\n\n70.109\n\n\t\n\n0\n\n\t\n\n70.109\n\n\t\n\n68,000,000\n\n\t\n\n6,800,000\n\n\t\n\n61,200,000"
+        },
+        {
+          "rowIndex": 55,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1258.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1279.5
+          },
+          "cellCount": 11,
+          "text": "경북\n\n포항시\n\n\t\n\n남구 대도동 142-22 301동\n\n(문예로82번길20-10)\n\n\t\n\n102\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n56,500,000\n\n\t\n\n5,650,000\n\n\t\n\n50,850,000"
+        },
+        {
+          "rowIndex": 56,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1279.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1300.5
+          },
+          "cellCount": 9,
+          "text": "301\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+        },
+        {
+          "rowIndex": 57,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1300.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1321.5
+          },
+          "cellCount": 9,
+          "text": "302\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+        },
+        {
+          "rowIndex": 58,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1321.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1342.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+        },
+        {
+          "rowIndex": 59,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1342.5,
+            "width": 1005,
+            "height": 52,
+            "bottom": 1394.5
+          },
+          "cellCount": 10,
+          "text": "남구 대도동 142-5 302동\n\n(문예로82번길20-8)\n\n\t\n\n402\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 104.5,
+            "width": 1005,
+            "height": 17,
+            "bottom": 121.5
+          },
+          "cellCount": 7,
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 121.5,
+            "width": 1005,
+            "height": 22,
+            "bottom": 143.5
+          },
+          "cellCount": 2,
+          "text": "계약금(10%)\n\n\t\n\n잔금(90%)"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 143.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 164.5
+          },
+          "cellCount": 3,
+          "text": "공급면적\n\n\t\n\n기타공용\n\n면적\n\n\t\n\n총계"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 164.5,
+            "width": 1005,
+            "height": 23,
+            "bottom": 187.5
+          },
+          "cellCount": 3,
+          "text": "주거전용\n\n\t\n\n주거공용\n\n\t\n\n소계"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 187.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 208.5
+          },
+          "cellCount": 11,
+          "text": "대구\n\n남구\n\n\t\n\n대명동 554-4 102동\n\n(안지랑로2길10)\n\n\t\n\n301\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 208.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 229.5
+          },
+          "cellCount": 9,
+          "text": "401\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 229.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 250.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 250.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 271.5
+          },
+          "cellCount": 9,
+          "text": "502\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n108,500,000\n\n\t\n\n10,850,000\n\n\t\n\n97,650,000"
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 271.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 292.5
+          },
+          "cellCount": 10,
+          "text": "대명동 554-4 103동\n\n(안지랑로2길10)\n\n\t\n\n202\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 292.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 313.5
+          },
+          "cellCount": 9,
+          "text": "301\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 313.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 334.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 334.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 355.5
+          },
+          "cellCount": 9,
+          "text": "501\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n108,500,000\n\n\t\n\n10,850,000\n\n\t\n\n97,650,000"
+        },
+        {
+          "rowIndex": 12,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 355.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 376.5
+          },
+          "cellCount": 9,
+          "text": "502\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n108,500,000\n\n\t\n\n10,850,000\n\n\t\n\n97,650,000"
+        },
+        {
+          "rowIndex": 13,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 376.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 397.5
+          },
+          "cellCount": 11,
+          "text": "대구\n\n달서구\n\n\t\n\n상인동 438-9\n\n(월곡로35길74-15)\n\n\t\n\n201\n\n\t\n\n59.376\n\n\t\n\n16.5695\n\n\t\n\n75.9455\n\n\t\n\n0\n\n\t\n\n75.9455\n\n\t\n\n115,500,000\n\n\t\n\n11,550,000\n\n\t\n\n103,950,000"
+        },
+        {
+          "rowIndex": 14,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 397.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 418.5
+          },
+          "cellCount": 9,
+          "text": "202\n\n\t\n\n59.7642\n\n\t\n\n16.7803\n\n\t\n\n76.5445\n\n\t\n\n0\n\n\t\n\n76.5445\n\n\t\n\n116,500,000\n\n\t\n\n11,650,000\n\n\t\n\n104,850,000"
+        },
+        {
+          "rowIndex": 15,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 418.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 439.5
+          },
+          "cellCount": 9,
+          "text": "302\n\n\t\n\n59.7642\n\n\t\n\n16.7803\n\n\t\n\n76.5445\n\n\t\n\n0\n\n\t\n\n76.5445\n\n\t\n\n116,500,000\n\n\t\n\n11,650,000\n\n\t\n\n104,850,000"
+        },
+        {
+          "rowIndex": 16,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 439.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 460.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n59.7642\n\n\t\n\n16.7803\n\n\t\n\n76.5445\n\n\t\n\n0\n\n\t\n\n76.5445\n\n\t\n\n116,500,000\n\n\t\n\n11,650,000\n\n\t\n\n104,850,000"
+        },
+        {
+          "rowIndex": 17,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 460.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 481.5
+          },
+          "cellCount": 9,
+          "text": "501\n\n\t\n\n59.376\n\n\t\n\n16.5695\n\n\t\n\n75.9455\n\n\t\n\n0\n\n\t\n\n75.9455\n\n\t\n\n113,500,000\n\n\t\n\n11,350,000\n\n\t\n\n102,150,000"
+        },
+        {
+          "rowIndex": 18,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 481.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 502.5
+          },
+          "cellCount": 11,
+          "text": "대구\n\n달성군\n\n\t\n\n논공읍 북리 833-17\n\n(논공중앙로138)\n\n\t\n\n201\n\n\t\n\n59.35\n\n\t\n\n7.5937\n\n\t\n\n66.9437\n\n\t\n\n0\n\n\t\n\n66.9437\n\n\t\n\n70,000,000\n\n\t\n\n7,000,000\n\n\t\n\n63,000,000"
+        },
+        {
+          "rowIndex": 19,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 502.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 523.5
+          },
+          "cellCount": 9,
+          "text": "301\n\n\t\n\n59.35\n\n\t\n\n7.5937\n\n\t\n\n66.9437\n\n\t\n\n0\n\n\t\n\n66.9437\n\n\t\n\n70,000,000\n\n\t\n\n7,000,000\n\n\t\n\n63,000,000"
+        },
+        {
+          "rowIndex": 20,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 523.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 544.5
+          },
+          "cellCount": 9,
+          "text": "502\n\n\t\n\n59.35\n\n\t\n\n7.5937\n\n\t\n\n66.9437\n\n\t\n\n0\n\n\t\n\n66.9437\n\n\t\n\n68,500,000\n\n\t\n\n6,850,000\n\n\t\n\n61,650,000"
+        },
+        {
+          "rowIndex": 21,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 544.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 565.5
+          },
+          "cellCount": 11,
+          "text": "대구\n\n동구\n\n\t\n\n방촌동 1072-22 나동\n\n(화랑로73길41)\n\n\t\n\n201\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n101,500,000\n\n\t\n\n10,150,000\n\n\t\n\n91,350,000"
+        },
+        {
+          "rowIndex": 22,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 565.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 586.5
+          },
+          "cellCount": 9,
+          "text": "401\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n101,500,000\n\n\t\n\n10,150,000\n\n\t\n\n91,350,000"
+        },
+        {
+          "rowIndex": 23,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 586.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 607.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n101,500,000\n\n\t\n\n10,150,000\n\n\t\n\n91,350,000"
+        },
+        {
+          "rowIndex": 24,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 607.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 628.5
+          },
+          "cellCount": 9,
+          "text": "501\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n98,500,000\n\n\t\n\n9,850,000\n\n\t\n\n88,650,000"
+        },
+        {
+          "rowIndex": 25,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 628.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 649.5
+          },
+          "cellCount": 9,
+          "text": "502\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n98,500,000\n\n\t\n\n9,850,000\n\n\t\n\n88,650,000"
+        },
+        {
+          "rowIndex": 26,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 649.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 670.5
+          },
+          "cellCount": 10,
+          "text": "방촌동 1072-22 다동\n\n(화랑로73길41)\n\n\t\n\n301\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n101,500,000\n\n\t\n\n10,150,000\n\n\t\n\n91,350,000"
+        },
+        {
+          "rowIndex": 27,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 670.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 691.5
+          },
+          "cellCount": 9,
+          "text": "302\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n102,000,000\n\n\t\n\n10,200,000\n\n\t\n\n91,800,000"
+        },
+        {
+          "rowIndex": 28,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 691.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 712.5
+          },
+          "cellCount": 9,
+          "text": "401\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n101,500,000\n\n\t\n\n10,150,000\n\n\t\n\n91,350,000"
+        },
+        {
+          "rowIndex": 29,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 712.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 733.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n101,500,000\n\n\t\n\n10,150,000\n\n\t\n\n91,350,000"
+        },
+        {
+          "rowIndex": 30,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 733.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 754.5
+          },
+          "cellCount": 9,
+          "text": "501\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n98,000,000\n\n\t\n\n9,800,000\n\n\t\n\n88,200,000"
+        },
+        {
+          "rowIndex": 31,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 754.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 775.5
+          },
+          "cellCount": 9,
+          "text": "502\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n98,500,000\n\n\t\n\n9,850,000\n\n\t\n\n88,650,000"
+        },
+        {
+          "rowIndex": 32,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 775.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 796.5
+          },
+          "cellCount": 11,
+          "text": "대구\n\n북구\n\n\t\n\n산격동 1497-30\n\n(대구체육관로10길16)\n\n\t\n\n201\n\n\t\n\n57.7441\n\n\t\n\n11.9664\n\n\t\n\n69.7105\n\n\t\n\n0\n\n\t\n\n69.7105\n\n\t\n\n128,500,000\n\n\t\n\n12,850,000\n\n\t\n\n115,650,000"
+        },
+        {
+          "rowIndex": 33,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 796.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 817.5
+          },
+          "cellCount": 9,
+          "text": "202\n\n\t\n\n59.1671\n\n\t\n\n12.2122\n\n\t\n\n71.3793\n\n\t\n\n0\n\n\t\n\n71.3793\n\n\t\n\n131,500,000\n\n\t\n\n13,150,000\n\n\t\n\n118,350,000"
+        },
+        {
+          "rowIndex": 34,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 817.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 838.5
+          },
+          "cellCount": 9,
+          "text": "302\n\n\t\n\n59.1671\n\n\t\n\n12.2122\n\n\t\n\n71.3793\n\n\t\n\n0\n\n\t\n\n71.3793\n\n\t\n\n131,500,000\n\n\t\n\n13,150,000\n\n\t\n\n118,350,000"
+        },
+        {
+          "rowIndex": 35,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 838.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 859.5
+          },
+          "cellCount": 9,
+          "text": "401\n\n\t\n\n57.7441\n\n\t\n\n11.9664\n\n\t\n\n69.7105\n\n\t\n\n0\n\n\t\n\n69.7105\n\n\t\n\n132,500,000\n\n\t\n\n13,250,000\n\n\t\n\n119,250,000"
+        },
+        {
+          "rowIndex": 36,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 859.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 880.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n59.1671\n\n\t\n\n12.2122\n\n\t\n\n71.3793\n\n\t\n\n0\n\n\t\n\n71.3793\n\n\t\n\n135,500,000\n\n\t\n\n13,550,000\n\n\t\n\n121,950,000"
+        },
+        {
+          "rowIndex": 37,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 880.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 901.5
+          },
+          "cellCount": 9,
+          "text": "501\n\n\t\n\n57.7441\n\n\t\n\n11.9664\n\n\t\n\n69.7105\n\n\t\n\n0\n\n\t\n\n69.7105\n\n\t\n\n129,500,000\n\n\t\n\n12,950,000\n\n\t\n\n116,550,000"
+        },
+        {
+          "rowIndex": 38,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 901.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 922.5
+          },
+          "cellCount": 9,
+          "text": "502\n\n\t\n\n59.1671\n\n\t\n\n12.2122\n\n\t\n\n71.3793\n\n\t\n\n0\n\n\t\n\n71.3793\n\n\t\n\n132,500,000\n\n\t\n\n13,250,000\n\n\t\n\n119,250,000"
+        },
+        {
+          "rowIndex": 39,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 922.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 943.5
+          },
+          "cellCount": 11,
+          "text": "대구\n\n수성구\n\n\t\n\n만촌동 1009-17\n\n(세진로12길15)\n\n\t\n\n102\n\n\t\n\n47.78\n\n\t\n\n15.72\n\n\t\n\n63.5\n\n\t\n\n10.92\n\n\t\n\n74.42\n\n\t\n\n151,000,000\n\n\t\n\n15,100,000\n\n\t\n\n135,900,000"
+        },
+        {
+          "rowIndex": 40,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 943.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 964.5
+          },
+          "cellCount": 9,
+          "text": "201\n\n\t\n\n46.04\n\n\t\n\n13.02\n\n\t\n\n59.06\n\n\t\n\n10.15\n\n\t\n\n69.21\n\n\t\n\n150,000,000\n\n\t\n\n15,000,000\n\n\t\n\n135,000,000"
+        },
+        {
+          "rowIndex": 41,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 964.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 985.5
+          },
+          "cellCount": 9,
+          "text": "202\n\n\t\n\n47.78\n\n\t\n\n15.72\n\n\t\n\n63.5\n\n\t\n\n10.92\n\n\t\n\n74.42\n\n\t\n\n157,000,000\n\n\t\n\n15,700,000\n\n\t\n\n141,300,000"
+        },
+        {
+          "rowIndex": 42,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 985.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1006.5
+          },
+          "cellCount": 11,
+          "text": "경북\n\n경산시\n\n\t\n\n사동 606-8\n\n(원효로40길64-10)\n\n\t\n\n201\n\n\t\n\n48.72\n\n\t\n\n9.67\n\n\t\n\n58.39\n\n\t\n\n0\n\n\t\n\n58.39\n\n\t\n\n72,000,000\n\n\t\n\n7,200,000\n\n\t\n\n64,800,000"
+        },
+        {
+          "rowIndex": 43,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1006.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1027.5
+          },
+          "cellCount": 9,
+          "text": "203\n\n\t\n\n46.26\n\n\t\n\n9.16\n\n\t\n\n55.42\n\n\t\n\n0\n\n\t\n\n55.42\n\n\t\n\n68,000,000\n\n\t\n\n6,800,000\n\n\t\n\n61,200,000"
+        },
+        {
+          "rowIndex": 44,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1027.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1048.5
+          },
+          "cellCount": 9,
+          "text": "301\n\n\t\n\n48.72\n\n\t\n\n9.67\n\n\t\n\n58.39\n\n\t\n\n0\n\n\t\n\n58.39\n\n\t\n\n72,000,000\n\n\t\n\n7,200,000\n\n\t\n\n64,800,000"
+        },
+        {
+          "rowIndex": 45,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1048.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1069.5
+          },
+          "cellCount": 9,
+          "text": "302\n\n\t\n\n48.7\n\n\t\n\n9.7\n\n\t\n\n58.4\n\n\t\n\n0\n\n\t\n\n58.4\n\n\t\n\n72,000,000\n\n\t\n\n7,200,000\n\n\t\n\n64,800,000"
+        },
+        {
+          "rowIndex": 46,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1069.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1090.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n48.7\n\n\t\n\n9.7\n\n\t\n\n58.4\n\n\t\n\n0\n\n\t\n\n58.4\n\n\t\n\n72,000,000\n\n\t\n\n7,200,000\n\n\t\n\n64,800,000"
+        },
+        {
+          "rowIndex": 47,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1090.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1111.5
+          },
+          "cellCount": 9,
+          "text": "403\n\n\t\n\n46.26\n\n\t\n\n9.16\n\n\t\n\n55.42\n\n\t\n\n0\n\n\t\n\n55.42\n\n\t\n\n68,000,000\n\n\t\n\n6,800,000\n\n\t\n\n61,200,000"
+        },
+        {
+          "rowIndex": 48,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1111.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1132.5
+          },
+          "cellCount": 9,
+          "text": "501\n\n\t\n\n57.1\n\n\t\n\n10.87\n\n\t\n\n67.97\n\n\t\n\n0\n\n\t\n\n67.97\n\n\t\n\n82,000,000\n\n\t\n\n8,200,000\n\n\t\n\n73,800,000"
+        },
+        {
+          "rowIndex": 49,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1132.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1153.5
+          },
+          "cellCount": 9,
+          "text": "502\n\n\t\n\n58.47\n\n\t\n\n11.59\n\n\t\n\n70.06\n\n\t\n\n0\n\n\t\n\n70.06\n\n\t\n\n84,000,000\n\n\t\n\n8,400,000\n\n\t\n\n75,600,000"
+        },
+        {
+          "rowIndex": 50,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1153.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1174.5
+          },
+          "cellCount": 11,
+          "text": "경북\n\n구미시\n\n\t\n\n오태동 773-6\n\n(금오대로10길45-1)\n\n\t\n\n201\n\n\t\n\n59.1084\n\n\t\n\n11.0006\n\n\t\n\n70.109\n\n\t\n\n0\n\n\t\n\n70.109\n\n\t\n\n68,500,000\n\n\t\n\n6,850,000\n\n\t\n\n61,650,000"
+        },
+        {
+          "rowIndex": 51,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1174.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1195.5
+          },
+          "cellCount": 9,
+          "text": "202\n\n\t\n\n59.1084\n\n\t\n\n11.0006\n\n\t\n\n70.109\n\n\t\n\n0\n\n\t\n\n70.109\n\n\t\n\n68,500,000\n\n\t\n\n6,850,000\n\n\t\n\n61,650,000"
+        },
+        {
+          "rowIndex": 52,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1195.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1216.5
+          },
+          "cellCount": 9,
+          "text": "301\n\n\t\n\n59.1084\n\n\t\n\n11.0006\n\n\t\n\n70.109\n\n\t\n\n0\n\n\t\n\n70.109\n\n\t\n\n68,500,000\n\n\t\n\n6,850,000\n\n\t\n\n61,650,000"
+        },
+        {
+          "rowIndex": 53,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1216.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1237.5
+          },
+          "cellCount": 9,
+          "text": "401\n\n\t\n\n59.1084\n\n\t\n\n11.0006\n\n\t\n\n70.109\n\n\t\n\n0\n\n\t\n\n70.109\n\n\t\n\n68,000,000\n\n\t\n\n6,800,000\n\n\t\n\n61,200,000"
+        },
+        {
+          "rowIndex": 54,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1237.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1258.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n59.1084\n\n\t\n\n11.0006\n\n\t\n\n70.109\n\n\t\n\n0\n\n\t\n\n70.109\n\n\t\n\n68,000,000\n\n\t\n\n6,800,000\n\n\t\n\n61,200,000"
+        },
+        {
+          "rowIndex": 55,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1258.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1279.5
+          },
+          "cellCount": 11,
+          "text": "경북\n\n포항시\n\n\t\n\n남구 대도동 142-22 301동\n\n(문예로82번길20-10)\n\n\t\n\n102\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n56,500,000\n\n\t\n\n5,650,000\n\n\t\n\n50,850,000"
+        },
+        {
+          "rowIndex": 56,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1279.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1300.5
+          },
+          "cellCount": 9,
+          "text": "301\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+        },
+        {
+          "rowIndex": 57,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1300.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1321.5
+          },
+          "cellCount": 9,
+          "text": "302\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+        },
+        {
+          "rowIndex": 58,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1321.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1342.5
+          },
+          "cellCount": 9,
+          "text": "402\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+        },
+        {
+          "rowIndex": 59,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1342.5,
+            "width": 1005,
+            "height": 52,
+            "bottom": 1394.5
+          },
+          "cellCount": 10,
+          "text": "남구 대도동 142-5 302동\n\n(문예로82번길20-8)\n\n\t\n\n402\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+        }
+      ],
+      "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10%)\n\n\t\n\n잔금(90%)\n\n\n\n\n공급면적\n\n\t\n\n기타공용\n\n면적\n\n\t\n\n총계\n\n\n\n\n주거전용\n\n\t\n\n주거공용\n\n\t\n\n소계\n\n\n\n\n대구\n\n남구\n\n\t\n\n대명동 554-4 102동\n\n(안지랑로2길10)\n\n\t\n\n301\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000\n\n\n\n\n401\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000\n\n\n\n\n402\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000\n\n\n\n\n502\n\n\t\n\n56.9",
+      "style": {
+        "position": "absolute",
+        "display": "block",
+        "overflow": "visible",
+        "height": "1291px",
+        "minHeight": "1291px",
+        "lineHeight": "21.0667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      },
+      "tableStyle": {
+        "position": "static",
+        "display": "table",
+        "overflow": "visible",
+        "height": "1291px",
+        "minHeight": "0px",
+        "lineHeight": "17.6px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 2,
+      "depth": 0,
+      "wrapDataset": {
+        "readonlyDecoration": "true",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwpx-header-hwp-control",
+        "layoutHeight": "39"
+      },
+      "tableDataset": {
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "readonlyDecoration": "true",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "left": 60,
+        "top": 19,
+        "width": 1002,
+        "height": 49,
+        "bottom": 68
+      },
+      "tableRect": {
+        "left": 60,
+        "top": 19,
+        "width": 1002,
+        "height": 49,
+        "bottom": 68
+      },
+      "rowCount": 2,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 19.5,
+            "width": 1001,
+            "height": 37.5,
+            "bottom": 57
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 57,
+            "width": 1001,
+            "height": 10.5,
+            "bottom": 67.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 19.5,
+            "width": 1001,
+            "height": 37.5,
+            "bottom": 57
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 57,
+            "width": 1001,
+            "height": 10.5,
+            "bottom": 67.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 19.5,
+            "width": 1001,
+            "height": 37.5,
+            "bottom": 57
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 57,
+            "width": 1001,
+            "height": 10.5,
+            "bottom": 67.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "text": "",
+      "style": {
+        "position": "absolute",
+        "display": "block",
+        "overflow": "hidden",
+        "height": "49px",
+        "minHeight": "39px",
+        "lineHeight": "normal",
+        "fontSize": "16px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      },
+      "tableStyle": {
+        "position": "static",
+        "display": "table",
+        "overflow": "visible",
+        "height": "49px",
+        "minHeight": "0px",
+        "lineHeight": "21.12px",
+        "fontSize": "16px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 3,
+      "depth": 0,
+      "wrapDataset": {
+        "readonlyDecoration": "true",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwpx-footer-hwp-control",
+        "layoutHeight": "61"
+      },
+      "tableDataset": {
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "readonlyDecoration": "true",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "left": 60,
+        "top": 1530,
+        "width": 1002,
+        "height": 66.5,
+        "bottom": 1596.5
+      },
+      "tableRect": {
+        "left": 60,
+        "top": 1530,
+        "width": 1002,
+        "height": 66.5,
+        "bottom": 1596.5
+      },
+      "rowCount": 2,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1530.5,
+            "width": 1001,
+            "height": 10.5,
+            "bottom": 1541
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1541,
+            "width": 1001,
+            "height": 55,
+            "bottom": 1596
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1530.5,
+            "width": 1001,
+            "height": 10.5,
+            "bottom": 1541
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1541,
+            "width": 1001,
+            "height": 55,
+            "bottom": 1596
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1530.5,
+            "width": 1001,
+            "height": 10.5,
+            "bottom": 1541
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {},
+          "rect": {
+            "left": 60.5,
+            "top": 1541,
+            "width": 1001,
+            "height": 55,
+            "bottom": 1596
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "text": "",
+      "style": {
+        "position": "absolute",
+        "display": "block",
+        "overflow": "hidden",
+        "height": "66.5px",
+        "minHeight": "61px",
+        "lineHeight": "normal",
+        "fontSize": "16px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      },
+      "tableStyle": {
+        "position": "static",
+        "display": "table",
+        "overflow": "visible",
+        "height": "66.5px",
+        "minHeight": "0px",
+        "lineHeight": "21.12px",
+        "fontSize": "16px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(0, 0, 0)",
+        "background": "rgb(255, 255, 255)",
+        "verticalAlign": "baseline"
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "left": 80,
+        "top": 27.5,
+        "width": 0,
+        "height": 31,
+        "bottom": 58.5
+      },
+      "text": "",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "31px",
+        "minHeight": "31px",
+        "lineHeight": "31px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 116.94,
+        "top": 27,
+        "width": 204.31,
+        "height": 32,
+        "bottom": 59
+      },
+      "text": "공급대상세대 및 공급금액",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "32px",
+        "minHeight": "17px",
+        "lineHeight": "31px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 63,
+        "top": 139.5,
+        "width": 52.94,
+        "height": 13,
+        "bottom": 152.5
+      },
+      "text": "지역",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 120.94,
+        "top": 130,
+        "width": 188.8,
+        "height": 13,
+        "bottom": 143
+      },
+      "text": "대상",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 120.94,
+        "top": 149,
+        "width": 188.8,
+        "height": 13,
+        "bottom": 162
+      },
+      "text": "주택",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "6px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 139.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 152.5
+      },
+      "text": "호",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 117.5,
+        "width": 359.63,
+        "height": 13,
+        "bottom": 130.5
+      },
+      "text": "세대별 계약면적(㎡)",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 139.5,
+        "width": 105.88,
+        "height": 13,
+        "bottom": 152.5
+      },
+      "text": "공급가격(원)",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "left": 845.67,
+        "top": 107,
+        "width": 106.88,
+        "height": 17.58,
+        "bottom": 124.58
+      },
+      "text": "",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "17.5781px",
+        "minHeight": "0px",
+        "lineHeight": "17.6px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "left": 956.55,
+        "top": 107,
+        "width": 106.45,
+        "height": 17.58,
+        "bottom": 124.58
+      },
+      "text": "",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "17.5781px",
+        "minHeight": "0px",
+        "lineHeight": "17.6px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 148,
+        "width": 105.88,
+        "height": 13,
+        "bottom": 161
+      },
+      "text": "계약금(10%)",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 148,
+        "width": 105.95,
+        "height": 13,
+        "bottom": 161
+      },
+      "text": "잔금(90%)",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 147.5,
+        "width": 211.38,
+        "height": 13,
+        "bottom": 160.5
+      },
+      "text": "공급면적",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 149.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 162.5
+      },
+      "text": "기타공용",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 168.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 181.5
+      },
+      "text": "면적",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "6px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 159,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 172
+      },
+      "text": "총계",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 169.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 182.5
+      },
+      "text": "주거전용",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 169.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 182.5
+      },
+      "text": "주거공용",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 169.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 182.5
+      },
+      "text": "소계",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 63,
+        "top": 265,
+        "width": 52.94,
+        "height": 13,
+        "bottom": 278
+      },
+      "text": "대구",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 63,
+        "top": 286,
+        "width": 52.94,
+        "height": 13,
+        "bottom": 299
+      },
+      "text": "남구",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "8px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 120.94,
+        "top": 209.5,
+        "width": 188.8,
+        "height": 16,
+        "bottom": 225.5
+      },
+      "text": "대명동 554-4 102동",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "16px",
+        "minHeight": "15px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 120.94,
+        "top": 233.5,
+        "width": 188.8,
+        "height": 16,
+        "bottom": 249.5
+      },
+      "text": "(안지랑로2길10)",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "16px",
+        "minHeight": "15px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "8px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 191.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 204.5
+      },
+      "text": "301",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 191.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 204.5
+      },
+      "text": "56.92",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 191.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 204.5
+      },
+      "text": "12.15",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 191.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 204.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 191.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 204.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 191.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 204.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 191.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 204.5
+      },
+      "text": "112,000,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 191.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 204.5
+      },
+      "text": "11,200,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 191.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 204.5
+      },
+      "text": "100,800,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 212.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 225.5
+      },
+      "text": "401",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 212.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 225.5
+      },
+      "text": "56.92",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 212.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 225.5
+      },
+      "text": "12.15",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 212.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 225.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 212.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 225.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 212.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 225.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 212.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 225.5
+      },
+      "text": "112,000,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 212.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 225.5
+      },
+      "text": "11,200,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 212.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 225.5
+      },
+      "text": "100,800,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 233.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 246.5
+      },
+      "text": "402",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 233.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 246.5
+      },
+      "text": "56.92",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 233.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 246.5
+      },
+      "text": "12.15",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 233.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 246.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 233.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 246.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 233.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 246.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 233.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 246.5
+      },
+      "text": "112,000,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 233.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 246.5
+      },
+      "text": "11,200,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 233.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 246.5
+      },
+      "text": "100,800,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 254.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 267.5
+      },
+      "text": "502",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 254.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 267.5
+      },
+      "text": "56.92",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 254.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 267.5
+      },
+      "text": "12.15",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 254.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 267.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 254.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 267.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 254.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 267.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 254.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 267.5
+      },
+      "text": "108,500,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 254.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 267.5
+      },
+      "text": "10,850,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 254.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 267.5
+      },
+      "text": "97,650,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 120.94,
+        "top": 304,
+        "width": 188.8,
+        "height": 16,
+        "bottom": 320
+      },
+      "text": "대명동 554-4 103동",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "16px",
+        "minHeight": "15px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 120.94,
+        "top": 328,
+        "width": 188.8,
+        "height": 16,
+        "bottom": 344
+      },
+      "text": "(안지랑로2길10)",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "16px",
+        "minHeight": "15px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "8px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 275.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 288.5
+      },
+      "text": "202",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 275.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 288.5
+      },
+      "text": "56.92",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 63,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 275.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 288.5
+      },
+      "text": "12.15",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 64,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 275.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 288.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 65,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 275.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 288.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 66,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 275.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 288.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 67,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 275.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 288.5
+      },
+      "text": "112,000,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 68,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 275.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 288.5
+      },
+      "text": "11,200,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 69,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 275.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 288.5
+      },
+      "text": "100,800,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 70,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 296.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 309.5
+      },
+      "text": "301",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 71,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 296.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 309.5
+      },
+      "text": "56.92",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 72,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 296.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 309.5
+      },
+      "text": "12.15",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 73,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 296.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 309.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 74,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 296.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 309.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 75,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 296.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 309.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 76,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 296.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 309.5
+      },
+      "text": "112,000,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 77,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 296.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 309.5
+      },
+      "text": "11,200,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 78,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 296.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 309.5
+      },
+      "text": "100,800,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 79,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 317.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 330.5
+      },
+      "text": "402",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 80,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 317.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 330.5
+      },
+      "text": "56.92",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 81,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 317.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 330.5
+      },
+      "text": "12.15",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 82,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 317.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 330.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 83,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 317.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 330.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 84,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 317.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 330.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 85,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 317.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 330.5
+      },
+      "text": "112,000,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 86,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 317.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 330.5
+      },
+      "text": "11,200,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 87,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 317.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 330.5
+      },
+      "text": "100,800,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 88,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 338.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 351.5
+      },
+      "text": "501",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 89,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 338.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 351.5
+      },
+      "text": "56.92",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 90,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 338.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 351.5
+      },
+      "text": "12.15",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 91,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 338.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 351.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 92,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 338.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 351.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 93,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 338.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 351.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 94,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 338.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 351.5
+      },
+      "text": "108,500,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 95,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 338.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 351.5
+      },
+      "text": "10,850,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 96,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 338.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 351.5
+      },
+      "text": "97,650,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 97,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 359.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 372.5
+      },
+      "text": "502",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 98,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 359.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 372.5
+      },
+      "text": "56.92",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 99,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 359.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 372.5
+      },
+      "text": "12.15",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 100,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 359.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 372.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 101,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 359.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 372.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 102,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 359.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 372.5
+      },
+      "text": "69.07",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 103,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 359.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 372.5
+      },
+      "text": "108,500,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 104,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 359.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 372.5
+      },
+      "text": "10,850,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 105,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 359.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 372.5
+      },
+      "text": "97,650,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 106,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 63,
+        "top": 412,
+        "width": 52.94,
+        "height": 13,
+        "bottom": 425
+      },
+      "text": "대구",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 107,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 63,
+        "top": 433,
+        "width": 52.94,
+        "height": 13,
+        "bottom": 446
+      },
+      "text": "달서구",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "8px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 108,
+      "dataset": {
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 120.94,
+        "top": 409,
+        "width": 188.8,
+        "height": 16,
+        "bottom": 425
+      },
+      "text": "상인동 438-9",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "16px",
+        "minHeight": "15px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 109,
+      "dataset": {
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 120.94,
+        "top": 433,
+        "width": 188.8,
+        "height": 16,
+        "bottom": 449
+      },
+      "text": "(월곡로35길74-15)",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "16px",
+        "minHeight": "15px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "8px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 110,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 380.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 393.5
+      },
+      "text": "201",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 111,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 380.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 393.5
+      },
+      "text": "59.376",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 112,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 380.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 393.5
+      },
+      "text": "16.5695",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 113,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 380.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 393.5
+      },
+      "text": "75.9455",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 114,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 380.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 393.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 115,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 380.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 393.5
+      },
+      "text": "75.9455",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 116,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 380.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 393.5
+      },
+      "text": "115,500,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 117,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 380.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 393.5
+      },
+      "text": "11,550,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 118,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 380.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 393.5
+      },
+      "text": "103,950,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 119,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 401.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 414.5
+      },
+      "text": "202",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 120,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 401.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 414.5
+      },
+      "text": "59.7642",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 121,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 401.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 414.5
+      },
+      "text": "16.7803",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 122,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 401.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 414.5
+      },
+      "text": "76.5445",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 123,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 401.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 414.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 124,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 401.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 414.5
+      },
+      "text": "76.5445",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 125,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 401.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 414.5
+      },
+      "text": "116,500,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 126,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 401.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 414.5
+      },
+      "text": "11,650,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 127,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 401.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 414.5
+      },
+      "text": "104,850,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 128,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 422.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 435.5
+      },
+      "text": "302",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 129,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 422.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 435.5
+      },
+      "text": "59.7642",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 130,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 422.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 435.5
+      },
+      "text": "16.7803",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 131,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 422.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 435.5
+      },
+      "text": "76.5445",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 132,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 422.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 435.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 133,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 422.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 435.5
+      },
+      "text": "76.5445",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 134,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 422.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 435.5
+      },
+      "text": "116,500,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 135,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 422.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 435.5
+      },
+      "text": "11,650,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 136,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 422.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 435.5
+      },
+      "text": "104,850,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 137,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 443.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 456.5
+      },
+      "text": "402",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 138,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 443.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 456.5
+      },
+      "text": "59.7642",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 139,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 443.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 456.5
+      },
+      "text": "16.7803",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 140,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 443.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 456.5
+      },
+      "text": "76.5445",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 141,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 443.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 456.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 142,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 443.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 456.5
+      },
+      "text": "76.5445",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 143,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 443.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 456.5
+      },
+      "text": "116,500,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 144,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 443.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 456.5
+      },
+      "text": "11,650,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 145,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 443.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 456.5
+      },
+      "text": "104,850,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 146,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 464.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 477.5
+      },
+      "text": "501",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 147,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 370.67,
+        "top": 464.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 477.5
+      },
+      "text": "59.376",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 148,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 442.8,
+        "top": 464.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 477.5
+      },
+      "text": "16.5695",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 149,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 514.92,
+        "top": 464.5,
+        "width": 67.13,
+        "height": 13,
+        "bottom": 477.5
+      },
+      "text": "75.9455",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 150,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 587.05,
+        "top": 464.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 477.5
+      },
+      "text": "0",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 151,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 661.17,
+        "top": 464.5,
+        "width": 69.13,
+        "height": 13,
+        "bottom": 477.5
+      },
+      "text": "75.9455",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 152,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 735.3,
+        "top": 464.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 477.5
+      },
+      "text": "113,500,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 153,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 846.17,
+        "top": 464.5,
+        "width": 92.88,
+        "height": 13,
+        "bottom": 477.5
+      },
+      "text": "11,350,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 154,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 957.05,
+        "top": 464.5,
+        "width": 92.95,
+        "height": 13,
+        "bottom": 477.5
+      },
+      "text": "102,150,000",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 155,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 63,
+        "top": 496,
+        "width": 52.94,
+        "height": 13,
+        "bottom": 509
+      },
+      "text": "대구",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 156,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 63,
+        "top": 517,
+        "width": 52.94,
+        "height": 13,
+        "bottom": 530
+      },
+      "text": "달성군",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "8px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 157,
+      "dataset": {
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 120.94,
+        "top": 493,
+        "width": 188.8,
+        "height": 16,
+        "bottom": 509
+      },
+      "text": "논공읍 북리 833-17",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "16px",
+        "minHeight": "15px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 158,
+      "dataset": {
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 120.94,
+        "top": 517,
+        "width": 188.8,
+        "height": 16,
+        "bottom": 533
+      },
+      "text": "(논공중앙로138)",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "16px",
+        "minHeight": "15px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "8px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    },
+    {
+      "index": 159,
+      "dataset": {
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "left": 314.73,
+        "top": 485.5,
+        "width": 50.94,
+        "height": 13,
+        "bottom": 498.5
+      },
+      "text": "201",
+      "style": {
+        "position": "static",
+        "display": "block",
+        "overflow": "visible",
+        "height": "13px",
+        "minHeight": "13px",
+        "lineHeight": "10.6667px",
+        "fontSize": "13.3333px",
+        "marginTop": "0px",
+        "marginBottom": "0px",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "borderColor": "rgb(17, 17, 17)",
+        "background": "rgba(0, 0, 0, 0)",
+        "verticalAlign": "baseline"
+      }
+    }
+  ]
+}

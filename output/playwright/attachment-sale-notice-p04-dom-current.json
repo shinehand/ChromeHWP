@@ -1,0 +1,2456 @@
+{
+  "filename": "attachment-sale-notice.hwp",
+  "pages": 4,
+  "page": {
+    "index": 4,
+    "width": 1123,
+    "height": 1587
+  },
+  "bodyRect": {
+    "top": 613,
+    "left": 468.5,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 2200,
+    "right": 1591.5
+  },
+  "text": "일시 • 2026. 1. 15.(목) 부터 매주 목요일 13:30 ~ 16시 (※ 16시 이후 방문자는 동·호지정 및 계약체결 불가) 장소 • 대구 달서구 상화로 272, LH 대구경북지역본부 1층 마이홈센터 절차 • [방문 이틀 전까지] 유선 사전예약 → [방문 당일] 등록명부 서명 → 동·호 지정 순번 결정 → 구비서류 확인 → 동·호 지정 → 계약금 입금 → 계약체결 순번 부여 방법 • 기간 내에 동·호지정 장소에 도착하여 등록명부에 서명한 신청접수자에 대하여 순번대로 동·호지정 및 계약체결 합니다. - 당일 13:30 전 동·호지정 장소에 도착 및 서명한 인원은 모두 동시간 도착으로 간주, 추첨을 통해 순번 부여 - 당일 13:30:00 부터 동·호지정 장소에 도착 및 서명한 인원은 도착 순서대로 13:30 전 신청접수자의 다음 순번 부여 (도착 시간에 대한 판단은 LH측 기준시간에 따릅니다.) • 2주택 이상 계약 희망 시 마지막 순번까지 1주택씩 동·호 지정이 완료된 후 잔여세대 중에서 추가 1주택씩 지정 구비 서류 • 개인 필수서류 ① 계약자 신분증, ② 계약자 주민등록표등본 대리계약(본인 외) 시 추가 구비서류 ① 계약자의 인감도장, ② 계약자 본인발급 인감증명서(대리발급분 불가), ③ 위임장(계약자 인감도장 날인), ④ 대리인 신분증 • 법인 필수서류 ① 법인 대표자 신분증, ② 법인인감도장(사용인감 구비 시 사용인감계 필요), ③ 법인인감증명서, ④ 법인등기부등본, ⑤ 사업자등록증 대리계약(대표자 외) 시 추가 구비서류 ① 위임장(법인 인감도장 날인), ② 대리인 신분증 ※ (신분증) 주민등록증, 운전면허증, 여권의 실물 또는 그 사본만 인정 (사본 보관을 위해 모바일신분증 불가) ※ 주민등록표등본, 인감증명서, 법인등기부등본은 계약일로부터 1개월 이내 발급한 서류만 인정됩니다. ※ 개인계약자·법인대표자 본인 외에는 전부 대리계약자로 간주되오니, 서류 구비 시 착오 없으시기 바랍니다. ※ 동일인이 2건 이상 계약을 체결하고자 하는 경우, 각 ",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-3-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "571"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-3-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 19,
+        "left": 60,
+        "width": 955,
+        "height": 610,
+        "bottom": 629,
+        "right": 1015
+      },
+      "tableRect": {
+        "top": 19,
+        "left": 60,
+        "width": 955,
+        "height": 610,
+        "bottom": 629,
+        "right": 1015
+      },
+      "rowCount": 13,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-0"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 28,
+            "bottom": 47.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": "일시 • 2026. 1. 15.(목) 부터 매주 목요일 13:30 ~ 16시 (※ 16시 이후 방문자는 동·호지정 및 계약체결 불가)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-1"
+          },
+          "rect": {
+            "top": 47.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 17,
+            "bottom": 64.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-2"
+          },
+          "rect": {
+            "top": 64.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 28,
+            "bottom": 92.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": "장소 • 대구 달서구 상화로 272, LH 대구경북지역본부 1층 마이홈센터"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-3"
+          },
+          "rect": {
+            "top": 92.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 17,
+            "bottom": 109.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-4"
+          },
+          "rect": {
+            "top": 109.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 54,
+            "bottom": 163.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": "절차 • [방문 이틀 전까지] 유선 사전예약 → [방문 당일] 등록명부 서명 → 동·호 지정 순번 결정 → 구비서류 확인 → 동·호 지정 → 계약금 입금 → 계약체결"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-5"
+          },
+          "rect": {
+            "top": 163.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 17,
+            "bottom": 180.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-6"
+          },
+          "rect": {
+            "top": 180.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 136,
+            "bottom": 316.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": "순번 부여 방법 • 기간 내에 동·호지정 장소에 도착하여 등록명부에 서명한 신청접수자에 대하여 순번대로 동·호지정 및 계약체결 합니다. - 당일 13:30 전 동·호지정 장소에 도착 및 서명한 인원은 모두 동시간 도착으로 간주, 추첨을 통해 순번 부여 - 당일 13:30:00 부터 동·"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-7"
+          },
+          "rect": {
+            "top": 316.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 17,
+            "bottom": 333.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-8"
+          },
+          "rect": {
+            "top": 333.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 27,
+            "bottom": 360.5,
+            "right": 1014.5
+          },
+          "cellCount": 5,
+          "text": "구비 서류 • 개인 필수서류 ① 계약자 신분증, ② 계약자 주민등록표등본"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-9"
+          },
+          "rect": {
+            "top": 360.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 52,
+            "bottom": 412.5,
+            "right": 1014.5
+          },
+          "cellCount": 2,
+          "text": "대리계약(본인 외) 시 추가 구비서류 ① 계약자의 인감도장, ② 계약자 본인발급 인감증명서(대리발급분 불가), ③ 위임장(계약자 인감도장 날인), ④ 대리인 신분증"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-10"
+          },
+          "rect": {
+            "top": 412.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 52,
+            "bottom": 464.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": "• 법인 필수서류 ① 법인 대표자 신분증, ② 법인인감도장(사용인감 구비 시 사용인감계 필요), ③ 법인인감증명서, ④ 법인등기부등본, ⑤ 사업자등록증"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-11"
+          },
+          "rect": {
+            "top": 464.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 48,
+            "bottom": 512.5,
+            "right": 1014.5
+          },
+          "cellCount": 2,
+          "text": "대리계약(대표자 외) 시 추가 구비서류 ① 위임장(법인 인감도장 날인), ② 대리인 신분증"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-5"
+          },
+          "rect": {
+            "top": 163.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 17,
+            "bottom": 180.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-6"
+          },
+          "rect": {
+            "top": 180.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 136,
+            "bottom": 316.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": "순번 부여 방법 • 기간 내에 동·호지정 장소에 도착하여 등록명부에 서명한 신청접수자에 대하여 순번대로 동·호지정 및 계약체결 합니다. - 당일 13:30 전 동·호지정 장소에 도착 및 서명한 인원은 모두 동시간 도착으로 간주, 추첨을 통해 순번 부여 - 당일 13:30:00 부터 동·"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-7"
+          },
+          "rect": {
+            "top": 316.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 17,
+            "bottom": 333.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-8"
+          },
+          "rect": {
+            "top": 333.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 27,
+            "bottom": 360.5,
+            "right": 1014.5
+          },
+          "cellCount": 5,
+          "text": "구비 서류 • 개인 필수서류 ① 계약자 신분증, ② 계약자 주민등록표등본"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-9"
+          },
+          "rect": {
+            "top": 360.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 52,
+            "bottom": 412.5,
+            "right": 1014.5
+          },
+          "cellCount": 2,
+          "text": "대리계약(본인 외) 시 추가 구비서류 ① 계약자의 인감도장, ② 계약자 본인발급 인감증명서(대리발급분 불가), ③ 위임장(계약자 인감도장 날인), ④ 대리인 신분증"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-10"
+          },
+          "rect": {
+            "top": 412.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 52,
+            "bottom": 464.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": "• 법인 필수서류 ① 법인 대표자 신분증, ② 법인인감도장(사용인감 구비 시 사용인감계 필요), ③ 법인인감증명서, ④ 법인등기부등본, ⑤ 사업자등록증"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-11"
+          },
+          "rect": {
+            "top": 464.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 48,
+            "bottom": 512.5,
+            "right": 1014.5
+          },
+          "cellCount": 2,
+          "text": "대리계약(대표자 외) 시 추가 구비서류 ① 위임장(법인 인감도장 날인), ② 대리인 신분증"
+        },
+        {
+          "rowIndex": 12,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-12"
+          },
+          "rect": {
+            "top": 512.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 116,
+            "bottom": 628.5,
+            "right": 1014.5
+          },
+          "cellCount": 1,
+          "text": "※ (신분증) 주민등록증, 운전면허증, 여권의 실물 또는 그 사본만 인정 (사본 보관을 위해 모바일신분증 불가) ※ 주민등록표등본, 인감증명서, 법인등기부등본은 계약일로부터 1개월 이내 발급한 서류만 인정됩니다. ※ 개인계약자·법인대표자 본인 외에는 전부 대리계약자로 간주되오니, 서류 "
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-0"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 28,
+            "bottom": 47.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": "일시 • 2026. 1. 15.(목) 부터 매주 목요일 13:30 ~ 16시 (※ 16시 이후 방문자는 동·호지정 및 계약체결 불가)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-1"
+          },
+          "rect": {
+            "top": 47.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 17,
+            "bottom": 64.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-2"
+          },
+          "rect": {
+            "top": 64.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 28,
+            "bottom": 92.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": "장소 • 대구 달서구 상화로 272, LH 대구경북지역본부 1층 마이홈센터"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-3"
+          },
+          "rect": {
+            "top": 92.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 17,
+            "bottom": 109.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-4"
+          },
+          "rect": {
+            "top": 109.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 54,
+            "bottom": 163.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": "절차 • [방문 이틀 전까지] 유선 사전예약 → [방문 당일] 등록명부 서명 → 동·호 지정 순번 결정 → 구비서류 확인 → 동·호 지정 → 계약금 입금 → 계약체결"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-5"
+          },
+          "rect": {
+            "top": 163.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 17,
+            "bottom": 180.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-6"
+          },
+          "rect": {
+            "top": 180.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 136,
+            "bottom": 316.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": "순번 부여 방법 • 기간 내에 동·호지정 장소에 도착하여 등록명부에 서명한 신청접수자에 대하여 순번대로 동·호지정 및 계약체결 합니다. - 당일 13:30 전 동·호지정 장소에 도착 및 서명한 인원은 모두 동시간 도착으로 간주, 추첨을 통해 순번 부여 - 당일 13:30:00 부터 동·"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-7"
+          },
+          "rect": {
+            "top": 316.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 17,
+            "bottom": 333.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": ""
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-8"
+          },
+          "rect": {
+            "top": 333.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 27,
+            "bottom": 360.5,
+            "right": 1014.5
+          },
+          "cellCount": 5,
+          "text": "구비 서류 • 개인 필수서류 ① 계약자 신분증, ② 계약자 주민등록표등본"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-9"
+          },
+          "rect": {
+            "top": 360.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 52,
+            "bottom": 412.5,
+            "right": 1014.5
+          },
+          "cellCount": 2,
+          "text": "대리계약(본인 외) 시 추가 구비서류 ① 계약자의 인감도장, ② 계약자 본인발급 인감증명서(대리발급분 불가), ③ 위임장(계약자 인감도장 날인), ④ 대리인 신분증"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-10"
+          },
+          "rect": {
+            "top": 412.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 52,
+            "bottom": 464.5,
+            "right": 1014.5
+          },
+          "cellCount": 3,
+          "text": "• 법인 필수서류 ① 법인 대표자 신분증, ② 법인인감도장(사용인감 구비 시 사용인감계 필요), ③ 법인인감증명서, ④ 법인등기부등본, ⑤ 사업자등록증"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-11"
+          },
+          "rect": {
+            "top": 464.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 48,
+            "bottom": 512.5,
+            "right": 1014.5
+          },
+          "cellCount": 2,
+          "text": "대리계약(대표자 외) 시 추가 구비서류 ① 위임장(법인 인감도장 날인), ② 대리인 신분증"
+        },
+        {
+          "rowIndex": 12,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-1/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-1:row-12"
+          },
+          "rect": {
+            "top": 512.5,
+            "left": 60.5,
+            "width": 954,
+            "height": 116,
+            "bottom": 628.5,
+            "right": 1014.5
+          },
+          "cellCount": 1,
+          "text": "※ (신분증) 주민등록증, 운전면허증, 여권의 실물 또는 그 사본만 인정 (사본 보관을 위해 모바일신분증 불가) ※ 주민등록표등본, 인감증명서, 법인등기부등본은 계약일로부터 1개월 이내 발급한 서류만 인정됩니다. ※ 개인계약자·법인대표자 본인 외에는 전부 대리계약자로 간주되오니, 서류 "
+        }
+      ],
+      "text": "일시 • 2026. 1. 15.(목) 부터 매주 목요일 13:30 ~ 16시 (※ 16시 이후 방문자는 동·호지정 및 계약체결 불가) 장소 • 대구 달서구 상화로 272, LH 대구경북지역본부 1층 마이홈센터 절차 • [방문 이틀 전까지] 유선 사전예약 → [방문 당일] 등록명부 서명 → 동·호 지정 순번 결정 → 구비서류 확인 → 동·호 지정 → 계약금 입금 → 계약체결 순번 부여 방법 • 기간 내에 동·호지정 장소에 도착하",
+      "style": {
+        "height": "571px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-3-block-12\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-12",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-flow-after-positioned",
+        "layoutHeight": "30"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-3-block-12\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-12",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 1269,
+        "left": 60,
+        "width": 1001,
+        "height": 31,
+        "bottom": 1300,
+        "right": 1061
+      },
+      "tableRect": {
+        "top": 1269,
+        "left": 60,
+        "width": 1001,
+        "height": 31,
+        "bottom": 1300,
+        "right": 1061
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-12/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-12:row-0"
+          },
+          "rect": {
+            "top": 1269.5,
+            "left": 60.5,
+            "width": 1000,
+            "height": 30,
+            "bottom": 1299.5,
+            "right": 1060.5
+          },
+          "cellCount": 2,
+          "text": "소유권 이전등기 및 취득세 납부"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-12/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-12:row-0"
+          },
+          "rect": {
+            "top": 1269.5,
+            "left": 60.5,
+            "width": 1000,
+            "height": 30,
+            "bottom": 1299.5,
+            "right": 1060.5
+          },
+          "cellCount": 2,
+          "text": "소유권 이전등기 및 취득세 납부"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-12/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-12:row-0"
+          },
+          "rect": {
+            "top": 1269.5,
+            "left": 60.5,
+            "width": 1000,
+            "height": 30,
+            "bottom": 1299.5,
+            "right": 1060.5
+          },
+          "cellCount": 2,
+          "text": "소유권 이전등기 및 취득세 납부"
+        }
+      ],
+      "text": "소유권 이전등기 및 취득세 납부",
+      "style": {
+        "height": "30px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 2,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0",
+        "readonlyDecoration": "true",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwpx-header-hwp-control",
+        "layoutHeight": "39"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "readonlyDecoration": "true",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 49,
+        "bottom": 68,
+        "right": 1062
+      },
+      "tableRect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 49,
+        "bottom": 68,
+        "right": 1062
+      },
+      "rowCount": 2,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-0:row-0"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 37.5,
+            "bottom": 57,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-0:row-1"
+          },
+          "rect": {
+            "top": 57,
+            "left": 60.5,
+            "width": 1001,
+            "height": 10.5,
+            "bottom": 67.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-0:row-0"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 37.5,
+            "bottom": 57,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-0:row-1"
+          },
+          "rect": {
+            "top": 57,
+            "left": 60.5,
+            "width": 1001,
+            "height": 10.5,
+            "bottom": 67.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-0:row-0"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 37.5,
+            "bottom": 57,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-0:row-1"
+          },
+          "rect": {
+            "top": 57,
+            "left": 60.5,
+            "width": 1001,
+            "height": 10.5,
+            "bottom": 67.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "text": "",
+      "style": {
+        "height": "39px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 27,
+        "left": 63,
+        "width": 57,
+        "height": 18,
+        "bottom": 45,
+        "right": 120
+      },
+      "text": "일시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 24.953125,
+        "left": 125,
+        "width": 6,
+        "height": 17.578125,
+        "bottom": 42.53125,
+        "right": 131
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-0-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 25,
+        "left": 136,
+        "width": 876,
+        "height": 17,
+        "bottom": 42,
+        "right": 1012
+      },
+      "text": "• 2026. 1. 15.(목) 부터 매주 목요일 13:30 ~ 16시 (※ 16시 이후 방문자는 동·호지정 및 계약체결 불가)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 50,
+        "left": 63,
+        "width": 57.5,
+        "height": 17.578125,
+        "bottom": 67.578125,
+        "right": 120.5
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 50,
+        "left": 124.5,
+        "width": 7,
+        "height": 17.578125,
+        "bottom": 67.578125,
+        "right": 131.5
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 50,
+        "left": 135.5,
+        "width": 876.5,
+        "height": 17.578125,
+        "bottom": 67.578125,
+        "right": 1012
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-2-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 72,
+        "left": 63,
+        "width": 57,
+        "height": 18,
+        "bottom": 90,
+        "right": 120
+      },
+      "text": "장소",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 69.703125,
+        "left": 125,
+        "width": 6,
+        "height": 17.578125,
+        "bottom": 87.28125,
+        "right": 131
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-2-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-2-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 70,
+        "left": 136,
+        "width": 876,
+        "height": 17,
+        "bottom": 87,
+        "right": 1012
+      },
+      "text": "• 대구 달서구 상화로 272, LH 대구경북지역본부 1층 마이홈센터",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 95,
+        "left": 63,
+        "width": 57.5,
+        "height": 17.578125,
+        "bottom": 112.578125,
+        "right": 120.5
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 95,
+        "left": 124.5,
+        "width": 7,
+        "height": 17.578125,
+        "bottom": 112.578125,
+        "right": 131.5
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 95,
+        "left": 135.5,
+        "width": 876.5,
+        "height": 17.578125,
+        "bottom": 112.578125,
+        "right": 1012
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-4-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 130,
+        "left": 63,
+        "width": 57,
+        "height": 18,
+        "bottom": 148,
+        "right": 120
+      },
+      "text": "절차",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 127.703125,
+        "left": 125,
+        "width": 6,
+        "height": 17.578125,
+        "bottom": 145.28125,
+        "right": 131
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-4-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-4-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 112,
+        "left": 136,
+        "width": 876,
+        "height": 51,
+        "bottom": 163,
+        "right": 1012
+      },
+      "text": "• [방문 이틀 전까지] 유선 사전예약 → [방문 당일] 등록명부 서명 → 동·호 지정 순번 결정 → 구비서류 확인 → 동·호 지정 → 계약금 입금 → 계약체결",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 166,
+        "left": 63,
+        "width": 57.5,
+        "height": 17.578125,
+        "bottom": 183.578125,
+        "right": 120.5
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 166,
+        "left": 124.5,
+        "width": 7,
+        "height": 17.578125,
+        "bottom": 183.578125,
+        "right": 131.5
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 166,
+        "left": 135.5,
+        "width": 876.5,
+        "height": 17.578125,
+        "bottom": 183.578125,
+        "right": 1012
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-6-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-6-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "51",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 224,
+        "left": 63,
+        "width": 57,
+        "height": 54,
+        "bottom": 278,
+        "right": 120
+      },
+      "text": "순번 부여 방법",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "51px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 239.703125,
+        "left": 125,
+        "width": 6,
+        "height": 17.578125,
+        "bottom": 257.28125,
+        "right": 131
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-6-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-6-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "64",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 188,
+        "left": 136,
+        "width": 876,
+        "height": 119,
+        "bottom": 307,
+        "right": 1012
+      },
+      "text": "• 기간 내에 동·호지정 장소에 도착하여 등록명부에 서명한 신청접수자에 대하여 순번대로 동·호지정 및 계약체결 합니다. - 당일 13:30 전 동·호지정 장소에 도착 및 서명한 인원은 모두 동시간 도착으로 간주, 추",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "64px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-6-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-6-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 325,
+        "left": 136,
+        "width": 876,
+        "height": 17,
+        "bottom": 342,
+        "right": 1012
+      },
+      "text": "• 2주택 이상 계약 희망 시 마지막 순번까지 1주택씩 동·호 지정이 완료된 후 잔여세대 중에서 추가 1주택씩 지정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 319,
+        "left": 63,
+        "width": 57.5,
+        "height": 17.578125,
+        "bottom": 336.578125,
+        "right": 120.5
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 319,
+        "left": 124.5,
+        "width": 7,
+        "height": 17.578125,
+        "bottom": 336.578125,
+        "right": 131.5
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 319,
+        "left": 135.5,
+        "width": 876.5,
+        "height": 17.578125,
+        "bottom": 336.578125,
+        "right": 1012
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-8-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-8-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "34",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 465.5,
+        "left": 63,
+        "width": 57,
+        "height": 36,
+        "bottom": 501.5,
+        "right": 120
+      },
+      "text": "구비 서류",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "34px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 471.953125,
+        "left": 125,
+        "width": 6,
+        "height": 17.578125,
+        "bottom": 489.53125,
+        "right": 131
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-8-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-8-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 367,
+        "left": 136,
+        "width": 70,
+        "height": 17,
+        "bottom": 384,
+        "right": 206
+      },
+      "text": "• 개인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-8-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-8-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 342,
+        "left": 211,
+        "width": 160,
+        "height": 15,
+        "bottom": 357,
+        "right": 371
+      },
+      "text": "필수서류",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-8-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-8-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 341,
+        "left": 384,
+        "width": 628,
+        "height": 17,
+        "bottom": 358,
+        "right": 1012
+      },
+      "text": "① 계약자 신분증, ② 계약자 주민등록표등본",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-9-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-9-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 374,
+        "left": 211,
+        "width": 160,
+        "height": 30,
+        "bottom": 404,
+        "right": 371
+      },
+      "text": "대리계약(본인 외) 시 추가 구비서류",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-9-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-9-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 372,
+        "left": 384,
+        "width": 628,
+        "height": 34,
+        "bottom": 406,
+        "right": 1012
+      },
+      "text": "① 계약자의 인감도장, ② 계약자 본인발급 인감증명서(대리발급분 불가), ③ 위임장(계약자 인감도장 날인), ④ 대리인 신분증",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-10-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-10-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 456.5,
+        "left": 136,
+        "width": 220,
+        "height": 17,
+        "bottom": 473.5,
+        "right": 356
+      },
+      "text": "• 법인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-10-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-10-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 433.5,
+        "left": 211,
+        "width": 160,
+        "height": 15,
+        "bottom": 448.5,
+        "right": 371
+      },
+      "text": "필수서류",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-10-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-10-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 424,
+        "left": 384,
+        "width": 628,
+        "height": 34,
+        "bottom": 458,
+        "right": 1012
+      },
+      "text": "① 법인 대표자 신분증, ② 법인인감도장(사용인감 구비 시 사용인감계 필요), ③ 법인인감증명서, ④ 법인등기부등본, ⑤ 사업자등록증",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-11-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-11-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 476,
+        "left": 211,
+        "width": 160,
+        "height": 30,
+        "bottom": 506,
+        "right": 371
+      },
+      "text": "대리계약(대표자 외) 시 추가 구비서류",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-11-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-11-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 482.5,
+        "left": 384,
+        "width": 628,
+        "height": 17,
+        "bottom": 499.5,
+        "right": 1012
+      },
+      "text": "① 위임장(법인 인감도장 날인), ② 대리인 신분증",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-12-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-12-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 520,
+        "left": 136,
+        "width": 876,
+        "height": 17,
+        "bottom": 537,
+        "right": 1012
+      },
+      "text": "※ (신분증) 주민등록증, 운전면허증, 여권의 실물 또는 그 사본만 인정 (사본 보관을 위해 모바일신분증 불가)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-12-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-12-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554,
+        "left": 136,
+        "width": 876,
+        "height": 17,
+        "bottom": 571,
+        "right": 1012
+      },
+      "text": "※ 주민등록표등본, 인감증명서, 법인등기부등본은 계약일로부터 1개월 이내 발급한 서류만 인정됩니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-12-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-12-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 588,
+        "left": 136,
+        "width": 876,
+        "height": 17,
+        "bottom": 605,
+        "right": 1012
+      },
+      "text": "※ 개인계약자·법인대표자 본인 외에는 전부 대리계약자로 간주되오니, 서류 구비 시 착오 없으시기 바랍니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-1-row-12-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-1-row-12-cell-0-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 622,
+        "left": 136,
+        "width": 876,
+        "height": 17,
+        "bottom": 639,
+        "right": 1012
+      },
+      "text": "※ 동일인이 2건 이상 계약을 체결하고자 하는 경우, 각 계약건별로 구비서류를 준비하여 주시기 바랍니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 693,
+        "left": 60,
+        "width": 938.84375,
+        "height": 51,
+        "bottom": 744,
+        "right": 998.84375
+      },
+      "text": "• 계약 예정 주의 화요일 (계약 예정일의 이틀 전) 18시까지 유선으로 사전예약을 하신 후 방문하셔야 동호지정 및 계약 가능합니다. (예약 처 ☎ 053-603-2841)",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 674px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 800,
+        "left": 60,
+        "width": 1006,
+        "height": 51,
+        "bottom": 851,
+        "right": 1066
+      },
+      "text": "• 방문 당일에 동·호 지정과 계약체결을 진행하므로 반드시 구비서류를 전부 지참하시어 방문하셔야 합니다. 구비서 류 1건이라도 미비 시 동·호 지정 불가하며, 도착 지연에 따른 불이익은 신청자 본인의 책임입니다.",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 781px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 851,
+        "left": 60,
+        "width": 1006,
+        "height": 51,
+        "bottom": 902,
+        "right": 1066
+      },
+      "text": "• 업무 진행자가 순번을 호명하면 해당 순번의 신청자는 지체없이 동·호를 지정하여야 하며, 동·호 지정 이후에는 동·호 변경 불가합니다. 동·호 지정 당일 순번 2회 호명 시 현장에 없을 경우 동·호 지정 의사가 없",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 832px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 934,
+        "left": 60,
+        "width": 1006,
+        "height": 34,
+        "bottom": 968,
+        "right": 1066
+      },
+      "text": "• 정시 미도착, 순번 호명 시 자리 이탈 등으로 본인 동·호 지정 순번을 놓친 경우, 당일 참가 순번의 마지막 순번 이후로 동·호 지정 및 계약가능하 며 마지막 순번 이후 경합 발생 시 순번이 빠른 자가 우선합니다",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 915px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-6",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1001,
+        "left": 60,
+        "width": 1006,
+        "height": 17,
+        "bottom": 1018,
+        "right": 1066
+      },
+      "text": "■ 계약 체결",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 982px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-7",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1036,
+        "left": 60,
+        "width": 1006,
+        "height": 34,
+        "bottom": 1070,
+        "right": 1066
+      },
+      "text": "• 동·호 지정 후 당일 16시까지 LH 지정계좌에 계약금 입금 및 계약 장소에서 계약 체결 완료하여야 합니다. 당일 16시 이내에 계약금 입금· 계약 체결하지 않은 경우, 계약 포기로 간주하며 동·호 지정 효력이 ",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1017px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-8",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1087,
+        "left": 60,
+        "width": 1006,
+        "height": 17,
+        "bottom": 1104,
+        "right": 1066
+      },
+      "text": "• 동·호지정 후 계약금 입금 시 계약 체결로 간주하며, 해약 시 위약금으로 주택가격의 10%를 공제합니다.",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1068px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-9",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1122,
+        "left": 60,
+        "width": 1006,
+        "height": 17,
+        "bottom": 1139,
+        "right": 1066
+      },
+      "text": "• 지정 순번을 부여받은 신청접수자 명의로만 계약 가능합니다. (타인명의 및 공동명의 불가)",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1103px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-10\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-10",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1157,
+        "left": 60,
+        "width": 1006,
+        "height": 17,
+        "bottom": 1174,
+        "right": 1066
+      },
+      "text": "• 공고절차 및 계약체결에 따라 접수된 서류 일체는 반환하지 않습니다.",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1138px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-11\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-11",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1192,
+        "left": 60,
+        "width": 1006,
+        "height": 17,
+        "bottom": 1209,
+        "right": 1066
+      },
+      "text": "• 각종 사유로 인한 도착 지연 시 불이익은 계약자의 책임이며, 공사에서 책임지지 않습니다.",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1173px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1275.703125,
+        "left": 63,
+        "width": 5.484375,
+        "height": 17.578125,
+        "bottom": 1293.28125,
+        "right": 68.484375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-12-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-12-row-0-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1275.5,
+        "left": 99.484375,
+        "width": 958.515625,
+        "height": 18,
+        "bottom": 1293.5,
+        "right": 1058
+      },
+      "text": "소유권 이전등기 및 취득세 납부",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-13\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-13",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1306,
+        "left": 60,
+        "width": 1006,
+        "height": 34,
+        "bottom": 1340,
+        "right": 1066
+      },
+      "text": "■ 잔금완납일로부터 60일 이내 관할 지자체에 취득세를 자진 신고·납부하고 소유권이전등기를 하여야 합니다. 기한 내 취득세를 신고·납 부하지 않는 경우 가산세가 부과될 수 있으며, 소유권이전등기를 하지 않을 시 과태",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1287px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-14\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-14",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1357,
+        "left": 60,
+        "width": 1006,
+        "height": 17,
+        "bottom": 1374,
+        "right": 1066
+      },
+      "text": "■ 계약 체결 시 「부동산 거래신고 등에 관한 법률」에 따라 우리 공사가 관할 지자체에 실거래 신고를 단독 이행합니다.",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1338px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-15\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-15",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1392,
+        "left": 60,
+        "width": 1006,
+        "height": 17,
+        "bottom": 1409,
+        "right": 1066
+      },
+      "text": "■ 잔금 납부 이후 소유권이전등기 서류를 교부하며, 등기이전 비용은 매수인이 부담하여야 합니다.",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1373px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-16\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-16",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "20",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1427,
+        "left": 60,
+        "width": 1006,
+        "height": 22,
+        "bottom": 1449,
+        "right": 1066
+      },
+      "text": "2025. 12. 30.",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1408px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-17\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-17",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "38",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1456,
+        "left": 60,
+        "width": 1006,
+        "height": 48,
+        "bottom": 1504,
+        "right": 1066
+      },
+      "text": "한국토지주택공사 대구경북지역본부",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1437px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "38px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "readonlyDecoration": "true",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 59,
+        "left": 63,
+        "width": 996,
+        "height": 21.109375,
+        "bottom": 80.109375,
+        "right": 1059
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-20\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-20",
+        "layoutSource": "hwpx-footer-page-number",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "layoutHeight": "18"
+      },
+      "rect": {
+        "top": 1399,
+        "left": 60,
+        "width": 1006,
+        "height": 19.1875,
+        "bottom": 1418.1875,
+        "right": 1066
+      },
+      "text": "- 4 -",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1380px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "1.2",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 60
+}

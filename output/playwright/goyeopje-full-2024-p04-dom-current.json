@@ -1,0 +1,474 @@
+{
+  "filename": "goyeopje-full-2024.hwp",
+  "pages": 11,
+  "page": {
+    "index": 4,
+    "width": 794,
+    "height": 1123
+  },
+  "bodyRect": {
+    "top": 1077,
+    "left": 633,
+    "width": 794,
+    "height": 1123,
+    "bottom": 2200,
+    "right": 1427
+  },
+  "text": "산재수혜 확인 및 제공 동의서 본인은 고엽제후유(의)증환자 등 등록신청과 관련하여 산업재해보상보험법상 보험급여 등의 혜택을 받은 사항이 있는 경우에는 질병의 정확한 원인 파악을 위해 근로복지공단이 산업재해 인정 경위 및 의무기록 등 본인의 자료를 국가보훈부(보훈병원)에게 제공하는 것에 동의합니다. 년 월 일 신청인 (서명 또는 인) 지방보훈청장 보훈지청장 귀하 제주특별자치도지사 ----------------------------------------------------------------------------------- 고엽제 등록신청 관련 안내사항 1. 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제5조 제4항에 의하면, “유전 또는 발육 상태와 관련하여 발생한 질병, 군 복무 전에 발생되었다고 판명된 질병, 외상에 의하여 발생 한 질병, 그 밖에 임상 과정에서 발생의 원인이 고엽제와 관련이 없다고 의학적으로 확실 하게 밝혀진 질병”의 경우에는 고엽제 관련 질병으로 인정하지 아니한다고 규정하고 있습니다. 2. 이와 관련하여 국가보훈부에서는 고엽제 등록신청자 전원에 대하여 근로복지공단 등 유관 기관과 협조하여 신청인이 산업재해보상보험법 등 타 법령에 의해 급여를 받은 사실 이 있는지 여부를 확인하고 있으며, 신청질병과 동일한 질병으로 급여를 받은 경우에는 산업 재해 또는 공무상 질병 인정경위 및 의무기록 등의 관련 자료를 고엽제 검진 및 등록 결정에 참고하고 있음을 알려드립니다.",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "906"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 37,
+        "left": 38,
+        "width": 699,
+        "height": 907,
+        "bottom": 944,
+        "right": 737
+      },
+      "tableRect": {
+        "top": 37,
+        "left": 38,
+        "width": 699,
+        "height": 907,
+        "bottom": 944,
+        "right": 737
+      },
+      "rowCount": 2,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-0:row-0"
+          },
+          "rect": {
+            "top": 37.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 65,
+            "bottom": 102.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "산재수혜 확인 및 제공 동의서"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-0:row-1"
+          },
+          "rect": {
+            "top": 102.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 841,
+            "bottom": 943.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "본인은 고엽제후유(의)증환자 등 등록신청과 관련하여 산업재해보상보험법상 보험급여 등의 혜택을 받은 사항이 있는 경우에는 질병의 정확한 원인 파악을 위해 근로복지공단이 산업재해 인정 경위 및 의무기록 등 본인의 자료를 국가보훈부(보훈병원)에게 제공하는 것에 동의합니다. 년 월 일 신청인 "
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-0:row-0"
+          },
+          "rect": {
+            "top": 37.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 65,
+            "bottom": 102.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "산재수혜 확인 및 제공 동의서"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-0:row-1"
+          },
+          "rect": {
+            "top": 102.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 841,
+            "bottom": 943.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "본인은 고엽제후유(의)증환자 등 등록신청과 관련하여 산업재해보상보험법상 보험급여 등의 혜택을 받은 사항이 있는 경우에는 질병의 정확한 원인 파악을 위해 근로복지공단이 산업재해 인정 경위 및 의무기록 등 본인의 자료를 국가보훈부(보훈병원)에게 제공하는 것에 동의합니다. 년 월 일 신청인 "
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-0:row-0"
+          },
+          "rect": {
+            "top": 37.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 65,
+            "bottom": 102.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "산재수혜 확인 및 제공 동의서"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-3-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-3-block-0:row-1"
+          },
+          "rect": {
+            "top": 102.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 841,
+            "bottom": 943.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "본인은 고엽제후유(의)증환자 등 등록신청과 관련하여 산업재해보상보험법상 보험급여 등의 혜택을 받은 사항이 있는 경우에는 질병의 정확한 원인 파악을 위해 근로복지공단이 산업재해 인정 경위 및 의무기록 등 본인의 자료를 국가보훈부(보훈병원)에게 제공하는 것에 동의합니다. 년 월 일 신청인 "
+        }
+      ],
+      "text": "산재수혜 확인 및 제공 동의서 본인은 고엽제후유(의)증환자 등 등록신청과 관련하여 산업재해보상보험법상 보험급여 등의 혜택을 받은 사항이 있는 경우에는 질병의 정확한 원인 파악을 위해 근로복지공단이 산업재해 인정 경위 및 의무기록 등 본인의 자료를 국가보훈부(보훈병원)에게 제공하는 것에 동의합니다. 년 월 일 신청인 (서명 또는 인) 지방보훈청장 보훈지청장 귀하 제주특별자치도지사 ---------------------------",
+      "style": {
+        "height": "906px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-0-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "24",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 56,
+        "left": 46,
+        "width": 683,
+        "height": 28,
+        "bottom": 84,
+        "right": 729
+      },
+      "text": "산재수혜 확인 및 제공 동의서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "24px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-0-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "76",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 323,
+        "left": 46,
+        "width": 683,
+        "height": 80,
+        "bottom": 403,
+        "right": 729
+      },
+      "text": "본인은 고엽제후유(의)증환자 등 등록신청과 관련하여 산업재해보상보험법상 보험급여 등의 혜택을 받은 사항이 있는 경우에는 질병의 정확한 원인 파악을 위해 근로복지공단이 산업재해 인정 경위 및 의무기록 등 본인의 자료를",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "76px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-0-row-1-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0-row-1-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 403,
+        "left": 46,
+        "width": 683,
+        "height": 20,
+        "bottom": 423,
+        "right": 729
+      },
+      "text": "년 월 일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-0-row-1-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0-row-1-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 423,
+        "left": 46,
+        "width": 683,
+        "height": 20,
+        "bottom": 443,
+        "right": 729
+      },
+      "text": "신청인 (서명 또는 인)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-0-row-1-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0-row-1-cell-0-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 443,
+        "left": 46,
+        "width": 683,
+        "height": 20,
+        "bottom": 463,
+        "right": 729
+      },
+      "text": "지방보훈청장",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-0-row-1-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0-row-1-cell-0-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 463,
+        "left": 46,
+        "width": 683,
+        "height": 20,
+        "bottom": 483,
+        "right": 729
+      },
+      "text": "보훈지청장 귀하",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-0-row-1-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0-row-1-cell-0-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 483,
+        "left": 46,
+        "width": 683,
+        "height": 20,
+        "bottom": 503,
+        "right": 729
+      },
+      "text": "제주특별자치도지사",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-0-row-1-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0-row-1-cell-0-block-6",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 503,
+        "left": 46,
+        "width": 683,
+        "height": 20,
+        "bottom": 523,
+        "right": 729
+      },
+      "text": "-----------------------------------------------------------------------------------",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-0-row-1-cell-0-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0-row-1-cell-0-block-7",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 523,
+        "left": 46,
+        "width": 683,
+        "height": 20,
+        "bottom": 543,
+        "right": 729
+      },
+      "text": "고엽제 등록신청 관련 안내사항",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-0-row-1-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0-row-1-cell-0-block-8",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "85",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 543,
+        "left": 46,
+        "width": 683,
+        "height": 90,
+        "bottom": 633,
+        "right": 729
+      },
+      "text": "1. 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제5조 제4항에 의하면, “유전 또는 발육 상태와 관련하여 발생한 질병, 군 복무 전에 발생되었다고 판명된 질병, 외상에 의하여 발생 한 질병, 그 밖에 ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "85px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-3-block-0-row-1-cell-0-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-3-block-0-row-1-cell-0-block-9",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "85",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 633,
+        "left": 46,
+        "width": 683,
+        "height": 90,
+        "bottom": 723,
+        "right": 729
+      },
+      "text": "2. 이와 관련하여 국가보훈부에서는 고엽제 등록신청자 전원에 대하여 근로복지공단 등 유관 기관과 협조하여 신청인이 산업재해보상보험법 등 타 법령에 의해 급여를 받은 사실 이 있는지 여부를 확인하고 있으며, 신청질병과",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "85px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 11
+}

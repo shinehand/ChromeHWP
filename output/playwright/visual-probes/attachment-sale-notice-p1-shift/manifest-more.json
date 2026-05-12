@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-05-06T22:44:48.682Z",
+  "auditId": "attachment-p1-shift-more",
+  "documents": [
+    {
+      "id": "attachment-sale-notice",
+      "filename": "attachment-sale-notice.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp",
+      "pageCount": 4,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/attachment-sale-notice-p1-shift/p1-abs-down-88.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/attachment-sale-notice-p1-shift/p1-abs-down-96.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/attachment-sale-notice-p1-shift/p1-abs-down-112.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/attachment-sale-notice-p1-shift/p1-abs-down-80-run-0p8.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/attachment-sale-notice-p1-shift/p1-abs-down-80-table-op-0p9.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/attachment-sale-notice-p1-shift/p1-abs-down-80-notice-border-0p6.png",
+          "targetBand": "first"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2949 @@
+{
+  "filename": "goyeopje-full-2024.hwp",
+  "pages": 11,
+  "page": {
+    "index": 11,
+    "width": 794,
+    "height": 1123
+  },
+  "bodyRect": {
+    "top": 1049,
+    "left": 633,
+    "width": 794,
+    "height": 1123,
+    "bottom": 2172,
+    "right": 1427
+  },
+  "text": "■ 진료정보교류 표준 [별지 제2호서식] 진료정보교류 개인정보 수집 및 이용ㆍ제공 동의서 본인은 「의료법」 제21조(기록 열람 등). 제21조의2(진료기록의 송부 등) 및 같은 법 시행령 제42조의2(민감정보 및 고유 식별번호 처리)에 따라 의료기관에서 작성한 본인의 개인정보 및 진료정보는 타 의료기관 내원 진료 시 활용(이하 “진 료정보교류서비스”라 한다)될 수 있으며, 진료정보교류서비스 평가 및 분석 자료 등으로 활용될 수 있다는 사실에 대해 충분한 설명을 듣고 이해하였으며 아래와 같이 동의합니다. ※ 사인패드ㆍ마우스로 작성하신 서명은 전자서명법 제3조(전자서명의 효력)에 따라 내용에 동의하신 것으로 간주합니다. ※ 법정대리인의 개인정보는 만14세 미만 환자와의 관계를 확인하는 용도 이외 사용되지 않습니다. 환자(본인) 성명 연락처 주민등록번호(외국인등록번호) 주소 법정대리인 (14세미만 환자의 보호자) 성명 연락처 생년월일 환자와의 관계 수집ㆍ이용ㆍ제공하 는 정보 항목 [1] 개인정보 환자(본인): 성명, 생년월일, 성별, 연락처, 주소 법정대리인: 성명, 생년월일, 연락처, 환자와의 관계 [2] 민감정보 (진료정보) ① 환자정보(외래·입원 등 진료구분), ② 의료기관정보, ③ 진료의, ④ 진단내역(진단일자, 상병명 등), ⑤ 약물처방내역(처방일시, 처방약품 등), ⑥ 검사내역(검사항목, 검사결과 등), ⑦ 수술내역(수술일자, 수술명 등), ⑧ 알러지 및 부작용(알러지명, 알러지요인 등), ⑨ 소견 및 주의사항, ⑩ 예약관련 정보(예약희망일시 등), ⑪ 과거병력, ⑫ 흡연상태, ⑬ 음주상태, ⑭ 예방접종내역(접종일자, 예방접종명 등), ⑮ 생체신호 및 상태(키,몸무게, 혈압 등), ⑯ 법정 전염성감염병(발병일자, 진단일, 병명 등), ⑰ 영상판독정보(촬영일시,판독내용 등), ⑱ 의료영상정보(CT,MRI 등), ⑲ 진료기록부 등, ⑳ 의뢰·회송사유 [3] 고유식별번호 주민등록번호(수집근거: 의료법 시행령 제42조의2), 외국인등록번호 개인정보 수집 ㆍ이 용",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table\",\"nodeId\":\"page-10-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "972"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table\",\"nodeId\":\"page-10-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp"
+      },
+      "rect": {
+        "top": 80,
+        "left": 76,
+        "width": 641,
+        "height": 1011.890625,
+        "bottom": 1091.890625,
+        "right": 717
+      },
+      "tableRect": {
+        "top": 80,
+        "left": 76,
+        "width": 641,
+        "height": 1011.890625,
+        "bottom": 1091.890625,
+        "right": 717
+      },
+      "rowCount": 21,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-0"
+          },
+          "rect": {
+            "top": 80.5,
+            "left": 76.5,
+            "width": 640,
+            "height": 17.5,
+            "bottom": 98,
+            "right": 716.5
+          },
+          "cellCount": 1,
+          "text": "■ 진료정보교류 표준 [별지 제2호서식]"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-1"
+          },
+          "rect": {
+            "top": 98,
+            "left": 76.5,
+            "width": 640,
+            "height": 27.5,
+            "bottom": 125.5,
+            "right": 716.5
+          },
+          "cellCount": 1,
+          "text": "진료정보교류 개인정보 수집 및 이용ㆍ제공 동의서"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-2"
+          },
+          "rect": {
+            "top": 125.5,
+            "left": 76.5,
+            "width": 640,
+            "height": 91,
+            "bottom": 216.5,
+            "right": 716.5
+          },
+          "cellCount": 1,
+          "text": "본인은 「의료법」 제21조(기록 열람 등). 제21조의2(진료기록의 송부 등) 및 같은 법 시행령 제42조의2(민감정보 및 고유 식별번호 처리)에 따라 의료기관에서 작성한 본인의 개인정보 및 진료정보는 타 의료기관 내원 진료 시 활용(이하 “진 료정보교류서비스”라 한다)될 수 있으며, "
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-3"
+          },
+          "rect": {
+            "top": 216.5,
+            "left": 76.5,
+            "width": 640,
+            "height": 26.578125,
+            "bottom": 243.078125,
+            "right": 716.5
+          },
+          "cellCount": 5,
+          "text": "환자(본인) 성명 연락처"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-4"
+          },
+          "rect": {
+            "top": 243.078125,
+            "left": 76.5,
+            "width": 640,
+            "height": 26.578125,
+            "bottom": 269.65625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "주민등록번호(외국인등록번호)"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-5"
+          },
+          "rect": {
+            "top": 269.65625,
+            "left": 76.5,
+            "width": 640,
+            "height": 26.578125,
+            "bottom": 296.234375,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "주소"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-6"
+          },
+          "rect": {
+            "top": 296.234375,
+            "left": 76.5,
+            "width": 640,
+            "height": 26.578125,
+            "bottom": 322.8125,
+            "right": 716.5
+          },
+          "cellCount": 5,
+          "text": "법정대리인 (14세미만 환자의 보호자) 성명 연락처"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-7"
+          },
+          "rect": {
+            "top": 322.8125,
+            "left": 76.5,
+            "width": 640,
+            "height": 26.578125,
+            "bottom": 349.390625,
+            "right": 716.5
+          },
+          "cellCount": 4,
+          "text": "생년월일 환자와의 관계"
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-8"
+          },
+          "rect": {
+            "top": 349.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 35,
+            "bottom": 384.390625,
+            "right": 716.5
+          },
+          "cellCount": 3,
+          "text": "수집ㆍ이용ㆍ제공하 는 정보 항목 [1] 개인정보 환자(본인): 성명, 생년월일, 성별, 연락처, 주소 법정대리인: 성명, 생년월일, 연락처, 환자와의 관계"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-9"
+          },
+          "rect": {
+            "top": 384.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 141,
+            "bottom": 525.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "[2] 민감정보 (진료정보) ① 환자정보(외래·입원 등 진료구분), ② 의료기관정보, ③ 진료의, ④ 진단내역(진단일자, 상병명 등), ⑤ 약물처방내역(처방일시, 처방약품 등), ⑥ 검사내역(검사항목, 검사결과 등), ⑦ 수술내역(수술일자, 수술명 등), ⑧ 알러지 및 부작용(알러지명,"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-10"
+          },
+          "rect": {
+            "top": 525.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 22,
+            "bottom": 547.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "[3] 고유식별번호 주민등록번호(수집근거: 의료법 시행령 제42조의2), 외국인등록번호"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-11"
+          },
+          "rect": {
+            "top": 547.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 35,
+            "bottom": 582.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "개인정보 수집 ㆍ이 용목적 ① 진료정보교류시스템을 활용한 의료인간 진료정보 전달로 원활한 진료서비스 제공 ② 경제적ㆍ의학적 편익분석을 위하여 행해지는 진료정보교류서비스 평가ㆍ분석"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 13,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-13\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-13"
+          },
+          "rect": {
+            "top": 692.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 124,
+            "bottom": 816.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "제공받는 자 ① 본인이 내원하여 진료서비스를 제공받는 의료기관(진료 시 활용 목적) ② 보건복지부(시스템 관리, 진료정보교류서비스 평가 및 분석 목적) ③ 건강보험심사평가원(진료정보교류 의뢰회송 수가 청구를 위한 증적자료) ④ 근로복지공단(산업재해 보험급여 판정을 위한 증적자료) ⑤ 지"
+        },
+        {
+          "rowIndex": 14,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-14\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-14"
+          },
+          "rect": {
+            "top": 816.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 48,
+            "bottom": 864.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "보유 및 이용 기간 (제공받는 기관 포함) 「의료법」 시행규칙 제15조(진료기록부 등의 보존)에 따라 진료기록부는 10년 동안 보존하며 그 외 진료정보는 동법 제1항 각 호에 해당하는 기간 동안 보존합니다. * 제공받는 기관은 각 기관의 근거법령에 따른 기간 동안 동 정보를 보유·이용할"
+        },
+        {
+          "rowIndex": 15,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-15\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-15"
+          },
+          "rect": {
+            "top": 864.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 48,
+            "bottom": 912.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "동의거부 권리 및 동의거부에 따른 불이익 ① 귀하는 개인정보ㆍ민감정보ㆍ고유식별정보 수집ㆍ이용ㆍ제공 동의를 거부할 권리가 있습니다. ② 동의 거부 시, 진료정보교류시스템을 활용하지 못함으로써 진료를 의뢰하는 경우 진료접수 대기 시간이 소요될 수 있으며 별도의 의무기록송부절차가 필요합니다."
+        },
+        {
+          "rowIndex": 16,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-16\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-16"
+          },
+          "rect": {
+            "top": 912.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 22,
+            "bottom": 934.390625,
+            "right": 716.5
+          },
+          "cellCount": 3,
+          "text": "동의 제외사항 진료과 [ ] 비뇨기과 [ ] 산부인과 [ ] 정신건강의학과 [ ] 기타( )"
+        },
+        {
+          "rowIndex": 17,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-17\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-17"
+          },
+          "rect": {
+            "top": 934.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 20.5,
+            "bottom": 954.890625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "본인[ ] 법정대리인[ ]은 진료정보교류서비스 이용을 위한"
+        },
+        {
+          "rowIndex": 18,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-18\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-18"
+          },
+          "rect": {
+            "top": 954.890625,
+            "left": 76.5,
+            "width": 640,
+            "height": 74,
+            "bottom": 1028.890625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "[1]개인정보의 수집ㆍ이용에 동의합니다. [2]민감정보의 수집ㆍ이용에 동의합니다. [3]고유식별정보의 수집ㆍ이용에 동의합니다. [1]개인정보, [2]민감(진료)정보, [3]고유식별정보의 제공에 동의합니다. 예[ ] 아니오[ ] 예[ ] 아니오[ ] 예[ ] 아니오[ ] 예[ ] 아니오["
+        },
+        {
+          "rowIndex": 19,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-19\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-19"
+          },
+          "rect": {
+            "top": 1028.890625,
+            "left": 76.5,
+            "width": 640,
+            "height": 44.5,
+            "bottom": 1073.390625,
+            "right": 716.5
+          },
+          "cellCount": 1,
+          "text": "20 년 월 일 환자(대리인 또는 보호자) 이름 : (인)"
+        },
+        {
+          "rowIndex": 20,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-20\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-20"
+          },
+          "rect": {
+            "top": 1073.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 18,
+            "bottom": 1091.390625,
+            "right": 716.5
+          },
+          "cellCount": 1,
+          "text": "210mm×297mm[백상지 80g/㎡]"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-0"
+          },
+          "rect": {
+            "top": 80.5,
+            "left": 76.5,
+            "width": 640,
+            "height": 17.5,
+            "bottom": 98,
+            "right": 716.5
+          },
+          "cellCount": 1,
+          "text": "■ 진료정보교류 표준 [별지 제2호서식]"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-1"
+          },
+          "rect": {
+            "top": 98,
+            "left": 76.5,
+            "width": 640,
+            "height": 27.5,
+            "bottom": 125.5,
+            "right": 716.5
+          },
+          "cellCount": 1,
+          "text": "진료정보교류 개인정보 수집 및 이용ㆍ제공 동의서"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-2"
+          },
+          "rect": {
+            "top": 125.5,
+            "left": 76.5,
+            "width": 640,
+            "height": 91,
+            "bottom": 216.5,
+            "right": 716.5
+          },
+          "cellCount": 1,
+          "text": "본인은 「의료법」 제21조(기록 열람 등). 제21조의2(진료기록의 송부 등) 및 같은 법 시행령 제42조의2(민감정보 및 고유 식별번호 처리)에 따라 의료기관에서 작성한 본인의 개인정보 및 진료정보는 타 의료기관 내원 진료 시 활용(이하 “진 료정보교류서비스”라 한다)될 수 있으며, "
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-3"
+          },
+          "rect": {
+            "top": 216.5,
+            "left": 76.5,
+            "width": 640,
+            "height": 26.578125,
+            "bottom": 243.078125,
+            "right": 716.5
+          },
+          "cellCount": 5,
+          "text": "환자(본인) 성명 연락처"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-4"
+          },
+          "rect": {
+            "top": 243.078125,
+            "left": 76.5,
+            "width": 640,
+            "height": 26.578125,
+            "bottom": 269.65625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "주민등록번호(외국인등록번호)"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-5"
+          },
+          "rect": {
+            "top": 269.65625,
+            "left": 76.5,
+            "width": 640,
+            "height": 26.578125,
+            "bottom": 296.234375,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "주소"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-6"
+          },
+          "rect": {
+            "top": 296.234375,
+            "left": 76.5,
+            "width": 640,
+            "height": 26.578125,
+            "bottom": 322.8125,
+            "right": 716.5
+          },
+          "cellCount": 5,
+          "text": "법정대리인 (14세미만 환자의 보호자) 성명 연락처"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-7"
+          },
+          "rect": {
+            "top": 322.8125,
+            "left": 76.5,
+            "width": 640,
+            "height": 26.578125,
+            "bottom": 349.390625,
+            "right": 716.5
+          },
+          "cellCount": 4,
+          "text": "생년월일 환자와의 관계"
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-8"
+          },
+          "rect": {
+            "top": 349.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 35,
+            "bottom": 384.390625,
+            "right": 716.5
+          },
+          "cellCount": 3,
+          "text": "수집ㆍ이용ㆍ제공하 는 정보 항목 [1] 개인정보 환자(본인): 성명, 생년월일, 성별, 연락처, 주소 법정대리인: 성명, 생년월일, 연락처, 환자와의 관계"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-9"
+          },
+          "rect": {
+            "top": 384.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 141,
+            "bottom": 525.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "[2] 민감정보 (진료정보) ① 환자정보(외래·입원 등 진료구분), ② 의료기관정보, ③ 진료의, ④ 진단내역(진단일자, 상병명 등), ⑤ 약물처방내역(처방일시, 처방약품 등), ⑥ 검사내역(검사항목, 검사결과 등), ⑦ 수술내역(수술일자, 수술명 등), ⑧ 알러지 및 부작용(알러지명,"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-10"
+          },
+          "rect": {
+            "top": 525.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 22,
+            "bottom": 547.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "[3] 고유식별번호 주민등록번호(수집근거: 의료법 시행령 제42조의2), 외국인등록번호"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-11"
+          },
+          "rect": {
+            "top": 547.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 35,
+            "bottom": 582.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "개인정보 수집 ㆍ이 용목적 ① 진료정보교류시스템을 활용한 의료인간 진료정보 전달로 원활한 진료서비스 제공 ② 경제적ㆍ의학적 편익분석을 위하여 행해지는 진료정보교류서비스 평가ㆍ분석"
+        },
+        {
+          "rowIndex": 12,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-12"
+          },
+          "rect": {
+            "top": 582.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 110,
+            "bottom": 692.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "개인정보 제공목적 ① 진료정보교류시스템을 활용한 의료인간 진료정보 전달로 원활한 진료서비스 제공 ② 「산업재해보상보험법」에 따른 산업재해 보험급여 판정을 위한 증적자료 제공 ③ 「병역법」에 따른 병역판정검사를 위한 증적자료 제공 ④ 「국민연금법」에 따른 부양가족연금, 장애연금 및 유족연"
+        },
+        {
+          "rowIndex": 13,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-13\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-13"
+          },
+          "rect": {
+            "top": 692.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 124,
+            "bottom": 816.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "제공받는 자 ① 본인이 내원하여 진료서비스를 제공받는 의료기관(진료 시 활용 목적) ② 보건복지부(시스템 관리, 진료정보교류서비스 평가 및 분석 목적) ③ 건강보험심사평가원(진료정보교류 의뢰회송 수가 청구를 위한 증적자료) ④ 근로복지공단(산업재해 보험급여 판정을 위한 증적자료) ⑤ 지"
+        },
+        {
+          "rowIndex": 14,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-14\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-14"
+          },
+          "rect": {
+            "top": 816.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 48,
+            "bottom": 864.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "보유 및 이용 기간 (제공받는 기관 포함) 「의료법」 시행규칙 제15조(진료기록부 등의 보존)에 따라 진료기록부는 10년 동안 보존하며 그 외 진료정보는 동법 제1항 각 호에 해당하는 기간 동안 보존합니다. * 제공받는 기관은 각 기관의 근거법령에 따른 기간 동안 동 정보를 보유·이용할"
+        },
+        {
+          "rowIndex": 15,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-15\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-15"
+          },
+          "rect": {
+            "top": 864.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 48,
+            "bottom": 912.390625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "동의거부 권리 및 동의거부에 따른 불이익 ① 귀하는 개인정보ㆍ민감정보ㆍ고유식별정보 수집ㆍ이용ㆍ제공 동의를 거부할 권리가 있습니다. ② 동의 거부 시, 진료정보교류시스템을 활용하지 못함으로써 진료를 의뢰하는 경우 진료접수 대기 시간이 소요될 수 있으며 별도의 의무기록송부절차가 필요합니다."
+        },
+        {
+          "rowIndex": 16,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-16\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-16"
+          },
+          "rect": {
+            "top": 912.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 22,
+            "bottom": 934.390625,
+            "right": 716.5
+          },
+          "cellCount": 3,
+          "text": "동의 제외사항 진료과 [ ] 비뇨기과 [ ] 산부인과 [ ] 정신건강의학과 [ ] 기타( )"
+        },
+        {
+          "rowIndex": 17,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-17\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-17"
+          },
+          "rect": {
+            "top": 934.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 20.5,
+            "bottom": 954.890625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "본인[ ] 법정대리인[ ]은 진료정보교류서비스 이용을 위한"
+        },
+        {
+          "rowIndex": 18,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-18\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-18"
+          },
+          "rect": {
+            "top": 954.890625,
+            "left": 76.5,
+            "width": 640,
+            "height": 74,
+            "bottom": 1028.890625,
+            "right": 716.5
+          },
+          "cellCount": 2,
+          "text": "[1]개인정보의 수집ㆍ이용에 동의합니다. [2]민감정보의 수집ㆍ이용에 동의합니다. [3]고유식별정보의 수집ㆍ이용에 동의합니다. [1]개인정보, [2]민감(진료)정보, [3]고유식별정보의 제공에 동의합니다. 예[ ] 아니오[ ] 예[ ] 아니오[ ] 예[ ] 아니오[ ] 예[ ] 아니오["
+        },
+        {
+          "rowIndex": 19,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-19\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-19"
+          },
+          "rect": {
+            "top": 1028.890625,
+            "left": 76.5,
+            "width": 640,
+            "height": 44.5,
+            "bottom": 1073.390625,
+            "right": 716.5
+          },
+          "cellCount": 1,
+          "text": "20 년 월 일 환자(대리인 또는 보호자) 이름 : (인)"
+        },
+        {
+          "rowIndex": 20,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"table-row\",\"nodeId\":\"page-10-block-0/row-20\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:1:page-10-block-0:row-20"
+          },
+          "rect": {
+            "top": 1073.390625,
+            "left": 76.5,
+            "width": 640,
+            "height": 18,
+            "bottom": 1091.390625,
+            "right": 716.5
+          },
+          "cellCount": 1,
+          "text": "210mm×297mm[백상지 80g/㎡]"
+        }
+      ],
+      "text": "■ 진료정보교류 표준 [별지 제2호서식] 진료정보교류 개인정보 수집 및 이용ㆍ제공 동의서 본인은 「의료법」 제21조(기록 열람 등). 제21조의2(진료기록의 송부 등) 및 같은 법 시행령 제42조의2(민감정보 및 고유 식별번호 처리)에 따라 의료기관에서 작성한 본인의 개인정보 및 진료정보는 타 의료기관 내원 진료 시 활용(이하 “진 료정보교류서비스”라 한다)될 수 있으며, 진료정보교류서비스 평가 및 분석 자료 등으로 활용될 수",
+      "style": {
+        "height": "972px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 83,
+        "left": 79,
+        "width": 635,
+        "height": 13,
+        "bottom": 96,
+        "right": 714
+      },
+      "text": "■ 진료정보교류 표준 [별지 제2호서식]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 100,
+        "left": 84,
+        "width": 625,
+        "height": 23,
+        "bottom": 123,
+        "right": 709
+      },
+      "text": "진료정보교류 개인정보 수집 및 이용ㆍ제공 동의서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-2-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "52",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 130,
+        "left": 84,
+        "width": 625,
+        "height": 56,
+        "bottom": 186,
+        "right": 709
+      },
+      "text": "본인은 「의료법」 제21조(기록 열람 등). 제21조의2(진료기록의 송부 등) 및 같은 법 시행령 제42조의2(민감정보 및 고유 식별번호 처리)에 따라 의료기관에서 작성한 본인의 개인정보 및 진료정보는 타 의료기관 ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "52px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-2-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-2-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 186,
+        "left": 84,
+        "width": 625,
+        "height": 13,
+        "bottom": 199,
+        "right": 709
+      },
+      "text": "※ 사인패드ㆍ마우스로 작성하신 서명은 전자서명법 제3조(전자서명의 효력)에 따라 내용에 동의하신 것으로 간주합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-2-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-2-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 199,
+        "left": 84,
+        "width": 625,
+        "height": 13,
+        "bottom": 212,
+        "right": 709
+      },
+      "text": "※ 법정대리인의 개인정보는 만14세 미만 환자와의 관계를 확인하는 용도 이외 사용되지 않습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-3-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 249.359375,
+        "left": 84,
+        "width": 115.4375,
+        "height": 14,
+        "bottom": 263.359375,
+        "right": 199.4375
+      },
+      "text": "환자(본인)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-3-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-3-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 223.28125,
+        "left": 213.4375,
+        "width": 77.625,
+        "height": 13,
+        "bottom": 236.28125,
+        "right": 291.0625
+      },
+      "text": "성명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 221,
+        "left": 302.0625,
+        "width": 149.703125,
+        "height": 17.578125,
+        "bottom": 238.578125,
+        "right": 451.765625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-3-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-3-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 223.28125,
+        "left": 462.765625,
+        "width": 115.765625,
+        "height": 13,
+        "bottom": 236.28125,
+        "right": 578.53125
+      },
+      "text": "연락처",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 221,
+        "left": 589.53125,
+        "width": 122.46875,
+        "height": 17.578125,
+        "bottom": 238.578125,
+        "right": 712
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-4-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 249.859375,
+        "left": 213.4375,
+        "width": 238.328125,
+        "height": 13,
+        "bottom": 262.859375,
+        "right": 451.765625
+      },
+      "text": "주민등록번호(외국인등록번호)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 247.578125,
+        "left": 462.765625,
+        "width": 249.234375,
+        "height": 17.578125,
+        "bottom": 265.15625,
+        "right": 712
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-5-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 276.4375,
+        "left": 213.4375,
+        "width": 77.625,
+        "height": 13,
+        "bottom": 289.4375,
+        "right": 291.0625
+      },
+      "text": "주소",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 274.15625,
+        "left": 302.0625,
+        "width": 409.9375,
+        "height": 17.578125,
+        "bottom": 291.734375,
+        "right": 712
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-6-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-6-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 308.8125,
+        "left": 84,
+        "width": 115.4375,
+        "height": 14,
+        "bottom": 322.8125,
+        "right": 199.4375
+      },
+      "text": "법정대리인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-6-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-6-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 322.8125,
+        "left": 84,
+        "width": 115.4375,
+        "height": 14,
+        "bottom": 336.8125,
+        "right": 199.4375
+      },
+      "text": "(14세미만 환자의 보호자)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-6-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-6-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 303.015625,
+        "left": 213.4375,
+        "width": 77.625,
+        "height": 13,
+        "bottom": 316.015625,
+        "right": 291.0625
+      },
+      "text": "성명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 300.734375,
+        "left": 302.0625,
+        "width": 149.703125,
+        "height": 17.578125,
+        "bottom": 318.3125,
+        "right": 451.765625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-6-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-6-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 303.015625,
+        "left": 462.765625,
+        "width": 115.765625,
+        "height": 13,
+        "bottom": 316.015625,
+        "right": 578.53125
+      },
+      "text": "연락처",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 300.734375,
+        "left": 589.53125,
+        "width": 122.46875,
+        "height": 17.578125,
+        "bottom": 318.3125,
+        "right": 712
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-7-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-7-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 329.59375,
+        "left": 213.4375,
+        "width": 77.625,
+        "height": 13,
+        "bottom": 342.59375,
+        "right": 291.0625
+      },
+      "text": "생년월일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 327.3125,
+        "left": 302.0625,
+        "width": 149.703125,
+        "height": 17.578125,
+        "bottom": 344.890625,
+        "right": 451.765625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-7-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-7-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 329.59375,
+        "left": 462.765625,
+        "width": 115.765625,
+        "height": 13,
+        "bottom": 342.59375,
+        "right": 578.53125
+      },
+      "text": "환자와의 관계",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 327.3125,
+        "left": 589.53125,
+        "width": 122.46875,
+        "height": 17.578125,
+        "bottom": 344.890625,
+        "right": 712
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-8-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-8-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 434.390625,
+        "left": 84,
+        "width": 115.4375,
+        "height": 28,
+        "bottom": 462.390625,
+        "right": 199.4375
+      },
+      "text": "수집ㆍ이용ㆍ제공하 는 정보 항목",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-8-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-8-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 360.390625,
+        "left": 213.4375,
+        "width": 77.625,
+        "height": 13,
+        "bottom": 373.390625,
+        "right": 291.0625
+      },
+      "text": "[1] 개인정보",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-8-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-8-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 353.890625,
+        "left": 302.0625,
+        "width": 409.9375,
+        "height": 13,
+        "bottom": 366.890625,
+        "right": 712
+      },
+      "text": "환자(본인): 성명, 생년월일, 성별, 연락처, 주소",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-8-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-8-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 366.890625,
+        "left": 302.0625,
+        "width": 409.9375,
+        "height": 13,
+        "bottom": 379.890625,
+        "right": 712
+      },
+      "text": "법정대리인: 성명, 생년월일, 연락처, 환자와의 관계",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-9-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-9-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 441.890625,
+        "left": 213.4375,
+        "width": 77.625,
+        "height": 13,
+        "bottom": 454.890625,
+        "right": 291.0625
+      },
+      "text": "[2] 민감정보",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-9-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-9-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 454.890625,
+        "left": 213.4375,
+        "width": 77.625,
+        "height": 13,
+        "bottom": 467.890625,
+        "right": 291.0625
+      },
+      "text": "(진료정보)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-9-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-9-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 402.890625,
+        "left": 302.0625,
+        "width": 409.9375,
+        "height": 13,
+        "bottom": 415.890625,
+        "right": 712
+      },
+      "text": "① 환자정보(외래·입원 등 진료구분), ② 의료기관정보, ③ 진료의,",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-9-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-9-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 415.890625,
+        "left": 302.0625,
+        "width": 409.9375,
+        "height": 13,
+        "bottom": 428.890625,
+        "right": 712
+      },
+      "text": "④ 진단내역(진단일자, 상병명 등), ⑤ 약물처방내역(처방일시, 처방약품 등),",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-9-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-9-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 428.890625,
+        "left": 302.0625,
+        "width": 409.9375,
+        "height": 13,
+        "bottom": 441.890625,
+        "right": 712
+      },
+      "text": "⑥ 검사내역(검사항목, 검사결과 등), ⑦ 수술내역(수술일자, 수술명 등),",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-9-cell-1-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-9-cell-1-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 441.890625,
+        "left": 302.0625,
+        "width": 409.9375,
+        "height": 13,
+        "bottom": 454.890625,
+        "right": 712
+      },
+      "text": "⑧ 알러지 및 부작용(알러지명, 알러지요인 등), ⑨ 소견 및 주의사항,",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-9-cell-1-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-9-cell-1-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 454.890625,
+        "left": 302.0625,
+        "width": 409.9375,
+        "height": 13,
+        "bottom": 467.890625,
+        "right": 712
+      },
+      "text": "⑩ 예약관련 정보(예약희망일시 등), ⑪ 과거병력, ⑫ 흡연상태, ⑬ 음주상태,",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-9-cell-1-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-9-cell-1-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "36",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 467.890625,
+        "left": 302.0625,
+        "width": 409.9375,
+        "height": 39,
+        "bottom": 506.890625,
+        "right": 712
+      },
+      "text": "⑭ 예방접종내역(접종일자, 예방접종명 등), ⑮ 생체신호 및 상태(키,몸무게, 혈압 등), ⑯ 법정 전염성감염병(발병일자, 진단일, 병명 등), ⑰ 영상판독정보(촬영일시,판독내용 등), ⑱ 의료영상정보(CT,MRI ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "36px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-10-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-10-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 213.4375,
+        "width": 77.625,
+        "height": 13,
+        "bottom": 542.890625,
+        "right": 291.0625
+      },
+      "text": "[3] 고유식별번호",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-10-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-10-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 302.0625,
+        "width": 409.9375,
+        "height": 13,
+        "bottom": 542.890625,
+        "right": 712
+      },
+      "text": "주민등록번호(수집근거: 의료법 시행령 제42조의2), 외국인등록번호",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-11-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-11-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 550.890625,
+        "left": 84,
+        "width": 115.4375,
+        "height": 28,
+        "bottom": 578.890625,
+        "right": 199.4375
+      },
+      "text": "개인정보 수집 ㆍ이 용목적",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-11-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-11-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 551.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 564.890625,
+        "right": 712
+      },
+      "text": "① 진료정보교류시스템을 활용한 의료인간 진료정보 전달로 원활한 진료서비스 제공",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-11-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-11-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 564.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 577.890625,
+        "right": 712
+      },
+      "text": "② 경제적ㆍ의학적 편익분석을 위하여 행해지는 진료정보교류서비스 평가ㆍ분석",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-12-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-12-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 630.390625,
+        "left": 84,
+        "width": 115.4375,
+        "height": 14,
+        "bottom": 644.390625,
+        "right": 199.4375
+      },
+      "text": "개인정보 제공목적",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-12-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-12-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 591.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 604.890625,
+        "right": 712
+      },
+      "text": "① 진료정보교류시스템을 활용한 의료인간 진료정보 전달로 원활한 진료서비스 제공",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-12-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-12-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 604.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 617.890625,
+        "right": 712
+      },
+      "text": "② 「산업재해보상보험법」에 따른 산업재해 보험급여 판정을 위한 증적자료 제공",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-12-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-12-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 617.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 630.890625,
+        "right": 712
+      },
+      "text": "③ 「병역법」에 따른 병역판정검사를 위한 증적자료 제공",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-12-cell-1-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-12-cell-1-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 630.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 643.890625,
+        "right": 712
+      },
+      "text": "④ 「국민연금법」에 따른 부양가족연금, 장애연금 및 유족연금 급여 지급심사를 위한 증적자료 제공",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-12-cell-1-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-12-cell-1-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 643.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 656.890625,
+        "right": 712
+      },
+      "text": "⑤ 「장애인복지법」에 따른 장애정도 심사를 위한 증적자료 제공",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-12-cell-1-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-12-cell-1-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 656.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 669.890625,
+        "right": 712
+      },
+      "text": "⑥ 「국가유공자 등 예우 및 지원에 관한 법률」에 따른 상이정도 판정 등을 위한 증적자료 제공",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-12-cell-1-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-12-cell-1-block-6",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 669.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 682.890625,
+        "right": 712
+      },
+      "text": "⑦ 그 외 「의료법」 제21조(기록 열람 등)에 따른 자료 제공",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-13-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-13-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 747.390625,
+        "left": 84,
+        "width": 115.4375,
+        "height": 14,
+        "bottom": 761.390625,
+        "right": 199.4375
+      },
+      "text": "제공받는 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-13-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-13-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 702.390625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 715.390625,
+        "right": 712
+      },
+      "text": "① 본인이 내원하여 진료서비스를 제공받는 의료기관(진료 시 활용 목적)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-13-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-13-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 715.390625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 728.390625,
+        "right": 712
+      },
+      "text": "② 보건복지부(시스템 관리, 진료정보교류서비스 평가 및 분석 목적)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-13-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-13-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 728.390625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 741.390625,
+        "right": 712
+      },
+      "text": "③ 건강보험심사평가원(진료정보교류 의뢰회송 수가 청구를 위한 증적자료)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-13-cell-1-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-13-cell-1-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 741.390625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 754.390625,
+        "right": 712
+      },
+      "text": "④ 근로복지공단(산업재해 보험급여 판정을 위한 증적자료)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-13-cell-1-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-13-cell-1-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 754.390625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 767.390625,
+        "right": 712
+      },
+      "text": "⑤ 지방병무청(병역판정검사를 위한 증적자료)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-13-cell-1-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-13-cell-1-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 767.390625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 780.390625,
+        "right": 712
+      },
+      "text": "⑥ 국민연금공단(부양가족연금, 장애연금 및 유족연금 급여의 지급심사 및 장애정도 심사를 위한 증적자료)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-13-cell-1-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-13-cell-1-block-6",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 780.390625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 793.390625,
+        "right": 712
+      },
+      "text": "⑦ 보훈심사위원회(상이정도 판정 등을 위한 증적자료)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-13-cell-1-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-13-cell-1-block-7",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 793.390625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 806.390625,
+        "right": 712
+      },
+      "text": "⑧ 그 외 「의료법」 제21조(기록 열람 등)에 근거하여 자료를 수집ㆍ활용할 수 있는 기관",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-14-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-14-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 826.890625,
+        "left": 84,
+        "width": 115.4375,
+        "height": 14,
+        "bottom": 840.890625,
+        "right": 199.4375
+      },
+      "text": "보유 및 이용 기간",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-14-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-14-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 840.890625,
+        "left": 84,
+        "width": 115.4375,
+        "height": 13,
+        "bottom": 853.890625,
+        "right": 199.4375
+      },
+      "text": "(제공받는 기관 포함)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-14-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-14-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "24",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 820.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 26,
+        "bottom": 846.890625,
+        "right": 712
+      },
+      "text": "「의료법」 시행규칙 제15조(진료기록부 등의 보존)에 따라 진료기록부는 10년 동안 보존하며 그 외 진료정보는 동법 제1항 각 호에 해당하는 기간 동안 보존합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "24px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-14-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-14-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 846.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 859.890625,
+        "right": 712
+      },
+      "text": "* 제공받는 기관은 각 기관의 근거법령에 따른 기간 동안 동 정보를 보유·이용할 수 있습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-15-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-15-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 874.390625,
+        "left": 84,
+        "width": 115.4375,
+        "height": 14,
+        "bottom": 888.390625,
+        "right": 199.4375
+      },
+      "text": "동의거부 권리 및",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 63,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-15-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-15-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 888.390625,
+        "left": 84,
+        "width": 115.4375,
+        "height": 14,
+        "bottom": 902.390625,
+        "right": 199.4375
+      },
+      "text": "동의거부에 따른 불이익",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 64,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-15-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-15-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 868.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 13,
+        "bottom": 881.890625,
+        "right": 712
+      },
+      "text": "① 귀하는 개인정보ㆍ민감정보ㆍ고유식별정보 수집ㆍ이용ㆍ제공 동의를 거부할 권리가 있습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 65,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-15-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-15-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "24",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 881.890625,
+        "left": 213.4375,
+        "width": 498.5625,
+        "height": 26,
+        "bottom": 907.890625,
+        "right": 712
+      },
+      "text": "② 동의 거부 시, 진료정보교류시스템을 활용하지 못함으로써 진료를 의뢰하는 경우 진료접수 대기 시간이 소요될 수 있으며 별도의 의무기록송부절차가 필요합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "24px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 66,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-16-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-16-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 916.390625,
+        "left": 84,
+        "width": 115.4375,
+        "height": 14,
+        "bottom": 930.390625,
+        "right": 199.4375
+      },
+      "text": "동의 제외사항",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 67,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-16-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-16-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 916.890625,
+        "left": 214.4375,
+        "width": 73.625,
+        "height": 13,
+        "bottom": 929.890625,
+        "right": 288.0625
+      },
+      "text": "진료과",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 68,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-16-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-16-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 916.890625,
+        "left": 302.0625,
+        "width": 409.9375,
+        "height": 13,
+        "bottom": 929.890625,
+        "right": 712
+      },
+      "text": "[ ] 비뇨기과 [ ] 산부인과 [ ] 정신건강의학과 [ ] 기타( )",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 69,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-17-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-17-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 938.390625,
+        "left": 84,
+        "width": 540.1875,
+        "height": 13,
+        "bottom": 951.390625,
+        "right": 624.1875
+      },
+      "text": "본인[ ] 법정대리인[ ]은 진료정보교류서비스 이용을 위한",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 70,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 936.890625,
+        "left": 638.1875,
+        "width": 70.8125,
+        "height": 17.578125,
+        "bottom": 954.46875,
+        "right": 709
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 71,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-18-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-18-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 965.890625,
+        "left": 84,
+        "width": 540.1875,
+        "height": 13,
+        "bottom": 978.890625,
+        "right": 624.1875
+      },
+      "text": "[1]개인정보의 수집ㆍ이용에 동의합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 72,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-18-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-18-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 978.890625,
+        "left": 84,
+        "width": 540.1875,
+        "height": 13,
+        "bottom": 991.890625,
+        "right": 624.1875
+      },
+      "text": "[2]민감정보의 수집ㆍ이용에 동의합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 73,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-18-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-18-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 991.890625,
+        "left": 84,
+        "width": 540.1875,
+        "height": 13,
+        "bottom": 1004.890625,
+        "right": 624.1875
+      },
+      "text": "[3]고유식별정보의 수집ㆍ이용에 동의합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 74,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-18-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-18-cell-0-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1004.890625,
+        "left": 84,
+        "width": 540.1875,
+        "height": 13,
+        "bottom": 1017.890625,
+        "right": 624.1875
+      },
+      "text": "[1]개인정보, [2]민감(진료)정보, [3]고유식별정보의 제공에 동의합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 75,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-18-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-18-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 965.890625,
+        "left": 638.1875,
+        "width": 70.8125,
+        "height": 13,
+        "bottom": 978.890625,
+        "right": 709
+      },
+      "text": "예[ ] 아니오[ ]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 76,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-18-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-18-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 978.890625,
+        "left": 638.1875,
+        "width": 70.8125,
+        "height": 13,
+        "bottom": 991.890625,
+        "right": 709
+      },
+      "text": "예[ ] 아니오[ ]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 77,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-18-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-18-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 991.890625,
+        "left": 638.1875,
+        "width": 70.8125,
+        "height": 13,
+        "bottom": 1004.890625,
+        "right": 709
+      },
+      "text": "예[ ] 아니오[ ]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 78,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-18-cell-1-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-18-cell-1-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1004.890625,
+        "left": 638.1875,
+        "width": 70.8125,
+        "height": 13,
+        "bottom": 1017.890625,
+        "right": 709
+      },
+      "text": "예[ ] 아니오[ ]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 79,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-19-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-19-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1036.890625,
+        "left": 84,
+        "width": 625,
+        "height": 13,
+        "bottom": 1049.890625,
+        "right": 709
+      },
+      "text": "20 년 월 일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 80,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-19-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-19-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1049.890625,
+        "left": 84,
+        "width": 625,
+        "height": 15,
+        "bottom": 1064.890625,
+        "right": 709
+      },
+      "text": "환자(대리인 또는 보호자) 이름 : (인)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 81,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section1\",\"role\":\"section\",\"sectionIndex\":1,\"nodeName\":\"paragraph\",\"nodeId\":\"page-10-block-0-row-20-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:1:page-10-block-0-row-20-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1075.890625,
+        "left": 84,
+        "width": 625,
+        "height": 13,
+        "bottom": 1088.890625,
+        "right": 709
+      },
+      "text": "210mm×297mm[백상지 80g/㎡]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 82
+}

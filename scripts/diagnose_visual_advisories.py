@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 from statistics import mean
@@ -33,6 +34,11 @@ def parse_args() -> argparse.Namespace:
         "--output",
         default="output/playwright/visual-advisory-diagnostics.json",
         help="Where to write the JSON diagnostics.",
+    )
+    parser.add_argument(
+        "--dom-dir",
+        default="output/playwright",
+        help="Directory containing optional DOM diagnostic JSON files.",
     )
     return parser.parse_args()
 
@@ -165,6 +171,168 @@ def page_metrics(page: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def dom_page_number(path: Path, payload: dict[str, Any]) -> int | None:
+    page = payload.get("page") or {}
+    if isinstance(page.get("index"), int):
+        return int(page["index"])
+    match = re.search(r"-p(\d+)(?:-|\.|_)", path.name)
+    if match:
+        return int(match.group(1))
+    return None
+
+
+def dom_file_key(path: Path, payload: dict[str, Any]) -> str | None:
+    filename = payload.get("filename")
+    if isinstance(filename, str) and filename:
+        return filename
+    stem = path.name
+    for suffix in ("-dom-current.json", "-dom.json"):
+        stem = stem.replace(suffix, "")
+    stem = re.sub(r"-p\d+.*$", "", stem)
+    return stem or None
+
+
+def load_dom_index(dom_dir: Path) -> dict[tuple[str, int], dict[str, Any]]:
+    index: dict[tuple[str, int], dict[str, Any]] = {}
+    if not dom_dir.exists():
+        return index
+    for path in sorted(dom_dir.glob("*dom*.json")):
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        filename = dom_file_key(path, payload)
+        page_number = dom_page_number(path, payload)
+        if not filename or page_number is None:
+            continue
+        index[(filename, page_number)] = {
+            "path": str(path),
+            "payload": payload,
+        }
+    return index
+
+
+def rect_relative_to_page(rect: dict[str, Any], body_rect: dict[str, Any]) -> dict[str, float] | None:
+    try:
+        top = float(rect["top"])
+        left = float(rect.get("left", 0))
+        width = float(rect.get("width", 0))
+        height = float(rect.get("height", 0))
+        bottom = float(rect.get("bottom", top + height))
+    except (TypeError, ValueError, KeyError):
+        return None
+
+    body_top = float(body_rect.get("top", 0) or 0)
+    body_left = float(body_rect.get("left", 0) or 0)
+    page_height = float(body_rect.get("height", 0) or 0)
+    page_width = float(body_rect.get("width", 0) or 0)
+    if page_height and top >= body_top and bottom > page_height:
+        top -= body_top
+        bottom -= body_top
+    if page_width and left >= body_left and left > page_width:
+        left -= body_left
+    return {
+        "top": top,
+        "bottom": bottom,
+        "left": left,
+        "right": left + width,
+        "width": width,
+        "height": bottom - top,
+    }
+
+
+def text_snippet(value: Any, limit: int = 120) -> str:
+    text = " ".join(str(value or "").split())
+    return text if len(text) <= limit else text[:limit]
+
+
+def map_hot_bands_to_dom(
+    document_id: str,
+    filename: str,
+    metrics: dict[str, Any],
+    page: dict[str, Any],
+    dom_index: dict[tuple[str, int], dict[str, Any]],
+) -> dict[str, Any] | None:
+    page_number = int(metrics["page"])
+    basename = re.sub(r"\.(hwp|hwpx)$", "", filename, flags=re.IGNORECASE)
+    dom_entry = (
+        dom_index.get((filename, page_number))
+        or dom_index.get((document_id, page_number))
+        or dom_index.get((basename, page_number))
+    )
+    if not dom_entry:
+        return None
+
+    payload = dom_entry["payload"]
+    body_rect = payload.get("bodyRect") or {}
+    page_height = float((payload.get("page") or {}).get("height") or body_rect.get("height") or 0)
+    page_width = float((payload.get("page") or {}).get("width") or body_rect.get("width") or 0)
+    if not page_height or not page_width:
+        return None
+
+    hancom = Image.open(page["hancomCrop"]).convert("RGB")
+    chrome = Image.open(page["chromePage"]).convert("RGB")
+    scale_y = chrome.height / max(1, hancom.height)
+    scale_x = chrome.width / max(1, hancom.width)
+    row_hits = []
+    for band in (metrics.get("hotBands") or {}).get("rows", [])[:5]:
+        y1 = float(band["start"]) * scale_y
+        y2 = (float(band["end"]) + 1) * scale_y
+        table_hits = []
+        for table in payload.get("tables") or []:
+            table_rect = rect_relative_to_page(table.get("rect") or table.get("tableRect") or {}, body_rect)
+            if not table_rect or table_rect["bottom"] < y1 or table_rect["top"] > y2:
+                continue
+            rows = []
+            for row in table.get("rows") or table.get("firstRows") or []:
+                row_rect = rect_relative_to_page(row.get("rect") or {}, body_rect)
+                if not row_rect or row_rect["bottom"] < y1 or row_rect["top"] > y2:
+                    continue
+                rows.append({
+                    "rowIndex": row.get("rowIndex"),
+                    "top": round(row_rect["top"], 2),
+                    "bottom": round(row_rect["bottom"], 2),
+                    "height": round(row_rect["height"], 2),
+                    "cellCount": row.get("cellCount"),
+                    "text": text_snippet(row.get("text")),
+                })
+            table_hits.append({
+                "tableIndex": table.get("index", table.get("i")),
+                "depth": table.get("depth"),
+                "contentKind": (table.get("tableDataset") or table.get("wrapDataset") or {}).get("contentKind"),
+                "top": round(table_rect["top"], 2),
+                "bottom": round(table_rect["bottom"], 2),
+                "rowCount": table.get("rowCount"),
+                "rows": rows[:8],
+            })
+        paragraph_hits = []
+        for paragraph in payload.get("paragraphs") or []:
+            paragraph_rect = rect_relative_to_page(paragraph.get("rect") or {}, body_rect)
+            if not paragraph_rect or paragraph_rect["bottom"] < y1 or paragraph_rect["top"] > y2:
+                continue
+            paragraph_hits.append({
+                "paragraphIndex": paragraph.get("index"),
+                "top": round(paragraph_rect["top"], 2),
+                "bottom": round(paragraph_rect["bottom"], 2),
+                "height": round(paragraph_rect["height"], 2),
+                "layoutMode": (paragraph.get("dataset") or {}).get("layoutMode"),
+                "layoutHeight": (paragraph.get("dataset") or {}).get("layoutHeight"),
+                "text": text_snippet(paragraph.get("text")),
+            })
+        row_hits.append({
+            "metricBand": band,
+            "pageY": [round(y1, 2), round(y2, 2)],
+            "tables": table_hits[:6],
+            "paragraphs": paragraph_hits[:8],
+        })
+
+    return {
+        "domPath": dom_entry["path"],
+        "scale": {"x": scale_x, "y": scale_y},
+        "rowBands": row_hits,
+    }
+
+
 def classify(page: dict[str, Any]) -> str:
     bbox = page["bbox"]
     width_delta = abs(bbox["widthDelta"])
@@ -189,6 +357,7 @@ def main() -> None:
     args = parse_args()
     report_path = Path(args.report)
     report = json.loads(report_path.read_text(encoding="utf-8"))
+    dom_index = load_dom_index(Path(args.dom_dir))
     documents = []
     class_counts: defaultdict[str, int] = defaultdict(int)
     for document in report.get("results", []):
@@ -198,6 +367,15 @@ def main() -> None:
                 continue
             metrics = page_metrics(page)
             metrics["class"] = classify(metrics)
+            source_map = map_hot_bands_to_dom(
+                document.get("id", ""),
+                document.get("filename", ""),
+                metrics,
+                page,
+                dom_index,
+            )
+            if source_map:
+                metrics["sourceMap"] = source_map
             class_counts[metrics["class"]] += 1
             pages.append(metrics)
         if pages:

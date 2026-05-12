@@ -1,0 +1,187 @@
+{
+  "chrome": "output/hancom-oracle/extension-visual-current/attachment-sale-notice/chrome-page-001.png",
+  "hancom": "output/hancom-oracle/extension-visual-current/attachment-sale-notice/hancom-crop-page-001.png",
+  "size": {
+    "width": 1124,
+    "height": 1587
+  },
+  "topBands": [
+    {
+      "y": 120,
+      "height": 20,
+      "mean": 74.98340747330961,
+      "nontrivialRatio": 0.6376334519572954
+    },
+    {
+      "y": 740,
+      "height": 20,
+      "mean": 69.97709074733096,
+      "nontrivialRatio": 0.6365213523131673
+    },
+    {
+      "y": 200,
+      "height": 20,
+      "mean": 56.65360320284697,
+      "nontrivialRatio": 0.5236209964412811
+    },
+    {
+      "y": 340,
+      "height": 20,
+      "mean": 56.2604537366548,
+      "nontrivialRatio": 0.5667259786476868
+    },
+    {
+      "y": 220,
+      "height": 20,
+      "mean": 54.12077402135231,
+      "nontrivialRatio": 0.585720640569395
+    },
+    {
+      "y": 280,
+      "height": 20,
+      "mean": 53.54635231316726,
+      "nontrivialRatio": 0.5650355871886121
+    },
+    {
+      "y": 140,
+      "height": 20,
+      "mean": 52.48104982206406,
+      "nontrivialRatio": 0.5108096085409253
+    },
+    {
+      "y": 100,
+      "height": 20,
+      "mean": 50.69203736654804,
+      "nontrivialRatio": 0.4495996441281139
+    },
+    {
+      "y": 80,
+      "height": 20,
+      "mean": 47.45738434163701,
+      "nontrivialRatio": 0.5419928825622776
+    },
+    {
+      "y": 1520,
+      "height": 20,
+      "mean": 46.54341637010676,
+      "nontrivialRatio": 0.6162366548042705
+    },
+    {
+      "y": 1180,
+      "height": 20,
+      "mean": 45.89470640569395,
+      "nontrivialRatio": 0.5113879003558719
+    },
+    {
+      "y": 1200,
+      "height": 20,
+      "mean": 45.16943950177936,
+      "nontrivialRatio": 0.328914590747331
+    },
+    {
+      "y": 720,
+      "height": 20,
+      "mean": 43.9789590747331,
+      "nontrivialRatio": 0.4475978647686833
+    },
+    {
+      "y": 1280,
+      "height": 20,
+      "mean": 43.639145907473306,
+      "nontrivialRatio": 0.4030693950177936
+    },
+    {
+      "y": 960,
+      "height": 20,
+      "mean": 42.73936832740213,
+      "nontrivialRatio": 0.4984430604982206
+    },
+    {
+      "y": 900,
+      "height": 20,
+      "mean": 41.53830071174377,
+      "nontrivialRatio": 0.49648576512455517
+    },
+    {
+      "y": 680,
+      "height": 20,
+      "mean": 40.36859430604982,
+      "nontrivialRatio": 0.44030249110320285
+    },
+    {
+      "y": 1480,
+      "height": 20,
+      "mean": 39.324110320284696,
+      "nontrivialRatio": 0.3916814946619217
+    },
+    {
+      "y": 60,
+      "height": 20,
+      "mean": 38.74408362989324,
+      "nontrivialRatio": 0.48376334519572955
+    },
+    {
+      "y": 160,
+      "height": 20,
+      "mean": 38.74395017793594,
+      "nontrivialRatio": 0.4197508896797153
+    },
+    {
+      "y": 780,
+      "height": 20,
+      "mean": 38.565213523131675,
+      "nontrivialRatio": 0.37406583629893236
+    },
+    {
+      "y": 1260,
+      "height": 20,
+      "mean": 38.38002669039146,
+      "nontrivialRatio": 0.38629893238434165
+    },
+    {
+      "y": 520,
+      "height": 20,
+      "mean": 38.13331850533808,
+      "nontrivialRatio": 0.3943060498220641
+    },
+    {
+      "y": 660,
+      "height": 20,
+      "mean": 37.77820284697509,
+      "nontrivialRatio": 0.44030249110320285
+    },
+    {
+      "y": 320,
+      "height": 20,
+      "mean": 37.50516014234876,
+      "nontrivialRatio": 0.6079181494661922
+    }
+  ],
+  "regions": [
+    {
+      "startY": 40,
+      "endY": 1020,
+      "height": 980,
+      "mean": 35.927001779359436,
+      "maxMean": 74.98340747330961,
+      "maxBandY": 120
+    },
+    {
+      "startY": 1040,
+      "endY": 1160,
+      "height": 120,
+      "mean": 24.47442912218268,
+      "maxMean": 29.910364768683273,
+      "maxBandY": 1140
+    },
+    {
+      "startY": 1180,
+      "endY": 1587,
+      "height": 407,
+      "mean": 32.302123732055094,
+      "maxMean": 46.54341637010676,
+      "maxBandY": 1520
+    }
+  ],
+  "note": "20px horizontal diff bands for attachment-sale-notice page 1; high bands indicate where Chrome/Hancom diverge most."
+}

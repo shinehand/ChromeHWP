@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-06T22:13:32.862Z",
+  "auditId": "p16-nested-alpha-0p4",
+  "source": "Probe nested performance table border alpha",
+  "outputDirectory": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/audit-p16-nested-alpha-0p4",
+  "documents": [
+    {
+      "id": "p16-nested-alpha-0p4",
+      "filename": "p16-nested-alpha-0p4.hwpx",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "state": {
+        "pages": 1
+      },
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-016.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/p16-nested-alpha-0p4.png",
+          "targetBand": "first"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+{
+  "generatedAt": "2026-05-07T06:57:36.607Z",
+  "source": "attachment-sale-notice page 1 DOM rows matched to 20px horizontal image-diff bands",
+  "topBands": [
+    {
+      "y": 120,
+      "height": 20,
+      "mean": 74.98340747330961,
+      "nontrivialRatio": 0.6376334519572954,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 0,
+          "overlapPx": 2.5,
+          "rowTop": 30.5,
+          "rowBottom": 122.5,
+          "rowHeight": 92,
+          "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ]"
+        },
+        {
+          "table": 0,
+          "row": 1,
+          "overlapPx": 17.5,
+          "rowTop": 122.5,
+          "rowBottom": 148.08,
+          "rowHeight": 25.58,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "y": 740,
+      "height": 20,
+      "mean": 69.97709074733096,
+      "nontrivialRatio": 0.6365213523131673,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 5,
+          "overlapPx": 20,
+          "rowTop": 269.08,
+          "rowBottom": 1068.08,
+          "rowHeight": 799,
+          "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 "
+        }
+      ]
+    },
+    {
+      "y": 200,
+      "height": 20,
+      "mean": 56.65360320284697,
+      "nontrivialRatio": 0.5236209964412811,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 2,
+          "overlapPx": 18.08,
+          "rowTop": 148.08,
+          "rowBottom": 218.08,
+          "rowHeight": 70,
+          "text": "LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약"
+        },
+        {
+          "table": 0,
+          "row": 3,
+          "overlapPx": 1.92,
+          "rowTop": 218.08,
+          "rowBottom": 238.08,
+          "rowHeight": 20,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "y": 340,
+      "height": 20,
+      "mean": 56.2604537366548,
+      "nontrivialRatio": 0.5667259786476868,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 5,
+          "overlapPx": 20,
+          "rowTop": 269.08,
+          "rowBottom": 1068.08,
+          "rowHeight": 799,
+          "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 "
+        }
+      ]
+    },
+    {
+      "y": 220,
+      "height": 20,
+      "mean": 54.12077402135231,
+      "nontrivialRatio": 0.585720640569395,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 3,
+          "overlapPx": 18.08,
+          "rowTop": 218.08,
+          "rowBottom": 238.08,
+          "rowHeight": 20,
+          "text": ""
+        },
+        {
+          "table": 0,
+          "row": 4,
+          "overlapPx": 1.92,
+          "rowTop": 238.08,
+          "rowBottom": 269.08,
+          "rowHeight": 31,
+          "text": "알 려 드 립 니 다"
+        }
+      ]
+    },
+    {
+      "y": 280,
+      "height": 20,
+      "mean": 53.54635231316726,
+      "nontrivialRatio": 0.5650355871886121,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 5,
+          "overlapPx": 20,
+          "rowTop": 269.08,
+          "rowBottom": 1068.08,
+          "rowHeight": 799,
+          "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 "
+        }
+      ]
+    },
+    {
+      "y": 140,
+      "height": 20,
+      "mean": 52.48104982206406,
+      "nontrivialRatio": 0.5108096085409253,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 1,
+          "overlapPx": 8.08,
+          "rowTop": 122.5,
+          "rowBottom": 148.08,
+          "rowHeight": 25.58,
+          "text": ""
+        },
+        {
+          "table": 0,
+          "row": 2,
+          "overlapPx": 11.92,
+          "rowTop": 148.08,
+          "rowBottom": 218.08,
+          "rowHeight": 70,
+          "text": "LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약"
+        }
+      ]
+    },
+    {
+      "y": 100,
+      "height": 20,
+      "mean": 50.69203736654804,
+      "nontrivialRatio": 0.4495996441281139,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 0,
+          "overlapPx": 20,
+          "rowTop": 30.5,
+          "rowBottom": 122.5,
+          "rowHeight": 92,
+          "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ]"
+        }
+      ]
+    },
+    {
+      "y": 80,
+      "height": 20,
+      "mean": 47.45738434163701,
+      "nontrivialRatio": 0.5419928825622776,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 0,
+          "overlapPx": 20,
+          "rowTop": 30.5,
+          "rowBottom": 122.5,
+          "rowHeight": 92,
+          "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ]"
+        }
+      ]
+    },
+    {
+      "y": 1520,
+      "height": 20,
+      "mean": 46.54341637010676,
+      "nontrivialRatio": 0.6162366548042705,
+      "overlaps": [
+        {
+          "table": 2,
+          "row": 12,
+          "overlapPx": 13.5,
+          "rowTop": 1508.5,
+          "rowBottom": 1533.5,
+          "rowHeight": 25,
+          "text": "D00713 | 경북 포항시 남구 대도동 142-5 302동 (문예로82번길20-8) | 2013 | 8 | 1"
+        }
+      ]
+    },
+    {
+      "y": 1180,
+      "height": 20,
+      "mean": 45.89470640569395,
+      "nontrivialRatio": 0.5113879003558719,
+      "overlaps": [
+        {
+          "table": 2,
+          "row": 0,
+          "overlapPx": 3.5,
+          "rowTop": 1196.5,
+          "rowBottom": 1222.5,
+          "rowHeight": 26,
+          "text": "지역 | 단지코드 | 주 소 | 사용승인연도 | 건설호수 | 금회공급호수"
+        }
+      ]
+    },
+    {
+      "y": 1200,
+      "height": 20,
+      "mean": 45.16943950177936,
+      "nontrivialRatio": 0.328914590747331,
+      "overlaps": [
+        {
+          "table": 2,
+          "row": 0,
+          "overlapPx": 20,
+          "rowTop": 1196.5,
+          "rowBottom": 1222.5,
+          "rowHeight": 26,
+          "text": "지역 | 단지코드 | 주 소 | 사용승인연도 | 건설호수 | 금회공급호수"
+        }
+      ]
+    },
+    {
+      "y": 720,
+      "height": 20,
+      "mean": 43.9789590747331,
+      "nontrivialRatio": 0.4475978647686833,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 5,
+          "overlapPx": 20,
+          "rowTop": 269.08,
+          "rowBottom": 1068.08,
+          "rowHeight": 799,
+          "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 "
+        }
+      ]
+    },
+    {
+      "y": 1280,
+      "height": 20,
+      "mean": 43.639145907473306,
+      "nontrivialRatio": 0.4030693950177936,
+      "overlaps": [
+        {
+          "table": 2,
+          "row": 3,
+          "overlapPx": 20,
+          "rowTop": 1274.5,
+          "rowBottom": 1300.5,
+          "rowHeight": 26,
+          "text": "달서구 | D00658 | 대구 달서구 상인동 438-9 (월곡로35길74-15) | 2013 | 8 | 5"
+        }
+      ]
+    },
+    {
+      "y": 960,
+      "height": 20,
+      "mean": 42.73936832740213,
+      "nontrivialRatio": 0.4984430604982206,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 5,
+          "overlapPx": 20,
+          "rowTop": 269.08,
+          "rowBottom": 1068.08,
+          "rowHeight": 799,
+          "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 "
+        }
+      ]
+    },
+    {
+      "y": 900,
+      "height": 20,
+      "mean": 41.53830071174377,
+      "nontrivialRatio": 0.49648576512455517,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 5,
+          "overlapPx": 20,
+          "rowTop": 269.08,
+          "rowBottom": 1068.08,
+          "rowHeight": 799,
+          "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 "
+        }
+      ]
+    },
+    {
+      "y": 680,
+      "height": 20,
+      "mean": 40.36859430604982,
+      "nontrivialRatio": 0.44030249110320285,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 5,
+          "overlapPx": 20,
+          "rowTop": 269.08,
+          "rowBottom": 1068.08,
+          "rowHeight": 799,
+          "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 "
+        }
+      ]
+    },
+    {
+      "y": 1480,
+      "height": 20,
+      "mean": 39.324110320284696,
+      "nontrivialRatio": 0.3916814946619217,
+      "overlaps": [
+        {
+          "table": 2,
+          "row": 10,
+          "overlapPx": 2.5,
+          "rowTop": 1456.5,
+          "rowBottom": 1482.5,
+          "rowHeight": 26,
+          "text": "구미시 | D00661 | 경북 구미시 오태동 773-6 (금오대로10길45-1) | 2013 | 8 | 5"
+        },
+        {
+          "table": 2,
+          "row": 11,
+          "overlapPx": 17.5,
+          "rowTop": 1482.5,
+          "rowBottom": 1508.5,
+          "rowHeight": 26,
+          "text": "포항시 | D00714 | 경북 포항시 남구 대도동 142-22 301동 (문예로82번길20-10) | 2013 | 8 | 4"
+        }
+      ]
+    },
+    {
+      "y": 60,
+      "height": 20,
+      "mean": 38.74408362989324,
+      "nontrivialRatio": 0.48376334519572955,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 0,
+          "overlapPx": 20,
+          "rowTop": 30.5,
+          "rowBottom": 122.5,
+          "rowHeight": 92,
+          "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ]"
+        }
+      ]
+    },
+    {
+      "y": 160,
+      "height": 20,
+      "mean": 38.74395017793594,
+      "nontrivialRatio": 0.4197508896797153,
+      "overlaps": [
+        {
+          "table": 0,
+          "row": 2,
+          "overlapPx": 20,
+          "rowTop": 148.08,
+          "rowBottom": 218.08,
+          "rowHeight": 70,
+          "text": "LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약"
+        }
+      ]
+    }
+  ],
+  "rowHotspots": [
+    {
+      "table": 0,
+      "row": 0,
+      "rowTop": 30.5,
+      "rowBottom": 122.5,
+      "rowHeight": 92,
+      "topBandYs": [
+        120,
+        100,
+        80,
+        60
+      ],
+      "maxBandMean": 74.983,
+      "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ]"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "rowTop": 122.5,
+      "rowBottom": 148.08,
+      "rowHeight": 25.58,
+      "topBandYs": [
+        120,
+        140
+      ],
+      "maxBandMean": 74.983,
+      "text": ""
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "rowTop": 269.08,
+      "rowBottom": 1068.08,
+      "rowHeight": 799,
+      "topBandYs": [
+        740,
+        340,
+        280,
+        720,
+        960,
+        900,
+        680,
+        780,
+        520,
+        660,
+        320
+      ],
+      "maxBandMean": 69.977,
+      "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 불문하며, 계약 체결 시에도 재당첨 제한 및 당첨자 관리 등이 적용되지 "
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "rowTop": 148.08,
+      "rowBottom": 218.08,
+      "rowHeight": 70,
+      "topBandYs": [
+        200,
+        140,
+        160
+      ],
+      "maxBandMean": 56.654,
+      "text": "LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약 관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다. 고객 여러분"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "rowTop": 218.08,
+      "rowBottom": 238.08,
+      "rowHeight": 20,
+      "topBandYs": [
+        200,
+        220
+      ],
+      "maxBandMean": 56.654,
+      "text": ""
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "rowTop": 238.08,
+      "rowBottom": 269.08,
+      "rowHeight": 31,
+      "topBandYs": [
+        220
+      ],
+      "maxBandMean": 54.121,
+      "text": "알 려 드 립 니 다"
+    },
+    {
+      "table": 2,
+      "row": 12,
+      "rowTop": 1508.5,
+      "rowBottom": 1533.5,
+      "rowHeight": 25,
+      "topBandYs": [
+        1520
+      ],
+      "maxBandMean": 46.543,
+      "text": "D00713 | 경북 포항시 남구 대도동 142-5 302동 (문예로82번길20-8) | 2013 | 8 | 1"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "rowTop": 1196.5,
+      "rowBottom": 1222.5,
+      "rowHeight": 26,
+      "topBandYs": [
+        1180,
+        1200
+      ],
+      "maxBandMean": 45.895,
+      "text": "지역 | 단지코드 | 주 소 | 사용승인연도 | 건설호수 | 금회공급호수"
+    },
+    {
+      "table": 2,
+      "row": 3,
+      "rowTop": 1274.5,
+      "rowBottom": 1300.5,
+      "rowHeight": 26,
+      "topBandYs": [
+        1280,
+        1260
+      ],
+      "maxBandMean": 43.639,
+      "text": "달서구 | D00658 | 대구 달서구 상인동 438-9 (월곡로35길74-15) | 2013 | 8 | 5"
+    },
+    {
+      "table": 2,
+      "row": 10,
+      "rowTop": 1456.5,
+      "rowBottom": 1482.5,
+      "rowHeight": 26,
+      "topBandYs": [
+        1480
+      ],
+      "maxBandMean": 39.324,
+      "text": "구미시 | D00661 | 경북 구미시 오태동 773-6 (금오대로10길45-1) | 2013 | 8 | 5"
+    },
+    {
+      "table": 2,
+      "row": 11,
+      "rowTop": 1482.5,
+      "rowBottom": 1508.5,
+      "rowHeight": 26,
+      "topBandYs": [
+        1480
+      ],
+      "maxBandMean": 39.324,
+      "text": "포항시 | D00714 | 경북 포항시 남구 대도동 142-22 301동 (문예로82번길20-10) | 2013 | 8 | 4"
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "rowTop": 1248.5,
+      "rowBottom": 1274.5,
+      "rowHeight": 26,
+      "topBandYs": [
+        1260
+      ],
+      "maxBandMean": 38.38,
+      "text": "D00639 | 대구 남구 대명동 554-4 103동 (안지랑로2길10) | 2013 | 8 | 5"
+    }
+  ]
+}

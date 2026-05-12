@@ -1,0 +1,795 @@
+{
+  "filename": "goyeopje-full-2024.hwp",
+  "pages": 11,
+  "page": {
+    "index": 5,
+    "width": 794,
+    "height": 1123
+  },
+  "bodyRect": {
+    "top": 538,
+    "left": 633,
+    "width": 794,
+    "height": 1123,
+    "bottom": 1661,
+    "right": 1427
+  },
+  "text": "(앞 면) 개인정보 이용 및 제공 사전 동의서 1. 타 부처에서 관리하는 개인정보를 국가보훈부에서 이용하는 것에 대한 동의 가. 목적 : 국가보훈대상자로 등록되는 경우, 생활정도에 따라 지급여부가 결정되는 생활 조정수당․교육지원 등의 지원대상자 선정을 위한 조사 나. 이용목록 : 납세사실증명, 소득금액증명, 자동차등록원부, 토지대장, 건물등기부등본, 토지 등기부등본, 건축물관리대장, 국민기초생활수급자증명서, 장애인 증명서, 연금 산정용가입내역확인서, 사업자등록증명, 산재보험급여지급 확인원, 세목 별과세증명서 다. 동의주체 : 국가보훈대상 신청자 본인 또는 그 유족 및 그의 생활정도를 파악하기 위해 조사가 필요 한 사람으로서 보훈(지)청 업무담당자가 동의서 제출을 요청한 사람 ※ 납세사실증명 및 소득금액증명은 민원인이 민원24에 접속하여 온라인 제출해야 하고, 위의 내용에 대해 동의(「전자정부 법」 제36조 제1항에 따른 행정정보공동이용에 대한 동의)하지 않을 경우는 위 목록 중 보훈관서 업무담당자가 요청하는 자료를 직접 제출해야 하며,「국가유공자 등 예우 및 지원에 관한 법률」 제5조에 따른 유족에 대한 정보이 용 동의를 포함합니다. 2. 국가보훈부에서 지원하는 내역을 타 부처에 제공하는 것에 대한 동의 가. 목적 : 타 부처에서 실시하는 복지사업의 대상자 선정 및 관리 나. 제공내용 : 6.25자녀수당, 국가유공자등생활조정수당, 무공영예수당, 보철구지급, 국가보훈대상자 학습 보조비지급, 독립유공자 손자녀 가계지원비, 독립유공자 손자녀 생활지원금, 애국지사 특별예우금, 보상금, 국가유공자등 간호수당, 고엽제환자2세수당, 고엽제후유의증수 당, 재해위로금지급 다. 사용기관 : 법령에 따라 복지사업을 수행하는 국가 또는 지방자치단체 라. 활용분야 : 국가 및 지방자치단체가 실시하는 공공부조, 사회복지사업, 창업지원 또는 보건․의료․ 주거․교육․고용 등 복지사업 마. 동의주체 : 국가보훈대상자 본인과 대상사업의 지원대상자 ※ 위 동의는 대상사업을 지원 받을 미성년 자",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "917"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 57,
+        "left": 38,
+        "width": 699,
+        "height": 922,
+        "bottom": 979,
+        "right": 737
+      },
+      "tableRect": {
+        "top": 57,
+        "left": 38,
+        "width": 699,
+        "height": 922,
+        "bottom": 979,
+        "right": 737
+      },
+      "rowCount": 3,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-4-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-4-block-0:row-0"
+          },
+          "rect": {
+            "top": 57.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 23,
+            "bottom": 80.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "(앞 면)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-4-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-4-block-0:row-1"
+          },
+          "rect": {
+            "top": 80.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 683,
+            "bottom": 763.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "개인정보 이용 및 제공 사전 동의서 1. 타 부처에서 관리하는 개인정보를 국가보훈부에서 이용하는 것에 대한 동의 가. 목적 : 국가보훈대상자로 등록되는 경우, 생활정도에 따라 지급여부가 결정되는 생활 조정수당․교육지원 등의 지원대상자 선정을 위한 조사 나. 이용목록 : 납세사실증명, 소"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-4-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-4-block-0:row-2"
+          },
+          "rect": {
+            "top": 763.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 215,
+            "bottom": 978.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "위의 내용을 모두 확인하였으며, 국가보훈부가 개인정보를 이용 또는 제공하는 것에 동의합니다 년 월 일 국가보훈대상자와의 관계 : 성명 (인 또는 서명) 지방보훈청장 보훈지청장 귀하 제주특별자치도도지사"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-4-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-4-block-0:row-0"
+          },
+          "rect": {
+            "top": 57.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 23,
+            "bottom": 80.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "(앞 면)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-4-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-4-block-0:row-1"
+          },
+          "rect": {
+            "top": 80.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 683,
+            "bottom": 763.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "개인정보 이용 및 제공 사전 동의서 1. 타 부처에서 관리하는 개인정보를 국가보훈부에서 이용하는 것에 대한 동의 가. 목적 : 국가보훈대상자로 등록되는 경우, 생활정도에 따라 지급여부가 결정되는 생활 조정수당․교육지원 등의 지원대상자 선정을 위한 조사 나. 이용목록 : 납세사실증명, 소"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-4-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-4-block-0:row-2"
+          },
+          "rect": {
+            "top": 763.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 215,
+            "bottom": 978.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "위의 내용을 모두 확인하였으며, 국가보훈부가 개인정보를 이용 또는 제공하는 것에 동의합니다 년 월 일 국가보훈대상자와의 관계 : 성명 (인 또는 서명) 지방보훈청장 보훈지청장 귀하 제주특별자치도도지사"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-4-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-4-block-0:row-0"
+          },
+          "rect": {
+            "top": 57.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 23,
+            "bottom": 80.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "(앞 면)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-4-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-4-block-0:row-1"
+          },
+          "rect": {
+            "top": 80.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 683,
+            "bottom": 763.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "개인정보 이용 및 제공 사전 동의서 1. 타 부처에서 관리하는 개인정보를 국가보훈부에서 이용하는 것에 대한 동의 가. 목적 : 국가보훈대상자로 등록되는 경우, 생활정도에 따라 지급여부가 결정되는 생활 조정수당․교육지원 등의 지원대상자 선정을 위한 조사 나. 이용목록 : 납세사실증명, 소"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-4-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-4-block-0:row-2"
+          },
+          "rect": {
+            "top": 763.5,
+            "left": 38.5,
+            "width": 698,
+            "height": 215,
+            "bottom": 978.5,
+            "right": 736.5
+          },
+          "cellCount": 1,
+          "text": "위의 내용을 모두 확인하였으며, 국가보훈부가 개인정보를 이용 또는 제공하는 것에 동의합니다 년 월 일 국가보훈대상자와의 관계 : 성명 (인 또는 서명) 지방보훈청장 보훈지청장 귀하 제주특별자치도도지사"
+        }
+      ],
+      "text": "(앞 면) 개인정보 이용 및 제공 사전 동의서 1. 타 부처에서 관리하는 개인정보를 국가보훈부에서 이용하는 것에 대한 동의 가. 목적 : 국가보훈대상자로 등록되는 경우, 생활정도에 따라 지급여부가 결정되는 생활 조정수당․교육지원 등의 지원대상자 선정을 위한 조사 나. 이용목록 : 납세사실증명, 소득금액증명, 자동차등록원부, 토지대장, 건물등기부등본, 토지 등기부등본, 건축물관리대장, 국민기초생활수급자증명서, 장애인 증명서, 연",
+      "style": {
+        "height": "917px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 60,
+        "left": 46,
+        "width": 683,
+        "height": 18,
+        "bottom": 78,
+        "right": 729
+      },
+      "text": "(앞 면)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "24",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 117,
+        "left": 62,
+        "width": 651,
+        "height": 28,
+        "bottom": 145,
+        "right": 713
+      },
+      "text": "개인정보 이용 및 제공 사전 동의서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "24px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 158,
+        "left": 62,
+        "width": 651,
+        "height": 17,
+        "bottom": 175,
+        "right": 713
+      },
+      "text": "1. 타 부처에서 관리하는 개인정보를 국가보훈부에서 이용하는 것에 대한 동의",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 188,
+        "left": 62,
+        "width": 651,
+        "height": 32,
+        "bottom": 220,
+        "right": 713
+      },
+      "text": "가. 목적 : 국가보훈대상자로 등록되는 경우, 생활정도에 따라 지급여부가 결정되는 생활 조정수당․교육지원 등의 지원대상자 선정을 위한 조사",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "60",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 233,
+        "left": 62,
+        "width": 651,
+        "height": 64,
+        "bottom": 297,
+        "right": 713
+      },
+      "text": "나. 이용목록 : 납세사실증명, 소득금액증명, 자동차등록원부, 토지대장, 건물등기부등본, 토지 등기부등본, 건축물관리대장, 국민기초생활수급자증명서, 장애인 증명서, 연금 산정용가입내역확인서, 사업자등록증명, 산재보험",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "60px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 310,
+        "left": 62,
+        "width": 651,
+        "height": 32,
+        "bottom": 342,
+        "right": 713
+      },
+      "text": "다. 동의주체 : 국가보훈대상 신청자 본인 또는 그 유족 및 그의 생활정도를 파악하기 위해 조사가 필요 한 사람으로서 보훈(지)청 업무담당자가 동의서 제출을 요청한 사람",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "48",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 342,
+        "left": 62,
+        "width": 651,
+        "height": 52,
+        "bottom": 394,
+        "right": 713
+      },
+      "text": "※ 납세사실증명 및 소득금액증명은 민원인이 민원24에 접속하여 온라인 제출해야 하고, 위의 내용에 대해 동의(「전자정부 법」 제36조 제1항에 따른 행정정보공동이용에 대한 동의)하지 않을 경우는 위 목록 중 보훈관서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "48px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-6",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 394,
+        "left": 62,
+        "width": 651,
+        "height": 17,
+        "bottom": 411,
+        "right": 713
+      },
+      "text": "2. 국가보훈부에서 지원하는 내역을 타 부처에 제공하는 것에 대한 동의",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-7",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 424,
+        "left": 62,
+        "width": 651,
+        "height": 16,
+        "bottom": 440,
+        "right": 713
+      },
+      "text": "가. 목적 : 타 부처에서 실시하는 복지사업의 대상자 선정 및 관리",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-8",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "60",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 453,
+        "left": 62,
+        "width": 651,
+        "height": 64,
+        "bottom": 517,
+        "right": 713
+      },
+      "text": "나. 제공내용 : 6.25자녀수당, 국가유공자등생활조정수당, 무공영예수당, 보철구지급, 국가보훈대상자 학습 보조비지급, 독립유공자 손자녀 가계지원비, 독립유공자 손자녀 생활지원금, 애국지사 특별예우금, 보상금, 국가",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "60px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-9",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 530,
+        "left": 62,
+        "width": 651,
+        "height": 16,
+        "bottom": 546,
+        "right": 713
+      },
+      "text": "다. 사용기관 : 법령에 따라 복지사업을 수행하는 국가 또는 지방자치단체",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-10\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-10",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 559,
+        "left": 62,
+        "width": 651,
+        "height": 32,
+        "bottom": 591,
+        "right": 713
+      },
+      "text": "라. 활용분야 : 국가 및 지방자치단체가 실시하는 공공부조, 사회복지사업, 창업지원 또는 보건․의료․ 주거․교육․고용 등 복지사업",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-11\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-11",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 604,
+        "left": 62,
+        "width": 651,
+        "height": 16,
+        "bottom": 620,
+        "right": 713
+      },
+      "text": "마. 동의주체 : 국가보훈대상자 본인과 대상사업의 지원대상자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-1-cell-0-block-12\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-1-cell-0-block-12",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 620,
+        "left": 62,
+        "width": 651,
+        "height": 13,
+        "bottom": 633,
+        "right": 713
+      },
+      "text": "※ 위 동의는 대상사업을 지원 받을 미성년 자녀에 대한 법정대리인으로서의 동의를 포함합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-2-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 779,
+        "left": 62,
+        "width": 651,
+        "height": 16,
+        "bottom": 795,
+        "right": 713
+      },
+      "text": "위의 내용을 모두 확인하였으며, 국가보훈부가 개인정보를 이용 또는 제공하는 것에 동의합니다",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-2-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-2-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 808,
+        "left": 62,
+        "width": 651,
+        "height": 18,
+        "bottom": 826,
+        "right": 713
+      },
+      "text": "년 월 일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-2-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-2-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 839,
+        "left": 62,
+        "width": 651,
+        "height": 18,
+        "bottom": 857,
+        "right": 713
+      },
+      "text": "국가보훈대상자와의 관계 :",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-2-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-2-cell-0-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 870,
+        "left": 62,
+        "width": 651,
+        "height": 18,
+        "bottom": 888,
+        "right": 713
+      },
+      "text": "성명 (인 또는 서명)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-2-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-2-cell-0-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 888,
+        "left": 82,
+        "width": 631,
+        "height": 19,
+        "bottom": 907,
+        "right": 713
+      },
+      "text": "지방보훈청장",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-2-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-2-cell-0-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 907,
+        "left": 82,
+        "width": 631,
+        "height": 19,
+        "bottom": 926,
+        "right": 713
+      },
+      "text": "보훈지청장 귀하",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-4-block-0-row-2-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-4-block-0-row-2-cell-0-block-6",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 926,
+        "left": 82,
+        "width": 631,
+        "height": 19,
+        "bottom": 945,
+        "right": 713
+      },
+      "text": "제주특별자치도도지사",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 21
+}

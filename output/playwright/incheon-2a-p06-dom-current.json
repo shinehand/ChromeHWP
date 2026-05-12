@@ -1,0 +1,451 @@
+{
+  "filename": "incheon-2a.hwpx",
+  "pages": 18,
+  "page": {
+    "index": 6,
+    "width": 1123,
+    "height": 1587
+  },
+  "bodyRect": {
+    "top": 613,
+    "left": 468.5,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 2200,
+    "right": 1591.5
+  },
+  "text": "Ⅱ 신청기준(무주택세대구성원 및 주택소유여부 판정 등) - 6 -",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "layoutHeight": "104.84"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 24,
+        "left": 60,
+        "width": 1002,
+        "height": 105.828125,
+        "bottom": 129.828125,
+        "right": 1062
+      },
+      "tableRect": {
+        "top": 24,
+        "left": 60,
+        "width": 1002,
+        "height": 105.828125,
+        "bottom": 129.828125,
+        "right": 1062
+      },
+      "rowCount": 3,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-19\",\"xmlPath\":\"body-block-1/row-19\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-19",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 24.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 48.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-20\",\"xmlPath\":\"body-block-1/row-20\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-20",
+            "layoutHeight": "56.84"
+          },
+          "rect": {
+            "top": 48.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 56.828125,
+            "bottom": 105.328125,
+            "right": 1061.5
+          },
+          "cellCount": 3,
+          "text": "Ⅱ 신청기준(무주택세대구성원 및 주택소유여부 판정 등)"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-21\",\"xmlPath\":\"body-block-1/row-21\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-21",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 105.328125,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 129.328125,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-19\",\"xmlPath\":\"body-block-1/row-19\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-19",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 24.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 48.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-20\",\"xmlPath\":\"body-block-1/row-20\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-20",
+            "layoutHeight": "56.84"
+          },
+          "rect": {
+            "top": 48.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 56.828125,
+            "bottom": 105.328125,
+            "right": 1061.5
+          },
+          "cellCount": 3,
+          "text": "Ⅱ 신청기준(무주택세대구성원 및 주택소유여부 판정 등)"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-21\",\"xmlPath\":\"body-block-1/row-21\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-21",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 105.328125,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 129.328125,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-19\",\"xmlPath\":\"body-block-1/row-19\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-19",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 24.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 48.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-20\",\"xmlPath\":\"body-block-1/row-20\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-20",
+            "layoutHeight": "56.84"
+          },
+          "rect": {
+            "top": 48.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 56.828125,
+            "bottom": 105.328125,
+            "right": 1061.5
+          },
+          "cellCount": 3,
+          "text": "Ⅱ 신청기준(무주택세대구성원 및 주택소유여부 판정 등)"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-21\",\"xmlPath\":\"body-block-1/row-21\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-21",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 105.328125,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 129.328125,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "text": "Ⅱ 신청기준(무주택세대구성원 및 주택소유여부 판정 등)",
+      "style": {
+        "height": "104.84px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-19-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-19-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-19-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 27.0625,
+        "left": 68,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 48.390625,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-20-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-20-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-20-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "36",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 58.90625,
+        "left": 68,
+        "width": 184.6875,
+        "height": 36,
+        "bottom": 94.90625,
+        "right": 252.6875
+      },
+      "text": "Ⅱ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "36px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-20-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-20-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-20-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 66.25,
+        "left": 267.6875,
+        "width": 319.484375,
+        "height": 21.328125,
+        "bottom": 87.578125,
+        "right": 587.171875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-20-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-20-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-20-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "29",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 62.40625,
+        "left": 602.171875,
+        "width": 451.828125,
+        "height": 29,
+        "bottom": 91.40625,
+        "right": 1054
+      },
+      "text": "신청기준(무주택세대구성원 및 주택소유여부 판정 등)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "29px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-21-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-21-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-21-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 107.890625,
+        "left": 68,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 129.21875,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"header-block-1\",\"xmlPath\":\"header-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:header-block-1",
+        "layoutSource": "hwpx-header-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 91,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 93,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 72px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"footer-block-0\",\"xmlPath\":\"footer-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:footer-block-0",
+        "layoutSource": "hwpx-footer-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 1564,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 1566,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1545px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "layoutSource": "hwpx-footer-page-number",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "layoutHeight": "18"
+      },
+      "rect": {
+        "top": 1540,
+        "left": 60,
+        "width": 1006,
+        "height": 19,
+        "bottom": 1559,
+        "right": 1066
+      },
+      "text": "- 6 -",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1521px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "18px",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 8
+}

@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-05-06T22:10:45.725Z",
+  "sourceManifest": "output/playwright/visual-probes/hwpx-performance-opacity/audit-container-table-none/manifest.json",
+  "verdictPolicy": {
+    "passVerdicts": [
+      "close"
+    ],
+    "advisoryVerdicts": [
+      "layout-review",
+      "review"
+    ],
+    "strictFailureVerdicts": [
+      "capture-error",
+      "capture-review",
+      "mismatch"
+    ],
+    "thresholds": {
+      "rawCloseMax": 18.0,
+      "rawReviewMax": 32.0,
+      "layoutReviewBlurMax": 32.0,
+      "layoutReviewProjectionMax": 30.0
+    },
+    "note": "review/layout-review are advisory states. They may keep automation exit status green, but they are not clean visual-fidelity passes and must be reported with raw/blur/layout metrics."
+  },
+  "documentCount": 1,
+  "totalPages": 1,
+  "severityCounts": {
+    "pass": 0,
+    "advisory": 1,
+    "strict-failure": 0,
+    "unknown": 0
+  },
+  "results": [
+    {
+      "id": "p16-container-table-none",
+      "filename": "p16-container-table-none.hwpx",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "verdictCounts": {
+        "layout-review": 1
+      },
+      "severityCounts": {
+        "advisory": 1
+      },
+      "advisoryPages": [
+        {
+          "page": 1,
+          "verdict": "layout-review",
+          "severity": "advisory",
+          "rawDiff": 34.48383368384157,
+          "blurDiff": 30.53498422712934,
+          "layoutDiff": 29.050515012053452,
+          "compare": "output/playwright/visual-probes/hwpx-performance-opacity/audit-container-table-none/p16-container-table-none/compare/page-001-compare.png"
+        }
+      ],
+      "strictFailurePages": [],
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-016.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/p16-container-table-none.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/hwpx-performance-opacity/audit-container-table-none/p16-container-table-none/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/hwpx-performance-opacity/audit-container-table-none/p16-container-table-none/compare/page-001-compare.png",
+          "diff": 34.48383368384157,
+          "verdict": "layout-review",
+          "visualMetrics": {
+            "rawDiff": 34.48383368384157,
+            "blurDiff": 30.53498422712934,
+            "projectionDiff": {
+              "row": 35.162174008327874,
+              "column": 22.938856015779034,
+              "combined": 29.050515012053452
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.413178984861977,
+            "ratioGap": 0.004088075771067734,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1123,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff is above the review band, but blur/layout metrics are within the relaxed layout-review band; this is not a clean pass."
+        }
+      ]
+    }
+  ]
+}

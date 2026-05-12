@@ -1,0 +1,1440 @@
+{
+  "filename": "incheon-2a.hwpx",
+  "pages": 18,
+  "page": {
+    "index": 10,
+    "width": 1123,
+    "height": 1587
+  },
+  "bodyRect": {
+    "top": 613,
+    "left": 468.5,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 2200,
+    "right": 1591.5
+  },
+  "text": "1. PC인터넷·모바일 신청 ■ PC인터넷·모바일 신청방법 • 해당 신청일에 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 소지하고 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱에 접속하여 인터넷 신청하시기 바라며, 모바일을 통해 청약할 경우 “LH 청약플러스” 앱을 사전에 설치하고 인증서(공동인증서)를 미리 등록하여 주시기 바랍니다. • LH 웹사이트 또는 모바일 청약시스템의 서비스다운 등으로 인해 신청이 불가하였다고 인정되는 경우에는 LH 홈페이지(www.lh.or.kr) 또는 LH 청약플러스(apply.lh.or.kr)에 공지 후 추가 접수를 받을 예 정입니다. ※ 인증서는 공동인증서 발급기관(금융결제원, 코스콤, 한국정보인증, 한국전자인증, 한국무역정보통신)의 공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 하나의 인증서를 소지하여야 인터넷 신청을 할 수 있습니다. • 신혼희망타운 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱 → 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개) 로그인 → [청약] → [분양주택] →[ 청약신청] → 공공분양(신혼희망) 선택 → 주택형 선택 → 신청유형(신혼부부, 예비신혼부부, 한부모가족 중) 선택 → 청약신청서 작성 → 청약내용 확인 및 청약완료 • 신청시간 : 2026.04.10.(10:00 ~ 17:00) ※ 신청마감시간까지 청약신청을 완료(제출기준)하여야 하므로 마감시간에 임박하여 신청하지 마시고, 미리 신청하시기 바랍니다. ※ 인터넷 신청 마감시간 전까지 신청내용을 변경(수정 또는 삭제)할 수 있으며, 마감시간 종료 후에는 변경(수정 또는 삭제) 할 수 없습니다. ■ PC인터넷·모바일 신청 시 유의사항 • 신청접수 시 신청자격을 확인(검증)하지 않고 신청자의 입력사항만으로 당첨자를 결정하므로, 본인의 신청자격(세대구성원, 무주택여부 등)을 정확히 확인하신 후 신청하여 주시기 바랍니다. • 신청",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "layoutHeight": "859.45"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 24,
+        "left": 60,
+        "width": 1002,
+        "height": 865.421875,
+        "bottom": 889.421875,
+        "right": 1062
+      },
+      "tableRect": {
+        "top": 24,
+        "left": 60,
+        "width": 1002,
+        "height": 865.421875,
+        "bottom": 889.421875,
+        "right": 1062
+      },
+      "rowCount": 5,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-39\",\"xmlPath\":\"body-block-1/row-39\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-39",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 24.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 48.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-40\",\"xmlPath\":\"body-block-1/row-40\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-40",
+            "layoutHeight": "726.20"
+          },
+          "rect": {
+            "top": 48.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 726.1875,
+            "bottom": 774.6875,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "1. PC인터넷·모바일 신청 ■ PC인터넷·모바일 신청방법 • 해당 신청일에 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 소지하고 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱에 접속하여 인터넷 신청하시기 바라며, 모바일을 통해 청약"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-41\",\"xmlPath\":\"body-block-1/row-41\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-41",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 774.6875,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 798.6875,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-42\",\"xmlPath\":\"body-block-1/row-42\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-42",
+            "layoutHeight": "64.39"
+          },
+          "rect": {
+            "top": 798.6875,
+            "left": 60.5,
+            "width": 1001,
+            "height": 64.375,
+            "bottom": 863.0625,
+            "right": 1061.5
+          },
+          "cellCount": 3,
+          "text": "Ⅶ 추첨, 당첨자(예비입주자) 발표, 당첨자 서류제출, 계약체결 등"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-43\",\"xmlPath\":\"body-block-1/row-43\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-43",
+            "layoutHeight": "20.87"
+          },
+          "rect": {
+            "top": 863.0625,
+            "left": 60.5,
+            "width": 1001,
+            "height": 25.859375,
+            "bottom": 888.921875,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-39\",\"xmlPath\":\"body-block-1/row-39\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-39",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 24.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 48.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-40\",\"xmlPath\":\"body-block-1/row-40\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-40",
+            "layoutHeight": "726.20"
+          },
+          "rect": {
+            "top": 48.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 726.1875,
+            "bottom": 774.6875,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "1. PC인터넷·모바일 신청 ■ PC인터넷·모바일 신청방법 • 해당 신청일에 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 소지하고 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱에 접속하여 인터넷 신청하시기 바라며, 모바일을 통해 청약"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-41\",\"xmlPath\":\"body-block-1/row-41\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-41",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 774.6875,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 798.6875,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-42\",\"xmlPath\":\"body-block-1/row-42\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-42",
+            "layoutHeight": "64.39"
+          },
+          "rect": {
+            "top": 798.6875,
+            "left": 60.5,
+            "width": 1001,
+            "height": 64.375,
+            "bottom": 863.0625,
+            "right": 1061.5
+          },
+          "cellCount": 3,
+          "text": "Ⅶ 추첨, 당첨자(예비입주자) 발표, 당첨자 서류제출, 계약체결 등"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-43\",\"xmlPath\":\"body-block-1/row-43\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-43",
+            "layoutHeight": "20.87"
+          },
+          "rect": {
+            "top": 863.0625,
+            "left": 60.5,
+            "width": 1001,
+            "height": 25.859375,
+            "bottom": 888.921875,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-39\",\"xmlPath\":\"body-block-1/row-39\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-39",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 24.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 48.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-40\",\"xmlPath\":\"body-block-1/row-40\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-40",
+            "layoutHeight": "726.20"
+          },
+          "rect": {
+            "top": 48.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 726.1875,
+            "bottom": 774.6875,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "1. PC인터넷·모바일 신청 ■ PC인터넷·모바일 신청방법 • 해당 신청일에 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 소지하고 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱에 접속하여 인터넷 신청하시기 바라며, 모바일을 통해 청약"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-41\",\"xmlPath\":\"body-block-1/row-41\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-41",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 774.6875,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 798.6875,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-42\",\"xmlPath\":\"body-block-1/row-42\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-42",
+            "layoutHeight": "64.39"
+          },
+          "rect": {
+            "top": 798.6875,
+            "left": 60.5,
+            "width": 1001,
+            "height": 64.375,
+            "bottom": 863.0625,
+            "right": 1061.5
+          },
+          "cellCount": 3,
+          "text": "Ⅶ 추첨, 당첨자(예비입주자) 발표, 당첨자 서류제출, 계약체결 등"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-43\",\"xmlPath\":\"body-block-1/row-43\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-43",
+            "layoutHeight": "20.87"
+          },
+          "rect": {
+            "top": 863.0625,
+            "left": 60.5,
+            "width": 1001,
+            "height": 25.859375,
+            "bottom": 888.921875,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "text": "1. PC인터넷·모바일 신청 ■ PC인터넷·모바일 신청방법 • 해당 신청일에 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 소지하고 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱에 접속하여 인터넷 신청하시기 바라며, 모바일을 통해 청약할 경우 “LH 청약플러스” 앱을 사전에 설치하고 인증서(공동인증서)를 미리 등록하여 주시기 바랍니다. • LH 웹사이트 또는 모바일 청약시스템",
+      "style": {
+        "height": "859.45px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-40-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-1",
+        "nestingLevel": "1",
+        "layoutHeight": "26.20"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-40-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-1",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 154.984375,
+        "left": 68,
+        "width": 982,
+        "height": 28,
+        "bottom": 182.984375,
+        "right": 1050
+      },
+      "tableRect": {
+        "top": 154.984375,
+        "left": 68,
+        "width": 982,
+        "height": 28,
+        "bottom": 182.984375,
+        "right": 1050
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-40-cell-0-block-1/row-0\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-1:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 155.484375,
+            "left": 68.5,
+            "width": 981,
+            "height": 27,
+            "bottom": 182.484375,
+            "right": 1049.5
+          },
+          "cellCount": 2,
+          "text": "1. PC인터넷·모바일 신청"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-40-cell-0-block-1/row-0\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-1:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 155.484375,
+            "left": 68.5,
+            "width": 981,
+            "height": 27,
+            "bottom": 182.484375,
+            "right": 1049.5
+          },
+          "cellCount": 2,
+          "text": "1. PC인터넷·모바일 신청"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-40-cell-0-block-1/row-0\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-1:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 155.484375,
+            "left": 68.5,
+            "width": 981,
+            "height": 27,
+            "bottom": 182.484375,
+            "right": 1049.5
+          },
+          "cellCount": 2,
+          "text": "1. PC인터넷·모바일 신청"
+        }
+      ],
+      "text": "1. PC인터넷·모바일 신청",
+      "style": {
+        "height": "26.2px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": "rgb(255, 225, 225)"
+      }
+    },
+    {
+      "index": 2,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8",
+        "nestingLevel": "1",
+        "layoutHeight": "201"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 522.3125,
+        "left": 68,
+        "width": 953,
+        "height": 202,
+        "bottom": 724.3125,
+        "right": 1021
+      },
+      "tableRect": {
+        "top": 522.3125,
+        "left": 68,
+        "width": 953,
+        "height": 202,
+        "bottom": 724.3125,
+        "right": 1021
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8/row-0\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8:row-0",
+            "layoutHeight": "201"
+          },
+          "rect": {
+            "top": 522.8125,
+            "left": 68.5,
+            "width": 952,
+            "height": 201,
+            "bottom": 723.8125,
+            "right": 1020.5
+          },
+          "cellCount": 1,
+          "text": "• 신혼희망타운 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱 → 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개) 로그인 → [청약] → [분양주택] →[ 청약신청] → 공공분양(신혼희망) 선택 → 주택형 선택 → 신청유형(신혼부부, 예비"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8/row-0\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8:row-0",
+            "layoutHeight": "201"
+          },
+          "rect": {
+            "top": 522.8125,
+            "left": 68.5,
+            "width": 952,
+            "height": 201,
+            "bottom": 723.8125,
+            "right": 1020.5
+          },
+          "cellCount": 1,
+          "text": "• 신혼희망타운 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱 → 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개) 로그인 → [청약] → [분양주택] →[ 청약신청] → 공공분양(신혼희망) 선택 → 주택형 선택 → 신청유형(신혼부부, 예비"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8/row-0\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8:row-0",
+            "layoutHeight": "201"
+          },
+          "rect": {
+            "top": 522.8125,
+            "left": 68.5,
+            "width": 952,
+            "height": 201,
+            "bottom": 723.8125,
+            "right": 1020.5
+          },
+          "cellCount": 1,
+          "text": "• 신혼희망타운 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱 → 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개) 로그인 → [청약] → [분양주택] →[ 청약신청] → 공공분양(신혼희망) 선택 → 주택형 선택 → 신청유형(신혼부부, 예비"
+        }
+      ],
+      "text": "• 신혼희망타운 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱 → 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개) 로그인 → [청약] → [분양주택] →[ 청약신청] → 공공분양(신혼희망) 선택 → 주택형 선택 → 신청유형(신혼부부, 예비신혼부부, 한부모가족 중) 선택 → 청약신청서 작성 → 청약내용 확인 및 청약완료 • 신청시간 : 2026.04.10.(10:00 ~ 17:00",
+      "style": {
+        "height": "201px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-39-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-39-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-39-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 27.0625,
+        "left": 68,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 48.390625,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 131.65625,
+        "left": 68,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 152.984375,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-1-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-1-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-1-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 158.3125,
+        "left": 84,
+        "width": 0,
+        "height": 21.328125,
+        "bottom": 179.640625,
+        "right": 84
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-1-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-1-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-1-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 157.984375,
+        "left": 93.484375,
+        "width": 953.515625,
+        "height": 22,
+        "bottom": 179.984375,
+        "right": 1047
+      },
+      "text": "1. PC인터넷·모바일 신청",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-2",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 183.984375,
+        "left": 68,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 205.3125,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-3\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-3",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 208.3125,
+        "left": 68,
+        "width": 986,
+        "height": 21,
+        "bottom": 229.3125,
+        "right": 1054
+      },
+      "text": "■ PC인터넷·모바일 신청방법",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-4\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-4",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "41",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 234.3125,
+        "left": 68,
+        "width": 986,
+        "height": 41,
+        "bottom": 275.3125,
+        "right": 1054
+      },
+      "text": "• 해당 신청일에 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 소지하고 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱에 접속하여 인터넷 신청하시기 바라며, 모바일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "41px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-5\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-5",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "41",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 280.3125,
+        "left": 68,
+        "width": 986,
+        "height": 41,
+        "bottom": 321.3125,
+        "right": 1054
+      },
+      "text": "• LH 웹사이트 또는 모바일 청약시스템의 서비스다운 등으로 인해 신청이 불가하였다고 인정되는 경우에는 LH 홈페이지(www.lh.or.kr) 또는 LH 청약플러스(apply.lh.or.kr)에 공지 후 추가 접수를",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "41px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-6\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-6",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "36",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 325.3125,
+        "left": 68,
+        "width": 986,
+        "height": 36,
+        "bottom": 361.3125,
+        "right": 1054
+      },
+      "text": "※ 인증서는 공동인증서 발급기관(금융결제원, 코스콤, 한국정보인증, 한국전자인증, 한국무역정보통신)의 공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 하나의 인증서를 소지하여야 인터넷 신청을 할",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "36px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-7\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-7",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "155",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 365.3125,
+        "left": 68,
+        "width": 986,
+        "height": 155,
+        "bottom": 520.3125,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "155px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 561.828125,
+        "left": 78,
+        "width": 927,
+        "height": 14,
+        "bottom": 575.828125,
+        "right": 1005
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 575.828125,
+        "left": 78,
+        "width": 927,
+        "height": 14,
+        "bottom": 589.828125,
+        "right": 1005
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-2",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "23",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 592.828125,
+        "left": 78,
+        "width": 926,
+        "height": 23,
+        "bottom": 615.828125,
+        "right": 1004
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-3\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-3",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 615.828125,
+        "left": 78,
+        "width": 927,
+        "height": 16,
+        "bottom": 631.828125,
+        "right": 1005
+      },
+      "text": "• 신혼희망타운",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-4\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-4",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 634.828125,
+        "left": 78,
+        "width": 926,
+        "height": 35,
+        "bottom": 669.828125,
+        "right": 1004
+      },
+      "text": "LH 청약플러스(apply.lh.or.kr) 또는 모바일앱 → 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개) 로그인 → [청약] → [분양주택] →[ 청약신청] → 공공분양(신혼",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-5\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-5",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "23",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 672.828125,
+        "left": 78,
+        "width": 926,
+        "height": 23,
+        "bottom": 695.828125,
+        "right": 1004
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-6\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-6",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 695.828125,
+        "left": 78,
+        "width": 927,
+        "height": 18,
+        "bottom": 713.828125,
+        "right": 1005
+      },
+      "text": "• 신청시간 : 2026.04.10.(10:00 ~ 17:00)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-7\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-7",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 713.828125,
+        "left": 78,
+        "width": 927,
+        "height": 16,
+        "bottom": 729.828125,
+        "right": 1005
+      },
+      "text": "※ 신청마감시간까지 청약신청을 완료(제출기준)하여야 하므로 마감시간에 임박하여 신청하지 마시고, 미리 신청하시기 바랍니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-8\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-8",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 732.828125,
+        "left": 78,
+        "width": 926,
+        "height": 19,
+        "bottom": 751.828125,
+        "right": 1004
+      },
+      "text": "※ 인터넷 신청 마감시간 전까지 신청내용을 변경(수정 또는 삭제)할 수 있으며, 마감시간 종료 후에는 변경(수정 또는 삭제) 할 수 없습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-9\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-8-row-0-cell-0-block-9",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "23",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 754.828125,
+        "left": 78,
+        "width": 926,
+        "height": 23,
+        "bottom": 777.828125,
+        "right": 1004
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-9\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-9",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "23",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 727.3125,
+        "left": 68,
+        "width": 986,
+        "height": 23,
+        "bottom": 750.3125,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-10\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-10\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-10",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 753.3125,
+        "left": 68,
+        "width": 986,
+        "height": 19,
+        "bottom": 772.3125,
+        "right": 1054
+      },
+      "text": "■ PC인터넷·모바일 신청 시 유의사항",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-11\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-11\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-11",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "41",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 777.3125,
+        "left": 68,
+        "width": 986,
+        "height": 41,
+        "bottom": 818.3125,
+        "right": 1054
+      },
+      "text": "• 신청접수 시 신청자격을 확인(검증)하지 않고 신청자의 입력사항만으로 당첨자를 결정하므로, 본인의 신청자격(세대구성원, 무주택여부 등)을 정확히 확인하신 후 신청하여 주시기 바랍니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "41px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-12\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-12\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-12",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "41",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 823.3125,
+        "left": 68,
+        "width": 986,
+        "height": 41,
+        "bottom": 864.3125,
+        "right": 1054
+      },
+      "text": "• 신청자격은 당첨자에 한해 우리공사에서 확인하며, 확인결과 신청자격과 다르게 당첨된 사실이 판명된 때에는 불이익(계약체결 불가 등)을 받게 됨을 유념하시고, 본인의 착 오신청으로 인한 불이익 발생 시 우리공사에서는",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "41px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-40-cell-0-block-13\",\"xmlPath\":\"body-block-1-row-40-cell-0-block-13\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-40-cell-0-block-13",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "41",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 869.3125,
+        "left": 68,
+        "width": 986,
+        "height": 41,
+        "bottom": 910.3125,
+        "right": 1054
+      },
+      "text": "• 전산장애 등의 사유로 공급업무가 원활히 진행되지 못할 경우 공급일정 등은 변경 또는 지연될 수 있으며, 일정이 변경될 때에는 LH 청약플러스(apply.lh.or.kr)를 통해 안내 드리겠습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "41px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-41-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-41-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-41-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 777.25,
+        "left": 68,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 798.578125,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-42-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-42-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-42-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "36",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 812.875,
+        "left": 68,
+        "width": 184.6875,
+        "height": 36,
+        "bottom": 848.875,
+        "right": 252.6875
+      },
+      "text": "Ⅶ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "36px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-42-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-42-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-42-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 820.203125,
+        "left": 267.6875,
+        "width": 319.484375,
+        "height": 21.328125,
+        "bottom": 841.53125,
+        "right": 587.171875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-42-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-42-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-42-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "29",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 816.375,
+        "left": 602.171875,
+        "width": 451.828125,
+        "height": 29,
+        "bottom": 845.375,
+        "right": 1054
+      },
+      "text": "추첨, 당첨자(예비입주자) 발표, 당첨자 서류제출, 계약체결 등",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "29px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-43-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-43-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-43-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 865.5625,
+        "left": 68,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 886.890625,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"header-block-1\",\"xmlPath\":\"header-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:header-block-1",
+        "layoutSource": "hwpx-header-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 91,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 93,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 72px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"footer-block-0\",\"xmlPath\":\"footer-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:footer-block-0",
+        "layoutSource": "hwpx-footer-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 1564,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 1566,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1545px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "layoutSource": "hwpx-footer-page-number",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "layoutHeight": "18"
+      },
+      "rect": {
+        "top": 1540,
+        "left": 60,
+        "width": 1006,
+        "height": 19,
+        "bottom": 1559,
+        "right": 1066
+      },
+      "text": "- 10 -",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1521px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "18px",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 33
+}

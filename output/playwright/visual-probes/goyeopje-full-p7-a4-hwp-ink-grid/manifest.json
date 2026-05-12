@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-05-07T21:42:18.850Z",
+  "outputs": [
+    {
+      "id": "base",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-a4-hwp-ink-grid/base-page-007.png"
+    },
+    {
+      "id": "filter-bright105",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-a4-hwp-ink-grid/filter-bright105-page-007.png"
+    },
+    {
+      "id": "filter-bright110",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-a4-hwp-ink-grid/filter-bright110-page-007.png"
+    },
+    {
+      "id": "filter-bright115",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-a4-hwp-ink-grid/filter-bright115-page-007.png"
+    },
+    {
+      "id": "filter-bright120",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-a4-hwp-ink-grid/filter-bright120-page-007.png"
+    },
+    {
+      "id": "run-op018",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-a4-hwp-ink-grid/run-op018-page-007.png"
+    },
+    {
+      "id": "run-op016",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-a4-hwp-ink-grid/run-op016-page-007.png"
+    },
+    {
+      "id": "run-op014",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-a4-hwp-ink-grid/run-op014-page-007.png"
+    },
+    {
+      "id": "run-op018-border020",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-a4-hwp-ink-grid/run-op018-border020-page-007.png"
+    },
+    {
+      "id": "border020",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-a4-hwp-ink-grid/border020-page-007.png"
+    },
+    {
+      "id": "border010",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-a4-hwp-ink-grid/border010-page-007.png"
+    }
+  ]
+}

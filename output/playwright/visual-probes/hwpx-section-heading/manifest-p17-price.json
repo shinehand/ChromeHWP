@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-05-06T22:38:01.034Z",
+  "auditId": "hwpx-p17-price",
+  "documents": [
+    {
+      "id": "incheon-2a",
+      "filename": "incheon-2a.hwpx",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 18,
+      "pages": [
+        {
+          "pageIndex": 16,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-017.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-section-heading/p17-price-border-0.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 16,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-017.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-section-heading/p17-price-border-0p05.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 16,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-017.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-section-heading/p17-price-border-0p15.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 16,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-017.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-section-heading/p17-price-op-0p55.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 16,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-017.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-section-heading/p17-price-op-0p35.png",
+          "targetBand": "first"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-05-06T22:19:33.707Z",
+  "sourceManifest": "output/playwright/visual-probes/hwpx-performance-opacity/audit-p8-mode-nested-border-0/manifest.json",
+  "verdictPolicy": {
+    "passVerdicts": [
+      "close"
+    ],
+    "advisoryVerdicts": [
+      "layout-review",
+      "review"
+    ],
+    "strictFailureVerdicts": [
+      "capture-error",
+      "capture-review",
+      "mismatch"
+    ],
+    "thresholds": {
+      "rawCloseMax": 18.0,
+      "rawReviewMax": 32.0,
+      "layoutReviewBlurMax": 32.0,
+      "layoutReviewProjectionMax": 30.0
+    },
+    "note": "review/layout-review are advisory states. They may keep automation exit status green, but they are not clean visual-fidelity passes and must be reported with raw/blur/layout metrics."
+  },
+  "documentCount": 1,
+  "totalPages": 1,
+  "severityCounts": {
+    "pass": 0,
+    "advisory": 1,
+    "strict-failure": 0,
+    "unknown": 0
+  },
+  "results": [
+    {
+      "id": "p8-mode-nested-border-0",
+      "filename": "p8-mode-nested-border-0.hwpx",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "verdictCounts": {
+        "review": 1
+      },
+      "severityCounts": {
+        "advisory": 1
+      },
+      "advisoryPages": [
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 18.259319620253166,
+          "blurDiff": 17.19301336146273,
+          "layoutDiff": 35.525852585258505,
+          "compare": "output/playwright/visual-probes/hwpx-performance-opacity/audit-p8-mode-nested-border-0/p8-mode-nested-border-0/compare/page-001-compare.png"
+        }
+      ],
+      "strictFailurePages": [],
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-008.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/p8-mode-nested-border-0.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/hwpx-performance-opacity/audit-p8-mode-nested-border-0/p8-mode-nested-border-0/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/hwpx-performance-opacity/audit-p8-mode-nested-border-0/p8-mode-nested-border-0/compare/page-001-compare.png",
+          "diff": 18.259319620253166,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 18.259319620253166,
+            "blurDiff": 17.19301336146273,
+            "projectionDiff": {
+              "row": 36.7359735973597,
+              "column": 34.315731573157315,
+              "combined": 35.525852585258505
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.404040404040404,
+            "chromeRatio": 1.413178984861977,
+            "ratioGap": 0.009138580821572928,
+            "expectedGap": 0.009959595959595946,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            556
+          ],
+          "chromeSize": [
+            1123,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        }
+      ]
+    }
+  ]
+}

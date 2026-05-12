@@ -1,0 +1,282 @@
+{
+  "generatedAt": "2026-05-06T22:45:29.947Z",
+  "sourceManifest": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/manifest-opacity.json",
+  "verdictPolicy": {
+    "passVerdicts": [
+      "close"
+    ],
+    "advisoryVerdicts": [
+      "layout-review",
+      "review"
+    ],
+    "strictFailureVerdicts": [
+      "capture-error",
+      "capture-review",
+      "mismatch"
+    ],
+    "thresholds": {
+      "rawCloseMax": 18.0,
+      "rawReviewMax": 32.0,
+      "layoutReviewBlurMax": 32.0,
+      "layoutReviewProjectionMax": 30.0
+    },
+    "note": "review/layout-review are advisory states. They may keep automation exit status green, but they are not clean visual-fidelity passes and must be reported with raw/blur/layout metrics."
+  },
+  "documentCount": 1,
+  "totalPages": 4,
+  "severityCounts": {
+    "pass": 0,
+    "advisory": 5,
+    "strict-failure": 0,
+    "unknown": 0
+  },
+  "results": [
+    {
+      "id": "attachment-sale-notice",
+      "filename": "attachment-sale-notice.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp",
+      "pageCount": 4,
+      "verdictCounts": {
+        "review": 5
+      },
+      "severityCounts": {
+        "advisory": 5
+      },
+      "advisoryPages": [
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 30.323464463676896,
+          "blurDiff": 26.403558877524258,
+          "layoutDiff": 34.13604549431322,
+          "compare": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/compare/page-001-compare.png"
+        },
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 29.554808112597254,
+          "blurDiff": 26.06852609493837,
+          "layoutDiff": 37.399934383202094,
+          "compare": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/compare/page-001-compare.png"
+        },
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 28.877938630999214,
+          "blurDiff": 25.84300900428359,
+          "layoutDiff": 42.06036745406824,
+          "compare": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/compare/page-001-compare.png"
+        },
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 30.622887490165223,
+          "blurDiff": 26.67863449602238,
+          "layoutDiff": 33.68821084864392,
+          "compare": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/compare/page-001-compare.png"
+        },
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 29.07535186642189,
+          "blurDiff": 25.844869306757584,
+          "layoutDiff": 43.08617672790901,
+          "compare": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/compare/page-001-compare.png"
+        }
+      ],
+      "strictFailurePages": [],
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/attachment-sale-notice-p1-shift/p1-abs-down-80-table-op-0p8.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/compare/page-001-compare.png",
+          "diff": 30.323464463676896,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 30.323464463676896,
+            "blurDiff": 26.403558877524258,
+            "projectionDiff": {
+              "row": 40.8535651793526,
+              "column": 27.418525809273852,
+              "combined": 34.13604549431322
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4122340425531914,
+            "chromeRatio": 1.413178984861977,
+            "ratioGap": 0.0009449423087855013,
+            "expectedGap": 0.0017659574468085193,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            376,
+            531
+          ],
+          "chromeSize": [
+            1123,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/attachment-sale-notice-p1-shift/p1-abs-down-80-table-op-0p7.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/compare/page-001-compare.png",
+          "diff": 29.554808112597254,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 29.554808112597254,
+            "blurDiff": 26.06852609493837,
+            "projectionDiff": {
+              "row": 42.97845581802275,
+              "column": 31.821412948381443,
+              "combined": 37.399934383202094
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4122340425531914,
+            "chromeRatio": 1.413178984861977,
+            "ratioGap": 0.0009449423087855013,
+            "expectedGap": 0.0017659574468085193,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            376,
+            531
+          ],
+          "chromeSize": [
+            1123,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/attachment-sale-notice-p1-shift/p1-abs-down-80-table-op-0p6.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/compare/page-001-compare.png",
+          "diff": 28.877938630999214,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 28.877938630999214,
+            "blurDiff": 25.84300900428359,
+            "projectionDiff": {
+              "row": 45.62171916010499,
+              "column": 38.499015748031496,
+              "combined": 42.06036745406824
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4122340425531914,
+            "chromeRatio": 1.413178984861977,
+            "ratioGap": 0.0009449423087855013,
+            "expectedGap": 0.0017659574468085193,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            376,
+            531
+          ],
+          "chromeSize": [
+            1123,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/attachment-sale-notice-p1-shift/p1-abs-down-80-content-op-0p8.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/compare/page-001-compare.png",
+          "diff": 30.622887490165223,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 30.622887490165223,
+            "blurDiff": 26.67863449602238,
+            "projectionDiff": {
+              "row": 40.6813210848644,
+              "column": 26.695100612423435,
+              "combined": 33.68821084864392
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4122340425531914,
+            "chromeRatio": 1.413178984861977,
+            "ratioGap": 0.0009449423087855013,
+            "expectedGap": 0.0017659574468085193,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            376,
+            531
+          ],
+          "chromeSize": [
+            1123,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/attachment-sale-notice-p1-shift/p1-abs-down-80-run-0p6-table-0p8.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/attachment-sale-notice-p1-shift/audit-opacity/attachment-sale-notice/compare/page-001-compare.png",
+          "diff": 29.07535186642189,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 29.07535186642189,
+            "blurDiff": 25.844869306757584,
+            "projectionDiff": {
+              "row": 46.76181102362205,
+              "column": 39.410542432195975,
+              "combined": 43.08617672790901
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4122340425531914,
+            "chromeRatio": 1.413178984861977,
+            "ratioGap": 0.0009449423087855013,
+            "expectedGap": 0.0017659574468085193,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            376,
+            531
+          ],
+          "chromeSize": [
+            1123,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        }
+      ]
+    }
+  ]
+}

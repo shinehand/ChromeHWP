@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-05-06T22:34:30.884Z",
+  "auditId": "hwp-form-gyeolseokgye-extreme",
+  "documents": [
+    {
+      "id": "gyeolseokgye",
+      "filename": "gyeolseokgye.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/gyeolseokgye.hwp",
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-border-0-run-0p08.png",
+          "targetBand": "last"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-border-0-run-0p01.png",
+          "targetBand": "last"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-table-op-0p20.png",
+          "targetBand": "last"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-table-op-0p20-run-0p01.png",
+          "targetBand": "last"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-table-op-0p15.png",
+          "targetBand": "last"
+        }
+      ]
+    }
+  ]
+}

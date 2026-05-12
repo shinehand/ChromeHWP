@@ -23,6 +23,7 @@ interface RenderContext {
   readonly assetUrls: Map<string, RenderedAssetUrl>;
   readonly availableWidth: number;
   readonly pageWidth: number;
+  readonly pageMarginLeft: number;
   readonly nestingLevel: number;
   readonly sourceFormat: ParsedDocument['format'];
   readonly locked?: boolean;
@@ -93,6 +94,7 @@ export function renderDocumentToDom(document: ParsedDocument, target: HTMLElemen
       assetUrls,
       availableWidth: bodyWidth,
       pageWidth: layout.width,
+      pageMarginLeft: layout.margin.left ?? 0,
       nestingLevel: 0,
       sourceFormat: document.format
     };
@@ -165,11 +167,12 @@ function renderParagraphDom(block: ParagraphBlock, context: RenderContext): HTML
   const paragraph = documentElement('p', 'hwp-paragraph');
   const layout = block._hwpxLayout;
   applySourceMetadata(paragraph, block.sourceRef, block.layoutBoxId);
+  if (layout?.source) paragraph.dataset.layoutSource = layout.source;
   if (context.locked) setReadOnlyDecorationHost(paragraph);
   else setEditableTextHost(paragraph);
   paragraph.style.textAlign = block.align ?? 'left';
   applyBoxSpacing(paragraph, block.margin, 'margin');
-  applyParagraphTextIndent(paragraph, block, context);
+  applyParagraphTextIndent(paragraph, block);
   applyHwpParagraphPosition(paragraph, layout, context);
   if (renderDecorationRule(paragraph, layout)) return paragraph;
   if (layout?.heightPx && layout.heightPx > 0) {
@@ -193,12 +196,12 @@ function renderParagraphDom(block: ParagraphBlock, context: RenderContext): HTML
   return paragraph;
 }
 
-function applyParagraphTextIndent(paragraph: HTMLElement, block: ParagraphBlock, context: RenderContext): void {
+function applyParagraphTextIndent(paragraph: HTMLElement, block: ParagraphBlock): void {
   const indent = normalizeParagraphTextIndent(block.textIndent);
   if (!indent || block.align === 'center' || block.align === 'right') return;
 
   paragraph.style.textIndent = `${indent}px`;
-  if (indent < 0 && context.nestingLevel > 0) {
+  if (indent < 0) {
     const currentPadding = cssPixelLength(paragraph.style.paddingLeft);
     paragraph.style.paddingLeft = `${Math.round(currentPadding + Math.abs(indent))}px`;
   }
@@ -257,13 +260,22 @@ function applyHwpParagraphPosition(
     const signedOffset = shouldPreserveSignedPosition(position.source);
     paragraph.dataset.layoutPosition = 'absolute';
     paragraph.style.position = 'absolute';
+    paragraph.style.boxSizing = 'border-box';
     paragraph.style.top = cssPagePosition(topLevelPositionTopMarginVariable(position, context), Math.round(position.topPx), signedOffset);
     paragraph.style.left = cssPagePosition('--hwp-margin-left', Math.round(position.leftPx), signedOffset);
     paragraph.style.margin = '0';
+    const maxHwpLineSegmentWidth = context.sourceFormat === 'hwp' && layout?.source === 'hwp-para-line-seg'
+      ? Math.max(MIN_TABLE_WIDTH, Math.round(context.pageWidth - context.pageMarginLeft - Math.max(0, position.leftPx)))
+      : 0;
     if (position.widthPx && position.widthPx > 0) {
-      const width = `${Math.round(position.widthPx)}px`;
+      const widthPx = maxHwpLineSegmentWidth > 0
+        ? Math.min(Math.round(position.widthPx), maxHwpLineSegmentWidth)
+        : Math.round(position.widthPx);
+      const width = `${widthPx}px`;
       paragraph.style.width = width;
       paragraph.style.maxWidth = width;
+    } else if (maxHwpLineSegmentWidth > 0) {
+      paragraph.style.maxWidth = `${maxHwpLineSegmentWidth}px`;
     } else {
       paragraph.style.maxWidth = '100%';
     }
@@ -278,10 +290,11 @@ function applyHwpParagraphPosition(
   if (top <= 0) return;
   paragraph.dataset.layoutPosition = 'absolute';
   paragraph.style.position = 'absolute';
+  paragraph.style.boxSizing = 'border-box';
   paragraph.style.top = cssPagePosition('--hwp-margin-top', top);
   paragraph.style.left = cssPagePosition('--hwp-margin-left', Math.max(0, left));
   paragraph.style.margin = '0';
-  paragraph.style.maxWidth = '100%';
+  paragraph.style.maxWidth = `${Math.max(MIN_TABLE_WIDTH, Math.round(context.pageWidth - context.pageMarginLeft - left))}px`;
 }
 
 function renderLineSegmentParagraphDom(
@@ -509,6 +522,11 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   applySourceMetadata(wrapper, block.sourceRef, block.layoutBoxId);
   applySourceMetadata(table, block.sourceRef, block.layoutBoxId);
   if (context.locked) setReadOnlyDecorationHost(wrapper);
+  if (isEmptyHeaderFooterDecorationTable(block, context)) {
+    wrapper.hidden = true;
+    wrapper.dataset.emptyDecoration = 'true';
+    return wrapper;
+  }
   if (context.nestingLevel > 0) wrapper.classList.add('hwp-table-wrap-nested');
   wrapper.dataset.nestingLevel = String(context.nestingLevel);
   if (contentKind) wrapper.dataset.contentKind = contentKind;
@@ -591,6 +609,29 @@ function renderTableDom(block: TableBlock, context: RenderContext): HTMLElement 
   table.append(tbody);
   wrapper.append(table);
   return wrapper;
+}
+
+function isEmptyHeaderFooterDecorationTable(block: TableBlock, context: RenderContext): boolean {
+  if (!context.locked) return false;
+  const source = block._hwpxLayout?.source ?? block._hwpxLayout?.position?.source ?? '';
+  if (!source.startsWith('hwpx-header') && !source.startsWith('hwpx-footer')) return false;
+  return block.rows.every((row) => row.cells.every((cell) => {
+    return cell.blocks.every((child) => {
+      if (child.type === 'image') return false;
+      if (child.type === 'table') return isTableWithoutVisibleContent(child);
+      return child.runs.every((run) => run.text.trim().length === 0);
+    });
+  }));
+}
+
+function isTableWithoutVisibleContent(block: TableBlock): boolean {
+  return block.rows.every((row) => row.cells.every((cell) => {
+    return cell.blocks.every((child) => {
+      if (child.type === 'image') return false;
+      if (child.type === 'table') return isTableWithoutVisibleContent(child);
+      return child.runs.every((run) => run.text.trim().length === 0);
+    });
+  }));
 }
 
 function applyPositionedTableLayout(

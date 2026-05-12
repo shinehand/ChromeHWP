@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-05-06T22:35:54.719Z",
+  "auditId": "hwp-form-gyeolseokgye-spacing",
+  "documents": [
+    {
+      "id": "gyeolseokgye",
+      "filename": "gyeolseokgye.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/gyeolseokgye.hwp",
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-pad-0.png",
+          "targetBand": "last"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-pad-1.png",
+          "targetBand": "last"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-pad-0-border-0.png",
+          "targetBand": "last"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-lineheight-1p15.png",
+          "targetBand": "last"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-lineheight-1p5.png",
+          "targetBand": "last"
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-pad-0-lineheight-1p15-border-0.png",
+          "targetBand": "last"
+        }
+      ]
+    }
+  ]
+}

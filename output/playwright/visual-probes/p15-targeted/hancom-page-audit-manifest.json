@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-05-06T23:04:28.541Z",
+  "documents": [
+    {
+      "id": "base",
+      "filename": "base.png",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-015.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/p15-targeted/base-chrome-page-015.png",
+          "targetBand": "first"
+        }
+      ]
+    },
+    {
+      "id": "school-border-none",
+      "filename": "school-border-none.png",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-015.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/p15-targeted/school-border-none-chrome-page-015.png",
+          "targetBand": "first"
+        }
+      ]
+    },
+    {
+      "id": "school-hide",
+      "filename": "school-hide.png",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-015.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/p15-targeted/school-hide-chrome-page-015.png",
+          "targetBand": "first"
+        }
+      ]
+    },
+    {
+      "id": "heading-border-none",
+      "filename": "heading-border-none.png",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-015.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/p15-targeted/heading-border-none-chrome-page-015.png",
+          "targetBand": "first"
+        }
+      ]
+    },
+    {
+      "id": "nested-border-none",
+      "filename": "nested-border-none.png",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-015.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/p15-targeted/nested-border-none-chrome-page-015.png",
+          "targetBand": "first"
+        }
+      ]
+    },
+    {
+      "id": "top-border-none",
+      "filename": "top-border-none.png",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-015.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/p15-targeted/top-border-none-chrome-page-015.png",
+          "targetBand": "first"
+        }
+      ]
+    },
+    {
+      "id": "top-opacity-0p2",
+      "filename": "top-opacity-0p2.png",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-015.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/p15-targeted/top-opacity-0p2-chrome-page-015.png",
+          "targetBand": "first"
+        }
+      ]
+    },
+    {
+      "id": "top-opacity-0p05",
+      "filename": "top-opacity-0p05.png",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-015.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/p15-targeted/top-opacity-0p05-chrome-page-015.png",
+          "targetBand": "first"
+        }
+      ]
+    }
+  ]
+}

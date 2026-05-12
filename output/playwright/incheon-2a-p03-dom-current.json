@@ -1,0 +1,4064 @@
+{
+  "filename": "incheon-2a.hwpx",
+  "pages": 18,
+  "page": {
+    "index": 3,
+    "width": 1123,
+    "height": 1587
+  },
+  "bodyRect": {
+    "top": 306,
+    "left": 468.5,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 1893,
+    "right": 1591.5
+  },
+  "text": "신혼희망타운 전용 주택담보 장기대출상품(수익공유형 모기지) 안내 ■ 개 요 : 연 1.3% 고정금리최장 30년간 집값의 70%까지 지원하고, 주택매도 및 대출금 상환시 시세차익(주택매각금액- 분양금액)의 최소 10%~최대 50%를 기금과 정산하되, 정산시점에 장기대출자 및 유자녀 가구에 혜택 부여 ※ 신혼희망타운 전용 주택담보 장기대출상품은 「주택도시기금법」 제10조 제6항에 따른 기금운영계획에 따라 대출조건 등이 일부 변경될 수 있습니다. ■ 의무가입 대상 : 주택 공급가격이 총자산가액(362백만원)을 초과하는 주택의 입주자로 선정된 분 ■ 가입한도 : 최대 4억원(주택 공급가격의 70% 이내) ■ 취급은행 : 우리은행, 국민은행, 신한은행 ■ 대출기간 : 1년거치 19년 또는 1년거치 29년 원리금균등분할상환 원칙, 중도상환시에는 전액상환만 허용 ■ 대출절차 : 분양계약 체결 → 대출신청(잔금 2~3개월 전) → 대출 심사 및 실행 → 수탁은행에서 대출 결과를 LH에 전송 → LH는 대출 실행 확인 및 입주 허용 ■ 문 의 : 우리은행(1599-0800), 국민은행(1599-1771), 신한은행(1599-8000) ■ 상세자료 : 주택도시기금(nhuf.molit.go.kr) 홈페이지내 [개인상품-주택구입자금대출]의 “신혼희망타운전용 주택담보장기대출” 확인 <수익 공유 정산표 일부 발췌> 대출기간 (년) 담보인정비율 70% 담보인정비율 60% 실행시 담보인정비율 50% 실행시 담보인정비율 40% 실행시 담보인정비율 30% 실행시 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 1∼9 50% 40% 30% 45% 35% 25% 40% 30% 20% 35% 25% 15% 30% 20% 10% 14 40% 30% 20% 35% 25% 15% 30% 20% 10% 25% 15% 10% 20% 15% 10% 19 30% 20% 10% 25% 15% 10% 20% 15% 10% 20% 15% 10% 20% 15",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "layoutHeight": "1031.07"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 24,
+        "left": 60,
+        "width": 1002,
+        "height": 1037.015625,
+        "bottom": 1061.015625,
+        "right": 1062
+      },
+      "tableRect": {
+        "top": 24,
+        "left": 60,
+        "width": 1002,
+        "height": 1037.015625,
+        "bottom": 1061.015625,
+        "right": 1062
+      },
+      "rowCount": 8,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-10\",\"xmlPath\":\"body-block-1/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-10",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 24.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 48.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-11\",\"xmlPath\":\"body-block-1/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-11",
+            "layoutHeight": "34.85"
+          },
+          "rect": {
+            "top": 48.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 34.84375,
+            "bottom": 83.34375,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "신혼희망타운 전용 주택담보 장기대출상품(수익공유형 모기지) 안내"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-12\",\"xmlPath\":\"body-block-1/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-12",
+            "layoutHeight": "638.60"
+          },
+          "rect": {
+            "top": 83.34375,
+            "left": 60.5,
+            "width": 1001,
+            "height": 638.59375,
+            "bottom": 721.9375,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "■ 개 요 : 연 1.3% 고정금리최장 30년간 집값의 70%까지 지원하고, 주택매도 및 대출금 상환시 시세차익(주택매각금액- 분양금액)의 최소 10%~최대 50%를 기금과 정산하되, 정산시점에 장기대출자 및 유자녀 가구에 혜택 부여 ※ 신혼희망타운 전용 주택담보 장기대출상품은 「주택도"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-13\",\"xmlPath\":\"body-block-1/row-13\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-13",
+            "layoutHeight": "34.85"
+          },
+          "rect": {
+            "top": 721.9375,
+            "left": 60.5,
+            "width": 1001,
+            "height": 34.84375,
+            "bottom": 756.78125,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "청약신청 시 유의사항"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-14\",\"xmlPath\":\"body-block-1/row-14\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-14",
+            "layoutHeight": "189.51"
+          },
+          "rect": {
+            "top": 756.78125,
+            "left": 60.5,
+            "width": 1001,
+            "height": 189.5,
+            "bottom": 946.28125,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "■ 현장접수 시 우려되는 혼잡을 방지하고 접수자의 편의를 도모하기 위하여 인터넷 청약을 원칙으로 하오니, 인터넷 청약을 위하여 신청접수일전에 인증서(공동인증서, 네이버 인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 미리 발급 받으시기 바랍니다. 특히 모바일로 청약하기 위해"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-15\",\"xmlPath\":\"body-block-1/row-15\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-15",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 946.28125,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 970.28125,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-16\",\"xmlPath\":\"body-block-1/row-16\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-16",
+            "layoutHeight": "64.61"
+          },
+          "rect": {
+            "top": 970.28125,
+            "left": 60.5,
+            "width": 1001,
+            "height": 64.609375,
+            "bottom": 1034.890625,
+            "right": 1061.5
+          },
+          "cellCount": 3,
+          "text": "Ⅰ 공급규모․공급대상 및 공급가격 등"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-17\",\"xmlPath\":\"body-block-1/row-17\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-17",
+            "layoutHeight": "20.64"
+          },
+          "rect": {
+            "top": 1034.890625,
+            "left": 60.5,
+            "width": 1001,
+            "height": 25.625,
+            "bottom": 1060.515625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-10\",\"xmlPath\":\"body-block-1/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-10",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 24.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 48.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-11\",\"xmlPath\":\"body-block-1/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-11",
+            "layoutHeight": "34.85"
+          },
+          "rect": {
+            "top": 48.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 34.84375,
+            "bottom": 83.34375,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "신혼희망타운 전용 주택담보 장기대출상품(수익공유형 모기지) 안내"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-12\",\"xmlPath\":\"body-block-1/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-12",
+            "layoutHeight": "638.60"
+          },
+          "rect": {
+            "top": 83.34375,
+            "left": 60.5,
+            "width": 1001,
+            "height": 638.59375,
+            "bottom": 721.9375,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "■ 개 요 : 연 1.3% 고정금리최장 30년간 집값의 70%까지 지원하고, 주택매도 및 대출금 상환시 시세차익(주택매각금액- 분양금액)의 최소 10%~최대 50%를 기금과 정산하되, 정산시점에 장기대출자 및 유자녀 가구에 혜택 부여 ※ 신혼희망타운 전용 주택담보 장기대출상품은 「주택도"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-13\",\"xmlPath\":\"body-block-1/row-13\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-13",
+            "layoutHeight": "34.85"
+          },
+          "rect": {
+            "top": 721.9375,
+            "left": 60.5,
+            "width": 1001,
+            "height": 34.84375,
+            "bottom": 756.78125,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "청약신청 시 유의사항"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-14\",\"xmlPath\":\"body-block-1/row-14\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-14",
+            "layoutHeight": "189.51"
+          },
+          "rect": {
+            "top": 756.78125,
+            "left": 60.5,
+            "width": 1001,
+            "height": 189.5,
+            "bottom": 946.28125,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "■ 현장접수 시 우려되는 혼잡을 방지하고 접수자의 편의를 도모하기 위하여 인터넷 청약을 원칙으로 하오니, 인터넷 청약을 위하여 신청접수일전에 인증서(공동인증서, 네이버 인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 미리 발급 받으시기 바랍니다. 특히 모바일로 청약하기 위해"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-15\",\"xmlPath\":\"body-block-1/row-15\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-15",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 946.28125,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 970.28125,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-16\",\"xmlPath\":\"body-block-1/row-16\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-16",
+            "layoutHeight": "64.61"
+          },
+          "rect": {
+            "top": 970.28125,
+            "left": 60.5,
+            "width": 1001,
+            "height": 64.609375,
+            "bottom": 1034.890625,
+            "right": 1061.5
+          },
+          "cellCount": 3,
+          "text": "Ⅰ 공급규모․공급대상 및 공급가격 등"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-17\",\"xmlPath\":\"body-block-1/row-17\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-17",
+            "layoutHeight": "20.64"
+          },
+          "rect": {
+            "top": 1034.890625,
+            "left": 60.5,
+            "width": 1001,
+            "height": 25.625,
+            "bottom": 1060.515625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-10\",\"xmlPath\":\"body-block-1/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-10",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 24.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 48.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-11\",\"xmlPath\":\"body-block-1/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-11",
+            "layoutHeight": "34.85"
+          },
+          "rect": {
+            "top": 48.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 34.84375,
+            "bottom": 83.34375,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "신혼희망타운 전용 주택담보 장기대출상품(수익공유형 모기지) 안내"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-12\",\"xmlPath\":\"body-block-1/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-12",
+            "layoutHeight": "638.60"
+          },
+          "rect": {
+            "top": 83.34375,
+            "left": 60.5,
+            "width": 1001,
+            "height": 638.59375,
+            "bottom": 721.9375,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "■ 개 요 : 연 1.3% 고정금리최장 30년간 집값의 70%까지 지원하고, 주택매도 및 대출금 상환시 시세차익(주택매각금액- 분양금액)의 최소 10%~최대 50%를 기금과 정산하되, 정산시점에 장기대출자 및 유자녀 가구에 혜택 부여 ※ 신혼희망타운 전용 주택담보 장기대출상품은 「주택도"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-13\",\"xmlPath\":\"body-block-1/row-13\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-13",
+            "layoutHeight": "34.85"
+          },
+          "rect": {
+            "top": 721.9375,
+            "left": 60.5,
+            "width": 1001,
+            "height": 34.84375,
+            "bottom": 756.78125,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "청약신청 시 유의사항"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-14\",\"xmlPath\":\"body-block-1/row-14\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-14",
+            "layoutHeight": "189.51"
+          },
+          "rect": {
+            "top": 756.78125,
+            "left": 60.5,
+            "width": 1001,
+            "height": 189.5,
+            "bottom": 946.28125,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "■ 현장접수 시 우려되는 혼잡을 방지하고 접수자의 편의를 도모하기 위하여 인터넷 청약을 원칙으로 하오니, 인터넷 청약을 위하여 신청접수일전에 인증서(공동인증서, 네이버 인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 미리 발급 받으시기 바랍니다. 특히 모바일로 청약하기 위해"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-15\",\"xmlPath\":\"body-block-1/row-15\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-15",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 946.28125,
+            "left": 60.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 970.28125,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-16\",\"xmlPath\":\"body-block-1/row-16\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-16",
+            "layoutHeight": "64.61"
+          },
+          "rect": {
+            "top": 970.28125,
+            "left": 60.5,
+            "width": 1001,
+            "height": 64.609375,
+            "bottom": 1034.890625,
+            "right": 1061.5
+          },
+          "cellCount": 3,
+          "text": "Ⅰ 공급규모․공급대상 및 공급가격 등"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-17\",\"xmlPath\":\"body-block-1/row-17\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-17",
+            "layoutHeight": "20.64"
+          },
+          "rect": {
+            "top": 1034.890625,
+            "left": 60.5,
+            "width": 1001,
+            "height": 25.625,
+            "bottom": 1060.515625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "text": "신혼희망타운 전용 주택담보 장기대출상품(수익공유형 모기지) 안내 ■ 개 요 : 연 1.3% 고정금리최장 30년간 집값의 70%까지 지원하고, 주택매도 및 대출금 상환시 시세차익(주택매각금액- 분양금액)의 최소 10%~최대 50%를 기금과 정산하되, 정산시점에 장기대출자 및 유자녀 가구에 혜택 부여 ※ 신혼희망타운 전용 주택담보 장기대출상품은 「주택도시기금법」 제10조 제6항에 따른 기금운영계획에 따라 대출조건 등이 일부 변경될",
+      "style": {
+        "height": "1031.07px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13",
+        "nestingLevel": "1",
+        "layoutHeight": "153.60"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 503.109375,
+        "left": 68,
+        "width": 949,
+        "height": 154.578125,
+        "bottom": 657.6875,
+        "right": 1017
+      },
+      "tableRect": {
+        "top": 503.109375,
+        "left": 68,
+        "width": 949,
+        "height": 154.578125,
+        "bottom": 657.6875,
+        "right": 1017
+      },
+      "rowCount": 6,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-0",
+            "layoutHeight": "23.31"
+          },
+          "rect": {
+            "top": 503.609375,
+            "left": 68,
+            "width": 949,
+            "height": 23.296875,
+            "bottom": 526.90625,
+            "right": 1017
+          },
+          "cellCount": 6,
+          "text": "대출기간 (년) 담보인정비율 70% 담보인정비율 60% 실행시 담보인정비율 50% 실행시 담보인정비율 40% 실행시 담보인정비율 30% 실행시"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-1\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-1",
+            "layoutHeight": "21.97"
+          },
+          "rect": {
+            "top": 526.90625,
+            "left": 68,
+            "width": 949,
+            "height": 21.96875,
+            "bottom": 548.875,
+            "right": 1017
+          },
+          "cellCount": 15,
+          "text": "자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-2\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-2",
+            "layoutHeight": "27.08"
+          },
+          "rect": {
+            "top": 548.875,
+            "left": 68,
+            "width": 949,
+            "height": 27.078125,
+            "bottom": 575.953125,
+            "right": 1017
+          },
+          "cellCount": 16,
+          "text": "1∼9 50% 40% 30% 45% 35% 25% 40% 30% 20% 35% 25% 15% 30% 20% 10%"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-3\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-3",
+            "layoutHeight": "27.08"
+          },
+          "rect": {
+            "top": 575.953125,
+            "left": 68,
+            "width": 949,
+            "height": 27.078125,
+            "bottom": 603.03125,
+            "right": 1017
+          },
+          "cellCount": 16,
+          "text": "14 40% 30% 20% 35% 25% 15% 30% 20% 10% 25% 15% 10% 20% 15% 10%"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-4\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-4",
+            "layoutHeight": "27.08"
+          },
+          "rect": {
+            "top": 603.03125,
+            "left": 68,
+            "width": 949,
+            "height": 27.078125,
+            "bottom": 630.109375,
+            "right": 1017
+          },
+          "cellCount": 16,
+          "text": "19 30% 20% 10% 25% 15% 10% 20% 15% 10% 20% 15% 10% 20% 15% 10%"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-5\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-5",
+            "layoutHeight": "27.08"
+          },
+          "rect": {
+            "top": 630.109375,
+            "left": 68,
+            "width": 949,
+            "height": 27.078125,
+            "bottom": 657.1875,
+            "right": 1017
+          },
+          "cellCount": 16,
+          "text": "24이상 20% 15% 10% 20% 15% 10% 20% 15% 10% 20% 15% 10% 20% 15% 10%"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-0",
+            "layoutHeight": "23.31"
+          },
+          "rect": {
+            "top": 503.609375,
+            "left": 68,
+            "width": 949,
+            "height": 23.296875,
+            "bottom": 526.90625,
+            "right": 1017
+          },
+          "cellCount": 6,
+          "text": "대출기간 (년) 담보인정비율 70% 담보인정비율 60% 실행시 담보인정비율 50% 실행시 담보인정비율 40% 실행시 담보인정비율 30% 실행시"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-1\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-1",
+            "layoutHeight": "21.97"
+          },
+          "rect": {
+            "top": 526.90625,
+            "left": 68,
+            "width": 949,
+            "height": 21.96875,
+            "bottom": 548.875,
+            "right": 1017
+          },
+          "cellCount": 15,
+          "text": "자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-2\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-2",
+            "layoutHeight": "27.08"
+          },
+          "rect": {
+            "top": 548.875,
+            "left": 68,
+            "width": 949,
+            "height": 27.078125,
+            "bottom": 575.953125,
+            "right": 1017
+          },
+          "cellCount": 16,
+          "text": "1∼9 50% 40% 30% 45% 35% 25% 40% 30% 20% 35% 25% 15% 30% 20% 10%"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-3\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-3",
+            "layoutHeight": "27.08"
+          },
+          "rect": {
+            "top": 575.953125,
+            "left": 68,
+            "width": 949,
+            "height": 27.078125,
+            "bottom": 603.03125,
+            "right": 1017
+          },
+          "cellCount": 16,
+          "text": "14 40% 30% 20% 35% 25% 15% 30% 20% 10% 25% 15% 10% 20% 15% 10%"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-4\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-4",
+            "layoutHeight": "27.08"
+          },
+          "rect": {
+            "top": 603.03125,
+            "left": 68,
+            "width": 949,
+            "height": 27.078125,
+            "bottom": 630.109375,
+            "right": 1017
+          },
+          "cellCount": 16,
+          "text": "19 30% 20% 10% 25% 15% 10% 20% 15% 10% 20% 15% 10% 20% 15% 10%"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-5\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-5",
+            "layoutHeight": "27.08"
+          },
+          "rect": {
+            "top": 630.109375,
+            "left": 68,
+            "width": 949,
+            "height": 27.078125,
+            "bottom": 657.1875,
+            "right": 1017
+          },
+          "cellCount": 16,
+          "text": "24이상 20% 15% 10% 20% 15% 10% 20% 15% 10% 20% 15% 10% 20% 15% 10%"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-0",
+            "layoutHeight": "23.31"
+          },
+          "rect": {
+            "top": 503.609375,
+            "left": 68,
+            "width": 949,
+            "height": 23.296875,
+            "bottom": 526.90625,
+            "right": 1017
+          },
+          "cellCount": 6,
+          "text": "대출기간 (년) 담보인정비율 70% 담보인정비율 60% 실행시 담보인정비율 50% 실행시 담보인정비율 40% 실행시 담보인정비율 30% 실행시"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-1\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-1",
+            "layoutHeight": "21.97"
+          },
+          "rect": {
+            "top": 526.90625,
+            "left": 68,
+            "width": 949,
+            "height": 21.96875,
+            "bottom": 548.875,
+            "right": 1017
+          },
+          "cellCount": 15,
+          "text": "자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-2\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-2",
+            "layoutHeight": "27.08"
+          },
+          "rect": {
+            "top": 548.875,
+            "left": 68,
+            "width": 949,
+            "height": 27.078125,
+            "bottom": 575.953125,
+            "right": 1017
+          },
+          "cellCount": 16,
+          "text": "1∼9 50% 40% 30% 45% 35% 25% 40% 30% 20% 35% 25% 15% 30% 20% 10%"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-3\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-3",
+            "layoutHeight": "27.08"
+          },
+          "rect": {
+            "top": 575.953125,
+            "left": 68,
+            "width": 949,
+            "height": 27.078125,
+            "bottom": 603.03125,
+            "right": 1017
+          },
+          "cellCount": 16,
+          "text": "14 40% 30% 20% 35% 25% 15% 30% 20% 10% 25% 15% 10% 20% 15% 10%"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-4\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-4",
+            "layoutHeight": "27.08"
+          },
+          "rect": {
+            "top": 603.03125,
+            "left": 68,
+            "width": 949,
+            "height": 27.078125,
+            "bottom": 630.109375,
+            "right": 1017
+          },
+          "cellCount": 16,
+          "text": "19 30% 20% 10% 25% 15% 10% 20% 15% 10% 20% 15% 10% 20% 15% 10%"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13/row-5\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13:row-5",
+            "layoutHeight": "27.08"
+          },
+          "rect": {
+            "top": 630.109375,
+            "left": 68,
+            "width": 949,
+            "height": 27.078125,
+            "bottom": 657.1875,
+            "right": 1017
+          },
+          "cellCount": 16,
+          "text": "24이상 20% 15% 10% 20% 15% 10% 20% 15% 10% 20% 15% 10% 20% 15% 10%"
+        }
+      ],
+      "text": "대출기간 (년) 담보인정비율 70% 담보인정비율 60% 실행시 담보인정비율 50% 실행시 담보인정비율 40% 실행시 담보인정비율 30% 실행시 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 자녀0 자녀1 자녀2 1∼9 50% 40% 30% 45% 35% 25% 40% 30% 20% 35% 25% 15% 30% 20% 10% 14 40% 30% 20% 35% 25% 15% 30% 20% 1",
+      "style": {
+        "height": "153.6px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-10-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-10-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-10-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 27.0625,
+        "left": 68,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 48.390625,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-11-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-11-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-11-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 54.921875,
+        "left": 68,
+        "width": 986,
+        "height": 22,
+        "bottom": 76.921875,
+        "right": 1054
+      },
+      "text": "신혼희망타운 전용 주택담보 장기대출상품(수익공유형 모기지) 안내",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 125.453125,
+        "left": 68,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 146.78125,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 146.78125,
+        "left": 68,
+        "width": 986,
+        "height": 32,
+        "bottom": 178.78125,
+        "right": 1054
+      },
+      "text": "■ 개 요 : 연 1.3% 고정금리최장 30년간 집값의 70%까지 지원하고, 주택매도 및 대출금 상환시 시세차익(주택매각금액- 분양금액)의 최소 10%~최대 50%를 기금과 정산하되, 정산시점에 장기대출자 및 유자녀",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-2",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 178.78125,
+        "left": 68,
+        "width": 986,
+        "height": 16,
+        "bottom": 194.78125,
+        "right": 1054
+      },
+      "text": "※ 신혼희망타운 전용 주택담보 장기대출상품은 「주택도시기금법」 제10조 제6항에 따른 기금운영계획에 따라 대출조건 등이 일부 변경될 수 있습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-3\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-3",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 194.78125,
+        "left": 68,
+        "width": 986,
+        "height": 16,
+        "bottom": 210.78125,
+        "right": 1054
+      },
+      "text": "■ 의무가입 대상 : 주택 공급가격이 총자산가액(362백만원)을 초과하는 주택의 입주자로 선정된 분",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-4\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-4",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 210.78125,
+        "left": 68,
+        "width": 986,
+        "height": 16,
+        "bottom": 226.78125,
+        "right": 1054
+      },
+      "text": "■ 가입한도 : 최대 4억원(주택 공급가격의 70% 이내)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-5\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-5",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 226.78125,
+        "left": 68,
+        "width": 986,
+        "height": 16,
+        "bottom": 242.78125,
+        "right": 1054
+      },
+      "text": "■ 취급은행 : 우리은행, 국민은행, 신한은행",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-6\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-6",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 242.78125,
+        "left": 68,
+        "width": 986,
+        "height": 16,
+        "bottom": 258.78125,
+        "right": 1054
+      },
+      "text": "■ 대출기간 : 1년거치 19년 또는 1년거치 29년 원리금균등분할상환 원칙, 중도상환시에는 전액상환만 허용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-7\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-7",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 258.78125,
+        "left": 68,
+        "width": 986,
+        "height": 16,
+        "bottom": 274.78125,
+        "right": 1054
+      },
+      "text": "■ 대출절차 : 분양계약 체결 → 대출신청(잔금 2~3개월 전) → 대출 심사 및 실행 → 수탁은행에서 대출 결과를 LH에 전송 → LH는 대출 실행 확인 및 입주 허용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-8\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-8",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 274.78125,
+        "left": 68,
+        "width": 986,
+        "height": 16,
+        "bottom": 290.78125,
+        "right": 1054
+      },
+      "text": "■ 문 의 : 우리은행(1599-0800), 국민은행(1599-1771), 신한은행(1599-8000)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-9\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-9",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 290.78125,
+        "left": 68,
+        "width": 986,
+        "height": 16,
+        "bottom": 306.78125,
+        "right": 1054
+      },
+      "text": "■ 상세자료 : 주택도시기금(nhuf.molit.go.kr) 홈페이지내 [개인상품-주택구입자금대출]의 “신혼희망타운전용 주택담보장기대출” 확인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-10\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-10\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-10",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 306.78125,
+        "left": 68,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 328.109375,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-11\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-11\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-11",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 328.109375,
+        "left": 68,
+        "width": 986,
+        "height": 16,
+        "bottom": 344.109375,
+        "right": 1054
+      },
+      "text": "<수익 공유 정산표 일부 발췌>",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-12\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-12\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-12",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "157",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 344.109375,
+        "left": 68,
+        "width": 986,
+        "height": 157,
+        "bottom": 501.109375,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "157px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 510.234375,
+        "left": 75,
+        "width": 74.046875,
+        "height": 16,
+        "bottom": 526.234375,
+        "right": 149.046875
+      },
+      "text": "대출기간",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-0-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 526.234375,
+        "left": 75,
+        "width": 74.046875,
+        "height": 16,
+        "bottom": 542.234375,
+        "right": 149.046875
+      },
+      "text": "(년)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 507.25,
+        "left": 164.046875,
+        "width": 157.078125,
+        "height": 16,
+        "bottom": 523.25,
+        "right": 321.125
+      },
+      "text": "담보인정비율 70%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-0-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 507.25,
+        "left": 336.125,
+        "width": 157.078125,
+        "height": 16,
+        "bottom": 523.25,
+        "right": 493.203125
+      },
+      "text": "담보인정비율 60% 실행시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-0-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 507.25,
+        "left": 508.203125,
+        "width": 157.078125,
+        "height": 16,
+        "bottom": 523.25,
+        "right": 665.28125
+      },
+      "text": "담보인정비율 50% 실행시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-0-cell-4-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 507.25,
+        "left": 680.28125,
+        "width": 157.078125,
+        "height": 16,
+        "bottom": 523.25,
+        "right": 837.359375
+      },
+      "text": "담보인정비율 40% 실행시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-5-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-0-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-0-cell-5-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 507.25,
+        "left": 852.359375,
+        "width": 157.640625,
+        "height": 16,
+        "bottom": 523.25,
+        "right": 1010
+      },
+      "text": "담보인정비율 30% 실행시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 164.046875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 206.40625
+      },
+      "text": "자녀0",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 221.40625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 263.765625
+      },
+      "text": "자녀1",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 278.765625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 321.125
+      },
+      "text": "자녀2",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 336.125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 378.484375
+      },
+      "text": "자녀0",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-4-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 393.484375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 435.84375
+      },
+      "text": "자녀1",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-5-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-5-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 450.84375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 493.203125
+      },
+      "text": "자녀2",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-6-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-6-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 508.203125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 550.5625
+      },
+      "text": "자녀0",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-7-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-7-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-7-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 565.5625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 607.921875
+      },
+      "text": "자녀1",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-8-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-8-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-8-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 622.921875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 665.28125
+      },
+      "text": "자녀2",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-9-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-9-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-9-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 680.28125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 722.640625
+      },
+      "text": "자녀0",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-10-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-10-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-10-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 737.640625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 780
+      },
+      "text": "자녀1",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-11-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-11-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-11-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 795,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 837.359375
+      },
+      "text": "자녀2",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-12-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-12-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-12-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 852.359375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 894.71875
+      },
+      "text": "자녀0",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-13-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-13-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-13-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 909.71875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 952.078125
+      },
+      "text": "자녀1",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-14-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-1-cell-14-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-1-cell-14-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 529.890625,
+        "left": 967.078125,
+        "width": 42.921875,
+        "height": 16,
+        "bottom": 545.890625,
+        "right": 1010
+      },
+      "text": "자녀2",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 75,
+        "width": 74.046875,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 149.046875
+      },
+      "text": "1∼9",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 164.046875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 206.40625
+      },
+      "text": "50%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 221.40625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 263.765625
+      },
+      "text": "40%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 278.765625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 321.125
+      },
+      "text": "30%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-4-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 336.125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 378.484375
+      },
+      "text": "45%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-5-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-5-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 393.484375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 435.84375
+      },
+      "text": "35%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-6-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-6-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 450.84375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 493.203125
+      },
+      "text": "25%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-7-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-7-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-7-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 508.203125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 550.5625
+      },
+      "text": "40%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-8-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-8-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-8-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 565.5625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 607.921875
+      },
+      "text": "30%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-9-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-9-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-9-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 622.921875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 665.28125
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-10-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-10-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-10-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 680.28125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 722.640625
+      },
+      "text": "35%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-11-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-11-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-11-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 737.640625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 780
+      },
+      "text": "25%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-12-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-12-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-12-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 795,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 837.359375
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-13-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-13-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-13-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 852.359375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 894.71875
+      },
+      "text": "30%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-14-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-14-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-14-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 909.71875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 952.078125
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-15-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-2-cell-15-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-2-cell-15-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.40625,
+        "left": 967.078125,
+        "width": 42.921875,
+        "height": 16,
+        "bottom": 570.40625,
+        "right": 1010
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 75,
+        "width": 74.046875,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 149.046875
+      },
+      "text": "14",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 164.046875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 206.40625
+      },
+      "text": "40%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 221.40625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 263.765625
+      },
+      "text": "30%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 278.765625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 321.125
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-4-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 336.125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 378.484375
+      },
+      "text": "35%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-5-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-5-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 393.484375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 435.84375
+      },
+      "text": "25%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-6-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-6-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 450.84375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 493.203125
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-7-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-7-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-7-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 508.203125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 550.5625
+      },
+      "text": "30%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-8-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-8-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-8-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 565.5625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 607.921875
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-9-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-9-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-9-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 622.921875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 665.28125
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 63,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-10-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-10-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-10-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 680.28125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 722.640625
+      },
+      "text": "25%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 64,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-11-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-11-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-11-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 737.640625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 780
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 65,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-12-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-12-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-12-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 795,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 837.359375
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 66,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-13-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-13-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-13-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 852.359375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 894.71875
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 67,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-14-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-14-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-14-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 909.71875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 952.078125
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 68,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-15-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-3-cell-15-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-3-cell-15-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 581.484375,
+        "left": 967.078125,
+        "width": 42.921875,
+        "height": 16,
+        "bottom": 597.484375,
+        "right": 1010
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 69,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 75,
+        "width": 74.046875,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 149.046875
+      },
+      "text": "19",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 70,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 164.046875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 206.40625
+      },
+      "text": "30%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 71,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 221.40625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 263.765625
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 72,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 278.765625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 321.125
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 73,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-4-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 336.125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 378.484375
+      },
+      "text": "25%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 74,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-5-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-5-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 393.484375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 435.84375
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 75,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-6-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-6-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 450.84375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 493.203125
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 76,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-7-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-7-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-7-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 508.203125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 550.5625
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 77,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-8-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-8-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-8-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 565.5625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 607.921875
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 78,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-9-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-9-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-9-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 622.921875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 665.28125
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 79,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-10-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-10-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-10-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 680.28125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 722.640625
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 80,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-11-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-11-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-11-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 737.640625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 780
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 81,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-12-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-12-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-12-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 795,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 837.359375
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 82,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-13-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-13-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-13-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 852.359375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 894.71875
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 83,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-14-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-14-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-14-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 909.71875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 952.078125
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 84,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-15-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-4-cell-15-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-4-cell-15-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 608.5625,
+        "left": 967.078125,
+        "width": 42.921875,
+        "height": 16,
+        "bottom": 624.5625,
+        "right": 1010
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 85,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 75,
+        "width": 74.046875,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 149.046875
+      },
+      "text": "24이상",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 86,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 164.046875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 206.40625
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 87,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 221.40625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 263.765625
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 88,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 278.765625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 321.125
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 89,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-4-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 336.125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 378.484375
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 90,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-5-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-5-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 393.484375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 435.84375
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 91,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-6-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-6-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 450.84375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 493.203125
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 92,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-7-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-7-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-7-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 508.203125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 550.5625
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 93,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-8-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-8-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-8-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 565.5625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 607.921875
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 94,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-9-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-9-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-9-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 622.921875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 665.28125
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 95,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-10-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-10-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-10-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 680.28125,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 722.640625
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 96,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-11-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-11-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-11-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 737.640625,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 780
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 97,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-12-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-12-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-12-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 795,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 837.359375
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 98,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-13-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-13-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-13-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 852.359375,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 894.71875
+      },
+      "text": "20%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 99,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-14-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-14-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-14-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 909.71875,
+        "width": 42.359375,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 952.078125
+      },
+      "text": "15%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 100,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-15-block-0\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-13-row-5-cell-15-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-13-row-5-cell-15-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635.640625,
+        "left": 967.078125,
+        "width": 42.921875,
+        "height": 16,
+        "bottom": 651.640625,
+        "right": 1010
+      },
+      "text": "10%",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 101,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-14\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-14\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-14",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 658.6875,
+        "left": 68,
+        "width": 986,
+        "height": 32,
+        "bottom": 690.6875,
+        "right": 1054
+      },
+      "text": "* 담보인정비율은 70%, 60%, 50%, 40%, 30% 중에서 선택하며, 선택한 담보인정비율 적용 시 가입금액이 4억원을 초과하는 경우 가입한도(최대 4억원)를 기준으로 LTV 비율 및 수익 공유비율이 재적용됩",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 102,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-15\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-15\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-15",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 690.6875,
+        "left": 68,
+        "width": 986,
+        "height": 16,
+        "bottom": 706.6875,
+        "right": 1054
+      },
+      "text": "* 정산비율이 30%인 경우, 매각차익(매도가격-분양가격)의 30%를 기금이 회수",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 103,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-16\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-16\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-16",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 706.6875,
+        "left": 68,
+        "width": 986,
+        "height": 32,
+        "bottom": 738.6875,
+        "right": 1054
+      },
+      "text": "* 정산시 처분손익(또는 평가손익)은 소유권 이전과 관련된 제반 비용(부동산 중개료, 감정평가 수수료, 양도소득세, 취득세 등), 주택수리비용, 차주가 납부한 기금이자 등은 감안하지 않음. 다만, 만기상환시 감정평가",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 104,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-17\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-17\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-17",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 738.6875,
+        "left": 68,
+        "width": 986,
+        "height": 16,
+        "bottom": 754.6875,
+        "right": 1054
+      },
+      "text": "※ 금회 공급되는 세대는 공급가격이 총자산가액(362백만원)을 초과하는 주택으로, 신혼희망타운 전용 주택담보 장기대출상품 의무 가입 대상입니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 105,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-12-cell-0-block-18\",\"xmlPath\":\"body-block-1-row-12-cell-0-block-18\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-12-cell-0-block-18",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 754.6875,
+        "left": 68,
+        "width": 986,
+        "height": 16,
+        "bottom": 770.6875,
+        "right": 1054
+      },
+      "text": "※ 의무 가입 대상 세대는 신혼희망타운 전용 주택담보 장기대출상품 의무 가입해야 하므로 주택도시기금 융자액(55,000천원)을 받을 수 없습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 106,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-13-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-13-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-13-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 728.359375,
+        "left": 68,
+        "width": 986,
+        "height": 22,
+        "bottom": 750.359375,
+        "right": 1054
+      },
+      "text": "청약신청 시 유의사항",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 107,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-14-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-14-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-14-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "51",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 781.53125,
+        "left": 68,
+        "width": 986,
+        "height": 51,
+        "bottom": 832.53125,
+        "right": 1054
+      },
+      "text": "■ 현장접수 시 우려되는 혼잡을 방지하고 접수자의 편의를 도모하기 위하여 인터넷 청약을 원칙으로 하오니, 인터넷 청약을 위하여 신청접수일전에 인증서(공동인증서, 네이버 인증서, 금융인증서, 토스인증서, KB국민인증서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "51px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 108,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-14-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-14-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-14-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "51",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 835.53125,
+        "left": 68,
+        "width": 986,
+        "height": 51,
+        "bottom": 886.53125,
+        "right": 1054
+      },
+      "text": "■ 신청접수 시 신청자격을 확인(검증)하지 않고 신청자의 입력(기재)사항만으로 당첨자를 결정하므로, 본 공고문의 신청자격 (무주택세대구성원 여부, 주택소유 여부 등), 유의사항 등을 사전에 정확하게 확인하시기 바라며",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "51px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 109,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-14-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-14-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-14-cell-0-block-2",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 889.53125,
+        "left": 68,
+        "width": 986,
+        "height": 35,
+        "bottom": 924.53125,
+        "right": 1054
+      },
+      "text": "■ 신청자의 당첨자 확정 후 무주택여부 등 조회 확인을 위해 가입은행, 주택청약업무수행기관 등 해당 기관에 개인정보 제공이 필수적이므로 청약자는 청약 시 ‘개인정보 제공 및 활용’과 ‘정보의 제3자 제공’에 동의해야",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 110,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-15-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-15-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-15-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 948.84375,
+        "left": 68,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 970.171875,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 111,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-16-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-16-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-16-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "36",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 984.578125,
+        "left": 68,
+        "width": 84.84375,
+        "height": 36,
+        "bottom": 1020.578125,
+        "right": 152.84375
+      },
+      "text": "Ⅰ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "36px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 112,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-16-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-16-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-16-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 991.921875,
+        "left": 167.84375,
+        "width": 184.6875,
+        "height": 21.328125,
+        "bottom": 1013.25,
+        "right": 352.53125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 113,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-16-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-16-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-16-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "29",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 988.078125,
+        "left": 367.53125,
+        "width": 686.46875,
+        "height": 29,
+        "bottom": 1017.078125,
+        "right": 1054
+      },
+      "text": "공급규모․공급대상 및 공급가격 등",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "29px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 114,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-17-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-17-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-17-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1037.390625,
+        "left": 68,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 1058.71875,
+        "right": 1054
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 115,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"header-block-1\",\"xmlPath\":\"header-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:header-block-1",
+        "layoutSource": "hwpx-header-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 91,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 93,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 72px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 116,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"footer-block-0\",\"xmlPath\":\"footer-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:footer-block-0",
+        "layoutSource": "hwpx-footer-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 1564,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 1566,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1545px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 117,
+      "dataset": {
+        "layoutSource": "hwpx-footer-page-number",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "layoutHeight": "18"
+      },
+      "rect": {
+        "top": 1540,
+        "left": 60,
+        "width": 1006,
+        "height": 19,
+        "bottom": 1559,
+        "right": 1066
+      },
+      "text": "- 3 -",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1521px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "18px",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 118
+}

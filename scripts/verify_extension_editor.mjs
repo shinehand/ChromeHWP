@@ -200,14 +200,81 @@ function runEditorProbe(url) {
           const rect = pageEl.getBoundingClientRect();
           const body = pageEl.querySelector(".hwp-page-body");
           const bodyRect = body?.getBoundingClientRect();
-          const overflowingBlocks = body && bodyRect
-            ? Array.from(body.children).filter((child) => {
+          const overflowingBlockEntries = body && bodyRect
+            ? Array.from(body.children).map((child, childIndex) => {
                 const childRect = child.getBoundingClientRect();
-                return childRect.bottom > bodyRect.bottom + 2
-                  || childRect.right > bodyRect.right + 2
-                  || childRect.left < bodyRect.left - 2;
-              }).length
-            : 0;
+                const overflow = {
+                  bottom: Math.round(childRect.bottom - bodyRect.bottom),
+                  right: Math.round(childRect.right - bodyRect.right),
+                  left: Math.round(bodyRect.left - childRect.left)
+                };
+                const overflows = overflow.bottom > 2 || overflow.right > 2 || overflow.left > 2;
+                if (!overflows) return null;
+                const sourceRef = (() => {
+                  try {
+                    const raw = child.getAttribute("data-source-ref");
+                    return raw ? JSON.parse(raw) : null;
+                  } catch {
+                    return null;
+                  }
+                })();
+                return {
+                  childIndex,
+                  tagName: child.tagName.toLowerCase(),
+                  className: String(child.className || ""),
+                  layoutBoxId: child.getAttribute("data-layout-box-id") || "",
+                  layoutPosition: child.getAttribute("data-layout-position") || "",
+                  layoutSource: child.getAttribute("data-layout-source") || "",
+                  inlineStyle: child.getAttribute("style") || "",
+                  computedStyle: (() => {
+                    const style = window.getComputedStyle(child);
+                    return {
+                      position: style.position,
+                      left: style.left,
+                      width: style.width,
+                      maxWidth: style.maxWidth,
+                      overflow: style.overflow,
+                      whiteSpace: style.whiteSpace
+                    };
+                  })(),
+                  firstLineSegment: (() => {
+                    const line = child.querySelector(".hwp-line-segment");
+                    if (!line) return null;
+                    const lineRect = line.getBoundingClientRect();
+                    const style = window.getComputedStyle(line);
+                    return {
+                      rect: {
+                        left: Math.round(lineRect.left - rect.left),
+                        top: Math.round(lineRect.top - rect.top),
+                        width: Math.round(lineRect.width),
+                        height: Math.round(lineRect.height),
+                        right: Math.round(lineRect.right - rect.left),
+                        bottom: Math.round(lineRect.bottom - rect.top)
+                      },
+                      inlineStyle: line.getAttribute("style") || "",
+                      computedStyle: {
+                        width: style.width,
+                        maxWidth: style.maxWidth,
+                        overflow: style.overflow,
+                        whiteSpace: style.whiteSpace
+                      }
+                    };
+                  })(),
+                  sourceRef,
+                  rect: {
+                    left: Math.round(childRect.left - rect.left),
+                    top: Math.round(childRect.top - rect.top),
+                    width: Math.round(childRect.width),
+                    height: Math.round(childRect.height),
+                    right: Math.round(childRect.right - rect.left),
+                    bottom: Math.round(childRect.bottom - rect.top)
+                  },
+                  overflow,
+                  text: (child.innerText || "").replace(/\\s+/g, " ").trim().slice(0, 160)
+                };
+              }).filter(Boolean)
+            : [];
+          const overflowingBlocks = overflowingBlockEntries.length;
           const topLevelOverlaps = body ? countTopLevelOverlaps(body.children) : { content: 0, decoration: 0 };
           return {
             index,
@@ -218,6 +285,7 @@ function runEditorProbe(url) {
             images: pageEl.querySelectorAll(".hwp-image img").length,
             missingImages: pageEl.querySelectorAll(".hwp-image-missing").length,
             overflowingBlocks,
+            overflowingBlockSamples: overflowingBlockEntries.slice(0, 12),
             topLevelOverlaps: topLevelOverlaps.content,
             decorationTopLevelOverlaps: topLevelOverlaps.decoration,
             textLength: (pageEl.innerText || "").trim().length,

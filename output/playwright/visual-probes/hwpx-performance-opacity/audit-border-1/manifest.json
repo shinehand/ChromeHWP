@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-06T22:09:28.849Z",
+  "auditId": "hwpx-performance-border-1",
+  "source": "Probe targeted HWPX performance table border alpha",
+  "outputDirectory": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/audit-border-1",
+  "documents": [
+    {
+      "id": "incheon-p16-border-1",
+      "filename": "incheon-2a-p16-border-1.hwpx",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "state": {
+        "pages": 1
+      },
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-016.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/p16-border-1.png",
+          "targetBand": "first"
+        }
+      ]
+    }
+  ]
+}

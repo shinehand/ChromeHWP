@@ -1,0 +1,2703 @@
+{
+  "filename": "gyeolseokgye.hwp",
+  "pages": 1,
+  "page": {
+    "index": 1,
+    "width": 794,
+    "height": 1123
+  },
+  "bodyRect": {
+    "top": 97,
+    "left": 633,
+    "width": 794,
+    "height": 1123,
+    "bottom": 1220,
+    "right": 1427
+  },
+  "text": "결 석 계 결 재 담 임 교 무 교 감 전결 인 적 사 항 학년 반 학년 반 이 름 결 석 일 수 2026년 월 일( 요일) ~ 2026년 월 일( 요일) ( )일간 결 석 종 류 결석 구분 내 용 해당 사항에 √ 표시 제출서류 출석인정 결석 - 경조사 결석계, 경조사관련 증빙서류 - 법정 감염병 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류) - 감염병 심각・경계 단계 시 고위험군 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류) 생리통(월 1일) 결석계 질병으로 인한 결석 법정 감염병이 아닌 질병 - 2일 이내 질병 결석 결석계, 학부모 의견서 또는 처방전, 약국 봉투 등 (질병명을 확인할 수 있는 서류) - 3일 이상 질병 결석 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류) - 미세먼지・오존 관련 기저질환 감염병 관심・주의 단계 시 고위험군 학부모 의견서, 의사 진단서 ※ 해당 학기별 최초 1회만 제출 위와 같이 사유로 결석하여 결석계를 제출합니다. 2026. . . 학부모 (인) 서울중화초등학교장 귀하 학부모 의견서 결석 사유",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "951"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 80,
+        "left": 57,
+        "width": 678,
+        "height": 951,
+        "bottom": 1031,
+        "right": 735
+      },
+      "tableRect": {
+        "top": 80,
+        "left": 57,
+        "width": 678,
+        "height": 951,
+        "bottom": 1031,
+        "right": 735
+      },
+      "rowCount": 7,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-0"
+          },
+          "rect": {
+            "top": 80.5,
+            "left": 57.5,
+            "width": 677,
+            "height": 92.578125,
+            "bottom": 173.078125,
+            "right": 734.5
+          },
+          "cellCount": 1,
+          "text": "결 석 계 결 재 담 임 교 무 교 감 전결"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-1"
+          },
+          "rect": {
+            "top": 173.078125,
+            "left": 57.5,
+            "width": 677,
+            "height": 65.515625,
+            "bottom": 238.59375,
+            "right": 734.5
+          },
+          "cellCount": 5,
+          "text": "인 적 사 항 학년 반 학년 반 이 름"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-2"
+          },
+          "rect": {
+            "top": 238.59375,
+            "left": 57.5,
+            "width": 677,
+            "height": 65.515625,
+            "bottom": 304.109375,
+            "right": 734.5
+          },
+          "cellCount": 2,
+          "text": "결 석 일 수 2026년 월 일( 요일) ~ 2026년 월 일( 요일) ( )일간"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-3"
+          },
+          "rect": {
+            "top": 304.109375,
+            "left": 57.5,
+            "width": 677,
+            "height": 76.90625,
+            "bottom": 381.015625,
+            "right": 734.5
+          },
+          "cellCount": 2,
+          "text": "결 석 종 류 결석 구분 내 용 해당 사항에 √ 표시 제출서류 출석인정 결석 - 경조사 결석계, 경조사관련 증빙서류 - 법정 감염병 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류) - 감염병 심각・경계 단계 시 고위험군 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-4"
+          },
+          "rect": {
+            "top": 381.015625,
+            "left": 57.5,
+            "width": 677,
+            "height": 306.21875,
+            "bottom": 687.234375,
+            "right": 734.5
+          },
+          "cellCount": 1,
+          "text": "위와 같이 사유로 결석하여 결석계를 제출합니다. 2026. . . 학부모 (인) 서울중화초등학교장 귀하"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-5"
+          },
+          "rect": {
+            "top": 687.234375,
+            "left": 57.5,
+            "width": 677,
+            "height": 85.453125,
+            "bottom": 772.6875,
+            "right": 734.5
+          },
+          "cellCount": 1,
+          "text": "학부모 의견서"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-6"
+          },
+          "rect": {
+            "top": 772.6875,
+            "left": 57.5,
+            "width": 677,
+            "height": 257.8125,
+            "bottom": 1030.5,
+            "right": 734.5
+          },
+          "cellCount": 2,
+          "text": "결석 사유"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-0"
+          },
+          "rect": {
+            "top": 80.5,
+            "left": 57.5,
+            "width": 677,
+            "height": 92.578125,
+            "bottom": 173.078125,
+            "right": 734.5
+          },
+          "cellCount": 1,
+          "text": "결 석 계 결 재 담 임 교 무 교 감 전결"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-1"
+          },
+          "rect": {
+            "top": 173.078125,
+            "left": 57.5,
+            "width": 677,
+            "height": 65.515625,
+            "bottom": 238.59375,
+            "right": 734.5
+          },
+          "cellCount": 5,
+          "text": "인 적 사 항 학년 반 학년 반 이 름"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-2"
+          },
+          "rect": {
+            "top": 238.59375,
+            "left": 57.5,
+            "width": 677,
+            "height": 65.515625,
+            "bottom": 304.109375,
+            "right": 734.5
+          },
+          "cellCount": 2,
+          "text": "결 석 일 수 2026년 월 일( 요일) ~ 2026년 월 일( 요일) ( )일간"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-3"
+          },
+          "rect": {
+            "top": 304.109375,
+            "left": 57.5,
+            "width": 677,
+            "height": 76.90625,
+            "bottom": 381.015625,
+            "right": 734.5
+          },
+          "cellCount": 2,
+          "text": "결 석 종 류 결석 구분 내 용 해당 사항에 √ 표시 제출서류 출석인정 결석 - 경조사 결석계, 경조사관련 증빙서류 - 법정 감염병 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류) - 감염병 심각・경계 단계 시 고위험군 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-4"
+          },
+          "rect": {
+            "top": 381.015625,
+            "left": 57.5,
+            "width": 677,
+            "height": 306.21875,
+            "bottom": 687.234375,
+            "right": 734.5
+          },
+          "cellCount": 1,
+          "text": "위와 같이 사유로 결석하여 결석계를 제출합니다. 2026. . . 학부모 (인) 서울중화초등학교장 귀하"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-5"
+          },
+          "rect": {
+            "top": 687.234375,
+            "left": 57.5,
+            "width": 677,
+            "height": 85.453125,
+            "bottom": 772.6875,
+            "right": 734.5
+          },
+          "cellCount": 1,
+          "text": "학부모 의견서"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-6"
+          },
+          "rect": {
+            "top": 772.6875,
+            "left": 57.5,
+            "width": 677,
+            "height": 257.8125,
+            "bottom": 1030.5,
+            "right": 734.5
+          },
+          "cellCount": 2,
+          "text": "결석 사유"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-0"
+          },
+          "rect": {
+            "top": 80.5,
+            "left": 57.5,
+            "width": 677,
+            "height": 92.578125,
+            "bottom": 173.078125,
+            "right": 734.5
+          },
+          "cellCount": 1,
+          "text": "결 석 계 결 재 담 임 교 무 교 감 전결"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-1"
+          },
+          "rect": {
+            "top": 173.078125,
+            "left": 57.5,
+            "width": 677,
+            "height": 65.515625,
+            "bottom": 238.59375,
+            "right": 734.5
+          },
+          "cellCount": 5,
+          "text": "인 적 사 항 학년 반 학년 반 이 름"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-2"
+          },
+          "rect": {
+            "top": 238.59375,
+            "left": 57.5,
+            "width": 677,
+            "height": 65.515625,
+            "bottom": 304.109375,
+            "right": 734.5
+          },
+          "cellCount": 2,
+          "text": "결 석 일 수 2026년 월 일( 요일) ~ 2026년 월 일( 요일) ( )일간"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-3"
+          },
+          "rect": {
+            "top": 304.109375,
+            "left": 57.5,
+            "width": 677,
+            "height": 76.90625,
+            "bottom": 381.015625,
+            "right": 734.5
+          },
+          "cellCount": 2,
+          "text": "결 석 종 류 결석 구분 내 용 해당 사항에 √ 표시 제출서류 출석인정 결석 - 경조사 결석계, 경조사관련 증빙서류 - 법정 감염병 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류) - 감염병 심각・경계 단계 시 고위험군 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-4"
+          },
+          "rect": {
+            "top": 381.015625,
+            "left": 57.5,
+            "width": 677,
+            "height": 306.21875,
+            "bottom": 687.234375,
+            "right": 734.5
+          },
+          "cellCount": 1,
+          "text": "위와 같이 사유로 결석하여 결석계를 제출합니다. 2026. . . 학부모 (인) 서울중화초등학교장 귀하"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-5"
+          },
+          "rect": {
+            "top": 687.234375,
+            "left": 57.5,
+            "width": 677,
+            "height": 85.453125,
+            "bottom": 772.6875,
+            "right": 734.5
+          },
+          "cellCount": 1,
+          "text": "학부모 의견서"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-6"
+          },
+          "rect": {
+            "top": 772.6875,
+            "left": 57.5,
+            "width": 677,
+            "height": 257.8125,
+            "bottom": 1030.5,
+            "right": 734.5
+          },
+          "cellCount": 2,
+          "text": "결석 사유"
+        }
+      ],
+      "text": "결 석 계 결 재 담 임 교 무 교 감 전결 인 적 사 항 학년 반 학년 반 이 름 결 석 일 수 2026년 월 일( 요일) ~ 2026년 월 일( 요일) ( )일간 결 석 종 류 결석 구분 내 용 해당 사항에 √ 표시 제출서류 출석인정 결석 - 경조사 결석계, 경조사관련 증빙서류 - 법정 감염병 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류) - 감염병 심각・경계 단계 시 고위험군 결석계, 확인서 또는 진단서 ",
+      "style": {
+        "height": "951px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1",
+        "nestingLevel": "1",
+        "layoutPosition": "nested-absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "70"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1",
+        "nestingLevel": "1",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 80.28125,
+        "left": 493,
+        "width": 227,
+        "height": 74,
+        "bottom": 154.28125,
+        "right": 720
+      },
+      "tableRect": {
+        "top": 80.28125,
+        "left": 493,
+        "width": 227,
+        "height": 74,
+        "bottom": 154.28125,
+        "right": 720
+      },
+      "rowCount": 2,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1:row-0"
+          },
+          "rect": {
+            "top": 80.78125,
+            "left": 493.5,
+            "width": 226,
+            "height": 23,
+            "bottom": 103.78125,
+            "right": 719.5
+          },
+          "cellCount": 4,
+          "text": "결 재 담 임 교 무 교 감"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1:row-1"
+          },
+          "rect": {
+            "top": 103.78125,
+            "left": 493.5,
+            "width": 226,
+            "height": 50,
+            "bottom": 153.78125,
+            "right": 719.5
+          },
+          "cellCount": 3,
+          "text": "전결"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1:row-0"
+          },
+          "rect": {
+            "top": 80.78125,
+            "left": 493.5,
+            "width": 226,
+            "height": 23,
+            "bottom": 103.78125,
+            "right": 719.5
+          },
+          "cellCount": 4,
+          "text": "결 재 담 임 교 무 교 감"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1:row-1"
+          },
+          "rect": {
+            "top": 103.78125,
+            "left": 493.5,
+            "width": 226,
+            "height": 50,
+            "bottom": 153.78125,
+            "right": 719.5
+          },
+          "cellCount": 3,
+          "text": "전결"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1:row-0"
+          },
+          "rect": {
+            "top": 80.78125,
+            "left": 493.5,
+            "width": 226,
+            "height": 23,
+            "bottom": 103.78125,
+            "right": 719.5
+          },
+          "cellCount": 4,
+          "text": "결 재 담 임 교 무 교 감"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1:row-1"
+          },
+          "rect": {
+            "top": 103.78125,
+            "left": 493.5,
+            "width": 226,
+            "height": 50,
+            "bottom": 153.78125,
+            "right": 719.5
+          },
+          "cellCount": 3,
+          "text": "전결"
+        }
+      ],
+      "text": "결 재 담 임 교 무 교 감 전결",
+      "style": {
+        "height": "70px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 2,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0",
+        "nestingLevel": "1",
+        "layoutPosition": "nested-absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "301"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0",
+        "nestingLevel": "1",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 378.5625,
+        "left": 162.984375,
+        "width": 595,
+        "height": 301,
+        "bottom": 679.5625,
+        "right": 757.984375
+      },
+      "tableRect": {
+        "top": 378.5625,
+        "left": 162.984375,
+        "width": 595,
+        "height": 301,
+        "bottom": 679.5625,
+        "right": 757.984375
+      },
+      "rowCount": 8,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-0"
+          },
+          "rect": {
+            "top": 379.0625,
+            "left": 163.484375,
+            "width": 594,
+            "height": 34.484375,
+            "bottom": 413.546875,
+            "right": 757.484375
+          },
+          "cellCount": 4,
+          "text": "결석 구분 내 용 해당 사항에 √ 표시 제출서류"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-1"
+          },
+          "rect": {
+            "top": 413.546875,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 446.984375,
+            "right": 757.484375
+          },
+          "cellCount": 4,
+          "text": "출석인정 결석 - 경조사 결석계, 경조사관련 증빙서류"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-2"
+          },
+          "rect": {
+            "top": 446.984375,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 480.421875,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "- 법정 감염병 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류)"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-3"
+          },
+          "rect": {
+            "top": 480.421875,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 513.859375,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "- 감염병 심각・경계 단계 시 고위험군 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류)"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-4"
+          },
+          "rect": {
+            "top": 513.859375,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 547.296875,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "생리통(월 1일) 결석계"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-5"
+          },
+          "rect": {
+            "top": 547.296875,
+            "left": 163.484375,
+            "width": 594,
+            "height": 44.9375,
+            "bottom": 592.234375,
+            "right": 757.484375
+          },
+          "cellCount": 5,
+          "text": "질병으로 인한 결석 법정 감염병이 아닌 질병 - 2일 이내 질병 결석 결석계, 학부모 의견서 또는 처방전, 약국 봉투 등 (질병명을 확인할 수 있는 서류)"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-6"
+          },
+          "rect": {
+            "top": 592.234375,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 625.671875,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "- 3일 이상 질병 결석 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류)"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-7"
+          },
+          "rect": {
+            "top": 625.671875,
+            "left": 163.484375,
+            "width": 594,
+            "height": 53.390625,
+            "bottom": 679.0625,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "- 미세먼지・오존 관련 기저질환 감염병 관심・주의 단계 시 고위험군 학부모 의견서, 의사 진단서 ※ 해당 학기별 최초 1회만 제출"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-0"
+          },
+          "rect": {
+            "top": 379.0625,
+            "left": 163.484375,
+            "width": 594,
+            "height": 34.484375,
+            "bottom": 413.546875,
+            "right": 757.484375
+          },
+          "cellCount": 4,
+          "text": "결석 구분 내 용 해당 사항에 √ 표시 제출서류"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-1"
+          },
+          "rect": {
+            "top": 413.546875,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 446.984375,
+            "right": 757.484375
+          },
+          "cellCount": 4,
+          "text": "출석인정 결석 - 경조사 결석계, 경조사관련 증빙서류"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-2"
+          },
+          "rect": {
+            "top": 446.984375,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 480.421875,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "- 법정 감염병 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류)"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-3"
+          },
+          "rect": {
+            "top": 480.421875,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 513.859375,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "- 감염병 심각・경계 단계 시 고위험군 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류)"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-4"
+          },
+          "rect": {
+            "top": 513.859375,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 547.296875,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "생리통(월 1일) 결석계"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-5"
+          },
+          "rect": {
+            "top": 547.296875,
+            "left": 163.484375,
+            "width": 594,
+            "height": 44.9375,
+            "bottom": 592.234375,
+            "right": 757.484375
+          },
+          "cellCount": 5,
+          "text": "질병으로 인한 결석 법정 감염병이 아닌 질병 - 2일 이내 질병 결석 결석계, 학부모 의견서 또는 처방전, 약국 봉투 등 (질병명을 확인할 수 있는 서류)"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-6"
+          },
+          "rect": {
+            "top": 592.234375,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 625.671875,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "- 3일 이상 질병 결석 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류)"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-7"
+          },
+          "rect": {
+            "top": 625.671875,
+            "left": 163.484375,
+            "width": 594,
+            "height": 53.390625,
+            "bottom": 679.0625,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "- 미세먼지・오존 관련 기저질환 감염병 관심・주의 단계 시 고위험군 학부모 의견서, 의사 진단서 ※ 해당 학기별 최초 1회만 제출"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-0"
+          },
+          "rect": {
+            "top": 379.0625,
+            "left": 163.484375,
+            "width": 594,
+            "height": 34.484375,
+            "bottom": 413.546875,
+            "right": 757.484375
+          },
+          "cellCount": 4,
+          "text": "결석 구분 내 용 해당 사항에 √ 표시 제출서류"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-1"
+          },
+          "rect": {
+            "top": 413.546875,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 446.984375,
+            "right": 757.484375
+          },
+          "cellCount": 4,
+          "text": "출석인정 결석 - 경조사 결석계, 경조사관련 증빙서류"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-2"
+          },
+          "rect": {
+            "top": 446.984375,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 480.421875,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "- 법정 감염병 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류)"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-3"
+          },
+          "rect": {
+            "top": 480.421875,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 513.859375,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "- 감염병 심각・경계 단계 시 고위험군 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류)"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-4"
+          },
+          "rect": {
+            "top": 513.859375,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 547.296875,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "생리통(월 1일) 결석계"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-5"
+          },
+          "rect": {
+            "top": 547.296875,
+            "left": 163.484375,
+            "width": 594,
+            "height": 44.9375,
+            "bottom": 592.234375,
+            "right": 757.484375
+          },
+          "cellCount": 5,
+          "text": "질병으로 인한 결석 법정 감염병이 아닌 질병 - 2일 이내 질병 결석 결석계, 학부모 의견서 또는 처방전, 약국 봉투 등 (질병명을 확인할 수 있는 서류)"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-6"
+          },
+          "rect": {
+            "top": 592.234375,
+            "left": 163.484375,
+            "width": 594,
+            "height": 33.4375,
+            "bottom": 625.671875,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "- 3일 이상 질병 결석 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류)"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0:row-7"
+          },
+          "rect": {
+            "top": 625.671875,
+            "left": 163.484375,
+            "width": 594,
+            "height": 53.390625,
+            "bottom": 679.0625,
+            "right": 757.484375
+          },
+          "cellCount": 3,
+          "text": "- 미세먼지・오존 관련 기저질환 감염병 관심・주의 단계 시 고위험군 학부모 의견서, 의사 진단서 ※ 해당 학기별 최초 1회만 제출"
+        }
+      ],
+      "text": "결석 구분 내 용 해당 사항에 √ 표시 제출서류 출석인정 결석 - 경조사 결석계, 경조사관련 증빙서류 - 법정 감염병 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류) - 감염병 심각・경계 단계 시 고위험군 결석계, 확인서 또는 진단서 (질병명을 확인할 수 있는 서류) 생리통(월 1일) 결석계 질병으로 인한 결석 법정 감염병이 아닌 질병 - 2일 이내 질병 결석 결석계, 학부모 의견서 또는 처방전, 약국 봉투 등 ",
+      "style": {
+        "height": "301px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "48",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 98.28125,
+        "left": 60,
+        "width": 672,
+        "height": 57,
+        "bottom": 155.28125,
+        "right": 732
+      },
+      "text": "결 석 계",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "48px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 99.28125,
+        "left": 496,
+        "width": 29,
+        "height": 18,
+        "bottom": 117.28125,
+        "right": 525
+      },
+      "text": "결",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1-row-0-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 117.28125,
+        "left": 496,
+        "width": 29,
+        "height": 18,
+        "bottom": 135.28125,
+        "right": 525
+      },
+      "text": "재",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1-row-0-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 83.28125,
+        "left": 530,
+        "width": 59,
+        "height": 18,
+        "bottom": 101.28125,
+        "right": 589
+      },
+      "text": "담 임",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1-row-0-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 83.28125,
+        "left": 594,
+        "width": 59,
+        "height": 18,
+        "bottom": 101.28125,
+        "right": 653
+      },
+      "text": "교 무",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1-row-0-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1-row-0-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 83.28125,
+        "left": 658,
+        "width": 59,
+        "height": 18,
+        "bottom": 101.28125,
+        "right": 717
+      },
+      "text": "교 감",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 106.28125,
+        "left": 530,
+        "width": 59,
+        "height": 17.578125,
+        "bottom": 123.859375,
+        "right": 589
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 106.28125,
+        "left": 594,
+        "width": 59,
+        "height": 17.578125,
+        "bottom": 123.859375,
+        "right": 653
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-0-cell-0-block-1-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-0-cell-0-block-1-row-1-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 106.28125,
+        "left": 658,
+        "width": 59,
+        "height": 13,
+        "bottom": 119.28125,
+        "right": 717
+      },
+      "text": "전결",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 188.828125,
+        "left": 60,
+        "width": 65.984375,
+        "height": 17,
+        "bottom": 205.828125,
+        "right": 125.984375
+      },
+      "text": "인 적",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-1-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-1-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 205.828125,
+        "left": 60,
+        "width": 65.984375,
+        "height": 17,
+        "bottom": 222.828125,
+        "right": 125.984375
+      },
+      "text": "사 항",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-1-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 195.828125,
+        "left": 130.984375,
+        "width": 60,
+        "height": 20,
+        "bottom": 215.828125,
+        "right": 190.984375
+      },
+      "text": "학년 반",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-1-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 195.828125,
+        "left": 195.984375,
+        "width": 257,
+        "height": 20,
+        "bottom": 215.828125,
+        "right": 452.984375
+      },
+      "text": "학년 반",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-1-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-1-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 195.828125,
+        "left": 457.984375,
+        "width": 59,
+        "height": 20,
+        "bottom": 215.828125,
+        "right": 516.984375
+      },
+      "text": "이 름",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 197.046875,
+        "left": 521.984375,
+        "width": 210.015625,
+        "height": 17.578125,
+        "bottom": 214.625,
+        "right": 732
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-2-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 254.34375,
+        "left": 60,
+        "width": 65.984375,
+        "height": 17,
+        "bottom": 271.34375,
+        "right": 125.984375
+      },
+      "text": "결 석",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-2-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-2-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 271.34375,
+        "left": 60,
+        "width": 65.984375,
+        "height": 17,
+        "bottom": 288.34375,
+        "right": 125.984375
+      },
+      "text": "일 수",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-2-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-2-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 261.34375,
+        "left": 130.984375,
+        "width": 601.015625,
+        "height": 20,
+        "bottom": 281.34375,
+        "right": 732
+      },
+      "text": "2026년 월 일( 요일) ~ 2026년 월 일( 요일) ( )일간",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 325.5625,
+        "left": 60,
+        "width": 65.984375,
+        "height": 17,
+        "bottom": 342.5625,
+        "right": 125.984375
+      },
+      "text": "결 석",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 342.5625,
+        "left": 60,
+        "width": 65.984375,
+        "height": 17,
+        "bottom": 359.5625,
+        "right": 125.984375
+      },
+      "text": "종 류",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 389.796875,
+        "left": 170.984375,
+        "width": 57.75,
+        "height": 13,
+        "bottom": 402.796875,
+        "right": 228.734375
+      },
+      "text": "결석 구분",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-0-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 389.796875,
+        "left": 243.734375,
+        "width": 200.25,
+        "height": 13,
+        "bottom": 402.796875,
+        "right": 443.984375
+      },
+      "text": "내 용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-0-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 383.296875,
+        "left": 458.984375,
+        "width": 111.5625,
+        "height": 26,
+        "bottom": 409.296875,
+        "right": 570.546875
+      },
+      "text": "해당 사항에 √ 표시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-0-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-0-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 389.796875,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 13,
+        "bottom": 402.796875,
+        "right": 749.984375
+      },
+      "text": "제출서류",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 467.421875,
+        "left": 170.984375,
+        "width": 57.75,
+        "height": 26,
+        "bottom": 493.421875,
+        "right": 228.734375
+      },
+      "text": "출석인정 결석",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-1-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 423.765625,
+        "left": 243.734375,
+        "width": 200.25,
+        "height": 13,
+        "bottom": 436.765625,
+        "right": 443.984375
+      },
+      "text": "- 경조사",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 421.46875,
+        "left": 458.984375,
+        "width": 111.5625,
+        "height": 17.578125,
+        "bottom": 439.046875,
+        "right": 570.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-1-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-1-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 423.765625,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 13,
+        "bottom": 436.765625,
+        "right": 749.984375
+      },
+      "text": "결석계, 경조사관련 증빙서류",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-2-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 457.203125,
+        "left": 243.734375,
+        "width": 200.25,
+        "height": 13,
+        "bottom": 470.203125,
+        "right": 443.984375
+      },
+      "text": "- 법정 감염병",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 454.90625,
+        "left": 458.984375,
+        "width": 111.5625,
+        "height": 17.578125,
+        "bottom": 472.484375,
+        "right": 570.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-2-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-2-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 451.203125,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 13,
+        "bottom": 464.203125,
+        "right": 749.984375
+      },
+      "text": "결석계, 확인서 또는 진단서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-2-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-2-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 464.203125,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 12,
+        "bottom": 476.203125,
+        "right": 749.984375
+      },
+      "text": "(질병명을 확인할 수 있는 서류)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-3-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 490.640625,
+        "left": 243.734375,
+        "width": 200.25,
+        "height": 13,
+        "bottom": 503.640625,
+        "right": 443.984375
+      },
+      "text": "- 감염병 심각・경계 단계 시 고위험군",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 488.34375,
+        "left": 458.984375,
+        "width": 111.5625,
+        "height": 17.578125,
+        "bottom": 505.921875,
+        "right": 570.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-3-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-3-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 484.640625,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 13,
+        "bottom": 497.640625,
+        "right": 749.984375
+      },
+      "text": "결석계, 확인서 또는 진단서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-3-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-3-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 497.640625,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 12,
+        "bottom": 509.640625,
+        "right": 749.984375
+      },
+      "text": "(질병명을 확인할 수 있는 서류)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-4-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 524.078125,
+        "left": 243.734375,
+        "width": 200.25,
+        "height": 13,
+        "bottom": 537.078125,
+        "right": 443.984375
+      },
+      "text": "생리통(월 1일)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 521.78125,
+        "left": 458.984375,
+        "width": 111.5625,
+        "height": 17.578125,
+        "bottom": 539.359375,
+        "right": 570.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-4-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-4-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 524.078125,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 13,
+        "bottom": 537.078125,
+        "right": 749.984375
+      },
+      "text": "결석계",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-5-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 600.171875,
+        "left": 170.984375,
+        "width": 57.75,
+        "height": 26,
+        "bottom": 626.171875,
+        "right": 228.734375
+      },
+      "text": "질병으로 인한 결석",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-5-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-5-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 566.984375,
+        "left": 243.734375,
+        "width": 54.75,
+        "height": 13,
+        "bottom": 579.984375,
+        "right": 298.484375
+      },
+      "text": "법정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-5-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-5-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 579.984375,
+        "left": 243.734375,
+        "width": 54.75,
+        "height": 26,
+        "bottom": 605.984375,
+        "right": 298.484375
+      },
+      "text": "감염병이 아닌 질병",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-5-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-5-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 563.265625,
+        "left": 313.484375,
+        "width": 130.5,
+        "height": 13,
+        "bottom": 576.265625,
+        "right": 443.984375
+      },
+      "text": "- 2일 이내 질병 결석",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 560.96875,
+        "left": 458.984375,
+        "width": 111.5625,
+        "height": 17.578125,
+        "bottom": 578.546875,
+        "right": 570.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-5-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-5-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 550.765625,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 26,
+        "bottom": 576.765625,
+        "right": 749.984375
+      },
+      "text": "결석계, 학부모 의견서 또는 처방전, 약국 봉투 등",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-5-cell-4-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-5-cell-4-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 576.765625,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 12,
+        "bottom": 588.765625,
+        "right": 749.984375
+      },
+      "text": "(질병명을 확인할 수 있는 서류)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-6-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-6-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 602.453125,
+        "left": 313.484375,
+        "width": 130.5,
+        "height": 13,
+        "bottom": 615.453125,
+        "right": 443.984375
+      },
+      "text": "- 3일 이상 질병 결석",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 600.15625,
+        "left": 458.984375,
+        "width": 111.5625,
+        "height": 17.578125,
+        "bottom": 617.734375,
+        "right": 570.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-6-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-6-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 596.453125,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 13,
+        "bottom": 609.453125,
+        "right": 749.984375
+      },
+      "text": "결석계, 확인서 또는 진단서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-6-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-6-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 609.453125,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 12,
+        "bottom": 621.453125,
+        "right": 749.984375
+      },
+      "text": "(질병명을 확인할 수 있는 서류)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-7-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-7-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 639.359375,
+        "left": 243.734375,
+        "width": 200.25,
+        "height": 13,
+        "bottom": 652.359375,
+        "right": 443.984375
+      },
+      "text": "- 미세먼지・오존 관련 기저질환",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-7-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-7-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 652.359375,
+        "left": 243.734375,
+        "width": 200.25,
+        "height": 13,
+        "bottom": 665.359375,
+        "right": 443.984375
+      },
+      "text": "감염병 관심・주의 단계 시 고위험군",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 643.578125,
+        "left": 458.984375,
+        "width": 111.5625,
+        "height": 17.578125,
+        "bottom": 661.15625,
+        "right": 570.546875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-7-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-7-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 639.859375,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 13,
+        "bottom": 652.859375,
+        "right": 749.984375
+      },
+      "text": "학부모 의견서, 의사 진단서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-3-cell-1-block-0-row-7-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-3-cell-1-block-0-row-7-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 652.859375,
+        "left": 585.546875,
+        "width": 164.4375,
+        "height": 12,
+        "bottom": 664.859375,
+        "right": 749.984375
+      },
+      "text": "※ 해당 학기별 최초 1회만 제출",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-4-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "23",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 480.625,
+        "left": 60,
+        "width": 672,
+        "height": 25,
+        "bottom": 505.625,
+        "right": 732
+      },
+      "text": "위와 같이 사유로 결석하여 결석계를 제출합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-4-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-4-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "23",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 505.625,
+        "left": 60,
+        "width": 672,
+        "height": 25,
+        "bottom": 530.625,
+        "right": 732
+      },
+      "text": "2026. . .",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-4-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-4-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "23",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 530.625,
+        "left": 60,
+        "width": 672,
+        "height": 25,
+        "bottom": 555.625,
+        "right": 732
+      },
+      "text": "학부모 (인)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-4-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-4-cell-0-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "28",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 555.625,
+        "left": 60,
+        "width": 672,
+        "height": 32,
+        "bottom": 587.625,
+        "right": 732
+      },
+      "text": "서울중화초등학교장 귀하",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "28px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-5-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "28",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 726.453125,
+        "left": 60,
+        "width": 672,
+        "height": 35,
+        "bottom": 761.453125,
+        "right": 732
+      },
+      "text": "학부모 의견서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "28px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-6-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-6-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "23",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 876.59375,
+        "left": 60,
+        "width": 65.984375,
+        "height": 25,
+        "bottom": 901.59375,
+        "right": 125.984375
+      },
+      "text": "결석",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0-row-6-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0-row-6-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "23",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 901.59375,
+        "left": 60,
+        "width": 65.984375,
+        "height": 25,
+        "bottom": 926.59375,
+        "right": 125.984375
+      },
+      "text": "사유",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 892.796875,
+        "left": 130.984375,
+        "width": 601.015625,
+        "height": 17.578125,
+        "bottom": 910.375,
+        "right": 732
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 63
+}

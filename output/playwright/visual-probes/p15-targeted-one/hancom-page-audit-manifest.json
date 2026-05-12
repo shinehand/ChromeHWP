@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-05-06T23:05:55.471Z",
+  "documents": [
+    {
+      "id": "top-border-none-opacity-0p03",
+      "filename": "top-border-none-opacity-0p03.png",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-015.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/p15-targeted/top-border-none-opacity-0p03-chrome-page-015.png",
+          "targetBand": "first"
+        }
+      ]
+    }
+  ]
+}

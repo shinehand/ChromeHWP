@@ -1,0 +1,1077 @@
+
+> chrome-hwp-editor-extension@0.1.0 verify:extension
+> npm run build && node scripts/verify_extension_editor.mjs
+
+
+> chrome-hwp-editor-extension@0.1.0 build
+> vite build
+
+vite v8.0.10 building client environment for production...
+[2Ktransforming...✓ 51 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/manifest.json                           0.80 kB │ gzip:  0.48 kB
+dist/src/popup/popup.html                    1.42 kB │ gzip:  0.70 kB
+dist/src/options/options.html                1.67 kB │ gzip:  0.76 kB
+dist/src/editor/editor.html                  2.03 kB │ gzip:  0.84 kB
+dist/assets/NanumGothic-Regular.woff2      340.68 kB
+dist/assets/NanumSquareNeoTTF-cBd.woff2    384.99 kB
+dist/assets/NanumSquareNeoTTF-bRg.woff2    387.10 kB
+dist/assets/NanumGothic-Bold.woff2         417.25 kB
+dist/assets/GowunBatang-Bold.woff2         447.85 kB
+dist/assets/GowunBatang-Regular.woff2      495.09 kB
+dist/assets/NanumMyeongjo-Regular.woff2    502.06 kB
+dist/assets/NotoSansKR-Regular.woff2       541.86 kB
+dist/assets/NotoSansKR-Bold.woff2          559.19 kB
+dist/assets/NanumMyeongjo-Bold.woff2       575.58 kB
+dist/assets/NotoSerifKR-Regular.woff2      971.42 kB
+dist/assets/NotoSerifKR-Bold.woff2       1,033.55 kB
+dist/assets/dotumche-Regular.ttf         4,568.07 kB
+dist/assets/dotum-Regular.ttf            4,575.57 kB
+dist/assets/gulimche-Regular.ttf         4,711.30 kB
+dist/assets/gulim-Regular.ttf            4,718.60 kB
+dist/assets/popup.css                        1.10 kB │ gzip:  0.55 kB
+dist/assets/options.css                      1.18 kB │ gzip:  0.61 kB
+dist/assets/editor.css                      21.17 kB │ gzip:  3.78 kB
+dist/assets/bytes.js                         0.37 kB │ gzip:  0.26 kB │ map:   1.33 kB
+dist/assets/storage.js                       0.40 kB │ gzip:  0.22 kB │ map:   1.62 kB
+dist/assets/modulepreload-polyfill.js        0.69 kB │ gzip:  0.39 kB
+dist/assets/options.js                       1.42 kB │ gzip:  0.76 kB │ map:   5.05 kB
+dist/assets/popup.js                         2.38 kB │ gzip:  1.25 kB │ map:   6.94 kB
+dist/assets/service-worker.js                3.93 kB │ gzip:  1.83 kB │ map:  13.12 kB
+dist/assets/editor.js                      213.38 kB │ gzip: 72.31 kB │ map: 881.75 kB
+
+✓ built in 115ms
+{
+  "ok": true,
+  "generatedAt": "2026-05-07T21:37:32.725Z",
+  "url": "http://127.0.0.1:57226/src/editor/editor.html",
+  "session": "ext-mow0bnnz",
+  "strictPageExpectations": true,
+  "baselinePath": "/Users/shinehandmac/Github/ChromeHWP/docs/hancom-oracle-page-baseline.json",
+  "distDir": "/Users/shinehandmac/Github/ChromeHWP/dist",
+  "expectations": [
+    {
+      "key": "goyeopje",
+      "label": "HWP goyeopje",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje.hwp",
+      "expectedFormat": "HWP",
+      "expectedPages": 2,
+      "minimumParagraphs": 80,
+      "minimumTables": 1,
+      "minimumImages": 0,
+      "referenceCounts": {
+        "officialViewerTextRuns": 139,
+        "officialViewerTables": 2,
+        "officialViewerImages": 0
+      }
+    },
+    {
+      "key": "goyeopje-full-2024",
+      "label": "HWP goyeopje-full-2024",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje-full-2024.hwp",
+      "expectedFormat": "HWP",
+      "expectedPages": 11,
+      "minimumParagraphs": 500,
+      "minimumTables": 10,
+      "minimumImages": 0,
+      "referenceCounts": {
+        "officialViewerTextRuns": 768,
+        "officialViewerTables": 14,
+        "officialViewerImages": 0
+      }
+    },
+    {
+      "key": "gyeolseokgye",
+      "label": "HWP gyeolseokgye",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/gyeolseokgye.hwp",
+      "expectedFormat": "HWP",
+      "expectedPages": 1,
+      "minimumParagraphs": 40,
+      "minimumTables": 2,
+      "minimumImages": 0,
+      "referenceCounts": {
+        "officialViewerTextRuns": 62,
+        "officialViewerTables": 3,
+        "officialViewerImages": 0
+      }
+    },
+    {
+      "key": "attachment-sale-notice",
+      "label": "HWP attachment-sale-notice",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp",
+      "expectedFormat": "HWP",
+      "expectedPages": 4,
+      "minimumParagraphs": 300,
+      "minimumTables": 8,
+      "minimumImages": 1,
+      "referenceCounts": {
+        "officialViewerTextRuns": 920,
+        "officialViewerTables": 14,
+        "officialViewerImages": 2
+      }
+    },
+    {
+      "key": "incheon-2a",
+      "label": "HWPX incheon-2a",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "expectedFormat": "HWPX",
+      "expectedPages": 18,
+      "minimumParagraphs": 800,
+      "minimumTables": 20,
+      "minimumImages": 4,
+      "referenceCounts": {
+        "officialViewerTextRuns": 2404,
+        "officialViewerTables": 78,
+        "officialViewerImages": 5
+      }
+    }
+  ],
+  "results": [
+    {
+      "key": "goyeopje",
+      "label": "HWP goyeopje",
+      "filename": "goyeopje.hwp",
+      "expectedFormat": "HWP",
+      "expectedPages": 2,
+      "minimumParagraphs": 80,
+      "minimumTables": 1,
+      "minimumImages": 0,
+      "filenameValue": "goyeopje.hwp",
+      "format": "HWP 읽기 / HWPX 내보내기",
+      "formatKind": "HWP",
+      "renderedFilename": "goyeopje.hwp",
+      "pages": 2,
+      "oraclePages": 0,
+      "canvasPages": 0,
+      "paragraphs": 167,
+      "lineSegmentParagraphs": 117,
+      "lineSegments": 128,
+      "tables": 2,
+      "images": 0,
+      "missingImages": 0,
+      "overflowingBlocks": 0,
+      "topLevelOverlaps": 0,
+      "decorationTopLevelOverlaps": 0,
+      "editableElements": 167,
+      "activeEditableElements": 167,
+      "parser": "hwp-ms-cfb-records",
+      "plainTextLength": 0,
+      "bodyTextLength": 2140,
+      "firstText": "※ 본적 : □ 고엽제후유(의)증환자 등 록 신 청 서 □ 고엽제후유증환자 유족 □ 고엽제후유증 2세환자 처리기간 90 일 ①성 명 ②주민등록번호 ③주 소 (전화 휴대폰 ) ④ 입 대 일 자 ⑤계 급 ⑥군 별 ⑦군 번 ⑧질병명 1. 2. 3. 4. 복 무 기 록 ⑨소속부대(중대까지) ⑩복 무 기 간 ⑪복 무 장 소 ⑫직 ",
+      "imageInventory": {
+        "total": 0,
+        "readonly": 0,
+        "exportable": 0,
+        "uniqueExportableSrc": 0
+      },
+      "pageMetrics": [
+        {
+          "index": 0,
+          "paragraphs": 109,
+          "lineSegmentParagraphs": 74,
+          "lineSegments": 77,
+          "tables": 1,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1381,
+          "firstText": "※ 본적 : □ 고엽제후유(의)증환자 등 록 신 청 서 □ 고엽제후유증환자 유족 □ 고엽제후유증 2세환자 처리기간 90 일 ①성 명 ②주민등록번호 ③주 소 (전화 휴대폰 ) ④ 입 대 일 자 ⑤계 급 ⑥군 별 ⑦군 ",
+          "width": 794,
+          "height": 1123
+        },
+        {
+          "index": 1,
+          "paragraphs": 58,
+          "lineSegmentParagraphs": 43,
+          "lineSegments": 51,
+          "tables": 1,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 745,
+          "firstText": "수수료 없 음 고엽제후유증환자로 결정․등록된 자중 신체검사결과 상이등급의 판정을 받은 자, 고엽제 후유의증환자 또는 고엽제후유증 2세환자로 결정․등록된 자중 신체검사 결과 장애등 급의 판정을 받은 자, 이미 사망한 ",
+          "width": 794,
+          "height": 1123
+        }
+      ],
+      "elapsedMs": 30,
+      "expectations": {
+        "format": "HWP",
+        "pages": 2,
+        "minimumParagraphs": 80,
+        "minimumTables": 1,
+        "minimumImages": 0,
+        "referenceCounts": {
+          "officialViewerTextRuns": 139,
+          "officialViewerTables": 2,
+          "officialViewerImages": 0
+        }
+      },
+      "diffs": {
+        "pages": 0,
+        "paragraphsVsMinimum": 87,
+        "tablesVsMinimum": 1,
+        "imagesVsMinimum": 0
+      },
+      "issues": [],
+      "advisories": [],
+      "ok": true
+    },
+    {
+      "key": "goyeopje-full-2024",
+      "label": "HWP goyeopje-full-2024",
+      "filename": "goyeopje-full-2024.hwp",
+      "expectedFormat": "HWP",
+      "expectedPages": 11,
+      "minimumParagraphs": 500,
+      "minimumTables": 10,
+      "minimumImages": 0,
+      "filenameValue": "goyeopje-full-2024.hwp",
+      "format": "HWP 읽기 / HWPX 내보내기",
+      "formatKind": "HWP",
+      "renderedFilename": "goyeopje-full-2024.hwp",
+      "pages": 11,
+      "oraclePages": 0,
+      "canvasPages": 0,
+      "paragraphs": 745,
+      "lineSegmentParagraphs": 531,
+      "lineSegments": 613,
+      "tables": 13,
+      "images": 0,
+      "missingImages": 0,
+      "overflowingBlocks": 0,
+      "topLevelOverlaps": 0,
+      "decorationTopLevelOverlaps": 0,
+      "editableElements": 745,
+      "activeEditableElements": 745,
+      "parser": "hwp-ms-cfb-records",
+      "plainTextLength": 0,
+      "bodyTextLength": 15446,
+      "firstText": "[별지 제1호서식] <개정 2021. 2. 19.> 정부24(www.gov.kr)에서도 신청할 수 있습니다. 고엽제후유(의)증환자 등 등록신청서 ※ [ ]에는 해당하는 곳에 √표시를 합니다. (3쪽 중 1쪽) 접수번호 접수일시 처리기간 20일(사실확인 및 검진기간 제외) [ ] 고엽제후유(의)증환자 [ ] 고엽제후유증환자",
+      "imageInventory": {
+        "total": 0,
+        "readonly": 0,
+        "exportable": 0,
+        "uniqueExportableSrc": 0
+      },
+      "pageMetrics": [
+        {
+          "index": 0,
+          "paragraphs": 75,
+          "lineSegmentParagraphs": 53,
+          "lineSegments": 56,
+          "tables": 1,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 935,
+          "firstText": "[별지 제1호서식] <개정 2021. 2. 19.> 정부24(www.gov.kr)에서도 신청할 수 있습니다. 고엽제후유(의)증환자 등 등록신청서 ※ [ ]에는 해당하는 곳에 √표시를 합니다. (3쪽 중 1쪽) 접수번",
+          "width": 794,
+          "height": 1123
+        },
+        {
+          "index": 1,
+          "paragraphs": 46,
+          "lineSegmentParagraphs": 41,
+          "lineSegments": 54,
+          "tables": 1,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1301,
+          "firstText": "(3쪽 중 2쪽) 신청인 제출 서류 1. 등록신청 시 제출 서류 가. 고엽제후유증환자 또는 고엽제후유의증환자로 등록하려는 경우: 「고엽제후유의증 등 환자지원 및 단체설립에 관한 법률」 제5조제1항 또는 제2항에 해당",
+          "width": 794,
+          "height": 1123
+        },
+        {
+          "index": 2,
+          "paragraphs": 174,
+          "lineSegmentParagraphs": 37,
+          "lineSegments": 37,
+          "tables": 1,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1089,
+          "firstText": "(3쪽 중 3쪽) ※ 아래 내용은 서식 작성 시 필요한 사항을 안내하는 부분으로 접수ㆍ보관되지 않습니다. 처리절차 신청인 처리기관 관할 보훈관서 각 군 본부 보훈병원 보훈심사위원회 신청서 ▶ 접수 (복무ㆍ확인 의뢰)",
+          "width": 794,
+          "height": 1123
+        },
+        {
+          "index": 3,
+          "paragraphs": 11,
+          "lineSegmentParagraphs": 11,
+          "lineSegments": 22,
+          "tables": 1,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 792,
+          "firstText": "산재수혜 확인 및 제공 동의서 본인은 고엽제후유(의)증환자 등 등록신청과 관련하여 산업재해보상보험법상 보험급여 등의 혜택을 받은 사항이 있는 경우에는 질병의 정확한 원인 파악을 위해 근로복지공단이 산업재해 인정 경위",
+          "width": 794,
+          "height": 1123
+        },
+        {
+          "index": 4,
+          "paragraphs": 21,
+          "lineSegmentParagraphs": 21,
+          "lineSegments": 33,
+          "tables": 1,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1204,
+          "firstText": "(앞 면) 개인정보 이용 및 제공 사전 동의서 1. 타 부처에서 관리하는 개인정보를 국가보훈부에서 이용하는 것에 대한 동의 가. 목적 : 국가보훈대상자로 등록되는 경우, 생활정도에 따라 지급여부가 결정되는 생활 조정",
+          "width": 794,
+          "height": 1123
+        },
+        {
+          "index": 5,
+          "paragraphs": 53,
+          "lineSegmentParagraphs": 53,
+          "lineSegments": 68,
+          "tables": 2,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1806,
+          "firstText": "(뒷 면) 사업명 자격요건 6.25자녀수당 1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군 경의 자녀와 1954. 10. 25부터 1955. 6. 30까",
+          "width": 794,
+          "height": 1123
+        },
+        {
+          "index": 6,
+          "paragraphs": 52,
+          "lineSegmentParagraphs": 50,
+          "lineSegments": 55,
+          "tables": 1,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1244,
+          "firstText": "(3쪽 중 1쪽) 국가유공자 등 등록신청자 의료지원 안내 (보훈병원 이용자용) 국가유공자 등 등록 신청 한 귀하 및 가족에게는 최종등록결정이전까지 다음과 같은 의료지원이 이루 어지니 관련사항을 숙지하시어 의료혜택을 ",
+          "width": 794,
+          "height": 1123
+        },
+        {
+          "index": 7,
+          "paragraphs": 62,
+          "lineSegmentParagraphs": 60,
+          "lineSegments": 65,
+          "tables": 1,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1614,
+          "firstText": "(3쪽 중 2쪽) 국가유공자 등 등록신청자 의료지원 안내 (위탁병원 이용자용) 구 분 의 료 지 원 내 용 비 고 대 상 자 격 ㅇ국비진료 대상자 - 애국지사, 전ㆍ공상군경, 4ㆍ19혁명부상자, 공상공무원, 특별공로",
+          "width": 794,
+          "height": 1123
+        },
+        {
+          "index": 8,
+          "paragraphs": 87,
+          "lineSegmentParagraphs": 87,
+          "lineSegments": 93,
+          "tables": 2,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1521,
+          "firstText": "(3쪽 중 3쪽) 국비진료대상자 진료 지원 범위 국가유공자등으로 등록 결정 된 국비진료대상자에 대한 의료지원은 아래와 같습니다. 지원 사항은 관련규정에 따라 변경될 수 있음을 알려드립니다. 구 분 주요내용 보훈병원 ",
+          "width": 794,
+          "height": 1123
+        },
+        {
+          "index": 9,
+          "paragraphs": 82,
+          "lineSegmentParagraphs": 45,
+          "lineSegments": 48,
+          "tables": 1,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1214,
+          "firstText": "■ 민원인의 요구에 의한 본인정보 공동이용 운영 지침 [별지 제3호 서식] <제정 2021. 10. 21.> 본인정보 제공 요구서 ※ 색상이 어두운 란은 신청인이 적지 않습니다. 접수 번호 : 접수 일시 : 처리 기",
+          "width": 794,
+          "height": 1123
+        },
+        {
+          "index": 10,
+          "paragraphs": 82,
+          "lineSegmentParagraphs": 73,
+          "lineSegments": 82,
+          "tables": 1,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 2628,
+          "firstText": "■ 진료정보교류 표준 [별지 제2호서식] 진료정보교류 개인정보 수집 및 이용ㆍ제공 동의서 본인은 「의료법」 제21조(기록 열람 등). 제21조의2(진료기록의 송부 등) 및 같은 법 시행령 제42조의2(민감정보 및 고",
+          "width": 794,
+          "height": 1123
+        }
+      ],
+      "elapsedMs": 98,
+      "expectations": {
+        "format": "HWP",
+        "pages": 11,
+        "minimumParagraphs": 500,
+        "minimumTables": 10,
+        "minimumImages": 0,
+        "referenceCounts": {
+          "officialViewerTextRuns": 768,
+          "officialViewerTables": 14,
+          "officialViewerImages": 0
+        }
+      },
+      "diffs": {
+        "pages": 0,
+        "paragraphsVsMinimum": 245,
+        "tablesVsMinimum": 3,
+        "imagesVsMinimum": 0
+      },
+      "issues": [],
+      "advisories": [],
+      "ok": true
+    },
+    {
+      "key": "gyeolseokgye",
+      "label": "HWP gyeolseokgye",
+      "filename": "gyeolseokgye.hwp",
+      "expectedFormat": "HWP",
+      "expectedPages": 1,
+      "minimumParagraphs": 40,
+      "minimumTables": 2,
+      "minimumImages": 0,
+      "filenameValue": "gyeolseokgye.hwp",
+      "format": "HWP 읽기 / HWPX 내보내기",
+      "formatKind": "HWP",
+      "renderedFilename": "gyeolseokgye.hwp",
+      "pages": 1,
+      "oraclePages": 0,
+      "canvasPages": 0,
+      "paragraphs": 63,
+      "lineSegmentParagraphs": 52,
+      "lineSegments": 57,
+      "tables": 3,
+      "images": 0,
+      "missingImages": 0,
+      "overflowingBlocks": 0,
+      "topLevelOverlaps": 0,
+      "decorationTopLevelOverlaps": 0,
+      "editableElements": 63,
+      "activeEditableElements": 63,
+      "parser": "hwp-ms-cfb-records",
+      "plainTextLength": 0,
+      "bodyTextLength": 833,
+      "firstText": "결 석 계 결 재 담 임 교 무 교 감 전결 인 적 사 항 학년 반 학년 반 이 름 결 석 일 수 2026년 월 일( 요일) ~ 2026년 월 일( 요일) ( )일간 결 석 종 류 결석 구분 내 용 해당 사항에 √ 표시 제출서류 출석인정 결석 - 경조사 결석계, 경조사관련 증빙서류 - 법정 감염병 결석계, 확인서 또는 진",
+      "imageInventory": {
+        "total": 0,
+        "readonly": 0,
+        "exportable": 0,
+        "uniqueExportableSrc": 0
+      },
+      "pageMetrics": [
+        {
+          "index": 0,
+          "paragraphs": 63,
+          "lineSegmentParagraphs": 52,
+          "lineSegments": 57,
+          "tables": 3,
+          "images": 0,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 833,
+          "firstText": "결 석 계 결 재 담 임 교 무 교 감 전결 인 적 사 항 학년 반 학년 반 이 름 결 석 일 수 2026년 월 일( 요일) ~ 2026년 월 일( 요일) ( )일간 결 석 종 류 결석 구분 내 용 해당 사항에 √ ",
+          "width": 794,
+          "height": 1123
+        }
+      ],
+      "elapsedMs": 11,
+      "expectations": {
+        "format": "HWP",
+        "pages": 1,
+        "minimumParagraphs": 40,
+        "minimumTables": 2,
+        "minimumImages": 0,
+        "referenceCounts": {
+          "officialViewerTextRuns": 62,
+          "officialViewerTables": 3,
+          "officialViewerImages": 0
+        }
+      },
+      "diffs": {
+        "pages": 0,
+        "paragraphsVsMinimum": 23,
+        "tablesVsMinimum": 1,
+        "imagesVsMinimum": 0
+      },
+      "issues": [],
+      "advisories": [],
+      "ok": true
+    },
+    {
+      "key": "attachment-sale-notice",
+      "label": "HWP attachment-sale-notice",
+      "filename": "attachment-sale-notice.hwp",
+      "expectedFormat": "HWP",
+      "expectedPages": 4,
+      "minimumParagraphs": 300,
+      "minimumTables": 8,
+      "minimumImages": 1,
+      "filenameValue": "attachment-sale-notice.hwp",
+      "format": "HWP 읽기 / HWPX 내보내기",
+      "formatKind": "HWP",
+      "renderedFilename": "attachment-sale-notice.hwp",
+      "pages": 4,
+      "oraclePages": 0,
+      "canvasPages": 0,
+      "paragraphs": 795,
+      "lineSegmentParagraphs": 750,
+      "lineSegments": 792,
+      "tables": 22,
+      "images": 6,
+      "missingImages": 0,
+      "overflowingBlocks": 0,
+      "topLevelOverlaps": 0,
+      "decorationTopLevelOverlaps": 0,
+      "editableElements": 779,
+      "activeEditableElements": 779,
+      "parser": "hwp-ms-cfb-records",
+      "plainTextLength": 0,
+      "bodyTextLength": 14593,
+      "firstText": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보",
+      "imageInventory": {
+        "total": 6,
+        "readonly": 4,
+        "exportable": 2,
+        "uniqueExportableSrc": 2
+      },
+      "pageMetrics": [
+        {
+          "index": 0,
+          "paragraphs": 119,
+          "lineSegmentParagraphs": 112,
+          "lineSegments": 127,
+          "tables": 6,
+          "images": 2,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 3599,
+          "firstText": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 1,
+          "paragraphs": 571,
+          "lineSegmentParagraphs": 564,
+          "lineSegments": 565,
+          "tables": 4,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 6574,
+          "firstText": "공급대상세대 및 공급금액 지역 대상 주택 호 세대별 계약면적(㎡) 공급가격(원) 계약금(10%) 잔금(90%) 공급면적 기타공용 면적 총계 주거전용 주거공용 소계 대구 남구 대명동 554-4 102동 (안지랑로2길1",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 2,
+          "paragraphs": 43,
+          "lineSegmentParagraphs": 34,
+          "lineSegments": 43,
+          "tables": 8,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1941,
+          "firstText": "Ⅱ 대금납부·입주·관리비 【 계약금 및 잔금 납부계좌 】 우리은행 1005-204-178573 (예금주 : 한국토지주택공사 대구) ※ 동호지정 후 입금자명을 “계약자명+다세대”으로 설정하여 입금 (예) 홍길동다세대 ",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 3,
+          "paragraphs": 62,
+          "lineSegmentParagraphs": 40,
+          "lineSegments": 57,
+          "tables": 4,
+          "images": 2,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 2467,
+          "firstText": "일시 • 2026. 1. 15.(목) 부터 매주 목요일 13:30 ~ 16시 (※ 16시 이후 방문자는 동·호지정 및 계약체결 불가) 장소 • 대구 달서구 상화로 272, LH 대구경북지역본부 1층 마이홈센터 절차 ",
+          "width": 1123,
+          "height": 1587
+        }
+      ],
+      "elapsedMs": 55,
+      "expectations": {
+        "format": "HWP",
+        "pages": 4,
+        "minimumParagraphs": 300,
+        "minimumTables": 8,
+        "minimumImages": 1,
+        "referenceCounts": {
+          "officialViewerTextRuns": 920,
+          "officialViewerTables": 14,
+          "officialViewerImages": 2
+        }
+      },
+      "diffs": {
+        "pages": 0,
+        "paragraphsVsMinimum": 495,
+        "tablesVsMinimum": 14,
+        "imagesVsMinimum": 5
+      },
+      "issues": [],
+      "advisories": [],
+      "ok": true
+    },
+    {
+      "key": "incheon-2a",
+      "label": "HWPX incheon-2a",
+      "filename": "incheon-2a.hwpx",
+      "expectedFormat": "HWPX",
+      "expectedPages": 18,
+      "minimumParagraphs": 800,
+      "minimumTables": 20,
+      "minimumImages": 4,
+      "filenameValue": "incheon-2a.hwpx",
+      "format": "HWPX",
+      "formatKind": "HWPX",
+      "renderedFilename": "incheon-2a.hwpx",
+      "pages": 18,
+      "oraclePages": 0,
+      "canvasPages": 0,
+      "paragraphs": 1846,
+      "lineSegmentParagraphs": 1606,
+      "lineSegments": 1833,
+      "tables": 78,
+      "images": 24,
+      "missingImages": 0,
+      "overflowingBlocks": 0,
+      "topLevelOverlaps": 0,
+      "decorationTopLevelOverlaps": 0,
+      "editableElements": 1792,
+      "activeEditableElements": 1792,
+      "parser": "hwpx-zip-xml",
+      "plainTextLength": 0,
+      "bodyTextLength": 65143,
+      "firstText": "인천가정2지구 A-2블록 신혼희망타운(공공분양) 잔여세대 추가 입주자모집공고 ❚공급위치 : 인천광역시 서구 가정동, 심곡동, 연희동, 청라동 일원 인천가정2 공공주택지구내 A-2블록 534세대 ❚공급대상 : A-2블록 801호 중 신혼희망타운(공공분양) 3세대 (전용면적 55㎡ 3세대) LH에서는 콜센터(1600-1004",
+      "imageInventory": {
+        "total": 24,
+        "readonly": 18,
+        "exportable": 6,
+        "uniqueExportableSrc": 3
+      },
+      "pageMetrics": [
+        {
+          "index": 0,
+          "paragraphs": 21,
+          "lineSegmentParagraphs": 13,
+          "lineSegments": 27,
+          "tables": 2,
+          "images": 2,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1768,
+          "firstText": "인천가정2지구 A-2블록 신혼희망타운(공공분양) 잔여세대 추가 입주자모집공고 ❚공급위치 : 인천광역시 서구 가정동, 심곡동, 연희동, 청라동 일원 인천가정2 공공주택지구내 A-2블록 534세대 ❚공급대상 : A-2블",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 1,
+          "paragraphs": 130,
+          "lineSegmentParagraphs": 120,
+          "lineSegments": 150,
+          "tables": 6,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 6915,
+          "firstText": "■ 본 공고문은 최초 입주자모집공고(2024.01.03.), 추가 입주자모집공고(2024.06.12., 2025.03.28., 2025.07.17.) 이후 계약해지 등의 사유로 발생한 공공분양 잔여세대 3호를 공급 ",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 2,
+          "paragraphs": 118,
+          "lineSegmentParagraphs": 109,
+          "lineSegments": 117,
+          "tables": 2,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 2678,
+          "firstText": "신혼희망타운 전용 주택담보 장기대출상품(수익공유형 모기지) 안내 ■ 개 요 : 연 1.3% 고정금리최장 30년간 집값의 70%까지 지원하고, 주택매도 및 대출금 상환시 시세차익(주택매각금액- 분양금액)의 최소 10%",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 3,
+          "paragraphs": 185,
+          "lineSegmentParagraphs": 173,
+          "lineSegments": 176,
+          "tables": 7,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 3929,
+          "firstText": "1. 공급규모 ■ 인천가정2 A-2블록 801세대 중 : 신혼희망타운(공공분양) 11~24층 11개동 전용면적 60㎡이하 534 세대 중 3세대 2. 공급대상 블록 주택형 타입 세대당 주택면적(㎡) 발코니 공유 대지",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 4,
+          "paragraphs": 258,
+          "lineSegmentParagraphs": 218,
+          "lineSegments": 225,
+          "tables": 4,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 4086,
+          "firstText": "발코니 확장비용 실별 구분 가격 납부방식 주택타입 내역 계 거실 침실1 침실2 주방/식당 드레스룸 알파룸 계약금 (계약시) 잔금 (입주시) 55A 기본공사비(A) 70,958 16,945 15,595 12,564 1",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 5,
+          "paragraphs": 8,
+          "lineSegmentParagraphs": 2,
+          "lineSegments": 2,
+          "tables": 1,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 54,
+          "firstText": "Ⅱ 신청기준(무주택세대구성원 및 주택소유여부 판정 등) - 6 -",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 6,
+          "paragraphs": 76,
+          "lineSegmentParagraphs": 66,
+          "lineSegments": 91,
+          "tables": 4,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 5738,
+          "firstText": "1. 무주택세대구성원 및 주택소유여부 판정 기준 금회 공급되는 주택의 신청자격인 ‘무주택세대구성원’ 여부는 주택공급에 관한 규칙 제2조제4호 및 제53조에 따라 아래기준으로 판단하며, 당첨자 발표 후 주택(분양권 등",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 7,
+          "paragraphs": 49,
+          "lineSegmentParagraphs": 35,
+          "lineSegments": 49,
+          "tables": 5,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 2919,
+          "firstText": "Ⅲ 신청자격 및 당첨자 선정방법 1. 신혼부부 신청자격 ■ 입주자모집공고일 현재 국내에 거주하면서 혼인 중인 신혼부부로서 혼인기간이 7년 이내(2019.03.27.~2026.03.27에 속한 자) 또는 6세 이하의 ",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 8,
+          "paragraphs": 61,
+          "lineSegmentParagraphs": 42,
+          "lineSegments": 57,
+          "tables": 7,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 2850,
+          "firstText": "1. 전매제한 및 주택우선매입 안내 • 금회 공급되는 주택은 주택법 시행령 제73조에 따라 해당 주택의 입주자로 선정된 날(최초공고 당첨자발표일 2024.01.26.)로부터 3년간 전매가 금지됩니다. ※ 전매 제한 ",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 9,
+          "paragraphs": 33,
+          "lineSegmentParagraphs": 19,
+          "lineSegments": 26,
+          "tables": 3,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1384,
+          "firstText": "1. PC인터넷·모바일 신청 ■ PC인터넷·모바일 신청방법 • 해당 신청일에 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 소지하고 LH 청약플러스(apply.lh.or.kr)",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 10,
+          "paragraphs": 60,
+          "lineSegmentParagraphs": 47,
+          "lineSegments": 57,
+          "tables": 5,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 2629,
+          "firstText": "1. 추첨(공공분양 동·호, 당첨자 선정) • 추첨 일시 : 2026년 4월 16일(목) • 추첨 내용 : 공공분양주택의 당첨자, 예비입주자, 당첨자의 동·호수 2. 당첨자(예비입주자) 발표, 서류제출 및 계약체결 ",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 11,
+          "paragraphs": 163,
+          "lineSegmentParagraphs": 134,
+          "lineSegments": 146,
+          "tables": 6,
+          "images": 5,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 3838,
+          "firstText": "해당서류 서류유형 발급기준 서류 제출대상 및 유의사항 ① 당첨자 본인 신분증 필수 본인 • 주민등록증, 운전면허증, 여권 ※ 2020.12.21. 이후 발급한 여권은 여권정보증명서를 함께 구비해야 인정 ※ 전자신분증",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 12,
+          "paragraphs": 98,
+          "lineSegmentParagraphs": 82,
+          "lineSegments": 105,
+          "tables": 5,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 7079,
+          "firstText": "Ⅷ 기타 유의사항 및 안내사항 1. 청약, 당첨, 입주, 관리 등 ■ 이 공고에 명시되지 않은 사항은 「주택법」,「주택공급에 관한 규칙」,「공공주택 특별법」,「공공주택 특별법 시행규칙」,「주택도시기금법」등 관계법령에",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 13,
+          "paragraphs": 92,
+          "lineSegmentParagraphs": 88,
+          "lineSegments": 117,
+          "tables": 1,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 8153,
+          "firstText": "- 단지 경계 담장, 옹벽 등은 지구단위계획지침 또는 현장여건 등에 따라 재질, 형태 등이 변경될 수 있음 - 보도, 조경, 주차장 등 공동으로 사용하는 부분에 대해 점유 등의 권리행사를 할 수 없음 - 단지 내 도",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 14,
+          "paragraphs": 83,
+          "lineSegmentParagraphs": 77,
+          "lineSegments": 94,
+          "tables": 3,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 5587,
+          "firstText": "- 시공 시 주방 상부장이 가스배관, 주방용 자동소화장치 또는 레인지후드 배기덕트 등과 겹칠 경우 상부장 일부가 조정되어 수납공간이 줄어들 수 있음 - 부대복리시설 중 일부시설은 입주 전‧후 한시적으로 입주지원시설(",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 15,
+          "paragraphs": 142,
+          "lineSegmentParagraphs": 134,
+          "lineSegments": 135,
+          "tables": 5,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1813,
+          "firstText": "성능부문 성능항목 성능등급 소음관련 등급 경량충격음 ★★★★ 중량충격음 ★★ 화장실 급배수소음 ★★ 세대간 경계벽의 차음성능 ★ 교통소음(도로, 철도)에 대한 실내외 소음 ★★ 구조관련 등급 가변성 ★★ 수리용이성 ",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 16,
+          "paragraphs": 161,
+          "lineSegmentParagraphs": 155,
+          "lineSegments": 155,
+          "tables": 3,
+          "images": 1,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 2047,
+          "firstText": "8. 분양가상한제 적용주택의 분양가 공개 ■ 「주택법」 제57조 및 「공동주택 분양가격의 산정 등에 관한 규칙」 제15조의 규정에 의거 다음과 같이 공개하며, 분양가격의 항목별 공시내용은 사업의 실제 소요된 비용과 ",
+          "width": 1123,
+          "height": 1587
+        },
+        {
+          "index": 17,
+          "paragraphs": 108,
+          "lineSegmentParagraphs": 92,
+          "lineSegments": 104,
+          "tables": 9,
+          "images": 2,
+          "missingImages": 0,
+          "overflowingBlocks": 0,
+          "topLevelOverlaps": 0,
+          "decorationTopLevelOverlaps": 0,
+          "textLength": 1565,
+          "firstText": "■ 택지비 감정평가금액 산출내역 감정평가금액(산술평균액) 가. 나라감정평가법인 나. 제일감정평가법인 71,568,596,153원 71,221,737,040원 71,915,455,266원 9. 분양주택 택지비 및 건축",
+          "width": 1123,
+          "height": 1587
+        }
+      ],
+      "elapsedMs": 280,
+      "expectations": {
+        "format": "HWPX",
+        "pages": 18,
+        "minimumParagraphs": 800,
+        "minimumTables": 20,
+        "minimumImages": 4,
+        "referenceCounts": {
+          "officialViewerTextRuns": 2404,
+          "officialViewerTables": 78,
+          "officialViewerImages": 5
+        }
+      },
+      "diffs": {
+        "pages": 0,
+        "paragraphsVsMinimum": 1046,
+        "tablesVsMinimum": 58,
+        "imagesVsMinimum": 20
+      },
+      "issues": [],
+      "advisories": [],
+      "ok": true
+    }
+  ],
+  "roundTrip": {
+    "ok": true,
+    "marker": "Codex roundtrip marker 2026-04-30",
+    "outputPath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/served-inputs/incheon-2a-editor-roundtrip.hwpx",
+    "source": {
+      "key": "incheon-2a",
+      "filename": "incheon-2a.hwpx",
+      "pages": 18,
+      "images": 24,
+      "imageInventory": {
+        "total": 24,
+        "readonly": 18,
+        "exportable": 6,
+        "uniqueExportableSrc": 3
+      },
+      "editableElements": 1792,
+      "activeEditableElements": 1792,
+      "originalTextLength": 27
+    },
+    "download": {
+      "suggestedFilename": "incheon-2a.hwpx"
+    },
+    "reopened": {
+      "filenameValue": "incheon-2a-editor-roundtrip.hwpx",
+      "format": "HWPX",
+      "formatKind": "HWPX",
+      "pages": 18,
+      "expectedPages": 18,
+      "paragraphs": 1811,
+      "tables": 78,
+      "images": 24,
+      "imageInventory": {
+        "total": 24,
+        "readonly": 18,
+        "exportable": 6,
+        "uniqueExportableSrc": 6
+      },
+      "markerFound": true,
+      "bodyTextLength": 64937
+    },
+    "hwpxImages": {
+      "binItems": 7,
+      "picCount": 7,
+      "binaryRefCount": 14,
+      "uniqueBinaryRefs": 7,
+      "paraStyleCount": 105,
+      "usedParaStyleCount": 105,
+      "intentCount": 80,
+      "fieldBeginCount": 1,
+      "fieldEndCount": 1,
+      "hyperlinkFieldCount": 1,
+      "hyperlinkFieldEndCount": 1,
+      "hyperlinkPathCount": 1,
+      "contentHpfFiles": 11,
+      "missingContentHpfFiles": []
+    }
+  },
+  "warnings": [],
+  "failures": []
+}

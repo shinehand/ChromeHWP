@@ -1,0 +1,300 @@
+{
+  "goyeopje": [
+    {
+      "page": 1,
+      "verdict": "review",
+      "base": 20.715,
+      "bestVariant": "br1.25",
+      "best": 19.1,
+      "delta": -1.615
+    },
+    {
+      "page": 2,
+      "verdict": "close",
+      "base": 13.16,
+      "bestVariant": "br1.25",
+      "best": 11.967,
+      "delta": -1.193
+    }
+  ],
+  "goyeopje-full-2024": [
+    {
+      "page": 1,
+      "verdict": "close",
+      "base": 16.625,
+      "bestVariant": "br1.1-ct1.3",
+      "best": 15.288,
+      "delta": -1.337
+    },
+    {
+      "page": 2,
+      "verdict": "review",
+      "base": 20.151,
+      "bestVariant": "br1.1-ct1.3",
+      "best": 19.435,
+      "delta": -0.716
+    },
+    {
+      "page": 3,
+      "verdict": "close",
+      "base": 7.89,
+      "bestVariant": "br1.1-ct1.3",
+      "best": 7.258,
+      "delta": -0.633
+    },
+    {
+      "page": 4,
+      "verdict": "close",
+      "base": 15.661,
+      "bestVariant": "br1.2",
+      "best": 14.382,
+      "delta": -1.279
+    },
+    {
+      "page": 5,
+      "verdict": "close",
+      "base": 15.877,
+      "bestVariant": "br1.25",
+      "best": 14.946,
+      "delta": -0.931
+    },
+    {
+      "page": 6,
+      "verdict": "review",
+      "base": 23.483,
+      "bestVariant": "ct1.25",
+      "best": 23.343,
+      "delta": -0.14
+    },
+    {
+      "page": 7,
+      "verdict": "review",
+      "base": 18.704,
+      "bestVariant": "br1.15",
+      "best": 17.674,
+      "delta": -1.03
+    },
+    {
+      "page": 8,
+      "verdict": "review",
+      "base": 22.519,
+      "bestVariant": "br1.25",
+      "best": 21.721,
+      "delta": -0.798
+    },
+    {
+      "page": 9,
+      "verdict": "review",
+      "base": 22.06,
+      "bestVariant": "br1.1-ct1.3",
+      "best": 21.397,
+      "delta": -0.663
+    },
+    {
+      "page": 10,
+      "verdict": "review",
+      "base": 21.282,
+      "bestVariant": "ct1.15",
+      "best": 20.529,
+      "delta": -0.753
+    },
+    {
+      "page": 11,
+      "verdict": "review",
+      "base": 25.742,
+      "bestVariant": "br1.25",
+      "best": 24.906,
+      "delta": -0.836
+    }
+  ],
+  "gyeolseokgye": [
+    {
+      "page": 1,
+      "verdict": "close",
+      "base": 16.907,
+      "bestVariant": "br1.3",
+      "best": 16.268,
+      "delta": -0.64
+    }
+  ],
+  "attachment-sale-notice": [
+    {
+      "page": 1,
+      "verdict": "review",
+      "base": 30.392,
+      "bestVariant": "br1.3",
+      "best": 24.941,
+      "delta": -5.451
+    },
+    {
+      "page": 2,
+      "verdict": "review",
+      "base": 30.611,
+      "bestVariant": "br1.3",
+      "best": 27.789,
+      "delta": -2.822
+    },
+    {
+      "page": 3,
+      "verdict": "review",
+      "base": 21.922,
+      "bestVariant": "br1.3",
+      "best": 17.753,
+      "delta": -4.17
+    },
+    {
+      "page": 4,
+      "verdict": "review",
+      "base": 24.218,
+      "bestVariant": "br1.3",
+      "best": 22.619,
+      "delta": -1.599
+    }
+  ],
+  "incheon-2a": [
+    {
+      "page": 1,
+      "verdict": "review",
+      "base": 22.615,
+      "bestVariant": "br1.2-ct0.85",
+      "best": 22.383,
+      "delta": -0.233
+    },
+    {
+      "page": 2,
+      "verdict": "review",
+      "base": 19.86,
+      "bestVariant": "br1.3",
+      "best": 19.22,
+      "delta": -0.64
+    },
+    {
+      "page": 3,
+      "verdict": "review",
+      "base": 24.551,
+      "bestVariant": "br1.3",
+      "best": 23.604,
+      "delta": -0.946
+    },
+    {
+      "page": 4,
+      "verdict": "review",
+      "base": 22.713,
+      "bestVariant": "br1.3",
+      "best": 20.141,
+      "delta": -2.572
+    },
+    {
+      "page": 5,
+      "verdict": "review",
+      "base": 23.433,
+      "bestVariant": "br1.3",
+      "best": 20.795,
+      "delta": -2.638
+    },
+    {
+      "page": 6,
+      "verdict": "close",
+      "base": 14.278,
+      "bestVariant": "br1.3",
+      "best": 13.981,
+      "delta": -0.297
+    },
+    {
+      "page": 7,
+      "verdict": "close",
+      "base": 14.911,
+      "bestVariant": "br1.3",
+      "best": 13.807,
+      "delta": -1.104
+    },
+    {
+      "page": 8,
+      "verdict": "close",
+      "base": 16.166,
+      "bestVariant": "br1.3",
+      "best": 14.846,
+      "delta": -1.319
+    },
+    {
+      "page": 9,
+      "verdict": "close",
+      "base": 16.333,
+      "bestVariant": "br1.2-ct0.85",
+      "best": 16.061,
+      "delta": -0.272
+    },
+    {
+      "page": 10,
+      "verdict": "close",
+      "base": 14.991,
+      "bestVariant": "br1.3",
+      "best": 14.316,
+      "delta": -0.675
+    },
+    {
+      "page": 11,
+      "verdict": "close",
+      "base": 17.483,
+      "bestVariant": "br1.2-ct0.85",
+      "best": 17.283,
+      "delta": -0.2
+    },
+    {
+      "page": 12,
+      "verdict": "close",
+      "base": 16.753,
+      "bestVariant": "br1.3",
+      "best": 14.788,
+      "delta": -1.965
+    },
+    {
+      "page": 13,
+      "verdict": "close",
+      "base": 16.205,
+      "bestVariant": "br1.3",
+      "best": 15.791,
+      "delta": -0.414
+    },
+    {
+      "page": 14,
+      "verdict": "close",
+      "base": 16.675,
+      "bestVariant": "br1.3",
+      "best": 15.945,
+      "delta": -0.73
+    },
+    {
+      "page": 15,
+      "verdict": "close",
+      "base": 16.437,
+      "bestVariant": "br1.3",
+      "best": 16.18,
+      "delta": -0.257
+    },
+    {
+      "page": 16,
+      "verdict": "review",
+      "base": 26.554,
+      "bestVariant": "br1.3",
+      "best": 25.352,
+      "delta": -1.202
+    },
+    {
+      "page": 17,
+      "verdict": "review",
+      "base": 24.632,
+      "bestVariant": "br1.3",
+      "best": 22.361,
+      "delta": -2.27
+    },
+    {
+      "page": 18,
+      "verdict": "close",
+      "base": 14.06,
+      "bestVariant": "br1.05",
+      "best": 13.723,
+      "delta": -0.337
+    }
+  ]
+}

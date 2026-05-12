@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hancom Page Audit</title>
+  <style>
+    body { margin: 0; background: #eee8dc; color: #171410; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+    main { width: min(1800px, calc(100vw - 40px)); margin: 0 auto; padding: 28px 0 60px; }
+    h1 { margin: 0 0 8px; }
+    .policy { background: #fff7e0; border: 1px solid #d9a441; padding: 12px 14px; margin: 18px 0; }
+    .doc-card { background: #fffaf2; border: 1px solid #d6c9b8; border-radius: 18px; padding: 18px; margin: 20px 0; }
+    .doc-card p { color: #665d52; }
+    .page-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 16px; }
+    .page-card { background: white; border: 1px solid #d8d0c3; border-radius: 14px; overflow: hidden; }
+    .page-card h3 { margin: 0; padding: 10px 12px; font-size: 15px; background: #f7f2eb; }
+    .page-card.strict-failure h3 { background: #ffe2df; }
+    .page-card.advisory h3 { background: #fff1c2; }
+    .page-card.pass h3 { background: #e8f5df; }
+    .page-card.layout-review h3 { background: #ffe9c7; }
+    .verdict-note { margin: 0; padding: 9px 12px; color: #5f5143; background: #fffaf2; font-size: 13px; }
+    img { width: 100%; display: block; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Hancom Page Audit</h1>
+  <p>모든 테스트 문서를 한컴 Viewer와 TotalDocs 페이지 단위로 대조한 산출물입니다.</p>
+  <section class="policy">
+    <strong>Verdict policy:</strong>
+    <span>pass=close</span> ·
+    <span>advisory=layout-review, review (clean pass 아님)</span> ·
+    <span>strict failure=capture-error, capture-review, mismatch</span>
+  </section>
+  
+          <article class="doc-card">
+            <h2>incheon-2a.hwpx</h2>
+            <p>/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx</p>
+            <p>pages 18 · severity {&#x27;advisory&#x27;: 10} · verdicts {&#x27;review&#x27;: 10}</p>
+            <div class="page-grid">
+              <section class="page-card advisory review">
+                <h3>13쪽 · advisory · review · raw 20.122 · blur 17.939 · layout 39.845</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-013-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>15쪽 · advisory · review · raw 20.909 · blur 19.098 · layout 41.692</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-015-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>13쪽 · advisory · review · raw 20.937 · blur 18.412 · layout 39.519</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-013-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>15쪽 · advisory · review · raw 21.584 · blur 19.433 · layout 41.059</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-015-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>13쪽 · advisory · review · raw 22.404 · blur 19.363 · layout 25.994</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-013-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>15쪽 · advisory · review · raw 22.837 · blur 20.167 · layout 28.319</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-015-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>13쪽 · advisory · review · raw 25.243 · blur 21.402 · layout 19.491</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-013-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>15쪽 · advisory · review · raw 25.338 · blur 21.860 · layout 20.277</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-015-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>13쪽 · advisory · review · raw 28.434 · blur 23.926 · layout 20.396</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-013-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>15쪽 · advisory · review · raw 28.204 · blur 24.059 · layout 19.590</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-015-compare.png" alt="page compare">
+              </section>
+            </div>
+          </article>
+        
+</main>
+</body>
+</html>

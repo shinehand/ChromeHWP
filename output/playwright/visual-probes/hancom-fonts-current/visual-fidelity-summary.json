@@ -1,0 +1,532 @@
+{
+  "ok": true,
+  "generatedAt": "2026-05-07T05:00:37.625Z",
+  "strict": true,
+  "url": "http://127.0.0.1:52465/src/editor/editor.html",
+  "session": "visual-mov0p9jy",
+  "outputDir": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current",
+  "manifestPath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/hancom-page-audit-manifest.json",
+  "reportPath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/hancom-page-audit-report.json",
+  "capture": {
+    "documents": [
+      {
+        "id": "goyeopje",
+        "filename": "goyeopje.hwp",
+        "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje.hwp",
+        "pageCount": 2,
+        "state": {
+          "filename": "goyeopje.hwp",
+          "renderedFilename": "goyeopje.hwp",
+          "format": "HWP 읽기 / HWPX 내보내기",
+          "pages": 2,
+          "oraclePages": 0,
+          "canvasPages": 0,
+          "paragraphs": 167,
+          "lineSegmentParagraphs": 117,
+          "lineSegments": 128
+        },
+        "pages": [
+          {
+            "pageIndex": 0,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje/hancom-page-001.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje/chrome-page-001.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 1,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje/hancom-page-002.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje/chrome-page-002.png",
+            "targetBand": "last"
+          }
+        ]
+      },
+      {
+        "id": "goyeopje-full-2024",
+        "filename": "goyeopje-full-2024.hwp",
+        "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje-full-2024.hwp",
+        "pageCount": 11,
+        "state": {
+          "filename": "goyeopje-full-2024.hwp",
+          "renderedFilename": "goyeopje-full-2024.hwp",
+          "format": "HWP 읽기 / HWPX 내보내기",
+          "pages": 11,
+          "oraclePages": 0,
+          "canvasPages": 0,
+          "paragraphs": 745,
+          "lineSegmentParagraphs": 531,
+          "lineSegments": 613
+        },
+        "pages": [
+          {
+            "pageIndex": 0,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-001.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/chrome-page-001.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 1,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-002.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/chrome-page-002.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 2,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-003.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/chrome-page-003.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 3,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-004.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/chrome-page-004.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 4,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-005.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/chrome-page-005.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 5,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-006.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/chrome-page-006.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 6,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-007.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/chrome-page-007.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 7,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-008.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/chrome-page-008.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 8,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-009.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/chrome-page-009.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 9,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-010.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/chrome-page-010.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 10,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-011.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/chrome-page-011.png",
+            "targetBand": "last"
+          }
+        ]
+      },
+      {
+        "id": "gyeolseokgye",
+        "filename": "gyeolseokgye.hwp",
+        "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/gyeolseokgye.hwp",
+        "pageCount": 1,
+        "state": {
+          "filename": "gyeolseokgye.hwp",
+          "renderedFilename": "gyeolseokgye.hwp",
+          "format": "HWP 읽기 / HWPX 내보내기",
+          "pages": 1,
+          "oraclePages": 0,
+          "canvasPages": 0,
+          "paragraphs": 63,
+          "lineSegmentParagraphs": 52,
+          "lineSegments": 57
+        },
+        "pages": [
+          {
+            "pageIndex": 0,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/gyeolseokgye/chrome-page-001.png",
+            "targetBand": "last"
+          }
+        ]
+      },
+      {
+        "id": "attachment-sale-notice",
+        "filename": "attachment-sale-notice.hwp",
+        "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp",
+        "pageCount": 4,
+        "state": {
+          "filename": "attachment-sale-notice.hwp",
+          "renderedFilename": "attachment-sale-notice.hwp",
+          "format": "HWP 읽기 / HWPX 내보내기",
+          "pages": 4,
+          "oraclePages": 0,
+          "canvasPages": 0,
+          "paragraphs": 795,
+          "lineSegmentParagraphs": 750,
+          "lineSegments": 791
+        },
+        "pages": [
+          {
+            "pageIndex": 0,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/attachment-sale-notice/chrome-page-001.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 1,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-002.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/attachment-sale-notice/chrome-page-002.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 2,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-003.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/attachment-sale-notice/chrome-page-003.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 3,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-004.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/attachment-sale-notice/chrome-page-004.png",
+            "targetBand": "last"
+          }
+        ]
+      },
+      {
+        "id": "incheon-2a",
+        "filename": "incheon-2a.hwpx",
+        "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+        "pageCount": 18,
+        "state": {
+          "filename": "incheon-2a.hwpx",
+          "renderedFilename": "incheon-2a.hwpx",
+          "format": "HWPX",
+          "pages": 18,
+          "oraclePages": 0,
+          "canvasPages": 0,
+          "paragraphs": 1846,
+          "lineSegmentParagraphs": 1606,
+          "lineSegments": 1833
+        },
+        "pages": [
+          {
+            "pageIndex": 0,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-001.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-001.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 1,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-002.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-002.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 2,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-003.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-003.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 3,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-004.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-004.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 4,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-005.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-005.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 5,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-006.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-006.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 6,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-007.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-007.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 7,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-008.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-008.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 8,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-009.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-009.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 9,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-010.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-010.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 10,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-011.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-011.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 11,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-012.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-012.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 12,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-013.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-013.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 13,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-014.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-014.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 14,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-015.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-015.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 15,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-016.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-016.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 16,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-017.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-017.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 17,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-018.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/chrome-page-018.png",
+            "targetBand": "last"
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "documentCount": 5,
+    "totalPages": 36,
+    "documents": [
+      {
+        "id": "goyeopje",
+        "filename": "goyeopje.hwp",
+        "pageCount": 2,
+        "verdictCounts": {
+          "review": 1,
+          "close": 1
+        },
+        "averageDiff": 18.75215117072971,
+        "maxDiff": 22.83688067784766,
+        "worstPages": [
+          {
+            "page": 1,
+            "verdict": "review",
+            "diff": 22.83688067784766,
+            "blurDiff": 22.058296645702306,
+            "layoutDiff": 32.1087098886706,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje/compare/page-001-compare.png"
+          },
+          {
+            "page": 2,
+            "verdict": "close",
+            "diff": 14.667421663611766,
+            "blurDiff": 14.266546216286986,
+            "layoutDiff": 20.568107400130955,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje/compare/page-002-compare.png"
+          }
+        ]
+      },
+      {
+        "id": "goyeopje-full-2024",
+        "filename": "goyeopje-full-2024.hwp",
+        "pageCount": 11,
+        "verdictCounts": {
+          "close": 4,
+          "review": 7
+        },
+        "averageDiff": 20.121728923246224,
+        "maxDiff": 27.03549868766404,
+        "worstPages": [
+          {
+            "page": 11,
+            "verdict": "review",
+            "diff": 27.03549868766404,
+            "blurDiff": 25.4342895888014,
+            "layoutDiff": 42.27362204724412,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/compare/page-011-compare.png"
+          },
+          {
+            "page": 6,
+            "verdict": "review",
+            "diff": 24.91071177812884,
+            "blurDiff": 23.650913638757242,
+            "layoutDiff": 40.609796186719265,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/compare/page-006-compare.png"
+          },
+          {
+            "page": 8,
+            "verdict": "review",
+            "diff": 23.698307961504813,
+            "blurDiff": 22.882539807524058,
+            "layoutDiff": 37.17355643044618,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/compare/page-008-compare.png"
+          },
+          {
+            "page": 9,
+            "verdict": "review",
+            "diff": 23.382403896787782,
+            "blurDiff": 22.484137265227314,
+            "layoutDiff": 36.60420775805394,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/compare/page-009-compare.png"
+          },
+          {
+            "page": 10,
+            "verdict": "review",
+            "diff": 22.07995962787432,
+            "blurDiff": 20.936700017553097,
+            "layoutDiff": 20.54350208196366,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/goyeopje-full-2024/compare/page-010-compare.png"
+          }
+        ]
+      },
+      {
+        "id": "gyeolseokgye",
+        "filename": "gyeolseokgye.hwp",
+        "pageCount": 1,
+        "verdictCounts": {
+          "review": 1
+        },
+        "averageDiff": 18.496658805031448,
+        "maxDiff": 18.496658805031448,
+        "worstPages": [
+          {
+            "page": 1,
+            "verdict": "review",
+            "diff": 18.496658805031448,
+            "blurDiff": 18.016922606568833,
+            "layoutDiff": 23.778105217201503,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/gyeolseokgye/compare/page-001-compare.png"
+          }
+        ]
+      },
+      {
+        "id": "attachment-sale-notice",
+        "filename": "attachment-sale-notice.hwp",
+        "pageCount": 4,
+        "verdictCounts": {
+          "layout-review": 1,
+          "review": 3
+        },
+        "averageDiff": 26.656582267885938,
+        "maxDiff": 32.86981379491214,
+        "worstPages": [
+          {
+            "page": 1,
+            "verdict": "layout-review",
+            "diff": 32.86981379491214,
+            "blurDiff": 28.268431681091005,
+            "layoutDiff": 29.841972878390198,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/attachment-sale-notice/compare/page-001-compare.png"
+          },
+          {
+            "page": 4,
+            "verdict": "review",
+            "diff": 25.643121609798776,
+            "blurDiff": 22.038904636920385,
+            "layoutDiff": 24.784011373578323,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/attachment-sale-notice/compare/page-004-compare.png"
+          },
+          {
+            "page": 2,
+            "verdict": "review",
+            "diff": 25.12494466578132,
+            "blurDiff": 22.266394864984505,
+            "layoutDiff": 26.130478087649422,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/attachment-sale-notice/compare/page-002-compare.png"
+          },
+          {
+            "page": 3,
+            "verdict": "review",
+            "diff": 22.988449001051524,
+            "blurDiff": 21.034373466526464,
+            "layoutDiff": 23.35031777339471,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/attachment-sale-notice/compare/page-003-compare.png"
+          }
+        ]
+      },
+      {
+        "id": "incheon-2a",
+        "filename": "incheon-2a.hwpx",
+        "pageCount": 18,
+        "verdictCounts": {
+          "review": 9,
+          "close": 9
+        },
+        "averageDiff": 20.527897704138415,
+        "maxDiff": 30.261320539782684,
+        "worstPages": [
+          {
+            "page": 16,
+            "verdict": "review",
+            "diff": 30.261320539782684,
+            "blurDiff": 29.004445320715035,
+            "layoutDiff": 43.58645627876394,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/compare/page-016-compare.png"
+          },
+          {
+            "page": 17,
+            "verdict": "review",
+            "diff": 27.01787416754294,
+            "blurDiff": 24.59449789695058,
+            "layoutDiff": 33.730002191540684,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/compare/page-017-compare.png"
+          },
+          {
+            "page": 3,
+            "verdict": "review",
+            "diff": 26.484214861549248,
+            "blurDiff": 25.304192078513847,
+            "layoutDiff": 45.37968441814594,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/compare/page-003-compare.png"
+          },
+          {
+            "page": 5,
+            "verdict": "review",
+            "diff": 25.100499474237644,
+            "blurDiff": 22.67900455660708,
+            "layoutDiff": 43.27525750602672,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/compare/page-005-compare.png"
+          },
+          {
+            "page": 4,
+            "verdict": "review",
+            "diff": 24.573780231335437,
+            "blurDiff": 23.051479144759902,
+            "layoutDiff": 35.513916283147054,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hancom-fonts-current/incheon-2a/compare/page-004-compare.png"
+          }
+        ]
+      }
+    ],
+    "strictFailures": []
+  }
+}

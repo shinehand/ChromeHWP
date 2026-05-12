@@ -1,0 +1,3024 @@
+{
+  "filename": "goyeopje-full-2024.hwp",
+  "pages": 11,
+  "page": {
+    "index": 10,
+    "width": 794,
+    "height": 1123
+  },
+  "bodyRect": {
+    "top": 1077,
+    "left": 633,
+    "width": 794,
+    "height": 1123,
+    "bottom": 2200,
+    "right": 1427
+  },
+  "text": "■ 민원인의 요구에 의한 본인정보 공동이용 운영 지침 [별지 제3호 서식] <제정 2021. 10. 21.> 본인정보 제공 요구서 ※ 색상이 어두운 란은 신청인이 적지 않습니다. 접수 번호 : 접수 일시 : 처리 기간 : 개별 민원의 처리기간에 따름 신청인 (개인) 성명 주민등록번호(여권·외국인등록번호) (휴대)전화번호 신청인 (법인) 법인명 사업자등록번호(또는 법인등록번호) 대표자 전화번호 방문자 성명 (휴대)전화번호 민원처리기관 지방보훈청, 보훈지청, 제주특별자치도보훈청 민원(사무)명 고엽제후유(의)증환자 등 등록 본인정보명 가족관계증명서 혼인관계증명서 입양관계증명서 기본증명서 정기제공요구 주기 □ 동일민원 접수 시 □ 기타( ) 종료시점 □ 1년 □ 3년 □ 5년 ※ 본인정보 정기 제공을 요구하는 경우에만 작성합니다. 「민원처리에 관한 법률」 제10조의2, 「민원처리에 관한 법률 시행령」 제7조의2 및 제7조의3, 「민원인의 요구에 의한 본인정보 공동이용 운영 지침」 제13조에 따라 위와 같이 신청합니다. 년 월 일 신청인 성명 (서명 또는 인) 생년월일 본인정보보유기관 귀하 본인 동의사항 본인은 민원(사무)을 처리하기 위하여 「민원처리에 관한 법률」제10조의2에 따른 본인정보 제공 요구를 통해 민원처리기관의 담당자가 전자적으로 본인에 관한 행정정보를 확인하는 것에 동의합니다. ※ 만일, 본인이 위 사항에 대해 동의를 하지 아니할 경우에도 불이익은 없습니다. 다만, 동의하지 아니한 경우에는 본인이 해당 구비서류 등을 제출하여야 합니 다. 신청인(대표자) (서명 또는 인) 210㎜×297㎜[백상지 또는 중질지 80g/㎡]",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-9-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "1004"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-9-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp"
+      },
+      "rect": {
+        "top": 57,
+        "left": 38,
+        "width": 706,
+        "height": 1028.578125,
+        "bottom": 1085.578125,
+        "right": 744
+      },
+      "tableRect": {
+        "top": 57,
+        "left": 38,
+        "width": 706,
+        "height": 1028.578125,
+        "bottom": 1085.578125,
+        "right": 744
+      },
+      "rowCount": 32,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-0"
+          },
+          "rect": {
+            "top": 57.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 20,
+            "bottom": 77.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "■ 민원인의 요구에 의한 본인정보 공동이용 운영 지침 [별지 제3호 서식] <제정 2021. 10. 21.>"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-1"
+          },
+          "rect": {
+            "top": 77.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 35,
+            "bottom": 112.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "본인정보 제공 요구서"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-2"
+          },
+          "rect": {
+            "top": 112.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 39,
+            "bottom": 151.5,
+            "right": 743.5
+          },
+          "cellCount": 2,
+          "text": "※ 색상이 어두운 란은 신청인이 적지 않습니다."
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-3"
+          },
+          "rect": {
+            "top": 151.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 37,
+            "bottom": 188.5,
+            "right": 743.5
+          },
+          "cellCount": 3,
+          "text": "접수 번호 : 접수 일시 : 처리 기간 : 개별 민원의 처리기간에 따름"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-4"
+          },
+          "rect": {
+            "top": 188.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 7,
+            "bottom": 195.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-5"
+          },
+          "rect": {
+            "top": 195.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 37,
+            "bottom": 232.5,
+            "right": 743.5
+          },
+          "cellCount": 3,
+          "text": "신청인 (개인) 성명 주민등록번호(여권·외국인등록번호)"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-6"
+          },
+          "rect": {
+            "top": 232.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 41,
+            "bottom": 273.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "(휴대)전화번호"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-7"
+          },
+          "rect": {
+            "top": 273.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 7,
+            "bottom": 280.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-8"
+          },
+          "rect": {
+            "top": 280.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 41,
+            "bottom": 321.5,
+            "right": 743.5
+          },
+          "cellCount": 3,
+          "text": "신청인 (법인) 법인명 사업자등록번호(또는 법인등록번호)"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-9"
+          },
+          "rect": {
+            "top": 321.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 41,
+            "bottom": 362.5,
+            "right": 743.5
+          },
+          "cellCount": 2,
+          "text": "대표자 전화번호"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-10"
+          },
+          "rect": {
+            "top": 362.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 41,
+            "bottom": 403.5,
+            "right": 743.5
+          },
+          "cellCount": 2,
+          "text": "방문자 성명 (휴대)전화번호"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-11"
+          },
+          "rect": {
+            "top": 403.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 5,
+            "bottom": 408.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 24,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-24\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-24"
+          },
+          "rect": {
+            "top": 783.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 21.578125,
+            "bottom": 805.078125,
+            "right": 743.5
+          },
+          "cellCount": 7,
+          "text": ""
+        },
+        {
+          "rowIndex": 25,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-25\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-25"
+          },
+          "rect": {
+            "top": 805.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 22,
+            "bottom": 827.078125,
+            "right": 743.5
+          },
+          "cellCount": 7,
+          "text": "신청인 성명 (서명 또는 인)"
+        },
+        {
+          "rowIndex": 26,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-26\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-26"
+          },
+          "rect": {
+            "top": 827.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 26,
+            "bottom": 853.078125,
+            "right": 743.5
+          },
+          "cellCount": 7,
+          "text": "생년월일"
+        },
+        {
+          "rowIndex": 27,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-27\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-27"
+          },
+          "rect": {
+            "top": 853.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 32,
+            "bottom": 885.078125,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "본인정보보유기관 귀하"
+        },
+        {
+          "rowIndex": 28,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-28\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-28"
+          },
+          "rect": {
+            "top": 885.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 27,
+            "bottom": 912.078125,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "본인 동의사항"
+        },
+        {
+          "rowIndex": 29,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-29\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-29"
+          },
+          "rect": {
+            "top": 912.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 109,
+            "bottom": 1021.078125,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "본인은 민원(사무)을 처리하기 위하여 「민원처리에 관한 법률」제10조의2에 따른 본인정보 제공 요구를 통해 민원처리기관의 담당자가 전자적으로 본인에 관한 행정정보를 확인하는 것에 동의합니다. ※ 만일, 본인이 위 사항에 대해 동의를 하지 아니할 경우에도 불이익은 없습니다. 다만, 동의하"
+        },
+        {
+          "rowIndex": 30,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-30\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-30"
+          },
+          "rect": {
+            "top": 1021.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 35,
+            "bottom": 1056.078125,
+            "right": 743.5
+          },
+          "cellCount": 6,
+          "text": "신청인(대표자) (서명 또는 인)"
+        },
+        {
+          "rowIndex": 31,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-31\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-31"
+          },
+          "rect": {
+            "top": 1056.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 29,
+            "bottom": 1085.078125,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "210㎜×297㎜[백상지 또는 중질지 80g/㎡]"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-0"
+          },
+          "rect": {
+            "top": 57.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 20,
+            "bottom": 77.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "■ 민원인의 요구에 의한 본인정보 공동이용 운영 지침 [별지 제3호 서식] <제정 2021. 10. 21.>"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-1"
+          },
+          "rect": {
+            "top": 77.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 35,
+            "bottom": 112.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "본인정보 제공 요구서"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-2"
+          },
+          "rect": {
+            "top": 112.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 39,
+            "bottom": 151.5,
+            "right": 743.5
+          },
+          "cellCount": 2,
+          "text": "※ 색상이 어두운 란은 신청인이 적지 않습니다."
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-3"
+          },
+          "rect": {
+            "top": 151.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 37,
+            "bottom": 188.5,
+            "right": 743.5
+          },
+          "cellCount": 3,
+          "text": "접수 번호 : 접수 일시 : 처리 기간 : 개별 민원의 처리기간에 따름"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-4"
+          },
+          "rect": {
+            "top": 188.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 7,
+            "bottom": 195.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-5"
+          },
+          "rect": {
+            "top": 195.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 37,
+            "bottom": 232.5,
+            "right": 743.5
+          },
+          "cellCount": 3,
+          "text": "신청인 (개인) 성명 주민등록번호(여권·외국인등록번호)"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-6"
+          },
+          "rect": {
+            "top": 232.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 41,
+            "bottom": 273.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "(휴대)전화번호"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-7"
+          },
+          "rect": {
+            "top": 273.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 7,
+            "bottom": 280.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-8"
+          },
+          "rect": {
+            "top": 280.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 41,
+            "bottom": 321.5,
+            "right": 743.5
+          },
+          "cellCount": 3,
+          "text": "신청인 (법인) 법인명 사업자등록번호(또는 법인등록번호)"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-9"
+          },
+          "rect": {
+            "top": 321.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 41,
+            "bottom": 362.5,
+            "right": 743.5
+          },
+          "cellCount": 2,
+          "text": "대표자 전화번호"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-10"
+          },
+          "rect": {
+            "top": 362.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 41,
+            "bottom": 403.5,
+            "right": 743.5
+          },
+          "cellCount": 2,
+          "text": "방문자 성명 (휴대)전화번호"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-11"
+          },
+          "rect": {
+            "top": 403.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 5,
+            "bottom": 408.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 12,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-12"
+          },
+          "rect": {
+            "top": 408.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 41,
+            "bottom": 449.5,
+            "right": 743.5
+          },
+          "cellCount": 2,
+          "text": "민원처리기관 지방보훈청, 보훈지청, 제주특별자치도보훈청 민원(사무)명 고엽제후유(의)증환자 등 등록"
+        },
+        {
+          "rowIndex": 13,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-13\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-13"
+          },
+          "rect": {
+            "top": 449.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 5,
+            "bottom": 454.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 14,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-14\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-14"
+          },
+          "rect": {
+            "top": 454.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 37,
+            "bottom": 491.5,
+            "right": 743.5
+          },
+          "cellCount": 3,
+          "text": "본인정보명 가족관계증명서"
+        },
+        {
+          "rowIndex": 15,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-15\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-15"
+          },
+          "rect": {
+            "top": 491.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 37,
+            "bottom": 528.5,
+            "right": 743.5
+          },
+          "cellCount": 2,
+          "text": "혼인관계증명서"
+        },
+        {
+          "rowIndex": 16,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-16\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-16"
+          },
+          "rect": {
+            "top": 528.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 37,
+            "bottom": 565.5,
+            "right": 743.5
+          },
+          "cellCount": 2,
+          "text": "입양관계증명서"
+        },
+        {
+          "rowIndex": 17,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-17\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-17"
+          },
+          "rect": {
+            "top": 565.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 37,
+            "bottom": 602.5,
+            "right": 743.5
+          },
+          "cellCount": 2,
+          "text": "기본증명서"
+        },
+        {
+          "rowIndex": 18,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-18\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-18"
+          },
+          "rect": {
+            "top": 602.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 37,
+            "bottom": 639.5,
+            "right": 743.5
+          },
+          "cellCount": 2,
+          "text": ""
+        },
+        {
+          "rowIndex": 19,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-19\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-19"
+          },
+          "rect": {
+            "top": 639.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 9,
+            "bottom": 648.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 20,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-20\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-20"
+          },
+          "rect": {
+            "top": 648.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 43,
+            "bottom": 691.5,
+            "right": 743.5
+          },
+          "cellCount": 3,
+          "text": "정기제공요구 주기 □ 동일민원 접수 시 □ 기타( ) 종료시점 □ 1년 □ 3년 □ 5년"
+        },
+        {
+          "rowIndex": 21,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-21\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-21"
+          },
+          "rect": {
+            "top": 691.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 22,
+            "bottom": 713.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "※ 본인정보 정기 제공을 요구하는 경우에만 작성합니다."
+        },
+        {
+          "rowIndex": 22,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-22\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-22"
+          },
+          "rect": {
+            "top": 713.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 48,
+            "bottom": 761.5,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "「민원처리에 관한 법률」 제10조의2, 「민원처리에 관한 법률 시행령」 제7조의2 및 제7조의3, 「민원인의 요구에 의한 본인정보 공동이용 운영 지침」 제13조에 따라 위와 같이 신청합니다."
+        },
+        {
+          "rowIndex": 23,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-23\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-23"
+          },
+          "rect": {
+            "top": 761.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 22,
+            "bottom": 783.5,
+            "right": 743.5
+          },
+          "cellCount": 5,
+          "text": "년 월 일"
+        },
+        {
+          "rowIndex": 24,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-24\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-24"
+          },
+          "rect": {
+            "top": 783.5,
+            "left": 38.5,
+            "width": 705,
+            "height": 21.578125,
+            "bottom": 805.078125,
+            "right": 743.5
+          },
+          "cellCount": 7,
+          "text": ""
+        },
+        {
+          "rowIndex": 25,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-25\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-25"
+          },
+          "rect": {
+            "top": 805.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 22,
+            "bottom": 827.078125,
+            "right": 743.5
+          },
+          "cellCount": 7,
+          "text": "신청인 성명 (서명 또는 인)"
+        },
+        {
+          "rowIndex": 26,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-26\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-26"
+          },
+          "rect": {
+            "top": 827.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 26,
+            "bottom": 853.078125,
+            "right": 743.5
+          },
+          "cellCount": 7,
+          "text": "생년월일"
+        },
+        {
+          "rowIndex": 27,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-27\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-27"
+          },
+          "rect": {
+            "top": 853.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 32,
+            "bottom": 885.078125,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "본인정보보유기관 귀하"
+        },
+        {
+          "rowIndex": 28,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-28\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-28"
+          },
+          "rect": {
+            "top": 885.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 27,
+            "bottom": 912.078125,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "본인 동의사항"
+        },
+        {
+          "rowIndex": 29,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-29\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-29"
+          },
+          "rect": {
+            "top": 912.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 109,
+            "bottom": 1021.078125,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "본인은 민원(사무)을 처리하기 위하여 「민원처리에 관한 법률」제10조의2에 따른 본인정보 제공 요구를 통해 민원처리기관의 담당자가 전자적으로 본인에 관한 행정정보를 확인하는 것에 동의합니다. ※ 만일, 본인이 위 사항에 대해 동의를 하지 아니할 경우에도 불이익은 없습니다. 다만, 동의하"
+        },
+        {
+          "rowIndex": 30,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-30\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-30"
+          },
+          "rect": {
+            "top": 1021.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 35,
+            "bottom": 1056.078125,
+            "right": 743.5
+          },
+          "cellCount": 6,
+          "text": "신청인(대표자) (서명 또는 인)"
+        },
+        {
+          "rowIndex": 31,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-9-block-0/row-31\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-9-block-0:row-31"
+          },
+          "rect": {
+            "top": 1056.078125,
+            "left": 38.5,
+            "width": 705,
+            "height": 29,
+            "bottom": 1085.078125,
+            "right": 743.5
+          },
+          "cellCount": 1,
+          "text": "210㎜×297㎜[백상지 또는 중질지 80g/㎡]"
+        }
+      ],
+      "text": "■ 민원인의 요구에 의한 본인정보 공동이용 운영 지침 [별지 제3호 서식] <제정 2021. 10. 21.> 본인정보 제공 요구서 ※ 색상이 어두운 란은 신청인이 적지 않습니다. 접수 번호 : 접수 일시 : 처리 기간 : 개별 민원의 처리기간에 따름 신청인 (개인) 성명 주민등록번호(여권·외국인등록번호) (휴대)전화번호 신청인 (법인) 법인명 사업자등록번호(또는 법인등록번호) 대표자 전화번호 방문자 성명 (휴대)전화번호 민원처",
+      "style": {
+        "height": "1004px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 60.75,
+        "left": 46,
+        "width": 690,
+        "height": 14,
+        "bottom": 74.75,
+        "right": 736
+      },
+      "text": "■ 민원인의 요구에 의한 본인정보 공동이용 운영 지침 [별지 제3호 서식] <제정 2021. 10. 21.>",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 83.5,
+        "left": 46,
+        "width": 690,
+        "height": 23,
+        "bottom": 106.5,
+        "right": 736
+      },
+      "text": "본인정보 제공 요구서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-2-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 134,
+        "left": 46,
+        "width": 538.84375,
+        "height": 15,
+        "bottom": 149,
+        "right": 584.84375
+      },
+      "text": "※ 색상이 어두운 란은 신청인이 적지 않습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 131.421875,
+        "left": 598.84375,
+        "width": 137.15625,
+        "height": 17.578125,
+        "bottom": 149,
+        "right": 736
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-3-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 157,
+        "left": 47,
+        "width": 216.78125,
+        "height": 13,
+        "bottom": 170,
+        "right": 263.78125
+      },
+      "text": "접수 번호 :",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-3-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-3-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 157,
+        "left": 279.78125,
+        "width": 231.6875,
+        "height": 13,
+        "bottom": 170,
+        "right": 511.46875
+      },
+      "text": "접수 일시 :",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-3-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-3-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 157,
+        "left": 527.46875,
+        "width": 208.53125,
+        "height": 13,
+        "bottom": 170,
+        "right": 736
+      },
+      "text": "처리 기간 : 개별 민원의 처리기간에 따름",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 189,
+        "left": 46,
+        "width": 690,
+        "height": 17.578125,
+        "bottom": 206.578125,
+        "right": 736
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-5-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 219.5,
+        "left": 46,
+        "width": 53.484375,
+        "height": 15,
+        "bottom": 234.5,
+        "right": 99.484375
+      },
+      "text": "신청인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-5-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-5-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 237.5,
+        "left": 46,
+        "width": 53.484375,
+        "height": 14,
+        "bottom": 251.5,
+        "right": 99.484375
+      },
+      "text": "(개인)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-5-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-5-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 203,
+        "left": 114.484375,
+        "width": 311.796875,
+        "height": 14,
+        "bottom": 217,
+        "right": 426.28125
+      },
+      "text": "성명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-5-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-5-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 203,
+        "left": 441.28125,
+        "width": 294.71875,
+        "height": 14,
+        "bottom": 217,
+        "right": 736
+      },
+      "text": "주민등록번호(여권·외국인등록번호)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-6-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-6-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 240,
+        "left": 114.484375,
+        "width": 621.515625,
+        "height": 14,
+        "bottom": 254,
+        "right": 736
+      },
+      "text": "(휴대)전화번호",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 274,
+        "left": 46,
+        "width": 690,
+        "height": 17.578125,
+        "bottom": 291.578125,
+        "right": 736
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-8-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-8-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 327,
+        "left": 46,
+        "width": 53.484375,
+        "height": 15,
+        "bottom": 342,
+        "right": 99.484375
+      },
+      "text": "신청인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-8-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-8-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 345,
+        "left": 46,
+        "width": 53.484375,
+        "height": 14,
+        "bottom": 359,
+        "right": 99.484375
+      },
+      "text": "(법인)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-8-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-8-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 288,
+        "left": 114.484375,
+        "width": 311.796875,
+        "height": 14,
+        "bottom": 302,
+        "right": 426.28125
+      },
+      "text": "법인명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-8-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-8-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 288,
+        "left": 441.28125,
+        "width": 294.71875,
+        "height": 14,
+        "bottom": 302,
+        "right": 736
+      },
+      "text": "사업자등록번호(또는 법인등록번호)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-9-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-9-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 329,
+        "left": 114.484375,
+        "width": 333.09375,
+        "height": 14,
+        "bottom": 343,
+        "right": 447.578125
+      },
+      "text": "대표자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-9-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-9-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 329,
+        "left": 462.578125,
+        "width": 273.421875,
+        "height": 14,
+        "bottom": 343,
+        "right": 736
+      },
+      "text": "전화번호",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-10-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-10-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 370,
+        "left": 114.484375,
+        "width": 333.09375,
+        "height": 14,
+        "bottom": 384,
+        "right": 447.578125
+      },
+      "text": "방문자 성명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-10-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-10-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 370,
+        "left": 462.578125,
+        "width": 273.421875,
+        "height": 14,
+        "bottom": 384,
+        "right": 736
+      },
+      "text": "(휴대)전화번호",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 404,
+        "left": 46,
+        "width": 690,
+        "height": 17.578125,
+        "bottom": 421.578125,
+        "right": 736
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-12-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-12-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 416,
+        "left": 46,
+        "width": 333.78125,
+        "height": 14,
+        "bottom": 430,
+        "right": 379.78125
+      },
+      "text": "민원처리기관",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-12-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-12-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 433,
+        "left": 46,
+        "width": 333.78125,
+        "height": 14,
+        "bottom": 447,
+        "right": 379.78125
+      },
+      "text": "지방보훈청, 보훈지청, 제주특별자치도보훈청",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-12-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-12-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 416,
+        "left": 394.78125,
+        "width": 341.21875,
+        "height": 14,
+        "bottom": 430,
+        "right": 736
+      },
+      "text": "민원(사무)명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-12-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-12-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 433,
+        "left": 394.78125,
+        "width": 341.21875,
+        "height": 14,
+        "bottom": 447,
+        "right": 736
+      },
+      "text": "고엽제후유(의)증환자 등 등록",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 450,
+        "left": 39,
+        "width": 704,
+        "height": 17.578125,
+        "bottom": 467.578125,
+        "right": 743
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-14-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-14-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 540.5,
+        "left": 46,
+        "width": 53.484375,
+        "height": 15,
+        "bottom": 555.5,
+        "right": 99.484375
+      },
+      "text": "본인정보명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-14-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-14-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 468.5,
+        "left": 114.484375,
+        "width": 333.09375,
+        "height": 14,
+        "bottom": 482.5,
+        "right": 447.578125
+      },
+      "text": "가족관계증명서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 465.203125,
+        "left": 462.578125,
+        "width": 273.421875,
+        "height": 17.578125,
+        "bottom": 482.78125,
+        "right": 736
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-15-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-15-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 505.5,
+        "left": 114.484375,
+        "width": 333.09375,
+        "height": 14,
+        "bottom": 519.5,
+        "right": 447.578125
+      },
+      "text": "혼인관계증명서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 502.203125,
+        "left": 462.578125,
+        "width": 273.421875,
+        "height": 17.578125,
+        "bottom": 519.78125,
+        "right": 736
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-16-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-16-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 542.5,
+        "left": 114.484375,
+        "width": 333.09375,
+        "height": 14,
+        "bottom": 556.5,
+        "right": 447.578125
+      },
+      "text": "입양관계증명서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 539.203125,
+        "left": 462.578125,
+        "width": 273.421875,
+        "height": 17.578125,
+        "bottom": 556.78125,
+        "right": 736
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-17-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-17-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 579.5,
+        "left": 114.484375,
+        "width": 333.09375,
+        "height": 14,
+        "bottom": 593.5,
+        "right": 447.578125
+      },
+      "text": "기본증명서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 576.203125,
+        "left": 462.578125,
+        "width": 273.421875,
+        "height": 17.578125,
+        "bottom": 593.78125,
+        "right": 736
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 613.203125,
+        "left": 114.484375,
+        "width": 333.09375,
+        "height": 17.578125,
+        "bottom": 630.78125,
+        "right": 447.578125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 613.203125,
+        "left": 462.578125,
+        "width": 273.421875,
+        "height": 17.578125,
+        "bottom": 630.78125,
+        "right": 736
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 642,
+        "left": 43,
+        "width": 693,
+        "height": 17.578125,
+        "bottom": 659.578125,
+        "right": 736
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-20-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-20-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 674,
+        "left": 43,
+        "width": 56.484375,
+        "height": 14,
+        "bottom": 688,
+        "right": 99.484375
+      },
+      "text": "정기제공요구",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-20-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-20-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 664,
+        "left": 114.484375,
+        "width": 333.09375,
+        "height": 14,
+        "bottom": 678,
+        "right": 447.578125
+      },
+      "text": "주기 □ 동일민원 접수 시 □ 기타( )",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-20-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-20-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 664,
+        "left": 462.578125,
+        "width": 273.421875,
+        "height": 14,
+        "bottom": 678,
+        "right": 736
+      },
+      "text": "종료시점 □ 1년 □ 3년 □ 5년",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-21-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-21-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 702,
+        "left": 111.484375,
+        "width": 624.515625,
+        "height": 13,
+        "bottom": 715,
+        "right": 736
+      },
+      "text": "※ 본인정보 정기 제공을 요구하는 경우에만 작성합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-22-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-22-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 723.75,
+        "left": 43,
+        "width": 693,
+        "height": 28,
+        "bottom": 751.75,
+        "right": 736
+      },
+      "text": "「민원처리에 관한 법률」 제10조의2, 「민원처리에 관한 법률 시행령」 제7조의2 및 제7조의3, 「민원인의 요구에 의한 본인정보 공동이용 운영 지침」 제13조에 따라 위와 같이 신청합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 763.703125,
+        "left": 43,
+        "width": 130.015625,
+        "height": 17.578125,
+        "bottom": 781.28125,
+        "right": 173.015625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 763.703125,
+        "left": 184.015625,
+        "width": 80.265625,
+        "height": 17.578125,
+        "bottom": 781.28125,
+        "right": 264.28125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 763.703125,
+        "left": 275.28125,
+        "width": 80.515625,
+        "height": 17.578125,
+        "bottom": 781.28125,
+        "right": 355.796875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 763.703125,
+        "left": 366.796875,
+        "width": 123.875,
+        "height": 17.578125,
+        "bottom": 781.28125,
+        "right": 490.671875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-23-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-23-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "12",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 766,
+        "left": 501.671875,
+        "width": 234.328125,
+        "height": 13,
+        "bottom": 779,
+        "right": 736
+      },
+      "text": "년 월 일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "12px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 785.5,
+        "left": 43,
+        "width": 81.328125,
+        "height": 17.578125,
+        "bottom": 803.078125,
+        "right": 124.328125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 785.5,
+        "left": 135.328125,
+        "width": 68.109375,
+        "height": 17.578125,
+        "bottom": 803.078125,
+        "right": 203.4375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 785.5,
+        "left": 214.4375,
+        "width": 95.46875,
+        "height": 17.578125,
+        "bottom": 803.078125,
+        "right": 309.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 785.5,
+        "left": 320.90625,
+        "width": 82.6875,
+        "height": 17.578125,
+        "bottom": 803.078125,
+        "right": 403.59375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 785.5,
+        "left": 414.59375,
+        "width": 118.8125,
+        "height": 17.578125,
+        "bottom": 803.078125,
+        "right": 533.40625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 785.5,
+        "left": 544.40625,
+        "width": 70.453125,
+        "height": 17.578125,
+        "bottom": 803.078125,
+        "right": 614.859375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 785.5,
+        "left": 625.859375,
+        "width": 110.140625,
+        "height": 17.578125,
+        "bottom": 803.078125,
+        "right": 736
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 807.078125,
+        "left": 43,
+        "width": 81.328125,
+        "height": 17.578125,
+        "bottom": 824.65625,
+        "right": 124.328125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 807.078125,
+        "left": 135.328125,
+        "width": 68.109375,
+        "height": 17.578125,
+        "bottom": 824.65625,
+        "right": 203.4375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-25-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-25-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 809.078125,
+        "left": 214.4375,
+        "width": 95.46875,
+        "height": 14,
+        "bottom": 823.078125,
+        "right": 309.90625
+      },
+      "text": "신청인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-25-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-25-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 809.078125,
+        "left": 320.90625,
+        "width": 82.6875,
+        "height": 14,
+        "bottom": 823.078125,
+        "right": 403.59375
+      },
+      "text": "성명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 807.28125,
+        "left": 414.59375,
+        "width": 118.8125,
+        "height": 17.578125,
+        "bottom": 824.859375,
+        "right": 533.40625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 807.28125,
+        "left": 544.40625,
+        "width": 70.453125,
+        "height": 17.578125,
+        "bottom": 824.859375,
+        "right": 614.859375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 63,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-25-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-25-cell-6-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 812.078125,
+        "left": 625.859375,
+        "width": 110.140625,
+        "height": 13,
+        "bottom": 825.078125,
+        "right": 736
+      },
+      "text": "(서명 또는 인)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 64,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 829.078125,
+        "left": 43,
+        "width": 81.328125,
+        "height": 17.578125,
+        "bottom": 846.65625,
+        "right": 124.328125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 65,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 829.078125,
+        "left": 135.328125,
+        "width": 68.109375,
+        "height": 17.578125,
+        "bottom": 846.65625,
+        "right": 203.4375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 66,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 831.28125,
+        "left": 214.4375,
+        "width": 95.46875,
+        "height": 17.578125,
+        "bottom": 848.859375,
+        "right": 309.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 67,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-26-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-26-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 833.078125,
+        "left": 320.90625,
+        "width": 82.6875,
+        "height": 14,
+        "bottom": 847.078125,
+        "right": 403.59375
+      },
+      "text": "생년월일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 68,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 831.28125,
+        "left": 414.59375,
+        "width": 118.8125,
+        "height": 17.578125,
+        "bottom": 848.859375,
+        "right": 533.40625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 69,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 831.28125,
+        "left": 544.40625,
+        "width": 70.453125,
+        "height": 17.578125,
+        "bottom": 848.859375,
+        "right": 614.859375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 70,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 831.28125,
+        "left": 625.859375,
+        "width": 110.140625,
+        "height": 17.578125,
+        "bottom": 848.859375,
+        "right": 736
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 71,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-27-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-27-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 859.328125,
+        "left": 43,
+        "width": 693,
+        "height": 19,
+        "bottom": 878.328125,
+        "right": 736
+      },
+      "text": "본인정보보유기관 귀하",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 72,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-28-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-28-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 892.578125,
+        "left": 47,
+        "width": 676,
+        "height": 14,
+        "bottom": 906.578125,
+        "right": 723
+      },
+      "text": "본인 동의사항",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 73,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-29-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-29-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 941.828125,
+        "left": 46,
+        "width": 690,
+        "height": 26,
+        "bottom": 967.828125,
+        "right": 736
+      },
+      "text": "본인은 민원(사무)을 처리하기 위하여 「민원처리에 관한 법률」제10조의2에 따른 본인정보 제공 요구를 통해 민원처리기관의 담당자가 전자적으로 본인에 관한 행정정보를 확인하는 것에 동의합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 74,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-29-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-29-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 975.828125,
+        "left": 46,
+        "width": 690,
+        "height": 26,
+        "bottom": 1001.828125,
+        "right": 736
+      },
+      "text": "※ 만일, 본인이 위 사항에 대해 동의를 하지 아니할 경우에도 불이익은 없습니다. 다만, 동의하지 아니한 경우에는 본인이 해당 구비서류 등을 제출하여야 합니 다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 75,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1025.078125,
+        "left": 46,
+        "width": 102.671875,
+        "height": 17.578125,
+        "bottom": 1042.65625,
+        "right": 148.671875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 76,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1025.078125,
+        "left": 162.671875,
+        "width": 71.1875,
+        "height": 17.578125,
+        "bottom": 1042.65625,
+        "right": 233.859375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 77,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-30-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-30-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1031.828125,
+        "left": 247.859375,
+        "width": 221.515625,
+        "height": 15,
+        "bottom": 1046.828125,
+        "right": 469.375
+      },
+      "text": "신청인(대표자)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 78,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1025.078125,
+        "left": 483.375,
+        "width": 74.984375,
+        "height": 17.578125,
+        "bottom": 1042.65625,
+        "right": 558.359375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 79,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1025.078125,
+        "left": 572.359375,
+        "width": 68.28125,
+        "height": 17.578125,
+        "bottom": 1042.65625,
+        "right": 640.640625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 80,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-30-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-30-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1040.578125,
+        "left": 654.640625,
+        "width": 81.359375,
+        "height": 13,
+        "bottom": 1053.578125,
+        "right": 736
+      },
+      "text": "(서명 또는 인)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 81,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-9-block-0-row-31-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-9-block-0-row-31-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1065.078125,
+        "left": 46,
+        "width": 690,
+        "height": 13,
+        "bottom": 1078.078125,
+        "right": 736
+      },
+      "text": "210㎜×297㎜[백상지 또는 중질지 80g/㎡]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 82
+}

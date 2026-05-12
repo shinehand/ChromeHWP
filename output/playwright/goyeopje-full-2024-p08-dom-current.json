@@ -1,0 +1,2055 @@
+{
+  "filename": "goyeopje-full-2024.hwp",
+  "pages": 11,
+  "page": {
+    "index": 8,
+    "width": 794,
+    "height": 1123
+  },
+  "bodyRect": {
+    "top": 1077,
+    "left": 633,
+    "width": 794,
+    "height": 1123,
+    "bottom": 2200,
+    "right": 1427
+  },
+  "text": "(3쪽 중 2쪽) 국가유공자 등 등록신청자 의료지원 안내 (위탁병원 이용자용) 구 분 의 료 지 원 내 용 비 고 대 상 자 격 ㅇ국비진료 대상자 - 애국지사, 전ㆍ공상군경, 4ㆍ19혁명부상자, 공상공무원, 특별공로상이자, 6ㆍ18자유상이자, 재해부 상군경, 재해부상공무원, 5ㆍ18민주부상자, 특수임무부상자, 고엽제후유(의)증환자(고엽제후 유증2세환자 포함) 등으로 등록 신청한 본인 ㅇ감면진료 대상자(건강보험가입자에 한함) - 참전유공자, 무공수훈자, 재일학도의용군인 - 75세 이상 보상금 받는 선순위 유족, 보상금을 받는 재해사망군경의 배우자, 보상금을 받는 재해 부상군경의 배우자, 6ㆍ25전몰군경자녀수당을 지급받는 자 규칙 제2조 3호 규칙 제2조 4호 지원시기 진료병원 ㅇ 등록 신청 일부터 등록ㆍ결정일까지는 위탁병원에 진료신청 가능 ※ 등록신청자의 위탁병원 진료는 2021년 4월 1일 등록신청자부터 적용 ㅇ 무공수훈자, 재일학도의용군인, 참전유공자의 약국약제비 지원은 2022.10.1.부터 적용 ※ 단, 75세미만 대상자의 약국약제비 지원은 2023년 10월 1일부터 시행 규정 제24조 제25조 지 원 내 용 ㅇ국비진료 대상자 ㆍ위탁병원에서는 우선 일반환자로 진료 후 등록결정 여부에 따라 환급 ※ 비급여 3항목만 지원(초음파, MRI, 건위소화제) → 국가유공자 등으로 최종결정시 상이처 포함 전 질환 진료비 환급 ※ 상이등급 7급, 고엽제 경도, 5ㆍ18부상자 12~14등급 해당자는 상이처 외의 질환에 대해 10 % 본인부담 → 등외판정시 해당 상이처 질환 진료비만 환급 ㅇ감면진료 대상자: 등록결정 후 감면율에 따라 환급 ※ 비급여 항목 미지원 - 참전유공자(본인부담액의 90% 감면, 2022.10.1.부터 약국약제비 포함) - 무공수훈자. 재일학도의용군인(본인부담액의 60% 감면, 2022.10.1.부터 약국약제비 포함) * 참전유공자 등의 약제비 지원 한도액은 국가보훈부장관 고시에 따름 - 75세 이상 보상금을 받는 선순위 유족, 6ㆍ25전몰군경자녀수",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-7-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "656"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-7-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 125,
+        "left": 38,
+        "width": 710,
+        "height": 656,
+        "bottom": 781,
+        "right": 748
+      },
+      "tableRect": {
+        "top": 125,
+        "left": 38,
+        "width": 710,
+        "height": 656,
+        "bottom": 781,
+        "right": 748
+      },
+      "rowCount": 6,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-0"
+          },
+          "rect": {
+            "top": 125.5,
+            "left": 38.5,
+            "width": 709,
+            "height": 26.578125,
+            "bottom": 152.078125,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "구 분 의 료 지 원 내 용 비 고"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-1"
+          },
+          "rect": {
+            "top": 152.078125,
+            "left": 38.5,
+            "width": 709,
+            "height": 169.0625,
+            "bottom": 321.140625,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "대 상 자 격 ㅇ국비진료 대상자 - 애국지사, 전ㆍ공상군경, 4ㆍ19혁명부상자, 공상공무원, 특별공로상이자, 6ㆍ18자유상이자, 재해부 상군경, 재해부상공무원, 5ㆍ18민주부상자, 특수임무부상자, 고엽제후유(의)증환자(고엽제후 유증2세환자 포함) 등으로 등록 신청한 본인 ㅇ감면진료 대상"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-2"
+          },
+          "rect": {
+            "top": 321.140625,
+            "left": 38.5,
+            "width": 709,
+            "height": 60.59375,
+            "bottom": 381.734375,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "지원시기 진료병원 ㅇ 등록 신청 일부터 등록ㆍ결정일까지는 위탁병원에 진료신청 가능 ※ 등록신청자의 위탁병원 진료는 2021년 4월 1일 등록신청자부터 적용 ㅇ 무공수훈자, 재일학도의용군인, 참전유공자의 약국약제비 지원은 2022.10.1.부터 적용 ※ 단, 75세미만 대상자의 약국약제비"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-3"
+          },
+          "rect": {
+            "top": 381.734375,
+            "left": 38.5,
+            "width": 709,
+            "height": 250.9375,
+            "bottom": 632.671875,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "지 원 내 용 ㅇ국비진료 대상자 ㆍ위탁병원에서는 우선 일반환자로 진료 후 등록결정 여부에 따라 환급 ※ 비급여 3항목만 지원(초음파, MRI, 건위소화제) → 국가유공자 등으로 최종결정시 상이처 포함 전 질환 진료비 환급 ※ 상이등급 7급, 고엽제 경도, 5ㆍ18부상자 12~14등급 해"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-4"
+          },
+          "rect": {
+            "top": 632.671875,
+            "left": 38.5,
+            "width": 709,
+            "height": 49.96875,
+            "bottom": 682.640625,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "신 청 ㅇ 위탁병원 진료신청은 본인 또는 보호자 가능 ㅇ 등록결정 이후 주소지 관할 보훈(지)청 복지과로 신청"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-5"
+          },
+          "rect": {
+            "top": 682.640625,
+            "left": 38.5,
+            "width": 709,
+            "height": 97.859375,
+            "bottom": 780.5,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "유 의 사 항 ㅇ 다음의 경우는 진료비를 지급할 수 없습니다. - 보훈병원 및 위탁병원 진료 외 일반병원에서의 진료비 일체 - 국가유공자등 등록신청일 이전의 진료비 - 상이등급 판정을 받지 못한 경우 인정상이처 이외의 질환 진료비"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-0"
+          },
+          "rect": {
+            "top": 125.5,
+            "left": 38.5,
+            "width": 709,
+            "height": 26.578125,
+            "bottom": 152.078125,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "구 분 의 료 지 원 내 용 비 고"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-1"
+          },
+          "rect": {
+            "top": 152.078125,
+            "left": 38.5,
+            "width": 709,
+            "height": 169.0625,
+            "bottom": 321.140625,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "대 상 자 격 ㅇ국비진료 대상자 - 애국지사, 전ㆍ공상군경, 4ㆍ19혁명부상자, 공상공무원, 특별공로상이자, 6ㆍ18자유상이자, 재해부 상군경, 재해부상공무원, 5ㆍ18민주부상자, 특수임무부상자, 고엽제후유(의)증환자(고엽제후 유증2세환자 포함) 등으로 등록 신청한 본인 ㅇ감면진료 대상"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-2"
+          },
+          "rect": {
+            "top": 321.140625,
+            "left": 38.5,
+            "width": 709,
+            "height": 60.59375,
+            "bottom": 381.734375,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "지원시기 진료병원 ㅇ 등록 신청 일부터 등록ㆍ결정일까지는 위탁병원에 진료신청 가능 ※ 등록신청자의 위탁병원 진료는 2021년 4월 1일 등록신청자부터 적용 ㅇ 무공수훈자, 재일학도의용군인, 참전유공자의 약국약제비 지원은 2022.10.1.부터 적용 ※ 단, 75세미만 대상자의 약국약제비"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-3"
+          },
+          "rect": {
+            "top": 381.734375,
+            "left": 38.5,
+            "width": 709,
+            "height": 250.9375,
+            "bottom": 632.671875,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "지 원 내 용 ㅇ국비진료 대상자 ㆍ위탁병원에서는 우선 일반환자로 진료 후 등록결정 여부에 따라 환급 ※ 비급여 3항목만 지원(초음파, MRI, 건위소화제) → 국가유공자 등으로 최종결정시 상이처 포함 전 질환 진료비 환급 ※ 상이등급 7급, 고엽제 경도, 5ㆍ18부상자 12~14등급 해"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-4"
+          },
+          "rect": {
+            "top": 632.671875,
+            "left": 38.5,
+            "width": 709,
+            "height": 49.96875,
+            "bottom": 682.640625,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "신 청 ㅇ 위탁병원 진료신청은 본인 또는 보호자 가능 ㅇ 등록결정 이후 주소지 관할 보훈(지)청 복지과로 신청"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-5"
+          },
+          "rect": {
+            "top": 682.640625,
+            "left": 38.5,
+            "width": 709,
+            "height": 97.859375,
+            "bottom": 780.5,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "유 의 사 항 ㅇ 다음의 경우는 진료비를 지급할 수 없습니다. - 보훈병원 및 위탁병원 진료 외 일반병원에서의 진료비 일체 - 국가유공자등 등록신청일 이전의 진료비 - 상이등급 판정을 받지 못한 경우 인정상이처 이외의 질환 진료비"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-0"
+          },
+          "rect": {
+            "top": 125.5,
+            "left": 38.5,
+            "width": 709,
+            "height": 26.578125,
+            "bottom": 152.078125,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "구 분 의 료 지 원 내 용 비 고"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-1"
+          },
+          "rect": {
+            "top": 152.078125,
+            "left": 38.5,
+            "width": 709,
+            "height": 169.0625,
+            "bottom": 321.140625,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "대 상 자 격 ㅇ국비진료 대상자 - 애국지사, 전ㆍ공상군경, 4ㆍ19혁명부상자, 공상공무원, 특별공로상이자, 6ㆍ18자유상이자, 재해부 상군경, 재해부상공무원, 5ㆍ18민주부상자, 특수임무부상자, 고엽제후유(의)증환자(고엽제후 유증2세환자 포함) 등으로 등록 신청한 본인 ㅇ감면진료 대상"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-2"
+          },
+          "rect": {
+            "top": 321.140625,
+            "left": 38.5,
+            "width": 709,
+            "height": 60.59375,
+            "bottom": 381.734375,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "지원시기 진료병원 ㅇ 등록 신청 일부터 등록ㆍ결정일까지는 위탁병원에 진료신청 가능 ※ 등록신청자의 위탁병원 진료는 2021년 4월 1일 등록신청자부터 적용 ㅇ 무공수훈자, 재일학도의용군인, 참전유공자의 약국약제비 지원은 2022.10.1.부터 적용 ※ 단, 75세미만 대상자의 약국약제비"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-3"
+          },
+          "rect": {
+            "top": 381.734375,
+            "left": 38.5,
+            "width": 709,
+            "height": 250.9375,
+            "bottom": 632.671875,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "지 원 내 용 ㅇ국비진료 대상자 ㆍ위탁병원에서는 우선 일반환자로 진료 후 등록결정 여부에 따라 환급 ※ 비급여 3항목만 지원(초음파, MRI, 건위소화제) → 국가유공자 등으로 최종결정시 상이처 포함 전 질환 진료비 환급 ※ 상이등급 7급, 고엽제 경도, 5ㆍ18부상자 12~14등급 해"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-4"
+          },
+          "rect": {
+            "top": 632.671875,
+            "left": 38.5,
+            "width": 709,
+            "height": 49.96875,
+            "bottom": 682.640625,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "신 청 ㅇ 위탁병원 진료신청은 본인 또는 보호자 가능 ㅇ 등록결정 이후 주소지 관할 보훈(지)청 복지과로 신청"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-7-block-3/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-7-block-3:row-5"
+          },
+          "rect": {
+            "top": 682.640625,
+            "left": 38.5,
+            "width": 709,
+            "height": 97.859375,
+            "bottom": 780.5,
+            "right": 747.5
+          },
+          "cellCount": 3,
+          "text": "유 의 사 항 ㅇ 다음의 경우는 진료비를 지급할 수 없습니다. - 보훈병원 및 위탁병원 진료 외 일반병원에서의 진료비 일체 - 국가유공자등 등록신청일 이전의 진료비 - 상이등급 판정을 받지 못한 경우 인정상이처 이외의 질환 진료비"
+        }
+      ],
+      "text": "구 분 의 료 지 원 내 용 비 고 대 상 자 격 ㅇ국비진료 대상자 - 애국지사, 전ㆍ공상군경, 4ㆍ19혁명부상자, 공상공무원, 특별공로상이자, 6ㆍ18자유상이자, 재해부 상군경, 재해부상공무원, 5ㆍ18민주부상자, 특수임무부상자, 고엽제후유(의)증환자(고엽제후 유증2세환자 포함) 등으로 등록 신청한 본인 ㅇ감면진료 대상자(건강보험가입자에 한함) - 참전유공자, 무공수훈자, 재일학도의용군인 - 75세 이상 보상금 받는 선순위 ",
+      "style": {
+        "height": "656px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 57,
+        "left": 38,
+        "width": 718,
+        "height": 13,
+        "bottom": 70,
+        "right": 756
+      },
+      "text": "(3쪽 중 2쪽)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 76,
+        "left": 38,
+        "width": 718,
+        "height": 25,
+        "bottom": 101,
+        "right": 756
+      },
+      "text": "국가유공자 등 등록신청자 의료지원 안내",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 57px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 103,
+        "left": 38,
+        "width": 718,
+        "height": 18,
+        "bottom": 121,
+        "right": 756
+      },
+      "text": "(위탁병원 이용자용)",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 84px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 132.28125,
+        "left": 41,
+        "width": 57.90625,
+        "height": 13,
+        "bottom": 145.28125,
+        "right": 98.90625
+      },
+      "text": "구 분",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-0-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 132.28125,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 145.28125,
+        "right": 675.09375
+      },
+      "text": "의 료 지 원 내 용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-0-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 132.28125,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 145.28125,
+        "right": 745
+      },
+      "text": "비 고",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 223.609375,
+        "left": 41,
+        "width": 57.90625,
+        "height": 13,
+        "bottom": 236.609375,
+        "right": 98.90625
+      },
+      "text": "대 상",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 236.609375,
+        "left": 41,
+        "width": 57.90625,
+        "height": 13,
+        "bottom": 249.609375,
+        "right": 98.90625
+      },
+      "text": "자 격",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 183.109375,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 196.109375,
+        "right": 675.09375
+      },
+      "text": "ㅇ국비진료 대상자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "39",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 196.109375,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 39,
+        "bottom": 235.109375,
+        "right": 675.09375
+      },
+      "text": "- 애국지사, 전ㆍ공상군경, 4ㆍ19혁명부상자, 공상공무원, 특별공로상이자, 6ㆍ18자유상이자, 재해부 상군경, 재해부상공무원, 5ㆍ18민주부상자, 특수임무부상자, 고엽제후유(의)증환자(고엽제후 유증2세환자 포함) ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "39px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 235.109375,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 16,
+        "bottom": 251.109375,
+        "right": 675.09375
+      },
+      "text": "ㅇ감면진료 대상자(건강보험가입자에 한함)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-1-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-1-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 251.109375,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 264.109375,
+        "right": 675.09375
+      },
+      "text": "- 참전유공자, 무공수훈자, 재일학도의용군인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-1-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-1-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 264.109375,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 26,
+        "bottom": 290.109375,
+        "right": 675.09375
+      },
+      "text": "- 75세 이상 보상금 받는 선순위 유족, 보상금을 받는 재해사망군경의 배우자, 보상금을 받는 재해 부상군경의 배우자, 6ㆍ25전몰군경자녀수당을 지급받는 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 197.609375,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 210.609375,
+        "right": 745
+      },
+      "text": "규칙",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 210.609375,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 223.609375,
+        "right": 745
+      },
+      "text": "제2조",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-2-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-2-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 223.609375,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 236.609375,
+        "right": 745
+      },
+      "text": "3호",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-2-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-2-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 236.609375,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 249.609375,
+        "right": 745
+      },
+      "text": "규칙",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-2-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-2-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 249.609375,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 262.609375,
+        "right": 745
+      },
+      "text": "제2조",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-1-cell-2-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-1-cell-2-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 262.609375,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 275.609375,
+        "right": 745
+      },
+      "text": "4호",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-2-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 338.4375,
+        "left": 41,
+        "width": 57.90625,
+        "height": 13,
+        "bottom": 351.4375,
+        "right": 98.90625
+      },
+      "text": "지원시기",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-2-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-2-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 351.4375,
+        "left": 41,
+        "width": 57.90625,
+        "height": 13,
+        "bottom": 364.4375,
+        "right": 98.90625
+      },
+      "text": "진료병원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-2-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-2-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 325.4375,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 338.4375,
+        "right": 675.09375
+      },
+      "text": "ㅇ 등록 신청 일부터 등록ㆍ결정일까지는 위탁병원에 진료신청 가능",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-2-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-2-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 338.4375,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 351.4375,
+        "right": 675.09375
+      },
+      "text": "※ 등록신청자의 위탁병원 진료는 2021년 4월 1일 등록신청자부터 적용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-2-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-2-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 351.4375,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 364.4375,
+        "right": 675.09375
+      },
+      "text": "ㅇ 무공수훈자, 재일학도의용군인, 참전유공자의 약국약제비 지원은 2022.10.1.부터 적용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-2-cell-1-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-2-cell-1-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 364.4375,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 377.4375,
+        "right": 675.09375
+      },
+      "text": "※ 단, 75세미만 대상자의 약국약제비 지원은 2023년 10월 1일부터 시행",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-2-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-2-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 333.4375,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 346.4375,
+        "right": 745
+      },
+      "text": "규정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-2-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-2-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 346.4375,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 359.4375,
+        "right": 745
+      },
+      "text": "제24조",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-2-cell-2-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-2-cell-2-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 359.4375,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 372.4375,
+        "right": 745
+      },
+      "text": "제25조",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 494.203125,
+        "left": 41,
+        "width": 57.90625,
+        "height": 13,
+        "bottom": 507.203125,
+        "right": 98.90625
+      },
+      "text": "지 원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 507.203125,
+        "left": 41,
+        "width": 57.90625,
+        "height": 13,
+        "bottom": 520.203125,
+        "right": 98.90625
+      },
+      "text": "내 용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 421.703125,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 434.703125,
+        "right": 675.09375
+      },
+      "text": "ㅇ국비진료 대상자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 434.703125,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 447.703125,
+        "right": 675.09375
+      },
+      "text": "ㆍ위탁병원에서는 우선 일반환자로 진료 후 등록결정 여부에 따라 환급",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 447.703125,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 14,
+        "bottom": 461.703125,
+        "right": 675.09375
+      },
+      "text": "※ 비급여 3항목만 지원(초음파, MRI, 건위소화제)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-1-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-1-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 461.703125,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 474.703125,
+        "right": 675.09375
+      },
+      "text": "→ 국가유공자 등으로 최종결정시 상이처 포함 전 질환 진료비 환급",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-1-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-1-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 474.703125,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 26,
+        "bottom": 500.703125,
+        "right": 675.09375
+      },
+      "text": "※ 상이등급 7급, 고엽제 경도, 5ㆍ18부상자 12~14등급 해당자는 상이처 외의 질환에 대해 10 % 본인부담",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-1-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-1-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 500.703125,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 513.703125,
+        "right": 675.09375
+      },
+      "text": "→ 등외판정시 해당 상이처 질환 진료비만 환급",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-1-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-1-block-6",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 513.703125,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 14,
+        "bottom": 527.703125,
+        "right": 675.09375
+      },
+      "text": "ㅇ감면진료 대상자: 등록결정 후 감면율에 따라 환급 ※ 비급여 항목 미지원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-1-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-1-block-7",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 527.703125,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 540.703125,
+        "right": 675.09375
+      },
+      "text": "- 참전유공자(본인부담액의 90% 감면, 2022.10.1.부터 약국약제비 포함)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-1-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-1-block-8",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 540.703125,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 553.703125,
+        "right": 675.09375
+      },
+      "text": "- 무공수훈자. 재일학도의용군인(본인부담액의 60% 감면, 2022.10.1.부터 약국약제비 포함)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-1-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-1-block-9",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 553.703125,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 566.703125,
+        "right": 675.09375
+      },
+      "text": "* 참전유공자 등의 약제비 지원 한도액은 국가보훈부장관 고시에 따름",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-1-block-10\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-1-block-10",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 566.703125,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 26,
+        "bottom": 592.703125,
+        "right": 675.09375
+      },
+      "text": "- 75세 이상 보상금을 받는 선순위 유족, 6ㆍ25전몰군경자녀수당을 지급받는 자(약국약제비를 제 외한 본인부담액의 60% 감면)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 481.203125,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 494.203125,
+        "right": 745
+      },
+      "text": "관련법령",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 494.203125,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 507.203125,
+        "right": 745
+      },
+      "text": "(등록",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-2-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-2-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 507.203125,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 520.203125,
+        "right": 745
+      },
+      "text": "신청일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-3-cell-2-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-3-cell-2-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 520.203125,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 13,
+        "bottom": 533.203125,
+        "right": 745
+      },
+      "text": "소급)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-4-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 651.15625,
+        "left": 41,
+        "width": 57.90625,
+        "height": 13,
+        "bottom": 664.15625,
+        "right": 98.90625
+      },
+      "text": "신 청",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-4-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-4-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 644.65625,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 657.65625,
+        "right": 675.09375
+      },
+      "text": "ㅇ 위탁병원 진료신청은 본인 또는 보호자 가능",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-4-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-4-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 657.65625,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 670.65625,
+        "right": 675.09375
+      },
+      "text": "ㅇ 등록결정 이후 주소지 관할 보훈(지)청 복지과로 신청",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 648.859375,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 17.578125,
+        "bottom": 666.4375,
+        "right": 745
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-5-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 718.5625,
+        "left": 41,
+        "width": 57.90625,
+        "height": 13,
+        "bottom": 731.5625,
+        "right": 98.90625
+      },
+      "text": "유 의",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-5-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-5-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 731.5625,
+        "left": 41,
+        "width": 57.90625,
+        "height": 13,
+        "bottom": 744.5625,
+        "right": 98.90625
+      },
+      "text": "사 항",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-5-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-5-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 705.5625,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 718.5625,
+        "right": 675.09375
+      },
+      "text": "ㅇ 다음의 경우는 진료비를 지급할 수 없습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-5-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-5-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 718.5625,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 731.5625,
+        "right": 675.09375
+      },
+      "text": "- 보훈병원 및 위탁병원 진료 외 일반병원에서의 진료비 일체",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-5-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-5-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 731.5625,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 744.5625,
+        "right": 675.09375
+      },
+      "text": "- 국가유공자등 등록신청일 이전의 진료비",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-3-row-5-cell-1-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-3-row-5-cell-1-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 744.5625,
+        "left": 103.90625,
+        "width": 571.1875,
+        "height": 13,
+        "bottom": 757.5625,
+        "right": 675.09375
+      },
+      "text": "- 상이등급 판정을 받지 못한 경우 인정상이처 이외의 질환 진료비",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 722.78125,
+        "left": 680.09375,
+        "width": 64.90625,
+        "height": 17.578125,
+        "bottom": 740.359375,
+        "right": 745
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 787,
+        "left": 38,
+        "width": 718,
+        "height": 16,
+        "bottom": 803,
+        "right": 756
+      },
+      "text": "위탁병원 지정 현황(수시변경 가능)은 국가보훈부 홈페이지 참조(문의처 : 1577-0606)",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 768px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 808,
+        "left": 38,
+        "width": 113.625,
+        "height": 18,
+        "bottom": 826,
+        "right": 151.625
+      },
+      "text": "<안내사항 확인>",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 789px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-6",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 850,
+        "left": 38,
+        "width": 366.25,
+        "height": 18,
+        "bottom": 868,
+        "right": 404.25
+      },
+      "text": "ㅇ 안 내 일 시 : 20 년 월 일 ㅇ 안 내 장 소 :",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 831px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-7",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 881,
+        "left": 38,
+        "width": 409.609375,
+        "height": 18,
+        "bottom": 899,
+        "right": 447.609375
+      },
+      "text": "ㅇ 안내 담당자 : 보훈(지)청 보상과 등록담당 ㅇㅇㅇ",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 862px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-8",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 919,
+        "left": 38,
+        "width": 496.5,
+        "height": 18,
+        "bottom": 937,
+        "right": 534.5
+      },
+      "text": "ㅇ 등록 신청자 : 본인 (서명) 보호자 (서명)",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 900px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-7-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-7-block-9",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 946,
+        "left": 38,
+        "width": 324.640625,
+        "height": 18,
+        "bottom": 964,
+        "right": 362.640625
+      },
+      "text": "[서명 날인 후 1부 보관 1부 등록신청자에게 배부]",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 927px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 62
+}

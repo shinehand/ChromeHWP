@@ -1,0 +1,506 @@
+{
+  "page": {
+    "left": 0,
+    "top": 0,
+    "bodyLeft": 0,
+    "bodyTop": 0,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 1587
+  },
+  "body": {
+    "left": 0,
+    "top": 0,
+    "bodyLeft": 0,
+    "bodyTop": 0,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 1587
+  },
+  "filename": "attachment-sale-notice.hwp",
+  "pages": 4,
+  "topChildren": [
+    {
+      "index": 0,
+      "tag": "DIV",
+      "cls": "hwp-table-wrap",
+      "rect": {
+        "left": 30,
+        "top": 27,
+        "bodyLeft": 30,
+        "bodyTop": 27,
+        "width": 1065,
+        "height": 1041.58,
+        "bottom": 1068.58
+      },
+      "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이"
+    },
+    {
+      "index": 1,
+      "tag": "DIV",
+      "cls": "hwp-table-wrap",
+      "rect": {
+        "left": 30,
+        "top": 1109,
+        "bodyLeft": 30,
+        "bodyTop": 1109,
+        "width": 1065,
+        "height": 39,
+        "bottom": 1148
+      },
+      "text": "Ⅰ 공급내역 및 공급금액"
+    },
+    {
+      "index": 2,
+      "tag": "DIV",
+      "cls": "hwp-table-wrap",
+      "rect": {
+        "left": 30,
+        "top": 1196,
+        "bodyLeft": 30,
+        "bodyTop": 1196,
+        "width": 1065,
+        "height": 338,
+        "bottom": 1534
+      },
+      "text": "지역 단지코드 주 소 사용승인연도 건설호수 금회공급호수 대구 남구 D00638 대구 남구 대명동 554-4 102동 (안지랑로2길10) 2013 8 4 D00639 대구 남구 대명동 554-4 103동 (안지랑로2길"
+    }
+  ],
+  "topTables": [
+    {
+      "index": 0,
+      "wrapRect": {
+        "left": 30,
+        "top": 27,
+        "bodyLeft": 30,
+        "bodyTop": 27,
+        "width": 1065,
+        "height": 1041.58,
+        "bottom": 1068.58
+      },
+      "tableRect": {
+        "left": 30,
+        "top": 27,
+        "bodyLeft": 30,
+        "bodyTop": 27,
+        "width": 1065,
+        "height": 1041.58,
+        "bottom": 1068.58
+      },
+      "layout": "lh-sale-notice-primary",
+      "layoutPosition": "absolute",
+      "layoutSource": "hwp-table-line-seg-inferred",
+      "layoutHeight": "1034",
+      "styleTop": "calc(var(--hwp-margin-top, 0px) + 8px)",
+      "styleLeft": "calc(var(--hwp-margin-left, 0px) + 0px)",
+      "styleMinHeight": "1034px",
+      "tableDataset": {
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "layout": "lh-sale-notice-primary",
+        "repeatHeaderRows": "1"
+      },
+      "rowCount": 6,
+      "rows": [
+        {
+          "rowIndex": 0,
+          "rect": {
+            "left": 30.5,
+            "top": 30.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 30.5,
+            "width": 1064,
+            "height": 92,
+            "bottom": 122.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 1,
+          "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ]"
+        },
+        {
+          "rowIndex": 1,
+          "rect": {
+            "left": 30.5,
+            "top": 122.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 122.5,
+            "width": 1064,
+            "height": 25.58,
+            "bottom": 148.08
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 2,
+          "rect": {
+            "left": 30.5,
+            "top": 148.08,
+            "bodyLeft": 30.5,
+            "bodyTop": 148.08,
+            "width": 1064,
+            "height": 70,
+            "bottom": 218.08
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 1,
+          "text": "LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약 관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다. 고객 여러분께서는 청약과 관련한 상담은 청약의 "
+        },
+        {
+          "rowIndex": 3,
+          "rect": {
+            "left": 30.5,
+            "top": 218.08,
+            "bodyLeft": 30.5,
+            "bodyTop": 218.08,
+            "width": 1064,
+            "height": 20,
+            "bottom": 238.08
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 4,
+          "rect": {
+            "left": 30.5,
+            "top": 238.08,
+            "bodyLeft": 30.5,
+            "bodyTop": 238.08,
+            "width": 1064,
+            "height": 31,
+            "bottom": 269.08
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 1,
+          "text": "알 려 드 립 니 다"
+        },
+        {
+          "rowIndex": 5,
+          "rect": {
+            "left": 30.5,
+            "top": 269.08,
+            "bodyLeft": 30.5,
+            "bodyTop": 269.08,
+            "width": 1064,
+            "height": 799,
+            "bottom": 1068.08
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 1,
+          "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 불문하며, 계약 체결 시에도 재당첨 제한 및 당첨자 관리 등이 적용되지 않습니다. (본 공고의 청약 자격(연"
+        }
+      ],
+      "nestedTables": 1,
+      "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약 관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다"
+    },
+    {
+      "index": 1,
+      "wrapRect": {
+        "left": 30,
+        "top": 1109,
+        "bodyLeft": 30,
+        "bodyTop": 1109,
+        "width": 1065,
+        "height": 39,
+        "bottom": 1148
+      },
+      "tableRect": {
+        "left": 30,
+        "top": 1109,
+        "bodyLeft": 30,
+        "bodyTop": 1109,
+        "width": 1065,
+        "height": 39,
+        "bottom": 1148
+      },
+      "layout": "",
+      "layoutPosition": "absolute",
+      "layoutSource": "hwp-flow-after-positioned",
+      "layoutHeight": "38",
+      "styleTop": "calc(var(--hwp-margin-top, 0px) + 1090px)",
+      "styleLeft": "calc(var(--hwp-margin-left, 0px) + 0px)",
+      "styleMinHeight": "38px",
+      "tableDataset": {
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rowCount": 1,
+      "rows": [
+        {
+          "rowIndex": 0,
+          "rect": {
+            "left": 30.5,
+            "top": 1109.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1109.5,
+            "width": 1064,
+            "height": 38,
+            "bottom": 1147.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 3,
+          "text": "Ⅰ |  | 공급내역 및 공급금액"
+        }
+      ],
+      "nestedTables": 0,
+      "text": "Ⅰ 공급내역 및 공급금액"
+    },
+    {
+      "index": 2,
+      "wrapRect": {
+        "left": 30,
+        "top": 1196,
+        "bodyLeft": 30,
+        "bodyTop": 1196,
+        "width": 1065,
+        "height": 338,
+        "bottom": 1534
+      },
+      "tableRect": {
+        "left": 30,
+        "top": 1196,
+        "bodyLeft": 30,
+        "bodyTop": 1196,
+        "width": 1065,
+        "height": 338,
+        "bottom": 1534
+      },
+      "layout": "",
+      "layoutPosition": "absolute",
+      "layoutSource": "hwp-flow-after-positioned",
+      "layoutHeight": "332",
+      "styleTop": "calc(var(--hwp-margin-top, 0px) + 1177px)",
+      "styleLeft": "calc(var(--hwp-margin-left, 0px) + 0px)",
+      "styleMinHeight": "332px",
+      "tableDataset": {
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rowCount": 13,
+      "rows": [
+        {
+          "rowIndex": 0,
+          "rect": {
+            "left": 30.5,
+            "top": 1196.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1196.5,
+            "width": 1064,
+            "height": 26,
+            "bottom": 1222.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 6,
+          "text": "지역 | 단지코드 | 주 소 | 사용승인연도 | 건설호수 | 금회공급호수"
+        },
+        {
+          "rowIndex": 1,
+          "rect": {
+            "left": 30.5,
+            "top": 1222.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1222.5,
+            "width": 1064,
+            "height": 26,
+            "bottom": 1248.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 7,
+          "text": "대구 | 남구 | D00638 | 대구 남구 대명동 554-4 102동 (안지랑로2길10) | 2013 | 8 | 4"
+        },
+        {
+          "rowIndex": 2,
+          "rect": {
+            "left": 30.5,
+            "top": 1248.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1248.5,
+            "width": 1064,
+            "height": 26,
+            "bottom": 1274.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 5,
+          "text": "D00639 | 대구 남구 대명동 554-4 103동 (안지랑로2길10) | 2013 | 8 | 5"
+        },
+        {
+          "rowIndex": 3,
+          "rect": {
+            "left": 30.5,
+            "top": 1274.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1274.5,
+            "width": 1064,
+            "height": 26,
+            "bottom": 1300.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 6,
+          "text": "달서구 | D00658 | 대구 달서구 상인동 438-9 (월곡로35길74-15) | 2013 | 8 | 5"
+        },
+        {
+          "rowIndex": 4,
+          "rect": {
+            "left": 30.5,
+            "top": 1300.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1300.5,
+            "width": 1064,
+            "height": 26,
+            "bottom": 1326.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 6,
+          "text": "달성군 | D00635 | 대구 달성군 논공읍 북리 833-17 (논공중앙로138) | 2012 | 8 | 3"
+        },
+        {
+          "rowIndex": 5,
+          "rect": {
+            "left": 30.5,
+            "top": 1326.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1326.5,
+            "width": 1064,
+            "height": 26,
+            "bottom": 1352.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 6,
+          "text": "동구 | D00684 | 대구 동구 방촌동 1072-22 나동 (화랑로73길41) | 2013 | 8 | 5"
+        },
+        {
+          "rowIndex": 6,
+          "rect": {
+            "left": 30.5,
+            "top": 1352.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1352.5,
+            "width": 1064,
+            "height": 26,
+            "bottom": 1378.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 5,
+          "text": "D00685 | 대구 동구 방촌동 1072-22 다동 (화랑로73길41) | 2013 | 8 | 6"
+        },
+        {
+          "rowIndex": 7,
+          "rect": {
+            "left": 30.5,
+            "top": 1378.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1378.5,
+            "width": 1064,
+            "height": 26,
+            "bottom": 1404.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 6,
+          "text": "북구 | D00618 | 대구 북구 산격동 1497-30 (대구체육관로10길16) | 2012 | 8 | 7"
+        },
+        {
+          "rowIndex": 8,
+          "rect": {
+            "left": 30.5,
+            "top": 1404.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1404.5,
+            "width": 1064,
+            "height": 26,
+            "bottom": 1430.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 6,
+          "text": "수성구 | D00361 | 대구 수성구 만촌동 1009-17 (세진로12길15) | 2012 | 5 | 3"
+        },
+        {
+          "rowIndex": 9,
+          "rect": {
+            "left": 30.5,
+            "top": 1430.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1430.5,
+            "width": 1064,
+            "height": 26,
+            "bottom": 1456.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 7,
+          "text": "경북 | 경산시 | D00627 | 경북 경산시 사동 606-8 (원효로40길64-10) | 2012 | 11 | 8"
+        },
+        {
+          "rowIndex": 10,
+          "rect": {
+            "left": 30.5,
+            "top": 1456.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1456.5,
+            "width": 1064,
+            "height": 26,
+            "bottom": 1482.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 6,
+          "text": "구미시 | D00661 | 경북 구미시 오태동 773-6 (금오대로10길45-1) | 2013 | 8 | 5"
+        },
+        {
+          "rowIndex": 11,
+          "rect": {
+            "left": 30.5,
+            "top": 1482.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1482.5,
+            "width": 1064,
+            "height": 26,
+            "bottom": 1508.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 6,
+          "text": "포항시 | D00714 | 경북 포항시 남구 대도동 142-22 301동 (문예로82번길20-10) | 2013 | 8 | 4"
+        },
+        {
+          "rowIndex": 12,
+          "rect": {
+            "left": 30.5,
+            "top": 1508.5,
+            "bodyLeft": 30.5,
+            "bodyTop": 1508.5,
+            "width": 1064,
+            "height": 25,
+            "bottom": 1533.5
+          },
+          "dataLayoutHeight": "",
+          "sourceHeightStyle": "",
+          "cellCount": 5,
+          "text": "D00713 | 경북 포항시 남구 대도동 142-5 302동 (문예로82번길20-8) | 2013 | 8 | 1"
+        }
+      ],
+      "nestedTables": 0,
+      "text": "지역 단지코드 주 소 사용승인연도 건설호수 금회공급호수 대구 남구 D00638 대구 남구 대명동 554-4 102동 (안지랑로2길10) 2013 8 4 D00639 대구 남구 대명동 554-4 103동 (안지랑로2길10) 2013 8 5 달서구 D00658 대구 달서구 상인동 438-9 (월곡로35길74-15) 2013 8 5 달성군 D00635 대구 달성군 논공읍 북리 833-17 (논공중"
+    }
+  ]
+}

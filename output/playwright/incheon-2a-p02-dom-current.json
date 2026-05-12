@@ -1,0 +1,4586 @@
+{
+  "filename": "incheon-2a.hwpx",
+  "pages": 18,
+  "page": {
+    "index": 2,
+    "width": 1123,
+    "height": 1587
+  },
+  "bodyRect": {
+    "top": 613,
+    "left": 468.5,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 2200,
+    "right": 1591.5
+  },
+  "text": "■ 본 공고문은 최초 입주자모집공고(2024.01.03.), 추가 입주자모집공고(2024.06.12., 2025.03.28., 2025.07.17.) 이후 계약해지 등의 사유로 발생한 공공분양 잔여세대 3호를 공급 하기 위한 공고문입니다. ■ 금회 공급하는 인천가정2지구 A-2블록 801세대 중 534세대는 신혼희망타운(공공분양)으로 공급하며 나머지 267세대는 행복주택으로 공급합니다. ■ A-2블록 내 신혼희망타운(공공분양)은 무작위 전산추첨으로 배정됩니다. ■ 이 주택의 입주자모집공고일은 2026.03.27.(금)이며, 이는 청약자격(청약신청, 자격조건의 기간, 나이, 세대구성원, 주택소유 등)의 판단기준일이 됩니다. 공고문은 LH 청약플 러스(apply.lh.or.kr) 및 모바일앱에서도 확인하실 수 있습니다. ■ 인천가정2 A-2블록 신혼희망타운 주택전시관은 현재 운영 종료되어 별도로 운영하지 않으므로, 청약 전 팸플릿을 통해 확인하여 주시기 바랍니다. ■ 팸플릿은 최초 입주자모집공고 및 최초 정정 공지사항 등을 기준으로 작성되어 변경 내역이 있을 수 있습니다. ■ 본 단지의 청약은 PC 또는 모바일앱(App)에서 가능합니다. 모바일앱 사용 시 WIFI에 연결되지 않을 경우 데이터 요금이 부과되며, 스마트기기(스마트폰 등)에 따라 O/S 및 브라우저 버전, 호환성 등의 문제로 일부 사용이 불가할 수 있사오니, 사전에 모바일청약이 가능한지 모바일앱(LH 청약플러스)의 ‘청약연습하기’에서 확인하시기 바랍니다. 모 바일청약이 시스템장애 등으로 중단될 경우 일반 PC를 이용하여 인터넷청약이 진행될 수 있음을 알려드립니다. ■ 본 단지의 브랜드 명은 ‘루원시티서한이다음’이며, 입주예정자 과반수의 결정으로 선정되었습니다. ■ 금회 공급되는 주택은 「공공주택 특별법 시행규칙」 별표6의3과 「주택공급에 관한 규칙」 제4조제1항 및 제3항의 규정에 의거, 입주자모집공고일 현재 국내에 거주(주민등 록표등본 기준)하는 다음의 만 19세 이상의 무주택세대구성원으로서 다음의 ",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "contentKind": "hwpx-body-container",
+        "layoutHeight": "2214.07"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwpx",
+        "contentKind": "hwpx-body-container"
+      },
+      "rect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 2215.0625,
+        "bottom": 2234.0625,
+        "right": 1062
+      },
+      "tableRect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 2215.0625,
+        "bottom": 2234.0625,
+        "right": 1062
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-9\",\"xmlPath\":\"body-block-1/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-9",
+            "layoutHeight": "2214.07"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 2214.0625,
+            "bottom": 2233.5625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "■ 본 공고문은 최초 입주자모집공고(2024.01.03.), 추가 입주자모집공고(2024.06.12., 2025.03.28., 2025.07.17.) 이후 계약해지 등의 사유로 발생한 공공분양 잔여세대 3호를 공급 하기 위한 공고문입니다. ■ 금회 공급하는 인천가정2지구 A-2블록 80"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-9\",\"xmlPath\":\"body-block-1/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-9",
+            "layoutHeight": "2214.07"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 2214.0625,
+            "bottom": 2233.5625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "■ 본 공고문은 최초 입주자모집공고(2024.01.03.), 추가 입주자모집공고(2024.06.12., 2025.03.28., 2025.07.17.) 이후 계약해지 등의 사유로 발생한 공공분양 잔여세대 3호를 공급 하기 위한 공고문입니다. ■ 금회 공급하는 인천가정2지구 A-2블록 80"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-9\",\"xmlPath\":\"body-block-1/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-9",
+            "layoutHeight": "2214.07"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 2214.0625,
+            "bottom": 2233.5625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "■ 본 공고문은 최초 입주자모집공고(2024.01.03.), 추가 입주자모집공고(2024.06.12., 2025.03.28., 2025.07.17.) 이후 계약해지 등의 사유로 발생한 공공분양 잔여세대 3호를 공급 하기 위한 공고문입니다. ■ 금회 공급하는 인천가정2지구 A-2블록 80"
+        }
+      ],
+      "text": "■ 본 공고문은 최초 입주자모집공고(2024.01.03.), 추가 입주자모집공고(2024.06.12., 2025.03.28., 2025.07.17.) 이후 계약해지 등의 사유로 발생한 공공분양 잔여세대 3호를 공급 하기 위한 공고문입니다. ■ 금회 공급하는 인천가정2지구 A-2블록 801세대 중 534세대는 신혼희망타운(공공분양)으로 공급하며 나머지 267세대는 행복주택으로 공급합니다. ■ A-2블록 내 신혼희망타운(공공분양)",
+      "style": {
+        "height": "2214.07px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14",
+        "nestingLevel": "1",
+        "layoutHeight": "117.03"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 823.859375,
+        "left": 61,
+        "width": 948,
+        "height": 117.984375,
+        "bottom": 941.84375,
+        "right": 1009
+      },
+      "tableRect": {
+        "top": 823.859375,
+        "left": 61,
+        "width": 948,
+        "height": 117.984375,
+        "bottom": 941.84375,
+        "right": 1009
+      },
+      "rowCount": 4,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14:row-0",
+            "layoutHeight": "24.64"
+          },
+          "rect": {
+            "top": 824.359375,
+            "left": 61.5,
+            "width": 947,
+            "height": 24.625,
+            "bottom": 848.984375,
+            "right": 1008.5
+          },
+          "cellCount": 3,
+          "text": "신청자격 기본요건 주택·소득·자산 등의 자격검증 범위"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14/row-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14:row-1",
+            "layoutHeight": "24.44"
+          },
+          "rect": {
+            "top": 848.984375,
+            "left": 61.5,
+            "width": 947,
+            "height": 24.4375,
+            "bottom": 873.421875,
+            "right": 1008.5
+          },
+          "cellCount": 3,
+          "text": "신 혼 부 부 혼인 중인 자로서 혼인기간이 7년 이내 또는 6세 이하 자녀를 둔 경우 무주택세대구성원(아래 참조)"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14/row-2\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14:row-2",
+            "layoutHeight": "43.31"
+          },
+          "rect": {
+            "top": 873.421875,
+            "left": 61.5,
+            "width": 947,
+            "height": 43.296875,
+            "bottom": 916.71875,
+            "right": 1008.5
+          },
+          "cellCount": 3,
+          "text": "예비신혼부부 혼인을 계획 중이며, 입주지정기간 종료 전까지 혼인사실을 증명할 수 있는 자 (단, 입주 전에 해당 주택을 전매하려는 경우에는 전매 전에 혼인사실을 증명해야 함) 혼인으로 구성될 세대(신청자가 청약 시 직접 입력)"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14/row-3\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14:row-3",
+            "layoutHeight": "24.64"
+          },
+          "rect": {
+            "top": 916.71875,
+            "left": 61.5,
+            "width": 947,
+            "height": 24.625,
+            "bottom": 941.34375,
+            "right": 1008.5
+          },
+          "cellCount": 3,
+          "text": "한 부 모 가 족 6세 이하 자녀를 둔 부 또는 모 무주택세대구성원(아래 참조)"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14:row-0",
+            "layoutHeight": "24.64"
+          },
+          "rect": {
+            "top": 824.359375,
+            "left": 61.5,
+            "width": 947,
+            "height": 24.625,
+            "bottom": 848.984375,
+            "right": 1008.5
+          },
+          "cellCount": 3,
+          "text": "신청자격 기본요건 주택·소득·자산 등의 자격검증 범위"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14/row-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14:row-1",
+            "layoutHeight": "24.44"
+          },
+          "rect": {
+            "top": 848.984375,
+            "left": 61.5,
+            "width": 947,
+            "height": 24.4375,
+            "bottom": 873.421875,
+            "right": 1008.5
+          },
+          "cellCount": 3,
+          "text": "신 혼 부 부 혼인 중인 자로서 혼인기간이 7년 이내 또는 6세 이하 자녀를 둔 경우 무주택세대구성원(아래 참조)"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14/row-2\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14:row-2",
+            "layoutHeight": "43.31"
+          },
+          "rect": {
+            "top": 873.421875,
+            "left": 61.5,
+            "width": 947,
+            "height": 43.296875,
+            "bottom": 916.71875,
+            "right": 1008.5
+          },
+          "cellCount": 3,
+          "text": "예비신혼부부 혼인을 계획 중이며, 입주지정기간 종료 전까지 혼인사실을 증명할 수 있는 자 (단, 입주 전에 해당 주택을 전매하려는 경우에는 전매 전에 혼인사실을 증명해야 함) 혼인으로 구성될 세대(신청자가 청약 시 직접 입력)"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14/row-3\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14:row-3",
+            "layoutHeight": "24.64"
+          },
+          "rect": {
+            "top": 916.71875,
+            "left": 61.5,
+            "width": 947,
+            "height": 24.625,
+            "bottom": 941.34375,
+            "right": 1008.5
+          },
+          "cellCount": 3,
+          "text": "한 부 모 가 족 6세 이하 자녀를 둔 부 또는 모 무주택세대구성원(아래 참조)"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14:row-0",
+            "layoutHeight": "24.64"
+          },
+          "rect": {
+            "top": 824.359375,
+            "left": 61.5,
+            "width": 947,
+            "height": 24.625,
+            "bottom": 848.984375,
+            "right": 1008.5
+          },
+          "cellCount": 3,
+          "text": "신청자격 기본요건 주택·소득·자산 등의 자격검증 범위"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14/row-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14:row-1",
+            "layoutHeight": "24.44"
+          },
+          "rect": {
+            "top": 848.984375,
+            "left": 61.5,
+            "width": 947,
+            "height": 24.4375,
+            "bottom": 873.421875,
+            "right": 1008.5
+          },
+          "cellCount": 3,
+          "text": "신 혼 부 부 혼인 중인 자로서 혼인기간이 7년 이내 또는 6세 이하 자녀를 둔 경우 무주택세대구성원(아래 참조)"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14/row-2\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14:row-2",
+            "layoutHeight": "43.31"
+          },
+          "rect": {
+            "top": 873.421875,
+            "left": 61.5,
+            "width": 947,
+            "height": 43.296875,
+            "bottom": 916.71875,
+            "right": 1008.5
+          },
+          "cellCount": 3,
+          "text": "예비신혼부부 혼인을 계획 중이며, 입주지정기간 종료 전까지 혼인사실을 증명할 수 있는 자 (단, 입주 전에 해당 주택을 전매하려는 경우에는 전매 전에 혼인사실을 증명해야 함) 혼인으로 구성될 세대(신청자가 청약 시 직접 입력)"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14/row-3\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14:row-3",
+            "layoutHeight": "24.64"
+          },
+          "rect": {
+            "top": 916.71875,
+            "left": 61.5,
+            "width": 947,
+            "height": 24.625,
+            "bottom": 941.34375,
+            "right": 1008.5
+          },
+          "cellCount": 3,
+          "text": "한 부 모 가 족 6세 이하 자녀를 둔 부 또는 모 무주택세대구성원(아래 참조)"
+        }
+      ],
+      "text": "신청자격 기본요건 주택·소득·자산 등의 자격검증 범위 신 혼 부 부 혼인 중인 자로서 혼인기간이 7년 이내 또는 6세 이하 자녀를 둔 경우 무주택세대구성원(아래 참조) 예비신혼부부 혼인을 계획 중이며, 입주지정기간 종료 전까지 혼인사실을 증명할 수 있는 자 (단, 입주 전에 해당 주택을 전매하려는 경우에는 전매 전에 혼인사실을 증명해야 함) 혼인으로 구성될 세대(신청자가 청약 시 직접 입력) 한 부 모 가 족 6세 이하 자녀를",
+      "style": {
+        "height": "117.03px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 2,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22",
+        "nestingLevel": "1",
+        "layoutHeight": "429.47"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 1176.171875,
+        "left": 61,
+        "width": 971,
+        "height": 429.46875,
+        "bottom": 1605.640625,
+        "right": 1032
+      },
+      "tableRect": {
+        "top": 1176.171875,
+        "left": 61,
+        "width": 971,
+        "height": 429.46875,
+        "bottom": 1605.640625,
+        "right": 1032
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22:row-0",
+            "layoutHeight": "404"
+          },
+          "rect": {
+            "top": 1176.671875,
+            "left": 61.5,
+            "width": 970,
+            "height": 428.46875,
+            "bottom": 1605.140625,
+            "right": 1031.5
+          },
+          "cellCount": 1,
+          "text": "아래 [무주택세대구성원] 전원(배우자가 세대 분리된 경우 배우자 및 배우자가 속한 등본의 직계존비속까지 포함)이 다음 [주택 및 분양권등] 각목의 요건을 모두 갖춘 경우 무주택자로 판단 [무주택세대구성원] 가. 주택의 공급을 신청하려는 사람(이하 ‘주택공급신청자’라 함) 나. 주택공급신"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22:row-0",
+            "layoutHeight": "404"
+          },
+          "rect": {
+            "top": 1176.671875,
+            "left": 61.5,
+            "width": 970,
+            "height": 428.46875,
+            "bottom": 1605.140625,
+            "right": 1031.5
+          },
+          "cellCount": 1,
+          "text": "아래 [무주택세대구성원] 전원(배우자가 세대 분리된 경우 배우자 및 배우자가 속한 등본의 직계존비속까지 포함)이 다음 [주택 및 분양권등] 각목의 요건을 모두 갖춘 경우 무주택자로 판단 [무주택세대구성원] 가. 주택의 공급을 신청하려는 사람(이하 ‘주택공급신청자’라 함) 나. 주택공급신"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22:row-0",
+            "layoutHeight": "404"
+          },
+          "rect": {
+            "top": 1176.671875,
+            "left": 61.5,
+            "width": 970,
+            "height": 428.46875,
+            "bottom": 1605.140625,
+            "right": 1031.5
+          },
+          "cellCount": 1,
+          "text": "아래 [무주택세대구성원] 전원(배우자가 세대 분리된 경우 배우자 및 배우자가 속한 등본의 직계존비속까지 포함)이 다음 [주택 및 분양권등] 각목의 요건을 모두 갖춘 경우 무주택자로 판단 [무주택세대구성원] 가. 주택의 공급을 신청하려는 사람(이하 ‘주택공급신청자’라 함) 나. 주택공급신"
+        }
+      ],
+      "text": "아래 [무주택세대구성원] 전원(배우자가 세대 분리된 경우 배우자 및 배우자가 속한 등본의 직계존비속까지 포함)이 다음 [주택 및 분양권등] 각목의 요건을 모두 갖춘 경우 무주택자로 판단 [무주택세대구성원] 가. 주택의 공급을 신청하려는 사람(이하 ‘주택공급신청자’라 함) 나. 주택공급신청자의 배우자 다. 주택공급신청자 또는 배우자의 세대별 주민등록표등본에 등재된 신청자의 직계존속(배우자의 직계존속 포함, 이하같음) 라. 주택공",
+      "style": {
+        "height": "429.47px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 3,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31",
+        "nestingLevel": "1",
+        "layoutHeight": "51.32"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 1887.640625,
+        "left": 61,
+        "width": 946,
+        "height": 52.3125,
+        "bottom": 1939.953125,
+        "right": 1007
+      },
+      "tableRect": {
+        "top": 1887.640625,
+        "left": 61,
+        "width": 946,
+        "height": 52.3125,
+        "bottom": 1939.953125,
+        "right": 1007
+      },
+      "rowCount": 2,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31:row-0",
+            "layoutHeight": "27.75"
+          },
+          "rect": {
+            "top": 1888.140625,
+            "left": 61.5,
+            "width": 945,
+            "height": 27.75,
+            "bottom": 1915.890625,
+            "right": 1006.5
+          },
+          "cellCount": 4,
+          "text": "구분 기준일(~로부터) 기간 관련 법령"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31/row-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31:row-1",
+            "layoutHeight": "23.57"
+          },
+          "rect": {
+            "top": 1915.890625,
+            "left": 61.5,
+            "width": 945,
+            "height": 23.5625,
+            "bottom": 1939.453125,
+            "right": 1006.5
+          },
+          "cellCount": 4,
+          "text": "전매제한 최초 당첨자 발표일 3년 「주택법」제64조,「주택법 시행령」제73조 제1항 별표3"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31:row-0",
+            "layoutHeight": "27.75"
+          },
+          "rect": {
+            "top": 1888.140625,
+            "left": 61.5,
+            "width": 945,
+            "height": 27.75,
+            "bottom": 1915.890625,
+            "right": 1006.5
+          },
+          "cellCount": 4,
+          "text": "구분 기준일(~로부터) 기간 관련 법령"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31/row-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31:row-1",
+            "layoutHeight": "23.57"
+          },
+          "rect": {
+            "top": 1915.890625,
+            "left": 61.5,
+            "width": 945,
+            "height": 23.5625,
+            "bottom": 1939.453125,
+            "right": 1006.5
+          },
+          "cellCount": 4,
+          "text": "전매제한 최초 당첨자 발표일 3년 「주택법」제64조,「주택법 시행령」제73조 제1항 별표3"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31:row-0",
+            "layoutHeight": "27.75"
+          },
+          "rect": {
+            "top": 1888.140625,
+            "left": 61.5,
+            "width": 945,
+            "height": 27.75,
+            "bottom": 1915.890625,
+            "right": 1006.5
+          },
+          "cellCount": 4,
+          "text": "구분 기준일(~로부터) 기간 관련 법령"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31/row-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31:row-1",
+            "layoutHeight": "23.57"
+          },
+          "rect": {
+            "top": 1915.890625,
+            "left": 61.5,
+            "width": 945,
+            "height": 23.5625,
+            "bottom": 1939.453125,
+            "right": 1006.5
+          },
+          "cellCount": 4,
+          "text": "전매제한 최초 당첨자 발표일 3년 「주택법」제64조,「주택법 시행령」제73조 제1항 별표3"
+        }
+      ],
+      "text": "구분 기준일(~로부터) 기간 관련 법령 전매제한 최초 당첨자 발표일 3년 「주택법」제64조,「주택법 시행령」제73조 제1항 별표3",
+      "style": {
+        "height": "51.32px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 4,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38",
+        "nestingLevel": "1",
+        "layoutHeight": "113.61"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 2137.953125,
+        "left": 61,
+        "width": 959,
+        "height": 120.828125,
+        "bottom": 2258.78125,
+        "right": 1020
+      },
+      "tableRect": {
+        "top": 2137.953125,
+        "left": 61,
+        "width": 959,
+        "height": 120.828125,
+        "bottom": 2258.78125,
+        "right": 1020
+      },
+      "rowCount": 4,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38:row-0",
+            "layoutHeight": "24.43"
+          },
+          "rect": {
+            "top": 2138.453125,
+            "left": 61.5,
+            "width": 958,
+            "height": 24.421875,
+            "bottom": 2162.875,
+            "right": 1019.5
+          },
+          "cellCount": 5,
+          "text": "공 고 접 수 당첨자 발표 당첨자(예비자) 서류접수 계약체결"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38/row-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38:row-1",
+            "layoutHeight": "24.43"
+          },
+          "rect": {
+            "top": 2162.875,
+            "left": 61.5,
+            "width": 958,
+            "height": 24.421875,
+            "bottom": 2187.296875,
+            "right": 1019.5
+          },
+          "cellCount": 2,
+          "text": "전자 현장"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38/row-2\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38:row-2",
+            "layoutHeight": "32.76"
+          },
+          "rect": {
+            "top": 2187.296875,
+            "left": 61.5,
+            "width": 958,
+            "height": 37,
+            "bottom": 2224.296875,
+            "right": 1019.5
+          },
+          "cellCount": 6,
+          "text": "‘26.03.27. (금) ‘26.4.10.(금) (10:00~17:00) ‘26.04.16.(목) (16:00 이후) ‘26.04.23.(목)〜04.24.(금) (10:00~16:00) ‘26.05.21.(목) (10:00~16:00) ‘26.05.22.(금) (10:00~16:00)"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38/row-3\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38:row-3",
+            "layoutHeight": "32"
+          },
+          "rect": {
+            "top": 2224.296875,
+            "left": 61.5,
+            "width": 958,
+            "height": 33.984375,
+            "bottom": 2258.28125,
+            "right": 1019.5
+          },
+          "cellCount": 4,
+          "text": "LH 청약플러스(apply.lh.or.kr) 및 모바일앱 인천광역시 서구 청라동 172-14 부동산거래 전자계약시스템 (https://irts.molit.go.kr) 인천광역시 서구 청라동 172-14"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38:row-0",
+            "layoutHeight": "24.43"
+          },
+          "rect": {
+            "top": 2138.453125,
+            "left": 61.5,
+            "width": 958,
+            "height": 24.421875,
+            "bottom": 2162.875,
+            "right": 1019.5
+          },
+          "cellCount": 5,
+          "text": "공 고 접 수 당첨자 발표 당첨자(예비자) 서류접수 계약체결"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38/row-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38:row-1",
+            "layoutHeight": "24.43"
+          },
+          "rect": {
+            "top": 2162.875,
+            "left": 61.5,
+            "width": 958,
+            "height": 24.421875,
+            "bottom": 2187.296875,
+            "right": 1019.5
+          },
+          "cellCount": 2,
+          "text": "전자 현장"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38/row-2\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38:row-2",
+            "layoutHeight": "32.76"
+          },
+          "rect": {
+            "top": 2187.296875,
+            "left": 61.5,
+            "width": 958,
+            "height": 37,
+            "bottom": 2224.296875,
+            "right": 1019.5
+          },
+          "cellCount": 6,
+          "text": "‘26.03.27. (금) ‘26.4.10.(금) (10:00~17:00) ‘26.04.16.(목) (16:00 이후) ‘26.04.23.(목)〜04.24.(금) (10:00~16:00) ‘26.05.21.(목) (10:00~16:00) ‘26.05.22.(금) (10:00~16:00)"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38/row-3\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38:row-3",
+            "layoutHeight": "32"
+          },
+          "rect": {
+            "top": 2224.296875,
+            "left": 61.5,
+            "width": 958,
+            "height": 33.984375,
+            "bottom": 2258.28125,
+            "right": 1019.5
+          },
+          "cellCount": 4,
+          "text": "LH 청약플러스(apply.lh.or.kr) 및 모바일앱 인천광역시 서구 청라동 172-14 부동산거래 전자계약시스템 (https://irts.molit.go.kr) 인천광역시 서구 청라동 172-14"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38:row-0",
+            "layoutHeight": "24.43"
+          },
+          "rect": {
+            "top": 2138.453125,
+            "left": 61.5,
+            "width": 958,
+            "height": 24.421875,
+            "bottom": 2162.875,
+            "right": 1019.5
+          },
+          "cellCount": 5,
+          "text": "공 고 접 수 당첨자 발표 당첨자(예비자) 서류접수 계약체결"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38/row-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38:row-1",
+            "layoutHeight": "24.43"
+          },
+          "rect": {
+            "top": 2162.875,
+            "left": 61.5,
+            "width": 958,
+            "height": 24.421875,
+            "bottom": 2187.296875,
+            "right": 1019.5
+          },
+          "cellCount": 2,
+          "text": "전자 현장"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38/row-2\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38:row-2",
+            "layoutHeight": "32.76"
+          },
+          "rect": {
+            "top": 2187.296875,
+            "left": 61.5,
+            "width": 958,
+            "height": 37,
+            "bottom": 2224.296875,
+            "right": 1019.5
+          },
+          "cellCount": 6,
+          "text": "‘26.03.27. (금) ‘26.4.10.(금) (10:00~17:00) ‘26.04.16.(목) (16:00 이후) ‘26.04.23.(목)〜04.24.(금) (10:00~16:00) ‘26.05.21.(목) (10:00~16:00) ‘26.05.22.(금) (10:00~16:00)"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38/row-3\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38:row-3",
+            "layoutHeight": "32"
+          },
+          "rect": {
+            "top": 2224.296875,
+            "left": 61.5,
+            "width": 958,
+            "height": 33.984375,
+            "bottom": 2258.28125,
+            "right": 1019.5
+          },
+          "cellCount": 4,
+          "text": "LH 청약플러스(apply.lh.or.kr) 및 모바일앱 인천광역시 서구 청라동 172-14 부동산거래 전자계약시스템 (https://irts.molit.go.kr) 인천광역시 서구 청라동 172-14"
+        }
+      ],
+      "text": "공 고 접 수 당첨자 발표 당첨자(예비자) 서류접수 계약체결 전자 현장 ‘26.03.27. (금) ‘26.4.10.(금) (10:00~17:00) ‘26.04.16.(목) (16:00 이후) ‘26.04.23.(목)〜04.24.(금) (10:00~16:00) ‘26.05.21.(목) (10:00~16:00) ‘26.05.22.(금) (10:00~16:00) LH 청약플러스(apply.lh.or.kr) 및 모바일앱 인천광역시 서",
+      "style": {
+        "height": "113.61px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 5,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46",
+        "nestingLevel": "1",
+        "layoutHeight": "60.64"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 2525.78125,
+        "left": 61,
+        "width": 957,
+        "height": 65.046875,
+        "bottom": 2590.828125,
+        "right": 1018
+      },
+      "tableRect": {
+        "top": 2525.78125,
+        "left": 61,
+        "width": 957,
+        "height": 65.046875,
+        "bottom": 2590.828125,
+        "right": 1018
+      },
+      "rowCount": 2,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46:row-0",
+            "layoutHeight": "36"
+          },
+          "rect": {
+            "top": 2526.28125,
+            "left": 61.5,
+            "width": 956,
+            "height": 39.421875,
+            "bottom": 2565.703125,
+            "right": 1017.5
+          },
+          "cellCount": 6,
+          "text": "기재금액 1천만원초과∼ 3천만원이하 3천만원 초과∼ 5천만원 이하 5천만원 초과∼ 1억원 이하 1억원 초과∼ 10억원 이하 10억원 초과"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46/row-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46:row-1",
+            "layoutHeight": "24.64"
+          },
+          "rect": {
+            "top": 2565.703125,
+            "left": 61.5,
+            "width": 956,
+            "height": 24.625,
+            "bottom": 2590.328125,
+            "right": 1017.5
+          },
+          "cellCount": 6,
+          "text": "납부세액 2만원 4만원 7만원 15만원 35만원"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46:row-0",
+            "layoutHeight": "36"
+          },
+          "rect": {
+            "top": 2526.28125,
+            "left": 61.5,
+            "width": 956,
+            "height": 39.421875,
+            "bottom": 2565.703125,
+            "right": 1017.5
+          },
+          "cellCount": 6,
+          "text": "기재금액 1천만원초과∼ 3천만원이하 3천만원 초과∼ 5천만원 이하 5천만원 초과∼ 1억원 이하 1억원 초과∼ 10억원 이하 10억원 초과"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46/row-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46:row-1",
+            "layoutHeight": "24.64"
+          },
+          "rect": {
+            "top": 2565.703125,
+            "left": 61.5,
+            "width": 956,
+            "height": 24.625,
+            "bottom": 2590.328125,
+            "right": 1017.5
+          },
+          "cellCount": 6,
+          "text": "납부세액 2만원 4만원 7만원 15만원 35만원"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46/row-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46:row-0",
+            "layoutHeight": "36"
+          },
+          "rect": {
+            "top": 2526.28125,
+            "left": 61.5,
+            "width": 956,
+            "height": 39.421875,
+            "bottom": 2565.703125,
+            "right": 1017.5
+          },
+          "cellCount": 6,
+          "text": "기재금액 1천만원초과∼ 3천만원이하 3천만원 초과∼ 5천만원 이하 5천만원 초과∼ 1억원 이하 1억원 초과∼ 10억원 이하 10억원 초과"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46/row-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46:row-1",
+            "layoutHeight": "24.64"
+          },
+          "rect": {
+            "top": 2565.703125,
+            "left": 61.5,
+            "width": 956,
+            "height": 24.625,
+            "bottom": 2590.328125,
+            "right": 1017.5
+          },
+          "cellCount": 6,
+          "text": "납부세액 2만원 4만원 7만원 15만원 35만원"
+        }
+      ],
+      "text": "기재금액 1천만원초과∼ 3천만원이하 3천만원 초과∼ 5천만원 이하 5천만원 초과∼ 1억원 이하 1억원 초과∼ 10억원 이하 10억원 초과 납부세액 2만원 4만원 7만원 15만원 35만원",
+      "style": {
+        "height": "60.64px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 326.53125,
+        "left": 61,
+        "width": 1000,
+        "height": 21.328125,
+        "bottom": 347.859375,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 347.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 32,
+        "bottom": 379.859375,
+        "right": 1061
+      },
+      "text": "■ 본 공고문은 최초 입주자모집공고(2024.01.03.), 추가 입주자모집공고(2024.06.12., 2025.03.28., 2025.07.17.) 이후 계약해지 등의 사유로 발생한 공공분양 잔여세대 3호를 공급 ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-2",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 379.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 16,
+        "bottom": 395.859375,
+        "right": 1061
+      },
+      "text": "■ 금회 공급하는 인천가정2지구 A-2블록 801세대 중 534세대는 신혼희망타운(공공분양)으로 공급하며 나머지 267세대는 행복주택으로 공급합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-3\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-3",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 395.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 16,
+        "bottom": 411.859375,
+        "right": 1061
+      },
+      "text": "■ A-2블록 내 신혼희망타운(공공분양)은 무작위 전산추첨으로 배정됩니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-4\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-4",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 411.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 32,
+        "bottom": 443.859375,
+        "right": 1061
+      },
+      "text": "■ 이 주택의 입주자모집공고일은 2026.03.27.(금)이며, 이는 청약자격(청약신청, 자격조건의 기간, 나이, 세대구성원, 주택소유 등)의 판단기준일이 됩니다. 공고문은 LH 청약플 러스(apply.lh.or.k",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-5\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-5",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 446.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 465.859375,
+        "right": 1061
+      },
+      "text": "■ 인천가정2 A-2블록 신혼희망타운 주택전시관은 현재 운영 종료되어 별도로 운영하지 않으므로, 청약 전 팸플릿을 통해 확인하여 주시기 바랍니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-6\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-6",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 465.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 16,
+        "bottom": 481.859375,
+        "right": 1061
+      },
+      "text": "■ 팸플릿은 최초 입주자모집공고 및 최초 정정 공지사항 등을 기준으로 작성되어 변경 내역이 있을 수 있습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-7\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-7",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "50",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 481.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 50,
+        "bottom": 531.859375,
+        "right": 1061
+      },
+      "text": "■ 본 단지의 청약은 PC 또는 모바일앱(App)에서 가능합니다. 모바일앱 사용 시 WIFI에 연결되지 않을 경우 데이터 요금이 부과되며, 스마트기기(스마트폰 등)에 따라 O/S 및 브라우저 버전, 호환성 등의 문제",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "50px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-8\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-8",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 534.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 553.859375,
+        "right": 1061
+      },
+      "text": "■ 본 단지의 브랜드 명은 ‘루원시티서한이다음’이며, 입주예정자 과반수의 결정으로 선정되었습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-9\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-9",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "51",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 556.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 51,
+        "bottom": 607.859375,
+        "right": 1061
+      },
+      "text": "■ 금회 공급되는 주택은 「공공주택 특별법 시행규칙」 별표6의3과 「주택공급에 관한 규칙」 제4조제1항 및 제3항의 규정에 의거, 입주자모집공고일 현재 국내에 거주(주민등 록표등본 기준)하는 다음의 만 19세 이상의",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "51px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-10\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-10\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-10",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 610.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 35,
+        "bottom": 645.859375,
+        "right": 1061
+      },
+      "text": "※ 부부(예비신혼부부 제외)는 중복당첨된 경우 「주택공급에 관한 규칙」제55조의2에 따라 청약 접수일(분 단위까지의 접수시간을 포함)이 빠른 사람의 당첨[분 단위 접수시 간이 동일한 경우 신청자의 연령(연월일 계산)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-11\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-11\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-11",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "23",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 648.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 23,
+        "bottom": 671.859375,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-12\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-12\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-12",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 674.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 693.859375,
+        "right": 1061
+      },
+      "text": "<표1> 신청자격별 신청 및 검증 기준",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "120%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-13\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-13\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-13",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "125",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 696.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 125,
+        "bottom": 821.859375,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "125px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 828.671875,
+        "left": 69,
+        "width": 115.859375,
+        "height": 16,
+        "bottom": 844.671875,
+        "right": 184.859375
+      },
+      "text": "신청자격",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 828.671875,
+        "left": 199.859375,
+        "width": 417.53125,
+        "height": 16,
+        "bottom": 844.671875,
+        "right": 617.390625
+      },
+      "text": "기본요건",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-0-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-0-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 828.671875,
+        "left": 632.390625,
+        "width": 368.609375,
+        "height": 16,
+        "bottom": 844.671875,
+        "right": 1001
+      },
+      "text": "주택·소득·자산 등의 자격검증 범위",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-1-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-1-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 853.203125,
+        "left": 69,
+        "width": 115.859375,
+        "height": 16,
+        "bottom": 869.203125,
+        "right": 184.859375
+      },
+      "text": "신 혼 부 부",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-1-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-1-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 853.203125,
+        "left": 199.859375,
+        "width": 417.53125,
+        "height": 16,
+        "bottom": 869.203125,
+        "right": 617.390625
+      },
+      "text": "혼인 중인 자로서 혼인기간이 7년 이내 또는 6세 이하 자녀를 둔 경우",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-1-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-1-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 853.203125,
+        "left": 632.390625,
+        "width": 368.609375,
+        "height": 16,
+        "bottom": 869.203125,
+        "right": 1001
+      },
+      "text": "무주택세대구성원(아래 참조)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-2-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-2-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 887.0625,
+        "left": 69,
+        "width": 115.859375,
+        "height": 16,
+        "bottom": 903.0625,
+        "right": 184.859375
+      },
+      "text": "예비신혼부부",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-2-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-2-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-2-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 879.0625,
+        "left": 199.859375,
+        "width": 417.53125,
+        "height": 16,
+        "bottom": 895.0625,
+        "right": 617.390625
+      },
+      "text": "혼인을 계획 중이며, 입주지정기간 종료 전까지 혼인사실을 증명할 수 있는 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-2-cell-1-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-2-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-2-cell-1-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 895.0625,
+        "left": 199.859375,
+        "width": 417.53125,
+        "height": 16,
+        "bottom": 911.0625,
+        "right": 617.390625
+      },
+      "text": "(단, 입주 전에 해당 주택을 전매하려는 경우에는 전매 전에 혼인사실을 증명해야 함)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-2-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-2-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-2-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 887.0625,
+        "left": 632.390625,
+        "width": 368.609375,
+        "height": 16,
+        "bottom": 903.0625,
+        "right": 1001
+      },
+      "text": "혼인으로 구성될 세대(신청자가 청약 시 직접 입력)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-3-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-3-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 921.03125,
+        "left": 69,
+        "width": 115.859375,
+        "height": 16,
+        "bottom": 937.03125,
+        "right": 184.859375
+      },
+      "text": "한 부 모 가 족",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-3-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-3-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-3-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 921.03125,
+        "left": 199.859375,
+        "width": 417.53125,
+        "height": 16,
+        "bottom": 937.03125,
+        "right": 617.390625
+      },
+      "text": "6세 이하 자녀를 둔 부 또는 모",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-14-row-3-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-14-row-3-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-14-row-3-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 921.03125,
+        "left": 632.390625,
+        "width": 368.609375,
+        "height": 16,
+        "bottom": 937.03125,
+        "right": 1001
+      },
+      "text": "무주택세대구성원(아래 참조)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-15\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-15\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-15",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 942.84375,
+        "left": 61,
+        "width": 1000,
+        "height": 32,
+        "bottom": 974.84375,
+        "right": 1061
+      },
+      "text": "※ 신혼희망타운의 입주자로 선정된 분은 입주 시까지 무주택세대구성원 자격을 유지해야 하고, 해당 자격을 갖추지 못하였음이 판명되는 경우 입주자선정에서 제외되고 공급계약이 취소됩니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-16\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-16\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-16",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "23",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 977.84375,
+        "left": 61,
+        "width": 1000,
+        "height": 23,
+        "bottom": 1000.84375,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-17\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-17\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-17",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1003.84375,
+        "left": 61,
+        "width": 1000,
+        "height": 35,
+        "bottom": 1038.84375,
+        "right": 1061
+      },
+      "text": "■ 공고일(2026.03.27.) 기준 인천가정2 A2블록 기계약자 및 그 세대원(예비신혼부부 자격 신청자의 경우 ‘혼인으로 구성될 세대’)은 신청할 수 없으며, 계약 체결 이후라도 적발 시 계약 취소됩니다. (‘세",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-18\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-18\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-18",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1041.84375,
+        "left": 61,
+        "width": 1000,
+        "height": 35,
+        "bottom": 1076.84375,
+        "right": 1061
+      },
+      "text": "■ 공공주택 특별법 시행규칙 별표6의3에 따라 총자산가액(362백만원)을 초과하는 주택의 입주자로 선정된 분은 “신혼희망타운 전용 주택담보 장기대출상품”에 가입하고 입주시 까지 해당 모기지 가입 사실을 증명해야 합니",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-19\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-19\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-19",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1076.84375,
+        "left": 61,
+        "width": 1000,
+        "height": 21.328125,
+        "bottom": 1098.171875,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-20\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-20\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-20",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "51",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1101.171875,
+        "left": 61,
+        "width": 1000,
+        "height": 51,
+        "bottom": 1152.171875,
+        "right": 1061
+      },
+      "text": "■ ‘무주택세대구성원(예비신혼부부는 혼인으로 구성될 세대를 말함. 이하 본 공고문에서 같음)’은 주택소유여부 등의 검증대상 및 판단기준이 됩니다. 무주택세대구성원의 기준 일은 위 공고일이며, 그 이후 등본상 세대구성",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "51px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-21\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-21\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-21",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1155.171875,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 1174.171875,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1312.1875,
+        "left": 72,
+        "width": 949,
+        "height": 30,
+        "bottom": 1342.1875,
+        "right": 1021
+      },
+      "text": "아래 [무주택세대구성원] 전원(배우자가 세대 분리된 경우 배우자 및 배우자가 속한 등본의 직계존비속까지 포함)이 다음 [주택 및 분양권등] 각목의 요건을 모두 갖춘 경우 무주택자로 판단",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "24",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1346.1875,
+        "left": 72,
+        "width": 949,
+        "height": 24,
+        "bottom": 1370.1875,
+        "right": 1021
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "24px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-2",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1370.1875,
+        "left": 71,
+        "width": 945,
+        "height": 16,
+        "bottom": 1386.1875,
+        "right": 1016
+      },
+      "text": "[무주택세대구성원]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-3\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-3",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1386.1875,
+        "left": 71,
+        "width": 945,
+        "height": 16,
+        "bottom": 1402.1875,
+        "right": 1016
+      },
+      "text": "가. 주택의 공급을 신청하려는 사람(이하 ‘주택공급신청자’라 함)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-4\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-4",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1402.1875,
+        "left": 71,
+        "width": 945,
+        "height": 16,
+        "bottom": 1418.1875,
+        "right": 1016
+      },
+      "text": "나. 주택공급신청자의 배우자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-5\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-5",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1418.1875,
+        "left": 71,
+        "width": 945,
+        "height": 16,
+        "bottom": 1434.1875,
+        "right": 1016
+      },
+      "text": "다. 주택공급신청자 또는 배우자의 세대별 주민등록표등본에 등재된 신청자의 직계존속(배우자의 직계존속 포함, 이하같음)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-6\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-6",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1434.1875,
+        "left": 71,
+        "width": 945,
+        "height": 16,
+        "bottom": 1450.1875,
+        "right": 1016
+      },
+      "text": "라. 주택공급신청자 또는 배우자의 세대별 주민등록표등본에 등재된 신청자의 직계비속(직계비속의 배우자 포함, 이하같음)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-7\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-7",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1450.1875,
+        "left": 71,
+        "width": 945,
+        "height": 16,
+        "bottom": 1466.1875,
+        "right": 1016
+      },
+      "text": "마. 주택공급신청자의 세대별 주민등록표등본에 등재된 신청자의 배우자의 직계비속",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-8\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-8",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1466.1875,
+        "left": 71,
+        "width": 945,
+        "height": 20,
+        "bottom": 1486.1875,
+        "right": 1016
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-9\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-9",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1486.1875,
+        "left": 71,
+        "width": 945,
+        "height": 16,
+        "bottom": 1502.1875,
+        "right": 1016
+      },
+      "text": "[주택 및 분양권등]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-10\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-10\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-10",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1502.1875,
+        "left": 71,
+        "width": 945,
+        "height": 16,
+        "bottom": 1518.1875,
+        "right": 1016
+      },
+      "text": "가. 주택을 소유하고 있지 아니할 것",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-11\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-11\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-11",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1518.1875,
+        "left": 71,
+        "width": 945,
+        "height": 32,
+        "bottom": 1550.1875,
+        "right": 1016
+      },
+      "text": "나. 「부동산 거래신고 등에 관한 법률」제3조제1항제2호 및 제3호에 해당하는 주택을 공급받는 자로 선정된 지위 또는 주택의 입주자로 선정된 지위(이하 “분양권등”이 라 한다)를 소유하고 있지 아니할 것",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-12\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-12\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-12",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1550.1875,
+        "left": 71,
+        "width": 945,
+        "height": 16,
+        "bottom": 1566.1875,
+        "right": 1016
+      },
+      "text": "다. 분양권등을 승계취득(전체 또는 일부의 권리를 매매하여 취득한 경우를 말한다. 이하 같다)하여 소유하고 있지 아니할 것",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-13\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-13\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-13",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1566.1875,
+        "left": 71,
+        "width": 945,
+        "height": 21.328125,
+        "bottom": 1587.515625,
+        "right": 1016
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-14\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-14\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-14",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1590.515625,
+        "left": 64,
+        "width": 965,
+        "height": 35,
+        "bottom": 1625.515625,
+        "right": 1029
+      },
+      "text": "※ 「민법」상 미성년자는 직계존속의 사망, 실종선고 및 행방불명 등으로 형제자매를 부양해야 하거나, 자녀를 부양하여야 하는 세대주만 신청 가능. 이 경우 자녀 및 형제자매는 미성년 자와 같은 세대별 주민등록표에 등재",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-15\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-15\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-15",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1628.515625,
+        "left": 64,
+        "width": 965,
+        "height": 19,
+        "bottom": 1647.515625,
+        "right": 1029
+      },
+      "text": "※ 세대구성원 중「국민기초생활 보장법 시행령」 제2조제2항제5호부터 제7호에 해당하는 자는 해당 세대구성원에서 제외되며, 신청자 본인이 입증서류를 제출하여야 합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-16\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-16\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-16",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1647.515625,
+        "left": 64,
+        "width": 965,
+        "height": 16,
+        "bottom": 1663.515625,
+        "right": 1029
+      },
+      "text": "가. 실종선고 절차가 진행 중인 사람",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "145%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-17\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-17\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-17",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1663.515625,
+        "left": 64,
+        "width": 965,
+        "height": 32,
+        "bottom": 1695.515625,
+        "right": 1029
+      },
+      "text": "나. 가출 또는 행방불명으로 경찰서 등 행정관청에 신고된 후 1개월이 지났거나 가출 또는 행방불명 사실을 특별자치시장·특별자치도지사·시장·군수·구청장(자치구의 구청장을 말하며, 이하 “시장·군수·구청장”이라 한다)이",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "145%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-18\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-18\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-18",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1695.515625,
+        "left": 64,
+        "width": 965,
+        "height": 16,
+        "bottom": 1711.515625,
+        "right": 1029
+      },
+      "text": "다. 공급신청자와 생계 및 주거를 달리한다고 시장·군수·구청장이 확인한 사람",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "145%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-19\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-19\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-22-row-0-cell-0-block-19",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1711.515625,
+        "left": 71,
+        "width": 945,
+        "height": 16,
+        "bottom": 1727.515625,
+        "right": 1016
+      },
+      "text": "※ \"혼인으로 구성될 세대\"란 예비신혼부부가 입주 시 제출하는 주민등록표등본 상에 등재될 세대원 전원을 말합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-23\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-23\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-23",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1608.640625,
+        "left": 61,
+        "width": 1000,
+        "height": 35,
+        "bottom": 1643.640625,
+        "right": 1061
+      },
+      "text": "■ 2018년 12월 11일 개정·시행된 「주택공급에 관한 규칙」에 의거 분양권 및 입주권(이하 ‘분양권등’이라 함)을 소유한 경우에도 주택을 소유한 것으로 판단하오니, 청약 시 관련 내용 미숙지로 인한 불이익이 발",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-24\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-24\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-24",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1646.640625,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 1665.640625,
+        "right": 1061
+      },
+      "text": "- 시행일(‘18.12.11.) 이후 입주자모집공고, 사업계획승인, 관리처분계획인가 신청한 주택을 신규 계약한 경우, ‘공급계약체결일’ 기준 주택을 소유한 것으로 봅니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-25\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-25\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-25",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1668.640625,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 1687.640625,
+        "right": 1061
+      },
+      "text": "(단, 시행일 이후 모집공고 등을 하였으나, 청약 미달로 인해 선착순의 방법으로 공급한 주택을 최초로 취득한 경우에는 주택을 소유하지 아니한 것으로 봄.)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-26\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-26\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-26",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1690.640625,
+        "left": 61,
+        "width": 1000,
+        "height": 35,
+        "bottom": 1725.640625,
+        "right": 1061
+      },
+      "text": "- 시행일(‘18.12.11.) 이전에 모집공고 등을 통해 공급한 분양권등을 매매로 취득하여 시행일 이후 실거래신고한 경우, 실거래신고서상 ’매매대금완납일‘ 기준으로 주택을 소 유한 것으로 봅니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-27\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-27\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-27",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1728.640625,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 1747.640625,
+        "right": 1061
+      },
+      "text": "- 단, 시행일 전에 모집공고 등을 한 주택에 청약하여 취득하고 계신 분양권등은 주택으로 보지 않습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-28\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-28\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-28",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1750.640625,
+        "left": 61,
+        "width": 1000,
+        "height": 35,
+        "bottom": 1785.640625,
+        "right": 1061
+      },
+      "text": "※ 신혼희망타운의 입주자로 선정된 분은 입주 시까지 무주택세대구성원을 유지해야 하며, 위의 ‘주택으로 보지 않는 분양권등’의 주택 소유권을 향후 취득할 경우에도 그 자격을 유지하지 못한 것으로 보아 계약이 해제되고 ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-29\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-29\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-29",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1788.640625,
+        "left": 61,
+        "width": 1000,
+        "height": 35,
+        "bottom": 1823.640625,
+        "right": 1061
+      },
+      "text": "■ 금회 공급되는 주택은 「공공주택 특별법」에 의한 공공주택 및 「주택법」에 의한 국민주택(전용 85㎡ 이하 주택)이며, 분양가상한제 적용주택으로 「주택법」제64조 및「주택법 시행령」 제73조 제1항 별표3에 의해 ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-30\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-30\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-30",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "59",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1826.640625,
+        "left": 61,
+        "width": 1000,
+        "height": 59,
+        "bottom": 1885.640625,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "59px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1894.015625,
+        "left": 69,
+        "width": 115.859375,
+        "height": 16,
+        "bottom": 1910.015625,
+        "right": 184.859375
+      },
+      "text": "구분",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 63,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1894.015625,
+        "left": 199.859375,
+        "width": 166.796875,
+        "height": 16,
+        "bottom": 1910.015625,
+        "right": 366.65625
+      },
+      "text": "기준일(~로부터)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 64,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31-row-0-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31-row-0-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1894.015625,
+        "left": 381.65625,
+        "width": 114.859375,
+        "height": 16,
+        "bottom": 1910.015625,
+        "right": 496.515625
+      },
+      "text": "기간",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 65,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31-row-0-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31-row-0-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31-row-0-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1894.015625,
+        "left": 511.515625,
+        "width": 487.484375,
+        "height": 16,
+        "bottom": 1910.015625,
+        "right": 999
+      },
+      "text": "관련 법령",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 66,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31-row-1-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31-row-1-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1919.671875,
+        "left": 69,
+        "width": 115.859375,
+        "height": 16,
+        "bottom": 1935.671875,
+        "right": 184.859375
+      },
+      "text": "전매제한",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 67,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31-row-1-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31-row-1-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1919.671875,
+        "left": 199.859375,
+        "width": 166.796875,
+        "height": 16,
+        "bottom": 1935.671875,
+        "right": 366.65625
+      },
+      "text": "최초 당첨자 발표일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 68,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31-row-1-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31-row-1-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1919.671875,
+        "left": 381.65625,
+        "width": 114.859375,
+        "height": 16,
+        "bottom": 1935.671875,
+        "right": 496.515625
+      },
+      "text": "3년",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 69,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-31-row-1-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-31-row-1-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-31-row-1-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1919.671875,
+        "left": 518.515625,
+        "width": 473.484375,
+        "height": 16,
+        "bottom": 1935.671875,
+        "right": 992
+      },
+      "text": "「주택법」제64조,「주택법 시행령」제73조 제1항 별표3",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 70,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-32\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-32\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-32",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "51",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1942.953125,
+        "left": 61,
+        "width": 1000,
+        "height": 51,
+        "bottom": 1993.953125,
+        "right": 1061
+      },
+      "text": "■ 금회 공급되는 주택에 청약하여 입주자로 선정된 분은 「주택공급에 관한 규칙」 제41조(신혼부부 특별공급) 및 제55조(특별공급 횟수 제한)에 따라 특별공급을 받은 것으로 봅니다. 따라서 향후 다른 특별공급에 청약",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "51px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 71,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-33\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-33\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-33",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1996.953125,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 2015.953125,
+        "right": 1061
+      },
+      "text": "* 신혼희망타운 신청 시에는 「주택공급에 관한 규칙 제55조의3(특별공급 신청 요건 등에 관한 특례)이 적용되지 않음을 유의하시기 바랍니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 72,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-34\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-34\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-34",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2018.953125,
+        "left": 61,
+        "width": 1000,
+        "height": 35,
+        "bottom": 2053.953125,
+        "right": 1061
+      },
+      "text": "■신청자격은 당첨자를 대상으로 전산조회, 제출서류 등을 통해 우리 공사에서 확인하며, 확인결과 신청자격과 다르게 당첨된 사실이 판명될 경우에는 불이익(계약체결 불가 등)을 받으니 반드시 입주자모집공고문의 신청자격, ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 73,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-35\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-35\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-35",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2056.953125,
+        "left": 61,
+        "width": 1000,
+        "height": 35,
+        "bottom": 2091.953125,
+        "right": 1061
+      },
+      "text": "- 당첨자의 배우자가 재외국민인 경우 주민등록표등본, 외국인인 경우에는 국내거소 신고증(또는 국내거소사실증명서), 외국인등록증(또는 외국인등록사실증명서)을 제출하여야 합니다. 제출된 서류의 주민등록번호, 거소신고번호",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 74,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-36\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-36\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-36",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2094.953125,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 2113.953125,
+        "right": 1061
+      },
+      "text": "- 외국인의 경우 본 아파트 청약신청이 불가합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 75,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-37\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-37\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-37",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2116.953125,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 2135.953125,
+        "right": 1061
+      },
+      "text": "■ 청약 및 계약 등 주요일정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 76,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2153.875,
+        "left": 69,
+        "width": 111.8125,
+        "height": 18,
+        "bottom": 2171.875,
+        "right": 180.8125
+      },
+      "text": "공 고",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 77,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2153.875,
+        "left": 195.8125,
+        "width": 131.328125,
+        "height": 18,
+        "bottom": 2171.875,
+        "right": 327.140625
+      },
+      "text": "접 수",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 78,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-0-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-0-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2144.875,
+        "left": 342.140625,
+        "width": 111.8125,
+        "height": 18,
+        "bottom": 2162.875,
+        "right": 453.953125
+      },
+      "text": "당첨자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 79,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-0-cell-2-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-0-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-0-cell-2-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2162.875,
+        "left": 342.140625,
+        "width": 111.8125,
+        "height": 18,
+        "bottom": 2180.875,
+        "right": 453.953125
+      },
+      "text": "발표",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 80,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-0-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-0-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-0-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2153.875,
+        "left": 468.953125,
+        "width": 184,
+        "height": 18,
+        "bottom": 2171.875,
+        "right": 652.953125
+      },
+      "text": "당첨자(예비자) 서류접수",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 81,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-0-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-0-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-0-cell-4-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2141.65625,
+        "left": 667.953125,
+        "width": 344.046875,
+        "height": 18,
+        "bottom": 2159.65625,
+        "right": 1012
+      },
+      "text": "계약체결",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 82,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-1-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-1-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2166.078125,
+        "left": 667.953125,
+        "width": 165.46875,
+        "height": 18,
+        "bottom": 2184.078125,
+        "right": 833.421875
+      },
+      "text": "전자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 83,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-1-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-1-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2166.078125,
+        "left": 848.421875,
+        "width": 163.578125,
+        "height": 18,
+        "bottom": 2184.078125,
+        "right": 1012
+      },
+      "text": "현장",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 84,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-2-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2189.796875,
+        "left": 69,
+        "width": 111.8125,
+        "height": 16,
+        "bottom": 2205.796875,
+        "right": 180.8125
+      },
+      "text": "‘26.03.27.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 85,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-2-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2205.796875,
+        "left": 69,
+        "width": 111.8125,
+        "height": 16,
+        "bottom": 2221.796875,
+        "right": 180.8125
+      },
+      "text": "(금)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 86,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-2-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2189.796875,
+        "left": 195.8125,
+        "width": 131.328125,
+        "height": 16,
+        "bottom": 2205.796875,
+        "right": 327.140625
+      },
+      "text": "‘26.4.10.(금)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 87,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-1-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-2-cell-1-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2205.796875,
+        "left": 195.8125,
+        "width": 131.328125,
+        "height": 16,
+        "bottom": 2221.796875,
+        "right": 327.140625
+      },
+      "text": "(10:00~17:00)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 88,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-2-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2189.796875,
+        "left": 342.140625,
+        "width": 111.8125,
+        "height": 16,
+        "bottom": 2205.796875,
+        "right": 453.953125
+      },
+      "text": "‘26.04.16.(목)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 89,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-2-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-2-cell-2-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2205.796875,
+        "left": 342.140625,
+        "width": 111.8125,
+        "height": 16,
+        "bottom": 2221.796875,
+        "right": 453.953125
+      },
+      "text": "(16:00 이후)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 90,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-2-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2189.796875,
+        "left": 468.953125,
+        "width": 184,
+        "height": 16,
+        "bottom": 2205.796875,
+        "right": 652.953125
+      },
+      "text": "‘26.04.23.(목)〜04.24.(금)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 91,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-3-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-3-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-2-cell-3-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2205.796875,
+        "left": 468.953125,
+        "width": 184,
+        "height": 16,
+        "bottom": 2221.796875,
+        "right": 652.953125
+      },
+      "text": "(10:00~16:00)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 92,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-2-cell-4-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2189.796875,
+        "left": 667.953125,
+        "width": 165.46875,
+        "height": 16,
+        "bottom": 2205.796875,
+        "right": 833.421875
+      },
+      "text": "‘26.05.21.(목)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 93,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-4-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-4-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-2-cell-4-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2205.796875,
+        "left": 667.953125,
+        "width": 165.46875,
+        "height": 16,
+        "bottom": 2221.796875,
+        "right": 833.421875
+      },
+      "text": "(10:00~16:00)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 94,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-5-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-2-cell-5-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2189.796875,
+        "left": 848.421875,
+        "width": 163.578125,
+        "height": 16,
+        "bottom": 2205.796875,
+        "right": 1012
+      },
+      "text": "‘26.05.22.(금)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 95,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-5-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-2-cell-5-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-2-cell-5-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2205.796875,
+        "left": 848.421875,
+        "width": 163.578125,
+        "height": 16,
+        "bottom": 2221.796875,
+        "right": 1012
+      },
+      "text": "(10:00~16:00)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 96,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-3-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-3-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2233.28125,
+        "left": 76,
+        "width": 377.953125,
+        "height": 16,
+        "bottom": 2249.28125,
+        "right": 453.953125
+      },
+      "text": "LH 청약플러스(apply.lh.or.kr) 및 모바일앱",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 97,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-3-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-3-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-3-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2233.28125,
+        "left": 468.953125,
+        "width": 184,
+        "height": 16,
+        "bottom": 2249.28125,
+        "right": 652.953125
+      },
+      "text": "인천광역시 서구 청라동 172-14",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 98,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-3-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-3-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-3-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2226.796875,
+        "left": 667.953125,
+        "width": 165.46875,
+        "height": 16,
+        "bottom": 2242.796875,
+        "right": 833.421875
+      },
+      "text": "부동산거래 전자계약시스템",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 99,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-3-cell-2-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-3-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-3-cell-2-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2242.796875,
+        "left": 667.953125,
+        "width": 165.46875,
+        "height": 16,
+        "bottom": 2258.796875,
+        "right": 833.421875
+      },
+      "text": "(https://irts.molit.go.kr)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 100,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-38-row-3-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-38-row-3-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-38-row-3-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "28",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2227.28125,
+        "left": 848.421875,
+        "width": 163.578125,
+        "height": 28,
+        "bottom": 2255.28125,
+        "right": 1012
+      },
+      "text": "인천광역시 서구 청라동 172-14",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "28px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 101,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-39\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-39\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-39",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2261.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 2280.78125,
+        "right": 1061
+      },
+      "text": "※ 서류접수 및 계약장소 : LH 인천가정 A-2블록 현장접수처 (인천광역시 서구 청라동 172-14)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 102,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-40\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-40\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-40",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "51",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2283.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 51,
+        "bottom": 2334.78125,
+        "right": 1061
+      },
+      "text": "■ 금회 공급하는 주택은 전자계약이 가능합니다. 따라서 현장에 직접 오실 필요없이 전자계약기간(2026.05.21(목) 10:00~16:00) 내 계약금 입금 후 공동인증서(은행용 가능)를 이용하여 부동산거래 전자계",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "51px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 103,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-41\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-41\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-41",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2334.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 16,
+        "bottom": 2350.78125,
+        "right": 1061
+      },
+      "text": "※ 입금계좌 및 전자계약 상세절차는 추후 계약 대상자에게 개별 안내 예정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 104,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-42\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-42\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-42",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2353.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 2372.78125,
+        "right": 1061
+      },
+      "text": "■「공공주택 특별법 시행규칙」 별표6의3에 따라 입주자 선정 및 동호수 배정은 우리 공사의 전산 프로그램을 통해 실시합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 105,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-43\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-43\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-43",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2375.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 35,
+        "bottom": 2410.78125,
+        "right": 1061
+      },
+      "text": "■ 금회 공급되는 주택을 계약체결한 경우 「부동산 거래신고 등에 관한 법률」 등에 따라 공급계약 및 분양권 전매 시 부동산 실거래 신고 대상이 되며, 최초 공급계약체결일로부 터 30일 이내에 우리 공사가 관할 지자체",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 106,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-44\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-44\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-44",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "51",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2413.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 51,
+        "bottom": 2464.78125,
+        "right": 1061
+      },
+      "text": "■ (인지세 납부 관련) 아파트 공급계약서는 인지세법 제3조 제1항 제1호에 따라 인지세 납부 대상으로, 공급계약 체결 시 사업주체와 분양계약자는 과세기준에 해당하는 인지세 를 각 1/2씩 분담하며 분양계약자가 인지",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "51px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 107,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-45\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-45\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-45",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "59",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2464.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 59,
+        "bottom": 2523.78125,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "59px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 108,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2536.984375,
+        "left": 69,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2554.984375,
+        "right": 213.328125
+      },
+      "text": "기재금액",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 109,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2528.78125,
+        "left": 228.328125,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2546.78125,
+        "right": 372.65625
+      },
+      "text": "1천만원초과∼",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 110,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-1-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-0-cell-1-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2546.78125,
+        "left": 228.328125,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2564.78125,
+        "right": 372.65625
+      },
+      "text": "3천만원이하",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 111,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-0-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2528.78125,
+        "left": 387.65625,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2546.78125,
+        "right": 531.984375
+      },
+      "text": "3천만원 초과∼",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 112,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-2-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-0-cell-2-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2546.78125,
+        "left": 387.65625,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2564.78125,
+        "right": 531.984375
+      },
+      "text": "5천만원 이하",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 113,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-0-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2528.78125,
+        "left": 546.984375,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2546.78125,
+        "right": 691.3125
+      },
+      "text": "5천만원 초과∼",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 114,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-3-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-3-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-0-cell-3-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2546.78125,
+        "left": 546.984375,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2564.78125,
+        "right": 691.3125
+      },
+      "text": "1억원 이하",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 115,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-0-cell-4-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2528.78125,
+        "left": 706.3125,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2546.78125,
+        "right": 850.640625
+      },
+      "text": "1억원 초과∼",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 116,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-4-block-1\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-4-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-0-cell-4-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2546.78125,
+        "left": 706.3125,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2564.78125,
+        "right": 850.640625
+      },
+      "text": "10억원 이하",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 117,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-5-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-0-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-0-cell-5-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2536.984375,
+        "left": 865.640625,
+        "width": 144.359375,
+        "height": 18,
+        "bottom": 2554.984375,
+        "right": 1010
+      },
+      "text": "10억원 초과",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 118,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-1-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-1-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2569.015625,
+        "left": 69,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2587.015625,
+        "right": 213.328125
+      },
+      "text": "납부세액",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 119,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-1-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-1-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2569.015625,
+        "left": 228.328125,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2587.015625,
+        "right": 372.65625
+      },
+      "text": "2만원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 120,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-1-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-1-cell-2-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2569.015625,
+        "left": 387.65625,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2587.015625,
+        "right": 531.984375
+      },
+      "text": "4만원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 121,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-1-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-1-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-1-cell-3-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2569.015625,
+        "left": 546.984375,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2587.015625,
+        "right": 691.3125
+      },
+      "text": "7만원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 122,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-1-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-1-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-1-cell-4-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2569.015625,
+        "left": 706.3125,
+        "width": 144.328125,
+        "height": 18,
+        "bottom": 2587.015625,
+        "right": 850.640625
+      },
+      "text": "15만원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 123,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-46-row-1-cell-5-block-0\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-46-row-1-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-46-row-1-cell-5-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "18",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2569.015625,
+        "left": 865.640625,
+        "width": 144.359375,
+        "height": 18,
+        "bottom": 2587.015625,
+        "right": 1010
+      },
+      "text": "35만원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 124,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-47\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-47\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-47",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2591.828125,
+        "left": 61,
+        "width": 1000,
+        "height": 32,
+        "bottom": 2623.828125,
+        "right": 1061
+      },
+      "text": "■ (공사 임직원 등 부동산 신규취득 제한 관련) 공사 임직원 및 이해관계자(배우자 및 임직원 본인의 직계존·비속)는 공사 「취업규칙」 및 「부동산 신규취득 제한 및 신고에 관한 지침」 등에 따라 선착순 수의계약 또",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 125,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-48\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-48\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-48",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2626.828125,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 2645.828125,
+        "right": 1061
+      },
+      "text": "■ 이 공고문에 기재된 나이는 별도 표시가 없는 경우「민법」제158조에 따른 ‘만 나이’를 의미합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 126,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-9-cell-0-block-49\",\"xmlPath\":\"body-block-1-row-9-cell-0-block-49\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-9-cell-0-block-49",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2648.828125,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 2667.828125,
+        "right": 1061
+      },
+      "text": "■ 이 공고문에 명시되지 않은 사항은 「주택법」,「주택공급에 관한 규칙」, 「공공주택 특별법」, 「공공주택 특별법 시행규칙」등 관계법령에 따릅니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 127,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"header-block-1\",\"xmlPath\":\"header-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:header-block-1",
+        "layoutSource": "hwpx-header-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 91,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 93,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 72px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 128,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"footer-block-0\",\"xmlPath\":\"footer-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:footer-block-0",
+        "layoutSource": "hwpx-footer-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 1564,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 1566,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1545px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 129,
+      "dataset": {
+        "layoutSource": "hwpx-footer-page-number",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "layoutHeight": "18"
+      },
+      "rect": {
+        "top": 1540,
+        "left": 60,
+        "width": 1006,
+        "height": 19,
+        "bottom": 1559,
+        "right": 1066
+      },
+      "text": "- 2 -",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1521px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "18px",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 130
+}

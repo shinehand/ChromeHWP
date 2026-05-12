@@ -1,0 +1,2545 @@
+{
+  "filename": "incheon-2a.hwpx",
+  "pages": 18,
+  "page": {
+    "index": 11,
+    "width": 1123,
+    "height": 1587
+  },
+  "bodyRect": {
+    "top": 306,
+    "left": 468.5,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 1893,
+    "right": 1591.5
+  },
+  "text": "1. 추첨(공공분양 동·호, 당첨자 선정) • 추첨 일시 : 2026년 4월 16일(목) • 추첨 내용 : 공공분양주택의 당첨자, 예비입주자, 당첨자의 동·호수 2. 당첨자(예비입주자) 발표, 서류제출 및 계약체결 일정 ■ 일정 및 장소 • 당첨자 및 예비입주자는 아래 당첨자 서류제출 기한 내에 관련서류를 제출해야 하며, 서류제출기간 내에 서류를 제출하지 않거나 계약체결기간 내에 정당한 사유없이 계약체결 하지 않을 경우 계약포기로 간주하오니 유의하시기 바랍니다. 당첨자 및 예비입주자 발표 서류제출(당첨자 및 예비입주자) 계약체결(당첨자) 방문제출 전자 현장 ‘26.04.16.(목) 16:00 이후 LH 청약플러스 및 모바일앱 (apply.lh.or.kr) ‘26.04.23.(목) ~ 04.24.(금) 10:00~16:00 ‘26.05.21.(목) 10:00~16:00 ’26.05.22.(금) 10:00~16:00 • (현장) 서류제출 및 현장계약체결 장소 : 인천광역시 서구 청라동 172-14 • (온라인-전자계약체결) 부동산거래 전자계약시스템 (https://irts.molit.go.kr) 당첨자 확인 방법 인터넷 LH 청약플러스(apply.lh.or.kr) 및 모바일앱 → 청약 → 청약결과확인 → 당첨/낙찰결과조회 (인증서 로그인하신 경우는 청약 → 고객서비스 → 나의정보 → 마이페이지에서 확인가능) ARS 고객전화 연결(1661-7700) → 1번 당첨자 조회 → 주민등록번호 입력 → 당첨여부, 당첨동호, 계약체결기간 안내 ※ 당첨자 명단, 예비입주자 및 순번은 당첨자 발표 시 함께 안내합니다. ※ 당첨자 및 예비입주자 명단은 SMS 안내 및 LH 청약플러스 및 모바일앱에 게시하오나, 안내 착오 가능성이 있어 전화문의에는 응답할 수 없으므로 LH 청약플러스 (apply.lh.or.kr) 및 모바일앱 또는 ARS(1661-7700)로 신청자 본인이 직접 확인하시기 바랍니다. ※ 주택소유여부 등 전산검색 결과 적격 당첨자에 한하여 계약 체결하고, 부적격자는 ",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "contentKind": "hwpx-body-container",
+        "layoutHeight": "713.77"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwpx",
+        "contentKind": "hwpx-body-container"
+      },
+      "rect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 719.765625,
+        "bottom": 738.765625,
+        "right": 1062
+      },
+      "tableRect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 719.765625,
+        "bottom": 738.765625,
+        "right": 1062
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-44\",\"xmlPath\":\"body-block-1/row-44\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-44",
+            "layoutHeight": "713.77"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 718.765625,
+            "bottom": 738.265625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "1. 추첨(공공분양 동·호, 당첨자 선정) • 추첨 일시 : 2026년 4월 16일(목) • 추첨 내용 : 공공분양주택의 당첨자, 예비입주자, 당첨자의 동·호수 2. 당첨자(예비입주자) 발표, 서류제출 및 계약체결 일정 ■ 일정 및 장소 • 당첨자 및 예비입주자는 아래 당첨자 서류제출 "
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-44\",\"xmlPath\":\"body-block-1/row-44\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-44",
+            "layoutHeight": "713.77"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 718.765625,
+            "bottom": 738.265625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "1. 추첨(공공분양 동·호, 당첨자 선정) • 추첨 일시 : 2026년 4월 16일(목) • 추첨 내용 : 공공분양주택의 당첨자, 예비입주자, 당첨자의 동·호수 2. 당첨자(예비입주자) 발표, 서류제출 및 계약체결 일정 ■ 일정 및 장소 • 당첨자 및 예비입주자는 아래 당첨자 서류제출 "
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-44\",\"xmlPath\":\"body-block-1/row-44\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-44",
+            "layoutHeight": "713.77"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 718.765625,
+            "bottom": 738.265625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "1. 추첨(공공분양 동·호, 당첨자 선정) • 추첨 일시 : 2026년 4월 16일(목) • 추첨 내용 : 공공분양주택의 당첨자, 예비입주자, 당첨자의 동·호수 2. 당첨자(예비입주자) 발표, 서류제출 및 계약체결 일정 ■ 일정 및 장소 • 당첨자 및 예비입주자는 아래 당첨자 서류제출 "
+        }
+      ],
+      "text": "1. 추첨(공공분양 동·호, 당첨자 선정) • 추첨 일시 : 2026년 4월 16일(목) • 추첨 내용 : 공공분양주택의 당첨자, 예비입주자, 당첨자의 동·호수 2. 당첨자(예비입주자) 발표, 서류제출 및 계약체결 일정 ■ 일정 및 장소 • 당첨자 및 예비입주자는 아래 당첨자 서류제출 기한 내에 관련서류를 제출해야 하며, 서류제출기간 내에 서류를 제출하지 않거나 계약체결기간 내에 정당한 사유없이 계약체결 하지 않을 경우 계약포",
+      "style": {
+        "height": "713.77px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-44-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-0",
+        "nestingLevel": "1",
+        "layoutHeight": "26.20"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-44-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-0",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 24,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 51.328125,
+        "right": 1043
+      },
+      "tableRect": {
+        "top": 24,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 51.328125,
+        "right": 1043
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-0/row-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-0:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 24.5,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 50.828125,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "1. 추첨(공공분양 동·호, 당첨자 선정)"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-0/row-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-0:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 24.5,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 50.828125,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "1. 추첨(공공분양 동·호, 당첨자 선정)"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-0/row-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-0:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 24.5,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 50.828125,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "1. 추첨(공공분양 동·호, 당첨자 선정)"
+        }
+      ],
+      "text": "1. 추첨(공공분양 동·호, 당첨자 선정)",
+      "style": {
+        "height": "26.2px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": "rgb(255, 225, 225)"
+      }
+    },
+    {
+      "index": 2,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-44-cell-0-block-5\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-5",
+        "nestingLevel": "1",
+        "layoutHeight": "26.20"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-44-cell-0-block-5\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-5",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 103.328125,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 130.65625,
+        "right": 1043
+      },
+      "tableRect": {
+        "top": 103.328125,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 130.65625,
+        "right": 1043
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-5/row-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-5/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-5:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 103.828125,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 130.15625,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "2. 당첨자(예비입주자) 발표, 서류제출 및 계약체결 일정"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-5/row-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-5/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-5:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 103.828125,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 130.15625,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "2. 당첨자(예비입주자) 발표, 서류제출 및 계약체결 일정"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-5/row-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-5/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-5:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 103.828125,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 130.15625,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "2. 당첨자(예비입주자) 발표, 서류제출 및 계약체결 일정"
+        }
+      ],
+      "text": "2. 당첨자(예비입주자) 발표, 서류제출 및 계약체결 일정",
+      "style": {
+        "height": "26.2px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": "rgb(255, 225, 225)"
+      }
+    },
+    {
+      "index": 3,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11",
+        "nestingLevel": "1",
+        "layoutHeight": "261.17"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 193.65625,
+        "left": 61,
+        "width": 960,
+        "height": 263.125,
+        "bottom": 456.78125,
+        "right": 1021
+      },
+      "tableRect": {
+        "top": 193.65625,
+        "left": 61,
+        "width": 960,
+        "height": 263.125,
+        "bottom": 456.78125,
+        "right": 1021
+      },
+      "rowCount": 8,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-0",
+            "layoutHeight": "23.40"
+          },
+          "rect": {
+            "top": 194.15625,
+            "left": 61.5,
+            "width": 959,
+            "height": 23.390625,
+            "bottom": 217.546875,
+            "right": 1020.5
+          },
+          "cellCount": 3,
+          "text": "당첨자 및 예비입주자 발표 서류제출(당첨자 및 예비입주자) 계약체결(당첨자)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-1\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-1",
+            "layoutHeight": "23.40"
+          },
+          "rect": {
+            "top": 217.546875,
+            "left": 61.5,
+            "width": 959,
+            "height": 23.390625,
+            "bottom": 240.9375,
+            "right": 1020.5
+          },
+          "cellCount": 3,
+          "text": "방문제출 전자 현장"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-2\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-2",
+            "layoutHeight": "39.81"
+          },
+          "rect": {
+            "top": 240.9375,
+            "left": 61.5,
+            "width": 959,
+            "height": 39.796875,
+            "bottom": 280.734375,
+            "right": 1020.5
+          },
+          "cellCount": 4,
+          "text": "‘26.04.16.(목) 16:00 이후 LH 청약플러스 및 모바일앱 (apply.lh.or.kr) ‘26.04.23.(목) ~ 04.24.(금) 10:00~16:00 ‘26.05.21.(목) 10:00~16:00 ’26.05.22.(금) 10:00~16:00"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-3\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-3",
+            "layoutHeight": "48.19"
+          },
+          "rect": {
+            "top": 280.734375,
+            "left": 61.5,
+            "width": 959,
+            "height": 48.1875,
+            "bottom": 328.921875,
+            "right": 1020.5
+          },
+          "cellCount": 1,
+          "text": "• (현장) 서류제출 및 현장계약체결 장소 : 인천광역시 서구 청라동 172-14 • (온라인-전자계약체결) 부동산거래 전자계약시스템 (https://irts.molit.go.kr)"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-4\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-4",
+            "layoutHeight": "28"
+          },
+          "rect": {
+            "top": 328.921875,
+            "left": 61.5,
+            "width": 959,
+            "height": 29,
+            "bottom": 357.921875,
+            "right": 1020.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-5\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-5",
+            "layoutHeight": "24.75"
+          },
+          "rect": {
+            "top": 357.921875,
+            "left": 61.5,
+            "width": 959,
+            "height": 24.75,
+            "bottom": 382.671875,
+            "right": 1020.5
+          },
+          "cellCount": 1,
+          "text": "당첨자 확인 방법"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-6\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-6",
+            "layoutHeight": "44.96"
+          },
+          "rect": {
+            "top": 382.671875,
+            "left": 61.5,
+            "width": 959,
+            "height": 44.953125,
+            "bottom": 427.625,
+            "right": 1020.5
+          },
+          "cellCount": 2,
+          "text": "인터넷 LH 청약플러스(apply.lh.or.kr) 및 모바일앱 → 청약 → 청약결과확인 → 당첨/낙찰결과조회 (인증서 로그인하신 경우는 청약 → 고객서비스 → 나의정보 → 마이페이지에서 확인가능)"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-7\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-7",
+            "layoutHeight": "28.67"
+          },
+          "rect": {
+            "top": 427.625,
+            "left": 61.5,
+            "width": 959,
+            "height": 28.65625,
+            "bottom": 456.28125,
+            "right": 1020.5
+          },
+          "cellCount": 2,
+          "text": "ARS 고객전화 연결(1661-7700) → 1번 당첨자 조회 → 주민등록번호 입력 → 당첨여부, 당첨동호, 계약체결기간 안내"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-0",
+            "layoutHeight": "23.40"
+          },
+          "rect": {
+            "top": 194.15625,
+            "left": 61.5,
+            "width": 959,
+            "height": 23.390625,
+            "bottom": 217.546875,
+            "right": 1020.5
+          },
+          "cellCount": 3,
+          "text": "당첨자 및 예비입주자 발표 서류제출(당첨자 및 예비입주자) 계약체결(당첨자)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-1\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-1",
+            "layoutHeight": "23.40"
+          },
+          "rect": {
+            "top": 217.546875,
+            "left": 61.5,
+            "width": 959,
+            "height": 23.390625,
+            "bottom": 240.9375,
+            "right": 1020.5
+          },
+          "cellCount": 3,
+          "text": "방문제출 전자 현장"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-2\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-2",
+            "layoutHeight": "39.81"
+          },
+          "rect": {
+            "top": 240.9375,
+            "left": 61.5,
+            "width": 959,
+            "height": 39.796875,
+            "bottom": 280.734375,
+            "right": 1020.5
+          },
+          "cellCount": 4,
+          "text": "‘26.04.16.(목) 16:00 이후 LH 청약플러스 및 모바일앱 (apply.lh.or.kr) ‘26.04.23.(목) ~ 04.24.(금) 10:00~16:00 ‘26.05.21.(목) 10:00~16:00 ’26.05.22.(금) 10:00~16:00"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-3\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-3",
+            "layoutHeight": "48.19"
+          },
+          "rect": {
+            "top": 280.734375,
+            "left": 61.5,
+            "width": 959,
+            "height": 48.1875,
+            "bottom": 328.921875,
+            "right": 1020.5
+          },
+          "cellCount": 1,
+          "text": "• (현장) 서류제출 및 현장계약체결 장소 : 인천광역시 서구 청라동 172-14 • (온라인-전자계약체결) 부동산거래 전자계약시스템 (https://irts.molit.go.kr)"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-4\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-4",
+            "layoutHeight": "28"
+          },
+          "rect": {
+            "top": 328.921875,
+            "left": 61.5,
+            "width": 959,
+            "height": 29,
+            "bottom": 357.921875,
+            "right": 1020.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-5\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-5",
+            "layoutHeight": "24.75"
+          },
+          "rect": {
+            "top": 357.921875,
+            "left": 61.5,
+            "width": 959,
+            "height": 24.75,
+            "bottom": 382.671875,
+            "right": 1020.5
+          },
+          "cellCount": 1,
+          "text": "당첨자 확인 방법"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-6\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-6",
+            "layoutHeight": "44.96"
+          },
+          "rect": {
+            "top": 382.671875,
+            "left": 61.5,
+            "width": 959,
+            "height": 44.953125,
+            "bottom": 427.625,
+            "right": 1020.5
+          },
+          "cellCount": 2,
+          "text": "인터넷 LH 청약플러스(apply.lh.or.kr) 및 모바일앱 → 청약 → 청약결과확인 → 당첨/낙찰결과조회 (인증서 로그인하신 경우는 청약 → 고객서비스 → 나의정보 → 마이페이지에서 확인가능)"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-7\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-7",
+            "layoutHeight": "28.67"
+          },
+          "rect": {
+            "top": 427.625,
+            "left": 61.5,
+            "width": 959,
+            "height": 28.65625,
+            "bottom": 456.28125,
+            "right": 1020.5
+          },
+          "cellCount": 2,
+          "text": "ARS 고객전화 연결(1661-7700) → 1번 당첨자 조회 → 주민등록번호 입력 → 당첨여부, 당첨동호, 계약체결기간 안내"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-0",
+            "layoutHeight": "23.40"
+          },
+          "rect": {
+            "top": 194.15625,
+            "left": 61.5,
+            "width": 959,
+            "height": 23.390625,
+            "bottom": 217.546875,
+            "right": 1020.5
+          },
+          "cellCount": 3,
+          "text": "당첨자 및 예비입주자 발표 서류제출(당첨자 및 예비입주자) 계약체결(당첨자)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-1\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-1",
+            "layoutHeight": "23.40"
+          },
+          "rect": {
+            "top": 217.546875,
+            "left": 61.5,
+            "width": 959,
+            "height": 23.390625,
+            "bottom": 240.9375,
+            "right": 1020.5
+          },
+          "cellCount": 3,
+          "text": "방문제출 전자 현장"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-2\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-2",
+            "layoutHeight": "39.81"
+          },
+          "rect": {
+            "top": 240.9375,
+            "left": 61.5,
+            "width": 959,
+            "height": 39.796875,
+            "bottom": 280.734375,
+            "right": 1020.5
+          },
+          "cellCount": 4,
+          "text": "‘26.04.16.(목) 16:00 이후 LH 청약플러스 및 모바일앱 (apply.lh.or.kr) ‘26.04.23.(목) ~ 04.24.(금) 10:00~16:00 ‘26.05.21.(목) 10:00~16:00 ’26.05.22.(금) 10:00~16:00"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-3\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-3",
+            "layoutHeight": "48.19"
+          },
+          "rect": {
+            "top": 280.734375,
+            "left": 61.5,
+            "width": 959,
+            "height": 48.1875,
+            "bottom": 328.921875,
+            "right": 1020.5
+          },
+          "cellCount": 1,
+          "text": "• (현장) 서류제출 및 현장계약체결 장소 : 인천광역시 서구 청라동 172-14 • (온라인-전자계약체결) 부동산거래 전자계약시스템 (https://irts.molit.go.kr)"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-4\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-4",
+            "layoutHeight": "28"
+          },
+          "rect": {
+            "top": 328.921875,
+            "left": 61.5,
+            "width": 959,
+            "height": 29,
+            "bottom": 357.921875,
+            "right": 1020.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-5\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-5",
+            "layoutHeight": "24.75"
+          },
+          "rect": {
+            "top": 357.921875,
+            "left": 61.5,
+            "width": 959,
+            "height": 24.75,
+            "bottom": 382.671875,
+            "right": 1020.5
+          },
+          "cellCount": 1,
+          "text": "당첨자 확인 방법"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-6\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-6",
+            "layoutHeight": "44.96"
+          },
+          "rect": {
+            "top": 382.671875,
+            "left": 61.5,
+            "width": 959,
+            "height": 44.953125,
+            "bottom": 427.625,
+            "right": 1020.5
+          },
+          "cellCount": 2,
+          "text": "인터넷 LH 청약플러스(apply.lh.or.kr) 및 모바일앱 → 청약 → 청약결과확인 → 당첨/낙찰결과조회 (인증서 로그인하신 경우는 청약 → 고객서비스 → 나의정보 → 마이페이지에서 확인가능)"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11/row-7\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11:row-7",
+            "layoutHeight": "28.67"
+          },
+          "rect": {
+            "top": 427.625,
+            "left": 61.5,
+            "width": 959,
+            "height": 28.65625,
+            "bottom": 456.28125,
+            "right": 1020.5
+          },
+          "cellCount": 2,
+          "text": "ARS 고객전화 연결(1661-7700) → 1번 당첨자 조회 → 주민등록번호 입력 → 당첨여부, 당첨동호, 계약체결기간 안내"
+        }
+      ],
+      "text": "당첨자 및 예비입주자 발표 서류제출(당첨자 및 예비입주자) 계약체결(당첨자) 방문제출 전자 현장 ‘26.04.16.(목) 16:00 이후 LH 청약플러스 및 모바일앱 (apply.lh.or.kr) ‘26.04.23.(목) ~ 04.24.(금) 10:00~16:00 ‘26.05.21.(목) 10:00~16:00 ’26.05.22.(금) 10:00~16:00 • (현장) 서류제출 및 현장계약체결 장소 : 인천광역시 서구 청라동 1",
+      "style": {
+        "height": "261.17px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 4,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-44-cell-0-block-18\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-18\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-18",
+        "nestingLevel": "1",
+        "layoutHeight": "26.20"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-44-cell-0-block-18\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-18\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-18",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 598.78125,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 626.109375,
+        "right": 1043
+      },
+      "tableRect": {
+        "top": 598.78125,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 626.109375,
+        "right": 1043
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-18/row-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-18/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-18:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 599.28125,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 625.609375,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "3. 당첨자(예비입주자) 제출서류"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-18/row-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-18/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-18:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 599.28125,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 625.609375,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "3. 당첨자(예비입주자) 제출서류"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-44-cell-0-block-18/row-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-18/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-18:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 599.28125,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 625.609375,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "3. 당첨자(예비입주자) 제출서류"
+        }
+      ],
+      "text": "3. 당첨자(예비입주자) 제출서류",
+      "style": {
+        "height": "26.2px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": "rgb(255, 225, 225)"
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-0-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-0-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-0-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "18",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 27,
+        "left": 77,
+        "width": 0,
+        "height": 21.328125,
+        "bottom": 48.328125,
+        "right": 77
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-0-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-0-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-0-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 30.15625,
+        "left": 86.484375,
+        "width": 953.515625,
+        "height": 15,
+        "bottom": 45.15625,
+        "right": 1040
+      },
+      "text": "1. 추첨(공공분양 동·호, 당첨자 선정)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "6",
+        "empty": "true",
+        "hwpxSpacer": "true"
+      },
+      "rect": {
+        "top": 52.328125,
+        "left": 61,
+        "width": 1000,
+        "height": 6,
+        "bottom": 58.328125,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "6px",
+        "minHeight": "6px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-2",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 63.328125,
+        "left": 61,
+        "width": 1000,
+        "height": 15,
+        "bottom": 78.328125,
+        "right": 1061
+      },
+      "text": "• 추첨 일시 : 2026년 4월 16일(목)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-3\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-3",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 83.328125,
+        "left": 61,
+        "width": 1000,
+        "height": 15,
+        "bottom": 98.328125,
+        "right": 1061
+      },
+      "text": "• 추첨 내용 : 공공분양주택의 당첨자, 예비입주자, 당첨자의 동·호수",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-4\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-4",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "3",
+        "empty": "true",
+        "hwpxSpacer": "true"
+      },
+      "rect": {
+        "top": 98.328125,
+        "left": 61,
+        "width": 1000,
+        "height": 3,
+        "bottom": 101.328125,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "3px",
+        "minHeight": "3px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-5-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-5-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-5-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "18",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 106.328125,
+        "left": 77,
+        "width": 0,
+        "height": 21.328125,
+        "bottom": 127.65625,
+        "right": 77
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-5-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-5-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-5-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 109.484375,
+        "left": 86.484375,
+        "width": 953.515625,
+        "height": 15,
+        "bottom": 124.484375,
+        "right": 1040
+      },
+      "text": "2. 당첨자(예비입주자) 발표, 서류제출 및 계약체결 일정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-6\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-6",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "6",
+        "empty": "true",
+        "hwpxSpacer": "true"
+      },
+      "rect": {
+        "top": 131.65625,
+        "left": 61,
+        "width": 1000,
+        "height": 6,
+        "bottom": 137.65625,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "6px",
+        "minHeight": "6px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-7\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-7",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 140.65625,
+        "left": 61,
+        "width": 1000,
+        "height": 15,
+        "bottom": 155.65625,
+        "right": 1061
+      },
+      "text": "■ 일정 및 장소",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-8\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-8",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "24",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 160.65625,
+        "left": 61,
+        "width": 1000,
+        "height": 28,
+        "bottom": 188.65625,
+        "right": 1061
+      },
+      "text": "• 당첨자 및 예비입주자는 아래 당첨자 서류제출 기한 내에 관련서류를 제출해야 하며, 서류제출기간 내에 서류를 제출하지 않거나 계약체결기간 내에 정당한 사유없이 계약체결 하지 않을 경우 계약포기로 간주하오니 유의하시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "24px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-9\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-9",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "3",
+        "empty": "true",
+        "hwpxSpacer": "true"
+      },
+      "rect": {
+        "top": 188.65625,
+        "left": 61,
+        "width": 1000,
+        "height": 3,
+        "bottom": 191.65625,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "3px",
+        "minHeight": "3px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 204.546875,
+        "left": 66,
+        "width": 283.1875,
+        "height": 13,
+        "bottom": 217.546875,
+        "right": 349.1875
+      },
+      "text": "당첨자 및",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-0-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-0-cell-0-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 217.546875,
+        "left": 66,
+        "width": 283.1875,
+        "height": 13,
+        "bottom": 230.546875,
+        "right": 349.1875
+      },
+      "text": "예비입주자 발표",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 199.34375,
+        "left": 358.1875,
+        "width": 263.859375,
+        "height": 13,
+        "bottom": 212.34375,
+        "right": 622.046875
+      },
+      "text": "서류제출(당첨자 및 예비입주자)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-0-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-0-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 199.34375,
+        "left": 631.046875,
+        "width": 384.953125,
+        "height": 13,
+        "bottom": 212.34375,
+        "right": 1016
+      },
+      "text": "계약체결(당첨자)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-1-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-1-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 222.734375,
+        "left": 358.1875,
+        "width": 263.859375,
+        "height": 13,
+        "bottom": 235.734375,
+        "right": 622.046875
+      },
+      "text": "방문제출",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-1-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-1-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 222.734375,
+        "left": 631.046875,
+        "width": 187.953125,
+        "height": 13,
+        "bottom": 235.734375,
+        "right": 819
+      },
+      "text": "전자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-1-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-1-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 222.734375,
+        "left": 828,
+        "width": 188,
+        "height": 13,
+        "bottom": 235.734375,
+        "right": 1016
+      },
+      "text": "현장",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 252.421875,
+        "left": 66,
+        "width": 283.1875,
+        "height": 13,
+        "bottom": 265.421875,
+        "right": 349.1875
+      },
+      "text": "‘26.04.16.(목)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "120%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 265.421875,
+        "left": 66,
+        "width": 283.1875,
+        "height": 13,
+        "bottom": 278.421875,
+        "right": 349.1875
+      },
+      "text": "16:00 이후",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "120%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-2",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 278.421875,
+        "left": 66,
+        "width": 283.1875,
+        "height": 13,
+        "bottom": 291.421875,
+        "right": 349.1875
+      },
+      "text": "LH 청약플러스",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "120%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-3\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-3",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 291.421875,
+        "left": 66,
+        "width": 283.1875,
+        "height": 13,
+        "bottom": 304.421875,
+        "right": 349.1875
+      },
+      "text": "및 모바일앱",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "120%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-4\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-2-cell-0-block-4",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 304.421875,
+        "left": 66,
+        "width": 283.1875,
+        "height": 13,
+        "bottom": 317.421875,
+        "right": 349.1875
+      },
+      "text": "(apply.lh.or.kr)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "120%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-2-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 247.828125,
+        "left": 358.1875,
+        "width": 263.859375,
+        "height": 13,
+        "bottom": 260.828125,
+        "right": 622.046875
+      },
+      "text": "‘26.04.23.(목) ~ 04.24.(금)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "120%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-1-block-1\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-2-cell-1-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 260.828125,
+        "left": 358.1875,
+        "width": 263.859375,
+        "height": 13,
+        "bottom": 273.828125,
+        "right": 622.046875
+      },
+      "text": "10:00~16:00",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "120%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-2-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 254.328125,
+        "left": 631.046875,
+        "width": 187.953125,
+        "height": 13,
+        "bottom": 267.328125,
+        "right": 819
+      },
+      "text": "‘26.05.21.(목) 10:00~16:00",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "120%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-2-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-2-cell-3-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 254.328125,
+        "left": 828,
+        "width": 188,
+        "height": 13,
+        "bottom": 267.328125,
+        "right": 1016
+      },
+      "text": "’26.05.22.(금) 10:00~16:00",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "120%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-3-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-3-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 291.828125,
+        "left": 358.1875,
+        "width": 657.8125,
+        "height": 13,
+        "bottom": 304.828125,
+        "right": 1016
+      },
+      "text": "• (현장) 서류제출 및 현장계약체결 장소 : 인천광역시 서구 청라동 172-14",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-3-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-3-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-3-cell-0-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 304.828125,
+        "left": 358.1875,
+        "width": 657.8125,
+        "height": 13,
+        "bottom": 317.828125,
+        "right": 1016
+      },
+      "text": "• (온라인-전자계약체결) 부동산거래 전자계약시스템 (https://irts.molit.go.kr)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-4-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-4-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 333.421875,
+        "left": 66,
+        "width": 950,
+        "height": 20,
+        "bottom": 353.421875,
+        "right": 1016
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-5-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-5-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 363.796875,
+        "left": 66,
+        "width": 950,
+        "height": 13,
+        "bottom": 376.796875,
+        "right": 1016
+      },
+      "text": "당첨자 확인 방법",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-6-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-6-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-6-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 400.640625,
+        "left": 66,
+        "width": 128.5,
+        "height": 13,
+        "bottom": 413.640625,
+        "right": 194.5
+      },
+      "text": "인터넷",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-6-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-6-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-6-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 392.140625,
+        "left": 216.5,
+        "width": 799.5,
+        "height": 13,
+        "bottom": 405.140625,
+        "right": 1016
+      },
+      "text": "LH 청약플러스(apply.lh.or.kr) 및 모바일앱 → 청약 → 청약결과확인 → 당첨/낙찰결과조회",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-6-cell-1-block-1\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-6-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-6-cell-1-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 409.140625,
+        "left": 216.5,
+        "width": 799.5,
+        "height": 13,
+        "bottom": 422.140625,
+        "right": 1016
+      },
+      "text": "(인증서 로그인하신 경우는 청약 → 고객서비스 → 나의정보 → 마이페이지에서 확인가능)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-7-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-7-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-7-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 437.453125,
+        "left": 66,
+        "width": 128.5,
+        "height": 13,
+        "bottom": 450.453125,
+        "right": 194.5
+      },
+      "text": "ARS",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-11-row-7-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-11-row-7-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-11-row-7-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 437.453125,
+        "left": 216.5,
+        "width": 799.5,
+        "height": 13,
+        "bottom": 450.453125,
+        "right": 1016
+      },
+      "text": "고객전화 연결(1661-7700) → 1번 당첨자 조회 → 주민등록번호 입력 → 당첨여부, 당첨동호, 계약체결기간 안내",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-12\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-12\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-12",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 460.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 13,
+        "bottom": 473.78125,
+        "right": 1061
+      },
+      "text": "※ 당첨자 명단, 예비입주자 및 순번은 당첨자 발표 시 함께 안내합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-13\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-13\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-13",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 477.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 26,
+        "bottom": 503.78125,
+        "right": 1061
+      },
+      "text": "※ 당첨자 및 예비입주자 명단은 SMS 안내 및 LH 청약플러스 및 모바일앱에 게시하오나, 안내 착오 가능성이 있어 전화문의에는 응답할 수 없으므로 LH 청약플러스 (apply.lh.or.kr) 및 모바일앱 또는 A",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-14\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-14\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-14",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 507.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 26,
+        "bottom": 533.78125,
+        "right": 1061
+      },
+      "text": "※ 주택소유여부 등 전산검색 결과 적격 당첨자에 한하여 계약 체결하고, 부적격자는 적격당첨임을 소명하는 서류 제출 후 적격자로 인정받은 경우에만 계약 체결이 가능하므로 일부는 위 계약체결일보다 늦어질 수 있습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-15\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-15\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-15",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 537.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 13,
+        "bottom": 550.78125,
+        "right": 1061
+      },
+      "text": "※ 계약 이후 부적격자로 판명되는 경우에도 당첨자(예비입주자)는 부적격자가 아님을 증명 할 수 있는 서류를 제출하여야 하며, 미제출 시 계약이 취소됩니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-16\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-16\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-16",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "33",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 39,
+        "bottom": 593.78125,
+        "right": 1061
+      },
+      "text": "※ 예비입주자 계약체결일정은 당첨자 계약 후 잔여세대가 있을 경우 예비입주자 순번에 따라 별도 안내 예정이며, 공급일정 등은 청약 시 기재된 연락처로 안내함에 따라 연락처가 변경되거나 잘못 기재하신 분은 「주택공급에",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "33px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-17\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-17\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-17",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "3",
+        "empty": "true",
+        "hwpxSpacer": "true"
+      },
+      "rect": {
+        "top": 593.78125,
+        "left": 61,
+        "width": 1000,
+        "height": 3,
+        "bottom": 596.78125,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "3px",
+        "minHeight": "3px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-18-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-18-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-18-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "18",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 601.78125,
+        "left": 77,
+        "width": 0,
+        "height": 21.328125,
+        "bottom": 623.109375,
+        "right": 77
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-18-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-18-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-18-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 604.9375,
+        "left": 86.484375,
+        "width": 953.515625,
+        "height": 15,
+        "bottom": 619.9375,
+        "right": 1040
+      },
+      "text": "3. 당첨자(예비입주자) 제출서류",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-19\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-19\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-19",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "3",
+        "empty": "true",
+        "hwpxSpacer": "true"
+      },
+      "rect": {
+        "top": 627.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 3,
+        "bottom": 630.109375,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "3px",
+        "minHeight": "3px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-20\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-20\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-20",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 633.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 13,
+        "bottom": 646.109375,
+        "right": 1061
+      },
+      "text": "■ 공통 안내사항",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-21\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-21\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-21",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "24",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 651.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 28,
+        "bottom": 679.109375,
+        "right": 1061
+      },
+      "text": "• 당첨자 및 예비입주자는 당첨자 서류제출 기한(2026.04.23.∼2026.04.24.) 내에 관련서류를 제출해야 하며, 서류제출기간 내에 서류를 제출하지 않거나 계약체결기간 내에 정당 한 사유 없이 계약체결하지",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "24px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-22\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-22\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-22",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 684.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 15,
+        "bottom": 699.109375,
+        "right": 1061
+      },
+      "text": "• 모든 제출 서류는 입주자모집공고일(2026.03.27.) 이후 발급본에 한하며, 직인날인이 없거나 직인날인 된 서류를 팩스로 전송받은 서류는 인정하지 않습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-23\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-23\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-23",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 704.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 13,
+        "bottom": 717.109375,
+        "right": 1061
+      },
+      "text": "• 위변조된 서류 등을 제출할 경우, 「주택법」 제65조(공급질서 교란)으로 최대 10년의 범위에서 입주자격이 제한되며, 3년 이하의 징역 또는 3천만원 이하의 벌금에 처해질 수 있습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-24\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-24\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-24",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "24",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 722.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 28,
+        "bottom": 750.109375,
+        "right": 1061
+      },
+      "text": "• 신청자격에 맞는 제증명서류(당첨자 제출서류 참조)를 제출하여야 하며, 신청자의 착오 등으로 신청내용과 제출서류가 상이할 경우 당첨을 취소하며, 부적격 당첨에 따른 결과는 신청자 본인의 책임입니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "24px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-25\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-25\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-25",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 755.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 15,
+        "bottom": 770.109375,
+        "right": 1061
+      },
+      "text": "• 당첨자가 신청한 내용과 당첨 후 제출한 서류의 내용이 다를 경우 별도의 보완자료 등으로 당첨자격을 소명하여야 하며, 소명자료 제출관련사항은 해당자에게 별도 안내예정입니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-26\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-26\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-26",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "24",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 775.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 28,
+        "bottom": 803.109375,
+        "right": 1061
+      },
+      "text": "• 본인 및 배우자 이외에는 모두 대리 제출자로 간주하며(직계 존·비속 포함), 대리 제출자는 위임장, 본인의 인감도장 및 인감증명서(또는 본인서명사실확인서), 본인 및 대리인의 신분증을 추가로 구비하여야 합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "24px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-27\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-27\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-27",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 808.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 26,
+        "bottom": 834.109375,
+        "right": 1061
+      },
+      "text": "• 당첨자의 배우자가 재외국민인 경우 주민등록표등본, 외국인인 경우에는 외국인등록증(또는 외국인등록사실증명서)을 제출하여야 합니다. 제출된 서류의 주민등록번호, 거소신고번 호 또는 외국인등록번호는 입주자 자격을 심사",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-28\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-28\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-28",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "24",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 839.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 28,
+        "bottom": 867.109375,
+        "right": 1061
+      },
+      "text": "• 제출하신 서류는 「주택공급에 관한 규칙」 제24조에 따라 입주자로 선정되지 아니한 경우 접수일로부터 6개월간, 입주자로 선정 된 경우 접수일로부터 5년 동안 보관한 뒤에 해당 기간이 경과하고 나면 폐기합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "24px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-29\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-29\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-29",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 872.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 13,
+        "bottom": 885.109375,
+        "right": 1061
+      },
+      "text": "• 관계 법령에 따라 공고문에 표기된 서류 외 추가 서류를 요구할 수 있습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-44-cell-0-block-30\",\"xmlPath\":\"body-block-1-row-44-cell-0-block-30\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-44-cell-0-block-30",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 888.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 13,
+        "bottom": 901.109375,
+        "right": 1061
+      },
+      "text": "■ 당첨자(예비입주자) 제출서류",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"header-block-1\",\"xmlPath\":\"header-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:header-block-1",
+        "layoutSource": "hwpx-header-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 91,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 93,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 72px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"footer-block-0\",\"xmlPath\":\"footer-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:footer-block-0",
+        "layoutSource": "hwpx-footer-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 1564,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 1566,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1545px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "layoutSource": "hwpx-footer-page-number",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "layoutHeight": "18"
+      },
+      "rect": {
+        "top": 1540,
+        "left": 60,
+        "width": 1006,
+        "height": 19,
+        "bottom": 1559,
+        "right": 1066
+      },
+      "text": "- 11 -",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1521px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "18px",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 60
+}

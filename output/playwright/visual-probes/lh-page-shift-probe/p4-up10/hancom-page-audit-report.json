@@ -1,0 +1,233 @@
+{
+  "generatedAt": "2026-05-07T23:11:26.428Z",
+  "sourceManifest": "output/playwright/visual-probes/lh-page-shift-probe/p4-up10/hancom-page-audit-manifest.json",
+  "verdictPolicy": {
+    "passVerdicts": [
+      "close"
+    ],
+    "advisoryVerdicts": [
+      "layout-review",
+      "review"
+    ],
+    "strictFailureVerdicts": [
+      "capture-error",
+      "capture-review",
+      "mismatch"
+    ],
+    "thresholds": {
+      "rawCloseMax": 18.0,
+      "rawReviewMax": 32.0,
+      "layoutReviewBlurMax": 32.0,
+      "layoutReviewProjectionMax": 30.0
+    },
+    "note": "review/layout-review are advisory states. They may keep automation exit status green, but they are not clean visual-fidelity passes and must be reported with raw/blur/layout metrics."
+  },
+  "documentCount": 1,
+  "totalPages": 4,
+  "severityCounts": {
+    "pass": 1,
+    "advisory": 3,
+    "strict-failure": 0,
+    "unknown": 0
+  },
+  "results": [
+    {
+      "id": "attachment-sale-notice",
+      "filename": "attachment-sale-notice.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp",
+      "pageCount": 4,
+      "verdictCounts": {
+        "review": 3,
+        "close": 1
+      },
+      "severityCounts": {
+        "advisory": 3,
+        "pass": 1
+      },
+      "advisoryPages": [
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 30.39238713297853,
+          "blurDiff": 20.810121827594944,
+          "layoutDiff": 28.033092263861498,
+          "compare": "output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/compare/page-001-compare.png"
+        },
+        {
+          "page": 2,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 30.61055601055601,
+          "blurDiff": 21.12276367276367,
+          "layoutDiff": 42.66721672167215,
+          "compare": "output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/compare/page-002-compare.png"
+        },
+        {
+          "page": 4,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 25.191480999620534,
+          "blurDiff": 19.834946061690246,
+          "layoutDiff": 26.971237970253725,
+          "compare": "output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/compare/page-004-compare.png"
+        }
+      ],
+      "strictFailurePages": [],
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/chrome-page-001.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/compare/page-001-compare.png",
+          "diff": 30.39238713297853,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 30.39238713297853,
+            "blurDiff": 20.810121827594944,
+            "projectionDiff": {
+              "row": 36.27931185623495,
+              "column": 19.786872671488045,
+              "combined": 28.033092263861498
+            },
+            "metricWidth": 396
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 1,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-002.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/chrome-page-002.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/hancom-crop-page-002.png",
+          "pageCompare": "output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/compare/page-002-compare.png",
+          "diff": 30.61055601055601,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 30.61055601055601,
+            "blurDiff": 21.12276367276367,
+            "projectionDiff": {
+              "row": 45.191969196919665,
+              "column": 40.14246424642464,
+              "combined": 42.66721672167215
+            },
+            "metricWidth": 396
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4015151515151516,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.010406556669901867,
+            "expectedGap": 0.012484848484848321,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            555
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 2,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-003.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/chrome-page-003.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/hancom-crop-page-003.png",
+          "pageCompare": "output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/compare/page-003-compare.png",
+          "diff": 17.69205948372615,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 17.69205948372615,
+            "blurDiff": 16.940878317222403,
+            "projectionDiff": {
+              "row": 37.691759807144415,
+              "column": 30.826758711374097,
+              "combined": 34.25925925925925
+            },
+            "metricWidth": 396
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 3,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-004.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/chrome-page-004.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/hancom-crop-page-004.png",
+          "pageCompare": "output/playwright/visual-probes/lh-page-shift-probe/p4-up10/attachment-sale-notice/compare/page-004-compare.png",
+          "diff": 25.191480999620534,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 25.191480999620534,
+            "blurDiff": 19.834946061690246,
+            "projectionDiff": {
+              "row": 35.320428696412975,
+              "column": 18.622047244094475,
+              "combined": 26.971237970253725
+            },
+            "metricWidth": 396
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4116161616161615,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.00030554656889192344,
+            "expectedGap": 0.002383838383838377,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            559
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        }
+      ]
+    }
+  ]
+}

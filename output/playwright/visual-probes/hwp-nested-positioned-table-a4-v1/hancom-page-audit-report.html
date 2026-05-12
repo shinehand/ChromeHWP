@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hancom Page Audit</title>
+  <style>
+    body { margin: 0; background: #eee8dc; color: #171410; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+    main { width: min(1800px, calc(100vw - 40px)); margin: 0 auto; padding: 28px 0 60px; }
+    h1 { margin: 0 0 8px; }
+    .policy { background: #fff7e0; border: 1px solid #d9a441; padding: 12px 14px; margin: 18px 0; }
+    .doc-card { background: #fffaf2; border: 1px solid #d6c9b8; border-radius: 18px; padding: 18px; margin: 20px 0; }
+    .doc-card p { color: #665d52; }
+    .page-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 16px; }
+    .page-card { background: white; border: 1px solid #d8d0c3; border-radius: 14px; overflow: hidden; }
+    .page-card h3 { margin: 0; padding: 10px 12px; font-size: 15px; background: #f7f2eb; }
+    .page-card.strict-failure h3 { background: #ffe2df; }
+    .page-card.advisory h3 { background: #fff1c2; }
+    .page-card.pass h3 { background: #e8f5df; }
+    .page-card.layout-review h3 { background: #ffe9c7; }
+    .verdict-note { margin: 0; padding: 9px 12px; color: #5f5143; background: #fffaf2; font-size: 13px; }
+    img { width: 100%; display: block; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Hancom Page Audit</h1>
+  <p>모든 테스트 문서를 한컴 Viewer와 TotalDocs 페이지 단위로 대조한 산출물입니다.</p>
+  <section class="policy">
+    <strong>Verdict policy:</strong>
+    <span>pass=close</span> ·
+    <span>advisory=layout-review, review (clean pass 아님)</span> ·
+    <span>strict failure=capture-error, capture-review, mismatch</span>
+  </section>
+  
+          <article class="doc-card">
+            <h2>goyeopje.hwp</h2>
+            <p>/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje.hwp</p>
+            <p>pages 2 · severity {&#x27;advisory&#x27;: 1, &#x27;pass&#x27;: 1} · verdicts {&#x27;review&#x27;: 1, &#x27;close&#x27;: 1}</p>
+            <div class="page-grid">
+              <section class="page-card advisory review">
+                <h3>1쪽 · advisory · review · raw 25.036 · blur 23.651 · layout 25.644</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="goyeopje/compare/page-001-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card pass close">
+                <h3>2쪽 · pass · close · raw 16.238 · blur 15.537 · layout 17.852</h3>
+                <p class="verdict-note">pass: raw pixel diff is inside the close band.</p>
+                <img src="goyeopje/compare/page-002-compare.png" alt="page compare">
+              </section>
+            </div>
+          </article>
+        
+          <article class="doc-card">
+            <h2>goyeopje-full-2024.hwp</h2>
+            <p>/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje-full-2024.hwp</p>
+            <p>pages 11 · severity {&#x27;advisory&#x27;: 8, &#x27;pass&#x27;: 3} · verdicts {&#x27;review&#x27;: 8, &#x27;close&#x27;: 3}</p>
+            <div class="page-grid">
+              <section class="page-card advisory review">
+                <h3>1쪽 · advisory · review · raw 23.560 · blur 21.646 · layout 20.895</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="goyeopje-full-2024/compare/page-001-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>2쪽 · advisory · review · raw 30.202 · blur 28.368 · layout 32.736</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="goyeopje-full-2024/compare/page-002-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card pass close">
+                <h3>3쪽 · pass · close · raw 13.582 · blur 12.603 · layout 12.061</h3>
+                <p class="verdict-note">pass: raw pixel diff is inside the close band.</p>
+                <img src="goyeopje-full-2024/compare/page-003-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card pass close">
+                <h3>4쪽 · pass · close · raw 16.849 · blur 16.494 · layout 24.976</h3>
+                <p class="verdict-note">pass: raw pixel diff is inside the close band.</p>
+                <img src="goyeopje-full-2024/compare/page-004-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card pass close">
+                <h3>5쪽 · pass · close · raw 17.991 · blur 17.396 · layout 28.088</h3>
+                <p class="verdict-note">pass: raw pixel diff is inside the close band.</p>
+                <img src="goyeopje-full-2024/compare/page-005-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>6쪽 · advisory · review · raw 27.703 · blur 27.397 · layout 41.978</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="goyeopje-full-2024/compare/page-006-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>7쪽 · advisory · review · raw 21.007 · blur 19.934 · layout 28.252</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="goyeopje-full-2024/compare/page-007-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>8쪽 · advisory · review · raw 24.604 · blur 23.351 · layout 33.900</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="goyeopje-full-2024/compare/page-008-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>9쪽 · advisory · review · raw 24.468 · blur 23.106 · layout 32.710</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="goyeopje-full-2024/compare/page-009-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>10쪽 · advisory · review · raw 29.633 · blur 27.238 · layout 21.773</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="goyeopje-full-2024/compare/page-010-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>11쪽 · advisory · review · raw 28.960 · blur 26.896 · layout 36.197</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="goyeopje-full-2024/compare/page-011-compare.png" alt="page compare">
+              </section>
+            </div>
+          </article>
+        
+          <article class="doc-card">
+            <h2>gyeolseokgye.hwp</h2>
+            <p>/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/gyeolseokgye.hwp</p>
+            <p>pages 1 · severity {&#x27;advisory&#x27;: 1} · verdicts {&#x27;review&#x27;: 1}</p>
+            <div class="page-grid">
+              <section class="page-card advisory review">
+                <h3>1쪽 · advisory · review · raw 20.239 · blur 19.629 · layout 21.506</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="gyeolseokgye/compare/page-001-compare.png" alt="page compare">
+              </section>
+            </div>
+          </article>
+        
+          <article class="doc-card">
+            <h2>attachment-sale-notice.hwp</h2>
+            <p>/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp</p>
+            <p>pages 4 · severity {&#x27;advisory&#x27;: 4} · verdicts {&#x27;layout-review&#x27;: 1, &#x27;review&#x27;: 3}</p>
+            <div class="page-grid">
+              <section class="page-card advisory layout-review">
+                <h3>1쪽 · advisory · layout-review · raw 32.870 · blur 28.269 · layout 29.843</h3>
+                <p class="verdict-note">advisory: raw pixel diff is above the review band, but blur/layout metrics are within the relaxed layout-review band; this is not a clean pass.</p>
+                <img src="attachment-sale-notice/compare/page-001-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>2쪽 · advisory · review · raw 25.125 · blur 22.266 · layout 26.130</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="attachment-sale-notice/compare/page-002-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>3쪽 · advisory · review · raw 22.987 · blur 21.035 · layout 23.349</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="attachment-sale-notice/compare/page-003-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>4쪽 · advisory · review · raw 25.643 · blur 22.039 · layout 24.784</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="attachment-sale-notice/compare/page-004-compare.png" alt="page compare">
+              </section>
+            </div>
+          </article>
+        
+          <article class="doc-card">
+            <h2>incheon-2a.hwpx</h2>
+            <p>/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx</p>
+            <p>pages 18 · severity {&#x27;advisory&#x27;: 10, &#x27;pass&#x27;: 8} · verdicts {&#x27;review&#x27;: 10, &#x27;close&#x27;: 8}</p>
+            <div class="page-grid">
+              <section class="page-card advisory review">
+                <h3>1쪽 · advisory · review · raw 24.320 · blur 23.945 · layout 51.640</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-001-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>2쪽 · advisory · review · raw 21.821 · blur 20.943 · layout 44.581</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-002-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>3쪽 · advisory · review · raw 26.766 · blur 25.607 · layout 45.217</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-003-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>4쪽 · advisory · review · raw 24.795 · blur 23.291 · layout 35.859</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-004-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>5쪽 · advisory · review · raw 25.045 · blur 22.721 · layout 42.401</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-005-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card pass close">
+                <h3>6쪽 · pass · close · raw 15.409 · blur 15.244 · layout 36.594</h3>
+                <p class="verdict-note">pass: raw pixel diff is inside the close band.</p>
+                <img src="incheon-2a/compare/page-006-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card pass close">
+                <h3>7쪽 · pass · close · raw 16.429 · blur 15.794 · layout 33.681</h3>
+                <p class="verdict-note">pass: raw pixel diff is inside the close band.</p>
+                <img src="incheon-2a/compare/page-007-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card pass close">
+                <h3>8쪽 · pass · close · raw 17.804 · blur 16.844 · layout 33.893</h3>
+                <p class="verdict-note">pass: raw pixel diff is inside the close band.</p>
+                <img src="incheon-2a/compare/page-008-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>9쪽 · advisory · review · raw 20.482 · blur 19.150 · layout 34.664</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-009-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card pass close">
+                <h3>10쪽 · pass · close · raw 16.535 · blur 16.277 · layout 40.563</h3>
+                <p class="verdict-note">pass: raw pixel diff is inside the close band.</p>
+                <img src="incheon-2a/compare/page-010-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>11쪽 · advisory · review · raw 20.492 · blur 19.455 · layout 41.794</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-011-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card pass close">
+                <h3>12쪽 · pass · close · raw 17.813 · blur 16.739 · layout 39.907</h3>
+                <p class="verdict-note">pass: raw pixel diff is inside the close band.</p>
+                <img src="incheon-2a/compare/page-012-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card pass close">
+                <h3>13쪽 · pass · close · raw 17.171 · blur 16.376 · layout 44.515</h3>
+                <p class="verdict-note">pass: raw pixel diff is inside the close band.</p>
+                <img src="incheon-2a/compare/page-013-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card pass close">
+                <h3>14쪽 · pass · close · raw 17.564 · blur 16.473 · layout 43.980</h3>
+                <p class="verdict-note">pass: raw pixel diff is inside the close band.</p>
+                <img src="incheon-2a/compare/page-014-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>15쪽 · advisory · review · raw 19.252 · blur 18.129 · layout 42.684</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-015-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>16쪽 · advisory · review · raw 29.995 · blur 28.840 · layout 43.286</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-016-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card advisory review">
+                <h3>17쪽 · advisory · review · raw 27.541 · blur 25.131 · layout 34.425</h3>
+                <p class="verdict-note">advisory: raw pixel diff requires human visual review; this is not a clean pass.</p>
+                <img src="incheon-2a/compare/page-017-compare.png" alt="page compare">
+              </section>
+            
+              <section class="page-card pass close">
+                <h3>18쪽 · pass · close · raw 15.837 · blur 15.202 · layout 23.870</h3>
+                <p class="verdict-note">pass: raw pixel diff is inside the close band.</p>
+                <img src="incheon-2a/compare/page-018-compare.png" alt="page compare">
+              </section>
+            </div>
+          </article>
+        
+</main>
+</body>
+</html>

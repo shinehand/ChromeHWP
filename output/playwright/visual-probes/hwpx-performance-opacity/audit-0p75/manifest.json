@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-06T22:08:45.828Z",
+  "auditId": "hwpx-performance-opacity-0p75",
+  "source": "Probe of targeted HWPX performance-grade table run opacity on incheon-2a p16",
+  "outputDirectory": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/audit-0p75",
+  "documents": [
+    {
+      "id": "incheon-p16-op-0p75",
+      "filename": "incheon-2a-p16-op-0p75.hwpx",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "state": {
+        "pages": 1
+      },
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-016.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/p16-op-0p75.png",
+          "targetBand": "first"
+        }
+      ]
+    }
+  ]
+}

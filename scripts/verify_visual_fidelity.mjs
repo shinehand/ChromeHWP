@@ -35,6 +35,7 @@ async function run() {
     mkdirSync(outputDir, { recursive: true });
     runPw([`-s=${session}`, 'open', url]);
     const captureResult = captureCurrentEditorPages(url);
+    persistPageDomDiagnostics(captureResult);
     const manifest = {
       generatedAt: new Date().toISOString(),
       auditId: session,
@@ -181,6 +182,84 @@ function captureCurrentEditorPages(url) {
         lineSegments: document.querySelectorAll(".hwp-line-segment").length
       };
     });
+    const collectPageDom = async (pageIndex) => page.locator(".hwp-page").nth(pageIndex).evaluate((pageElement) => {
+      const rectObject = (rect) => ({
+        top: rect.top,
+        left: rect.left,
+        width: rect.width,
+        height: rect.height,
+        bottom: rect.bottom,
+        right: rect.right
+      });
+      const pageRect = pageElement.getBoundingClientRect();
+      const relativeRect = (element) => {
+        const rect = element.getBoundingClientRect();
+        return {
+          top: rect.top - pageRect.top,
+          left: rect.left - pageRect.left,
+          width: rect.width,
+          height: rect.height,
+          bottom: rect.bottom - pageRect.top,
+          right: rect.right - pageRect.left
+        };
+      };
+      const cleanText = (value) => String(value || "").replace(/\\s+/g, " ").trim();
+      const datasetObject = (element) => Object.fromEntries(Object.entries(element.dataset || {}));
+      const tables = Array.from(pageElement.querySelectorAll(".hwp-table")).map((table, index) => {
+        const rows = Array.from(table.querySelectorAll(":scope > tbody > tr")).map((row, rowIndex) => ({
+          rowIndex,
+          dataset: datasetObject(row),
+          rect: relativeRect(row),
+          cellCount: row.querySelectorAll(":scope > .hwp-table-cell, :scope > td").length,
+          text: cleanText(row.innerText).slice(0, 160)
+        }));
+        const wrapper = table.closest(".hwp-table-wrap");
+        return {
+          index,
+          depth: Number(table.dataset.nestingLevel || wrapper?.dataset?.nestingLevel || 0),
+          wrapDataset: wrapper ? datasetObject(wrapper) : {},
+          tableDataset: datasetObject(table),
+          rect: wrapper ? relativeRect(wrapper) : relativeRect(table),
+          tableRect: relativeRect(table),
+          rowCount: rows.length,
+          firstRows: rows.slice(0, 12),
+          lastRows: rows.slice(-8),
+          rows,
+          text: cleanText(table.innerText).slice(0, 240),
+          style: {
+            height: table.style.height || "",
+            minHeight: table.style.minHeight || "",
+            width: table.style.width || ""
+          },
+          tableStyle: {
+            border: table.style.border || "",
+            background: table.style.background || ""
+          }
+        };
+      });
+      const paragraphs = Array.from(pageElement.querySelectorAll(".hwp-paragraph")).map((paragraph, index) => ({
+        index,
+        dataset: datasetObject(paragraph),
+        rect: relativeRect(paragraph),
+        text: cleanText(paragraph.innerText).slice(0, 120),
+        style: {
+          top: paragraph.style.top || "",
+          left: paragraph.style.left || "",
+          height: paragraph.style.height || "",
+          minHeight: paragraph.style.minHeight || "",
+          lineHeight: paragraph.style.lineHeight || "",
+          fontSize: paragraph.style.fontSize || ""
+        }
+      }));
+      return {
+        page: { width: pageRect.width, height: pageRect.height },
+        bodyRect: rectObject(pageRect),
+        text: cleanText(pageElement.innerText).slice(0, 1000),
+        tables,
+        paragraphs: paragraphs.slice(0, 200),
+        paragraphCount: paragraphs.length
+      };
+    });
     const waitForSample = async (sample) => {
       const started = Date.now();
       let state = await collectState();
@@ -218,6 +297,7 @@ function captureCurrentEditorPages(url) {
           animations: "disabled",
           timeout: timeoutMs
         });
+        pageItem.domDiagnostics = await collectPageDom(pageItem.pageIndex);
       }
       documents.push({
         id: sample.key,
@@ -231,6 +311,37 @@ function captureCurrentEditorPages(url) {
     return { documents };
   }`;
   return extractJsonResult(runPw([`-s=${session}`, 'run-code', code]));
+}
+
+function persistPageDomDiagnostics(captureResult) {
+  const domOutputDir = join(rootDir, 'output/playwright');
+  mkdirSync(domOutputDir, { recursive: true });
+  for (const document of captureResult.documents || []) {
+    for (const page of document.pages || []) {
+      const diagnostics = page.domDiagnostics;
+      if (!diagnostics) continue;
+      const domPath = join(domOutputDir, `${document.id}-p${String(page.pageIndex + 1).padStart(2, '0')}-dom-current.json`);
+      writeFileSync(domPath, `${JSON.stringify({
+        filename: document.filename,
+        pages: document.pageCount,
+        page: {
+          index: page.pageIndex + 1,
+          width: diagnostics.page?.width ?? null,
+          height: diagnostics.page?.height ?? null
+        },
+        bodyRect: diagnostics.bodyRect,
+        text: diagnostics.text,
+        tables: diagnostics.tables,
+        paragraphs: diagnostics.paragraphs,
+        paragraphCount: diagnostics.paragraphCount
+      }, null, 2)}\n`);
+      page.domDiagnostics = {
+        path: domPath,
+        tableCount: diagnostics.tables?.length ?? 0,
+        paragraphCount: diagnostics.paragraphs?.length ?? 0
+      };
+    }
+  }
 }
 
 function summarizeReport(report) {
@@ -280,6 +391,7 @@ function runPw(args) {
       cwd: rootDir,
       encoding: 'utf8',
       timeout: commandTimeoutMs,
+      maxBuffer: 128 * 1024 * 1024,
       env: {
         ...process.env,
         CODEX_HOME: process.env.CODEX_HOME || join(process.env.HOME || '', '.codex')

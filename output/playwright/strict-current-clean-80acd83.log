@@ -1,0 +1,575 @@
+
+> chrome-hwp-editor-extension@0.1.0 verify:visual
+> npm run build && node scripts/verify_visual_fidelity.mjs
+
+
+> chrome-hwp-editor-extension@0.1.0 build
+> vite build
+
+vite v8.0.10 building client environment for production...
+[2Ktransforming...✓ 51 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/manifest.json                           0.80 kB │ gzip:  0.48 kB
+dist/src/popup/popup.html                    1.42 kB │ gzip:  0.70 kB
+dist/src/options/options.html                1.67 kB │ gzip:  0.76 kB
+dist/src/editor/editor.html                  2.03 kB │ gzip:  0.84 kB
+dist/assets/NanumGothic-Regular.woff2      340.68 kB
+dist/assets/NanumSquareNeoTTF-cBd.woff2    384.99 kB
+dist/assets/NanumSquareNeoTTF-bRg.woff2    387.10 kB
+dist/assets/NanumGothic-Bold.woff2         417.25 kB
+dist/assets/GowunBatang-Bold.woff2         447.85 kB
+dist/assets/GowunBatang-Regular.woff2      495.09 kB
+dist/assets/NanumMyeongjo-Regular.woff2    502.06 kB
+dist/assets/NotoSansKR-Regular.woff2       541.86 kB
+dist/assets/NotoSansKR-Bold.woff2          559.19 kB
+dist/assets/NanumMyeongjo-Bold.woff2       575.58 kB
+dist/assets/NotoSerifKR-Regular.woff2      971.42 kB
+dist/assets/NotoSerifKR-Bold.woff2       1,033.55 kB
+dist/assets/dotumche-Regular.ttf         4,568.07 kB
+dist/assets/dotum-Regular.ttf            4,575.57 kB
+dist/assets/gulimche-Regular.ttf         4,711.30 kB
+dist/assets/gulim-Regular.ttf            4,718.60 kB
+dist/assets/popup.css                        1.10 kB │ gzip:  0.55 kB
+dist/assets/options.css                      1.18 kB │ gzip:  0.61 kB
+dist/assets/editor.css                      21.03 kB │ gzip:  3.75 kB
+dist/assets/bytes.js                         0.37 kB │ gzip:  0.26 kB │ map:   1.33 kB
+dist/assets/storage.js                       0.40 kB │ gzip:  0.22 kB │ map:   1.62 kB
+dist/assets/modulepreload-polyfill.js        0.69 kB │ gzip:  0.39 kB
+dist/assets/options.js                       1.42 kB │ gzip:  0.76 kB │ map:   5.05 kB
+dist/assets/popup.js                         2.38 kB │ gzip:  1.25 kB │ map:   6.94 kB
+dist/assets/service-worker.js                3.93 kB │ gzip:  1.83 kB │ map:  13.12 kB
+dist/assets/editor.js                      212.30 kB │ gzip: 72.07 kB │ map: 877.56 kB
+
+✓ built in 129ms
+{
+  "ok": true,
+  "generatedAt": "2026-05-07T20:04:48.992Z",
+  "strict": true,
+  "url": "http://127.0.0.1:54936/src/editor/editor.html",
+  "session": "visual-movx02ve",
+  "outputDir": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current",
+  "manifestPath": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/hancom-page-audit-manifest.json",
+  "reportPath": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/hancom-page-audit-report.json",
+  "capture": {
+    "documents": [
+      {
+        "id": "goyeopje",
+        "filename": "goyeopje.hwp",
+        "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje.hwp",
+        "pageCount": 2,
+        "state": {
+          "filename": "goyeopje.hwp",
+          "renderedFilename": "goyeopje.hwp",
+          "format": "HWP 읽기 / HWPX 내보내기",
+          "pages": 2,
+          "oraclePages": 0,
+          "canvasPages": 0,
+          "paragraphs": 167,
+          "lineSegmentParagraphs": 117,
+          "lineSegments": 128
+        },
+        "pages": [
+          {
+            "pageIndex": 0,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje/hancom-page-001.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje/chrome-page-001.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 1,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje/hancom-page-002.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje/chrome-page-002.png",
+            "targetBand": "last"
+          }
+        ]
+      },
+      {
+        "id": "goyeopje-full-2024",
+        "filename": "goyeopje-full-2024.hwp",
+        "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje-full-2024.hwp",
+        "pageCount": 11,
+        "state": {
+          "filename": "goyeopje-full-2024.hwp",
+          "renderedFilename": "goyeopje-full-2024.hwp",
+          "format": "HWP 읽기 / HWPX 내보내기",
+          "pages": 11,
+          "oraclePages": 0,
+          "canvasPages": 0,
+          "paragraphs": 745,
+          "lineSegmentParagraphs": 531,
+          "lineSegments": 613
+        },
+        "pages": [
+          {
+            "pageIndex": 0,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-001.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-001.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 1,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-002.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-002.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 2,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-003.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-003.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 3,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-004.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-004.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 4,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-005.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-005.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 5,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-006.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-006.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 6,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-007.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-007.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 7,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-008.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-008.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 8,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-009.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-009.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 9,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-010.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-010.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 10,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-011.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-011.png",
+            "targetBand": "last"
+          }
+        ]
+      },
+      {
+        "id": "gyeolseokgye",
+        "filename": "gyeolseokgye.hwp",
+        "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/gyeolseokgye.hwp",
+        "pageCount": 1,
+        "state": {
+          "filename": "gyeolseokgye.hwp",
+          "renderedFilename": "gyeolseokgye.hwp",
+          "format": "HWP 읽기 / HWPX 내보내기",
+          "pages": 1,
+          "oraclePages": 0,
+          "canvasPages": 0,
+          "paragraphs": 63,
+          "lineSegmentParagraphs": 52,
+          "lineSegments": 57
+        },
+        "pages": [
+          {
+            "pageIndex": 0,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/gyeolseokgye/chrome-page-001.png",
+            "targetBand": "last"
+          }
+        ]
+      },
+      {
+        "id": "attachment-sale-notice",
+        "filename": "attachment-sale-notice.hwp",
+        "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp",
+        "pageCount": 4,
+        "state": {
+          "filename": "attachment-sale-notice.hwp",
+          "renderedFilename": "attachment-sale-notice.hwp",
+          "format": "HWP 읽기 / HWPX 내보내기",
+          "pages": 4,
+          "oraclePages": 0,
+          "canvasPages": 0,
+          "paragraphs": 795,
+          "lineSegmentParagraphs": 750,
+          "lineSegments": 792
+        },
+        "pages": [
+          {
+            "pageIndex": 0,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/chrome-page-001.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 1,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-002.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/chrome-page-002.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 2,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-003.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/chrome-page-003.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 3,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-004.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/chrome-page-004.png",
+            "targetBand": "last"
+          }
+        ]
+      },
+      {
+        "id": "incheon-2a",
+        "filename": "incheon-2a.hwpx",
+        "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+        "pageCount": 18,
+        "state": {
+          "filename": "incheon-2a.hwpx",
+          "renderedFilename": "incheon-2a.hwpx",
+          "format": "HWPX",
+          "pages": 18,
+          "oraclePages": 0,
+          "canvasPages": 0,
+          "paragraphs": 1846,
+          "lineSegmentParagraphs": 1606,
+          "lineSegments": 1833
+        },
+        "pages": [
+          {
+            "pageIndex": 0,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-001.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-001.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 1,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-002.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-002.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 2,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-003.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-003.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 3,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-004.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-004.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 4,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-005.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-005.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 5,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-006.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-006.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 6,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-007.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-007.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 7,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-008.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-008.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 8,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-009.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-009.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 9,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-010.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-010.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 10,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-011.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-011.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 11,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-012.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-012.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 12,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-013.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-013.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 13,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-014.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-014.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 14,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-015.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-015.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 15,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-016.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-016.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 16,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-017.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-017.png",
+            "targetBand": "first"
+          },
+          {
+            "pageIndex": 17,
+            "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-018.png",
+            "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-018.png",
+            "targetBand": "last"
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "documentCount": 5,
+    "totalPages": 36,
+    "documents": [
+      {
+        "id": "goyeopje",
+        "filename": "goyeopje.hwp",
+        "pageCount": 2,
+        "verdictCounts": {
+          "review": 1,
+          "close": 1
+        },
+        "averageDiff": 16.937529693340625,
+        "maxDiff": 20.714800505571144,
+        "worstPages": [
+          {
+            "page": 1,
+            "verdict": "review",
+            "diff": 20.714800505571144,
+            "blurDiff": 18.220093763726165,
+            "layoutDiff": 32.1087098886706,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje/compare/page-001-compare.png"
+          },
+          {
+            "page": 2,
+            "verdict": "close",
+            "diff": 13.160258881110105,
+            "blurDiff": 11.994621583585072,
+            "layoutDiff": 20.568107400130955,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje/compare/page-002-compare.png"
+          }
+        ]
+      },
+      {
+        "id": "goyeopje-full-2024",
+        "filename": "goyeopje-full-2024.hwp",
+        "pageCount": 11,
+        "verdictCounts": {
+          "close": 4,
+          "review": 7
+        },
+        "averageDiff": 19.090346643011937,
+        "maxDiff": 25.741745027124775,
+        "worstPages": [
+          {
+            "page": 11,
+            "verdict": "review",
+            "diff": 25.741745027124775,
+            "blurDiff": 22.652133815551537,
+            "layoutDiff": 42.25667104111989,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/compare/page-011-compare.png"
+          },
+          {
+            "page": 6,
+            "verdict": "review",
+            "diff": 23.482514503263236,
+            "blurDiff": 20.76952501812908,
+            "layoutDiff": 40.609796186719265,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/compare/page-006-compare.png"
+          },
+          {
+            "page": 8,
+            "verdict": "review",
+            "diff": 22.519466546112117,
+            "blurDiff": 20.13984629294756,
+            "layoutDiff": 37.17355643044618,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/compare/page-008-compare.png"
+          },
+          {
+            "page": 9,
+            "verdict": "review",
+            "diff": 22.060251994198694,
+            "blurDiff": 19.49563995649021,
+            "layoutDiff": 36.59105851413546,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/compare/page-009-compare.png"
+          },
+          {
+            "page": 10,
+            "verdict": "review",
+            "diff": 21.281689630166788,
+            "blurDiff": 19.07622371283539,
+            "layoutDiff": 20.541858426473848,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/compare/page-010-compare.png"
+          }
+        ]
+      },
+      {
+        "id": "gyeolseokgye",
+        "filename": "gyeolseokgye.hwp",
+        "pageCount": 1,
+        "verdictCounts": {
+          "close": 1
+        },
+        "averageDiff": 16.907455381553824,
+        "maxDiff": 16.907455381553824,
+        "worstPages": [
+          {
+            "page": 1,
+            "verdict": "close",
+            "diff": 16.907455381553824,
+            "blurDiff": 15.869654078184247,
+            "layoutDiff": 23.96037982973153,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/gyeolseokgye/compare/page-001-compare.png"
+          }
+        ]
+      },
+      {
+        "id": "attachment-sale-notice",
+        "filename": "attachment-sale-notice.hwp",
+        "pageCount": 4,
+        "verdictCounts": {
+          "review": 4
+        },
+        "averageDiff": 26.78574399363034,
+        "maxDiff": 30.61055601055601,
+        "worstPages": [
+          {
+            "page": 2,
+            "verdict": "review",
+            "diff": 30.61055601055601,
+            "blurDiff": 21.12276367276367,
+            "layoutDiff": 42.66721672167215,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/compare/page-002-compare.png"
+          },
+          {
+            "page": 1,
+            "verdict": "review",
+            "diff": 30.39238713297853,
+            "blurDiff": 20.810121827594944,
+            "layoutDiff": 28.033092263861498,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/compare/page-001-compare.png"
+          },
+          {
+            "page": 4,
+            "verdict": "review",
+            "diff": 24.217740915415334,
+            "blurDiff": 18.604700854700855,
+            "layoutDiff": 25.147637795275614,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/compare/page-004-compare.png"
+          },
+          {
+            "page": 3,
+            "verdict": "review",
+            "diff": 21.922291915571485,
+            "blurDiff": 18.04331848955505,
+            "layoutDiff": 23.10650887573966,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/compare/page-003-compare.png"
+          }
+        ]
+      },
+      {
+        "id": "incheon-2a",
+        "filename": "incheon-2a.hwpx",
+        "pageCount": 18,
+        "verdictCounts": {
+          "review": 7,
+          "close": 11
+        },
+        "averageDiff": 18.758014785581295,
+        "maxDiff": 26.554244455524163,
+        "worstPages": [
+          {
+            "page": 16,
+            "verdict": "review",
+            "diff": 26.554244455524163,
+            "blurDiff": 24.051137517773714,
+            "layoutDiff": 43.09803264028625,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/compare/page-016-compare.png"
+          },
+          {
+            "page": 17,
+            "verdict": "review",
+            "diff": 24.70164952275044,
+            "blurDiff": 19.777017885274766,
+            "layoutDiff": 34.07687991021323,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/compare/page-017-compare.png"
+          },
+          {
+            "page": 3,
+            "verdict": "review",
+            "diff": 24.55050957604721,
+            "blurDiff": 22.404855001629194,
+            "layoutDiff": 45.54076265614728,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/compare/page-003-compare.png"
+          },
+          {
+            "page": 5,
+            "verdict": "review",
+            "diff": 23.432954092900328,
+            "blurDiff": 18.609156076898014,
+            "layoutDiff": 42.80078895463511,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/compare/page-005-compare.png"
+          },
+          {
+            "page": 4,
+            "verdict": "review",
+            "diff": 22.725349371854747,
+            "blurDiff": 19.993772853987906,
+            "layoutDiff": 36.205347359193524,
+            "compare": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/compare/page-004-compare.png"
+          }
+        ]
+      }
+    ],
+    "strictFailures": []
+  }
+}

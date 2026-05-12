@@ -1,0 +1,463 @@
+{
+  "generatedAt": "2026-05-08T06:56:00+09:00",
+  "purpose": "evidence-first next-step map after rejecting broad CSS visual probes",
+  "saleNoticePage2": {
+    "metrics": {
+      "raw": 30.61055601055601,
+      "blur": 21.12276367276367,
+      "layout": 42.66721672167215
+    },
+    "table": {
+      "left": 60,
+      "top": 104,
+      "width": 1006,
+      "height": 1291,
+      "bottom": 1395
+    },
+    "rowCount": 60,
+    "finding": "hot bands touch many ordinary 21px data rows across the full table body, not one isolated bad row; targeted row/border/ink tweaks are unlikely to clear page 2 without source pagination/scale evidence",
+    "topBands": [
+      {
+        "metricY": 180,
+        "metricY2": 200,
+        "mean": 37.9,
+        "chromeY": 510.9,
+        "chromeY2": 567.7,
+        "rows": [
+          {
+            "rowIndex": 19,
+            "top": 502.5,
+            "bottom": 523.5,
+            "text": "301 59.35 7.5937 66.9437 0 66.9437 70,000,000 7,000,000 63,000,000"
+          },
+          {
+            "rowIndex": 20,
+            "top": 523.5,
+            "bottom": 544.5,
+            "text": "502 59.35 7.5937 66.9437 0 66.9437 68,500,000 6,850,000 61,650,000"
+          },
+          {
+            "rowIndex": 21,
+            "top": 544.5,
+            "bottom": 565.5,
+            "text": "대구 동구 방촌동 1072-22 나동 (화랑로73길41) 201 59.54 15.25 74.79 0 74.79 101,500,000 10,150,0"
+          },
+          {
+            "rowIndex": 22,
+            "top": 565.5,
+            "bottom": 586.5,
+            "text": "401 59.54 15.25 74.79 0 74.79 101,500,000 10,150,000 91,350,000"
+          }
+        ]
+      },
+      {
+        "metricY": 440,
+        "metricY2": 460,
+        "mean": 37.62,
+        "chromeY": 1248.9,
+        "chromeY2": 1305.7,
+        "rows": [
+          {
+            "rowIndex": 54,
+            "top": 1237.5,
+            "bottom": 1258.5,
+            "text": "402 59.1084 11.0006 70.109 0 70.109 68,000,000 6,800,000 61,200,000"
+          },
+          {
+            "rowIndex": 55,
+            "top": 1258.5,
+            "bottom": 1279.5,
+            "text": "경북 포항시 남구 대도동 142-22 301동 (문예로82번길20-10) 102 55.193 16.337 71.53 0 71.53 56,500,000"
+          },
+          {
+            "rowIndex": 56,
+            "top": 1279.5,
+            "bottom": 1300.5,
+            "text": "301 55.193 16.337 71.53 0 71.53 58,500,000 5,850,000 52,650,000"
+          },
+          {
+            "rowIndex": 57,
+            "top": 1300.5,
+            "bottom": 1321.5,
+            "text": "302 55.193 16.337 71.53 0 71.53 58,500,000 5,850,000 52,650,000"
+          }
+        ]
+      },
+      {
+        "metricY": 320,
+        "metricY2": 340,
+        "mean": 36.32,
+        "chromeY": 908.3,
+        "chromeY2": 965.1,
+        "rows": [
+          {
+            "rowIndex": 38,
+            "top": 901.5,
+            "bottom": 922.5,
+            "text": "502 59.1671 12.2122 71.3793 0 71.3793 132,500,000 13,250,000 119,250,000"
+          },
+          {
+            "rowIndex": 39,
+            "top": 922.5,
+            "bottom": 943.5,
+            "text": "대구 수성구 만촌동 1009-17 (세진로12길15) 102 47.78 15.72 63.5 10.92 74.42 151,000,000 15,100,"
+          },
+          {
+            "rowIndex": 40,
+            "top": 943.5,
+            "bottom": 964.5,
+            "text": "201 46.04 13.02 59.06 10.15 69.21 150,000,000 15,000,000 135,000,000"
+          },
+          {
+            "rowIndex": 41,
+            "top": 964.5,
+            "bottom": 985.5,
+            "text": "202 47.78 15.72 63.5 10.92 74.42 157,000,000 15,700,000 141,300,000"
+          }
+        ]
+      },
+      {
+        "metricY": 340,
+        "metricY2": 360,
+        "mean": 36.21,
+        "chromeY": 965.1,
+        "chromeY2": 1021.8,
+        "rows": [
+          {
+            "rowIndex": 41,
+            "top": 964.5,
+            "bottom": 985.5,
+            "text": "202 47.78 15.72 63.5 10.92 74.42 157,000,000 15,700,000 141,300,000"
+          },
+          {
+            "rowIndex": 42,
+            "top": 985.5,
+            "bottom": 1006.5,
+            "text": "경북 경산시 사동 606-8 (원효로40길64-10) 201 48.72 9.67 58.39 0 58.39 72,000,000 7,200,000"
+          },
+          {
+            "rowIndex": 43,
+            "top": 1006.5,
+            "bottom": 1027.5,
+            "text": "203 46.26 9.16 55.42 0 55.42 68,000,000 6,800,000 61,200,000"
+          }
+        ]
+      },
+      {
+        "metricY": 100,
+        "metricY2": 120,
+        "mean": 35.45,
+        "chromeY": 283.8,
+        "chromeY2": 340.6,
+        "rows": [
+          {
+            "rowIndex": 8,
+            "top": 271.5,
+            "bottom": 292.5,
+            "text": "대명동 554-4 103동 (안지랑로2길10) 202 56.92 12.15 69.07 0 69.07 112,000,000 11,200,000 100,"
+          },
+          {
+            "rowIndex": 9,
+            "top": 292.5,
+            "bottom": 313.5,
+            "text": "301 56.92 12.15 69.07 0 69.07 112,000,000 11,200,000 100,800,000"
+          },
+          {
+            "rowIndex": 10,
+            "top": 313.5,
+            "bottom": 334.5,
+            "text": "402 56.92 12.15 69.07 0 69.07 112,000,000 11,200,000 100,800,000"
+          },
+          {
+            "rowIndex": 11,
+            "top": 334.5,
+            "bottom": 355.5,
+            "text": "501 56.92 12.15 69.07 0 69.07 108,500,000 10,850,000 97,650,000"
+          }
+        ]
+      },
+      {
+        "metricY": 460,
+        "metricY2": 480,
+        "mean": 35.3,
+        "chromeY": 1305.7,
+        "chromeY2": 1362.4,
+        "rows": [
+          {
+            "rowIndex": 57,
+            "top": 1300.5,
+            "bottom": 1321.5,
+            "text": "302 55.193 16.337 71.53 0 71.53 58,500,000 5,850,000 52,650,000"
+          },
+          {
+            "rowIndex": 58,
+            "top": 1321.5,
+            "bottom": 1342.5,
+            "text": "402 55.193 16.337 71.53 0 71.53 58,500,000 5,850,000 52,650,000"
+          },
+          {
+            "rowIndex": 59,
+            "top": 1342.5,
+            "bottom": 1394.5,
+            "text": "남구 대도동 142-5 302동 (문예로82번길20-8) 402 55.193 16.337 71.53 0 71.53 58,500,000 5,850,000"
+          }
+        ]
+      },
+      {
+        "metricY": 60,
+        "metricY2": 80,
+        "mean": 35,
+        "chromeY": 170.3,
+        "chromeY2": 227.1,
+        "rows": [
+          {
+            "rowIndex": 3,
+            "top": 164.5,
+            "bottom": 187.5,
+            "text": "주거전용 주거공용 소계"
+          },
+          {
+            "rowIndex": 4,
+            "top": 187.5,
+            "bottom": 208.5,
+            "text": "대구 남구 대명동 554-4 102동 (안지랑로2길10) 301 56.92 12.15 69.07 0 69.07 112,000,000 11,200,0"
+          },
+          {
+            "rowIndex": 5,
+            "top": 208.5,
+            "bottom": 229.5,
+            "text": "401 56.92 12.15 69.07 0 69.07 112,000,000 11,200,000 100,800,000"
+          }
+        ]
+      },
+      {
+        "metricY": 160,
+        "metricY2": 180,
+        "mean": 34.76,
+        "chromeY": 454.1,
+        "chromeY2": 510.9,
+        "rows": [
+          {
+            "rowIndex": 16,
+            "top": 439.5,
+            "bottom": 460.5,
+            "text": "402 59.7642 16.7803 76.5445 0 76.5445 116,500,000 11,650,000 104,850,000"
+          },
+          {
+            "rowIndex": 17,
+            "top": 460.5,
+            "bottom": 481.5,
+            "text": "501 59.376 16.5695 75.9455 0 75.9455 113,500,000 11,350,000 102,150,000"
+          },
+          {
+            "rowIndex": 18,
+            "top": 481.5,
+            "bottom": 502.5,
+            "text": "대구 달성군 논공읍 북리 833-17 (논공중앙로138) 201 59.35 7.5937 66.9437 0 66.9437 70,000,000 7,00"
+          },
+          {
+            "rowIndex": 19,
+            "top": 502.5,
+            "bottom": 523.5,
+            "text": "301 59.35 7.5937 66.9437 0 66.9437 70,000,000 7,000,000 63,000,000"
+          }
+        ]
+      },
+      {
+        "metricY": 280,
+        "metricY2": 300,
+        "mean": 34.3,
+        "chromeY": 794.7,
+        "chromeY2": 851.5,
+        "rows": [
+          {
+            "rowIndex": 32,
+            "top": 775.5,
+            "bottom": 796.5,
+            "text": "대구 북구 산격동 1497-30 (대구체육관로10길16) 201 57.7441 11.9664 69.7105 0 69.7105 128,500,000"
+          },
+          {
+            "rowIndex": 33,
+            "top": 796.5,
+            "bottom": 817.5,
+            "text": "202 59.1671 12.2122 71.3793 0 71.3793 131,500,000 13,150,000 118,350,000"
+          },
+          {
+            "rowIndex": 34,
+            "top": 817.5,
+            "bottom": 838.5,
+            "text": "302 59.1671 12.2122 71.3793 0 71.3793 131,500,000 13,150,000 118,350,000"
+          },
+          {
+            "rowIndex": 35,
+            "top": 838.5,
+            "bottom": 859.5,
+            "text": "401 57.7441 11.9664 69.7105 0 69.7105 132,500,000 13,250,000 119,250,000"
+          }
+        ]
+      },
+      {
+        "metricY": 300,
+        "metricY2": 320,
+        "mean": 33.26,
+        "chromeY": 851.5,
+        "chromeY2": 908.3,
+        "rows": [
+          {
+            "rowIndex": 35,
+            "top": 838.5,
+            "bottom": 859.5,
+            "text": "401 57.7441 11.9664 69.7105 0 69.7105 132,500,000 13,250,000 119,250,000"
+          },
+          {
+            "rowIndex": 36,
+            "top": 859.5,
+            "bottom": 880.5,
+            "text": "402 59.1671 12.2122 71.3793 0 71.3793 135,500,000 13,550,000 121,950,000"
+          },
+          {
+            "rowIndex": 37,
+            "top": 880.5,
+            "bottom": 901.5,
+            "text": "501 57.7441 11.9664 69.7105 0 69.7105 129,500,000 12,950,000 116,550,000"
+          },
+          {
+            "rowIndex": 38,
+            "top": 901.5,
+            "bottom": 922.5,
+            "text": "502 59.1671 12.2122 71.3793 0 71.3793 132,500,000 13,250,000 119,250,000"
+          }
+        ]
+      }
+    ]
+  },
+  "incheonContinuation": {
+    "page16Finding": "page 16 has a single-page body container starting at absolute document y≈24311 with nested performance-grade table height≈1021, then eco-performance table and following section heading; the worst hot band aligns with continuation table/body pagination, not just the performance-grade rows.",
+    "page17Finding": "page 17 begins at top y≈19 with the next section and a 71-row price disclosure table height≈1291; p17 bottom-heavy diff likely reflects continuation split/available-height geometry carried from p16.",
+    "page16Tables": [
+      {
+        "index": 0,
+        "depth": null,
+        "contentKind": "hwpx-body-container",
+        "top": 24311,
+        "bottom": 25752,
+        "height": 1441,
+        "rowCount": 1,
+        "rowHeightRange": [
+          1440,
+          1440
+        ],
+        "firstText": "성능부문 성능항목 성능등급 소음관련 등급 경량충격음 ★★★★ 중량충격음 ★★ 화장실 급배수소음 ★★ 세대간 경계벽의 차음성능 ★ 교통소음(도로, 철도)에 대한 실내외 소음 ★★ 구조관련 등급 가변성 ★★ 수리용이성 전용부분 ★★ 수리용이성 공용부분 ★"
+      },
+      {
+        "index": 1,
+        "depth": null,
+        "contentKind": "hwpx-performance-grade",
+        "top": 24314,
+        "bottom": 25335.296875,
+        "height": 1021.296875,
+        "rowCount": 46,
+        "rowHeightRange": [
+          20.046875,
+          22
+        ],
+        "firstText": "성능부문 성능항목 성능등급 소음관련 등급 경량충격음 ★★★★ 중량충격음 ★★ 화장실 급배수소음 ★★ 세대간 경계벽의 차음성능 ★ 교통소음(도로, 철도)에 대한 실내외 소음 ★★ 구조관련 등급 가변성 ★★ 수리용이성 전용부분 ★★ 수리용이성 공용부분 ★"
+      },
+      {
+        "index": 2,
+        "depth": null,
+        "contentKind": null,
+        "top": 25383.625,
+        "bottom": 25410.953125,
+        "height": 27.328125,
+        "rowCount": 1,
+        "rowHeightRange": [
+          26.328125,
+          26.328125
+        ],
+        "firstText": "6. 친환경주택의 성능 수준"
+      },
+      {
+        "index": 3,
+        "depth": null,
+        "contentKind": null,
+        "top": 25411.953125,
+        "bottom": 25729.609375,
+        "height": 317.65625,
+        "rowCount": 15,
+        "rowHeightRange": [
+          20.859375,
+          24.625
+        ],
+        "firstText": "구 분 적용 여부 외벽(직접면) 적 용 외벽(간접면) 적 용 창호(직접면) 적 용 창호(간접면) 적 용 지붕 적 용 바닥(직접면) 적 용 바닥(간접면) 적 용 바닥(층간바닥) 적 용 대기전력차단장치 적 용 일괄소등스위치 적 용 고효율LED 적 용 실별"
+      },
+      {
+        "index": 4,
+        "depth": null,
+        "contentKind": null,
+        "top": 25751.9375,
+        "bottom": 25779.265625,
+        "height": 27.328125,
+        "rowCount": 1,
+        "rowHeightRange": [
+          26.328125,
+          26.328125
+        ],
+        "firstText": "7. 마감자재 목록표"
+      }
+    ],
+    "page17Tables": [
+      {
+        "index": 0,
+        "depth": 0,
+        "contentKind": "hwpx-body-container",
+        "top": 19,
+        "bottom": 1103.55,
+        "height": 1084.55,
+        "rowCount": 1,
+        "rowHeightRange": [
+          1083.55,
+          1083.55
+        ],
+        "firstText": "8. 분양가상한제 적용주택의 분양가 공개 ■ 「주택법」 제57조 및 「공동주택 분양가격의 산정 등에 관한 규칙」 제15조의 규정에 의거 다음과 같이 공개하며, 분양가격의 항목별 공시내용은 사업의 실제 소요된 비용과 다를 수 있습니다. ■ 분양가격은 상"
+      },
+      {
+        "index": 1,
+        "depth": 1,
+        "contentKind": null,
+        "top": 22,
+        "bottom": 49.33,
+        "height": 27.33,
+        "rowCount": 1,
+        "rowHeightRange": [
+          26.33,
+          26.33
+        ],
+        "firstText": "8. 분양가상한제 적용주택의 분양가 공개"
+      },
+      {
+        "index": 2,
+        "depth": 1,
+        "contentKind": null,
+        "top": 92.33,
+        "bottom": 1383.22,
+        "height": 1290.89,
+        "rowCount": 71,
+        "rowHeightRange": [
+          18,
+          26.89
+        ],
+        "firstText": "구 분 총 액 택지비 택지공급가격 65,966,454 기간이자 3,815,589 필요적 경비 69,316 그 밖의 비용 8,024,192 계 건축비 공사비 토목 토공사 1,616,200 흙막이공사 - 비탈면보호공사 - 옹벽공사 34,186 석축공사 1"
+      }
+    ]
+  },
+  "recommendedNextProbe": {
+    "target": "HWPX continuation split available-height/source table group handling for incheon-2a pages 16-17",
+    "avoid": [
+      "lh-sale-notice broad row strokes",
+      "global HWPX row compression",
+      "ink-only changes"
+    ],
+    "firstCheck": "compare HWPX source table/section boundaries around performance-grade -> eco-performance -> material-list heading against rendered page break positions before changing CSS"
+  }
+}

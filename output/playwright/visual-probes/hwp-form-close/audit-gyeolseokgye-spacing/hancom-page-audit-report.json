@@ -1,0 +1,328 @@
+{
+  "generatedAt": "2026-05-06T22:35:54.719Z",
+  "sourceManifest": "output/playwright/visual-probes/hwp-form-close/manifest-gyeolseokgye-spacing.json",
+  "verdictPolicy": {
+    "passVerdicts": [
+      "close"
+    ],
+    "advisoryVerdicts": [
+      "layout-review",
+      "review"
+    ],
+    "strictFailureVerdicts": [
+      "capture-error",
+      "capture-review",
+      "mismatch"
+    ],
+    "thresholds": {
+      "rawCloseMax": 18.0,
+      "rawReviewMax": 32.0,
+      "layoutReviewBlurMax": 32.0,
+      "layoutReviewProjectionMax": 30.0
+    },
+    "note": "review/layout-review are advisory states. They may keep automation exit status green, but they are not clean visual-fidelity passes and must be reported with raw/blur/layout metrics."
+  },
+  "documentCount": 1,
+  "totalPages": 1,
+  "severityCounts": {
+    "pass": 0,
+    "advisory": 6,
+    "strict-failure": 0,
+    "unknown": 0
+  },
+  "results": [
+    {
+      "id": "gyeolseokgye",
+      "filename": "gyeolseokgye.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/gyeolseokgye.hwp",
+      "pageCount": 1,
+      "verdictCounts": {
+        "review": 6
+      },
+      "severityCounts": {
+        "advisory": 6
+      },
+      "advisoryPages": [
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 20.524662823200558,
+          "blurDiff": 19.493731656184487,
+          "layoutDiff": 20.852433966382936,
+          "compare": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/compare/page-001-compare.png"
+        },
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 20.389319531795948,
+          "blurDiff": 19.529482879105522,
+          "layoutDiff": 20.985046932984112,
+          "compare": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/compare/page-001-compare.png"
+        },
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 18.22649109014675,
+          "blurDiff": 18.068284416491963,
+          "layoutDiff": 24.281816197336852,
+          "compare": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/compare/page-001-compare.png"
+        },
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 20.30372641509434,
+          "blurDiff": 19.55956498951782,
+          "layoutDiff": 20.79840646147134,
+          "compare": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/compare/page-001-compare.png"
+        },
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 20.30372641509434,
+          "blurDiff": 19.55956498951782,
+          "layoutDiff": 20.79840646147134,
+          "compare": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/compare/page-001-compare.png"
+        },
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 18.22649109014675,
+          "blurDiff": 18.068284416491963,
+          "layoutDiff": 24.281816197336852,
+          "compare": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/compare/page-001-compare.png"
+        }
+      ],
+      "strictFailurePages": [],
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-pad-0.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/compare/page-001-compare.png",
+          "diff": 20.524662823200558,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 20.524662823200558,
+            "blurDiff": 19.493731656184487,
+            "projectionDiff": {
+              "row": 24.98471949356045,
+              "column": 16.72014843920542,
+              "combined": 20.852433966382936
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4128113879003559,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.0015462947192914633,
+            "expectedGap": 0.0011886120996440486,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            281,
+            397
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-pad-1.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/compare/page-001-compare.png",
+          "diff": 20.389319531795948,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 20.389319531795948,
+            "blurDiff": 19.529482879105522,
+            "projectionDiff": {
+              "row": 24.77461253001537,
+              "column": 17.19548133595285,
+              "combined": 20.985046932984112
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4128113879003559,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.0015462947192914633,
+            "expectedGap": 0.0011886120996440486,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            281,
+            397
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-pad-0-border-0.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/compare/page-001-compare.png",
+          "diff": 18.22649109014675,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 18.22649109014675,
+            "blurDiff": 18.068284416491963,
+            "projectionDiff": {
+              "row": 24.45044750054578,
+              "column": 24.113184894127926,
+              "combined": 24.281816197336852
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4128113879003559,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.0015462947192914633,
+            "expectedGap": 0.0011886120996440486,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            281,
+            397
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-lineheight-1p15.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/compare/page-001-compare.png",
+          "diff": 20.30372641509434,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 20.30372641509434,
+            "blurDiff": 19.55956498951782,
+            "projectionDiff": {
+              "row": 24.841737611875235,
+              "column": 16.755075311067447,
+              "combined": 20.79840646147134
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4128113879003559,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.0015462947192914633,
+            "expectedGap": 0.0011886120996440486,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            281,
+            397
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-lineheight-1p5.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/compare/page-001-compare.png",
+          "diff": 20.30372641509434,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 20.30372641509434,
+            "blurDiff": 19.55956498951782,
+            "projectionDiff": {
+              "row": 24.841737611875235,
+              "column": 16.755075311067447,
+              "combined": 20.79840646147134
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4128113879003559,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.0015462947192914633,
+            "expectedGap": 0.0011886120996440486,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            281,
+            397
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwp-form-close/gyeolseokgye-pad-0-lineheight-1p15-border-0.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/hwp-form-close/audit-gyeolseokgye-spacing/gyeolseokgye/compare/page-001-compare.png",
+          "diff": 18.22649109014675,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 18.22649109014675,
+            "blurDiff": 18.068284416491963,
+            "projectionDiff": {
+              "row": 24.45044750054578,
+              "column": 24.113184894127926,
+              "combined": 24.281816197336852
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4128113879003559,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.0015462947192914633,
+            "expectedGap": 0.0011886120996440486,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            281,
+            397
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        }
+      ]
+    }
+  ]
+}

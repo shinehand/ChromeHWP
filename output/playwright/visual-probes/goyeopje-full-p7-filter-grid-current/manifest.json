@@ -1,0 +1,168 @@
+{
+  "outputs": [
+    {
+      "id": "base",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/base-page-007.png"
+    },
+    {
+      "id": "br1p15",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p15-page-007.png"
+    },
+    {
+      "id": "br1p2",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p2-page-007.png"
+    },
+    {
+      "id": "br1p25",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p25-page-007.png"
+    },
+    {
+      "id": "br1p3",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p3-page-007.png"
+    },
+    {
+      "id": "br1p35",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p35-page-007.png"
+    },
+    {
+      "id": "br1p4",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p4-page-007.png"
+    },
+    {
+      "id": "br1p5",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p5-page-007.png"
+    },
+    {
+      "id": "br1p15-ct0p75",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p15-ct0p75-page-007.png"
+    },
+    {
+      "id": "br1p15-ct0p85",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p15-ct0p85-page-007.png"
+    },
+    {
+      "id": "br1p15-ct0p95",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p15-ct0p95-page-007.png"
+    },
+    {
+      "id": "br1p15-ct1p05",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p15-ct1p05-page-007.png"
+    },
+    {
+      "id": "br1p15-ct1p15",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p15-ct1p15-page-007.png"
+    },
+    {
+      "id": "br1p15-ct1p25",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p15-ct1p25-page-007.png"
+    },
+    {
+      "id": "br1p2-ct0p75",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p2-ct0p75-page-007.png"
+    },
+    {
+      "id": "br1p2-ct0p85",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p2-ct0p85-page-007.png"
+    },
+    {
+      "id": "br1p2-ct0p95",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p2-ct0p95-page-007.png"
+    },
+    {
+      "id": "br1p2-ct1p05",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p2-ct1p05-page-007.png"
+    },
+    {
+      "id": "br1p2-ct1p15",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p2-ct1p15-page-007.png"
+    },
+    {
+      "id": "br1p2-ct1p25",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p2-ct1p25-page-007.png"
+    },
+    {
+      "id": "br1p25-ct0p75",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p25-ct0p75-page-007.png"
+    },
+    {
+      "id": "br1p25-ct0p85",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p25-ct0p85-page-007.png"
+    },
+    {
+      "id": "br1p25-ct0p95",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p25-ct0p95-page-007.png"
+    },
+    {
+      "id": "br1p25-ct1p05",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p25-ct1p05-page-007.png"
+    },
+    {
+      "id": "br1p25-ct1p15",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p25-ct1p15-page-007.png"
+    },
+    {
+      "id": "br1p25-ct1p25",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p25-ct1p25-page-007.png"
+    },
+    {
+      "id": "br1p3-ct0p75",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p3-ct0p75-page-007.png"
+    },
+    {
+      "id": "br1p3-ct0p85",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p3-ct0p85-page-007.png"
+    },
+    {
+      "id": "br1p3-ct0p95",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p3-ct0p95-page-007.png"
+    },
+    {
+      "id": "br1p3-ct1p05",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p3-ct1p05-page-007.png"
+    },
+    {
+      "id": "br1p3-ct1p15",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p3-ct1p15-page-007.png"
+    },
+    {
+      "id": "br1p3-ct1p25",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p3-ct1p25-page-007.png"
+    },
+    {
+      "id": "br1p35-ct0p75",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p35-ct0p75-page-007.png"
+    },
+    {
+      "id": "br1p35-ct0p85",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p35-ct0p85-page-007.png"
+    },
+    {
+      "id": "br1p35-ct0p95",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p35-ct0p95-page-007.png"
+    },
+    {
+      "id": "br1p35-ct1p05",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p35-ct1p05-page-007.png"
+    },
+    {
+      "id": "br1p35-ct1p15",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p35-ct1p15-page-007.png"
+    },
+    {
+      "id": "br1p35-ct1p25",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/br1p35-ct1p25-page-007.png"
+    },
+    {
+      "id": "op0p85",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/op0p85-page-007.png"
+    },
+    {
+      "id": "op0p9",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/op0p9-page-007.png"
+    },
+    {
+      "id": "op0p95",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-full-p7-filter-grid-current/op0p95-page-007.png"
+    }
+  ]
+}

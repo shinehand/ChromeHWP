@@ -1092,7 +1092,9 @@ function hasTopLevelExplicitPageBreaks(blocks: readonly HwpxDocumentBlock[]): bo
 
 function paginateExplicitPageBreakBlocks(blocks: readonly HwpxDocumentBlock[], pageProfile: HwpxPageProfile): DocumentPage[] {
   const pages: DocumentPage[] = [];
+  const pageHeight = Math.max(240, pageProfile.contentHeightPx);
   let current: HwpxDocumentBlock[] = [];
+  let currentHeight = 0;
 
   const flush = (): void => {
     pages.push({
@@ -1101,13 +1103,30 @@ function paginateExplicitPageBreakBlocks(blocks: readonly HwpxDocumentBlock[], p
       layout: pageProfile.layout
     });
     current = [];
+    currentHeight = 0;
   };
 
   for (const block of blocks) {
+    const chunks = block.type === 'table'
+      ? splitTableForPagination(block, pageHeight)
+      : [block];
     const layout = block._hwpxLayout;
     if (hasExplicitPageBreakBefore(layout) && current.length) flush();
-    current.push(block);
-    if (layout?.breakAfter && current.length) flush();
+
+    for (const [chunkIndex, chunk] of chunks.entries()) {
+      const chunkLayout = chunk._hwpxLayout;
+      const isFirstChunk = chunkIndex === 0;
+      const isLastChunk = chunkIndex === chunks.length - 1;
+
+      if (isFirstChunk && hasExplicitPageBreakBefore(chunkLayout) && current.length) flush();
+
+      const chunkHeight = Math.max(1, estimatePaginationHeight(chunk));
+      if (current.length && currentHeight + chunkHeight > pageHeight) flush();
+
+      current.push(chunk);
+      currentHeight += Math.min(chunkHeight, pageHeight);
+      if (isLastChunk && chunkLayout?.breakAfter && current.length) flush();
+    }
   }
 
   if (current.length || !pages.length) flush();

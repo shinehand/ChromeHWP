@@ -1,0 +1,3592 @@
+{
+  "filename": "goyeopje.hwp",
+  "pages": 2,
+  "page": {
+    "index": 1,
+    "width": 794,
+    "height": 1123
+  },
+  "bodyRect": {
+    "top": 97,
+    "left": 633,
+    "width": 794,
+    "height": 1123,
+    "bottom": 1220,
+    "right": 1427
+  },
+  "text": "※ 본적 : □ 고엽제후유(의)증환자 등 록 신 청 서 □ 고엽제후유증환자 유족 □ 고엽제후유증 2세환자 처리기간 90 일 ①성 명 ②주민등록번호 ③주 소 (전화 휴대폰 ) ④ 입 대 일 자 ⑤계 급 ⑥군 별 ⑦군 번 ⑧질병명 1. 2. 3. 4. 복 무 기 록 ⑨소속부대(중대까지) ⑩복 무 기 간 ⑪복 무 장 소 ⑫직 책 유족 및 가족사항(신청인을 포함한다) ⑬고엽제후유(의)증 환자 등과의 관계 ⑭성 명 ⑮주 민 등 록 번 호 학 력 직 업 월소득(천원) - - - 고엽제후유의증환자지원등에관한법률시행령 제2조 및 제7조의 규정에 의하여 위와 같이 등록을 신청합니다. 년 월 일 신청인 : (서명 또는 인) 지 방 보 훈 청 장 보 훈 지 청 장 귀하 구비서류 1. 고엽제후유증환자 또는 고엽제후유의증환자로 등록하고자 하는 경우 가. 주민등록표초본(병역사항을 포함합니다) 또는 병적증명서 1통 나. 고엽제후유의증환자지원등에관한법률 제5조제1항 또는 제2항에 해당하는 질병임을 확인할 수 있는 진단서 또는 임상소견서 사본 1통 2. 고엽제후유증 2세환자로 등록하고자 하는 경우 : 고엽제후유의증환자지원등에관한법률 제5조제 6항에 해당하는 질병임을 확인할 수 있는 진단서 또는 임상소견서 사본 1통 3. 이미 사망한 고엽제후유증환자등의 유족으로 등록하고자 하는 경우 : 사망진단서․진료기록 등 고엽 제로 인한 질병에 의하여 사망한 것을 의학적으로 확인할 수 있는 증거서류 1통 재 확 인 (장애등급) 신체검사 신청사유 최 종 신체검사 결 과 일 자 (지)청장 소 견 승 인 불승인 심사위원 소 견 사 유 접 수 일 자 번 호 결 재 담 당 주 무 과 장 (지)청장 전결",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "901"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 166,
+        "left": 58,
+        "width": 672,
+        "height": 905,
+        "bottom": 1071,
+        "right": 730
+      },
+      "tableRect": {
+        "top": 166,
+        "left": 58,
+        "width": 672,
+        "height": 905,
+        "bottom": 1071,
+        "right": 730
+      },
+      "rowCount": 22,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-0"
+          },
+          "rect": {
+            "top": 166.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 25,
+            "bottom": 191.5,
+            "right": 729.5
+          },
+          "cellCount": 2,
+          "text": "□ 고엽제후유(의)증환자 등 록 신 청 서 □ 고엽제후유증환자 유족 □ 고엽제후유증 2세환자 처리기간"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-1"
+          },
+          "rect": {
+            "top": 191.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 25,
+            "bottom": 216.5,
+            "right": 729.5
+          },
+          "cellCount": 1,
+          "text": "90 일"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-2"
+          },
+          "rect": {
+            "top": 216.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 36,
+            "bottom": 252.5,
+            "right": 729.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-3"
+          },
+          "rect": {
+            "top": 252.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 55,
+            "bottom": 307.5,
+            "right": 729.5
+          },
+          "cellCount": 6,
+          "text": "①성 명 ②주민등록번호 ③주 소 (전화 휴대폰 )"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-4"
+          },
+          "rect": {
+            "top": 307.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 35,
+            "bottom": 342.5,
+            "right": 729.5
+          },
+          "cellCount": 8,
+          "text": "④ 입 대 일 자 ⑤계 급 ⑥군 별 ⑦군 번"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-5"
+          },
+          "rect": {
+            "top": 342.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 31,
+            "bottom": 373.5,
+            "right": 729.5
+          },
+          "cellCount": 5,
+          "text": "⑧질병명 1. 2. 3. 4."
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-6"
+          },
+          "rect": {
+            "top": 373.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 32,
+            "bottom": 405.5,
+            "right": 729.5
+          },
+          "cellCount": 1,
+          "text": "복 무 기 록"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-7"
+          },
+          "rect": {
+            "top": 405.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 32,
+            "bottom": 437.5,
+            "right": 729.5
+          },
+          "cellCount": 4,
+          "text": "⑨소속부대(중대까지) ⑩복 무 기 간 ⑪복 무 장 소 ⑫직 책"
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-8"
+          },
+          "rect": {
+            "top": 437.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 26,
+            "bottom": 463.5,
+            "right": 729.5
+          },
+          "cellCount": 4,
+          "text": ""
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-9"
+          },
+          "rect": {
+            "top": 463.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 28,
+            "bottom": 491.5,
+            "right": 729.5
+          },
+          "cellCount": 1,
+          "text": "유족 및 가족사항(신청인을 포함한다)"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-10"
+          },
+          "rect": {
+            "top": 491.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 36,
+            "bottom": 527.5,
+            "right": 729.5
+          },
+          "cellCount": 6,
+          "text": "⑬고엽제후유(의)증 환자 등과의 관계 ⑭성 명 ⑮주 민 등 록 번 호 학 력 직 업 월소득(천원)"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-11"
+          },
+          "rect": {
+            "top": 527.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 23,
+            "bottom": 550.5,
+            "right": 729.5
+          },
+          "cellCount": 6,
+          "text": "-"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 14,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-14\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-14"
+          },
+          "rect": {
+            "top": 596.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 82,
+            "bottom": 678.5,
+            "right": 729.5
+          },
+          "cellCount": 1,
+          "text": "고엽제후유의증환자지원등에관한법률시행령 제2조 및 제7조의 규정에 의하여 위와 같이 등록을 신청합니다. 년 월 일 신청인 : (서명 또는 인)"
+        },
+        {
+          "rowIndex": 15,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-15\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-15"
+          },
+          "rect": {
+            "top": 678.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 38,
+            "bottom": 716.5,
+            "right": 729.5
+          },
+          "cellCount": 2,
+          "text": "지 방 보 훈 청 장 보 훈 지 청 장 귀하"
+        },
+        {
+          "rowIndex": 16,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-16\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-16"
+          },
+          "rect": {
+            "top": 716.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 182,
+            "bottom": 898.5,
+            "right": 729.5
+          },
+          "cellCount": 2,
+          "text": "구비서류 1. 고엽제후유증환자 또는 고엽제후유의증환자로 등록하고자 하는 경우 가. 주민등록표초본(병역사항을 포함합니다) 또는 병적증명서 1통 나. 고엽제후유의증환자지원등에관한법률 제5조제1항 또는 제2항에 해당하는 질병임을 확인할 수 있는 진단서 또는 임상소견서 사본 1통 2. 고엽제후"
+        },
+        {
+          "rowIndex": 17,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-17\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-17"
+          },
+          "rect": {
+            "top": 898.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 27,
+            "bottom": 925.5,
+            "right": 729.5
+          },
+          "cellCount": 3,
+          "text": "재 확 인 (장애등급) 신체검사 신청사유"
+        },
+        {
+          "rowIndex": 18,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-18\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-18"
+          },
+          "rect": {
+            "top": 925.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 32,
+            "bottom": 957.5,
+            "right": 729.5
+          },
+          "cellCount": 6,
+          "text": "최 종 신체검사 결 과 일 자 (지)청장 소 견 승 인 불승인"
+        },
+        {
+          "rowIndex": 19,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-19\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-19"
+          },
+          "rect": {
+            "top": 957.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 42,
+            "bottom": 999.5,
+            "right": 729.5
+          },
+          "cellCount": 4,
+          "text": "심사위원 소 견 사 유"
+        },
+        {
+          "rowIndex": 20,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-20\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-20"
+          },
+          "rect": {
+            "top": 999.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 28,
+            "bottom": 1027.5,
+            "right": 729.5
+          },
+          "cellCount": 8,
+          "text": "접 수 일 자 번 호 결 재 담 당 주 무 과 장 (지)청장"
+        },
+        {
+          "rowIndex": 21,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-21\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-21"
+          },
+          "rect": {
+            "top": 1027.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 43,
+            "bottom": 1070.5,
+            "right": 729.5
+          },
+          "cellCount": 6,
+          "text": "전결"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-0"
+          },
+          "rect": {
+            "top": 166.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 25,
+            "bottom": 191.5,
+            "right": 729.5
+          },
+          "cellCount": 2,
+          "text": "□ 고엽제후유(의)증환자 등 록 신 청 서 □ 고엽제후유증환자 유족 □ 고엽제후유증 2세환자 처리기간"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-1"
+          },
+          "rect": {
+            "top": 191.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 25,
+            "bottom": 216.5,
+            "right": 729.5
+          },
+          "cellCount": 1,
+          "text": "90 일"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-2"
+          },
+          "rect": {
+            "top": 216.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 36,
+            "bottom": 252.5,
+            "right": 729.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-3"
+          },
+          "rect": {
+            "top": 252.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 55,
+            "bottom": 307.5,
+            "right": 729.5
+          },
+          "cellCount": 6,
+          "text": "①성 명 ②주민등록번호 ③주 소 (전화 휴대폰 )"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-4"
+          },
+          "rect": {
+            "top": 307.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 35,
+            "bottom": 342.5,
+            "right": 729.5
+          },
+          "cellCount": 8,
+          "text": "④ 입 대 일 자 ⑤계 급 ⑥군 별 ⑦군 번"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-5"
+          },
+          "rect": {
+            "top": 342.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 31,
+            "bottom": 373.5,
+            "right": 729.5
+          },
+          "cellCount": 5,
+          "text": "⑧질병명 1. 2. 3. 4."
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-6"
+          },
+          "rect": {
+            "top": 373.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 32,
+            "bottom": 405.5,
+            "right": 729.5
+          },
+          "cellCount": 1,
+          "text": "복 무 기 록"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-7"
+          },
+          "rect": {
+            "top": 405.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 32,
+            "bottom": 437.5,
+            "right": 729.5
+          },
+          "cellCount": 4,
+          "text": "⑨소속부대(중대까지) ⑩복 무 기 간 ⑪복 무 장 소 ⑫직 책"
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-8"
+          },
+          "rect": {
+            "top": 437.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 26,
+            "bottom": 463.5,
+            "right": 729.5
+          },
+          "cellCount": 4,
+          "text": ""
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-9"
+          },
+          "rect": {
+            "top": 463.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 28,
+            "bottom": 491.5,
+            "right": 729.5
+          },
+          "cellCount": 1,
+          "text": "유족 및 가족사항(신청인을 포함한다)"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-10"
+          },
+          "rect": {
+            "top": 491.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 36,
+            "bottom": 527.5,
+            "right": 729.5
+          },
+          "cellCount": 6,
+          "text": "⑬고엽제후유(의)증 환자 등과의 관계 ⑭성 명 ⑮주 민 등 록 번 호 학 력 직 업 월소득(천원)"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-11"
+          },
+          "rect": {
+            "top": 527.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 23,
+            "bottom": 550.5,
+            "right": 729.5
+          },
+          "cellCount": 6,
+          "text": "-"
+        },
+        {
+          "rowIndex": 12,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-12"
+          },
+          "rect": {
+            "top": 550.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 23,
+            "bottom": 573.5,
+            "right": 729.5
+          },
+          "cellCount": 6,
+          "text": "-"
+        },
+        {
+          "rowIndex": 13,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-13\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-13"
+          },
+          "rect": {
+            "top": 573.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 23,
+            "bottom": 596.5,
+            "right": 729.5
+          },
+          "cellCount": 6,
+          "text": "-"
+        },
+        {
+          "rowIndex": 14,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-14\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-14"
+          },
+          "rect": {
+            "top": 596.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 82,
+            "bottom": 678.5,
+            "right": 729.5
+          },
+          "cellCount": 1,
+          "text": "고엽제후유의증환자지원등에관한법률시행령 제2조 및 제7조의 규정에 의하여 위와 같이 등록을 신청합니다. 년 월 일 신청인 : (서명 또는 인)"
+        },
+        {
+          "rowIndex": 15,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-15\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-15"
+          },
+          "rect": {
+            "top": 678.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 38,
+            "bottom": 716.5,
+            "right": 729.5
+          },
+          "cellCount": 2,
+          "text": "지 방 보 훈 청 장 보 훈 지 청 장 귀하"
+        },
+        {
+          "rowIndex": 16,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-16\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-16"
+          },
+          "rect": {
+            "top": 716.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 182,
+            "bottom": 898.5,
+            "right": 729.5
+          },
+          "cellCount": 2,
+          "text": "구비서류 1. 고엽제후유증환자 또는 고엽제후유의증환자로 등록하고자 하는 경우 가. 주민등록표초본(병역사항을 포함합니다) 또는 병적증명서 1통 나. 고엽제후유의증환자지원등에관한법률 제5조제1항 또는 제2항에 해당하는 질병임을 확인할 수 있는 진단서 또는 임상소견서 사본 1통 2. 고엽제후"
+        },
+        {
+          "rowIndex": 17,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-17\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-17"
+          },
+          "rect": {
+            "top": 898.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 27,
+            "bottom": 925.5,
+            "right": 729.5
+          },
+          "cellCount": 3,
+          "text": "재 확 인 (장애등급) 신체검사 신청사유"
+        },
+        {
+          "rowIndex": 18,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-18\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-18"
+          },
+          "rect": {
+            "top": 925.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 32,
+            "bottom": 957.5,
+            "right": 729.5
+          },
+          "cellCount": 6,
+          "text": "최 종 신체검사 결 과 일 자 (지)청장 소 견 승 인 불승인"
+        },
+        {
+          "rowIndex": 19,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-19\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-19"
+          },
+          "rect": {
+            "top": 957.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 42,
+            "bottom": 999.5,
+            "right": 729.5
+          },
+          "cellCount": 4,
+          "text": "심사위원 소 견 사 유"
+        },
+        {
+          "rowIndex": 20,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-20\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-20"
+          },
+          "rect": {
+            "top": 999.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 28,
+            "bottom": 1027.5,
+            "right": 729.5
+          },
+          "cellCount": 8,
+          "text": "접 수 일 자 번 호 결 재 담 당 주 무 과 장 (지)청장"
+        },
+        {
+          "rowIndex": 21,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-21\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-21"
+          },
+          "rect": {
+            "top": 1027.5,
+            "left": 58.5,
+            "width": 671,
+            "height": 43,
+            "bottom": 1070.5,
+            "right": 729.5
+          },
+          "cellCount": 6,
+          "text": "전결"
+        }
+      ],
+      "text": "□ 고엽제후유(의)증환자 등 록 신 청 서 □ 고엽제후유증환자 유족 □ 고엽제후유증 2세환자 처리기간 90 일 ①성 명 ②주민등록번호 ③주 소 (전화 휴대폰 ) ④ 입 대 일 자 ⑤계 급 ⑥군 별 ⑦군 번 ⑧질병명 1. 2. 3. 4. 복 무 기 록 ⑨소속부대(중대까지) ⑩복 무 기 간 ⑪복 무 장 소 ⑫직 책 유족 및 가족사항(신청인을 포함한다) ⑬고엽제후유(의)증 환자 등과의 관계 ⑭성 명 ⑮주 민 등 록 번 호 학 력 직",
+      "style": {
+        "height": "901px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "55",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 96,
+        "left": 58,
+        "width": 678,
+        "height": 55,
+        "bottom": 151,
+        "right": 736
+      },
+      "text": "※ 본적 :",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "55px",
+        "lineHeight": "120%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "20",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 177,
+        "left": 61,
+        "width": 575.453125,
+        "height": 23,
+        "bottom": 200,
+        "right": 636.453125
+      },
+      "text": "□ 고엽제후유(의)증환자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-0-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 200,
+        "left": 61,
+        "width": 575.453125,
+        "height": 25,
+        "bottom": 225,
+        "right": 636.453125
+      },
+      "text": "등 록 신 청 서 □ 고엽제후유증환자 유족",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-0-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-0-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 225,
+        "left": 61,
+        "width": 575.453125,
+        "height": 17,
+        "bottom": 242,
+        "right": 636.453125
+      },
+      "text": "□ 고엽제후유증 2세환자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-0-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 172.5,
+        "left": 641.453125,
+        "width": 85.546875,
+        "height": 13,
+        "bottom": 185.5,
+        "right": 727
+      },
+      "text": "처리기간",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 197.5,
+        "left": 641.453125,
+        "width": 85.546875,
+        "height": 13,
+        "bottom": 210.5,
+        "right": 727
+      },
+      "text": "90 일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 225.703125,
+        "left": 640.953125,
+        "width": 86.046875,
+        "height": 17.578125,
+        "bottom": 243.28125,
+        "right": 727
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-3-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 272.5,
+        "left": 61,
+        "width": 48.875,
+        "height": 15,
+        "bottom": 287.5,
+        "right": 109.875
+      },
+      "text": "①성 명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 271.203125,
+        "left": 114.875,
+        "width": 76.65625,
+        "height": 17.578125,
+        "bottom": 288.78125,
+        "right": 191.53125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-3-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-3-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 272.5,
+        "left": 196.53125,
+        "width": 117.90625,
+        "height": 15,
+        "bottom": 287.5,
+        "right": 314.4375
+      },
+      "text": "②주민등록번호",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 271.203125,
+        "left": 319.4375,
+        "width": 104.90625,
+        "height": 17.578125,
+        "bottom": 288.78125,
+        "right": 424.34375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-3-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-3-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 272.5,
+        "left": 429.34375,
+        "width": 60.59375,
+        "height": 15,
+        "bottom": 287.5,
+        "right": 489.9375
+      },
+      "text": "③주 소",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-3-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-3-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 272.5,
+        "left": 494.9375,
+        "width": 232.0625,
+        "height": 15,
+        "bottom": 287.5,
+        "right": 727
+      },
+      "text": "(전화 휴대폰 )",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-4-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 310,
+        "left": 61,
+        "width": 48.875,
+        "height": 15,
+        "bottom": 325,
+        "right": 109.875
+      },
+      "text": "④ 입 대",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "120%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-4-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-4-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 325,
+        "left": 61,
+        "width": 48.875,
+        "height": 15,
+        "bottom": 340,
+        "right": 109.875
+      },
+      "text": "일 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 316.203125,
+        "left": 114.875,
+        "width": 76.65625,
+        "height": 17.578125,
+        "bottom": 333.78125,
+        "right": 191.53125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-4-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-4-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 317.5,
+        "left": 196.53125,
+        "width": 57.90625,
+        "height": 15,
+        "bottom": 332.5,
+        "right": 254.4375
+      },
+      "text": "⑤계 급",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 316.203125,
+        "left": 259.4375,
+        "width": 72.6875,
+        "height": 17.578125,
+        "bottom": 333.78125,
+        "right": 332.125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-4-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-4-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 317.5,
+        "left": 337.125,
+        "width": 87.21875,
+        "height": 15,
+        "bottom": 332.5,
+        "right": 424.34375
+      },
+      "text": "⑥군 별",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 316.203125,
+        "left": 429.34375,
+        "width": 60.59375,
+        "height": 17.578125,
+        "bottom": 333.78125,
+        "right": 489.9375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-4-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-4-cell-6-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 317.5,
+        "left": 494.9375,
+        "width": 90.671875,
+        "height": 15,
+        "bottom": 332.5,
+        "right": 585.609375
+      },
+      "text": "⑦군 번",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 316.203125,
+        "left": 590.609375,
+        "width": 136.390625,
+        "height": 17.578125,
+        "bottom": 333.78125,
+        "right": 727
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 350.5,
+        "left": 61,
+        "width": 48.875,
+        "height": 15,
+        "bottom": 365.5,
+        "right": 109.875
+      },
+      "text": "⑧질병명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 350.5,
+        "left": 114.875,
+        "width": 125.0625,
+        "height": 15,
+        "bottom": 365.5,
+        "right": 239.9375
+      },
+      "text": "1.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 350.5,
+        "left": 243.9375,
+        "width": 162.75,
+        "height": 15,
+        "bottom": 365.5,
+        "right": 406.6875
+      },
+      "text": "2.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 350.5,
+        "left": 410.6875,
+        "width": 157.09375,
+        "height": 15,
+        "bottom": 365.5,
+        "right": 567.78125
+      },
+      "text": "3.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 350.5,
+        "left": 571.78125,
+        "width": 155.21875,
+        "height": 15,
+        "bottom": 365.5,
+        "right": 727
+      },
+      "text": "4.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-6-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-6-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 380.5,
+        "left": 61,
+        "width": 666,
+        "height": 18,
+        "bottom": 398.5,
+        "right": 727
+      },
+      "text": "복 무 기 록",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-7-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-7-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 414,
+        "left": 61,
+        "width": 130.53125,
+        "height": 15,
+        "bottom": 429,
+        "right": 191.53125
+      },
+      "text": "⑨소속부대(중대까지)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-7-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-7-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 414,
+        "left": 196.53125,
+        "width": 172.140625,
+        "height": 15,
+        "bottom": 429,
+        "right": 368.671875
+      },
+      "text": "⑩복 무 기 간",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-7-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-7-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 414,
+        "left": 373.671875,
+        "width": 175.28125,
+        "height": 15,
+        "bottom": 429,
+        "right": 548.953125
+      },
+      "text": "⑪복 무 장 소",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-7-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-7-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 414,
+        "left": 553.953125,
+        "width": 173.046875,
+        "height": 15,
+        "bottom": 429,
+        "right": 727
+      },
+      "text": "⑫직 책",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 441.703125,
+        "left": 61,
+        "width": 130.53125,
+        "height": 17.578125,
+        "bottom": 459.28125,
+        "right": 191.53125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 441.703125,
+        "left": 196.53125,
+        "width": 172.140625,
+        "height": 17.578125,
+        "bottom": 459.28125,
+        "right": 368.671875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 441.703125,
+        "left": 373.671875,
+        "width": 175.28125,
+        "height": 17.578125,
+        "bottom": 459.28125,
+        "right": 548.953125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 441.703125,
+        "left": 553.953125,
+        "width": 173.046875,
+        "height": 17.578125,
+        "bottom": 459.28125,
+        "right": 727
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-9-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-9-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 470,
+        "left": 61,
+        "width": 666,
+        "height": 15,
+        "bottom": 485,
+        "right": 727
+      },
+      "text": "유족 및 가족사항(신청인을 포함한다)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-10-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-10-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 494.5,
+        "left": 61,
+        "width": 104.59375,
+        "height": 15,
+        "bottom": 509.5,
+        "right": 165.59375
+      },
+      "text": "⑬고엽제후유(의)증",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-10-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-10-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 509.5,
+        "left": 61,
+        "width": 104.59375,
+        "height": 15,
+        "bottom": 524.5,
+        "right": 165.59375
+      },
+      "text": "환자 등과의 관계",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-10-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-10-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 502,
+        "left": 170.59375,
+        "width": 98.84375,
+        "height": 15,
+        "bottom": 517,
+        "right": 269.4375
+      },
+      "text": "⑭성 명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-10-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-10-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 502,
+        "left": 274.4375,
+        "width": 180.6875,
+        "height": 15,
+        "bottom": 517,
+        "right": 455.125
+      },
+      "text": "⑮주 민 등 록 번 호",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-10-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-10-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 502,
+        "left": 460.125,
+        "width": 67.21875,
+        "height": 15,
+        "bottom": 517,
+        "right": 527.34375
+      },
+      "text": "학 력",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-10-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-10-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 502,
+        "left": 532.34375,
+        "width": 72.546875,
+        "height": 15,
+        "bottom": 517,
+        "right": 604.890625
+      },
+      "text": "직 업",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-10-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-10-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 502,
+        "left": 609.890625,
+        "width": 117.109375,
+        "height": 15,
+        "bottom": 517,
+        "right": 727
+      },
+      "text": "월소득(천원)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 530.203125,
+        "left": 61,
+        "width": 104.59375,
+        "height": 17.578125,
+        "bottom": 547.78125,
+        "right": 165.59375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 530.203125,
+        "left": 170.59375,
+        "width": 98.84375,
+        "height": 17.578125,
+        "bottom": 547.78125,
+        "right": 269.4375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-11-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-11-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 531.5,
+        "left": 274.4375,
+        "width": 180.6875,
+        "height": 15,
+        "bottom": 546.5,
+        "right": 455.125
+      },
+      "text": "-",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 530.203125,
+        "left": 460.125,
+        "width": 67.21875,
+        "height": 17.578125,
+        "bottom": 547.78125,
+        "right": 527.34375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 530.203125,
+        "left": 532.34375,
+        "width": 72.546875,
+        "height": 17.578125,
+        "bottom": 547.78125,
+        "right": 604.890625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 530.203125,
+        "left": 609.890625,
+        "width": 117.109375,
+        "height": 17.578125,
+        "bottom": 547.78125,
+        "right": 727
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 553.203125,
+        "left": 61,
+        "width": 104.59375,
+        "height": 17.578125,
+        "bottom": 570.78125,
+        "right": 165.59375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 553.203125,
+        "left": 170.59375,
+        "width": 98.84375,
+        "height": 17.578125,
+        "bottom": 570.78125,
+        "right": 269.4375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-12-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-12-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 554.5,
+        "left": 274.4375,
+        "width": 180.6875,
+        "height": 15,
+        "bottom": 569.5,
+        "right": 455.125
+      },
+      "text": "-",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 553.203125,
+        "left": 460.125,
+        "width": 67.21875,
+        "height": 17.578125,
+        "bottom": 570.78125,
+        "right": 527.34375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 553.203125,
+        "left": 532.34375,
+        "width": 72.546875,
+        "height": 17.578125,
+        "bottom": 570.78125,
+        "right": 604.890625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 553.203125,
+        "left": 609.890625,
+        "width": 117.109375,
+        "height": 17.578125,
+        "bottom": 570.78125,
+        "right": 727
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 576.203125,
+        "left": 61,
+        "width": 104.59375,
+        "height": 17.578125,
+        "bottom": 593.78125,
+        "right": 165.59375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 576.203125,
+        "left": 170.59375,
+        "width": 98.84375,
+        "height": 17.578125,
+        "bottom": 593.78125,
+        "right": 269.4375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-13-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-13-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 577.5,
+        "left": 274.4375,
+        "width": 180.6875,
+        "height": 15,
+        "bottom": 592.5,
+        "right": 455.125
+      },
+      "text": "-",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 576.203125,
+        "left": 460.125,
+        "width": 67.21875,
+        "height": 17.578125,
+        "bottom": 593.78125,
+        "right": 527.34375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 576.203125,
+        "left": 532.34375,
+        "width": 72.546875,
+        "height": 17.578125,
+        "bottom": 593.78125,
+        "right": 604.890625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 576.203125,
+        "left": 609.890625,
+        "width": 117.109375,
+        "height": 17.578125,
+        "bottom": 593.78125,
+        "right": 727
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-14-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-14-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 615.25,
+        "left": 61,
+        "width": 666,
+        "height": 15,
+        "bottom": 630.25,
+        "right": 727
+      },
+      "text": "고엽제후유의증환자지원등에관한법률시행령 제2조 및 제7조의 규정에 의하여 위와 같이 등록을 신청합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 63,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-14-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-14-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 630.25,
+        "left": 61,
+        "width": 666,
+        "height": 15,
+        "bottom": 645.25,
+        "right": 727
+      },
+      "text": "년 월 일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 64,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-14-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-14-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 645.25,
+        "left": 61,
+        "width": 666,
+        "height": 15,
+        "bottom": 660.25,
+        "right": 727
+      },
+      "text": "신청인 : (서명 또는 인)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 65,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-15-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-15-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 682.25,
+        "left": 61,
+        "width": 223.9375,
+        "height": 15,
+        "bottom": 697.25,
+        "right": 284.9375
+      },
+      "text": "지 방 보 훈 청 장",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 66,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-15-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-15-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 697.25,
+        "left": 61,
+        "width": 223.9375,
+        "height": 15,
+        "bottom": 712.25,
+        "right": 284.9375
+      },
+      "text": "보 훈 지 청 장",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 67,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-15-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-15-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 689.75,
+        "left": 288.9375,
+        "width": 438.0625,
+        "height": 15,
+        "bottom": 704.75,
+        "right": 727
+      },
+      "text": "귀하",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 68,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-16-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-16-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 800,
+        "left": 61,
+        "width": 76.734375,
+        "height": 15,
+        "bottom": 815,
+        "right": 137.734375
+      },
+      "text": "구비서류",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 69,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-16-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-16-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 747.5,
+        "left": 142.734375,
+        "width": 584.265625,
+        "height": 15,
+        "bottom": 762.5,
+        "right": 727
+      },
+      "text": "1. 고엽제후유증환자 또는 고엽제후유의증환자로 등록하고자 하는 경우",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 70,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-16-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-16-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "14",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 762.5,
+        "left": 142.734375,
+        "width": 584.265625,
+        "height": 15,
+        "bottom": 777.5,
+        "right": 727
+      },
+      "text": "가. 주민등록표초본(병역사항을 포함합니다) 또는 병적증명서 1통",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "14px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 71,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-16-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-16-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "28",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 777.5,
+        "left": 142.734375,
+        "width": 584.265625,
+        "height": 30,
+        "bottom": 807.5,
+        "right": 727
+      },
+      "text": "나. 고엽제후유의증환자지원등에관한법률 제5조제1항 또는 제2항에 해당하는 질병임을 확인할 수 있는 진단서 또는 임상소견서 사본 1통",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "28px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 72,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-16-cell-1-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-16-cell-1-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "28",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 807.5,
+        "left": 142.734375,
+        "width": 584.265625,
+        "height": 30,
+        "bottom": 837.5,
+        "right": 727
+      },
+      "text": "2. 고엽제후유증 2세환자로 등록하고자 하는 경우 : 고엽제후유의증환자지원등에관한법률 제5조제 6항에 해당하는 질병임을 확인할 수 있는 진단서 또는 임상소견서 사본 1통",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "28px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 73,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-16-cell-1-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-16-cell-1-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "28",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 837.5,
+        "left": 142.734375,
+        "width": 584.265625,
+        "height": 30,
+        "bottom": 867.5,
+        "right": 727
+      },
+      "text": "3. 이미 사망한 고엽제후유증환자등의 유족으로 등록하고자 하는 경우 : 사망진단서․진료기록 등 고엽 제로 인한 질병에 의하여 사망한 것을 의학적으로 확인할 수 있는 증거서류 1통",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "28px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 74,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-17-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-17-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 925,
+        "left": 61,
+        "width": 76.734375,
+        "height": 16,
+        "bottom": 941,
+        "right": 137.734375
+      },
+      "text": "재 확 인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 75,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-17-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-17-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 941,
+        "left": 61,
+        "width": 76.734375,
+        "height": 16,
+        "bottom": 957,
+        "right": 137.734375
+      },
+      "text": "(장애등급)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 76,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-17-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-17-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 957,
+        "left": 61,
+        "width": 76.734375,
+        "height": 16,
+        "bottom": 973,
+        "right": 137.734375
+      },
+      "text": "신체검사",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 77,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-17-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-17-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 904,
+        "left": 142.734375,
+        "width": 156.703125,
+        "height": 16,
+        "bottom": 920,
+        "right": 299.4375
+      },
+      "text": "신청사유",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 78,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 903.203125,
+        "left": 304.4375,
+        "width": 422.5625,
+        "height": 17.578125,
+        "bottom": 920.78125,
+        "right": 727
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 79,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-18-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-18-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 938.5,
+        "left": 142.734375,
+        "width": 64.765625,
+        "height": 16,
+        "bottom": 954.5,
+        "right": 207.5
+      },
+      "text": "최 종",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 80,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-18-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-18-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 954.5,
+        "left": 142.734375,
+        "width": 64.765625,
+        "height": 16,
+        "bottom": 970.5,
+        "right": 207.5
+      },
+      "text": "신체검사",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 81,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-18-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-18-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 970.5,
+        "left": 142.734375,
+        "width": 64.765625,
+        "height": 16,
+        "bottom": 986.5,
+        "right": 207.5
+      },
+      "text": "결 과",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 82,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-18-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-18-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 933.5,
+        "left": 212.5,
+        "width": 86.9375,
+        "height": 16,
+        "bottom": 949.5,
+        "right": 299.4375
+      },
+      "text": "일 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 83,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 932.703125,
+        "left": 304.4375,
+        "width": 135.296875,
+        "height": 17.578125,
+        "bottom": 950.28125,
+        "right": 439.734375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 84,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-18-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-18-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 946.5,
+        "left": 444.734375,
+        "width": 62.609375,
+        "height": 16,
+        "bottom": 962.5,
+        "right": 507.34375
+      },
+      "text": "(지)청장",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 85,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-18-cell-3-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-18-cell-3-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 962.5,
+        "left": 444.734375,
+        "width": 62.609375,
+        "height": 16,
+        "bottom": 978.5,
+        "right": 507.34375
+      },
+      "text": "소 견",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 86,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-18-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-18-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 933.5,
+        "left": 512.34375,
+        "width": 108.328125,
+        "height": 16,
+        "bottom": 949.5,
+        "right": 620.671875
+      },
+      "text": "승 인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 87,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-18-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-18-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 933.5,
+        "left": 625.671875,
+        "width": 101.328125,
+        "height": 16,
+        "bottom": 949.5,
+        "right": 727
+      },
+      "text": "불승인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 88,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-19-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-19-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 962.5,
+        "left": 212.5,
+        "width": 86.9375,
+        "height": 16,
+        "bottom": 978.5,
+        "right": 299.4375
+      },
+      "text": "심사위원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 89,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-19-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-19-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 978.5,
+        "left": 212.5,
+        "width": 86.9375,
+        "height": 16,
+        "bottom": 994.5,
+        "right": 299.4375
+      },
+      "text": "소 견",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 90,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 969.703125,
+        "left": 304.4375,
+        "width": 135.296875,
+        "height": 17.578125,
+        "bottom": 987.28125,
+        "right": 439.734375
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 91,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-19-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-19-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 970.5,
+        "left": 512.34375,
+        "width": 36.609375,
+        "height": 16,
+        "bottom": 986.5,
+        "right": 548.953125
+      },
+      "text": "사 유",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 92,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 969.703125,
+        "left": 553.953125,
+        "width": 173.046875,
+        "height": 17.578125,
+        "bottom": 987.28125,
+        "right": 727
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 93,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-20-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-20-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1019,
+        "left": 61,
+        "width": 48.875,
+        "height": 16,
+        "bottom": 1035,
+        "right": 109.875
+      },
+      "text": "접",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 94,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-20-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-20-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1035,
+        "left": 61,
+        "width": 48.875,
+        "height": 16,
+        "bottom": 1051,
+        "right": 109.875
+      },
+      "text": "수",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 95,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-20-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-20-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1005.5,
+        "left": 114.875,
+        "width": 108.59375,
+        "height": 16,
+        "bottom": 1021.5,
+        "right": 223.46875
+      },
+      "text": "일 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 96,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-20-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-20-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1005.5,
+        "left": 228.46875,
+        "width": 121.34375,
+        "height": 16,
+        "bottom": 1021.5,
+        "right": 349.8125
+      },
+      "text": "번 호",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 97,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-20-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-20-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1019,
+        "left": 354.8125,
+        "width": 33.21875,
+        "height": 16,
+        "bottom": 1035,
+        "right": 388.03125
+      },
+      "text": "결",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 98,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-20-cell-3-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-20-cell-3-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1035,
+        "left": 354.8125,
+        "width": 33.21875,
+        "height": 16,
+        "bottom": 1051,
+        "right": 388.03125
+      },
+      "text": "재",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 99,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-20-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-20-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1005.5,
+        "left": 393.03125,
+        "width": 79.5,
+        "height": 16,
+        "bottom": 1021.5,
+        "right": 472.53125
+      },
+      "text": "담 당",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 100,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-20-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-20-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1005.5,
+        "left": 477.53125,
+        "width": 71.421875,
+        "height": 16,
+        "bottom": 1021.5,
+        "right": 548.953125
+      },
+      "text": "주 무",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 101,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-20-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-20-cell-6-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1005.5,
+        "left": 553.953125,
+        "width": 95.90625,
+        "height": 16,
+        "bottom": 1021.5,
+        "right": 649.859375
+      },
+      "text": "과 장",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 102,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-20-cell-7-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-20-cell-7-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1005.5,
+        "left": 654.859375,
+        "width": 72.140625,
+        "height": 16,
+        "bottom": 1021.5,
+        "right": 727
+      },
+      "text": "(지)청장",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 103,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1040.203125,
+        "left": 114.875,
+        "width": 108.59375,
+        "height": 17.578125,
+        "bottom": 1057.78125,
+        "right": 223.46875
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 104,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1040.203125,
+        "left": 228.46875,
+        "width": 121.34375,
+        "height": 17.578125,
+        "bottom": 1057.78125,
+        "right": 349.8125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 105,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1040.203125,
+        "left": 393.03125,
+        "width": 79.5,
+        "height": 17.578125,
+        "bottom": 1057.78125,
+        "right": 472.53125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 106,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1040.203125,
+        "left": 477.53125,
+        "width": 71.421875,
+        "height": 17.578125,
+        "bottom": 1057.78125,
+        "right": 548.953125
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 107,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-21-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-21-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1041,
+        "left": 553.953125,
+        "width": 95.90625,
+        "height": 16,
+        "bottom": 1057,
+        "right": 649.859375
+      },
+      "text": "전결",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 108,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1040.203125,
+        "left": 654.859375,
+        "width": 72.140625,
+        "height": 17.578125,
+        "bottom": 1057.78125,
+        "right": 727
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 109
+}

@@ -1,0 +1,2712 @@
+{
+  "filename": "incheon-2a.hwpx",
+  "pages": 18,
+  "page": {
+    "index": 15,
+    "width": 1123,
+    "height": 1587
+  },
+  "bodyRect": {
+    "top": 306,
+    "left": 468.5,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 1893,
+    "right": 1591.5
+  },
+  "text": "- 석고보드 설치 공법 상 이음부위 테이핑 시공 시 일부구간 평활도가 고르지 못할 수 있으며, 이로 인해 벽체 및 천장에 음영이 질 수 있음 - 세대내부 일부 벽체는 경량벽체 또는 단열재 설치 등으로 입주 후 중량물의 거치 시 거치물 낙하의 우려가 있어, 앵커못 등 견고한 고정방법을 사용하여야 한다.(고정시 마감재 탈락이 있을 수 있으므로 주의를 요함) - 세대 아트월 부위에 벽걸이 TV 등 중량물 설치 시 별도의 보강이 필요하고 마감재 탈락이 있을 수 있으므로 주의를 요함 - 시공 시 주방 상부장이 가스배관, 주방용 자동소화장치 또는 레인지후드 배기덕트 등과 겹칠 경우 상부장 일부가 조정되어 수납공간이 줄어들 수 있음 - 부대복리시설 중 일부시설은 입주 전‧후 한시적으로 입주지원시설(A/S센터 등)로 사용될 수 있음 - 공간계획에 따라 혹은 시공 과정에서 현관, 발코니, E/V홀 등 공간별 바닥단차가 발생할 수 있음 - 에어컨 실외기 거치공간이 발코니1에 있어 에어컨 가동 시 소음이 발생할 수 있고 실외기로부터 배출되는 온풍이 실내로 유입될 수 있음 - 세대 내 구조벽 외 조적벽체, 경량벽체 등이 시공될 예정임 - 거실 아트월 및 주방벽 하부는 걸레받이가 시공되지 않음 - 욕실 출입문은 합성수지 재질이며, 욕실 천정재는 ABS 판넬로 시공되며 천정에 점검구 시공 예정임 - 각 실 및 욕실 등에 설치되는 환기구 및 환기장치, SP헤드, 박스류(수전함 등)의 설치 위치와 개수는 일부 변경되어 설치될 수 있음 - 발코니에 설치되는 드레인 및 선홈통으로부터 소음이 발생할 수 있음 - 가구 힌지, 레일 등 가구공사용 부속품은 본 공사 시 동급 이상의 제품으로 변경될 수 있음 - 각 세대에 설치되는 외부창호의 개폐 위치 및 방향은 본 공사 시 달라질 수 있음 - 세대 천장고는 2.3m로 시공되나 시공오차에 의해 세대별로 다소 차이가 있을 수 있음 - 본 사업지구는 중소기업제품 구매촉진 및 판로지원에 관한 법령에 의거 주방가구, 강화합판마루, AL창호, 조명기구 등 다수",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "contentKind": "hwpx-body-container",
+        "layoutHeight": "1076.49"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwpx",
+        "contentKind": "hwpx-body-container"
+      },
+      "rect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 1082.484375,
+        "bottom": 1101.484375,
+        "right": 1062
+      },
+      "tableRect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 1082.484375,
+        "bottom": 1101.484375,
+        "right": 1062
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-48\",\"xmlPath\":\"body-block-1/row-48\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-48",
+            "layoutHeight": "1076.49"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 1081.484375,
+            "bottom": 1100.984375,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "- 석고보드 설치 공법 상 이음부위 테이핑 시공 시 일부구간 평활도가 고르지 못할 수 있으며, 이로 인해 벽체 및 천장에 음영이 질 수 있음 - 세대내부 일부 벽체는 경량벽체 또는 단열재 설치 등으로 입주 후 중량물의 거치 시 거치물 낙하의 우려가 있어, 앵커못 등 견고한 고정방법을 사"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-48\",\"xmlPath\":\"body-block-1/row-48\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-48",
+            "layoutHeight": "1076.49"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 1081.484375,
+            "bottom": 1100.984375,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "- 석고보드 설치 공법 상 이음부위 테이핑 시공 시 일부구간 평활도가 고르지 못할 수 있으며, 이로 인해 벽체 및 천장에 음영이 질 수 있음 - 세대내부 일부 벽체는 경량벽체 또는 단열재 설치 등으로 입주 후 중량물의 거치 시 거치물 낙하의 우려가 있어, 앵커못 등 견고한 고정방법을 사"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-48\",\"xmlPath\":\"body-block-1/row-48\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-48",
+            "layoutHeight": "1076.49"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 1081.484375,
+            "bottom": 1100.984375,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "- 석고보드 설치 공법 상 이음부위 테이핑 시공 시 일부구간 평활도가 고르지 못할 수 있으며, 이로 인해 벽체 및 천장에 음영이 질 수 있음 - 세대내부 일부 벽체는 경량벽체 또는 단열재 설치 등으로 입주 후 중량물의 거치 시 거치물 낙하의 우려가 있어, 앵커못 등 견고한 고정방법을 사"
+        }
+      ],
+      "text": "- 석고보드 설치 공법 상 이음부위 테이핑 시공 시 일부구간 평활도가 고르지 못할 수 있으며, 이로 인해 벽체 및 천장에 음영이 질 수 있음 - 세대내부 일부 벽체는 경량벽체 또는 단열재 설치 등으로 입주 후 중량물의 거치 시 거치물 낙하의 우려가 있어, 앵커못 등 견고한 고정방법을 사용하여야 한다.(고정시 마감재 탈락이 있을 수 있으므로 주의를 요함) - 세대 아트월 부위에 벽걸이 TV 등 중량물 설치 시 별도의 보강이 필요",
+      "style": {
+        "height": "1076.49px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214",
+        "nestingLevel": "1",
+        "layoutHeight": "39.29"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 686.671875,
+        "left": 61,
+        "width": 959,
+        "height": 40.859375,
+        "bottom": 727.53125,
+        "right": 1020
+      },
+      "tableRect": {
+        "top": 686.671875,
+        "left": 61,
+        "width": 959,
+        "height": 40.859375,
+        "bottom": 727.53125,
+        "right": 1020
+      },
+      "rowCount": 2,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214:row-0",
+            "layoutHeight": "20.87"
+          },
+          "rect": {
+            "top": 687.171875,
+            "left": 61.5,
+            "width": 958,
+            "height": 20.859375,
+            "bottom": 708.03125,
+            "right": 1019.5
+          },
+          "cellCount": 4,
+          "text": "학교 위치 학교명 개교시기"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214:row-1",
+            "layoutHeight": "18.43"
+          },
+          "rect": {
+            "top": 708.03125,
+            "left": 61.5,
+            "width": 958,
+            "height": 19,
+            "bottom": 727.03125,
+            "right": 1019.5
+          },
+          "cellCount": 4,
+          "text": "초등학교 초1 미정 미정"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214:row-0",
+            "layoutHeight": "20.87"
+          },
+          "rect": {
+            "top": 687.171875,
+            "left": 61.5,
+            "width": 958,
+            "height": 20.859375,
+            "bottom": 708.03125,
+            "right": 1019.5
+          },
+          "cellCount": 4,
+          "text": "학교 위치 학교명 개교시기"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214:row-1",
+            "layoutHeight": "18.43"
+          },
+          "rect": {
+            "top": 708.03125,
+            "left": 61.5,
+            "width": 958,
+            "height": 19,
+            "bottom": 727.03125,
+            "right": 1019.5
+          },
+          "cellCount": 4,
+          "text": "초등학교 초1 미정 미정"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214:row-0",
+            "layoutHeight": "20.87"
+          },
+          "rect": {
+            "top": 687.171875,
+            "left": 61.5,
+            "width": 958,
+            "height": 20.859375,
+            "bottom": 708.03125,
+            "right": 1019.5
+          },
+          "cellCount": 4,
+          "text": "학교 위치 학교명 개교시기"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214:row-1",
+            "layoutHeight": "18.43"
+          },
+          "rect": {
+            "top": 708.03125,
+            "left": 61.5,
+            "width": 958,
+            "height": 19,
+            "bottom": 727.03125,
+            "right": 1019.5
+          },
+          "cellCount": 4,
+          "text": "초등학교 초1 미정 미정"
+        }
+      ],
+      "text": "학교 위치 학교명 개교시기 초등학교 초1 미정 미정",
+      "style": {
+        "height": "39.29px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 2,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-244\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-244\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-244",
+        "nestingLevel": "1",
+        "layoutHeight": "26.20"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-244\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-244\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-244",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 1253.53125,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 1280.859375,
+        "right": 1043
+      },
+      "tableRect": {
+        "top": 1253.53125,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 1280.859375,
+        "right": 1043
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-244/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-244/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-244:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 1254.03125,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 1280.359375,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "5. 주택성능등급의 표시"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-244/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-244/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-244:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 1254.03125,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 1280.359375,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "5. 주택성능등급의 표시"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-244/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-244/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-244:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 1254.03125,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 1280.359375,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "5. 주택성능등급의 표시"
+        }
+      ],
+      "text": "5. 주택성능등급의 표시",
+      "style": {
+        "height": "26.2px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": "rgb(255, 225, 225)"
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-171\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-171\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-171",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 22,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 35,
+        "right": 1061
+      },
+      "text": "- 석고보드 설치 공법 상 이음부위 테이핑 시공 시 일부구간 평활도가 고르지 못할 수 있으며, 이로 인해 벽체 및 천장에 음영이 질 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-172\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-172\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-172",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 35,
+        "left": 68,
+        "width": 993,
+        "height": 26,
+        "bottom": 61,
+        "right": 1061
+      },
+      "text": "- 세대내부 일부 벽체는 경량벽체 또는 단열재 설치 등으로 입주 후 중량물의 거치 시 거치물 낙하의 우려가 있어, 앵커못 등 견고한 고정방법을 사용하여야 한다.(고정시 마감재 탈락이 있을 수 있으므로 주의를 요함)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-173\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-173\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-173",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 61,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 74,
+        "right": 1061
+      },
+      "text": "- 세대 아트월 부위에 벽걸이 TV 등 중량물 설치 시 별도의 보강이 필요하고 마감재 탈락이 있을 수 있으므로 주의를 요함",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-174\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-174\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-174",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 74,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 87,
+        "right": 1061
+      },
+      "text": "- 시공 시 주방 상부장이 가스배관, 주방용 자동소화장치 또는 레인지후드 배기덕트 등과 겹칠 경우 상부장 일부가 조정되어 수납공간이 줄어들 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-175\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-175\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-175",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 87,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 100,
+        "right": 1061
+      },
+      "text": "- 부대복리시설 중 일부시설은 입주 전‧후 한시적으로 입주지원시설(A/S센터 등)로 사용될 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-176\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-176\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-176",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 100,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 113,
+        "right": 1061
+      },
+      "text": "- 공간계획에 따라 혹은 시공 과정에서 현관, 발코니, E/V홀 등 공간별 바닥단차가 발생할 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-177\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-177\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-177",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 113,
+        "left": 68,
+        "width": 993,
+        "height": 15,
+        "bottom": 128,
+        "right": 1061
+      },
+      "text": "- 에어컨 실외기 거치공간이 발코니1에 있어 에어컨 가동 시 소음이 발생할 수 있고 실외기로부터 배출되는 온풍이 실내로 유입될 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-178\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-178\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-178",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 128,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 141,
+        "right": 1061
+      },
+      "text": "- 세대 내 구조벽 외 조적벽체, 경량벽체 등이 시공될 예정임",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-179\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-179\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-179",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 141,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 154,
+        "right": 1061
+      },
+      "text": "- 거실 아트월 및 주방벽 하부는 걸레받이가 시공되지 않음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-180\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-180\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-180",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 154,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 167,
+        "right": 1061
+      },
+      "text": "- 욕실 출입문은 합성수지 재질이며, 욕실 천정재는 ABS 판넬로 시공되며 천정에 점검구 시공 예정임",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-181\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-181\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-181",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 167,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 180,
+        "right": 1061
+      },
+      "text": "- 각 실 및 욕실 등에 설치되는 환기구 및 환기장치, SP헤드, 박스류(수전함 등)의 설치 위치와 개수는 일부 변경되어 설치될 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-182\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-182\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-182",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 180,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 193,
+        "right": 1061
+      },
+      "text": "- 발코니에 설치되는 드레인 및 선홈통으로부터 소음이 발생할 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-183\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-183\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-183",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 193,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 206,
+        "right": 1061
+      },
+      "text": "- 가구 힌지, 레일 등 가구공사용 부속품은 본 공사 시 동급 이상의 제품으로 변경될 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-184\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-184\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-184",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 206,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 219,
+        "right": 1061
+      },
+      "text": "- 각 세대에 설치되는 외부창호의 개폐 위치 및 방향은 본 공사 시 달라질 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-185\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-185\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-185",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 219,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 232,
+        "right": 1061
+      },
+      "text": "- 세대 천장고는 2.3m로 시공되나 시공오차에 의해 세대별로 다소 차이가 있을 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-186\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-186\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-186",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 232,
+        "left": 68,
+        "width": 993,
+        "height": 26,
+        "bottom": 258,
+        "right": 1061
+      },
+      "text": "- 본 사업지구는 중소기업제품 구매촉진 및 판로지원에 관한 법령에 의거 주방가구, 강화합판마루, AL창호, 조명기구 등 다수의 중소기업 제품을 사용 예정이며 대상 품목은 변경될 수 있고, 팸플릿에는 유사 이미지를 구",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-187\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-187\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-187",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 258,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 271,
+        "right": 1061
+      },
+      "text": "- 전 세대 발코니 확장형이며, 확장부위에는 결로현상이 발생할 수 있으므로 입주자는 환기 등 예방조치를 취하여야 함",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-188\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-188\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-188",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 271,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 284,
+        "right": 1061
+      },
+      "text": "- 세대 내 타일 및 아트월 나누기(거실, 욕실, 주방 등)는 현장 여건에 따라 달라질 수 있으며, 거실 세대단말기(월패드) 설치부분에 타일 나누기 줄눈이 간섭될 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-189\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-189\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-189",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 284,
+        "left": 68,
+        "width": 993,
+        "height": 26,
+        "bottom": 310,
+        "right": 1061
+      },
+      "text": "- 지하주차장, 기계실 및 전기실 등의 환기를 위한 환기구가 일부 동의 전·후·측면에 설치되어 환기팬 가동 시 소음 및 분진 등이 발생할 수 있으며 청약 시 단지배치도 등을 통해 필히 확인하여야 하며, 향후 이에 따",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-190\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-190\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-190",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 310,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 323,
+        "right": 1061
+      },
+      "text": "- 싱크대 하부는 난방설비인 온수분배기 및 주위 배관, 싱크배수관 등이 설치되므로 수납공간으로 사용하기는 부적합하며 침실 및 거실벽에 설치되는 온도조절기의 디자인은 변경될 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-191\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-191\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-191",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 323,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 336,
+        "right": 1061
+      },
+      "text": "- 세대 내 욕실은 습식욕실로 시공됨",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-192\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-192\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-192",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 336,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 349,
+        "right": 1061
+      },
+      "text": "- 세대 내 실내 환기는 기계환기방식(강제급기+강제배기)을 적용하며, 덕트 및 디퓨져는 거실과 각 침실 천장에 시공되며 작동 시 소음, 진동이 발생할 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-193\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-193\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-193",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 349,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 362,
+        "right": 1061
+      },
+      "text": "- 설비배관의 유지보수를 위한 PD점검구가 세대 내외에 설치됨",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-194\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-194\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-194",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 362,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 375,
+        "right": 1061
+      },
+      "text": "- 수도꼭지가 설치되지 않는 발코니에는 배수용 드레인이 설치되지 않으나 발코니1(실외기실)에는 에어컨 드레인을 위한 바닥배수구가 설치됨",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-195\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-195\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-195",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 375,
+        "left": 68,
+        "width": 993,
+        "height": 26,
+        "bottom": 401,
+        "right": 1061
+      },
+      "text": "- 일부 발코니에는 환기용유니트 및 덕트, 선홈통, 우수 및 배수용 입상관이 설치되며, 발코니에 설치되는 환기용유니트, 드레인 및 선홈통의 위치와 개수는 추가되거나 일부 변경되어 설치될 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-196\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-196\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-196",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 401,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 414,
+        "right": 1061
+      },
+      "text": "- 소방 관련법에 따른 제연설비가 설치된 아파트에는 일부 세대내에 차압측정공이 설치됨",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-197\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-197\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-197",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 414,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 427,
+        "right": 1061
+      },
+      "text": "- 세대 내 기본설치 품목(옵션 선택시 해당 없음)인 에어컨용 냉매매립배관은 거실 및 침실1에만 설치되며, 거실은 스탠드형, 침실1은 벽걸이형 기준으로 설치됨",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-198\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-198\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-198",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 427,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 440,
+        "right": 1061
+      },
+      "text": "- 욕실팬 작동 직후에 댐퍼가 열리는 동안 운전음(소음)이 발생할 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-199\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-199\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-199",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 440,
+        "left": 68,
+        "width": 993,
+        "height": 26,
+        "bottom": 466,
+        "right": 1061
+      },
+      "text": "- 욕실2(부부욕실) 내 샤워기는 세면겸용 샤워수전 및 안마헤드가 설치되며 샤워 후 샤워헤드 내 잔류수가 떨어 질 수 있으며, 욕실 양변기는 절수형이 설치되므로 세정력이 다소 약해 보일 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-200\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-200\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-200",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 466,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 479,
+        "right": 1061
+      },
+      "text": "- 발코니 전기콘센트는 설치되지 않으며, 세탁기 및 환기유닛, 자동빨래건조대 전원용 콘센트에 한하여 설치됨",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-201\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-201\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-201",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 479,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 492,
+        "right": 1061
+      },
+      "text": "- 자동빨래건조대의 경우 배관 및 덕트 등의 간섭으로 인해 사용범위 및 크기가 작아질 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-202\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-202\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-202",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 492,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 505,
+        "right": 1061
+      },
+      "text": "- 무선랜(무선AP) 초기비밀번호는 입주 시 안내될 예정이며, 입주 후 비밀번호 분실에 대해 책임지지 않음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-203\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-203\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-203",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 505,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 518,
+        "right": 1061
+      },
+      "text": "- 세대 무인경비 동작감지기는 1,2층 및 최상층세대의 발코니, 침실 및 거실의 창호 측면부 각 1개소에 설치되며, 그 외층 동작감지기는 거실 창호 측면부 1개소에 설치됨",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-204\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-204\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-204",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 518,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 531,
+        "right": 1061
+      },
+      "text": "- 세대 내 통신단자함은 신발장 뒷면에 설치되며, 세대분전반은 거실통로에 설치되며 미관이 저해될 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-205\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-205\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-205",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 531,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 544,
+        "right": 1061
+      },
+      "text": "- 식탁용 조명기구의 위치는 보편적으로 식탁이 놓일 것으로 예상되는 곳에 정하였으며, 위치변경은 불가함",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-206\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-206\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-206",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 544,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 557,
+        "right": 1061
+      },
+      "text": "- 자동빨래건조대가 설치되는 발코니는 자동빨래건조대 자체조명이 리모컨으로 점등되며 별도의 조명기구는 설치되지 않음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-207\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-207\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-207",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 557,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 570,
+        "right": 1061
+      },
+      "text": "- 최상층 세대의 스피커는 벽부형으로 설치되며 최상층을 제외한 기타세대는 천정형으로 설치됨",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-208\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-208\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-208",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "33",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 570,
+        "left": 68,
+        "width": 993,
+        "height": 39,
+        "bottom": 609,
+        "right": 1061
+      },
+      "text": "- 홈네트워크시스템 세대단말기(WallPad10“LCD)는 방범서비스(도어카메라, 현관자석감지기 및 동작감지기와 연동), 제어서비스(가스밸브차단, 거실 및 침실1 네트워크스위치조명, 난방온도, 디지털도어록), 통화서",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "33px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-209\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-209\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-209",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 609,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 622,
+        "right": 1061
+      },
+      "text": "- 스마트홈 생활정보기가 설치되며, 일괄소등(현관센서등 제외), 승강기 호출 및 가스차단 기능이 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-210\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-210\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-210",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 622,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 635,
+        "right": 1061
+      },
+      "text": "- 욕실2(부부욕실)에 설치되는 무선형 비상호출버튼을 누를 경우 월패드, 관리실, 경비실에 경보음이 울리게 되며, 설치제품에 대한 디자인은 변경될 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-211\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-211\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-211",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 635,
+        "left": 68,
+        "width": 993,
+        "height": 13,
+        "bottom": 648,
+        "right": 1061
+      },
+      "text": "- 201동, 202동, 203동, 206동, 208동 아파트 옥상에 경관조명이 설치되어 인근 아파트 세대 내부로 빛이 들어올 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-212\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-212\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-212",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 648,
+        "left": 61,
+        "width": 1000,
+        "height": 20.671875,
+        "bottom": 668.671875,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-213\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-213\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-213",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 671.671875,
+        "left": 61,
+        "width": 1000,
+        "height": 13,
+        "bottom": 684.671875,
+        "right": 1061
+      },
+      "text": "■ 학교 개교 시기",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 691.09375,
+        "left": 64,
+        "width": 134.703125,
+        "height": 13,
+        "bottom": 704.09375,
+        "right": 198.703125
+      },
+      "text": "학교",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 691.09375,
+        "left": 203.703125,
+        "width": 288.375,
+        "height": 13,
+        "bottom": 704.09375,
+        "right": 492.078125
+      },
+      "text": "위치",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214-row-0-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214-row-0-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 691.09375,
+        "left": 497.078125,
+        "width": 308.34375,
+        "height": 13,
+        "bottom": 704.09375,
+        "right": 805.421875
+      },
+      "text": "학교명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214-row-0-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214-row-0-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214-row-0-cell-3-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 691.09375,
+        "left": 810.421875,
+        "width": 206.578125,
+        "height": 13,
+        "bottom": 704.09375,
+        "right": 1017
+      },
+      "text": "개교시기",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214-row-1-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214-row-1-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 711.03125,
+        "left": 64,
+        "width": 134.703125,
+        "height": 13,
+        "bottom": 724.03125,
+        "right": 198.703125
+      },
+      "text": "초등학교",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214-row-1-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214-row-1-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 711.53125,
+        "left": 203.703125,
+        "width": 288.375,
+        "height": 13,
+        "bottom": 724.53125,
+        "right": 492.078125
+      },
+      "text": "초1",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214-row-1-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214-row-1-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 711.53125,
+        "left": 497.078125,
+        "width": 308.34375,
+        "height": 13,
+        "bottom": 724.53125,
+        "right": 805.421875
+      },
+      "text": "미정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-214-row-1-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-214-row-1-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-214-row-1-cell-3-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 711.03125,
+        "left": 810.421875,
+        "width": 206.578125,
+        "height": 13,
+        "bottom": 724.03125,
+        "right": 1017
+      },
+      "text": "미정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-215\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-215\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-215",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 728.53125,
+        "left": 61,
+        "width": 1000,
+        "height": 13,
+        "bottom": 741.53125,
+        "right": 1061
+      },
+      "text": "- 초등학교 개교 전까지 인근 양지초등학교에 임시배치 후 통학버스를 운영할 예정임",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-216\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-216\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-216",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 741.53125,
+        "left": 62,
+        "width": 998,
+        "height": 26,
+        "bottom": 767.53125,
+        "right": 1060
+      },
+      "text": "※ 지구내 초등학교는 지구계획(개발 및 실시계획)의 인·허가 변경, 학교설립 관련 법령·지침 변경, 블록별 입주시기, 공동주택 분양규모(세대수), 학생수용여건, 학생수용계획 등에 따 라 학교설립(개교) 시기는 조정될",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-217\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-217\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-217",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "6",
+        "empty": "true",
+        "hwpxSpacer": "true"
+      },
+      "rect": {
+        "top": 767.53125,
+        "left": 61,
+        "width": 1000,
+        "height": 6,
+        "bottom": 773.53125,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "6px",
+        "minHeight": "6px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-218\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-218\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-218",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 773.53125,
+        "left": 68,
+        "width": 986,
+        "height": 14,
+        "bottom": 787.53125,
+        "right": 1054
+      },
+      "text": "■ 일반 사항",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-219\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-219\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-219",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 787.53125,
+        "left": 68,
+        "width": 986,
+        "height": 26,
+        "bottom": 813.53125,
+        "right": 1054
+      },
+      "text": "- 본 아파트 공사 중 천재지변, 문화재 발견, 정부의 정책이나 관련법령의 변경 등 예기치 못한 사유가 발생될 경우 예정된 공사일정 및 입주시기 등이 지연될 수 있으며, 이 경우 입주지연보상금은 발생하지 않음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-220\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-220\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-220",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 813.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 826.53125,
+        "right": 1054
+      },
+      "text": "- 본 아파트는 교육청이나 인허가청 요청 시 분양계약 관련사항을 제출할 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-221\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-221\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-221",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 826.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 839.53125,
+        "right": 1054
+      },
+      "text": "- 평면도 상의 치수는 중심선 기준(발코니의 경우 외곽선 기준)으로 안목치수와는 차이가 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-222\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-222\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-222",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 839.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 852.53125,
+        "right": 1054
+      },
+      "text": "- 주택규모의 표시는 소수점 넷째자리까지 표현하였으며, 연면적과 전체 계약면적과는 소수점 이하에서 약간의 오차가 생길 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-223\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-223\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-223",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 852.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 865.53125,
+        "right": 1054
+      },
+      "text": "- 세대 당 대지 지분은 법령에 따른 공부정리절차(준공시 확정측량)로 인해 대지면적의 증감이 있을 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-224\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-224\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-224",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 865.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 878.53125,
+        "right": 1054
+      },
+      "text": "- 일부세대는 공사 중에 품질확보 및 시공성검토를 위하여 샘플하우스(현장 견본세대)로 사용될 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-225\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-225\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-225",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 878.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 891.53125,
+        "right": 1054
+      },
+      "text": "- 사업승인도면과 실시설계도면은 차이가 있을 수 있으며, 현장여건에 따라 설계변경이 발생할 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-226\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-226\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-226",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 891.53125,
+        "left": 68,
+        "width": 986,
+        "height": 26,
+        "bottom": 917.53125,
+        "right": 1054
+      },
+      "text": "- 소유권 보존등기 및 이전등기는 입주일과 관계없이 지적공부정리 절차 등으로 지연될 수 있음(특히 대지의 이전등기는 상당기간 지연될 수 있으며, 이 경우 건물등기와 대지권 등기를 별도로 이행하여야 함)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 63,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-227\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-227\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-227",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 917.53125,
+        "left": 68,
+        "width": 986,
+        "height": 26,
+        "bottom": 943.53125,
+        "right": 1054
+      },
+      "text": "- 준공 전후 개인 또는 임의 단체를 구성하여 설계변경에 해당하는 내용이나 타사 또는 당사 아파트를 비교하여 추가적인 마감사양, 부대편의시설, 조경의 설치 또는 교체를 요구할 수 없으므로 타 분양아파트와 충분히 비",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 64,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-228\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-228\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-228",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 943.53125,
+        "left": 68,
+        "width": 986,
+        "height": 26,
+        "bottom": 969.53125,
+        "right": 1054
+      },
+      "text": "- 팸플릿 등 각종 홍보물에서 확인이 곤란한 공용부분의 시설물(공용계단, 지하주차장, 엘리베이터 용량속도, 탑승위치 등)은 사업계획승인도서에 의하며, 이에 대한 이의를 제기할 수 없으며 현재 계획 또는 예정으로 적",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 65,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-229\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-229\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-229",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 969.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 982.53125,
+        "right": 1054
+      },
+      "text": "- 도배, 도장, 가구, 타일, 위생기구공사 등에 대해서는 입주 전에 입주자 사전방문을 실시할 예정임(구체적인 일정은 추후 계약자에게 개별 통보함)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 66,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-230\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-230\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-230",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 982.53125,
+        "left": 68,
+        "width": 986,
+        "height": 26,
+        "bottom": 1008.53125,
+        "right": 1054
+      },
+      "text": "- 조감도, 세대 평면도, 면적, 치수 등 각종 내용과 설계관련 도서의 내용 중 불합리한 설계, 표현의 오류 및 오기 등의 수정과 성능의 개선 및 품질을 개선하기 위하여 본 공사 진행 중에 이루어지는 각종 인허가 ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 67,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-231\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-231\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-231",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1008.53125,
+        "left": 68,
+        "width": 986,
+        "height": 26,
+        "bottom": 1034.53125,
+        "right": 1054
+      },
+      "text": "- 현장여건의 반영 및 구조성능품질개선 등을 위하여 적법한 절차를 거쳐 설계변경이 추진될 수 있으며, 관련 법령에서 정하는 경미한 사항의 변경은 계약자의 동의 없이 사업 주체가 인허가를 진행할 수 있으므로 이에",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 68,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-232\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-232\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-232",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1034.53125,
+        "left": 68,
+        "width": 986,
+        "height": 26,
+        "bottom": 1060.53125,
+        "right": 1054
+      },
+      "text": "- 건물의 외관, 조경, 식재디테일은 인허가 및 실제 시공시 변경 될 수 있으며, 구획선과 시설물의 위치 및 규모는 측량결과 및 각종 평가의 결과에 따라 시공 시 다소 변경 될 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 69,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-233\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-233\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-233",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1060.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 1073.53125,
+        "right": 1054
+      },
+      "text": "- 주민공동시설의 사용 및 운영방안은 실입주후 입주민자치협의기구(가칭)에서 결정하여 운영되며, 입주민 전체의 공동시설물로서 사용함을 원칙으로 함",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 70,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-234\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-234\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-234",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1073.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 1086.53125,
+        "right": 1054
+      },
+      "text": "- 장애인 편의증진시설의 각 항목에 대한 설치는 최초 계약신청 접수분에 한해 가능하며, 계약 전 필히 확인이 필요함",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 71,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-235\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-235\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-235",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1086.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 1099.53125,
+        "right": 1054
+      },
+      "text": "- 주민공동시설, 보육시설(어린이놀이터 포함), 운동시설 등과 근접하여 배치된 동의 일부세대는 소음 등의 환경권 및 사생활 침해가 발생할 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 72,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-236\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-236\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-236",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1099.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 1112.53125,
+        "right": 1054
+      },
+      "text": "- 공동주택의 특성 및 거주자의 생활환경 차이 등으로 층간, 세대 간 생활 소음이 발생할 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 73,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-237\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-237\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-237",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1112.53125,
+        "left": 68,
+        "width": 986,
+        "height": 26,
+        "bottom": 1138.53125,
+        "right": 1054
+      },
+      "text": "- 팸플릿 등 각종 홍보물에 적용된 조감도, 투시도, 이미지컷 등은 신청자(입주자)의 이해를 돕기 위한 개략적인 참고자료로 실제 시공과는 다소 차이가 있을 수 있고, 제작과정에 서 오류오기오탈자 등이 있을 수 있",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 74,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-238\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-238\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-238",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1138.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 1151.53125,
+        "right": 1054
+      },
+      "text": "- 안전사고 등의 예방을 위하여 입주개시일 이전(잔금완납 포함) 이사나 인테리어 공사는 불가함",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 75,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-239\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-239\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-239",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1151.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 1164.53125,
+        "right": 1054
+      },
+      "text": "- 입주 후 불법 구조변경 시 관계법령에 따라 처벌될 수 있음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 76,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-240\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-240\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-240",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1164.53125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 1177.53125,
+        "right": 1054
+      },
+      "text": "- 팸플릿 등 각종 홍보물 중 단위세대 내부에 설치된 인테리어 소품가구, 디스플레이 가전제품, 기타 전시용품 등은 세대 연출을 위한 것으로 실제 설치되지 않음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 77,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-241\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-241\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-241",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1177.53125,
+        "left": 68,
+        "width": 986,
+        "height": 26,
+        "bottom": 1203.53125,
+        "right": 1054
+      },
+      "text": "- 본 단지의 각종 분양홍보물에 표현된 주민공동시설 등 부대복리시설의 모형 또는 이미지 등은 소비자의 이해를 돕기 위한 것으로 시설계획, 내부구조 및 마감 등은 향후 사업 인‧허 가 및 현장여건에 따라 변경될 수 있",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 78,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-242\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-242\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-242",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1203.53125,
+        "left": 68,
+        "width": 986,
+        "height": 26,
+        "bottom": 1229.53125,
+        "right": 1054
+      },
+      "text": "- 각종 홍보물에 표시된 도로 등의 개발계획은 각각의 개발 주체가 계획추진예정 및 실행 중인 상황을 표현한 것으로서 향후 변경될 수 있으며, 추후 개발계획 변경으로 인한 민형사상 이의를 제기할 수 없음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 79,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-243\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-243\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-243",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1229.53125,
+        "left": 68,
+        "width": 986,
+        "height": 22,
+        "bottom": 1251.53125,
+        "right": 1054
+      },
+      "text": "- 단지 내 근린생활시설은 별도의 분양시설이며, 공동주택단지와 별도의 구획이 불가하므로 향후 주거시설과 대지지분에 따른 구획 및 분할을 요청할 수 없음",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 80,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-244-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-244-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-244-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "18",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1256.53125,
+        "left": 77,
+        "width": 0,
+        "height": 21.328125,
+        "bottom": 1277.859375,
+        "right": 77
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 81,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-244-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-244-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-244-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1259.6875,
+        "left": 86.484375,
+        "width": 953.515625,
+        "height": 15,
+        "bottom": 1274.6875,
+        "right": 1040
+      },
+      "text": "5. 주택성능등급의 표시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 82,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-245\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-245\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-245",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1284.859375,
+        "left": 61,
+        "width": 1000,
+        "height": 13,
+        "bottom": 1297.859375,
+        "right": 1061
+      },
+      "text": "■ 「주택법」 제39조, 「녹색건축물 조성 지원법」 제16조, 「녹색건축 인증에 관한 규칙」 제8조, 「녹색건축 인증 기준」 제3조에 따라 인증된 공동주택의 항목별 성능등급을 표시함",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 83,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"header-block-1\",\"xmlPath\":\"header-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:header-block-1",
+        "layoutSource": "hwpx-header-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 91,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 93,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 72px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 84,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"footer-block-0\",\"xmlPath\":\"footer-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:footer-block-0",
+        "layoutSource": "hwpx-footer-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 1564,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 1566,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1545px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 85,
+      "dataset": {
+        "layoutSource": "hwpx-footer-page-number",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "layoutHeight": "18"
+      },
+      "rect": {
+        "top": 1540,
+        "left": 60,
+        "width": 1006,
+        "height": 19,
+        "bottom": 1559,
+        "right": 1066
+      },
+      "text": "- 15 -",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1521px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "18px",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 86
+}

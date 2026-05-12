@@ -1,0 +1,2948 @@
+{
+  "filename": "goyeopje-full-2024.hwp",
+  "pages": 11,
+  "page": {
+    "index": 9,
+    "width": 794,
+    "height": 1123
+  },
+  "bodyRect": {
+    "top": 538,
+    "left": 633,
+    "width": 794,
+    "height": 1123,
+    "bottom": 1661,
+    "right": 1427
+  },
+  "text": "(3쪽 중 3쪽) 국비진료대상자 진료 지원 범위 국가유공자등으로 등록 결정 된 국비진료대상자에 대한 의료지원은 아래와 같습니다. 지원 사항은 관련규정에 따라 변경될 수 있음을 알려드립니다. 구 분 주요내용 보훈병원 진료 전문위탁 (외부전원) 위탁병원 진료 응급 진료 통원진료 (기관장) 급여 보험급여 행위료,처치료 등 ○ ○ ○ ○ ○ 본인부담 본인부담금 ○ ○ ○ ○ ○ 비급여 법정 비급여 1. 초음파, MRI, 건위소화제 ○ ○ ○ ○ ○ 2. 미결정 항목 ○ ○ × ○ × 3. 상급병실료 ◇ ◇ × ◇ × 1~3을 제외한 항목 ○ ○ × ○ × 임의 비급여 법령규정외 진료 × × × × × ○ 국고지원, ◇ 일부 국고지원, × 본인부담 • 보험급여 : 국민건강보험법에 의한 요양급여 진료비 • 본인부담 : 국민건강보험공단에서 부담하는 진료비를 제외한 진료비 • 법정비급여 : 국민건강보험법에서 정한 비급여 진료비 • 임의비급여 : 국민건강보험법에서 규정하는 요양급여 및 비급여 대상이 아닌 의료기관에서 임의 로 정하여 운영하여 발생되는 진료비 ◈ 상급병실료를 지원하는 경우 ○ 보훈병원 : 치료목적상 또는 일반병실이 없어 상급병실 이용한 비용 ○ 전문위탁 또는 응급진료 - 무균치료 또는 격리치료 목적으로 상급병실 사용하는 경우(특별병실 제외) - 일반병실이 없어 상급병실을 사용하는 경우(특별병실 제외) 7일 이내의 상급병실료 ◈ 전문위탁진료 ○ 보훈병원장이 특수질환 등으로 보훈병원 내에서 진료가 곤란하다고 판단되는 경우 전문의료기관등 에 위탁하여 진료 받을 수 있도록 하는 제도 ◈ 응급진료 ○ 응급진료를 받는 경우에는 입원한 날로부터 14일이내 관할 보훈(지)청에 통보해야 환급가능 ○ 응급진료기간은 14일, 응급을 회복한 경우에는 보훈병원 또는 위탁병원으로 전원하여 진료를 받아야함 ※ 위탁병원 감면진료 ○ 건강보험가입자인 무공수훈자, 재일학도의용군인은 위탁병원 진료시 본인부담액(2022.10.1.부터 약국약제 비를 포함)의 60%를 감면받을 수 있고, 건강보험가입",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-8-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "229"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-8-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 147,
+        "left": 38,
+        "width": 687,
+        "height": 233,
+        "bottom": 380,
+        "right": 725
+      },
+      "tableRect": {
+        "top": 147,
+        "left": 38,
+        "width": 687,
+        "height": 233,
+        "bottom": 380,
+        "right": 725
+      },
+      "rowCount": 8,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-0"
+          },
+          "rect": {
+            "top": 147.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 36,
+            "bottom": 183.5,
+            "right": 724.5
+          },
+          "cellCount": 7,
+          "text": "구 분 주요내용 보훈병원 진료 전문위탁 (외부전원) 위탁병원 진료 응급 진료 통원진료 (기관장)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-1"
+          },
+          "rect": {
+            "top": 183.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 19,
+            "bottom": 202.5,
+            "right": 724.5
+          },
+          "cellCount": 8,
+          "text": "급여 보험급여 행위료,처치료 등 ○ ○ ○ ○ ○"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-2"
+          },
+          "rect": {
+            "top": 202.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 21,
+            "bottom": 223.5,
+            "right": 724.5
+          },
+          "cellCount": 7,
+          "text": "본인부담 본인부담금 ○ ○ ○ ○ ○"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-3"
+          },
+          "rect": {
+            "top": 223.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 36,
+            "bottom": 259.5,
+            "right": 724.5
+          },
+          "cellCount": 8,
+          "text": "비급여 법정 비급여 1. 초음파, MRI, 건위소화제 ○ ○ ○ ○ ○"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-4"
+          },
+          "rect": {
+            "top": 259.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 33,
+            "bottom": 292.5,
+            "right": 724.5
+          },
+          "cellCount": 6,
+          "text": "2. 미결정 항목 ○ ○ × ○ ×"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-5"
+          },
+          "rect": {
+            "top": 292.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 30,
+            "bottom": 322.5,
+            "right": 724.5
+          },
+          "cellCount": 6,
+          "text": "3. 상급병실료 ◇ ◇ × ◇ ×"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-6"
+          },
+          "rect": {
+            "top": 322.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 21,
+            "bottom": 343.5,
+            "right": 724.5
+          },
+          "cellCount": 6,
+          "text": "1~3을 제외한 항목 ○ ○ × ○ ×"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-7"
+          },
+          "rect": {
+            "top": 343.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 36,
+            "bottom": 379.5,
+            "right": 724.5
+          },
+          "cellCount": 7,
+          "text": "임의 비급여 법령규정외 진료 × × × × ×"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-0"
+          },
+          "rect": {
+            "top": 147.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 36,
+            "bottom": 183.5,
+            "right": 724.5
+          },
+          "cellCount": 7,
+          "text": "구 분 주요내용 보훈병원 진료 전문위탁 (외부전원) 위탁병원 진료 응급 진료 통원진료 (기관장)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-1"
+          },
+          "rect": {
+            "top": 183.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 19,
+            "bottom": 202.5,
+            "right": 724.5
+          },
+          "cellCount": 8,
+          "text": "급여 보험급여 행위료,처치료 등 ○ ○ ○ ○ ○"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-2"
+          },
+          "rect": {
+            "top": 202.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 21,
+            "bottom": 223.5,
+            "right": 724.5
+          },
+          "cellCount": 7,
+          "text": "본인부담 본인부담금 ○ ○ ○ ○ ○"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-3"
+          },
+          "rect": {
+            "top": 223.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 36,
+            "bottom": 259.5,
+            "right": 724.5
+          },
+          "cellCount": 8,
+          "text": "비급여 법정 비급여 1. 초음파, MRI, 건위소화제 ○ ○ ○ ○ ○"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-4"
+          },
+          "rect": {
+            "top": 259.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 33,
+            "bottom": 292.5,
+            "right": 724.5
+          },
+          "cellCount": 6,
+          "text": "2. 미결정 항목 ○ ○ × ○ ×"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-5"
+          },
+          "rect": {
+            "top": 292.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 30,
+            "bottom": 322.5,
+            "right": 724.5
+          },
+          "cellCount": 6,
+          "text": "3. 상급병실료 ◇ ◇ × ◇ ×"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-6"
+          },
+          "rect": {
+            "top": 322.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 21,
+            "bottom": 343.5,
+            "right": 724.5
+          },
+          "cellCount": 6,
+          "text": "1~3을 제외한 항목 ○ ○ × ○ ×"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-7"
+          },
+          "rect": {
+            "top": 343.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 36,
+            "bottom": 379.5,
+            "right": 724.5
+          },
+          "cellCount": 7,
+          "text": "임의 비급여 법령규정외 진료 × × × × ×"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-0"
+          },
+          "rect": {
+            "top": 147.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 36,
+            "bottom": 183.5,
+            "right": 724.5
+          },
+          "cellCount": 7,
+          "text": "구 분 주요내용 보훈병원 진료 전문위탁 (외부전원) 위탁병원 진료 응급 진료 통원진료 (기관장)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-1"
+          },
+          "rect": {
+            "top": 183.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 19,
+            "bottom": 202.5,
+            "right": 724.5
+          },
+          "cellCount": 8,
+          "text": "급여 보험급여 행위료,처치료 등 ○ ○ ○ ○ ○"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-2"
+          },
+          "rect": {
+            "top": 202.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 21,
+            "bottom": 223.5,
+            "right": 724.5
+          },
+          "cellCount": 7,
+          "text": "본인부담 본인부담금 ○ ○ ○ ○ ○"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-3"
+          },
+          "rect": {
+            "top": 223.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 36,
+            "bottom": 259.5,
+            "right": 724.5
+          },
+          "cellCount": 8,
+          "text": "비급여 법정 비급여 1. 초음파, MRI, 건위소화제 ○ ○ ○ ○ ○"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-4"
+          },
+          "rect": {
+            "top": 259.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 33,
+            "bottom": 292.5,
+            "right": 724.5
+          },
+          "cellCount": 6,
+          "text": "2. 미결정 항목 ○ ○ × ○ ×"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-5"
+          },
+          "rect": {
+            "top": 292.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 30,
+            "bottom": 322.5,
+            "right": 724.5
+          },
+          "cellCount": 6,
+          "text": "3. 상급병실료 ◇ ◇ × ◇ ×"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-6"
+          },
+          "rect": {
+            "top": 322.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 21,
+            "bottom": 343.5,
+            "right": 724.5
+          },
+          "cellCount": 6,
+          "text": "1~3을 제외한 항목 ○ ○ × ○ ×"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-4/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-4:row-7"
+          },
+          "rect": {
+            "top": 343.5,
+            "left": 38.5,
+            "width": 686,
+            "height": 36,
+            "bottom": 379.5,
+            "right": 724.5
+          },
+          "cellCount": 7,
+          "text": "임의 비급여 법령규정외 진료 × × × × ×"
+        }
+      ],
+      "text": "구 분 주요내용 보훈병원 진료 전문위탁 (외부전원) 위탁병원 진료 응급 진료 통원진료 (기관장) 급여 보험급여 행위료,처치료 등 ○ ○ ○ ○ ○ 본인부담 본인부담금 ○ ○ ○ ○ ○ 비급여 법정 비급여 1. 초음파, MRI, 건위소화제 ○ ○ ○ ○ ○ 2. 미결정 항목 ○ ○ × ○ × 3. 상급병실료 ◇ ◇ × ◇ × 1~3을 제외한 항목 ○ ○ × ○ × 임의 비급여 법령규정외 진료 × × × × ×",
+      "style": {
+        "height": "229px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-8-block-10\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-10",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "276"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-8-block-10\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-10",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 536,
+        "left": 38,
+        "width": 680,
+        "height": 277,
+        "bottom": 813,
+        "right": 718
+      },
+      "tableRect": {
+        "top": 536,
+        "left": 38,
+        "width": 680,
+        "height": 277,
+        "bottom": 813,
+        "right": 718
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-10/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-10:row-0"
+          },
+          "rect": {
+            "top": 536.5,
+            "left": 38.5,
+            "width": 679,
+            "height": 276,
+            "bottom": 812.5,
+            "right": 717.5
+          },
+          "cellCount": 1,
+          "text": "◈ 상급병실료를 지원하는 경우 ○ 보훈병원 : 치료목적상 또는 일반병실이 없어 상급병실 이용한 비용 ○ 전문위탁 또는 응급진료 - 무균치료 또는 격리치료 목적으로 상급병실 사용하는 경우(특별병실 제외) - 일반병실이 없어 상급병실을 사용하는 경우(특별병실 제외) 7일 이내의 상급병실료 "
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-10/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-10:row-0"
+          },
+          "rect": {
+            "top": 536.5,
+            "left": 38.5,
+            "width": 679,
+            "height": 276,
+            "bottom": 812.5,
+            "right": 717.5
+          },
+          "cellCount": 1,
+          "text": "◈ 상급병실료를 지원하는 경우 ○ 보훈병원 : 치료목적상 또는 일반병실이 없어 상급병실 이용한 비용 ○ 전문위탁 또는 응급진료 - 무균치료 또는 격리치료 목적으로 상급병실 사용하는 경우(특별병실 제외) - 일반병실이 없어 상급병실을 사용하는 경우(특별병실 제외) 7일 이내의 상급병실료 "
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-8-block-10/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-8-block-10:row-0"
+          },
+          "rect": {
+            "top": 536.5,
+            "left": 38.5,
+            "width": 679,
+            "height": 276,
+            "bottom": 812.5,
+            "right": 717.5
+          },
+          "cellCount": 1,
+          "text": "◈ 상급병실료를 지원하는 경우 ○ 보훈병원 : 치료목적상 또는 일반병실이 없어 상급병실 이용한 비용 ○ 전문위탁 또는 응급진료 - 무균치료 또는 격리치료 목적으로 상급병실 사용하는 경우(특별병실 제외) - 일반병실이 없어 상급병실을 사용하는 경우(특별병실 제외) 7일 이내의 상급병실료 "
+        }
+      ],
+      "text": "◈ 상급병실료를 지원하는 경우 ○ 보훈병원 : 치료목적상 또는 일반병실이 없어 상급병실 이용한 비용 ○ 전문위탁 또는 응급진료 - 무균치료 또는 격리치료 목적으로 상급병실 사용하는 경우(특별병실 제외) - 일반병실이 없어 상급병실을 사용하는 경우(특별병실 제외) 7일 이내의 상급병실료 ◈ 전문위탁진료 ○ 보훈병원장이 특수질환 등으로 보훈병원 내에서 진료가 곤란하다고 판단되는 경우 전문의료기관등 에 위탁하여 진료 받을 수 있도록",
+      "style": {
+        "height": "276px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 57,
+        "left": 38,
+        "width": 718,
+        "height": 13,
+        "bottom": 70,
+        "right": 756
+      },
+      "text": "(3쪽 중 3쪽)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 76,
+        "left": 38,
+        "width": 718,
+        "height": 25,
+        "bottom": 101,
+        "right": 756
+      },
+      "text": "국비진료대상자 진료 지원 범위",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 57px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 103,
+        "left": 38,
+        "width": 718,
+        "height": 18,
+        "bottom": 121,
+        "right": 756
+      },
+      "text": "국가유공자등으로 등록 결정 된 국비진료대상자에 대한 의료지원은 아래와 같습니다.",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 84px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 125,
+        "left": 38,
+        "width": 718,
+        "height": 18,
+        "bottom": 143,
+        "right": 756
+      },
+      "text": "지원 사항은 관련규정에 따라 변경될 수 있음을 알려드립니다.",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 106px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 158.5,
+        "left": 41,
+        "width": 116.8125,
+        "height": 14,
+        "bottom": 172.5,
+        "right": 157.8125
+      },
+      "text": "구 분",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-0-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 158.5,
+        "left": 162.8125,
+        "width": 123.796875,
+        "height": 14,
+        "bottom": 172.5,
+        "right": 286.609375
+      },
+      "text": "주요내용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-0-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 151.5,
+        "left": 291.609375,
+        "width": 88.859375,
+        "height": 14,
+        "bottom": 165.5,
+        "right": 380.46875
+      },
+      "text": "보훈병원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-0-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-0-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 165.5,
+        "left": 291.609375,
+        "width": 88.859375,
+        "height": 14,
+        "bottom": 179.5,
+        "right": 380.46875
+      },
+      "text": "진료",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-0-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-0-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 151.5,
+        "left": 385.46875,
+        "width": 95.84375,
+        "height": 14,
+        "bottom": 165.5,
+        "right": 481.3125
+      },
+      "text": "전문위탁",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-0-cell-3-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-0-cell-3-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 165.5,
+        "left": 385.46875,
+        "width": 95.84375,
+        "height": 14,
+        "bottom": 179.5,
+        "right": 481.3125
+      },
+      "text": "(외부전원)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-0-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-0-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 151.5,
+        "left": 486.3125,
+        "width": 66.890625,
+        "height": 14,
+        "bottom": 165.5,
+        "right": 553.203125
+      },
+      "text": "위탁병원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-0-cell-4-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-0-cell-4-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 165.5,
+        "left": 486.3125,
+        "width": 66.890625,
+        "height": 14,
+        "bottom": 179.5,
+        "right": 553.203125
+      },
+      "text": "진료",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-0-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-0-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 151.5,
+        "left": 558.203125,
+        "width": 54.90625,
+        "height": 14,
+        "bottom": 165.5,
+        "right": 613.109375
+      },
+      "text": "응급",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-0-cell-5-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-0-cell-5-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 165.5,
+        "left": 558.203125,
+        "width": 54.90625,
+        "height": 14,
+        "bottom": 179.5,
+        "right": 613.109375
+      },
+      "text": "진료",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-0-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-0-cell-6-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 151.5,
+        "left": 618.109375,
+        "width": 103.890625,
+        "height": 14,
+        "bottom": 165.5,
+        "right": 722
+      },
+      "text": "통원진료",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-0-cell-6-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-0-cell-6-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 165.5,
+        "left": 618.109375,
+        "width": 103.890625,
+        "height": 14,
+        "bottom": 179.5,
+        "right": 722
+      },
+      "text": "(기관장)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 196.5,
+        "left": 41,
+        "width": 47.921875,
+        "height": 14,
+        "bottom": 210.5,
+        "right": 88.921875
+      },
+      "text": "급여",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-1-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 186,
+        "left": 93.921875,
+        "width": 63.890625,
+        "height": 14,
+        "bottom": 200,
+        "right": 157.8125
+      },
+      "text": "보험급여",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-1-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 186,
+        "left": 162.8125,
+        "width": 123.796875,
+        "height": 14,
+        "bottom": 200,
+        "right": 286.609375
+      },
+      "text": "행위료,처치료 등",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-1-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-1-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 186,
+        "left": 291.609375,
+        "width": 88.859375,
+        "height": 14,
+        "bottom": 200,
+        "right": 380.46875
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-1-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-1-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 186,
+        "left": 385.46875,
+        "width": 95.84375,
+        "height": 14,
+        "bottom": 200,
+        "right": 481.3125
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-1-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-1-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 186,
+        "left": 486.3125,
+        "width": 66.890625,
+        "height": 14,
+        "bottom": 200,
+        "right": 553.203125
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-1-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-1-cell-6-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 186,
+        "left": 558.203125,
+        "width": 54.90625,
+        "height": 14,
+        "bottom": 200,
+        "right": 613.109375
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-1-cell-7-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-1-cell-7-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 186,
+        "left": 618.109375,
+        "width": 103.890625,
+        "height": 14,
+        "bottom": 200,
+        "right": 722
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-2-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 206,
+        "left": 93.921875,
+        "width": 63.890625,
+        "height": 14,
+        "bottom": 220,
+        "right": 157.8125
+      },
+      "text": "본인부담",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-2-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-2-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 206,
+        "left": 162.8125,
+        "width": 123.796875,
+        "height": 14,
+        "bottom": 220,
+        "right": 286.609375
+      },
+      "text": "본인부담금",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-2-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-2-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 206,
+        "left": 291.609375,
+        "width": 88.859375,
+        "height": 14,
+        "bottom": 220,
+        "right": 380.46875
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-2-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-2-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 206,
+        "left": 385.46875,
+        "width": 95.84375,
+        "height": 14,
+        "bottom": 220,
+        "right": 481.3125
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-2-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-2-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 206,
+        "left": 486.3125,
+        "width": 66.890625,
+        "height": 14,
+        "bottom": 220,
+        "right": 553.203125
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-2-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-2-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 206,
+        "left": 558.203125,
+        "width": 54.90625,
+        "height": 14,
+        "bottom": 220,
+        "right": 613.109375
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-2-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-2-cell-6-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 206,
+        "left": 618.109375,
+        "width": 103.890625,
+        "height": 14,
+        "bottom": 220,
+        "right": 722
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-3-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 294.5,
+        "left": 41,
+        "width": 47.921875,
+        "height": 14,
+        "bottom": 308.5,
+        "right": 88.921875
+      },
+      "text": "비급여",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-3-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-3-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 269.5,
+        "left": 93.921875,
+        "width": 63.890625,
+        "height": 14,
+        "bottom": 283.5,
+        "right": 157.8125
+      },
+      "text": "법정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-3-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-3-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 283.5,
+        "left": 93.921875,
+        "width": 63.890625,
+        "height": 14,
+        "bottom": 297.5,
+        "right": 157.8125
+      },
+      "text": "비급여",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-3-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-3-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 227.5,
+        "left": 162.8125,
+        "width": 123.796875,
+        "height": 14,
+        "bottom": 241.5,
+        "right": 286.609375
+      },
+      "text": "1. 초음파, MRI,",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-3-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-3-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 241.5,
+        "left": 162.8125,
+        "width": 123.796875,
+        "height": 14,
+        "bottom": 255.5,
+        "right": 286.609375
+      },
+      "text": "건위소화제",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-3-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-3-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 234.5,
+        "left": 291.609375,
+        "width": 88.859375,
+        "height": 14,
+        "bottom": 248.5,
+        "right": 380.46875
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-3-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-3-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 234.5,
+        "left": 385.46875,
+        "width": 95.84375,
+        "height": 14,
+        "bottom": 248.5,
+        "right": 481.3125
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-3-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-3-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 234.5,
+        "left": 486.3125,
+        "width": 66.890625,
+        "height": 14,
+        "bottom": 248.5,
+        "right": 553.203125
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-3-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-3-cell-6-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 234.5,
+        "left": 558.203125,
+        "width": 54.90625,
+        "height": 14,
+        "bottom": 248.5,
+        "right": 613.109375
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-3-cell-7-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-3-cell-7-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 234.5,
+        "left": 618.109375,
+        "width": 103.890625,
+        "height": 14,
+        "bottom": 248.5,
+        "right": 722
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-4-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 269,
+        "left": 162.8125,
+        "width": 123.796875,
+        "height": 14,
+        "bottom": 283,
+        "right": 286.609375
+      },
+      "text": "2. 미결정 항목",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-4-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-4-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 269,
+        "left": 291.609375,
+        "width": 88.859375,
+        "height": 14,
+        "bottom": 283,
+        "right": 380.46875
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-4-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-4-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 269,
+        "left": 385.46875,
+        "width": 95.84375,
+        "height": 14,
+        "bottom": 283,
+        "right": 481.3125
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-4-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-4-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 269,
+        "left": 486.3125,
+        "width": 66.890625,
+        "height": 14,
+        "bottom": 283,
+        "right": 553.203125
+      },
+      "text": "×",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-4-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-4-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 269,
+        "left": 558.203125,
+        "width": 54.90625,
+        "height": 14,
+        "bottom": 283,
+        "right": 613.109375
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-4-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-4-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 269,
+        "left": 618.109375,
+        "width": 103.890625,
+        "height": 14,
+        "bottom": 283,
+        "right": 722
+      },
+      "text": "×",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-5-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 300.5,
+        "left": 162.8125,
+        "width": 123.796875,
+        "height": 14,
+        "bottom": 314.5,
+        "right": 286.609375
+      },
+      "text": "3. 상급병실료",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-5-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-5-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 300.5,
+        "left": 291.609375,
+        "width": 88.859375,
+        "height": 14,
+        "bottom": 314.5,
+        "right": 380.46875
+      },
+      "text": "◇",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-5-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-5-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 300.5,
+        "left": 385.46875,
+        "width": 95.84375,
+        "height": 14,
+        "bottom": 314.5,
+        "right": 481.3125
+      },
+      "text": "◇",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-5-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-5-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 300.5,
+        "left": 486.3125,
+        "width": 66.890625,
+        "height": 14,
+        "bottom": 314.5,
+        "right": 553.203125
+      },
+      "text": "×",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-5-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-5-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 300.5,
+        "left": 558.203125,
+        "width": 54.90625,
+        "height": 14,
+        "bottom": 314.5,
+        "right": 613.109375
+      },
+      "text": "◇",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-5-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-5-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 300.5,
+        "left": 618.109375,
+        "width": 103.890625,
+        "height": 14,
+        "bottom": 314.5,
+        "right": 722
+      },
+      "text": "×",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-6-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-6-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 326,
+        "left": 162.8125,
+        "width": 123.796875,
+        "height": 14,
+        "bottom": 340,
+        "right": 286.609375
+      },
+      "text": "1~3을 제외한 항목",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-6-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-6-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 326,
+        "left": 291.609375,
+        "width": 88.859375,
+        "height": 14,
+        "bottom": 340,
+        "right": 380.46875
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-6-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-6-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 326,
+        "left": 385.46875,
+        "width": 95.84375,
+        "height": 14,
+        "bottom": 340,
+        "right": 481.3125
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-6-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-6-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 326,
+        "left": 486.3125,
+        "width": 66.890625,
+        "height": 14,
+        "bottom": 340,
+        "right": 553.203125
+      },
+      "text": "×",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-6-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-6-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 326,
+        "left": 558.203125,
+        "width": 54.90625,
+        "height": 14,
+        "bottom": 340,
+        "right": 613.109375
+      },
+      "text": "○",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-6-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-6-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 326,
+        "left": 618.109375,
+        "width": 103.890625,
+        "height": 14,
+        "bottom": 340,
+        "right": 722
+      },
+      "text": "×",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-7-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-7-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 347.5,
+        "left": 93.921875,
+        "width": 63.890625,
+        "height": 14,
+        "bottom": 361.5,
+        "right": 157.8125
+      },
+      "text": "임의",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-7-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-7-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 361.5,
+        "left": 93.921875,
+        "width": 63.890625,
+        "height": 14,
+        "bottom": 375.5,
+        "right": 157.8125
+      },
+      "text": "비급여",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-7-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-7-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 354.5,
+        "left": 162.8125,
+        "width": 123.796875,
+        "height": 14,
+        "bottom": 368.5,
+        "right": 286.609375
+      },
+      "text": "법령규정외 진료",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-7-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-7-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 354.5,
+        "left": 291.609375,
+        "width": 88.859375,
+        "height": 14,
+        "bottom": 368.5,
+        "right": 380.46875
+      },
+      "text": "×",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 63,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-7-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-7-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 354.5,
+        "left": 385.46875,
+        "width": 95.84375,
+        "height": 14,
+        "bottom": 368.5,
+        "right": 481.3125
+      },
+      "text": "×",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 64,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-7-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-7-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 354.5,
+        "left": 486.3125,
+        "width": 66.890625,
+        "height": 14,
+        "bottom": 368.5,
+        "right": 553.203125
+      },
+      "text": "×",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 65,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-7-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-7-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 354.5,
+        "left": 558.203125,
+        "width": 54.90625,
+        "height": 14,
+        "bottom": 368.5,
+        "right": 613.109375
+      },
+      "text": "×",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 66,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-4-row-7-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-4-row-7-cell-6-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 354.5,
+        "left": 618.109375,
+        "width": 103.890625,
+        "height": 14,
+        "bottom": 368.5,
+        "right": 722
+      },
+      "text": "×",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 67,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 404,
+        "left": 38,
+        "width": 718,
+        "height": 19,
+        "bottom": 423,
+        "right": 756
+      },
+      "text": "○ 국고지원, ◇ 일부 국고지원, × 본인부담",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 385px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 68,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-6",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 427,
+        "left": 38,
+        "width": 718,
+        "height": 19,
+        "bottom": 446,
+        "right": 756
+      },
+      "text": "• 보험급여 : 국민건강보험법에 의한 요양급여 진료비",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 408px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 69,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-7",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 450,
+        "left": 38,
+        "width": 718,
+        "height": 19,
+        "bottom": 469,
+        "right": 756
+      },
+      "text": "• 본인부담 : 국민건강보험공단에서 부담하는 진료비를 제외한 진료비",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 431px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 70,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-8",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 473,
+        "left": 38,
+        "width": 718,
+        "height": 19,
+        "bottom": 492,
+        "right": 756
+      },
+      "text": "• 법정비급여 : 국민건강보험법에서 정한 비급여 진료비",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 454px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 71,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-9",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "34",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 496,
+        "left": 38,
+        "width": 718,
+        "height": 38,
+        "bottom": 534,
+        "right": 756
+      },
+      "text": "• 임의비급여 : 국민건강보험법에서 규정하는 요양급여 및 비급여 대상이 아닌 의료기관에서 임의 로 정하여 운영하여 발생되는 진료비",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 477px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "34px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 72,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-10-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-10-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 571.5,
+        "left": 41,
+        "width": 674,
+        "height": 15,
+        "bottom": 586.5,
+        "right": 715
+      },
+      "text": "◈ 상급병실료를 지원하는 경우",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 73,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-10-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-10-row-0-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 586.5,
+        "left": 41,
+        "width": 674,
+        "height": 15,
+        "bottom": 601.5,
+        "right": 715
+      },
+      "text": "○ 보훈병원 : 치료목적상 또는 일반병실이 없어 상급병실 이용한 비용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 74,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-10-row-0-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-10-row-0-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 601.5,
+        "left": 41,
+        "width": 674,
+        "height": 15,
+        "bottom": 616.5,
+        "right": 715
+      },
+      "text": "○ 전문위탁 또는 응급진료",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 75,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-10-row-0-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-10-row-0-cell-0-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 616.5,
+        "left": 41,
+        "width": 674,
+        "height": 15,
+        "bottom": 631.5,
+        "right": 715
+      },
+      "text": "- 무균치료 또는 격리치료 목적으로 상급병실 사용하는 경우(특별병실 제외)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 76,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-10-row-0-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-10-row-0-cell-0-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 631.5,
+        "left": 41,
+        "width": 674,
+        "height": 15,
+        "bottom": 646.5,
+        "right": 715
+      },
+      "text": "- 일반병실이 없어 상급병실을 사용하는 경우(특별병실 제외) 7일 이내의 상급병실료",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 77,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-10-row-0-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-10-row-0-cell-0-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 659.5,
+        "left": 41,
+        "width": 674,
+        "height": 15,
+        "bottom": 674.5,
+        "right": 715
+      },
+      "text": "◈ 전문위탁진료",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 78,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-10-row-0-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-10-row-0-cell-0-block-6",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 674.5,
+        "left": 41,
+        "width": 674,
+        "height": 30,
+        "bottom": 704.5,
+        "right": 715
+      },
+      "text": "○ 보훈병원장이 특수질환 등으로 보훈병원 내에서 진료가 곤란하다고 판단되는 경우 전문의료기관등 에 위탁하여 진료 받을 수 있도록 하는 제도",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 79,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-10-row-0-cell-0-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-10-row-0-cell-0-block-7",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 717.5,
+        "left": 41,
+        "width": 674,
+        "height": 15,
+        "bottom": 732.5,
+        "right": 715
+      },
+      "text": "◈ 응급진료",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 80,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-10-row-0-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-10-row-0-cell-0-block-8",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 732.5,
+        "left": 41,
+        "width": 674,
+        "height": 15,
+        "bottom": 747.5,
+        "right": 715
+      },
+      "text": "○ 응급진료를 받는 경우에는 입원한 날로부터 14일이내 관할 보훈(지)청에 통보해야 환급가능",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 81,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-10-row-0-cell-0-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-10-row-0-cell-0-block-9",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 747.5,
+        "left": 41,
+        "width": 674,
+        "height": 30,
+        "bottom": 777.5,
+        "right": 715
+      },
+      "text": "○ 응급진료기간은 14일, 응급을 회복한 경우에는 보훈병원 또는 위탁병원으로 전원하여 진료를 받아야함",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 82,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-11\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-11",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "17",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 819,
+        "left": 38,
+        "width": 718,
+        "height": 19,
+        "bottom": 838,
+        "right": 756
+      },
+      "text": "※ 위탁병원 감면진료",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 800px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "17px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 83,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-12\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-12",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "48",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 855,
+        "left": 38,
+        "width": 718,
+        "height": 54,
+        "bottom": 909,
+        "right": 756
+      },
+      "text": "○ 건강보험가입자인 무공수훈자, 재일학도의용군인은 위탁병원 진료시 본인부담액(2022.10.1.부터 약국약제 비를 포함)의 60%를 감면받을 수 있고, 건강보험가입자인 참전유공자는 위탁병원 진료시 본인부담 액(202",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 836px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "48px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 84,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-13\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-13",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 922,
+        "left": 38,
+        "width": 718,
+        "height": 26,
+        "bottom": 948,
+        "right": 756
+      },
+      "text": "※ 약국약제비는 대상자가 약국에 비용을 선납부한 후 관할보훈(지)청에서 환급액을 지급하며, 약국약제비 지원 한도액은 국가보훈부장관 고시에 따름",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 903px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 85,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-14\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-14",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 962,
+        "left": 38,
+        "width": 718,
+        "height": 13,
+        "bottom": 975,
+        "right": 756
+      },
+      "text": "※ 단, 75세 미만 대상자의 약국약제비 지원은 2023년 10월 1일부터 시행",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 943px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 86,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-8-block-15\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-8-block-15",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutPosition": "absolute",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 989,
+        "left": 38,
+        "width": 718,
+        "height": 36,
+        "bottom": 1025,
+        "right": 756
+      },
+      "text": "○ 건강보험가입자인 75세 이상 보상금을 받는 선순위 유족 등이 위탁병원 진료 시 약국약제비를 제외한 본인 부담액의 60%를 감면받을 수 있음",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 970px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 87
+}

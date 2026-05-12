@@ -220,7 +220,9 @@ def crop_hancom_page(image, target_band, dark_row_run_min=3):
         bottom = min(image.height, top + expected_height)
     if bottom <= top + 120:
         bottom = image.height
-    return trim_hancom_page_shadow(image.crop((left, top, right + 1, bottom)), dark_row_run_min)
+    return restore_page_ratio_with_white_margin(
+        trim_hancom_page_shadow(image.crop((left, top, right + 1, bottom)), dark_row_run_min)
+    )
 
 
 def normalize_page_rects(image, rects, target_band):
@@ -416,6 +418,15 @@ def remove_bottom_uniform_shadow_band(image):
         if 0 < cut_y < height:
             return image.crop((0, 0, width, cut_y))
     return image
+
+
+def restore_page_ratio_with_white_margin(image):
+    expected_height = round(image.width * PAGE_RATIO)
+    if image.height >= expected_height:
+        return image
+    page = Image.new("RGB", (image.width, expected_height), (255, 255, 255))
+    page.paste(image.convert("RGB"), (0, 0))
+    return page
 
 
 def resize_to_width(image, target_width):

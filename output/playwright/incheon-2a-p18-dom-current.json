@@ -1,0 +1,4303 @@
+{
+  "filename": "incheon-2a.hwpx",
+  "pages": 18,
+  "page": {
+    "index": 18,
+    "width": 1123,
+    "height": 1587
+  },
+  "bodyRect": {
+    "top": 613,
+    "left": 468.5,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 2200,
+    "right": 1591.5
+  },
+  "text": "■ 택지비 감정평가금액 산출내역 감정평가금액(산술평균액) 가. 나라감정평가법인 나. 제일감정평가법인 71,568,596,153원 71,221,737,040원 71,915,455,266원 9. 분양주택 택지비 및 건축비 가산비 산출내역 아래의 택지비 및 건축비 가산비는 상한금액 산정을 위한 기준금액으로,「주택공급에 관한 규칙」 제21조제3항, 「주택법」 제57조의 규정에 의거 아래와 같이 공개하며, 상한 금액 이하로 책정된 분양가격 공시내용과는 차이가 있을 수 있습니다. [단위 : 천원] 항 목 택지비 가산비 건축비가산비 계 기간 이자 흙막이 공사비 기타 비용 계 사업승 인부가 조건 가산비 법정초과 복리시설 설치비용 공동주택 성능등급 가산비 인텔리전트 설치비용 친환경 주택건설 추가비용 법령개정에 따른 추가건설 가산비 지하 주차장 층고증가 추가비용 홈 네트워크 에어컨 냉매 배관 초고속 통신 기계 환기 설비 전기자동차 충전시설 건강 친화형 주택 사전청약 소요비용 금 액 12,920,467 4,139,625 4,806,790 3,974,052 14,763,559 3,742,137 2,325,405 882,977 3,430,229 745,160 445,743 679,490 1,419,923 80,773 361,278 476,080 174,364 10. 사업주체 및 시공업체 현황 블록 사업주체(사업자등록번호) 시공업체(사업자등록번호) 연대보증인 감리회사 인천가정2 A-2BL 한국토지주택공사 인천지역본부 (131-82-13727) ㈜서한 (502-81-16195) (공사이행보증서로 대체) 신성종합건축사사무소(주) (301-81-31079)외 4개사 11. 현장접수처 안내 서류접수시 방문처 ■ 위치안내 : 인천광역시 서구 청라동 172-14(선교중앙감리교회 뒤편) ■ 운영기간 : 당첨자 서류접수 및 현장계약 체결 기간 ■ 운영시간 : 10:00~17:00(12:00 ~ 13:00 점심시간 제외) 분양문의 ■ LH콜센터 : 1600-1004 (평일 : 09:00 ~ 18:00",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "contentKind": "hwpx-body-container",
+        "layoutHeight": "712.17"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwpx",
+        "contentKind": "hwpx-body-container"
+      },
+      "rect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 718.15625,
+        "bottom": 737.15625,
+        "right": 1062
+      },
+      "tableRect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 718.15625,
+        "bottom": 737.15625,
+        "right": 1062
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-48\",\"xmlPath\":\"body-block-1/row-48\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-48",
+            "layoutHeight": "712.17"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 717.15625,
+            "bottom": 736.65625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "■ 택지비 감정평가금액 산출내역 감정평가금액(산술평균액) 가. 나라감정평가법인 나. 제일감정평가법인 71,568,596,153원 71,221,737,040원 71,915,455,266원 9. 분양주택 택지비 및 건축비 가산비 산출내역 아래의 택지비 및 건축비 가산비는 상한금액 산정을 위"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-48\",\"xmlPath\":\"body-block-1/row-48\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-48",
+            "layoutHeight": "712.17"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 717.15625,
+            "bottom": 736.65625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "■ 택지비 감정평가금액 산출내역 감정평가금액(산술평균액) 가. 나라감정평가법인 나. 제일감정평가법인 71,568,596,153원 71,221,737,040원 71,915,455,266원 9. 분양주택 택지비 및 건축비 가산비 산출내역 아래의 택지비 및 건축비 가산비는 상한금액 산정을 위"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-48\",\"xmlPath\":\"body-block-1/row-48\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-48",
+            "layoutHeight": "712.17"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 717.15625,
+            "bottom": 736.65625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "■ 택지비 감정평가금액 산출내역 감정평가금액(산술평균액) 가. 나라감정평가법인 나. 제일감정평가법인 71,568,596,153원 71,221,737,040원 71,915,455,266원 9. 분양주택 택지비 및 건축비 가산비 산출내역 아래의 택지비 및 건축비 가산비는 상한금액 산정을 위"
+        }
+      ],
+      "text": "■ 택지비 감정평가금액 산출내역 감정평가금액(산술평균액) 가. 나라감정평가법인 나. 제일감정평가법인 71,568,596,153원 71,221,737,040원 71,915,455,266원 9. 분양주택 택지비 및 건축비 가산비 산출내역 아래의 택지비 및 건축비 가산비는 상한금액 산정을 위한 기준금액으로,「주택공급에 관한 규칙」 제21조제3항, 「주택법」 제57조의 규정에 의거 아래와 같이 공개하며, 상한 금액 이하로 책정된 분양",
+      "style": {
+        "height": "712.17px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266",
+        "nestingLevel": "1",
+        "layoutHeight": "56.83"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 58.328125,
+        "left": 61,
+        "width": 950,
+        "height": 57.8125,
+        "bottom": 116.140625,
+        "right": 1011
+      },
+      "tableRect": {
+        "top": 58.328125,
+        "left": 61,
+        "width": 950,
+        "height": 57.8125,
+        "bottom": 116.140625,
+        "right": 1011
+      },
+      "rowCount": 2,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266:row-0",
+            "layoutHeight": "28.41"
+          },
+          "rect": {
+            "top": 58.828125,
+            "left": 61.5,
+            "width": 949,
+            "height": 28.40625,
+            "bottom": 87.234375,
+            "right": 1010.5
+          },
+          "cellCount": 3,
+          "text": "감정평가금액(산술평균액) 가. 나라감정평가법인 나. 제일감정평가법인"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266:row-1",
+            "layoutHeight": "28.41"
+          },
+          "rect": {
+            "top": 87.234375,
+            "left": 61.5,
+            "width": 949,
+            "height": 28.40625,
+            "bottom": 115.640625,
+            "right": 1010.5
+          },
+          "cellCount": 3,
+          "text": "71,568,596,153원 71,221,737,040원 71,915,455,266원"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266:row-0",
+            "layoutHeight": "28.41"
+          },
+          "rect": {
+            "top": 58.828125,
+            "left": 61.5,
+            "width": 949,
+            "height": 28.40625,
+            "bottom": 87.234375,
+            "right": 1010.5
+          },
+          "cellCount": 3,
+          "text": "감정평가금액(산술평균액) 가. 나라감정평가법인 나. 제일감정평가법인"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266:row-1",
+            "layoutHeight": "28.41"
+          },
+          "rect": {
+            "top": 87.234375,
+            "left": 61.5,
+            "width": 949,
+            "height": 28.40625,
+            "bottom": 115.640625,
+            "right": 1010.5
+          },
+          "cellCount": 3,
+          "text": "71,568,596,153원 71,221,737,040원 71,915,455,266원"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266:row-0",
+            "layoutHeight": "28.41"
+          },
+          "rect": {
+            "top": 58.828125,
+            "left": 61.5,
+            "width": 949,
+            "height": 28.40625,
+            "bottom": 87.234375,
+            "right": 1010.5
+          },
+          "cellCount": 3,
+          "text": "감정평가금액(산술평균액) 가. 나라감정평가법인 나. 제일감정평가법인"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266:row-1",
+            "layoutHeight": "28.41"
+          },
+          "rect": {
+            "top": 87.234375,
+            "left": 61.5,
+            "width": 949,
+            "height": 28.40625,
+            "bottom": 115.640625,
+            "right": 1010.5
+          },
+          "cellCount": 3,
+          "text": "71,568,596,153원 71,221,737,040원 71,915,455,266원"
+        }
+      ],
+      "text": "감정평가금액(산술평균액) 가. 나라감정평가법인 나. 제일감정평가법인 71,568,596,153원 71,221,737,040원 71,915,455,266원",
+      "style": {
+        "height": "56.83px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 2,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-268\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-268\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-268",
+        "nestingLevel": "1",
+        "layoutHeight": "26.20"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-268\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-268\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-268",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 140.46875,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 167.796875,
+        "right": 1043
+      },
+      "tableRect": {
+        "top": 140.46875,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 167.796875,
+        "right": 1043
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-268/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-268/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-268:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 140.96875,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 167.296875,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "9. 분양주택 택지비 및 건축비 가산비 산출내역"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-268/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-268/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-268:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 140.96875,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 167.296875,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "9. 분양주택 택지비 및 건축비 가산비 산출내역"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-268/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-268/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-268:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 140.96875,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 167.296875,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "9. 분양주택 택지비 및 건축비 가산비 산출내역"
+        }
+      ],
+      "text": "9. 분양주택 택지비 및 건축비 가산비 산출내역",
+      "style": {
+        "height": "26.2px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": "rgb(255, 225, 225)"
+      }
+    },
+    {
+      "index": 3,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272",
+        "nestingLevel": "1",
+        "layoutHeight": "109.59"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 231.125,
+        "left": 61,
+        "width": 972,
+        "height": 110.5625,
+        "bottom": 341.6875,
+        "right": 1033
+      },
+      "tableRect": {
+        "top": 231.125,
+        "left": 61,
+        "width": 972,
+        "height": 110.5625,
+        "bottom": 341.6875,
+        "right": 1033
+      },
+      "rowCount": 4,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272:row-0",
+            "layoutHeight": "18"
+          },
+          "rect": {
+            "top": 231.625,
+            "left": 61.5,
+            "width": 971,
+            "height": 18,
+            "bottom": 249.625,
+            "right": 1032.5
+          },
+          "cellCount": 3,
+          "text": "항 목 택지비 가산비 건축비가산비"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272:row-1",
+            "layoutHeight": "18.20"
+          },
+          "rect": {
+            "top": 249.625,
+            "left": 61.5,
+            "width": 971,
+            "height": 18.1875,
+            "bottom": 267.8125,
+            "right": 1032.5
+          },
+          "cellCount": 12,
+          "text": "계 기간 이자 흙막이 공사비 기타 비용 계 사업승 인부가 조건 가산비 법정초과 복리시설 설치비용 공동주택 성능등급 가산비 인텔리전트 설치비용 친환경 주택건설 추가비용 법령개정에 따른 추가건설 가산비 지하 주차장 층고증가 추가비용"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272/row-2\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272:row-2",
+            "layoutHeight": "42"
+          },
+          "rect": {
+            "top": 267.8125,
+            "left": 61.5,
+            "width": 971,
+            "height": 42,
+            "bottom": 309.8125,
+            "right": 1032.5
+          },
+          "cellCount": 7,
+          "text": "홈 네트워크 에어컨 냉매 배관 초고속 통신 기계 환기 설비 전기자동차 충전시설 건강 친화형 주택 사전청약 소요비용"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272/row-3\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272:row-3",
+            "layoutHeight": "31.39"
+          },
+          "rect": {
+            "top": 309.8125,
+            "left": 61.5,
+            "width": 971,
+            "height": 31.375,
+            "bottom": 341.1875,
+            "right": 1032.5
+          },
+          "cellCount": 18,
+          "text": "금 액 12,920,467 4,139,625 4,806,790 3,974,052 14,763,559 3,742,137 2,325,405 882,977 3,430,229 745,160 445,743 679,490 1,419,923 80,773 361,278 476,080 174,364"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272:row-0",
+            "layoutHeight": "18"
+          },
+          "rect": {
+            "top": 231.625,
+            "left": 61.5,
+            "width": 971,
+            "height": 18,
+            "bottom": 249.625,
+            "right": 1032.5
+          },
+          "cellCount": 3,
+          "text": "항 목 택지비 가산비 건축비가산비"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272:row-1",
+            "layoutHeight": "18.20"
+          },
+          "rect": {
+            "top": 249.625,
+            "left": 61.5,
+            "width": 971,
+            "height": 18.1875,
+            "bottom": 267.8125,
+            "right": 1032.5
+          },
+          "cellCount": 12,
+          "text": "계 기간 이자 흙막이 공사비 기타 비용 계 사업승 인부가 조건 가산비 법정초과 복리시설 설치비용 공동주택 성능등급 가산비 인텔리전트 설치비용 친환경 주택건설 추가비용 법령개정에 따른 추가건설 가산비 지하 주차장 층고증가 추가비용"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272/row-2\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272:row-2",
+            "layoutHeight": "42"
+          },
+          "rect": {
+            "top": 267.8125,
+            "left": 61.5,
+            "width": 971,
+            "height": 42,
+            "bottom": 309.8125,
+            "right": 1032.5
+          },
+          "cellCount": 7,
+          "text": "홈 네트워크 에어컨 냉매 배관 초고속 통신 기계 환기 설비 전기자동차 충전시설 건강 친화형 주택 사전청약 소요비용"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272/row-3\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272:row-3",
+            "layoutHeight": "31.39"
+          },
+          "rect": {
+            "top": 309.8125,
+            "left": 61.5,
+            "width": 971,
+            "height": 31.375,
+            "bottom": 341.1875,
+            "right": 1032.5
+          },
+          "cellCount": 18,
+          "text": "금 액 12,920,467 4,139,625 4,806,790 3,974,052 14,763,559 3,742,137 2,325,405 882,977 3,430,229 745,160 445,743 679,490 1,419,923 80,773 361,278 476,080 174,364"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272:row-0",
+            "layoutHeight": "18"
+          },
+          "rect": {
+            "top": 231.625,
+            "left": 61.5,
+            "width": 971,
+            "height": 18,
+            "bottom": 249.625,
+            "right": 1032.5
+          },
+          "cellCount": 3,
+          "text": "항 목 택지비 가산비 건축비가산비"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272:row-1",
+            "layoutHeight": "18.20"
+          },
+          "rect": {
+            "top": 249.625,
+            "left": 61.5,
+            "width": 971,
+            "height": 18.1875,
+            "bottom": 267.8125,
+            "right": 1032.5
+          },
+          "cellCount": 12,
+          "text": "계 기간 이자 흙막이 공사비 기타 비용 계 사업승 인부가 조건 가산비 법정초과 복리시설 설치비용 공동주택 성능등급 가산비 인텔리전트 설치비용 친환경 주택건설 추가비용 법령개정에 따른 추가건설 가산비 지하 주차장 층고증가 추가비용"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272/row-2\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272:row-2",
+            "layoutHeight": "42"
+          },
+          "rect": {
+            "top": 267.8125,
+            "left": 61.5,
+            "width": 971,
+            "height": 42,
+            "bottom": 309.8125,
+            "right": 1032.5
+          },
+          "cellCount": 7,
+          "text": "홈 네트워크 에어컨 냉매 배관 초고속 통신 기계 환기 설비 전기자동차 충전시설 건강 친화형 주택 사전청약 소요비용"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272/row-3\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272:row-3",
+            "layoutHeight": "31.39"
+          },
+          "rect": {
+            "top": 309.8125,
+            "left": 61.5,
+            "width": 971,
+            "height": 31.375,
+            "bottom": 341.1875,
+            "right": 1032.5
+          },
+          "cellCount": 18,
+          "text": "금 액 12,920,467 4,139,625 4,806,790 3,974,052 14,763,559 3,742,137 2,325,405 882,977 3,430,229 745,160 445,743 679,490 1,419,923 80,773 361,278 476,080 174,364"
+        }
+      ],
+      "text": "항 목 택지비 가산비 건축비가산비 계 기간 이자 흙막이 공사비 기타 비용 계 사업승 인부가 조건 가산비 법정초과 복리시설 설치비용 공동주택 성능등급 가산비 인텔리전트 설치비용 친환경 주택건설 추가비용 법령개정에 따른 추가건설 가산비 지하 주차장 층고증가 추가비용 홈 네트워크 에어컨 냉매 배관 초고속 통신 기계 환기 설비 전기자동차 충전시설 건강 친화형 주택 사전청약 소요비용 금 액 12,920,467 4,139,625 4,80",
+      "style": {
+        "height": "109.59px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "",
+        "background": ""
+      }
+    },
+    {
+      "index": 4,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-274\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-274\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-274",
+        "nestingLevel": "1",
+        "layoutHeight": "26.20"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-274\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-274\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-274",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 366.015625,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 393.34375,
+        "right": 1043
+      },
+      "tableRect": {
+        "top": 366.015625,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 393.34375,
+        "right": 1043
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-274/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-274/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-274:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 366.515625,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 392.84375,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "10. 사업주체 및 시공업체 현황"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-274/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-274/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-274:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 366.515625,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 392.84375,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "10. 사업주체 및 시공업체 현황"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-274/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-274/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-274:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 366.515625,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 392.84375,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "10. 사업주체 및 시공업체 현황"
+        }
+      ],
+      "text": "10. 사업주체 및 시공업체 현황",
+      "style": {
+        "height": "26.2px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": "rgb(255, 225, 225)"
+      }
+    },
+    {
+      "index": 5,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275",
+        "nestingLevel": "1",
+        "layoutHeight": "71.95"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 395.34375,
+        "left": 61,
+        "width": 982,
+        "height": 72.921875,
+        "bottom": 468.265625,
+        "right": 1043
+      },
+      "tableRect": {
+        "top": 395.34375,
+        "left": 61,
+        "width": 982,
+        "height": 72.921875,
+        "bottom": 468.265625,
+        "right": 1043
+      },
+      "rowCount": 2,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275:row-0",
+            "layoutHeight": "24.64"
+          },
+          "rect": {
+            "top": 395.84375,
+            "left": 61.5,
+            "width": 981,
+            "height": 24.625,
+            "bottom": 420.46875,
+            "right": 1042.5
+          },
+          "cellCount": 5,
+          "text": "블록 사업주체(사업자등록번호) 시공업체(사업자등록번호) 연대보증인 감리회사"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275:row-1",
+            "layoutHeight": "47.31"
+          },
+          "rect": {
+            "top": 420.46875,
+            "left": 61.5,
+            "width": 981,
+            "height": 47.296875,
+            "bottom": 467.765625,
+            "right": 1042.5
+          },
+          "cellCount": 5,
+          "text": "인천가정2 A-2BL 한국토지주택공사 인천지역본부 (131-82-13727) ㈜서한 (502-81-16195) (공사이행보증서로 대체) 신성종합건축사사무소(주) (301-81-31079)외 4개사"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275:row-0",
+            "layoutHeight": "24.64"
+          },
+          "rect": {
+            "top": 395.84375,
+            "left": 61.5,
+            "width": 981,
+            "height": 24.625,
+            "bottom": 420.46875,
+            "right": 1042.5
+          },
+          "cellCount": 5,
+          "text": "블록 사업주체(사업자등록번호) 시공업체(사업자등록번호) 연대보증인 감리회사"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275:row-1",
+            "layoutHeight": "47.31"
+          },
+          "rect": {
+            "top": 420.46875,
+            "left": 61.5,
+            "width": 981,
+            "height": 47.296875,
+            "bottom": 467.765625,
+            "right": 1042.5
+          },
+          "cellCount": 5,
+          "text": "인천가정2 A-2BL 한국토지주택공사 인천지역본부 (131-82-13727) ㈜서한 (502-81-16195) (공사이행보증서로 대체) 신성종합건축사사무소(주) (301-81-31079)외 4개사"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275:row-0",
+            "layoutHeight": "24.64"
+          },
+          "rect": {
+            "top": 395.84375,
+            "left": 61.5,
+            "width": 981,
+            "height": 24.625,
+            "bottom": 420.46875,
+            "right": 1042.5
+          },
+          "cellCount": 5,
+          "text": "블록 사업주체(사업자등록번호) 시공업체(사업자등록번호) 연대보증인 감리회사"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275:row-1",
+            "layoutHeight": "47.31"
+          },
+          "rect": {
+            "top": 420.46875,
+            "left": 61.5,
+            "width": 981,
+            "height": 47.296875,
+            "bottom": 467.765625,
+            "right": 1042.5
+          },
+          "cellCount": 5,
+          "text": "인천가정2 A-2BL 한국토지주택공사 인천지역본부 (131-82-13727) ㈜서한 (502-81-16195) (공사이행보증서로 대체) 신성종합건축사사무소(주) (301-81-31079)외 4개사"
+        }
+      ],
+      "text": "블록 사업주체(사업자등록번호) 시공업체(사업자등록번호) 연대보증인 감리회사 인천가정2 A-2BL 한국토지주택공사 인천지역본부 (131-82-13727) ㈜서한 (502-81-16195) (공사이행보증서로 대체) 신성종합건축사사무소(주) (301-81-31079)외 4개사",
+      "style": {
+        "height": "71.95px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 6,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-278\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-278\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-278",
+        "nestingLevel": "1",
+        "layoutHeight": "26.20"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-278\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-278\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-278",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 495.59375,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 522.921875,
+        "right": 1043
+      },
+      "tableRect": {
+        "top": 495.59375,
+        "left": 61,
+        "width": 982,
+        "height": 27.328125,
+        "bottom": 522.921875,
+        "right": 1043
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-278/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-278/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-278:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 496.09375,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 522.421875,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "11. 현장접수처 안내"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-278/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-278/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-278:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 496.09375,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 522.421875,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "11. 현장접수처 안내"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-278/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-278/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-278:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 496.09375,
+            "left": 61.5,
+            "width": 981,
+            "height": 26.328125,
+            "bottom": 522.421875,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "11. 현장접수처 안내"
+        }
+      ],
+      "text": "11. 현장접수처 안내",
+      "style": {
+        "height": "26.2px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": "rgb(255, 225, 225)"
+      }
+    },
+    {
+      "index": 7,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280",
+        "nestingLevel": "1",
+        "layoutHeight": "225.21"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 531.921875,
+        "left": 61,
+        "width": 982,
+        "height": 226.1875,
+        "bottom": 758.109375,
+        "right": 1043
+      },
+      "tableRect": {
+        "top": 531.921875,
+        "left": 61,
+        "width": 982,
+        "height": 226.1875,
+        "bottom": 758.109375,
+        "right": 1043
+      },
+      "rowCount": 4,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280:row-0",
+            "layoutHeight": "31.08"
+          },
+          "rect": {
+            "top": 532.421875,
+            "left": 61.5,
+            "width": 981,
+            "height": 31.078125,
+            "bottom": 563.5,
+            "right": 1042.5
+          },
+          "cellCount": 1,
+          "text": "서류접수시 방문처"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280:row-1",
+            "layoutHeight": "87.92"
+          },
+          "rect": {
+            "top": 563.5,
+            "left": 61.5,
+            "width": 981,
+            "height": 87.90625,
+            "bottom": 651.40625,
+            "right": 1042.5
+          },
+          "cellCount": 1,
+          "text": "■ 위치안내 : 인천광역시 서구 청라동 172-14(선교중앙감리교회 뒤편) ■ 운영기간 : 당첨자 서류접수 및 현장계약 체결 기간 ■ 운영시간 : 10:00~17:00(12:00 ~ 13:00 점심시간 제외)"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280/row-2\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280:row-2",
+            "layoutHeight": "27.31"
+          },
+          "rect": {
+            "top": 651.40625,
+            "left": 61.5,
+            "width": 981,
+            "height": 27.296875,
+            "bottom": 678.703125,
+            "right": 1042.5
+          },
+          "cellCount": 1,
+          "text": "분양문의"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280/row-3\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280:row-3",
+            "layoutHeight": "78.91"
+          },
+          "rect": {
+            "top": 678.703125,
+            "left": 61.5,
+            "width": 981,
+            "height": 78.90625,
+            "bottom": 757.609375,
+            "right": 1042.5
+          },
+          "cellCount": 1,
+          "text": "■ LH콜센터 : 1600-1004 (평일 : 09:00 ~ 18:00) ■ 서류접수처 : 032-561-1136 (10:00 ~ 17:00) (점심시간 12:00~13:00, 공휴일 및 휴일 제외)"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280:row-0",
+            "layoutHeight": "31.08"
+          },
+          "rect": {
+            "top": 532.421875,
+            "left": 61.5,
+            "width": 981,
+            "height": 31.078125,
+            "bottom": 563.5,
+            "right": 1042.5
+          },
+          "cellCount": 1,
+          "text": "서류접수시 방문처"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280:row-1",
+            "layoutHeight": "87.92"
+          },
+          "rect": {
+            "top": 563.5,
+            "left": 61.5,
+            "width": 981,
+            "height": 87.90625,
+            "bottom": 651.40625,
+            "right": 1042.5
+          },
+          "cellCount": 1,
+          "text": "■ 위치안내 : 인천광역시 서구 청라동 172-14(선교중앙감리교회 뒤편) ■ 운영기간 : 당첨자 서류접수 및 현장계약 체결 기간 ■ 운영시간 : 10:00~17:00(12:00 ~ 13:00 점심시간 제외)"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280/row-2\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280:row-2",
+            "layoutHeight": "27.31"
+          },
+          "rect": {
+            "top": 651.40625,
+            "left": 61.5,
+            "width": 981,
+            "height": 27.296875,
+            "bottom": 678.703125,
+            "right": 1042.5
+          },
+          "cellCount": 1,
+          "text": "분양문의"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280/row-3\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280:row-3",
+            "layoutHeight": "78.91"
+          },
+          "rect": {
+            "top": 678.703125,
+            "left": 61.5,
+            "width": 981,
+            "height": 78.90625,
+            "bottom": 757.609375,
+            "right": 1042.5
+          },
+          "cellCount": 1,
+          "text": "■ LH콜센터 : 1600-1004 (평일 : 09:00 ~ 18:00) ■ 서류접수처 : 032-561-1136 (10:00 ~ 17:00) (점심시간 12:00~13:00, 공휴일 및 휴일 제외)"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280/row-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280:row-0",
+            "layoutHeight": "31.08"
+          },
+          "rect": {
+            "top": 532.421875,
+            "left": 61.5,
+            "width": 981,
+            "height": 31.078125,
+            "bottom": 563.5,
+            "right": 1042.5
+          },
+          "cellCount": 1,
+          "text": "서류접수시 방문처"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280/row-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280:row-1",
+            "layoutHeight": "87.92"
+          },
+          "rect": {
+            "top": 563.5,
+            "left": 61.5,
+            "width": 981,
+            "height": 87.90625,
+            "bottom": 651.40625,
+            "right": 1042.5
+          },
+          "cellCount": 1,
+          "text": "■ 위치안내 : 인천광역시 서구 청라동 172-14(선교중앙감리교회 뒤편) ■ 운영기간 : 당첨자 서류접수 및 현장계약 체결 기간 ■ 운영시간 : 10:00~17:00(12:00 ~ 13:00 점심시간 제외)"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280/row-2\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280:row-2",
+            "layoutHeight": "27.31"
+          },
+          "rect": {
+            "top": 651.40625,
+            "left": 61.5,
+            "width": 981,
+            "height": 27.296875,
+            "bottom": 678.703125,
+            "right": 1042.5
+          },
+          "cellCount": 1,
+          "text": "분양문의"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280/row-3\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280:row-3",
+            "layoutHeight": "78.91"
+          },
+          "rect": {
+            "top": 678.703125,
+            "left": 61.5,
+            "width": 981,
+            "height": 78.90625,
+            "bottom": 757.609375,
+            "right": 1042.5
+          },
+          "cellCount": 1,
+          "text": "■ LH콜센터 : 1600-1004 (평일 : 09:00 ~ 18:00) ■ 서류접수처 : 032-561-1136 (10:00 ~ 17:00) (점심시간 12:00~13:00, 공휴일 및 휴일 제외)"
+        }
+      ],
+      "text": "서류접수시 방문처 ■ 위치안내 : 인천광역시 서구 청라동 172-14(선교중앙감리교회 뒤편) ■ 운영기간 : 당첨자 서류접수 및 현장계약 체결 기간 ■ 운영시간 : 10:00~17:00(12:00 ~ 13:00 점심시간 제외) 분양문의 ■ LH콜센터 : 1600-1004 (평일 : 09:00 ~ 18:00) ■ 서류접수처 : 032-561-1136 (10:00 ~ 17:00) (점심시간 12:00~13:00, 공휴일 및 휴일 ",
+      "style": {
+        "height": "225.21px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 8,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "layoutHeight": "182"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 742.15625,
+        "left": 60,
+        "width": 1002,
+        "height": 183,
+        "bottom": 925.15625,
+        "right": 1062
+      },
+      "tableRect": {
+        "top": 742.15625,
+        "left": 60,
+        "width": 1002,
+        "height": 183,
+        "bottom": 925.15625,
+        "right": 1062
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-49\",\"xmlPath\":\"body-block-1/row-49\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-49",
+            "layoutHeight": "182"
+          },
+          "rect": {
+            "top": 742.65625,
+            "left": 60.5,
+            "width": 1001,
+            "height": 182,
+            "bottom": 924.65625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "인 천 지 역 본 부"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-49\",\"xmlPath\":\"body-block-1/row-49\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-49",
+            "layoutHeight": "182"
+          },
+          "rect": {
+            "top": 742.65625,
+            "left": 60.5,
+            "width": 1001,
+            "height": 182,
+            "bottom": 924.65625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "인 천 지 역 본 부"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-49\",\"xmlPath\":\"body-block-1/row-49\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-49",
+            "layoutHeight": "182"
+          },
+          "rect": {
+            "top": 742.65625,
+            "left": 60.5,
+            "width": 1001,
+            "height": 182,
+            "bottom": 924.65625,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "인 천 지 역 본 부"
+        }
+      ],
+      "text": "인 천 지 역 본 부",
+      "style": {
+        "height": "182px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-264\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-264\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-264",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 22,
+        "left": 61,
+        "width": 1000,
+        "height": 21.328125,
+        "bottom": 43.328125,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-265\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-265\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-265",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 43.328125,
+        "left": 61,
+        "width": 1000,
+        "height": 13,
+        "bottom": 56.328125,
+        "right": 1061
+      },
+      "text": "■ 택지비 감정평가금액 산출내역",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 66.03125,
+        "left": 69,
+        "width": 372.578125,
+        "height": 14,
+        "bottom": 80.03125,
+        "right": 441.578125
+      },
+      "text": "감정평가금액(산술평균액)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 66.03125,
+        "left": 456.578125,
+        "width": 265.703125,
+        "height": 14,
+        "bottom": 80.03125,
+        "right": 722.28125
+      },
+      "text": "가. 나라감정평가법인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266-row-0-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266-row-0-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 66.03125,
+        "left": 737.28125,
+        "width": 265.71875,
+        "height": 14,
+        "bottom": 80.03125,
+        "right": 1003
+      },
+      "text": "나. 제일감정평가법인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266-row-1-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266-row-1-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 94.4375,
+        "left": 69,
+        "width": 372.578125,
+        "height": 14,
+        "bottom": 108.4375,
+        "right": 441.578125
+      },
+      "text": "71,568,596,153원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266-row-1-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266-row-1-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 94.4375,
+        "left": 456.578125,
+        "width": 265.703125,
+        "height": 14,
+        "bottom": 108.4375,
+        "right": 722.28125
+      },
+      "text": "71,221,737,040원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-266-row-1-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-266-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-266-row-1-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 94.4375,
+        "left": 737.28125,
+        "width": 265.71875,
+        "height": 14,
+        "bottom": 108.4375,
+        "right": 1003
+      },
+      "text": "71,915,455,266원",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-267\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-267\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-267",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 117.140625,
+        "left": 61,
+        "width": 1000,
+        "height": 21.328125,
+        "bottom": 138.46875,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-268-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-268-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-268-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "18",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 143.46875,
+        "left": 77,
+        "width": 0,
+        "height": 21.328125,
+        "bottom": 164.796875,
+        "right": 77
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-268-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-268-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-268-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 146.625,
+        "left": 86.484375,
+        "width": 953.515625,
+        "height": 15,
+        "bottom": 161.625,
+        "right": 1040
+      },
+      "text": "9. 분양주택 택지비 및 건축비 가산비 산출내역",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-269\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-269\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-269",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 168.796875,
+        "left": 61,
+        "width": 1000,
+        "height": 26,
+        "bottom": 194.796875,
+        "right": 1061
+      },
+      "text": "아래의 택지비 및 건축비 가산비는 상한금액 산정을 위한 기준금액으로,「주택공급에 관한 규칙」 제21조제3항, 「주택법」 제57조의 규정에 의거 아래와 같이 공개하며, 상한 금액 이하로 책정된 분양가격 공시내용과는 차",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-270\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-270\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-270",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 194.796875,
+        "left": 61,
+        "width": 1000,
+        "height": 21.328125,
+        "bottom": 216.125,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-271\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-271\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-271",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 216.125,
+        "left": 68,
+        "width": 986,
+        "height": 13,
+        "bottom": 229.125,
+        "right": 1054
+      },
+      "text": "[단위 : 천원]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "11px",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 258.71875,
+        "left": 69,
+        "width": 20.28125,
+        "height": 12,
+        "bottom": 270.71875,
+        "right": 89.28125
+      },
+      "text": "항",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-0-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-0-cell-0-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 270.71875,
+        "left": 69,
+        "width": 20.28125,
+        "height": 12,
+        "bottom": 282.71875,
+        "right": 89.28125
+      },
+      "text": "목",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 234.625,
+        "left": 104.28125,
+        "width": 192.90625,
+        "height": 12,
+        "bottom": 246.625,
+        "right": 297.1875
+      },
+      "text": "택지비 가산비",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-0-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-0-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 234.625,
+        "left": 312.1875,
+        "width": 712.8125,
+        "height": 12,
+        "bottom": 246.625,
+        "right": 1025
+      },
+      "text": "건축비가산비",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 273.71875,
+        "left": 104.28125,
+        "width": 41.265625,
+        "height": 12,
+        "bottom": 285.71875,
+        "right": 145.546875
+      },
+      "text": "계",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 267.71875,
+        "left": 160.546875,
+        "width": 35.546875,
+        "height": 12,
+        "bottom": 279.71875,
+        "right": 196.09375
+      },
+      "text": "기간",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-1-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-1-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 279.71875,
+        "left": 160.546875,
+        "width": 35.546875,
+        "height": 12,
+        "bottom": 291.71875,
+        "right": 196.09375
+      },
+      "text": "이자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 267.71875,
+        "left": 211.09375,
+        "width": 35.546875,
+        "height": 12,
+        "bottom": 279.71875,
+        "right": 246.640625
+      },
+      "text": "흙막이",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-2-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-2-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 279.71875,
+        "left": 211.09375,
+        "width": 35.546875,
+        "height": 12,
+        "bottom": 291.71875,
+        "right": 246.640625
+      },
+      "text": "공사비",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-3-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "20",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 267.71875,
+        "left": 261.640625,
+        "width": 35.546875,
+        "height": 24,
+        "bottom": 291.71875,
+        "right": 297.1875
+      },
+      "text": "기타 비용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-4-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 273.71875,
+        "left": 312.1875,
+        "width": 45.078125,
+        "height": 12,
+        "bottom": 285.71875,
+        "right": 357.265625
+      },
+      "text": "계",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-5-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-5-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 255.71875,
+        "left": 372.265625,
+        "width": 38.40625,
+        "height": 36,
+        "bottom": 291.71875,
+        "right": 410.671875
+      },
+      "text": "사업승 인부가 조건",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-5-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-5-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-5-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 291.71875,
+        "left": 372.265625,
+        "width": 38.40625,
+        "height": 12,
+        "bottom": 303.71875,
+        "right": 410.671875
+      },
+      "text": "가산비",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-6-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-6-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 261.71875,
+        "left": 425.671875,
+        "width": 40.3125,
+        "height": 12,
+        "bottom": 273.71875,
+        "right": 465.984375
+      },
+      "text": "법정초과",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-6-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-6-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-6-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "20",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 273.71875,
+        "left": 425.671875,
+        "width": 40.3125,
+        "height": 24,
+        "bottom": 297.71875,
+        "right": 465.984375
+      },
+      "text": "복리시설 설치비용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-7-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-7-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-7-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "20",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 261.71875,
+        "left": 480.984375,
+        "width": 40.3125,
+        "height": 24,
+        "bottom": 285.71875,
+        "right": 521.296875
+      },
+      "text": "공동주택 성능등급",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-7-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-7-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-7-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 285.71875,
+        "left": 480.984375,
+        "width": 40.3125,
+        "height": 12,
+        "bottom": 297.71875,
+        "right": 521.296875
+      },
+      "text": "가산비",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-8-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-8-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-8-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 252.71875,
+        "left": 536.296875,
+        "width": 198.625,
+        "height": 12,
+        "bottom": 264.71875,
+        "right": 734.921875
+      },
+      "text": "인텔리전트 설치비용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-9-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-9-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-9-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 261.71875,
+        "left": 749.921875,
+        "width": 38.40625,
+        "height": 12,
+        "bottom": 273.71875,
+        "right": 788.328125
+      },
+      "text": "친환경",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-9-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-9-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-9-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "20",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 273.71875,
+        "left": 749.921875,
+        "width": 38.40625,
+        "height": 24,
+        "bottom": 297.71875,
+        "right": 788.328125
+      },
+      "text": "주택건설 추가비용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-10-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-10-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-10-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 252.71875,
+        "left": 803.328125,
+        "width": 166.203125,
+        "height": 12,
+        "bottom": 264.71875,
+        "right": 969.53125
+      },
+      "text": "법령개정에 따른 추가건설 가산비",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-11-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-11-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-11-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 255.71875,
+        "left": 984.53125,
+        "width": 40.46875,
+        "height": 12,
+        "bottom": 267.71875,
+        "right": 1025
+      },
+      "text": "지하",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-11-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-1-cell-11-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-1-cell-11-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 267.71875,
+        "left": 984.53125,
+        "width": 40.46875,
+        "height": 36,
+        "bottom": 303.71875,
+        "right": 1025
+      },
+      "text": "주차장 층고증가 추가비용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 276.8125,
+        "left": 536.296875,
+        "width": 38.40625,
+        "height": 12,
+        "bottom": 288.8125,
+        "right": 574.703125
+      },
+      "text": "홈",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-0-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 288.8125,
+        "left": 536.296875,
+        "width": 38.40625,
+        "height": 12,
+        "bottom": 300.8125,
+        "right": 574.703125
+      },
+      "text": "네트워크",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 270.8125,
+        "left": 589.703125,
+        "width": 38.40625,
+        "height": 12,
+        "bottom": 282.8125,
+        "right": 628.109375
+      },
+      "text": "에어컨",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-1-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-1-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 282.8125,
+        "left": 589.703125,
+        "width": 38.40625,
+        "height": 12,
+        "bottom": 294.8125,
+        "right": 628.109375
+      },
+      "text": "냉매",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-1-block-2\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-1-block-2",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 294.8125,
+        "left": 589.703125,
+        "width": 38.40625,
+        "height": 12,
+        "bottom": 306.8125,
+        "right": 628.109375
+      },
+      "text": "배관",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 276.8125,
+        "left": 643.109375,
+        "width": 38.40625,
+        "height": 12,
+        "bottom": 288.8125,
+        "right": 681.515625
+      },
+      "text": "초고속",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-2-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-2-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 288.8125,
+        "left": 643.109375,
+        "width": 38.40625,
+        "height": 12,
+        "bottom": 300.8125,
+        "right": 681.515625
+      },
+      "text": "통신",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-3-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 270.8125,
+        "left": 696.515625,
+        "width": 38.40625,
+        "height": 12,
+        "bottom": 282.8125,
+        "right": 734.921875
+      },
+      "text": "기계",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-3-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-3-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-3-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 282.8125,
+        "left": 696.515625,
+        "width": 38.40625,
+        "height": 12,
+        "bottom": 294.8125,
+        "right": 734.921875
+      },
+      "text": "환기",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-3-block-2\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-3-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-3-block-2",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 294.8125,
+        "left": 696.515625,
+        "width": 38.40625,
+        "height": 12,
+        "bottom": 306.8125,
+        "right": 734.921875
+      },
+      "text": "설비",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-4-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "20",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 276.8125,
+        "left": 803.328125,
+        "width": 49.859375,
+        "height": 24,
+        "bottom": 300.8125,
+        "right": 853.1875
+      },
+      "text": "전기자동차 충전시설",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-5-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-5-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 270.8125,
+        "left": 868.1875,
+        "width": 43.171875,
+        "height": 12,
+        "bottom": 282.8125,
+        "right": 911.359375
+      },
+      "text": "건강",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-5-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-5-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-5-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "20",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 282.8125,
+        "left": 868.1875,
+        "width": 43.171875,
+        "height": 24,
+        "bottom": 306.8125,
+        "right": 911.359375
+      },
+      "text": "친화형 주택",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-6-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-6-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 276.8125,
+        "left": 926.359375,
+        "width": 43.171875,
+        "height": 12,
+        "bottom": 288.8125,
+        "right": 969.53125
+      },
+      "text": "사전청약",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-6-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-2-cell-6-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-2-cell-6-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "10",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 288.8125,
+        "left": 926.359375,
+        "width": 43.171875,
+        "height": 12,
+        "bottom": 300.8125,
+        "right": 969.53125
+      },
+      "text": "소요비용",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "10px",
+        "lineHeight": "110%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 312.5,
+        "left": 69,
+        "width": 20.28125,
+        "height": 26,
+        "bottom": 338.5,
+        "right": 89.28125
+      },
+      "text": "금 액",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "130%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 104.28125,
+        "width": 41.265625,
+        "height": 11,
+        "bottom": 331,
+        "right": 145.546875
+      },
+      "text": "12,920,467",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 160.546875,
+        "width": 35.546875,
+        "height": 11,
+        "bottom": 331,
+        "right": 196.09375
+      },
+      "text": "4,139,625",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-3-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 211.09375,
+        "width": 35.546875,
+        "height": 11,
+        "bottom": 331,
+        "right": 246.640625
+      },
+      "text": "4,806,790",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-4-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 261.640625,
+        "width": 35.546875,
+        "height": 11,
+        "bottom": 331,
+        "right": 297.1875
+      },
+      "text": "3,974,052",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-5-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-5-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 312.1875,
+        "width": 45.078125,
+        "height": 11,
+        "bottom": 331,
+        "right": 357.265625
+      },
+      "text": "14,763,559",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-6-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-6-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 372.265625,
+        "width": 38.40625,
+        "height": 11,
+        "bottom": 331,
+        "right": 410.671875
+      },
+      "text": "3,742,137",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-7-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-7-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-7-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 425.671875,
+        "width": 40.3125,
+        "height": 11,
+        "bottom": 331,
+        "right": 465.984375
+      },
+      "text": "2,325,405",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-8-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-8-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-8-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 480.984375,
+        "width": 40.3125,
+        "height": 11,
+        "bottom": 331,
+        "right": 521.296875
+      },
+      "text": "882,977",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-9-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-9-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-9-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 536.296875,
+        "width": 38.40625,
+        "height": 11,
+        "bottom": 331,
+        "right": 574.703125
+      },
+      "text": "3,430,229",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-10-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-10-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-10-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 589.703125,
+        "width": 38.40625,
+        "height": 11,
+        "bottom": 331,
+        "right": 628.109375
+      },
+      "text": "745,160",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 63,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-11-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-11-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-11-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 643.109375,
+        "width": 38.40625,
+        "height": 11,
+        "bottom": 331,
+        "right": 681.515625
+      },
+      "text": "445,743",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 64,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-12-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-12-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-12-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 696.515625,
+        "width": 38.40625,
+        "height": 11,
+        "bottom": 331,
+        "right": 734.921875
+      },
+      "text": "679,490",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 65,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-13-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-13-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-13-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 749.921875,
+        "width": 38.40625,
+        "height": 11,
+        "bottom": 331,
+        "right": 788.328125
+      },
+      "text": "1,419,923",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 66,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-14-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-14-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-14-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 803.328125,
+        "width": 49.859375,
+        "height": 11,
+        "bottom": 331,
+        "right": 853.1875
+      },
+      "text": "80,773",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 67,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-15-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-15-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-15-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 868.1875,
+        "width": 43.171875,
+        "height": 11,
+        "bottom": 331,
+        "right": 911.359375
+      },
+      "text": "361,278",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 68,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-16-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-16-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-16-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 926.359375,
+        "width": 43.171875,
+        "height": 11,
+        "bottom": 331,
+        "right": 969.53125
+      },
+      "text": "476,080",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 69,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-17-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-272-row-3-cell-17-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-272-row-3-cell-17-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "9",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 320,
+        "left": 984.53125,
+        "width": 40.46875,
+        "height": 11,
+        "bottom": 331,
+        "right": 1025
+      },
+      "text": "174,364",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "9px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 70,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-273\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-273\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-273",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "11",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 342.6875,
+        "left": 61,
+        "width": 1000,
+        "height": 21.328125,
+        "bottom": 364.015625,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "11px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 71,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-274-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-274-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-274-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "18",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 369.015625,
+        "left": 77,
+        "width": 0,
+        "height": 21.328125,
+        "bottom": 390.34375,
+        "right": 77
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 72,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-274-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-274-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-274-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 372.171875,
+        "left": 86.484375,
+        "width": 953.515625,
+        "height": 15,
+        "bottom": 387.171875,
+        "right": 1040
+      },
+      "text": "10. 사업주체 및 시공업체 현황",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 73,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 401.15625,
+        "left": 64,
+        "width": 87.890625,
+        "height": 14,
+        "bottom": 415.15625,
+        "right": 151.890625
+      },
+      "text": "블록",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 74,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 401.15625,
+        "left": 156.890625,
+        "width": 219.765625,
+        "height": 14,
+        "bottom": 415.15625,
+        "right": 376.65625
+      },
+      "text": "사업주체(사업자등록번호)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 75,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-0-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-0-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 401.15625,
+        "left": 381.65625,
+        "width": 219.765625,
+        "height": 14,
+        "bottom": 415.15625,
+        "right": 601.421875
+      },
+      "text": "시공업체(사업자등록번호)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 76,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-0-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-0-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-0-cell-3-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 401.15625,
+        "left": 606.421875,
+        "width": 219.765625,
+        "height": 14,
+        "bottom": 415.15625,
+        "right": 826.1875
+      },
+      "text": "연대보증인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 77,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-0-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-0-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-0-cell-4-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 401.15625,
+        "left": 831.1875,
+        "width": 208.8125,
+        "height": 14,
+        "bottom": 415.15625,
+        "right": 1040
+      },
+      "text": "감리회사",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 78,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-1-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 430.109375,
+        "left": 64,
+        "width": 87.890625,
+        "height": 14,
+        "bottom": 444.109375,
+        "right": 151.890625
+      },
+      "text": "인천가정2",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 79,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-1-cell-0-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 444.109375,
+        "left": 64,
+        "width": 87.890625,
+        "height": 14,
+        "bottom": 458.109375,
+        "right": 151.890625
+      },
+      "text": "A-2BL",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 80,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-1-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 430.109375,
+        "left": 156.890625,
+        "width": 219.765625,
+        "height": 14,
+        "bottom": 444.109375,
+        "right": 376.65625
+      },
+      "text": "한국토지주택공사 인천지역본부",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "170%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 81,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-1-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-1-cell-1-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 444.109375,
+        "left": 156.890625,
+        "width": 219.765625,
+        "height": 14,
+        "bottom": 458.109375,
+        "right": 376.65625
+      },
+      "text": "(131-82-13727)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "170%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 82,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-2-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-1-cell-2-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 430.109375,
+        "left": 381.65625,
+        "width": 219.765625,
+        "height": 14,
+        "bottom": 444.109375,
+        "right": 601.421875
+      },
+      "text": "㈜서한",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "170%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 83,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-2-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-1-cell-2-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 444.109375,
+        "left": 381.65625,
+        "width": 219.765625,
+        "height": 14,
+        "bottom": 458.109375,
+        "right": 601.421875
+      },
+      "text": "(502-81-16195)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "170%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 84,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-3-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-1-cell-3-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 437.109375,
+        "left": 606.421875,
+        "width": 219.765625,
+        "height": 14,
+        "bottom": 451.109375,
+        "right": 826.1875
+      },
+      "text": "(공사이행보증서로 대체)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "170%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 85,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-4-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-1-cell-4-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 430.109375,
+        "left": 831.1875,
+        "width": 208.8125,
+        "height": 14,
+        "bottom": 444.109375,
+        "right": 1040
+      },
+      "text": "신성종합건축사사무소(주)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "170%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 86,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-4-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-275-row-1-cell-4-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-275-row-1-cell-4-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 444.109375,
+        "left": 831.1875,
+        "width": 208.8125,
+        "height": 14,
+        "bottom": 458.109375,
+        "right": 1040
+      },
+      "text": "(301-81-31079)외 4개사",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "170%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 87,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-276\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-276\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-276",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "3",
+        "empty": "true",
+        "hwpxSpacer": "true"
+      },
+      "rect": {
+        "top": 469.265625,
+        "left": 61,
+        "width": 1000,
+        "height": 3,
+        "bottom": 472.265625,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "3px",
+        "minHeight": "3px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 88,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-277\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-277\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-277",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "16",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 472.265625,
+        "left": 61,
+        "width": 1000,
+        "height": 21.328125,
+        "bottom": 493.59375,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 89,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-278-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-278-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-278-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "18",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 498.59375,
+        "left": 77,
+        "width": 0,
+        "height": 21.328125,
+        "bottom": 519.921875,
+        "right": 77
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 90,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-278-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-278-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-278-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 501.75,
+        "left": 86.484375,
+        "width": 953.515625,
+        "height": 15,
+        "bottom": 516.75,
+        "right": 1040
+      },
+      "text": "11. 현장접수처 안내",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 91,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-279\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-279\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-279",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "6",
+        "empty": "true",
+        "hwpxSpacer": "true"
+      },
+      "rect": {
+        "top": 523.921875,
+        "left": 61,
+        "width": 1000,
+        "height": 6,
+        "bottom": 529.921875,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "6px",
+        "minHeight": "6px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 92,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 540.453125,
+        "left": 64,
+        "width": 976,
+        "height": 15,
+        "bottom": 555.453125,
+        "right": 1040
+      },
+      "text": "서류접수시 방문처",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 93,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280-row-1-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280-row-1-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 586.453125,
+        "left": 68,
+        "width": 968,
+        "height": 14,
+        "bottom": 600.453125,
+        "right": 1036
+      },
+      "text": "■ 위치안내 : 인천광역시 서구 청라동 172-14(선교중앙감리교회 뒤편)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 94,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280-row-1-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280-row-1-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280-row-1-cell-0-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 600.453125,
+        "left": 68,
+        "width": 968,
+        "height": 14,
+        "bottom": 614.453125,
+        "right": 1036
+      },
+      "text": "■ 운영기간 : 당첨자 서류접수 및 현장계약 체결 기간",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 95,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280-row-1-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280-row-1-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280-row-1-cell-0-block-2",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 614.453125,
+        "left": 68,
+        "width": 968,
+        "height": 14,
+        "bottom": 628.453125,
+        "right": 1036
+      },
+      "text": "■ 운영시간 : 10:00~17:00(12:00 ~ 13:00 점심시간 제외)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 96,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280-row-2-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280-row-2-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 657.546875,
+        "left": 64,
+        "width": 976,
+        "height": 15,
+        "bottom": 672.546875,
+        "right": 1040
+      },
+      "text": "분양문의",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 97,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280-row-3-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280-row-3-cell-0-block-0",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 697.15625,
+        "left": 68,
+        "width": 968,
+        "height": 14,
+        "bottom": 711.15625,
+        "right": 1036
+      },
+      "text": "■ LH콜센터 : 1600-1004 (평일 : 09:00 ~ 18:00)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "170%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 98,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280-row-3-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280-row-3-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280-row-3-cell-0-block-1",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 711.15625,
+        "left": 68,
+        "width": 968,
+        "height": 14,
+        "bottom": 725.15625,
+        "right": 1036
+      },
+      "text": "■ 서류접수처 : 032-561-1136 (10:00 ~ 17:00)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "170%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 99,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-280-row-3-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-280-row-3-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-280-row-3-cell-0-block-2",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 725.15625,
+        "left": 68,
+        "width": 968,
+        "height": 14,
+        "bottom": 739.15625,
+        "right": 1036
+      },
+      "text": "(점심시간 12:00~13:00, 공휴일 및 휴일 제외)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "170%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 100,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-281\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-281\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-281",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "16",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 759.109375,
+        "left": 61,
+        "width": 1000,
+        "height": 21.328125,
+        "bottom": 780.4375,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 101,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-282\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-282\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-282",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "16",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 780.4375,
+        "left": 61,
+        "width": 1000,
+        "height": 21.328125,
+        "bottom": 801.765625,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 102,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-48-cell-0-block-283\",\"xmlPath\":\"body-block-1-row-48-cell-0-block-283\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-48-cell-0-block-283",
+        "layoutSource": "columnBreak:0:fragment-flow",
+        "layoutHeight": "25",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 801.765625,
+        "left": 61,
+        "width": 1000,
+        "height": 29,
+        "bottom": 830.765625,
+        "right": 1061
+      },
+      "text": "2026.3.27.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "25px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 103,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-49-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-49-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-49-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "91",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 884.5,
+        "left": 68,
+        "width": 986,
+        "height": 94,
+        "bottom": 978.5,
+        "right": 1054
+      },
+      "text": "인 천 지 역 본 부",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "91px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 104,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-2\",\"xmlPath\":\"body-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-2",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 934.15625,
+        "left": 60,
+        "width": 1006,
+        "height": 21.328125,
+        "bottom": 955.484375,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 105,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"header-block-1\",\"xmlPath\":\"header-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:header-block-1",
+        "layoutSource": "hwpx-header-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 91,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 93,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 72px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 106,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"footer-block-0\",\"xmlPath\":\"footer-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:footer-block-0",
+        "layoutSource": "hwpx-footer-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 1564,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 1566,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1545px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 107,
+      "dataset": {
+        "layoutSource": "hwpx-footer-page-number",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "layoutHeight": "18"
+      },
+      "rect": {
+        "top": 1540,
+        "left": 60,
+        "width": 1006,
+        "height": 19,
+        "bottom": 1559,
+        "right": 1066
+      },
+      "text": "- 18 -",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1521px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "18px",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 108
+}

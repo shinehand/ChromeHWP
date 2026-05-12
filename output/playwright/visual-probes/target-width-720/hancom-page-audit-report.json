@@ -1,0 +1,1657 @@
+{
+  "generatedAt": "2026-05-07T04:47:52.913Z",
+  "sourceManifest": "output/playwright/visual-probes/target-width-720/hancom-page-audit-manifest.json",
+  "verdictPolicy": {
+    "passVerdicts": [
+      "close"
+    ],
+    "advisoryVerdicts": [
+      "layout-review",
+      "review"
+    ],
+    "strictFailureVerdicts": [
+      "capture-error",
+      "capture-review",
+      "mismatch"
+    ],
+    "thresholds": {
+      "rawCloseMax": 18.0,
+      "rawReviewMax": 32.0,
+      "layoutReviewBlurMax": 32.0,
+      "layoutReviewProjectionMax": 30.0
+    },
+    "note": "review/layout-review are advisory states. They may keep automation exit status green, but they are not clean visual-fidelity passes and must be reported with raw/blur/layout metrics."
+  },
+  "documentCount": 5,
+  "totalPages": 36,
+  "severityCounts": {
+    "pass": 14,
+    "advisory": 22,
+    "strict-failure": 0,
+    "unknown": 0
+  },
+  "results": [
+    {
+      "id": "goyeopje",
+      "filename": "goyeopje.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje.hwp",
+      "pageCount": 2,
+      "verdictCounts": {
+        "review": 1,
+        "close": 1
+      },
+      "severityCounts": {
+        "advisory": 1,
+        "pass": 1
+      },
+      "advisoryPages": [
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 22.78118922757566,
+          "blurDiff": 21.758636512618814,
+          "layoutDiff": 32.1087098886706,
+          "compare": "output/playwright/visual-probes/target-width-720/goyeopje/compare/page-001-compare.png"
+        }
+      ],
+      "strictFailurePages": [],
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje/chrome-page-001.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje/compare/page-001-compare.png",
+          "diff": 22.78118922757566,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 22.78118922757566,
+            "blurDiff": 21.758636512618814,
+            "projectionDiff": {
+              "row": 32.11580440951758,
+              "column": 32.10161536782362,
+              "combined": 32.1087098886706
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4128113879003559,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.0015462947192914633,
+            "expectedGap": 0.0011886120996440486,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            281,
+            397
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 1,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje/hancom-page-002.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje/chrome-page-002.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje/hancom-crop-page-002.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje/compare/page-002-compare.png",
+          "diff": 14.66129120279415,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 14.66129120279415,
+            "blurDiff": 14.18648493778651,
+            "projectionDiff": {
+              "row": 20.53372626064173,
+              "column": 20.60248853962018,
+              "combined": 20.568107400130955
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.416370106761566,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.0020124241419186006,
+            "expectedGap": 0.0023701067615660154,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            281,
+            398
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        }
+      ]
+    },
+    {
+      "id": "goyeopje-full-2024",
+      "filename": "goyeopje-full-2024.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje-full-2024.hwp",
+      "pageCount": 11,
+      "verdictCounts": {
+        "close": 4,
+        "review": 7
+      },
+      "severityCounts": {
+        "pass": 4,
+        "advisory": 7
+      },
+      "advisoryPages": [
+        {
+          "page": 2,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 20.514766370516618,
+          "blurDiff": 19.003494844795437,
+          "layoutDiff": 28.976002629848786,
+          "compare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-002-compare.png"
+        },
+        {
+          "page": 6,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 24.86836267412526,
+          "blurDiff": 23.451717944499286,
+          "layoutDiff": 40.609796186719265,
+          "compare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-006-compare.png"
+        },
+        {
+          "page": 7,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 19.956204888451442,
+          "blurDiff": 19.12964102143482,
+          "layoutDiff": 31.59120734908136,
+          "compare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-007-compare.png"
+        },
+        {
+          "page": 8,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 23.677641076115485,
+          "blurDiff": 22.677556321084865,
+          "layoutDiff": 37.17355643044618,
+          "compare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-008-compare.png"
+        },
+        {
+          "page": 9,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 23.40416392453658,
+          "blurDiff": 22.258263409016124,
+          "layoutDiff": 36.59105851413546,
+          "compare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-009-compare.png"
+        },
+        {
+          "page": 10,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 22.106309641329386,
+          "blurDiff": 20.69946939782823,
+          "layoutDiff": 20.541858426473848,
+          "compare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-010-compare.png"
+        },
+        {
+          "page": 11,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 27.011595034995626,
+          "blurDiff": 25.371966590113736,
+          "layoutDiff": 42.25667104111989,
+          "compare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-011-compare.png"
+        }
+      ],
+      "strictFailurePages": [],
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-001.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-001-compare.png",
+          "diff": 17.867873203904793,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 17.867873203904793,
+            "blurDiff": 16.336356531753868,
+            "projectionDiff": {
+              "row": 24.507999123383758,
+              "column": 23.033092263861505,
+              "combined": 23.77054569362263
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4071428571428573,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.007214825476790088,
+            "expectedGap": 0.006857142857142673,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            280,
+            394
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 1,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-002.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-002.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/hancom-crop-page-002.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-002-compare.png",
+          "diff": 20.514766370516618,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 20.514766370516618,
+            "blurDiff": 19.003494844795437,
+            "projectionDiff": {
+              "row": 29.601687486302907,
+              "column": 28.35031777339466,
+              "combined": 28.976002629848786
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4071428571428573,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.007214825476790088,
+            "expectedGap": 0.006857142857142673,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            280,
+            394
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 2,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-003.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-003.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/hancom-crop-page-003.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-003-compare.png",
+          "diff": 8.314521817585302,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 8.314521817585302,
+            "blurDiff": 7.580722331583552,
+            "projectionDiff": {
+              "row": 13.498468941382335,
+              "column": 12.898075240594913,
+              "combined": 13.198272090988624
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4107142857142858,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.003643396905361529,
+            "expectedGap": 0.003285714285714114,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            280,
+            395
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 3,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-004.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-004.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/hancom-crop-page-004.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-004-compare.png",
+          "diff": 16.607605297795327,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 16.607605297795327,
+            "blurDiff": 16.183582867171218,
+            "projectionDiff": {
+              "row": 26.414091606399342,
+              "column": 26.414091606399303,
+              "combined": 26.414091606399325
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4071428571428573,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.007214825476790088,
+            "expectedGap": 0.006857142857142673,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            280,
+            394
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 4,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-005.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-005.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/hancom-crop-page-005.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-005-compare.png",
+          "diff": 16.739756773061313,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 16.739756773061313,
+            "blurDiff": 15.89464461994077,
+            "projectionDiff": {
+              "row": 29.01216305062451,
+              "column": 29.01216305062458,
+              "combined": 29.012163050624544
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4071428571428573,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.007214825476790088,
+            "expectedGap": 0.006857142857142673,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            280,
+            394
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 5,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-006.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-006.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/hancom-crop-page-006.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-006-compare.png",
+          "diff": 24.86836267412526,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 24.86836267412526,
+            "blurDiff": 23.451717944499286,
+            "projectionDiff": {
+              "row": 40.609796186719244,
+              "column": 40.609796186719294,
+              "combined": 40.609796186719265
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4071428571428573,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.007214825476790088,
+            "expectedGap": 0.006857142857142673,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            280,
+            394
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 6,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-007.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-007.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/hancom-crop-page-007.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-007-compare.png",
+          "diff": 19.956204888451442,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 19.956204888451442,
+            "blurDiff": 19.12964102143482,
+            "projectionDiff": {
+              "row": 31.592847769028843,
+              "column": 31.589566929133873,
+              "combined": 31.59120734908136
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4107142857142858,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.003643396905361529,
+            "expectedGap": 0.003285714285714114,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            280,
+            395
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 7,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-008.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-008.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/hancom-crop-page-008.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-008-compare.png",
+          "diff": 23.677641076115485,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 23.677641076115485,
+            "blurDiff": 22.677556321084865,
+            "projectionDiff": {
+              "row": 37.17355643044616,
+              "column": 37.17355643044621,
+              "combined": 37.17355643044618
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4107142857142858,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.003643396905361529,
+            "expectedGap": 0.003285714285714114,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            280,
+            395
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 8,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-009.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-009.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/hancom-crop-page-009.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-009-compare.png",
+          "diff": 23.40416392453658,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 23.40416392453658,
+            "blurDiff": 22.258263409016124,
+            "projectionDiff": {
+              "row": 36.58393600701296,
+              "column": 36.598181021257965,
+              "combined": 36.59105851413546
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4071428571428573,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.007214825476790088,
+            "expectedGap": 0.006857142857142673,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            280,
+            394
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 9,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-010.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-010.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/hancom-crop-page-010.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-010-compare.png",
+          "diff": 22.106309641329386,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 22.106309641329386,
+            "blurDiff": 20.69946939782823,
+            "projectionDiff": {
+              "row": 21.952114836730264,
+              "column": 19.131602016217432,
+              "combined": 20.541858426473848
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4071428571428573,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.007214825476790088,
+            "expectedGap": 0.006857142857142673,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            280,
+            394
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 10,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje-full-2024/hancom-page-011.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/goyeopje-full-2024/chrome-page-011.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/hancom-crop-page-011.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/goyeopje-full-2024/compare/page-011-compare.png",
+          "diff": 27.011595034995626,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 27.011595034995626,
+            "blurDiff": 25.371966590113736,
+            "projectionDiff": {
+              "row": 42.735673665791815,
+              "column": 41.77766841644796,
+              "combined": 42.25667104111989
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4107142857142858,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.003643396905361529,
+            "expectedGap": 0.003285714285714114,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            280,
+            395
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        }
+      ]
+    },
+    {
+      "id": "gyeolseokgye",
+      "filename": "gyeolseokgye.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/gyeolseokgye.hwp",
+      "pageCount": 1,
+      "verdictCounts": {
+        "review": 1
+      },
+      "severityCounts": {
+        "advisory": 1
+      },
+      "advisoryPages": [
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 18.563439582650496,
+          "blurDiff": 17.95753987763575,
+          "layoutDiff": 23.96037982973153,
+          "compare": "output/playwright/visual-probes/target-width-720/gyeolseokgye/compare/page-001-compare.png"
+        }
+      ],
+      "strictFailurePages": [],
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/gyeolseokgye/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/gyeolseokgye/chrome-page-001.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/gyeolseokgye/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/gyeolseokgye/compare/page-001-compare.png",
+          "diff": 18.563439582650496,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 18.563439582650496,
+            "blurDiff": 17.95753987763575,
+            "projectionDiff": {
+              "row": 24.724950884086493,
+              "column": 23.195808775376566,
+              "combined": 23.96037982973153
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4128113879003559,
+            "chromeRatio": 1.4143576826196473,
+            "ratioGap": 0.0015462947192914633,
+            "expectedGap": 0.0011886120996440486,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            281,
+            397
+          ],
+          "chromeSize": [
+            794,
+            1123
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        }
+      ]
+    },
+    {
+      "id": "attachment-sale-notice",
+      "filename": "attachment-sale-notice.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp",
+      "pageCount": 4,
+      "verdictCounts": {
+        "layout-review": 1,
+        "review": 3
+      },
+      "severityCounts": {
+        "advisory": 4
+      },
+      "advisoryPages": [
+        {
+          "page": 1,
+          "verdict": "layout-review",
+          "severity": "advisory",
+          "rawDiff": 32.395168250846716,
+          "blurDiff": 27.10729678793838,
+          "layoutDiff": 29.843066491688536,
+          "compare": "output/playwright/visual-probes/target-width-720/attachment-sale-notice/compare/page-001-compare.png"
+        },
+        {
+          "page": 2,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 24.75945800132802,
+          "blurDiff": 21.57990814519699,
+          "layoutDiff": 26.130478087649422,
+          "compare": "output/playwright/visual-probes/target-width-720/attachment-sale-notice/compare/page-002-compare.png"
+        },
+        {
+          "page": 3,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 22.79008757525999,
+          "blurDiff": 20.54421729611385,
+          "layoutDiff": 23.34922200306817,
+          "compare": "output/playwright/visual-probes/target-width-720/attachment-sale-notice/compare/page-003-compare.png"
+        },
+        {
+          "page": 4,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 25.264683125546807,
+          "blurDiff": 21.24693514873141,
+          "layoutDiff": 24.784011373578323,
+          "compare": "output/playwright/visual-probes/target-width-720/attachment-sale-notice/compare/page-004-compare.png"
+        }
+      ],
+      "strictFailurePages": [],
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/chrome-page-001.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/attachment-sale-notice/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/attachment-sale-notice/compare/page-001-compare.png",
+          "diff": 32.395168250846716,
+          "verdict": "layout-review",
+          "visualMetrics": {
+            "rawDiff": 32.395168250846716,
+            "blurDiff": 27.10729678793838,
+            "projectionDiff": {
+              "row": 39.663167104111984,
+              "column": 20.022965879265087,
+              "combined": 29.843066491688536
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4122340425531914,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.00031233436813793425,
+            "expectedGap": 0.0017659574468085193,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            376,
+            531
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff is above the review band, but blur/layout metrics are within the relaxed layout-review band; this is not a clean pass."
+        },
+        {
+          "pageIndex": 1,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-002.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/chrome-page-002.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/attachment-sale-notice/hancom-crop-page-002.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/attachment-sale-notice/compare/page-002-compare.png",
+          "diff": 24.75945800132802,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 24.75945800132802,
+            "blurDiff": 21.57990814519699,
+            "projectionDiff": {
+              "row": 30.575475874280688,
+              "column": 21.685480301018153,
+              "combined": 26.130478087649422
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.393939393939394,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.017982314245659436,
+            "expectedGap": 0.02006060606060589,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            552
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 2,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-003.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/chrome-page-003.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/attachment-sale-notice/hancom-crop-page-003.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/attachment-sale-notice/compare/page-003-compare.png",
+          "diff": 22.79008757525999,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 22.79008757525999,
+            "blurDiff": 20.54421729611385,
+            "projectionDiff": {
+              "row": 33.85765943458252,
+              "column": 12.84078457155382,
+              "combined": 23.34922200306817
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 3,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-004.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/attachment-sale-notice/chrome-page-004.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/attachment-sale-notice/hancom-crop-page-004.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/attachment-sale-notice/compare/page-004-compare.png",
+          "diff": 25.264683125546807,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 25.264683125546807,
+            "blurDiff": 21.24693514873141,
+            "projectionDiff": {
+              "row": 31.007764654418242,
+              "column": 18.560258092738405,
+              "combined": 24.784011373578323
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4116161616161615,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.00030554656889192344,
+            "expectedGap": 0.002383838383838377,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            559
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        }
+      ]
+    },
+    {
+      "id": "incheon-2a",
+      "filename": "incheon-2a.hwpx",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 18,
+      "verdictCounts": {
+        "review": 9,
+        "close": 9
+      },
+      "severityCounts": {
+        "advisory": 9,
+        "pass": 9
+      },
+      "advisoryPages": [
+        {
+          "page": 1,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 24.130432402846196,
+          "blurDiff": 23.70846880131363,
+          "layoutDiff": 51.63982029366642,
+          "compare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-001-compare.png"
+        },
+        {
+          "page": 2,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 21.60918225065617,
+          "blurDiff": 20.554891185476816,
+          "layoutDiff": 44.5805993000875,
+          "compare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-002-compare.png"
+        },
+        {
+          "page": 3,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 26.44404761904762,
+          "blurDiff": 25.110518609742748,
+          "layoutDiff": 45.21696252465484,
+          "compare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-003-compare.png"
+        },
+        {
+          "page": 4,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 24.36527230432403,
+          "blurDiff": 22.685688286808976,
+          "layoutDiff": 35.85853605084374,
+          "compare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-004-compare.png"
+        },
+        {
+          "page": 5,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 24.77847427476738,
+          "blurDiff": 22.070280514504653,
+          "layoutDiff": 42.52191540653078,
+          "compare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-005-compare.png"
+        },
+        {
+          "page": 11,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 18.978123616644535,
+          "blurDiff": 18.81301045816733,
+          "layoutDiff": 43.66312527667108,
+          "compare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-011-compare.png"
+        },
+        {
+          "page": 15,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 19.130525451559933,
+          "blurDiff": 17.794652435686917,
+          "layoutDiff": 42.690116151654635,
+          "compare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-015-compare.png"
+        },
+        {
+          "page": 16,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 29.857015599343185,
+          "blurDiff": 28.625140941434044,
+          "layoutDiff": 43.28621520929208,
+          "compare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-016-compare.png"
+        },
+        {
+          "page": 17,
+          "verdict": "review",
+          "severity": "advisory",
+          "rawDiff": 27.212349480021892,
+          "blurDiff": 24.352732621784345,
+          "layoutDiff": 34.55456936226166,
+          "compare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-017-compare.png"
+        }
+      ],
+      "strictFailurePages": [],
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-001.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-001-compare.png",
+          "diff": 24.130432402846196,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 24.130432402846196,
+            "blurDiff": 23.70846880131363,
+            "projectionDiff": {
+              "row": 51.766929651545,
+              "column": 51.512710935787844,
+              "combined": 51.63982029366642
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 1,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-002.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-002.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-002.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-002-compare.png",
+          "diff": 21.60918225065617,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 21.60918225065617,
+            "blurDiff": 20.554891185476816,
+            "projectionDiff": {
+              "row": 44.83541119860015,
+              "column": 44.32578740157484,
+              "combined": 44.5805993000875
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4116161616161615,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.00030554656889192344,
+            "expectedGap": 0.002383838383838377,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            559
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 2,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-003.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-003.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-003.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-003-compare.png",
+          "diff": 26.44404761904762,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 26.44404761904762,
+            "blurDiff": 25.110518609742748,
+            "projectionDiff": {
+              "row": 46.409708525093144,
+              "column": 44.024216524216534,
+              "combined": 45.21696252465484
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 3,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-004.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-004.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-004.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-004-compare.png",
+          "diff": 24.36527230432403,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 24.36527230432403,
+            "blurDiff": 22.685688286808976,
+            "projectionDiff": {
+              "row": 40.14683322375631,
+              "column": 31.57023887793117,
+              "combined": 35.85853605084374
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 4,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-005.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-005.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-005.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-005-compare.png",
+          "diff": 24.77847427476738,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 24.77847427476738,
+            "blurDiff": 22.070280514504653,
+            "projectionDiff": {
+              "row": 45.45803199649352,
+              "column": 39.585798816568044,
+              "combined": 42.52191540653078
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 5,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-006.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-006.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-006.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-006-compare.png",
+          "diff": 15.411503831417624,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 15.411503831417624,
+            "blurDiff": 15.226085112205801,
+            "projectionDiff": {
+              "row": 36.85459127766822,
+              "column": 36.363686171378504,
+              "combined": 36.60913872452336
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 6,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-007.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-007.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-007.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-007-compare.png",
+          "diff": 16.18302271483306,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 16.18302271483306,
+            "blurDiff": 15.432914614121511,
+            "projectionDiff": {
+              "row": 35.279421433267615,
+              "column": 32.08525093140479,
+              "combined": 33.6823361823362
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 7,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-008.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-008.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-008.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-008-compare.png",
+          "diff": 17.487023299263655,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 17.487023299263655,
+            "blurDiff": 16.423804813715794,
+            "projectionDiff": {
+              "row": 35.38063806380637,
+              "column": 32.4048404840484,
+              "combined": 33.89273927392739
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.404040404040404,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.007881304144649492,
+            "expectedGap": 0.009959595959595946,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            556
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 8,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-009.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-009.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-009.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-009-compare.png",
+          "diff": 17.78608082810263,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 17.78608082810263,
+            "blurDiff": 17.452914051315933,
+            "projectionDiff": {
+              "row": 38.25577557755781,
+              "column": 38.111661166116626,
+              "combined": 38.183718371837216
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4015151515151516,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.010406556669901867,
+            "expectedGap": 0.012484848484848321,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            555
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 9,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-010.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-010.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-010.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-010-compare.png",
+          "diff": 16.357378385848534,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 16.357378385848534,
+            "blurDiff": 16.041334991708126,
+            "projectionDiff": {
+              "row": 41.561740667108495,
+              "column": 39.56372873867907,
+              "combined": 40.56273470289378
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.3964646464646464,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.015457061720407062,
+            "expectedGap": 0.017535353535353515,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            553
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 10,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-011.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-011.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-011.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-011-compare.png",
+          "diff": 18.978123616644535,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 18.978123616644535,
+            "blurDiff": 18.81301045816733,
+            "projectionDiff": {
+              "row": 43.9447764497565,
+              "column": 43.38147410358567,
+              "combined": 43.66312527667108
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.393939393939394,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.017982314245659436,
+            "expectedGap": 0.02006060606060589,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            552
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 11,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-012.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-012.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-012.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-012-compare.png",
+          "diff": 17.796873289545704,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 17.796873289545704,
+            "blurDiff": 16.56824712643678,
+            "projectionDiff": {
+              "row": 40.81525312294541,
+              "column": 39.051062897216724,
+              "combined": 39.933158010081065
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 12,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-013.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-013.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-013.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-013-compare.png",
+          "diff": 17.233641215106733,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 17.233641215106733,
+            "blurDiff": 16.28892857142857,
+            "projectionDiff": {
+              "row": 45.42680254218715,
+              "column": 45.02903791365333,
+              "combined": 45.22792022792024
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 13,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-014.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-014.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-014.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-014-compare.png",
+          "diff": 17.625680076628353,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 17.625680076628353,
+            "blurDiff": 16.29556239737274,
+            "projectionDiff": {
+              "row": 44.61209730440496,
+              "column": 44.0839360070129,
+              "combined": 44.34801665570893
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        },
+        {
+          "pageIndex": 14,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-015.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-015.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-015.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-015-compare.png",
+          "diff": 19.130525451559933,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 19.130525451559933,
+            "blurDiff": 17.794652435686917,
+            "projectionDiff": {
+              "row": 43.481810212579525,
+              "column": 41.898422090729746,
+              "combined": 42.690116151654635
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 15,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-016.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-016.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-016.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-016-compare.png",
+          "diff": 29.857015599343185,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 29.857015599343185,
+            "blurDiff": 28.625140941434044,
+            "projectionDiff": {
+              "row": 44.37102783256624,
+              "column": 42.20140258601793,
+              "combined": 43.28621520929208
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 16,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-017.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-017.png",
+          "scrollRatio": null,
+          "targetBand": "first",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-017.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-017-compare.png",
+          "diff": 27.212349480021892,
+          "verdict": "review",
+          "visualMetrics": {
+            "rawDiff": 27.212349480021892,
+            "blurDiff": 24.352732621784345,
+            "projectionDiff": {
+              "row": 36.88143765066844,
+              "column": 32.227701073854874,
+              "combined": 34.55456936226166
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4090909090909092,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.0028307990941442984,
+            "expectedGap": 0.004909090909090752,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            558
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "advisory",
+          "verdictNote": "advisory: raw pixel diff requires human visual review; this is not a clean pass."
+        },
+        {
+          "pageIndex": 17,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-018.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/extension-visual-current/incheon-2a/chrome-page-018.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/target-width-720/incheon-2a/hancom-crop-page-018.png",
+          "pageCompare": "output/playwright/visual-probes/target-width-720/incheon-2a/compare/page-018-compare.png",
+          "diff": 15.699465496500437,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 15.699465496500437,
+            "blurDiff": 14.92021407480315,
+            "projectionDiff": {
+              "row": 24.789479440070007,
+              "column": 22.950021872265943,
+              "combined": 23.869750656167973
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4116161616161615,
+            "chromeRatio": 1.4119217081850535,
+            "ratioGap": 0.00030554656889192344,
+            "expectedGap": 0.002383838383838377,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            559
+          ],
+          "chromeSize": [
+            1124,
+            1587
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        }
+      ]
+    }
+  ]
+}

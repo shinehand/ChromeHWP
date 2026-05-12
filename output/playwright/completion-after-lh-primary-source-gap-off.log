@@ -1,0 +1,16 @@
+
+> chrome-hwp-editor-extension@0.1.0 verify:completion
+> node scripts/check_editor_completion.mjs
+
+OK extension verification report is green - 2026-05-07T11:00:16.879Z
+OK goyeopje structural render - format=HWP, pages=2, overflow=0, overlaps=0, missingImages=0
+OK goyeopje-full-2024 structural render - format=HWP, pages=11, overflow=0, overlaps=0, missingImages=0
+OK gyeolseokgye structural render - format=HWP, pages=1, overflow=0, overlaps=0, missingImages=0
+OK attachment-sale-notice structural render - format=HWP, pages=4, overflow=0, overlaps=0, missingImages=0
+OK incheon-2a structural render - format=HWPX, pages=18, overflow=0, overlaps=0, missingImages=0
+OK HWPX edit/export/reopen roundtrip - pages=18->18, images=24->24, paraStyles=101/101, hyperlinks=1
+OK strict visual run has no strict failures - 2026-05-07T16:41:47.404Z
+FAIL Hancom visual fidelity clean pass - advisory pages remain (goyeopje.hwp: 1, goyeopje-full-2024.hwp: 7, gyeolseokgye.hwp: 1, attachment-sale-notice.hwp: 4, incheon-2a.hwpx: 9)
+
+Completion gate failed
+- visual advisory pages remain; editor is not complete for Hancom-level fidelity

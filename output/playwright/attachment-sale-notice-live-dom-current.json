@@ -1,0 +1,2785 @@
+{
+  "filename": "attachment-sale-notice.hwp",
+  "pages": [
+    {
+      "idx": 0,
+      "pageDataset": {
+        "pageIndex": "0",
+        "sourceFormat": "hwp",
+        "documentLayout": "lh-sale-notice"
+      },
+      "children": [
+        {
+          "i": 0,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "layout": "lh-sale-notice-primary",
+            "layoutPosition": "absolute",
+            "layoutSource": "hwp-table-line-seg-inferred",
+            "layoutHeight": "1034"
+          },
+          "rect": {
+            "left": 30,
+            "top": 103,
+            "width": 1065,
+            "height": 1034,
+            "bottom": 1137,
+            "right": 1095
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "hidden",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "103px",
+            "left": "30px",
+            "width": "1065px",
+            "height": "1034px",
+            "minHeight": "1034px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "21.0667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "after": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보"
+        },
+        {
+          "i": 1,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "layoutPosition": "absolute",
+            "layoutSource": "hwp-flow-after-positioned",
+            "layoutHeight": "38"
+          },
+          "rect": {
+            "left": 30,
+            "top": 1185,
+            "width": 1065,
+            "height": 39,
+            "bottom": 1224,
+            "right": 1095
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "hidden",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "1185px",
+            "left": "30px",
+            "width": "1065px",
+            "height": "39px",
+            "minHeight": "38px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "21.0667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "after": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "Ⅰ 공급내역 및 공급금액"
+        },
+        {
+          "i": 2,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "contentKind": "lh-sale-notice-supply-summary",
+            "layoutPosition": "absolute",
+            "layoutSource": "hwp-flow-after-positioned",
+            "layoutHeight": "332"
+          },
+          "rect": {
+            "left": 30,
+            "top": 1248,
+            "width": 1065,
+            "height": 339,
+            "bottom": 1587,
+            "right": 1095
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "hidden",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, -24)",
+            "top": "1272px",
+            "left": "30px",
+            "width": "1065px",
+            "height": "339px",
+            "minHeight": "332px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "21.0667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "after": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "지역 단지코드 주 소 사용승인연도 건설호수 금회공급호수 대구 남구 D00638 대구 남구 대명동 554-4 102동 (안지랑로2길10) 2013 8 4 D00639 대구 남구 대명동 554-4 103동 (안지랑로2길10) 2013 8 5 달서구 D00658 대구 달서구 상인동 438-9 (월곡로35길74-15) 2013 "
+        }
+      ],
+      "interesting": [
+        {
+          "i": 0,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "layout": "lh-sale-notice-primary",
+            "layoutPosition": "absolute",
+            "layoutSource": "hwp-table-line-seg-inferred",
+            "layoutHeight": "1034"
+          },
+          "rect": {
+            "left": 30,
+            "top": 103,
+            "width": 1065,
+            "height": 1034,
+            "bottom": 1137,
+            "right": 1095
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "hidden",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "103px",
+            "left": "30px",
+            "width": "1065px",
+            "height": "1034px",
+            "minHeight": "1034px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "21.0667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보"
+        },
+        {
+          "i": 1,
+          "tag": "TABLE",
+          "cls": "hwp-table",
+          "dataset": {
+            "nestingLevel": "0",
+            "sourceFormat": "hwp",
+            "layout": "lh-sale-notice-primary",
+            "repeatHeaderRows": "1"
+          },
+          "rect": {
+            "left": 30,
+            "top": 103,
+            "width": 1065,
+            "height": 1034,
+            "bottom": 1137,
+            "right": 1095
+          },
+          "style": {
+            "position": "static",
+            "display": "table",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "1065px",
+            "height": "1034px",
+            "minHeight": "0px",
+            "border": "1px solid rgb(0, 0, 0)",
+            "background": "rgb(255, 255, 255)",
+            "fontSize": "13.3333px",
+            "lineHeight": "17.6px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보"
+        },
+        {
+          "i": 2,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "43",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 31,
+            "top": 155,
+            "width": 1063,
+            "height": 43,
+            "bottom": 198,
+            "right": 1094
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "34px",
+            "left": "0px",
+            "width": "1063px",
+            "height": "43px",
+            "minHeight": "43px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "25.3333px",
+            "lineHeight": "20.2667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고"
+        },
+        {
+          "i": 3,
+          "tag": "FIGURE",
+          "cls": "hwp-image hwp-image-inline",
+          "dataset": {
+            "inline": "true"
+          },
+          "rect": {
+            "left": 47,
+            "top": 160,
+            "width": 64,
+            "height": 43,
+            "bottom": 203,
+            "right": 111
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "hidden",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "39px",
+            "left": "16px",
+            "width": "64px",
+            "height": "43px",
+            "minHeight": "0px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "17.6px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        },
+        {
+          "i": 4,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "20",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 31,
+            "top": 193,
+            "width": 1063,
+            "height": 21,
+            "bottom": 214,
+            "right": 1094
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "72px",
+            "left": "0px",
+            "width": "1063px",
+            "height": "21px",
+            "minHeight": "20px",
+            "border": "0px none rgb(12, 85, 184)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "16px",
+            "lineHeight": "12.8px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(12, 85, 184)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "[ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ]"
+        },
+        {
+          "i": 5,
+          "tag": "P",
+          "cls": "hwp-paragraph hwp-paragraph-empty",
+          "dataset": {
+            "empty": "true"
+          },
+          "rect": {
+            "left": 38,
+            "top": 209.47,
+            "width": 1049,
+            "height": 0,
+            "bottom": 209.47,
+            "right": 1087
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "1049px",
+            "height": "0px",
+            "minHeight": "0px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "0px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        },
+        {
+          "i": 6,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "48",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 38,
+            "top": 226.17,
+            "width": 1049,
+            "height": 52,
+            "bottom": 278.17,
+            "right": 1087
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "1049px",
+            "height": "52px",
+            "minHeight": "48px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약 관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다. 고객 여러분께서는 청약과 관련한 상담은 청약의 "
+        },
+        {
+          "i": 45,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "contentKind": "lh-sale-notice-supply-summary",
+            "layoutPosition": "absolute",
+            "layoutSource": "hwp-flow-after-positioned",
+            "layoutHeight": "332"
+          },
+          "rect": {
+            "left": 30,
+            "top": 1248,
+            "width": 1065,
+            "height": 339,
+            "bottom": 1587,
+            "right": 1095
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "hidden",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, -24)",
+            "top": "1272px",
+            "left": "30px",
+            "width": "1065px",
+            "height": "339px",
+            "minHeight": "332px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "21.0667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "지역 단지코드 주 소 사용승인연도 건설호수 금회공급호수 대구 남구 D00638 대구 남구 대명동 554-4 102동 (안지랑로2길10) 2013 8 4 D00639 대구 남구 대명동 554-4 103동 (안지랑로2길10) 2013 8 5 달서구 D00658 대구 달서구 상인동 438-9 (월곡로35길74-15) 2013 "
+        },
+        {
+          "i": 46,
+          "tag": "TABLE",
+          "cls": "hwp-table",
+          "dataset": {
+            "nestingLevel": "0",
+            "sourceFormat": "hwp",
+            "contentKind": "lh-sale-notice-supply-summary",
+            "repeatHeaderRows": "1"
+          },
+          "rect": {
+            "left": 30,
+            "top": 1248,
+            "width": 1065,
+            "height": 339,
+            "bottom": 1587,
+            "right": 1095
+          },
+          "style": {
+            "position": "static",
+            "display": "table",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "1065px",
+            "height": "339px",
+            "minHeight": "0px",
+            "border": "1px solid rgb(0, 0, 0)",
+            "background": "rgb(255, 255, 255)",
+            "fontSize": "13.3333px",
+            "lineHeight": "17.6px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "지역 단지코드 주 소 사용승인연도 건설호수 금회공급호수 대구 남구 D00638 대구 남구 대명동 554-4 102동 (안지랑로2길10) 2013 8 4 D00639 대구 남구 대명동 554-4 103동 (안지랑로2길10) 2013 8 5 달서구 D00658 대구 달서구 상인동 438-9 (월곡로35길74-15) 2013 "
+        },
+        {
+          "i": 124,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "readonlyDecoration": "true",
+            "nestingLevel": "0",
+            "layoutPosition": "absolute",
+            "layoutSource": "hwpx-header-hwp-control",
+            "layoutHeight": "39"
+          },
+          "rect": {
+            "left": 60,
+            "top": 19,
+            "width": 1002,
+            "height": 49,
+            "bottom": 68,
+            "right": 1062
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "hidden",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "19px",
+            "left": "60px",
+            "width": "1002px",
+            "height": "49px",
+            "minHeight": "39px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "16px",
+            "lineHeight": "normal"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        },
+        {
+          "i": 125,
+          "tag": "TABLE",
+          "cls": "hwp-table",
+          "dataset": {
+            "nestingLevel": "0",
+            "sourceFormat": "hwp",
+            "readonlyDecoration": "true",
+            "repeatHeaderRows": "1"
+          },
+          "rect": {
+            "left": 60,
+            "top": 19,
+            "width": 1002,
+            "height": 49,
+            "bottom": 68,
+            "right": 1062
+          },
+          "style": {
+            "position": "static",
+            "display": "table",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "1002px",
+            "height": "49px",
+            "minHeight": "0px",
+            "border": "1px solid rgb(0, 0, 0)",
+            "background": "rgb(255, 255, 255)",
+            "fontSize": "16px",
+            "lineHeight": "21.12px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        },
+        {
+          "i": 126,
+          "tag": "FIGURE",
+          "cls": "hwp-image hwp-image-inline",
+          "dataset": {
+            "inline": "true",
+            "readonlyDecoration": "true"
+          },
+          "rect": {
+            "left": 63,
+            "top": 26,
+            "width": 408,
+            "height": 26,
+            "bottom": 52,
+            "right": 471
+          },
+          "style": {
+            "position": "static",
+            "display": "inline-block",
+            "overflow": "hidden",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "408px",
+            "height": "26px",
+            "minHeight": "0px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "16px",
+            "lineHeight": "21.12px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        },
+        {
+          "i": 127,
+          "tag": "P",
+          "cls": "hwp-paragraph hwp-paragraph-empty",
+          "dataset": {
+            "readonlyDecoration": "true",
+            "empty": "true"
+          },
+          "rect": {
+            "left": 63,
+            "top": 59,
+            "width": 996,
+            "height": 21.11,
+            "bottom": 80.11,
+            "right": 1059
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "996px",
+            "height": "21.1094px",
+            "minHeight": "0px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "16px",
+            "lineHeight": "21.12px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "pageDataset": {
+        "pageIndex": "1",
+        "sourceFormat": "hwp"
+      },
+      "children": [
+        {
+          "i": 0,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "contentKind": "lh-sale-notice-supply-amount-heading",
+            "layoutPosition": "absolute",
+            "layoutSource": "hwp-flow-after-positioned",
+            "layoutHeight": "30"
+          },
+          "rect": {
+            "left": 60,
+            "top": 27,
+            "width": 1001,
+            "height": 32,
+            "bottom": 59,
+            "right": 1061
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "27px",
+            "left": "60px",
+            "width": "1001px",
+            "height": "32px",
+            "minHeight": "30px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "21.0667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "after": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "공급대상세대 및 공급금액"
+        },
+        {
+          "i": 1,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "contentKind": "lh-sale-notice-price-detail",
+            "layoutPosition": "absolute",
+            "layoutSource": "hwp-table-line-seg-inferred",
+            "layoutHeight": "1291"
+          },
+          "rect": {
+            "left": 60,
+            "top": 134,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1425,
+            "right": 1066
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 70)",
+            "top": "64px",
+            "left": "60px",
+            "width": "1006px",
+            "height": "1291px",
+            "minHeight": "1291px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "21.0667px"
+          },
+          "before": {
+            "content": "\"공급대상세대 및 공급금액\"",
+            "display": "block",
+            "position": "absolute",
+            "top": "-40px",
+            "left": "0px",
+            "width": "1006px",
+            "height": "31px",
+            "border": "",
+            "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgba(176, 210, 248, 0.96), rgba(232, 243, 255, 0.92) 68%, rgba(255, 255, 255, 0)) repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "after": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "지역 대상 주택 호 세대별 계약면적(㎡) 공급가격(원) 계약금(10%) 잔금(90%) 공급면적 기타공용 면적 총계 주거전용 주거공용 소계 대구 남구 대명동 554-4 102동 (안지랑로2길10) 301 56.92 12.15 69.07 0 69.07 112,000,000 11,200,000 100,800,000 401 56"
+        },
+        {
+          "i": 2,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutPosition": "absolute",
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 60,
+            "top": 1497,
+            "width": 1006,
+            "height": 14,
+            "bottom": 1511,
+            "right": 1066
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "1497px",
+            "left": "60px",
+            "width": "1006px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "after": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "※ 주택규모 표시 방법은 법정계량단위인 제곱미터(㎡)로 표기하였습니다. (㎡를 평으로 환산하는 방법 : ㎡ × 0.3025 또는 ㎡ ÷ 3.3058)"
+        },
+        {
+          "i": 3,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutPosition": "absolute",
+            "layoutHeight": "26",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 60,
+            "top": 1516,
+            "width": 1006,
+            "height": 28,
+            "bottom": 1544,
+            "right": 1066
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "1516px",
+            "left": "60px",
+            "width": "1006px",
+            "height": "28px",
+            "minHeight": "26px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "after": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "※ 주거전용 면적은 주거의 용도로만 쓰이는 면적이며, 주거공용 면적은 계단, 복도, 주동 현관 등 공동주택의 지상층에 있는 공용면적이고, 그 밖의 공용면적은 주거공 용 면적을 제외한 지하층 등의 공용면적입니다."
+        }
+      ],
+      "interesting": [
+        {
+          "i": 0,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "contentKind": "lh-sale-notice-supply-amount-heading",
+            "layoutPosition": "absolute",
+            "layoutSource": "hwp-flow-after-positioned",
+            "layoutHeight": "30"
+          },
+          "rect": {
+            "left": 60,
+            "top": 27,
+            "width": 1001,
+            "height": 32,
+            "bottom": 59,
+            "right": 1061
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "27px",
+            "left": "60px",
+            "width": "1001px",
+            "height": "32px",
+            "minHeight": "30px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "21.0667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "공급대상세대 및 공급금액"
+        },
+        {
+          "i": 1,
+          "tag": "TABLE",
+          "cls": "hwp-table",
+          "dataset": {
+            "nestingLevel": "0",
+            "sourceFormat": "hwp",
+            "contentKind": "lh-sale-notice-supply-amount-heading",
+            "repeatHeaderRows": "1"
+          },
+          "rect": {
+            "left": 60,
+            "top": 27,
+            "width": 1001,
+            "height": 32,
+            "bottom": 59,
+            "right": 1061
+          },
+          "style": {
+            "position": "static",
+            "display": "table",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "1001px",
+            "height": "32px",
+            "minHeight": "0px",
+            "border": "1px solid rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "17.6px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "공급대상세대 및 공급금액"
+        },
+        {
+          "i": 2,
+          "tag": "P",
+          "cls": "hwp-paragraph hwp-paragraph-empty",
+          "dataset": {
+            "empty": "true"
+          },
+          "rect": {
+            "left": 80,
+            "top": 27.5,
+            "width": 0,
+            "height": 31,
+            "bottom": 58.5,
+            "right": 80
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "0px",
+            "height": "31px",
+            "minHeight": "31px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "31px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        },
+        {
+          "i": 3,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "17",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 116.94,
+            "top": 26.5,
+            "width": 202.22,
+            "height": 33,
+            "bottom": 59.5,
+            "right": 319.16
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "202.219px",
+            "height": "33px",
+            "minHeight": "17px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "31px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "공급대상세대 및 공급금액"
+        },
+        {
+          "i": 4,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "contentKind": "lh-sale-notice-price-detail",
+            "layoutPosition": "absolute",
+            "layoutSource": "hwp-table-line-seg-inferred",
+            "layoutHeight": "1291"
+          },
+          "rect": {
+            "left": 60,
+            "top": 134,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1425,
+            "right": 1066
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 70)",
+            "top": "64px",
+            "left": "60px",
+            "width": "1006px",
+            "height": "1291px",
+            "minHeight": "1291px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "21.0667px"
+          },
+          "before": {
+            "content": "\"공급대상세대 및 공급금액\"",
+            "display": "block",
+            "position": "absolute",
+            "top": "-40px",
+            "left": "0px",
+            "width": "1006px",
+            "height": "31px",
+            "border": "",
+            "background": "rgba(0, 0, 0, 0) linear-gradient(90deg, rgba(176, 210, 248, 0.96), rgba(232, 243, 255, 0.92) 68%, rgba(255, 255, 255, 0)) repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "지역 대상 주택 호 세대별 계약면적(㎡) 공급가격(원) 계약금(10%) 잔금(90%) 공급면적 기타공용 면적 총계 주거전용 주거공용 소계 대구 남구 대명동 554-4 102동 (안지랑로2길10) 301 56.92 12.15 69.07 0 69.07 112,000,000 11,200,000 100,800,000 401 56"
+        },
+        {
+          "i": 5,
+          "tag": "TABLE",
+          "cls": "hwp-table",
+          "dataset": {
+            "nestingLevel": "0",
+            "sourceFormat": "hwp",
+            "contentKind": "lh-sale-notice-price-detail",
+            "repeatHeaderRows": "1"
+          },
+          "rect": {
+            "left": 60,
+            "top": 134,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1425,
+            "right": 1066
+          },
+          "style": {
+            "position": "static",
+            "display": "table",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "brightness(1.12)",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "1006px",
+            "height": "1291px",
+            "minHeight": "0px",
+            "border": "1px solid rgb(0, 0, 0)",
+            "background": "rgb(255, 255, 255)",
+            "fontSize": "13.3333px",
+            "lineHeight": "17.6px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "지역 대상 주택 호 세대별 계약면적(㎡) 공급가격(원) 계약금(10%) 잔금(90%) 공급면적 기타공용 면적 총계 주거전용 주거공용 소계 대구 남구 대명동 554-4 102동 (안지랑로2길10) 301 56.92 12.15 69.07 0 69.07 112,000,000 11,200,000 100,800,000 401 56"
+        },
+        {
+          "i": 6,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 63,
+            "top": 169,
+            "width": 52.94,
+            "height": 14,
+            "bottom": 183,
+            "right": 115.94
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "52.9375px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "지역"
+        },
+        {
+          "i": 7,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 120.94,
+            "top": 159,
+            "width": 188.8,
+            "height": 14,
+            "bottom": 173,
+            "right": 309.73
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "188.797px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "대상"
+        },
+        {
+          "i": 8,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 120.94,
+            "top": 179,
+            "width": 188.8,
+            "height": 14,
+            "bottom": 193,
+            "right": 309.73
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "188.797px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "주택"
+        },
+        {
+          "i": 9,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 314.73,
+            "top": 169,
+            "width": 50.94,
+            "height": 14,
+            "bottom": 183,
+            "right": 365.67
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "50.9375px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "호"
+        },
+        {
+          "i": 10,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 370.67,
+            "top": 147,
+            "width": 359.63,
+            "height": 14,
+            "bottom": 161,
+            "right": 730.3
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "359.625px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "세대별 계약면적(㎡)"
+        },
+        {
+          "i": 11,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 735.3,
+            "top": 169,
+            "width": 105.88,
+            "height": 14,
+            "bottom": 183,
+            "right": 841.17
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "105.875px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "공급가격(원)"
+        },
+        {
+          "i": 12,
+          "tag": "P",
+          "cls": "hwp-paragraph hwp-paragraph-empty",
+          "dataset": {
+            "empty": "true"
+          },
+          "rect": {
+            "left": 845.67,
+            "top": 137,
+            "width": 106.88,
+            "height": 17.58,
+            "bottom": 154.58,
+            "right": 952.55
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "106.875px",
+            "height": "17.5781px",
+            "minHeight": "0px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "17.6px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        },
+        {
+          "i": 13,
+          "tag": "P",
+          "cls": "hwp-paragraph hwp-paragraph-empty",
+          "dataset": {
+            "empty": "true"
+          },
+          "rect": {
+            "left": 956.55,
+            "top": 137,
+            "width": 106.45,
+            "height": 17.58,
+            "bottom": 154.58,
+            "right": 1063
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "106.453px",
+            "height": "17.5781px",
+            "minHeight": "0px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "17.6px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        },
+        {
+          "i": 14,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 846.17,
+            "top": 177.5,
+            "width": 105.88,
+            "height": 14,
+            "bottom": 191.5,
+            "right": 952.05
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "105.875px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "계약금(10%)"
+        },
+        {
+          "i": 15,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 957.05,
+            "top": 177.5,
+            "width": 105.95,
+            "height": 14,
+            "bottom": 191.5,
+            "right": 1063
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "105.953px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "잔금(90%)"
+        },
+        {
+          "i": 16,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 370.67,
+            "top": 177,
+            "width": 211.38,
+            "height": 14,
+            "bottom": 191,
+            "right": 582.05
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "211.375px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "공급면적"
+        },
+        {
+          "i": 17,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 587.05,
+            "top": 178.5,
+            "width": 69.13,
+            "height": 14,
+            "bottom": 192.5,
+            "right": 656.17
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "69.125px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "기타공용"
+        },
+        {
+          "i": 18,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 587.05,
+            "top": 198.5,
+            "width": 69.13,
+            "height": 14,
+            "bottom": 212.5,
+            "right": 656.17
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "69.125px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "면적"
+        },
+        {
+          "i": 19,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 661.17,
+            "top": 188.5,
+            "width": 69.13,
+            "height": 14,
+            "bottom": 202.5,
+            "right": 730.3
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "69.125px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "총계"
+        },
+        {
+          "i": 20,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 370.67,
+            "top": 199,
+            "width": 67.13,
+            "height": 14,
+            "bottom": 213,
+            "right": 437.8
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "67.125px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "주거전용"
+        },
+        {
+          "i": 21,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 442.8,
+            "top": 199,
+            "width": 67.13,
+            "height": 14,
+            "bottom": 213,
+            "right": 509.92
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "67.125px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "주거공용"
+        },
+        {
+          "i": 22,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 514.92,
+            "top": 199,
+            "width": 67.13,
+            "height": 14,
+            "bottom": 213,
+            "right": 582.05
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "67.125px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "소계"
+        },
+        {
+          "i": 27,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 314.73,
+            "top": 221,
+            "width": 50.94,
+            "height": 14,
+            "bottom": 235,
+            "right": 365.67
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "50.9375px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "301"
+        },
+        {
+          "i": 28,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 370.67,
+            "top": 221,
+            "width": 67.13,
+            "height": 14,
+            "bottom": 235,
+            "right": 437.8
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "67.125px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "56.92"
+        },
+        {
+          "i": 29,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 442.8,
+            "top": 221,
+            "width": 67.13,
+            "height": 14,
+            "bottom": 235,
+            "right": 509.92
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "67.125px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "12.15"
+        },
+        {
+          "i": 30,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 514.92,
+            "top": 221,
+            "width": 67.13,
+            "height": 14,
+            "bottom": 235,
+            "right": 582.05
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "67.125px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "69.07"
+        },
+        {
+          "i": 31,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 587.05,
+            "top": 221,
+            "width": 69.13,
+            "height": 14,
+            "bottom": 235,
+            "right": 656.17
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "69.125px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "0"
+        },
+        {
+          "i": 32,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 661.17,
+            "top": 221,
+            "width": 69.13,
+            "height": 14,
+            "bottom": 235,
+            "right": 730.3
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "69.125px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "69.07"
+        },
+        {
+          "i": 33,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 735.3,
+            "top": 221,
+            "width": 92.88,
+            "height": 14,
+            "bottom": 235,
+            "right": 828.17
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "92.875px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "112,000,000"
+        },
+        {
+          "i": 34,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 846.17,
+            "top": 221,
+            "width": 92.88,
+            "height": 14,
+            "bottom": 235,
+            "right": 939.05
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "92.875px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "11,200,000"
+        },
+        {
+          "i": 35,
+          "tag": "P",
+          "cls": "hwp-paragraph",
+          "dataset": {
+            "layoutHeight": "13",
+            "layoutMode": "line-segments"
+          },
+          "rect": {
+            "left": 957.05,
+            "top": 221,
+            "width": 92.95,
+            "height": 14,
+            "bottom": 235,
+            "right": 1050
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "92.9531px",
+            "height": "14px",
+            "minHeight": "13px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "13.3333px",
+            "lineHeight": "10.6667px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": "100,800,000"
+        },
+        {
+          "i": 571,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "readonlyDecoration": "true",
+            "nestingLevel": "0",
+            "layoutPosition": "absolute",
+            "layoutSource": "hwpx-header-hwp-control",
+            "layoutHeight": "39"
+          },
+          "rect": {
+            "left": 60,
+            "top": 19,
+            "width": 1002,
+            "height": 49,
+            "bottom": 68,
+            "right": 1062
+          },
+          "style": {
+            "position": "absolute",
+            "display": "block",
+            "overflow": "hidden",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "19px",
+            "left": "60px",
+            "width": "1002px",
+            "height": "49px",
+            "minHeight": "39px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "16px",
+            "lineHeight": "normal"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        },
+        {
+          "i": 572,
+          "tag": "TABLE",
+          "cls": "hwp-table",
+          "dataset": {
+            "nestingLevel": "0",
+            "sourceFormat": "hwp",
+            "readonlyDecoration": "true",
+            "repeatHeaderRows": "1"
+          },
+          "rect": {
+            "left": 60,
+            "top": 19,
+            "width": 1002,
+            "height": 49,
+            "bottom": 68,
+            "right": 1062
+          },
+          "style": {
+            "position": "static",
+            "display": "table",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "1002px",
+            "height": "49px",
+            "minHeight": "0px",
+            "border": "1px solid rgb(0, 0, 0)",
+            "background": "rgb(255, 255, 255)",
+            "fontSize": "16px",
+            "lineHeight": "21.12px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        },
+        {
+          "i": 573,
+          "tag": "FIGURE",
+          "cls": "hwp-image hwp-image-inline",
+          "dataset": {
+            "inline": "true",
+            "readonlyDecoration": "true"
+          },
+          "rect": {
+            "left": 63,
+            "top": 26,
+            "width": 408,
+            "height": 26,
+            "bottom": 52,
+            "right": 471
+          },
+          "style": {
+            "position": "static",
+            "display": "inline-block",
+            "overflow": "hidden",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "408px",
+            "height": "26px",
+            "minHeight": "0px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "16px",
+            "lineHeight": "21.12px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        },
+        {
+          "i": 574,
+          "tag": "P",
+          "cls": "hwp-paragraph hwp-paragraph-empty",
+          "dataset": {
+            "readonlyDecoration": "true",
+            "empty": "true"
+          },
+          "rect": {
+            "left": 63,
+            "top": 59,
+            "width": 996,
+            "height": 21.11,
+            "bottom": 80.11,
+            "right": 1059
+          },
+          "style": {
+            "position": "static",
+            "display": "block",
+            "overflow": "visible",
+            "opacity": "1",
+            "filter": "none",
+            "transform": "none",
+            "top": "auto",
+            "left": "auto",
+            "width": "996px",
+            "height": "21.1094px",
+            "minHeight": "0px",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)",
+            "fontSize": "16px",
+            "lineHeight": "21.12px"
+          },
+          "before": {
+            "content": "none",
+            "display": "inline",
+            "position": "static",
+            "top": "auto",
+            "left": "auto",
+            "width": "auto",
+            "height": "auto",
+            "border": "0px none rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+            "transform": "none"
+          },
+          "text": ""
+        }
+      ]
+    }
+  ]
+}

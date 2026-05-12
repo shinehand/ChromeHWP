@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-06T22:19:33.706Z",
+  "auditId": "p8-mode-base",
+  "source": "Probe page mode",
+  "outputDirectory": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/audit-p8-mode-base",
+  "documents": [
+    {
+      "id": "p8-mode-base",
+      "filename": "p8-mode-base.hwpx",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "state": {
+        "pages": 1
+      },
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-008.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/p8-mode-base.png",
+          "targetBand": "first"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-06T22:19:33.710Z",
+  "auditId": "p13-mode-shift-down-10",
+  "source": "Probe page mode",
+  "outputDirectory": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/audit-p13-mode-shift-down-10",
+  "documents": [
+    {
+      "id": "p13-mode-shift-down-10",
+      "filename": "p13-mode-shift-down-10.hwpx",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "state": {
+        "pages": 1
+      },
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-013.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/p13-mode-shift-down-10.png",
+          "targetBand": "first"
+        }
+      ]
+    }
+  ]
+}

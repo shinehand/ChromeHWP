@@ -1,0 +1,2490 @@
+{
+  "filename": "incheon-2a.hwpx",
+  "pages": 18,
+  "page": {
+    "index": 7,
+    "width": 1123,
+    "height": 1587
+  },
+  "bodyRect": {
+    "top": 306,
+    "left": 468.5,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 1893,
+    "right": 1591.5
+  },
+  "text": "1. 무주택세대구성원 및 주택소유여부 판정 기준 금회 공급되는 주택의 신청자격인 ‘무주택세대구성원’ 여부는 주택공급에 관한 규칙 제2조제4호 및 제53조에 따라 아래기준으로 판단하며, 당첨자 발표 후 주택(분양권 등 포함) 소유여부 전산검색 및 주민등록표등본 확인 결과 부적격자로 판명된 분이 판명내용이 사실과 다르거나 이의가 있을 경우에는 소명기 간(우리 공사가 소명요청을 안내한 날부터 7일) 내에 아래 기준에 근거하여 소명자료를 제출하여야 하며, 정당한 사유 없이 동 기한 내에 소명자료를 제출하 지 아니할 경우 당첨 및 계약을 취소합니다. ■ 적용대상 : 신혼부부·예비신혼부부·한부모가족 신청자 ■ 공급신청 자격자 • 주택공급신청은 무주택세대구성원 중 1인만 가능합니다. ※ 부부(예비신혼부부 제외)는 당첨자발표일이 동일한 주택에 대해 각각 청약할 수 있으나, 중복당첨된 경우 「주택공급에 관한 규칙」제55조의2에 따라 청약 접수일(분 단위 까지의 접수시간을 포함)이 빠른 사람의 당첨[분 단위 접수시간이 동일한 경우 신청자의 연령(연원일 계산)이 많은 자가 당첨된 주택을 말함]만을 인정하며, 후 접수분은 무효 처리 됨 ※「민법」상 미성년자는 직계존속의 사망, 실종선고 및 행방불명 등으로 형제자매를 부양해야 하거나, 자녀를 부양하여야 하는 세대주만 신청 가능. 이 경우 자녀 및 형제자매는 미성년자와 같은 세대별 주민등록표에 등재되어 있어야 함 ※ 세대구성원 중「국민기초생활 보장법 시행령」 제2조제2항제5호부터 제7호에 해당하는 자는 해당 세대구성원에서 제외되며, 신청자 본인이 입증서류를 제출하여야 함 가. 실종선고 절차가 진행 중인 사람 나. 가출 또는 행방불명으로 경찰서 등 행정관청에 신고된 후 1개월이 지났거나 가출 또는 행방불명 사실을 특별자치시장·특별자치도지사·시장·군수·구청장(자치구의 구청장을 말하 며, 이하 “시장·군수·구청장”이라 한다)이 확인한 사람 다. 공급신청자와 생계 및 주거를 달리한다고 시장·군수·구청장이 확인한 사람 ■ 무주택(분양권 등 포함",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "contentKind": "hwpx-body-container",
+        "layoutHeight": "2114.43"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwpx",
+        "contentKind": "hwpx-body-container"
+      },
+      "rect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 2115.421875,
+        "bottom": 2134.421875,
+        "right": 1062
+      },
+      "tableRect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 2115.421875,
+        "bottom": 2134.421875,
+        "right": 1062
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-22\",\"xmlPath\":\"body-block-1/row-22\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-22",
+            "layoutHeight": "2114.43"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 2114.421875,
+            "bottom": 2133.921875,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "1. 무주택세대구성원 및 주택소유여부 판정 기준 금회 공급되는 주택의 신청자격인 ‘무주택세대구성원’ 여부는 주택공급에 관한 규칙 제2조제4호 및 제53조에 따라 아래기준으로 판단하며, 당첨자 발표 후 주택(분양권 등 포함) 소유여부 전산검색 및 주민등록표등본 확인 결과 부적격자로 판명된"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-22\",\"xmlPath\":\"body-block-1/row-22\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-22",
+            "layoutHeight": "2114.43"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 2114.421875,
+            "bottom": 2133.921875,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "1. 무주택세대구성원 및 주택소유여부 판정 기준 금회 공급되는 주택의 신청자격인 ‘무주택세대구성원’ 여부는 주택공급에 관한 규칙 제2조제4호 및 제53조에 따라 아래기준으로 판단하며, 당첨자 발표 후 주택(분양권 등 포함) 소유여부 전산검색 및 주민등록표등본 확인 결과 부적격자로 판명된"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-22\",\"xmlPath\":\"body-block-1/row-22\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-22",
+            "layoutHeight": "2114.43"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 2114.421875,
+            "bottom": 2133.921875,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": "1. 무주택세대구성원 및 주택소유여부 판정 기준 금회 공급되는 주택의 신청자격인 ‘무주택세대구성원’ 여부는 주택공급에 관한 규칙 제2조제4호 및 제53조에 따라 아래기준으로 판단하며, 당첨자 발표 후 주택(분양권 등 포함) 소유여부 전산검색 및 주민등록표등본 확인 결과 부적격자로 판명된"
+        }
+      ],
+      "text": "1. 무주택세대구성원 및 주택소유여부 판정 기준 금회 공급되는 주택의 신청자격인 ‘무주택세대구성원’ 여부는 주택공급에 관한 규칙 제2조제4호 및 제53조에 따라 아래기준으로 판단하며, 당첨자 발표 후 주택(분양권 등 포함) 소유여부 전산검색 및 주민등록표등본 확인 결과 부적격자로 판명된 분이 판명내용이 사실과 다르거나 이의가 있을 경우에는 소명기 간(우리 공사가 소명요청을 안내한 날부터 7일) 내에 아래 기준에 근거하여 소명자",
+      "style": {
+        "height": "2114.43px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-22-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-0",
+        "nestingLevel": "1",
+        "layoutHeight": "26.20"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-22-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-0",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 278.703125,
+        "left": 61,
+        "width": 982,
+        "height": 28,
+        "bottom": 306.703125,
+        "right": 1043
+      },
+      "tableRect": {
+        "top": 278.703125,
+        "left": 61,
+        "width": 982,
+        "height": 28,
+        "bottom": 306.703125,
+        "right": 1043
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-22-cell-0-block-0/row-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-0:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 279.203125,
+            "left": 61.5,
+            "width": 981,
+            "height": 27,
+            "bottom": 306.203125,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "1. 무주택세대구성원 및 주택소유여부 판정 기준"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-22-cell-0-block-0/row-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-0:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 279.203125,
+            "left": 61.5,
+            "width": 981,
+            "height": 27,
+            "bottom": 306.203125,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "1. 무주택세대구성원 및 주택소유여부 판정 기준"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-22-cell-0-block-0/row-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-0:row-0",
+            "layoutHeight": "26.20"
+          },
+          "rect": {
+            "top": 279.203125,
+            "left": 61.5,
+            "width": 981,
+            "height": 27,
+            "bottom": 306.203125,
+            "right": 1042.5
+          },
+          "cellCount": 2,
+          "text": "1. 무주택세대구성원 및 주택소유여부 판정 기준"
+        }
+      ],
+      "text": "1. 무주택세대구성원 및 주택소유여부 판정 기준",
+      "style": {
+        "height": "26.2px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": "rgb(255, 225, 225)"
+      }
+    },
+    {
+      "index": 2,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-22-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-1",
+        "nestingLevel": "1",
+        "layoutHeight": "100.37"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-22-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-1",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 308.703125,
+        "left": 61,
+        "width": 979,
+        "height": 101.359375,
+        "bottom": 410.0625,
+        "right": 1040
+      },
+      "tableRect": {
+        "top": 308.703125,
+        "left": 61,
+        "width": 979,
+        "height": 101.359375,
+        "bottom": 410.0625,
+        "right": 1040
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-22-cell-0-block-1/row-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-1:row-0",
+            "layoutHeight": "100.37"
+          },
+          "rect": {
+            "top": 309.203125,
+            "left": 61.5,
+            "width": 978,
+            "height": 100.359375,
+            "bottom": 409.5625,
+            "right": 1039.5
+          },
+          "cellCount": 1,
+          "text": "금회 공급되는 주택의 신청자격인 ‘무주택세대구성원’ 여부는 주택공급에 관한 규칙 제2조제4호 및 제53조에 따라 아래기준으로 판단하며, 당첨자 발표 후 주택(분양권 등 포함) 소유여부 전산검색 및 주민등록표등본 확인 결과 부적격자로 판명된 분이 판명내용이 사실과 다르거나 이의가 있을 경"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-22-cell-0-block-1/row-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-1:row-0",
+            "layoutHeight": "100.37"
+          },
+          "rect": {
+            "top": 309.203125,
+            "left": 61.5,
+            "width": 978,
+            "height": 100.359375,
+            "bottom": 409.5625,
+            "right": 1039.5
+          },
+          "cellCount": 1,
+          "text": "금회 공급되는 주택의 신청자격인 ‘무주택세대구성원’ 여부는 주택공급에 관한 규칙 제2조제4호 및 제53조에 따라 아래기준으로 판단하며, 당첨자 발표 후 주택(분양권 등 포함) 소유여부 전산검색 및 주민등록표등본 확인 결과 부적격자로 판명된 분이 판명내용이 사실과 다르거나 이의가 있을 경"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-22-cell-0-block-1/row-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-1:row-0",
+            "layoutHeight": "100.37"
+          },
+          "rect": {
+            "top": 309.203125,
+            "left": 61.5,
+            "width": 978,
+            "height": 100.359375,
+            "bottom": 409.5625,
+            "right": 1039.5
+          },
+          "cellCount": 1,
+          "text": "금회 공급되는 주택의 신청자격인 ‘무주택세대구성원’ 여부는 주택공급에 관한 규칙 제2조제4호 및 제53조에 따라 아래기준으로 판단하며, 당첨자 발표 후 주택(분양권 등 포함) 소유여부 전산검색 및 주민등록표등본 확인 결과 부적격자로 판명된 분이 판명내용이 사실과 다르거나 이의가 있을 경"
+        }
+      ],
+      "text": "금회 공급되는 주택의 신청자격인 ‘무주택세대구성원’ 여부는 주택공급에 관한 규칙 제2조제4호 및 제53조에 따라 아래기준으로 판단하며, 당첨자 발표 후 주택(분양권 등 포함) 소유여부 전산검색 및 주민등록표등본 확인 결과 부적격자로 판명된 분이 판명내용이 사실과 다르거나 이의가 있을 경우에는 소명기 간(우리 공사가 소명요청을 안내한 날부터 7일) 내에 아래 기준에 근거하여 소명자료를 제출하여야 하며, 정당한 사유 없이 동 기한",
+      "style": {
+        "height": "100.37px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 3,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17",
+        "nestingLevel": "1",
+        "layoutHeight": "201.89"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17",
+        "nestingLevel": "1",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 809.390625,
+        "left": 61,
+        "width": 952,
+        "height": 201.875,
+        "bottom": 1011.265625,
+        "right": 1013
+      },
+      "tableRect": {
+        "top": 809.390625,
+        "left": 61,
+        "width": 952,
+        "height": 201.875,
+        "bottom": 1011.265625,
+        "right": 1013
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17/row-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17:row-0",
+            "layoutHeight": "175"
+          },
+          "rect": {
+            "top": 809.890625,
+            "left": 61.5,
+            "width": 951,
+            "height": 200.875,
+            "bottom": 1010.765625,
+            "right": 1012.5
+          },
+          "cellCount": 1,
+          "text": "[무주택세대구성원] 가. 주택의 공급을 신청하려는 사람(이하 ‘주택공급신청자’라 함) 나. 주택공급신청자의 배우자 다. 주택공급신청자 또는 배우자의 세대별 주민등록표등본에 등재된 신청자의 직계존속(배우자의 직계존속 포함, 이하같음) 라. 주택공급신청자 또는 배우자의 세대별 주민등록표등본"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17/row-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17:row-0",
+            "layoutHeight": "175"
+          },
+          "rect": {
+            "top": 809.890625,
+            "left": 61.5,
+            "width": 951,
+            "height": 200.875,
+            "bottom": 1010.765625,
+            "right": 1012.5
+          },
+          "cellCount": 1,
+          "text": "[무주택세대구성원] 가. 주택의 공급을 신청하려는 사람(이하 ‘주택공급신청자’라 함) 나. 주택공급신청자의 배우자 다. 주택공급신청자 또는 배우자의 세대별 주민등록표등본에 등재된 신청자의 직계존속(배우자의 직계존속 포함, 이하같음) 라. 주택공급신청자 또는 배우자의 세대별 주민등록표등본"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17/row-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17:row-0",
+            "layoutHeight": "175"
+          },
+          "rect": {
+            "top": 809.890625,
+            "left": 61.5,
+            "width": 951,
+            "height": 200.875,
+            "bottom": 1010.765625,
+            "right": 1012.5
+          },
+          "cellCount": 1,
+          "text": "[무주택세대구성원] 가. 주택의 공급을 신청하려는 사람(이하 ‘주택공급신청자’라 함) 나. 주택공급신청자의 배우자 다. 주택공급신청자 또는 배우자의 세대별 주민등록표등본에 등재된 신청자의 직계존속(배우자의 직계존속 포함, 이하같음) 라. 주택공급신청자 또는 배우자의 세대별 주민등록표등본"
+        }
+      ],
+      "text": "[무주택세대구성원] 가. 주택의 공급을 신청하려는 사람(이하 ‘주택공급신청자’라 함) 나. 주택공급신청자의 배우자 다. 주택공급신청자 또는 배우자의 세대별 주민등록표등본에 등재된 신청자의 직계존속(배우자의 직계존속 포함, 이하같음) 라. 주택공급신청자 또는 배우자의 세대별 주민등록표등본에 등재된 신청자의 직계비속(직계비속의 배우자 포함, 이하같음) 마. 주택공급신청자의 세대별 주민등록표등본에 등재된 신청자의 배우자의 직계비속 ",
+      "style": {
+        "height": "201.89px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-0-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-0-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-0-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 282.03125,
+        "left": 77,
+        "width": 0,
+        "height": 21.328125,
+        "bottom": 303.359375,
+        "right": 77
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-0-row-0-cell-1-block-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-0-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-0-row-0-cell-1-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 281.703125,
+        "left": 86.484375,
+        "width": 953.515625,
+        "height": 22,
+        "bottom": 303.703125,
+        "right": 1040
+      },
+      "text": "1. 무주택세대구성원 및 주택소유여부 판정 기준",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-1-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-1-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-1-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "77",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 322.875,
+        "left": 67,
+        "width": 963,
+        "height": 77,
+        "bottom": 399.875,
+        "right": 1030
+      },
+      "text": "금회 공급되는 주택의 신청자격인 ‘무주택세대구성원’ 여부는 주택공급에 관한 규칙 제2조제4호 및 제53조에 따라 아래기준으로 판단하며, 당첨자 발표 후 주택(분양권 등 포함) 소유여부 전산검색 및 주민등록표등본 확인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "77px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-2",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 411.0625,
+        "left": 61,
+        "width": 1000,
+        "height": 21.328125,
+        "bottom": 432.390625,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-3\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-3",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 432.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 16,
+        "bottom": 448.390625,
+        "right": 1061
+      },
+      "text": "■ 적용대상 : 신혼부부·예비신혼부부·한부모가족 신청자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-4\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-4",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "25",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 453.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 25,
+        "bottom": 478.390625,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "25px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-5\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-5",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 478.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 16,
+        "bottom": 494.390625,
+        "right": 1061
+      },
+      "text": "■ 공급신청 자격자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-6\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-6",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 498.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 22,
+        "bottom": 520.390625,
+        "right": 1061
+      },
+      "text": "• 주택공급신청은 무주택세대구성원 중 1인만 가능합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-7\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-7",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "50",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 523.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 50,
+        "bottom": 573.390625,
+        "right": 1061
+      },
+      "text": "※ 부부(예비신혼부부 제외)는 당첨자발표일이 동일한 주택에 대해 각각 청약할 수 있으나, 중복당첨된 경우 「주택공급에 관한 규칙」제55조의2에 따라 청약 접수일(분 단위 까지의 접수시간을 포함)이 빠른 사람의 당첨[",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "50px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-8\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-8",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 576.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 35,
+        "bottom": 611.390625,
+        "right": 1061
+      },
+      "text": "※「민법」상 미성년자는 직계존속의 사망, 실종선고 및 행방불명 등으로 형제자매를 부양해야 하거나, 자녀를 부양하여야 하는 세대주만 신청 가능. 이 경우 자녀 및 형제자매는 미성년자와 같은 세대별 주민등록표에 등재되어",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-9\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-9",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 614.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 633.390625,
+        "right": 1061
+      },
+      "text": "※ 세대구성원 중「국민기초생활 보장법 시행령」 제2조제2항제5호부터 제7호에 해당하는 자는 해당 세대구성원에서 제외되며, 신청자 본인이 입증서류를 제출하여야 함",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-10\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-10\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-10",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 633.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 16,
+        "bottom": 649.390625,
+        "right": 1061
+      },
+      "text": "가. 실종선고 절차가 진행 중인 사람",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "145%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-11\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-11\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-11",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 649.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 32,
+        "bottom": 681.390625,
+        "right": 1061
+      },
+      "text": "나. 가출 또는 행방불명으로 경찰서 등 행정관청에 신고된 후 1개월이 지났거나 가출 또는 행방불명 사실을 특별자치시장·특별자치도지사·시장·군수·구청장(자치구의 구청장을 말하 며, 이하 “시장·군수·구청장”이라 한다)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "145%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-12\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-12\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-12",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 681.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 16,
+        "bottom": 697.390625,
+        "right": 1061
+      },
+      "text": "다. 공급신청자와 생계 및 주거를 달리한다고 시장·군수·구청장이 확인한 사람",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "145%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-13\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-13\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-13",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "25",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 702.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 25,
+        "bottom": 727.390625,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "25px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-14\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-14\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-14",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 727.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 16,
+        "bottom": 743.390625,
+        "right": 1061
+      },
+      "text": "■ 무주택(분양권 등 포함)여부 판단대상",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-15\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-15\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-15",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "36",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 747.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 36,
+        "bottom": 783.390625,
+        "right": 1061
+      },
+      "text": "• 아래 [무주택세대구성원] 전원(배우자가 세대 분리된 경우 배우자 및 배우자가 속한 등본의 직계존비속까지 포함)이 다음 [주택 및 분양권등] 각목의 요건을 모두 갖춘 경우 무주택자로 판단",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "36px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-16\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-16\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-16",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 787.390625,
+        "left": 61,
+        "width": 1000,
+        "height": 20,
+        "bottom": 807.390625,
+        "right": 1061
+      },
+      "text": "※ (예비신혼부부) 입주 시 제출하는 주민등록표등본에 등재되는 ‘혼인으로 구성될 세대’를 말함",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 908.453125,
+        "left": 71,
+        "width": 926,
+        "height": 16,
+        "bottom": 924.453125,
+        "right": 997
+      },
+      "text": "[무주택세대구성원]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 924.453125,
+        "left": 71,
+        "width": 926,
+        "height": 16,
+        "bottom": 940.453125,
+        "right": 997
+      },
+      "text": "가. 주택의 공급을 신청하려는 사람(이하 ‘주택공급신청자’라 함)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-2",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 940.453125,
+        "left": 71,
+        "width": 926,
+        "height": 16,
+        "bottom": 956.453125,
+        "right": 997
+      },
+      "text": "나. 주택공급신청자의 배우자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-3\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-3",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 956.453125,
+        "left": 71,
+        "width": 926,
+        "height": 16,
+        "bottom": 972.453125,
+        "right": 997
+      },
+      "text": "다. 주택공급신청자 또는 배우자의 세대별 주민등록표등본에 등재된 신청자의 직계존속(배우자의 직계존속 포함, 이하같음)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-4\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-4",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 972.453125,
+        "left": 71,
+        "width": 926,
+        "height": 16,
+        "bottom": 988.453125,
+        "right": 997
+      },
+      "text": "라. 주택공급신청자 또는 배우자의 세대별 주민등록표등본에 등재된 신청자의 직계비속(직계비속의 배우자 포함, 이하같음)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-5\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-5",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 988.453125,
+        "left": 71,
+        "width": 926,
+        "height": 16,
+        "bottom": 1004.453125,
+        "right": 997
+      },
+      "text": "마. 주택공급신청자의 세대별 주민등록표등본에 등재된 신청자의 배우자의 직계비속",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-6\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-6",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1004.453125,
+        "left": 71,
+        "width": 926,
+        "height": 16,
+        "bottom": 1020.453125,
+        "right": 997
+      },
+      "text": "[주택 및 분양권등]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-7\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-7",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1020.453125,
+        "left": 71,
+        "width": 926,
+        "height": 16,
+        "bottom": 1036.453125,
+        "right": 997
+      },
+      "text": "가. 주택을 소유하고 있지 아니할 것",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-8\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-8",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "31",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1036.453125,
+        "left": 71,
+        "width": 926,
+        "height": 31,
+        "bottom": 1067.453125,
+        "right": 997
+      },
+      "text": "나. 「부동산 거래신고 등에 관한 법률」제3조제1항제2호 및 제3호에 따른 부동산 중 주택을 공급받는 자로 선정된 지위 또는 주택의 입주자로 선정된 지위를 소유 하고 있지 아니할 것",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "31px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-9\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-17-row-0-cell-0-block-9",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1067.453125,
+        "left": 71,
+        "width": 926,
+        "height": 16,
+        "bottom": 1083.453125,
+        "right": 997
+      },
+      "text": "다. 나목에 따른 지위(이하 “분양권등”이라 한다)를 승계취득(전체 또는 일부의 권리를 매매하여 취득한 경우를 말한다. 이하 같다)하여 소유하고 있지 아니할 것",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-18\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-18\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-18",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1012.265625,
+        "left": 61,
+        "width": 1000,
+        "height": 21.328125,
+        "bottom": 1033.59375,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-19\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-19\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-19",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1033.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 16,
+        "bottom": 1049.59375,
+        "right": 1061
+      },
+      "text": "■ 주택(분양권 등 포함)의 범위",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-20\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-20\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-20",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1053.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 22,
+        "bottom": 1075.59375,
+        "right": 1061
+      },
+      "text": "• 건물의 용도는 공부상 표시된 용도를 기준으로 하며, 주택은 건물등기부등본, 건축물대장등본, 재산세 과세대장 등에 등재되어 있는 전국소재 주택",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-21\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-21\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-21",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1079.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 22,
+        "bottom": 1101.59375,
+        "right": 1061
+      },
+      "text": "• 주택(분양권 등) 공유지분 소유자 및 주택의 용도가 있는 복합건물 소유자도 주택소유자에 해당됩니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-22\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-22\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-22",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "37",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1106.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 37,
+        "bottom": 1143.59375,
+        "right": 1061
+      },
+      "text": "※ 공유지분으로 주택을 소유한 경우 지분 소유자 전원이 주택소유자로 인정되고, 공동소유, 공동상속의 경우에는 지분면적에 관계없이 지분소유자 전원이 각각 그 주택의 면적 전부를 소유한 것으로 간주함",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "37px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-23\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-23\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-23",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "40",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1147.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 40,
+        "bottom": 1187.59375,
+        "right": 1061
+      },
+      "text": "• 「부동산 거래신고 등에 관한 법률」 제3조제1항제2호 및 제3호에 따른 부동산 중 주택을 공급받은 자로 선정된 지위 또는 주택의 입주자로 선정된 지위(이하 ‘분양권 등’이라 함)를 취득한 경우, 공급계약체결일을 ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "40px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-24\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-24\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-24",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1191.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 22,
+        "bottom": 1213.59375,
+        "right": 1061
+      },
+      "text": "• 분양권등을 매매로 승계취득하여 「부동산 거래신고 등에 관한 법률」 제3조에 따라 신고한 경우, 신고서상 매매대금 완납일을 기준으로 주택을 소유한 것으로 봅니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "150%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-25\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-25\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-25",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "25",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1218.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 25,
+        "bottom": 1243.59375,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "25px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-26\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-26\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-26",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1243.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 16,
+        "bottom": 1259.59375,
+        "right": 1061
+      },
+      "text": "■ 무주택(분양권 등 포함) 산정 기준",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-27\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-27\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-27",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "23",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1264.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 23,
+        "bottom": 1287.59375,
+        "right": 1061
+      },
+      "text": "• 무주택 기간은 신청자 및 무주택세대구성원 전원의 무주택기간을 고려하여 산정합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-28\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-28\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-28",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "23",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1292.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 23,
+        "bottom": 1315.59375,
+        "right": 1061
+      },
+      "text": "• 주택소유 및 무주택기간 산정 기준일(단, 건물등기부등본상의 등기접수일과 건축물대장등본상의 처리일이 상이할 경우에는 먼저 처리된 날을 기준으로 함)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-29\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-29\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-29",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1318.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 1337.59375,
+        "right": 1061
+      },
+      "text": "1) 건물등기부등본 : 등기접수일 2) 건축물대장등본 : 처리일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-30\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-30\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-30",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1340.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 1359.59375,
+        "right": 1061
+      },
+      "text": "3) 분양권등에 관한 계약서 : 「부동산 거래신고 등에 관한 법률」에 따라 신고된 공급계약체결일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-31\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-31\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-31",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1362.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 1381.59375,
+        "right": 1061
+      },
+      "text": "4) 분양권등의 매매계약서 :「부동산 거래신고 등에 관한 법률」에 따라 신고된 신고서상 매매대금완납일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-32\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-32\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-32",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1386.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 21,
+        "bottom": 1407.59375,
+        "right": 1061
+      },
+      "text": "5) 기타 주택소유여부를 증명할 수 있는 서류 : 시장 또는 군수 등 공공기관이 인정하는 날",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-33\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-33\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-33",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "53",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1412.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 53,
+        "bottom": 1465.59375,
+        "right": 1061
+      },
+      "text": "• 무주택기간은 신청자 및 세대구성원 전원이 입주자모집공고일을 기준으로 그 이전에 계속해서 주택 또는 분양권 등을 소유하지 아니한 기간을 기준으로 산정하나, 신청자의 무주택기간은 30세가 되는 날(30세 이전에 혼인",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "53px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-34\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-34\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-34",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "41",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1470.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 41,
+        "bottom": 1511.59375,
+        "right": 1061
+      },
+      "text": "• 신청자 및 세대구성원이 주택을 소유한 사실이 있는 경우에는 그 주택을 처분한 후 무주택자가 된 날(두 차례 이상 주택을 소유한 사실이 있는 경우에는 최근에 무주택자가 된 날을 말함)부터 무주택기간을 산정합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "41px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-35\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-35\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-35",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "25",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1516.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 25,
+        "bottom": 1541.59375,
+        "right": 1061
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "25px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-36\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-36\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-36",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "19",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1544.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 19,
+        "bottom": 1563.59375,
+        "right": 1061
+      },
+      "text": "■ 주택(분양권 등 포함)을 소유하지 아니한 것으로 인정하는 경우 (주택공급에 관한 규칙 제53조)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "19px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-37\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-37\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-37",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "23",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1568.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 23,
+        "bottom": 1591.59375,
+        "right": 1061
+      },
+      "text": "• 상속으로 인하여 주택의 공유지분을 취득한 사실이 판명되어 사업주체로부터 부적격자로 통보받은 날부터 3개월 이내에 그 지분을 처분한 경우",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-38\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-38\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-38",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "41",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1596.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 41,
+        "bottom": 1637.59375,
+        "right": 1061
+      },
+      "text": "• 도시지역이 아닌 지역 또는 면의 행정구역(수도권은 제외)에 건축되어 있는 주택으로서 다음 각목의 어느 하나에 해당하는 주택의 소유자가 당해 주택건설지역에 거주 (상속 으로 주택을 취득한 경우에는 피상속인이 거주한",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "41px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-39\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-39\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-39",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1642.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 21,
+        "bottom": 1663.59375,
+        "right": 1061
+      },
+      "text": "가. 사용승인 후 20년 이상 경과된 단독주택 나. 85㎡이하의 단독주택",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-40\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-40\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-40",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1668.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 21,
+        "bottom": 1689.59375,
+        "right": 1061
+      },
+      "text": "다. 소유자의 「가족관계의 등록 등에 관한 법률」에 따른 최초 등록기준지에 건축되어 있는 주택으로서 직계존속 또는 배우자로부터 상속 등에 의하여 이전받은 단독주택",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-41\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-41\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-41",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "23",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1694.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 23,
+        "bottom": 1717.59375,
+        "right": 1061
+      },
+      "text": "• 개인주택사업자가 분양을 목적으로 주택을 건설하여 이를 분양 완료하였거나 사업주체로부터 부적격자로 통보받은 날부터 3개월 이내에 이를 처분한 경우",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-42\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-42\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-42",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "41",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1722.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 41,
+        "bottom": 1763.59375,
+        "right": 1061
+      },
+      "text": "• 세무서에 사업자로 등록한 개인사업자가 그 소속근로자의 숙소로 사용하기 위하여 「주택법」 제5조제3항의 규정에 의하여 주택을 건설하여 소유하고 있거나 사업주체가 정부 시책의 일환으로 근로자에게 공급할 목적으로 사업",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "41px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-43\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-43\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-43",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "41",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1768.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 41,
+        "bottom": 1809.59375,
+        "right": 1061
+      },
+      "text": "• 주택공급신청자가 속한 세대가 20㎡ 이하의 주택(분양권등 포함)을 1호 또는 1세대만 소유하고 있는 경우. 다만, 20㎡이하 주택 및 분양권등을 2호 이상 또는 2세대 이상 소유한 경우는 그 주택수 만큼 유주택으",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "41px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-44\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-44\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-44",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "23",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1814.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 23,
+        "bottom": 1837.59375,
+        "right": 1061
+      },
+      "text": "• 60세 이상의 직계존속(배우자의 직계존속을 포함)이 주택(분양권 등 포함)을 소유하고 있는 경우",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-45\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-45\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-45",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "41",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1842.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 41,
+        "bottom": 1883.59375,
+        "right": 1061
+      },
+      "text": "• 건물등기부 또는 건축물대장등의 공부상 주택으로 등재되어 있으나 주택이 낡아 사람이 살지 아니하는 폐가이거나 주택이 멸실되었거나 주택이 아닌 다른 용도로 사용되고 있는 경우로서 사업주체로부터 부적격자로 통보받은 날",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "41px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-46\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-46\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-46",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "41",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1888.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 41,
+        "bottom": 1929.59375,
+        "right": 1061
+      },
+      "text": "• 무허가건물[종전의 「건축법」(법률 제7696호 건축법 일부개정법률로 개정되기 전의 것을 말한다) 제8조 및 제9조에 따라 건축허가 또는 건축신고 없이 건축한 건물을 말한다]을 소유하고 있는 경우. 이 경우 소유자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "41px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-47\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-47\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-47",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "37",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1934.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 37,
+        "bottom": 1971.59375,
+        "right": 1061
+      },
+      "text": "• 「주택공급에 관한 규칙」 제27조제5항 및 제28조제10항제1호에 따라 입주자를 선정하고 남은 주택을 선착순의 방법으로 공급받아 분양권등을 소유하고 있는 경우(해당 분 양권등을 매수한 자는 제외한다)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "37px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-48\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-48\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-48",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "33",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1976.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 33,
+        "bottom": 2009.59375,
+        "right": 1061
+      },
+      "text": "• 임차인으로서 보증금의 전부 또는 일부를 돌려받지 못한 사람이 임차주택을 경매 또는 공매로 매수하여 소유하고 있는 경우. 다만, 그 주택이 다음 각 목의 어느 하나에 해당하는 경우는 제외한다",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "33px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-49\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-49\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-49",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2014.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 21,
+        "bottom": 2035.59375,
+        "right": 1061
+      },
+      "text": "가. 주택가격이 1억5천만원(수도권은 3억원)을 초과하는 경우. 이 경우 주택가격의 산정은「주택공급에 관한 규칙」별표 1 제1호가목2)를 준용한다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-50\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-50\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-50",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2040.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 21,
+        "bottom": 2061.59375,
+        "right": 1061
+      },
+      "text": "나. 주거전용면적이 85㎡를 초과하는 경우",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-51\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-51\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-51",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2066.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 21,
+        "bottom": 2087.59375,
+        "right": 1061
+      },
+      "text": "※ 주택공급에 관한 규칙 개정 시행(’23.5.10) 전에 임차주택을 경매 또는 공매로 매수한 경우에도 주택을 소유하지 않은 것으로 인정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-52\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-52\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-52",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "41",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2092.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 41,
+        "bottom": 2133.59375,
+        "right": 1061
+      },
+      "text": "• 주택공급신청자가 속한 세대가 다음 각 목에 해당하는 주택 또는 분양권등으로서 해당 목에서 정하는 주거전용면적 및 가격 요건을 갖춘 주택 또는 분양권등을 1호 또는 1세대만 소 유하고 있는 경우",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "41px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 63,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-53\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-53\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-53",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "37",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2138.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 37,
+        "bottom": 2175.59375,
+        "right": 1061
+      },
+      "text": "가. 「주택법 시행령」 제3조제1항제1호에 따른 주택 또는 분양권등으로서 나목3)에 해당하지 않는 것: 주거전용면적 60제곱미터 이하로서 「주택공급에 관한 규칙」 별표 1 제1호가목2)에 따른 가격이 1억원(수도권은",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "37px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 64,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-54\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-54\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-54",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2180.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 21,
+        "bottom": 2201.59375,
+        "right": 1061
+      },
+      "text": "나. 다음의 주택 또는 분양권등: 주거전용면적 85제곱미터 이하로서 「주택공급에 관한 규칙」 별표 1 제1호가목2)에 따른 가격이 3억원(수도권은 5억원) 이하일 것",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 65,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-55\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-55\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-55",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2206.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 21,
+        "bottom": 2227.59375,
+        "right": 1061
+      },
+      "text": "1) 「주택법 시행령」제2조 각 호에 따른 주택 또는 분양권등",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 66,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-56\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-56\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-56",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2232.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 21,
+        "bottom": 2253.59375,
+        "right": 1061
+      },
+      "text": "2) 「주택법 시행령」제3조제1항제2호 및 제3호에 따른 주택 또는 분양권등으로서 3)에 해당하지 않는 것",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 67,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-57\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-57\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-57",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2258.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 21,
+        "bottom": 2279.59375,
+        "right": 1061
+      },
+      "text": "3) 「주택법 시행령」제10조제1항에 따른 주택 또는 분양권등",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "155%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 68,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-58\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-58\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-58",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "23",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2284.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 23,
+        "bottom": 2307.59375,
+        "right": 1061
+      },
+      "text": "• 주택공급신청자가 임차인으로서 거주하던 임차주택을 취득한 경우로서 다음 각 목의 요건을 모두 갖춘 경우",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "23px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 69,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-59\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-59\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-59",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "37",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2312.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 37,
+        "bottom": 2349.59375,
+        "right": 1061
+      },
+      "text": "가. 2024년 1월 1일부터 2024년 12월 31일까지 취득(생애 최초로 취득한 경우로 한정한다)한 주택(「주택법 시행령」제2조 각 호 및 제3조제1항제2호·제3호에 따른 주택만 해당함. 이하 이 호에서 같음)일",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "37px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 70,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-60\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-60\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-60",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2354.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 21,
+        "bottom": 2375.59375,
+        "right": 1061
+      },
+      "text": "나. 주거전용면적이 60㎡ 이하인 주택으로서 그 취득가격(「부동산 거래신고 등에 관한 법률」제3조에 따라 신고한 가격을 말한다)이 2억원(수도권은 3억원) 이하일 것",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 71,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-61\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-61\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-61",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2380.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 21,
+        "bottom": 2401.59375,
+        "right": 1061
+      },
+      "text": "다. 해당 주택의 취득일(「주택공급에 관한 규칙」제23조제4항제1호 또는 제2호 중 빠른 날을 말한다) 전날까지 1년 이상 해당 주택에 거주했을 것",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 72,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-22-cell-0-block-62\",\"xmlPath\":\"body-block-1-row-22-cell-0-block-62\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-22-cell-0-block-62",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 2404.59375,
+        "left": 61,
+        "width": 1000,
+        "height": 35,
+        "bottom": 2439.59375,
+        "right": 1061
+      },
+      "text": "■ 신혼희망타운의 당첨자로 선정된 분은 입주 시까지 무주택세대구성원을 유지해야 하며, 선착순의 방법으로 공급받은 분양권등의 주택 소유권을 향후 취득할 경우에도 그 자격 을 유지하지 못한 것으로 보아 계약이 해제되고 ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 73,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"header-block-1\",\"xmlPath\":\"header-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:header-block-1",
+        "layoutSource": "hwpx-header-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 91,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 93,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 72px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 74,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"footer-block-0\",\"xmlPath\":\"footer-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:footer-block-0",
+        "layoutSource": "hwpx-footer-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 1564,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 1566,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1545px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 75,
+      "dataset": {
+        "layoutSource": "hwpx-footer-page-number",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "layoutHeight": "18"
+      },
+      "rect": {
+        "top": 1540,
+        "left": 60,
+        "width": 1006,
+        "height": 19,
+        "bottom": 1559,
+        "right": 1066
+      },
+      "text": "- 7 -",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1521px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "18px",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 76
+}

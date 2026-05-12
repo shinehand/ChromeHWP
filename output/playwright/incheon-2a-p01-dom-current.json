@@ -1,0 +1,1213 @@
+{
+  "filename": "incheon-2a.hwpx",
+  "pages": 18,
+  "page": {
+    "index": 1,
+    "width": 1123,
+    "height": 1587
+  },
+  "bodyRect": {
+    "top": 97,
+    "left": 468.5,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 1684,
+    "right": 1591.5
+  },
+  "text": "인천가정2지구 A-2블록 신혼희망타운(공공분양) 잔여세대 추가 입주자모집공고 ❚공급위치 : 인천광역시 서구 가정동, 심곡동, 연희동, 청라동 일원 인천가정2 공공주택지구내 A-2블록 534세대 ❚공급대상 : A-2블록 801호 중 신혼희망타운(공공분양) 3세대 (전용면적 55㎡ 3세대) LH에서는 콜센터(1600-1004) 등을 통해 입주자모집공고의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황 에 대하여 정확하지 않은 정보 제공으로 청약관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다. 고객 여러분께서는 청약과 관련한 상담은 청약의 참고자료로만 활 용해 주시기 바랍니다. 더불어, 청약자 본인이 입주자모집공고를 통해 청약자격 등을 숙지하시어 주민등록표등․초본, 등기부등본 및 소득 관련 서류 등을 발급받아 직접 확 인하신 후 신청하시기 바라며, 청약자격 미숙지, 착오 신청 등에 대해서는 부적격 처리 혹은 불이익을 당할 수 있으며, 청약자 본인에게 책임이 있음을 유의하여 주시기 바랍니다. ■ 금회 공급하는 주택은 「주택공급에 관한 규칙」제27조제5항에 의거 입주자모집공고일 현재 국내에 거주(주민등록표등본 기준)하는 만 19세 이상의 무주 택세대구성원인 성년자에게 1세대 1주택의 기준으로 공급합니다. (1세대 2인 이상이 청약 접수할 경우 모두 부적격처리 됨) ■ 금회 추가모집은 거주지역, 청약저축 가입 여부, 소득 및 자산, 과거 당첨사실 여부를 불문하며, 당첨 및 계약체결 시에도 재당첨제한 및 당첨자 관리 등이 적용되지 않습니다. ■ 금회 공급되는 주택은 「공공주택 특별법 시행규칙」 별표6의3과 「주택공급에 관한 규칙」 제4조제1항 및 제3항의 규정에 의거, 입주자모집공고일 현재 국내에 거주(주민등록표등본 기준)하는 다음의 만 19세 이상의 무주택세대구성원으로서 다음의 각 자격을 갖춘 분에게 1세대 1주택 기준(공급을 신청하는 경우에는 1세대 1명을 말함. 단, 부부(예비신혼부부 제외)가 각",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-0\",\"xmlPath\":\"body-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-0",
+        "nestingLevel": "0",
+        "layoutHeight": "142"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-0\",\"xmlPath\":\"body-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-0",
+        "nestingLevel": "0",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 24,
+        "left": 60,
+        "width": 997,
+        "height": 147,
+        "bottom": 171,
+        "right": 1057
+      },
+      "tableRect": {
+        "top": 24,
+        "left": 60,
+        "width": 997,
+        "height": 147,
+        "bottom": 171,
+        "right": 1057
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-0/row-0\",\"xmlPath\":\"body-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-0:row-0",
+            "layoutHeight": "142"
+          },
+          "rect": {
+            "top": 26.5,
+            "left": 60.5,
+            "width": 996,
+            "height": 142,
+            "bottom": 168.5,
+            "right": 1056.5
+          },
+          "cellCount": 1,
+          "text": "인천가정2지구 A-2블록 신혼희망타운(공공분양) 잔여세대 추가 입주자모집공고"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-0/row-0\",\"xmlPath\":\"body-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-0:row-0",
+            "layoutHeight": "142"
+          },
+          "rect": {
+            "top": 26.5,
+            "left": 60.5,
+            "width": 996,
+            "height": 142,
+            "bottom": 168.5,
+            "right": 1056.5
+          },
+          "cellCount": 1,
+          "text": "인천가정2지구 A-2블록 신혼희망타운(공공분양) 잔여세대 추가 입주자모집공고"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-0/row-0\",\"xmlPath\":\"body-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-0:row-0",
+            "layoutHeight": "142"
+          },
+          "rect": {
+            "top": 26.5,
+            "left": 60.5,
+            "width": 996,
+            "height": 142,
+            "bottom": 168.5,
+            "right": 1056.5
+          },
+          "cellCount": 1,
+          "text": "인천가정2지구 A-2블록 신혼희망타운(공공분양) 잔여세대 추가 입주자모집공고"
+        }
+      ],
+      "text": "인천가정2지구 A-2블록 신혼희망타운(공공분양) 잔여세대 추가 입주자모집공고",
+      "style": {
+        "height": "142px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "layoutPosition": "flow",
+        "layoutSource": "hwpx-table-pos",
+        "layoutHeight": "621.61"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"body-block-1\",\"xmlPath\":\"body-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwpx"
+      },
+      "rect": {
+        "top": 181,
+        "left": 64,
+        "width": 1002,
+        "height": 623.265625,
+        "bottom": 804.265625,
+        "right": 1066
+      },
+      "tableRect": {
+        "top": 181,
+        "left": 64,
+        "width": 1002,
+        "height": 623.265625,
+        "bottom": 804.265625,
+        "right": 1066
+      },
+      "rowCount": 9,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-0\",\"xmlPath\":\"body-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-0",
+            "layoutHeight": "58.60"
+          },
+          "rect": {
+            "top": 181.5,
+            "left": 64.5,
+            "width": 1001,
+            "height": 58.59375,
+            "bottom": 240.09375,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "❚공급위치 : 인천광역시 서구 가정동, 심곡동, 연희동, 청라동 일원 인천가정2 공공주택지구내 A-2블록 534세대 ❚공급대상 : A-2블록 801호 중 신혼희망타운(공공분양) 3세대 (전용면적 55㎡ 3세대)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-1\",\"xmlPath\":\"body-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-1",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 240.09375,
+            "left": 64.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 264.09375,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-2\",\"xmlPath\":\"body-block-1/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-2",
+            "layoutHeight": "89"
+          },
+          "rect": {
+            "top": 264.09375,
+            "left": 64.5,
+            "width": 1001,
+            "height": 89.671875,
+            "bottom": 353.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "LH에서는 콜센터(1600-1004) 등을 통해 입주자모집공고의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황 에 대하여 정확하지 않은 정보 제공으로 청약관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다. 고객 여러"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-3\",\"xmlPath\":\"body-block-1/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-3",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 353.765625,
+            "left": 64.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 377.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-4\",\"xmlPath\":\"body-block-1/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-4",
+            "layoutHeight": "221"
+          },
+          "rect": {
+            "top": 377.765625,
+            "left": 64.5,
+            "width": 1001,
+            "height": 221,
+            "bottom": 598.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "■ 금회 공급하는 주택은 「주택공급에 관한 규칙」제27조제5항에 의거 입주자모집공고일 현재 국내에 거주(주민등록표등본 기준)하는 만 19세 이상의 무주 택세대구성원인 성년자에게 1세대 1주택의 기준으로 공급합니다. (1세대 2인 이상이 청약 접수할 경우 모두 부적격처리 됨) ■ 금회 추"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-5\",\"xmlPath\":\"body-block-1/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-5",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 598.765625,
+            "left": 64.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 622.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-6\",\"xmlPath\":\"body-block-1/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-6",
+            "layoutHeight": "128.60"
+          },
+          "rect": {
+            "top": 622.765625,
+            "left": 64.5,
+            "width": 1001,
+            "height": 128.59375,
+            "bottom": 751.359375,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "■ 금회 공급되는 주택은 최초 입주자모집공고(2024.01.03.), 추가 입주자모집공고(2024.06.12., 2025.03.28., 2025.07.17.) 이후 발생한 잔여세대를 공급하는 것으로 본 공고문에 등재되지 않은 사항은 기존 입주자모집공고문을 준용하므로, LH청약플러스 홈페"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-7\",\"xmlPath\":\"body-block-1/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-7",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 751.359375,
+            "left": 64.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 775.359375,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-8\",\"xmlPath\":\"body-block-1/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-8",
+            "layoutHeight": "28.41"
+          },
+          "rect": {
+            "top": 775.359375,
+            "left": 64.5,
+            "width": 1001,
+            "height": 28.40625,
+            "bottom": 803.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "알려드립니다"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-1\",\"xmlPath\":\"body-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-1",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 240.09375,
+            "left": 64.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 264.09375,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-2\",\"xmlPath\":\"body-block-1/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-2",
+            "layoutHeight": "89"
+          },
+          "rect": {
+            "top": 264.09375,
+            "left": 64.5,
+            "width": 1001,
+            "height": 89.671875,
+            "bottom": 353.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "LH에서는 콜센터(1600-1004) 등을 통해 입주자모집공고의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황 에 대하여 정확하지 않은 정보 제공으로 청약관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다. 고객 여러"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-3\",\"xmlPath\":\"body-block-1/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-3",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 353.765625,
+            "left": 64.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 377.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-4\",\"xmlPath\":\"body-block-1/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-4",
+            "layoutHeight": "221"
+          },
+          "rect": {
+            "top": 377.765625,
+            "left": 64.5,
+            "width": 1001,
+            "height": 221,
+            "bottom": 598.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "■ 금회 공급하는 주택은 「주택공급에 관한 규칙」제27조제5항에 의거 입주자모집공고일 현재 국내에 거주(주민등록표등본 기준)하는 만 19세 이상의 무주 택세대구성원인 성년자에게 1세대 1주택의 기준으로 공급합니다. (1세대 2인 이상이 청약 접수할 경우 모두 부적격처리 됨) ■ 금회 추"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-5\",\"xmlPath\":\"body-block-1/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-5",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 598.765625,
+            "left": 64.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 622.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-6\",\"xmlPath\":\"body-block-1/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-6",
+            "layoutHeight": "128.60"
+          },
+          "rect": {
+            "top": 622.765625,
+            "left": 64.5,
+            "width": 1001,
+            "height": 128.59375,
+            "bottom": 751.359375,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "■ 금회 공급되는 주택은 최초 입주자모집공고(2024.01.03.), 추가 입주자모집공고(2024.06.12., 2025.03.28., 2025.07.17.) 이후 발생한 잔여세대를 공급하는 것으로 본 공고문에 등재되지 않은 사항은 기존 입주자모집공고문을 준용하므로, LH청약플러스 홈페"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-7\",\"xmlPath\":\"body-block-1/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-7",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 751.359375,
+            "left": 64.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 775.359375,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-8\",\"xmlPath\":\"body-block-1/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-8",
+            "layoutHeight": "28.41"
+          },
+          "rect": {
+            "top": 775.359375,
+            "left": 64.5,
+            "width": 1001,
+            "height": 28.40625,
+            "bottom": 803.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "알려드립니다"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-0\",\"xmlPath\":\"body-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-0",
+            "layoutHeight": "58.60"
+          },
+          "rect": {
+            "top": 181.5,
+            "left": 64.5,
+            "width": 1001,
+            "height": 58.59375,
+            "bottom": 240.09375,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "❚공급위치 : 인천광역시 서구 가정동, 심곡동, 연희동, 청라동 일원 인천가정2 공공주택지구내 A-2블록 534세대 ❚공급대상 : A-2블록 801호 중 신혼희망타운(공공분양) 3세대 (전용면적 55㎡ 3세대)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-1\",\"xmlPath\":\"body-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-1",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 240.09375,
+            "left": 64.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 264.09375,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-2\",\"xmlPath\":\"body-block-1/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-2",
+            "layoutHeight": "89"
+          },
+          "rect": {
+            "top": 264.09375,
+            "left": 64.5,
+            "width": 1001,
+            "height": 89.671875,
+            "bottom": 353.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "LH에서는 콜센터(1600-1004) 등을 통해 입주자모집공고의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황 에 대하여 정확하지 않은 정보 제공으로 청약관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다. 고객 여러"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-3\",\"xmlPath\":\"body-block-1/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-3",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 353.765625,
+            "left": 64.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 377.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-4\",\"xmlPath\":\"body-block-1/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-4",
+            "layoutHeight": "221"
+          },
+          "rect": {
+            "top": 377.765625,
+            "left": 64.5,
+            "width": 1001,
+            "height": 221,
+            "bottom": 598.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "■ 금회 공급하는 주택은 「주택공급에 관한 규칙」제27조제5항에 의거 입주자모집공고일 현재 국내에 거주(주민등록표등본 기준)하는 만 19세 이상의 무주 택세대구성원인 성년자에게 1세대 1주택의 기준으로 공급합니다. (1세대 2인 이상이 청약 접수할 경우 모두 부적격처리 됨) ■ 금회 추"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-5\",\"xmlPath\":\"body-block-1/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-5",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 598.765625,
+            "left": 64.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 622.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-6\",\"xmlPath\":\"body-block-1/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-6",
+            "layoutHeight": "128.60"
+          },
+          "rect": {
+            "top": 622.765625,
+            "left": 64.5,
+            "width": 1001,
+            "height": 128.59375,
+            "bottom": 751.359375,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "■ 금회 공급되는 주택은 최초 입주자모집공고(2024.01.03.), 추가 입주자모집공고(2024.06.12., 2025.03.28., 2025.07.17.) 이후 발생한 잔여세대를 공급하는 것으로 본 공고문에 등재되지 않은 사항은 기존 입주자모집공고문을 준용하므로, LH청약플러스 홈페"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-7\",\"xmlPath\":\"body-block-1/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-7",
+            "layoutHeight": "24"
+          },
+          "rect": {
+            "top": 751.359375,
+            "left": 64.5,
+            "width": 1001,
+            "height": 24,
+            "bottom": 775.359375,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"body-block-1/row-8\",\"xmlPath\":\"body-block-1/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwpx:0:body-block-1:row-8",
+            "layoutHeight": "28.41"
+          },
+          "rect": {
+            "top": 775.359375,
+            "left": 64.5,
+            "width": 1001,
+            "height": 28.40625,
+            "bottom": 803.765625,
+            "right": 1065.5
+          },
+          "cellCount": 1,
+          "text": "알려드립니다"
+        }
+      ],
+      "text": "❚공급위치 : 인천광역시 서구 가정동, 심곡동, 연희동, 청라동 일원 인천가정2 공공주택지구내 A-2블록 534세대 ❚공급대상 : A-2블록 801호 중 신혼희망타운(공공분양) 3세대 (전용면적 55㎡ 3세대) LH에서는 콜센터(1600-1004) 등을 통해 입주자모집공고의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황 에 대하여 정확하지 않은 정보 제공으로 청약",
+      "style": {
+        "height": "621.61px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-0-row-0-cell-0-block-1\",\"xmlPath\":\"body-block-0-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-0-row-0-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "47",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 99.046875,
+        "left": 73,
+        "width": 983,
+        "height": 78,
+        "bottom": 177.046875,
+        "right": 1056
+      },
+      "text": "인천가정2지구 A-2블록 신혼희망타운(공공분양)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "47px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-0-row-0-cell-0-block-2\",\"xmlPath\":\"body-block-0-row-0-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-0-row-0-cell-0-block-2",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "43",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 177.046875,
+        "left": 73,
+        "width": 983,
+        "height": 43,
+        "bottom": 220.046875,
+        "right": 1056
+      },
+      "text": "잔여세대 추가 입주자모집공고",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "43px",
+        "lineHeight": "140%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-0-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-0-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 188.796875,
+        "left": 76,
+        "width": 978,
+        "height": 22,
+        "bottom": 210.796875,
+        "right": 1054
+      },
+      "text": "❚공급위치 : 인천광역시 서구 가정동, 심곡동, 연희동, 청라동 일원 인천가정2 공공주택지구내 A-2블록 534세대",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-0-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-0-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-0-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 210.796875,
+        "left": 76,
+        "width": 978,
+        "height": 22,
+        "bottom": 232.796875,
+        "right": 1054
+      },
+      "text": "❚공급대상 : A-2블록 801호 중 신혼희망타운(공공분양) 3세대 (전용면적 55㎡ 3세대)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-1-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-1-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 243.546875,
+        "left": 72,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 264.875,
+        "right": 1058
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-2-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-2-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "89",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 266.59375,
+        "left": 79,
+        "width": 966,
+        "height": 89,
+        "bottom": 355.59375,
+        "right": 1045
+      },
+      "text": "LH에서는 콜센터(1600-1004) 등을 통해 입주자모집공고의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황 에 대하여 정확하지 않은 정보 제공으로 ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "89px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-3-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-3-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 357.21875,
+        "left": 72,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 378.546875,
+        "right": 1058
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-4-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-4-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "43",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 463.84375,
+        "left": 72,
+        "width": 986,
+        "height": 43,
+        "bottom": 506.84375,
+        "right": 1058
+      },
+      "text": "■ 금회 공급하는 주택은 「주택공급에 관한 규칙」제27조제5항에 의거 입주자모집공고일 현재 국내에 거주(주민등록표등본 기준)하는 만 19세 이상의 무주 택세대구성원인 성년자에게 1세대 1주택의 기준으로 공급합니다. ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "43px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-4-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-4-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-4-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "35",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 510.84375,
+        "left": 72,
+        "width": 986,
+        "height": 35,
+        "bottom": 545.84375,
+        "right": 1058
+      },
+      "text": "■ 금회 추가모집은 거주지역, 청약저축 가입 여부, 소득 및 자산, 과거 당첨사실 여부를 불문하며, 당첨 및 계약체결 시에도 재당첨제한 및 당첨자 관리 등이 적용되지 않습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "35px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-4-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-4-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-4-cell-0-block-2",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "77",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 549.84375,
+        "left": 72,
+        "width": 986,
+        "height": 77,
+        "bottom": 626.84375,
+        "right": 1058
+      },
+      "text": "■ 금회 공급되는 주택은 「공공주택 특별법 시행규칙」 별표6의3과 「주택공급에 관한 규칙」 제4조제1항 및 제3항의 규정에 의거, 입주자모집공고일 현재 국내에 거주(주민등록표등본 기준)하는 다음의 만 19세 이상의 ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "77px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-4-cell-0-block-3\",\"xmlPath\":\"body-block-1-row-4-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-4-cell-0-block-3",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "39",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 629.84375,
+        "left": 72,
+        "width": 986,
+        "height": 39,
+        "bottom": 668.84375,
+        "right": 1058
+      },
+      "text": "※ 부부(예비신혼부부 제외)는 중복당첨된 경우 「주택공급에 관한 규칙」제55조의2에 따라 청약 접수일(분 단위까지의 접수시간을 포함)이 빠른 사람의 당 첨[분 단위 접수시간이 동일한 경우 신청자의 연령(연월일 계산)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "39px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-4-cell-0-block-4\",\"xmlPath\":\"body-block-1-row-4-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-4-cell-0-block-4",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "27",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 671.84375,
+        "left": 72,
+        "width": 986,
+        "height": 27,
+        "bottom": 698.84375,
+        "right": 1058
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "27px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-5-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-5-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 602.21875,
+        "left": 72,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 623.546875,
+        "right": 1058
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-6-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-6-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-6-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "50",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 638.0625,
+        "left": 72,
+        "width": 986,
+        "height": 50,
+        "bottom": 688.0625,
+        "right": 1058
+      },
+      "text": "■ 금회 공급되는 주택은 최초 입주자모집공고(2024.01.03.), 추가 입주자모집공고(2024.06.12., 2025.03.28., 2025.07.17.) 이후 발생한 잔여세대를 공급하는 것으로 본 공고문에 등재",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "50px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-6-cell-0-block-1\",\"xmlPath\":\"body-block-1-row-6-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-6-cell-0-block-1",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 688.0625,
+        "left": 72,
+        "width": 986,
+        "height": 16,
+        "bottom": 704.0625,
+        "right": 1058
+      },
+      "text": "■ 인천가정2 A-2블록은 금회 공급되는 주택의 경우 신혼희망타운 전용 주택담보 장기대출상품(수익공유형 모기지) 의무가입단지입니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-6-cell-0-block-2\",\"xmlPath\":\"body-block-1-row-6-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-6-cell-0-block-2",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "32",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 704.0625,
+        "left": 72,
+        "width": 986,
+        "height": 32,
+        "bottom": 736.0625,
+        "right": 1058
+      },
+      "text": "■ 금회 공급하는 주택은 해약세대의 선택품목으로 시공되며, 공간옵션, 추가선택품목의 추가 설치 및 변경, 장애인 편의증진시설 설치는 불가하고, 해약세대의 선택사양을 그대로 승계하여야 합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "32px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-7-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-7-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-7-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "20",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 753.921875,
+        "left": 72,
+        "width": 986,
+        "height": 21.328125,
+        "bottom": 775.25,
+        "right": 1058
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"body-block-1-row-8-cell-0-block-0\",\"xmlPath\":\"body-block-1-row-8-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:body-block-1-row-8-cell-0-block-0",
+        "layoutSource": "columnBreak:0",
+        "layoutHeight": "22",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 778.5625,
+        "left": 85,
+        "width": 973,
+        "height": 22,
+        "bottom": 800.5625,
+        "right": 1058
+      },
+      "text": "알려드립니다",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "22px",
+        "lineHeight": "160%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"header-block-1\",\"xmlPath\":\"header-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:header-block-1",
+        "layoutSource": "hwpx-header-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 91,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 93,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 72px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwpx\",\"path\":\"Contents/section0.xml\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"footer-block-0\",\"xmlPath\":\"footer-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwpx:0:footer-block-0",
+        "layoutSource": "hwpx-footer-rule",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "decorationRule": "true"
+      },
+      "rect": {
+        "top": 1564,
+        "left": 60,
+        "width": 1006,
+        "height": 2,
+        "bottom": 1566,
+        "right": 1066
+      },
+      "text": "",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1545px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "2px",
+        "minHeight": "2px",
+        "lineHeight": "0",
+        "fontSize": "0px"
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "layoutSource": "hwpx-footer-page-number",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "layoutHeight": "18"
+      },
+      "rect": {
+        "top": 1540,
+        "left": 60,
+        "width": 1006,
+        "height": 19,
+        "bottom": 1559,
+        "right": 1066
+      },
+      "text": "- 1 -",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1521px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "18px",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 21
+}

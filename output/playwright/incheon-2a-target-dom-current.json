@@ -1,0 +1,605 @@
+{
+  "generatedAt": "2026-05-07T13:40:47.681Z",
+  "state": {
+    "filename": "incheon-2a.hwpx",
+    "format": "HWPX",
+    "pages": 18
+  },
+  "pages": [
+    {
+      "page": 10,
+      "pageRect": {
+        "left": 468.5,
+        "top": 14614,
+        "width": 1123,
+        "height": 1587,
+        "bottom": 16201
+      },
+      "bodyRect": {
+        "left": 469.5,
+        "top": 14615,
+        "width": 1121,
+        "height": 1587,
+        "bottom": 16202
+      },
+      "text": "1. PC인터넷·모바일 신청\n\n\n\n\n■  PC인터넷·모바일 신청방법\n\n  • 해당 신청일에 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 소지하고 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱에 접속하여 인터넷 \n신청하시기 바라며, 모바일을 통해 청약할 경우 “LH 청약플러스” 앱을 사전에 설치하고 인증서(공동인증서)를 미리 등록하여 주시기 바랍니다. \n\n  • LH 웹사이트 또는 모바일 청약시스템의 서비스다운 등으로 인해 신청이 불가하였다고 인정되는 경우에는 LH 홈페이지(www.lh.or.kr) 또는 LH 청약플러스(apply.lh.or.kr)에 공지 후 추가 접수를 받을 예\n정입니",
+      "topChildren": [
+        {
+          "index": 0,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "contentKind": "hwpx-body-container",
+            "layoutHeight": "870.59"
+          },
+          "rect": {
+            "left": 529.5,
+            "top": 14634,
+            "width": 1002,
+            "height": 873.42,
+            "bottom": 15507.42
+          },
+          "style": {
+            "opacity": "1",
+            "display": "block",
+            "position": "static",
+            "overflow": "visible",
+            "lineHeight": "21.0667px",
+            "fontSize": "13.3333px",
+            "borderColor": "rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          "text": "1. PC인터넷·모바일 신청\n\n\n\n\n■  PC인터넷·모바일 신청방법\n\n  • 해당 신청일에 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 소지하고 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱에 접속하여 인터넷 \n신청하시기 바라며, 모바일을 통해 청약할 경우 “LH 청약플러스” 앱을 사전에 설치하고 인증서(공동인증서)를 미리 등록하여 주시기 바랍니다. \n\n  • LH 웹사이트"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "depth": "0",
+          "kind": "hwpx-body-container",
+          "layoutHeight": "870.59",
+          "wrapRect": {
+            "left": 529.5,
+            "top": 14634,
+            "width": 1002,
+            "height": 873.42,
+            "bottom": 15507.42
+          },
+          "rect": {
+            "left": 529.5,
+            "top": 14634,
+            "width": 1002,
+            "height": 873.42,
+            "bottom": 15507.42
+          },
+          "rowCount": 5,
+          "cellCount": 10,
+          "text": "1. PC인터넷·모바일 신청\n\n\n\n\n■  PC인터넷·모바일 신청방법\n\n  • 해당 신청일에 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개)를 소지하고 LH 청약플러스(apply.lh.or.kr) 또는 모바일앱에 접속하여 인터넷 \n신청하시기 바라며, 모바일을 통해 청약할 경우 “LH 청약플러스” 앱을 사전에 설치하고 인증서(공동인증서)를 미리 등록하여 주시기 바랍니다. \n\n  • LH 웹사이트"
+        },
+        {
+          "index": 1,
+          "depth": "1",
+          "kind": "",
+          "layoutHeight": "26.20",
+          "wrapRect": {
+            "left": 530.5,
+            "top": 14766.98,
+            "width": 982,
+            "height": 28,
+            "bottom": 14794.98
+          },
+          "rect": {
+            "left": 530.5,
+            "top": 14766.98,
+            "width": 982,
+            "height": 28,
+            "bottom": 14794.98
+          },
+          "rowCount": 1,
+          "cellCount": 2,
+          "text": "1. PC인터넷·모바일 신청"
+        },
+        {
+          "index": 2,
+          "depth": "1",
+          "kind": "",
+          "layoutHeight": "205",
+          "wrapRect": {
+            "left": 530.5,
+            "top": 15132.31,
+            "width": 953,
+            "height": 206,
+            "bottom": 15338.31
+          },
+          "rect": {
+            "left": 530.5,
+            "top": 15132.31,
+            "width": 953,
+            "height": 206,
+            "bottom": 15338.31
+          },
+          "rowCount": 1,
+          "cellCount": 1,
+          "text": "• 신혼희망타운\n\n  LH 청약플러스(apply.lh.or.kr) 또는 모바일앱 → 인증서(공동인증서, 네이버인증서, 금융인증서, 토스인증서, KB국민인증서 중 1개) 로그인 →  [청약] → [분양주택] →[\n청약신청] → 공공분양(신혼희망) 선택 → 주택형 선택 → 신청유형(신혼부부, 예비신혼부부, 한부모가족 중) 선택 → 청약신청서 작성 → 청약내용 확인 및 청약완료\n\n\n\n\n• 신청시간 : 2026.04.10.(10:00"
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "pageRect": {
+        "left": 468.5,
+        "top": 21066,
+        "width": 1123,
+        "height": 1587,
+        "bottom": 22653
+      },
+      "bodyRect": {
+        "left": 469.5,
+        "top": 21067,
+        "width": 1121,
+        "height": 1587,
+        "bottom": 22654
+      },
+      "text": "- 단지 경계 담장, 옹벽 등은 지구단위계획지침 또는 현장여건 등에 따라 재질, 형태 등이 변경될 수 있음\n\n - 보도, 조경, 주차장 등 공동으로 사용하는 부분에 대해 점유 등의 권리행사를 할 수 없음\n\n - 단지 내 도로는 추후 관할 소방서와 협의결과에 따라 소방전용도로가 추가·변경될 수 있으며, 이와 관련하여 조경면적 등의 단지계획이 일부 변경될 수 있음\n\n - 배치도의 대지경계선, 구역경계선, 법면 현황은 최종 측량 결과에 따라 다소 변경될 수 있으며, 내부 도로 및 조경선은 인허가 과정이나 실제 시공 시 현장 여건에 따라 다소 \n변경될 수 있음\n\n - 단지 내 조경은 미확정 상태로 팜플렛의 단지조감도와 단지배치도는 입주자의 이해",
+      "topChildren": [
+        {
+          "index": 0,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "contentKind": "hwpx-body-container",
+            "layoutHeight": "1417"
+          },
+          "rect": {
+            "left": 529.5,
+            "top": 21086,
+            "width": 1002,
+            "height": 1423,
+            "bottom": 22509
+          },
+          "style": {
+            "opacity": "1",
+            "display": "block",
+            "position": "static",
+            "overflow": "visible",
+            "lineHeight": "21.0667px",
+            "fontSize": "13.3333px",
+            "borderColor": "rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          "text": "- 단지 경계 담장, 옹벽 등은 지구단위계획지침 또는 현장여건 등에 따라 재질, 형태 등이 변경될 수 있음\n\n - 보도, 조경, 주차장 등 공동으로 사용하는 부분에 대해 점유 등의 권리행사를 할 수 없음\n\n - 단지 내 도로는 추후 관할 소방서와 협의결과에 따라 소방전용도로가 추가·변경될 수 있으며, 이와 관련하여 조경면적 등의 단지계획이 일부 변경될 수 있음\n\n - 배치도의 대지경계선, 구역경계선, 법면 현황은 최종 측량 결"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "depth": "0",
+          "kind": "hwpx-body-container",
+          "layoutHeight": "1417",
+          "wrapRect": {
+            "left": 529.5,
+            "top": 21086,
+            "width": 1002,
+            "height": 1423,
+            "bottom": 22509
+          },
+          "rect": {
+            "left": 529.5,
+            "top": 21086,
+            "width": 1002,
+            "height": 1423,
+            "bottom": 22509
+          },
+          "rowCount": 1,
+          "cellCount": 1,
+          "text": "- 단지 경계 담장, 옹벽 등은 지구단위계획지침 또는 현장여건 등에 따라 재질, 형태 등이 변경될 수 있음\n\n - 보도, 조경, 주차장 등 공동으로 사용하는 부분에 대해 점유 등의 권리행사를 할 수 없음\n\n - 단지 내 도로는 추후 관할 소방서와 협의결과에 따라 소방전용도로가 추가·변경될 수 있으며, 이와 관련하여 조경면적 등의 단지계획이 일부 변경될 수 있음\n\n - 배치도의 대지경계선, 구역경계선, 법면 현황은 최종 측량 결"
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "pageRect": {
+        "left": 468.5,
+        "top": 22679,
+        "width": 1123,
+        "height": 1587,
+        "bottom": 24266
+      },
+      "bodyRect": {
+        "left": 469.5,
+        "top": 22680,
+        "width": 1121,
+        "height": 1587,
+        "bottom": 24267
+      },
+      "text": "- 시공 시 주방 상부장이 가스배관, 주방용 자동소화장치 또는 레인지후드 배기덕트 등과 겹칠 경우 상부장 일부가 조정되어 수납공간이 줄어들 수 있음\n\n - 부대복리시설 중 일부시설은 입주 전‧후 한시적으로 입주지원시설(A/S센터 등)로 사용될 수 있음\n\n - 공간계획에 따라 혹은 시공 과정에서 현관, 발코니, E/V홀 등 공간별 바닥단차가 발생할 수 있음\n\n - 에어컨 실외기 거치공간이 발코니1에 있어 에어컨 가동 시 소음이 발생할 수 있고 실외기로부터 배출되는 온풍이 실내로 유입될 수 있음\n\n - 세대 내 구조벽 외 조적벽체, 경량벽체 등이 시공될 예정임\n\n - 거실 아트월 및 주방벽 하부는 걸레받이가 시공되지 않음\n\n - 욕실 출입문",
+      "topChildren": [
+        {
+          "index": 0,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "contentKind": "hwpx-general-notice-section",
+            "layoutHeight": "1121.07"
+          },
+          "rect": {
+            "left": 529.5,
+            "top": 22699,
+            "width": 1002,
+            "height": 1127.06,
+            "bottom": 23826.06
+          },
+          "style": {
+            "opacity": "0.2",
+            "display": "block",
+            "position": "static",
+            "overflow": "visible",
+            "lineHeight": "21.0667px",
+            "fontSize": "13.3333px",
+            "borderColor": "rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          "text": "- 시공 시 주방 상부장이 가스배관, 주방용 자동소화장치 또는 레인지후드 배기덕트 등과 겹칠 경우 상부장 일부가 조정되어 수납공간이 줄어들 수 있음\n\n - 부대복리시설 중 일부시설은 입주 전‧후 한시적으로 입주지원시설(A/S센터 등)로 사용될 수 있음\n\n - 공간계획에 따라 혹은 시공 과정에서 현관, 발코니, E/V홀 등 공간별 바닥단차가 발생할 수 있음\n\n - 에어컨 실외기 거치공간이 발코니1에 있어 에어컨 가동 시 소음이 "
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "depth": "0",
+          "kind": "hwpx-general-notice-section",
+          "layoutHeight": "1121.07",
+          "wrapRect": {
+            "left": 529.5,
+            "top": 22699,
+            "width": 1002,
+            "height": 1127.06,
+            "bottom": 23826.06
+          },
+          "rect": {
+            "left": 529.5,
+            "top": 22699,
+            "width": 1002,
+            "height": 1127.06,
+            "bottom": 23826.06
+          },
+          "rowCount": 1,
+          "cellCount": 11,
+          "text": "- 시공 시 주방 상부장이 가스배관, 주방용 자동소화장치 또는 레인지후드 배기덕트 등과 겹칠 경우 상부장 일부가 조정되어 수납공간이 줄어들 수 있음\n\n - 부대복리시설 중 일부시설은 입주 전‧후 한시적으로 입주지원시설(A/S센터 등)로 사용될 수 있음\n\n - 공간계획에 따라 혹은 시공 과정에서 현관, 발코니, E/V홀 등 공간별 바닥단차가 발생할 수 있음\n\n - 에어컨 실외기 거치공간이 발코니1에 있어 에어컨 가동 시 소음이 "
+        },
+        {
+          "index": 1,
+          "depth": "1",
+          "kind": "",
+          "layoutHeight": "41.87",
+          "wrapRect": {
+            "left": 530.5,
+            "top": 23310.67,
+            "width": 959,
+            "height": 42.86,
+            "bottom": 23353.53
+          },
+          "rect": {
+            "left": 530.5,
+            "top": 23310.67,
+            "width": 959,
+            "height": 42.86,
+            "bottom": 23353.53
+          },
+          "rowCount": 2,
+          "cellCount": 8,
+          "text": "학교\n\n\t\n\n위치\n\n\t\n\n학교명\n\n\t\n\n개교시기\n\n\n\n\n초등학교\n\n\t\n\n초1\n\n\t\n\n미정\n\n\t\n\n미정"
+        },
+        {
+          "index": 2,
+          "depth": "1",
+          "kind": "",
+          "layoutHeight": "26.20",
+          "wrapRect": {
+            "left": 530.5,
+            "top": 23893.2,
+            "width": 982,
+            "height": 27.33,
+            "bottom": 23920.53
+          },
+          "rect": {
+            "left": 530.5,
+            "top": 23893.2,
+            "width": 982,
+            "height": 27.33,
+            "bottom": 23920.53
+          },
+          "rowCount": 1,
+          "cellCount": 2,
+          "text": "5. 주택성능등급의 표시"
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "pageRect": {
+        "left": 468.5,
+        "top": 24292,
+        "width": 1123,
+        "height": 1587,
+        "bottom": 25879
+      },
+      "bodyRect": {
+        "left": 469.5,
+        "top": 24293,
+        "width": 1121,
+        "height": 1587,
+        "bottom": 25880
+      },
+      "text": "성능부문\n\n\t\n\n성능항목\n\n\t\n\n성능등급\n\n\n\n\n소음관련 등급\n\n\t\n\n경량충격음\n\n\t\n\n★★★★\n\n\n\n\n중량충격음\n\n\t\n\n★★\n\n\n\n\n화장실 급배수소음\n\n\t\n\n★★\n\n\n\n\n세대간 경계벽의 차음성능\n\n\t\n\n★\n\n\n\n\n교통소음(도로, 철도)에 대한 실내외 소음\n\n\t\n\n★★\n\n\n\n\n구조관련 등급\n\n\t\n\n가변성\n\n\t\n\n★★\n\n\n\n\n수리용이성 전용부분\n\n\t\n\n★★\n\n\n\n\n수리용이성 공용부분\n\n\t\n\n★★\n\n\n\n\n내구성\n\n\t\n\n★\n\n\n\n\n환경관련 등급\n\n\t\n\n생태면적율\n\n\t\n\n★★\n\n\n\n\n자연지반 녹지율\n\n\t\n\n★★\n\n\n\n\n일조권 간섭방지 대책의 타당성\n\n\t\n\n★\n\n\n\n\n실내공기 오염물질 저방출 제품의 적용\n\n\t\n\n★★\n\n\n\n\n단위세대 환기성능확보\n",
+      "topChildren": [
+        {
+          "index": 0,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "contentKind": "hwpx-body-container",
+            "layoutHeight": "1435"
+          },
+          "rect": {
+            "left": 529.5,
+            "top": 24312,
+            "width": 1002,
+            "height": 1441,
+            "bottom": 25753
+          },
+          "style": {
+            "opacity": "1",
+            "display": "block",
+            "position": "static",
+            "overflow": "visible",
+            "lineHeight": "21.0667px",
+            "fontSize": "13.3333px",
+            "borderColor": "rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          "text": "성능부문\n\n\t\n\n성능항목\n\n\t\n\n성능등급\n\n\n\n\n소음관련 등급\n\n\t\n\n경량충격음\n\n\t\n\n★★★★\n\n\n\n\n중량충격음\n\n\t\n\n★★\n\n\n\n\n화장실 급배수소음\n\n\t\n\n★★\n\n\n\n\n세대간 경계벽의 차음성능\n\n\t\n\n★\n\n\n\n\n교통소음(도로, 철도)에 대한 실내외 소음\n\n\t\n\n★★\n\n\n\n\n구조관련 등급\n\n\t\n\n가변성\n\n\t\n\n★★\n\n\n\n\n수리용이성 전용부분\n\n\t\n\n★★\n\n\n\n\n수리용이성 공용부분\n\n\t\n\n★★\n\n\n\n\n내구성\n\n\t\n\n★\n\n\n\n\n"
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "depth": "0",
+          "kind": "hwpx-body-container",
+          "layoutHeight": "1435",
+          "wrapRect": {
+            "left": 529.5,
+            "top": 24312,
+            "width": 1002,
+            "height": 1441,
+            "bottom": 25753
+          },
+          "rect": {
+            "left": 529.5,
+            "top": 24312,
+            "width": 1002,
+            "height": 1441,
+            "bottom": 25753
+          },
+          "rowCount": 1,
+          "cellCount": 133,
+          "text": "성능부문\n\n\t\n\n성능항목\n\n\t\n\n성능등급\n\n\n\n\n소음관련 등급\n\n\t\n\n경량충격음\n\n\t\n\n★★★★\n\n\n\n\n중량충격음\n\n\t\n\n★★\n\n\n\n\n화장실 급배수소음\n\n\t\n\n★★\n\n\n\n\n세대간 경계벽의 차음성능\n\n\t\n\n★\n\n\n\n\n교통소음(도로, 철도)에 대한 실내외 소음\n\n\t\n\n★★\n\n\n\n\n구조관련 등급\n\n\t\n\n가변성\n\n\t\n\n★★\n\n\n\n\n수리용이성 전용부분\n\n\t\n\n★★\n\n\n\n\n수리용이성 공용부분\n\n\t\n\n★★\n\n\n\n\n내구성\n\n\t\n\n★\n\n\n\n\n"
+        },
+        {
+          "index": 1,
+          "depth": "1",
+          "kind": "hwpx-performance-grade",
+          "layoutHeight": "1020.31",
+          "wrapRect": {
+            "left": 530.5,
+            "top": 24315,
+            "width": 945,
+            "height": 1021.3,
+            "bottom": 25336.3
+          },
+          "rect": {
+            "left": 530.5,
+            "top": 24315,
+            "width": 945,
+            "height": 1021.3,
+            "bottom": 25336.3
+          },
+          "rowCount": 46,
+          "cellCount": 98,
+          "text": "성능부문\n\n\t\n\n성능항목\n\n\t\n\n성능등급\n\n\n\n\n소음관련 등급\n\n\t\n\n경량충격음\n\n\t\n\n★★★★\n\n\n\n\n중량충격음\n\n\t\n\n★★\n\n\n\n\n화장실 급배수소음\n\n\t\n\n★★\n\n\n\n\n세대간 경계벽의 차음성능\n\n\t\n\n★\n\n\n\n\n교통소음(도로, 철도)에 대한 실내외 소음\n\n\t\n\n★★\n\n\n\n\n구조관련 등급\n\n\t\n\n가변성\n\n\t\n\n★★\n\n\n\n\n수리용이성 전용부분\n\n\t\n\n★★\n\n\n\n\n수리용이성 공용부분\n\n\t\n\n★★\n\n\n\n\n내구성\n\n\t\n\n★\n\n\n\n\n"
+        },
+        {
+          "index": 2,
+          "depth": "1",
+          "kind": "",
+          "layoutHeight": "26.20",
+          "wrapRect": {
+            "left": 530.5,
+            "top": 25384.63,
+            "width": 982,
+            "height": 27.33,
+            "bottom": 25411.95
+          },
+          "rect": {
+            "left": 530.5,
+            "top": 25384.63,
+            "width": 982,
+            "height": 27.33,
+            "bottom": 25411.95
+          },
+          "rowCount": 1,
+          "cellCount": 2,
+          "text": "6. 친환경주택의 성능 수준"
+        },
+        {
+          "index": 3,
+          "depth": "1",
+          "kind": "",
+          "layoutHeight": "316.77",
+          "wrapRect": {
+            "left": 530.5,
+            "top": 25412.95,
+            "width": 813,
+            "height": 317.66,
+            "bottom": 25730.61
+          },
+          "rect": {
+            "left": 530.5,
+            "top": 25412.95,
+            "width": 813,
+            "height": 317.66,
+            "bottom": 25730.61
+          },
+          "rowCount": 15,
+          "cellCount": 30,
+          "text": "구   분\n\n\t\n\n적용 여부\n\n\n\n\n외벽(직접면)\n\n\t\n\n적  용\n\n\n\n\n외벽(간접면)\n\n\t\n\n적  용\n\n\n\n\n창호(직접면)\n\n\t\n\n적  용\n\n\n\n\n창호(간접면)\n\n\t\n\n적  용\n\n\n\n\n지붕\n\n\t\n\n적  용\n\n\n\n\n바닥(직접면)\n\n\t\n\n적  용\n\n\n\n\n바닥(간접면)\n\n\t\n\n적  용\n\n\n\n\n바닥(층간바닥)\n\n\t\n\n적  용\n\n\n\n\n대기전력차단장치\n\n\t\n\n적  용\n\n\n\n\n일괄소등스위치\n\n\t\n\n적  용\n\n\n\n\n고효율LED\n\n\t\n\n적 "
+        },
+        {
+          "index": 4,
+          "depth": "1",
+          "kind": "",
+          "layoutHeight": "26.20",
+          "wrapRect": {
+            "left": 530.5,
+            "top": 25752.94,
+            "width": 982,
+            "height": 27.33,
+            "bottom": 25780.27
+          },
+          "rect": {
+            "left": 530.5,
+            "top": 25752.94,
+            "width": 982,
+            "height": 27.33,
+            "bottom": 25780.27
+          },
+          "rowCount": 1,
+          "cellCount": 2,
+          "text": "7. 마감자재 목록표"
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "pageRect": {
+        "left": 468.5,
+        "top": 25905,
+        "width": 1123,
+        "height": 1587,
+        "bottom": 27492
+      },
+      "bodyRect": {
+        "left": 469.5,
+        "top": 25906,
+        "width": 1121,
+        "height": 1587,
+        "bottom": 27493
+      },
+      "text": "8. 분양가상한제 적용주택의 분양가 공개\n\n\n\n\n■ 「주택법」 제57조 및 「공동주택 분양가격의 산정 등에 관한 규칙」 제15조의 규정에 의거 다음과 같이 공개하며, 분양가격의 항목별 공시내용은 사업의 실제 소요된 비용과 다를 수 있습니다.\n\n■ 분양가격은 상한금액 미만으로 책정되었고, 공시되는 분양가격은 상한가격 대비 분양가격 비율로 조정되었습니다.\n\n■ 분양가격 공시                                                                                                                                      (단위 : 천원)\n\n구  분\n\n\t",
+      "topChildren": [
+        {
+          "index": 0,
+          "tag": "DIV",
+          "cls": "hwp-table-wrap",
+          "dataset": {
+            "nestingLevel": "0",
+            "contentKind": "hwpx-body-container",
+            "layoutHeight": "1078.55"
+          },
+          "rect": {
+            "left": 529.5,
+            "top": 25925,
+            "width": 1002,
+            "height": 1084.55,
+            "bottom": 27009.55
+          },
+          "style": {
+            "opacity": "1",
+            "display": "block",
+            "position": "static",
+            "overflow": "visible",
+            "lineHeight": "21.0667px",
+            "fontSize": "13.3333px",
+            "borderColor": "rgb(17, 17, 17)",
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          "text": "8. 분양가상한제 적용주택의 분양가 공개\n\n\n\n\n■ 「주택법」 제57조 및 「공동주택 분양가격의 산정 등에 관한 규칙」 제15조의 규정에 의거 다음과 같이 공개하며, 분양가격의 항목별 공시내용은 사업의 실제 소요된 비용과 다를 수 있습니다.\n\n■ 분양가격은 상한금액 미만으로 책정되었고, 공시되는 분양가격은 상한가격 대비 분양가격 비율로 조정되었습니다.\n\n■ 분양가격 공시                                "
+        }
+      ],
+      "tables": [
+        {
+          "index": 0,
+          "depth": "0",
+          "kind": "hwpx-body-container",
+          "layoutHeight": "1078.55",
+          "wrapRect": {
+            "left": 529.5,
+            "top": 25925,
+            "width": 1002,
+            "height": 1084.55,
+            "bottom": 27009.55
+          },
+          "rect": {
+            "left": 529.5,
+            "top": 25925,
+            "width": 1002,
+            "height": 1084.55,
+            "bottom": 27009.55
+          },
+          "rowCount": 1,
+          "cellCount": 155,
+          "text": "8. 분양가상한제 적용주택의 분양가 공개\n\n\n\n\n■ 「주택법」 제57조 및 「공동주택 분양가격의 산정 등에 관한 규칙」 제15조의 규정에 의거 다음과 같이 공개하며, 분양가격의 항목별 공시내용은 사업의 실제 소요된 비용과 다를 수 있습니다.\n\n■ 분양가격은 상한금액 미만으로 책정되었고, 공시되는 분양가격은 상한가격 대비 분양가격 비율로 조정되었습니다.\n\n■ 분양가격 공시                                "
+        },
+        {
+          "index": 1,
+          "depth": "1",
+          "kind": "",
+          "layoutHeight": "26.20",
+          "wrapRect": {
+            "left": 530.5,
+            "top": 25928,
+            "width": 982,
+            "height": 27.33,
+            "bottom": 25955.33
+          },
+          "rect": {
+            "left": 530.5,
+            "top": 25928,
+            "width": 982,
+            "height": 27.33,
+            "bottom": 25955.33
+          },
+          "rowCount": 1,
+          "cellCount": 2,
+          "text": "8. 분양가상한제 적용주택의 분양가 공개"
+        },
+        {
+          "index": 2,
+          "depth": "1",
+          "kind": "",
+          "layoutHeight": "1013.35",
+          "wrapRect": {
+            "left": 530.5,
+            "top": 26016.66,
+            "width": 950,
+            "height": 1290.89,
+            "bottom": 27307.55
+          },
+          "rect": {
+            "left": 530.5,
+            "top": 26016.66,
+            "width": 950,
+            "height": 1290.89,
+            "bottom": 27307.55
+          },
+          "rowCount": 71,
+          "cellCount": 152,
+          "text": "구  분\n\n\t\n\n총 액\n\n\n\n\n택지비\n\n\t\n\n택지공급가격\n\n\t\n\n65,966,454\n\n\n\n\n기간이자\n\n\t\n\n3,815,589\n\n\n\n\n필요적 경비\n\n\t\n\n69,316\n\n\n\n\n그 밖의 비용\n\n\t\n\n8,024,192\n\n\n\n\n계\n\n\t\n\n\n\n\n\n\n\n건축비\n\n\t\n\n공사비\n\n\t\n\n토목\n\n\t\n\n토공사\n\n\t\n\n1,616,200\n\n\n\n\n흙막이공사\n\n\t\n\n-\n\n\n\n\n비탈면보호공사\n\n\t\n\n-\n\n\n\n\n옹벽공사\n\n\t\n\n34,186\n\n\n\n\n석축공사\n\n\t"
+        }
+      ]
+    }
+  ]
+}

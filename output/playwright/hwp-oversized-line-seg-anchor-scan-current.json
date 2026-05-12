@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-05-07T08:17:21.809Z",
+  "source": "HWP table cell paragraphSummaries oversized line-segment/control-anchor scan",
+  "docs": [
+    {
+      "id": "attachment-sale-notice",
+      "hitCount": 1,
+      "topHits": [
+        {
+          "table": 0,
+          "row": 5,
+          "cell": 0,
+          "paragraph": 1,
+          "segIndex": 1,
+          "height": 8974,
+          "y": 7240,
+          "textHeight": 8974,
+          "baseline": 7628,
+          "chpos": 40,
+          "hasTableControl": true,
+          "controls": [
+            {
+              "kind": "lineBreak",
+              "controlKind": "",
+              "controlId": "",
+              "offset": 39
+            },
+            {
+              "kind": "extendedControl",
+              "controlKind": "table",
+              "controlId": "tbl ",
+              "offset": 40
+            },
+            {
+              "kind": "paragraphBreak",
+              "controlKind": "",
+              "controlId": "",
+              "offset": 40
+            }
+          ],
+          "textPreview": "■ 선착순 동·호지정 방식으로 공급하며, 주요 일정은 다음과 같습니다.",
+          "tablePreview": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이"
+        }
+      ]
+    },
+    {
+      "id": "goyeopje-full-2024",
+      "hitCount": 1,
+      "topHits": [
+        {
+          "table": 5,
+          "row": 1,
+          "cell": 0,
+          "paragraph": 0,
+          "segIndex": 0,
+          "height": 63127,
+          "y": 500,
+          "textHeight": 63127,
+          "baseline": 53658,
+          "chpos": 0,
+          "hasTableControl": true,
+          "controls": [
+            {
+              "kind": "extendedControl",
+              "controlKind": "table",
+              "controlId": "tbl ",
+              "offset": 0
+            },
+            {
+              "kind": "paragraphBreak",
+              "controlKind": "",
+              "controlId": "",
+              "offset": 0
+            }
+          ],
+          "textPreview": "",
+          "tablePreview": "(뒷 면) 사업명 자격요건 6.25자녀수당 1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군경의 자녀와 1954. 10. 25부터 1955. 6. 30까지"
+        }
+      ]
+    },
+    {
+      "id": "gyeolseokgye",
+      "hitCount": 2,
+      "topHits": [
+        {
+          "table": 0,
+          "row": 3,
+          "cell": 1,
+          "paragraph": 0,
+          "segIndex": 0,
+          "height": 23118,
+          "y": 0,
+          "textHeight": 23118,
+          "baseline": 19650,
+          "chpos": 0,
+          "hasTableControl": true,
+          "controls": [
+            {
+              "kind": "extendedControl",
+              "controlKind": "table",
+              "controlId": "tbl ",
+              "offset": 0
+            },
+            {
+              "kind": "paragraphBreak",
+              "controlKind": "",
+              "controlId": "",
+              "offset": 1
+            }
+          ],
+          "textPreview": "",
+          "tablePreview": "결 석 계 결 재 담 임 교 무 교 감 전결 인 적 사 항 학년 반 학년 반 이 름 결 석 일 수 2026년 월 일( 요일) ~ 2026년 월 일( 요일) ( )일간 결 석 종 류 결석 구분 내 용 해당 사항에 √ "
+        },
+        {
+          "table": 0,
+          "row": 0,
+          "cell": 0,
+          "paragraph": 0,
+          "segIndex": 0,
+          "height": 5510,
+          "y": 0,
+          "textHeight": 5510,
+          "baseline": 4684,
+          "chpos": 0,
+          "hasTableControl": true,
+          "controls": [
+            {
+              "kind": "extendedControl",
+              "controlKind": "table",
+              "controlId": "tbl ",
+              "offset": 24
+            },
+            {
+              "kind": "paragraphBreak",
+              "controlKind": "",
+              "controlId": "",
+              "offset": 25
+            }
+          ],
+          "textPreview": "결 석 계",
+          "tablePreview": "결 석 계 결 재 담 임 교 무 교 감 전결 인 적 사 항 학년 반 학년 반 이 름 결 석 일 수 2026년 월 일( 요일) ~ 2026년 월 일( 요일) ( )일간 결 석 종 류 결석 구분 내 용 해당 사항에 √ "
+        }
+      ]
+    }
+  ]
+}

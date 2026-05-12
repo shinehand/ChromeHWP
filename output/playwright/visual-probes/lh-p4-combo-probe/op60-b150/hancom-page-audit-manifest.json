@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-05-07T23:13:34.315Z",
+  "auditId": "lh-p4-combo-op60-b150",
+  "outputDirectory": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-p4-combo-probe/op60-b150",
+  "documents": [
+    {
+      "id": "attachment-sale-notice",
+      "filename": "attachment-sale-notice.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp",
+      "pageCount": 4,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-p4-combo-probe/op60-b150/attachment-sale-notice/chrome-page-001.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 1,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-002.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-p4-combo-probe/op60-b150/attachment-sale-notice/chrome-page-002.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 2,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-003.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-p4-combo-probe/op60-b150/attachment-sale-notice/chrome-page-003.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 3,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/attachment-sale-notice/hancom-page-004.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-p4-combo-probe/op60-b150/attachment-sale-notice/chrome-page-004.png",
+          "targetBand": "last"
+        }
+      ]
+    }
+  ]
+}

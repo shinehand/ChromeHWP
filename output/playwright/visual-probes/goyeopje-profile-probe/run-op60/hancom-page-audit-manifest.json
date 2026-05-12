@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-05-07T23:14:40.325Z",
+  "auditId": "goyeopje-profile-run-op60",
+  "outputDirectory": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-profile-probe/run-op60",
+  "documents": [
+    {
+      "id": "goyeopje",
+      "filename": "goyeopje.hwp",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje.hwp",
+      "pageCount": 2,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje/hancom-page-001.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-profile-probe/run-op60/goyeopje/chrome-page-001.png",
+          "targetBand": "first"
+        },
+        {
+          "pageIndex": 1,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit/goyeopje/hancom-page-002.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/goyeopje-profile-probe/run-op60/goyeopje/chrome-page-002.png",
+          "targetBand": "last"
+        }
+      ]
+    }
+  ]
+}

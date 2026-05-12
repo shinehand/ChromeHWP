@@ -1,0 +1,1044 @@
+{
+  "pageRect": {
+    "left": 0,
+    "top": 0,
+    "width": 794,
+    "height": 1123,
+    "bottom": 1123
+  },
+  "tables": [
+    {
+      "index": 0,
+      "depth": "0",
+      "kind": "",
+      "source": "hwp",
+      "layout": "",
+      "rect": {
+        "left": 57,
+        "top": 80,
+        "width": 678,
+        "height": 951,
+        "bottom": 1031
+      },
+      "wrap": {
+        "dataset": {
+          "nestingLevel": "0",
+          "layoutPosition": "absolute",
+          "layoutSource": "hwp-table-line-seg-inferred",
+          "layoutHeight": "951"
+        },
+        "rect": {
+          "left": 57,
+          "top": 80,
+          "width": 678,
+          "height": 951,
+          "bottom": 1031
+        },
+        "style": {
+          "position": "absolute",
+          "display": "block",
+          "overflow": "hidden",
+          "margin": "0px",
+          "opacity": "1",
+          "left": "57px",
+          "top": "80px",
+          "right": "59px"
+        }
+      },
+      "text": "결 석 계\n\n결\n\n재\n\n\t\n\n담 임\n\n\t\n\n교 무\n\n\t\n\n교 감\n\n\n\n\n\n\n\n\t\n\n\n\n\n\t\n\n전결\n\n\n\n\n인  적\n\n사  항\n\n\t\n\n학년 반\n\n\t\n\n학년        반\n\n\t\n\n이 름\n\n\t\n\n\n\n\n\n\n\n결  석\n\n일  수\n\n\t\n\n2026년   월   일(   요일)   ~   2026년   월   일(   요일)   (     )일간\n\n\n\n\n결  석\n\n종  류\n\n\t\n\n결석 구분\n\n\t\n\n내 용\n\n\t\n\n해당 사항에 √ \n표시\n\n\t",
+      "rows": [
+        {
+          "i": 0,
+          "rect": {
+            "left": 57.5,
+            "top": 80.5,
+            "width": 677,
+            "height": 92.5,
+            "bottom": 173
+          },
+          "text": "결 석 계\n\n결\n\n재\n\n\t\n\n담 임\n\n\t\n\n교 무\n\n\t\n\n교 감\n\n\n\n\n\n\n\n\t\n\n\n\n\n\t\n\n전결",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 5,
+              "layout": "65",
+              "rect": {
+                "left": 57.5,
+                "top": 80.5,
+                "width": 677,
+                "height": 92.5,
+                "bottom": 173
+              },
+              "text": "결 석 계\n\n결\n\n재\n\n\t\n\n담 임\n\n\t\n\n교 무\n\n\t\n\n교 감\n\n\n\n\n\n\n\n\t\n\n\n\n\n\t\n\n전결"
+            }
+          ]
+        },
+        {
+          "i": 1,
+          "rect": {
+            "left": 57.5,
+            "top": 173,
+            "width": 677,
+            "height": 65.45,
+            "bottom": 238.45
+          },
+          "text": "인  적\n\n사  항\n\n\t\n\n학년 반\n\n\t\n\n학년        반\n\n\t\n\n이 름",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "46",
+              "rect": {
+                "left": 57.5,
+                "top": 173,
+                "width": 70.98,
+                "height": 65.45,
+                "bottom": 238.45
+              },
+              "text": "인  적\n\n사  항"
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "46",
+              "rect": {
+                "left": 128.48,
+                "top": 173,
+                "width": 65,
+                "height": 65.45,
+                "bottom": 238.45
+              },
+              "text": "학년 반"
+            },
+            {
+              "j": 2,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "46",
+              "rect": {
+                "left": 193.48,
+                "top": 173,
+                "width": 262,
+                "height": 65.45,
+                "bottom": 238.45
+              },
+              "text": "학년        반"
+            },
+            {
+              "j": 3,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "46",
+              "rect": {
+                "left": 455.48,
+                "top": 173,
+                "width": 64,
+                "height": 65.45,
+                "bottom": 238.45
+              },
+              "text": "이 름"
+            },
+            {
+              "j": 4,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "46",
+              "rect": {
+                "left": 519.48,
+                "top": 173,
+                "width": 215.02,
+                "height": 65.45,
+                "bottom": 238.45
+              },
+              "text": ""
+            }
+          ]
+        },
+        {
+          "i": 2,
+          "rect": {
+            "left": 57.5,
+            "top": 238.45,
+            "width": 677,
+            "height": 65.45,
+            "bottom": 303.91
+          },
+          "text": "결  석\n\n일  수\n\n\t\n\n2026년   월   일(   요일)   ~   2026년   월   일(   요일)   (     )일간",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "46",
+              "rect": {
+                "left": 57.5,
+                "top": 238.45,
+                "width": 70.98,
+                "height": 65.45,
+                "bottom": 303.91
+              },
+              "text": "결  석\n\n일  수"
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 4,
+              "layout": "46",
+              "rect": {
+                "left": 128.48,
+                "top": 238.45,
+                "width": 606.02,
+                "height": 65.45,
+                "bottom": 303.91
+              },
+              "text": "2026년   월   일(   요일)   ~   2026년   월   일(   요일)   (     )일간"
+            }
+          ]
+        },
+        {
+          "i": 3,
+          "rect": {
+            "left": 57.5,
+            "top": 303.91,
+            "width": 677,
+            "height": 76.84,
+            "bottom": 380.75
+          },
+          "text": "결  석\n\n종  류\n\n\t\n\n결석 구분\n\n\t\n\n내 용\n\n\t\n\n해당 사항에 √ \n표시\n\n\t\n\n제출서류\n\n\n\n\n출석인정\n결석\n\n\t\n\n- 경조사\n\n\t\n\n\n\n\n\t\n\n결석계, 경조사관련 증빙",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "54",
+              "rect": {
+                "left": 57.5,
+                "top": 303.91,
+                "width": 70.98,
+                "height": 76.84,
+                "bottom": 380.75
+              },
+              "text": "결  석\n\n종  류"
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 4,
+              "layout": "54",
+              "rect": {
+                "left": 128.48,
+                "top": 303.91,
+                "width": 606.02,
+                "height": 76.84,
+                "bottom": 380.75
+              },
+              "text": "결석 구분\n\n\t\n\n내 용\n\n\t\n\n해당 사항에 √ \n표시\n\n\t\n\n제출서류\n\n\n\n\n출석인정\n결석\n\n\t\n\n- 경조사\n\n\t\n\n\n\n\n\t\n\n결석계, 경조사관련 증빙서류\n\n\n\n\n- 법정 감염병\n\n\t\n\n\n\n\n\t\n\n결석계, 확인서 "
+            }
+          ]
+        },
+        {
+          "i": 4,
+          "rect": {
+            "left": 57.5,
+            "top": 380.75,
+            "width": 677,
+            "height": 305.98,
+            "bottom": 686.73
+          },
+          "text": "위와 같이 사유로 결석하여 결석계를 제출합니다.\n\n2026.      .      .\n\n학부모                (인)\n\n서울중화초등학교장 귀하",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 5,
+              "layout": "215",
+              "rect": {
+                "left": 57.5,
+                "top": 380.75,
+                "width": 677,
+                "height": 305.98,
+                "bottom": 686.73
+              },
+              "text": "위와 같이 사유로 결석하여 결석계를 제출합니다.\n\n2026.      .      .\n\n학부모                (인)\n\n서울중화초등학교장 귀하"
+            }
+          ]
+        },
+        {
+          "i": 5,
+          "rect": {
+            "left": 57.5,
+            "top": 686.73,
+            "width": 677,
+            "height": 86.09,
+            "bottom": 772.83
+          },
+          "text": "학부모 의견서",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 5,
+              "layout": "55",
+              "rect": {
+                "left": 57.5,
+                "top": 686.73,
+                "width": 677,
+                "height": 86.09,
+                "bottom": 772.83
+              },
+              "text": "학부모 의견서"
+            }
+          ]
+        },
+        {
+          "i": 6,
+          "rect": {
+            "left": 57.5,
+            "top": 772.83,
+            "width": 677,
+            "height": 257.67,
+            "bottom": 1030.5
+          },
+          "text": "결석\n\n사유",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "181",
+              "rect": {
+                "left": 57.5,
+                "top": 772.83,
+                "width": 70.98,
+                "height": 257.67,
+                "bottom": 1030.5
+              },
+              "text": "결석\n\n사유"
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 4,
+              "layout": "181",
+              "rect": {
+                "left": 128.48,
+                "top": 772.83,
+                "width": 606.02,
+                "height": 257.67,
+                "bottom": 1030.5
+              },
+              "text": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "depth": "1",
+      "kind": "",
+      "source": "hwp",
+      "layout": "",
+      "rect": {
+        "left": 493,
+        "top": 82.25,
+        "width": 227,
+        "height": 72,
+        "bottom": 154.25
+      },
+      "wrap": {
+        "dataset": {
+          "nestingLevel": "1",
+          "layoutPosition": "nested-absolute",
+          "layoutSource": "hwp-table-line-seg-inferred",
+          "layoutHeight": "70"
+        },
+        "rect": {
+          "left": 493,
+          "top": 82.25,
+          "width": 227,
+          "height": 72,
+          "bottom": 154.25
+        },
+        "style": {
+          "position": "absolute",
+          "display": "block",
+          "overflow": "hidden",
+          "margin": "0px",
+          "opacity": "1",
+          "left": "433px",
+          "top": "-18px",
+          "right": "12px"
+        }
+      },
+      "text": "결\n\n재\n\n\t\n\n담 임\n\n\t\n\n교 무\n\n\t\n\n교 감\n\n\n\n\n\n\n\n\t\n\n\n\n\n\t\n\n전결",
+      "rows": [
+        {
+          "i": 0,
+          "rect": {
+            "left": 493.5,
+            "top": 82.75,
+            "width": 226,
+            "height": 21,
+            "bottom": 103.75
+          },
+          "text": "결\n\n재\n\n\t\n\n담 임\n\n\t\n\n교 무\n\n\t\n\n교 감",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 2,
+              "colSpan": 1,
+              "layout": "",
+              "rect": {
+                "left": 493.5,
+                "top": 82.75,
+                "width": 34,
+                "height": 71,
+                "bottom": 153.75
+              },
+              "text": "결\n\n재"
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "20",
+              "rect": {
+                "left": 527.5,
+                "top": 82.75,
+                "width": 64,
+                "height": 21,
+                "bottom": 103.75
+              },
+              "text": "담 임"
+            },
+            {
+              "j": 2,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "20",
+              "rect": {
+                "left": 591.5,
+                "top": 82.75,
+                "width": 64,
+                "height": 21,
+                "bottom": 103.75
+              },
+              "text": "교 무"
+            },
+            {
+              "j": 3,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "20",
+              "rect": {
+                "left": 655.5,
+                "top": 82.75,
+                "width": 64,
+                "height": 21,
+                "bottom": 103.75
+              },
+              "text": "교 감"
+            }
+          ]
+        },
+        {
+          "i": 1,
+          "rect": {
+            "left": 493.5,
+            "top": 103.75,
+            "width": 226,
+            "height": 50,
+            "bottom": 153.75
+          },
+          "text": "전결",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "50",
+              "rect": {
+                "left": 527.5,
+                "top": 103.75,
+                "width": 64,
+                "height": 50,
+                "bottom": 153.75
+              },
+              "text": ""
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "50",
+              "rect": {
+                "left": 591.5,
+                "top": 103.75,
+                "width": 64,
+                "height": 50,
+                "bottom": 153.75
+              },
+              "text": ""
+            },
+            {
+              "j": 2,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "50",
+              "rect": {
+                "left": 655.5,
+                "top": 103.75,
+                "width": 64,
+                "height": 50,
+                "bottom": 153.75
+              },
+              "text": "전결"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "depth": "1",
+      "kind": "",
+      "source": "hwp",
+      "layout": "",
+      "rect": {
+        "left": 162.98,
+        "top": 378.08,
+        "width": 595,
+        "height": 301,
+        "bottom": 679.08
+      },
+      "wrap": {
+        "dataset": {
+          "nestingLevel": "1",
+          "layoutPosition": "nested-absolute",
+          "layoutSource": "hwp-table-line-seg-inferred",
+          "layoutHeight": "301"
+        },
+        "rect": {
+          "left": 162.98,
+          "top": 378.08,
+          "width": 595,
+          "height": 301,
+          "bottom": 679.08
+        },
+        "style": {
+          "position": "absolute",
+          "display": "block",
+          "overflow": "hidden",
+          "margin": "0px",
+          "opacity": "1",
+          "left": "32px",
+          "top": "36px",
+          "right": "-25.9844px"
+        }
+      },
+      "text": "결석 구분\n\n\t\n\n내 용\n\n\t\n\n해당 사항에 √ \n표시\n\n\t\n\n제출서류\n\n\n\n\n출석인정\n결석\n\n\t\n\n- 경조사\n\n\t\n\n\n\n\n\t\n\n결석계, 경조사관련 증빙서류\n\n\n\n\n- 법정 감염병\n\n\t\n\n\n\n\n\t\n\n결석계, 확인서 또는 진단서\n\n(질병명을 확인할 수 있는 서류)\n\n\n\n\n- 감염병 심각・경계 단계 시 고위험군\n\n\t\n\n\n\n\n\t\n\n결석계, 확인서 또는 진단서\n\n(질병명을 확인할 수 있는 서류)\n\n\n\n\n생리통(월 1일)\n\n\t\n\n\n\n\n",
+      "rows": [
+        {
+          "i": 0,
+          "rect": {
+            "left": 163.48,
+            "top": 378.58,
+            "width": 594,
+            "height": 34.38,
+            "bottom": 412.95
+          },
+          "text": "결석 구분\n\n\t\n\n내 용\n\n\t\n\n해당 사항에 √ \n표시\n\n\t\n\n제출서류",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 163.48,
+                "top": 378.58,
+                "width": 72.75,
+                "height": 34.38,
+                "bottom": 412.95
+              },
+              "text": "결석 구분"
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 2,
+              "layout": "32",
+              "rect": {
+                "left": 236.23,
+                "top": 378.58,
+                "width": 215.25,
+                "height": 34.38,
+                "bottom": 412.95
+              },
+              "text": "내 용"
+            },
+            {
+              "j": 2,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "33",
+              "rect": {
+                "left": 451.48,
+                "top": 378.58,
+                "width": 126.56,
+                "height": 34.38,
+                "bottom": 412.95
+              },
+              "text": "해당 사항에 √ \n표시"
+            },
+            {
+              "j": 3,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 578.05,
+                "top": 378.58,
+                "width": 179.44,
+                "height": 34.38,
+                "bottom": 412.95
+              },
+              "text": "제출서류"
+            }
+          ]
+        },
+        {
+          "i": 1,
+          "rect": {
+            "left": 163.48,
+            "top": 412.95,
+            "width": 594,
+            "height": 33.33,
+            "bottom": 446.28
+          },
+          "text": "출석인정\n결석\n\n\t\n\n- 경조사\n\n\t\n\n\n\n\n\t\n\n결석계, 경조사관련 증빙서류",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 4,
+              "colSpan": 1,
+              "layout": "",
+              "rect": {
+                "left": 163.48,
+                "top": 412.95,
+                "width": 72.75,
+                "height": 133.31,
+                "bottom": 546.27
+              },
+              "text": "출석인정\n결석"
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 2,
+              "layout": "32",
+              "rect": {
+                "left": 236.23,
+                "top": 412.95,
+                "width": 215.25,
+                "height": 33.33,
+                "bottom": 446.28
+              },
+              "text": "- 경조사"
+            },
+            {
+              "j": 2,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 451.48,
+                "top": 412.95,
+                "width": 126.56,
+                "height": 33.33,
+                "bottom": 446.28
+              },
+              "text": ""
+            },
+            {
+              "j": 3,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 578.05,
+                "top": 412.95,
+                "width": 179.44,
+                "height": 33.33,
+                "bottom": 446.28
+              },
+              "text": "결석계, 경조사관련 증빙서류"
+            }
+          ]
+        },
+        {
+          "i": 2,
+          "rect": {
+            "left": 163.48,
+            "top": 446.28,
+            "width": 594,
+            "height": 33.33,
+            "bottom": 479.61
+          },
+          "text": "- 법정 감염병\n\n\t\n\n\n\n\n\t\n\n결석계, 확인서 또는 진단서\n\n(질병명을 확인할 수 있는 서류)",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 2,
+              "layout": "32",
+              "rect": {
+                "left": 236.23,
+                "top": 446.28,
+                "width": 215.25,
+                "height": 33.33,
+                "bottom": 479.61
+              },
+              "text": "- 법정 감염병"
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 451.48,
+                "top": 446.28,
+                "width": 126.56,
+                "height": 33.33,
+                "bottom": 479.61
+              },
+              "text": ""
+            },
+            {
+              "j": 2,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 578.05,
+                "top": 446.28,
+                "width": 179.44,
+                "height": 33.33,
+                "bottom": 479.61
+              },
+              "text": "결석계, 확인서 또는 진단서\n\n(질병명을 확인할 수 있는 서류)"
+            }
+          ]
+        },
+        {
+          "i": 3,
+          "rect": {
+            "left": 163.48,
+            "top": 479.61,
+            "width": 594,
+            "height": 33.33,
+            "bottom": 512.94
+          },
+          "text": "- 감염병 심각・경계 단계 시 고위험군\n\n\t\n\n\n\n\n\t\n\n결석계, 확인서 또는 진단서\n\n(질병명을 확인할 수 있는 서류)",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 2,
+              "layout": "32",
+              "rect": {
+                "left": 236.23,
+                "top": 479.61,
+                "width": 215.25,
+                "height": 33.33,
+                "bottom": 512.94
+              },
+              "text": "- 감염병 심각・경계 단계 시 고위험군"
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 451.48,
+                "top": 479.61,
+                "width": 126.56,
+                "height": 33.33,
+                "bottom": 512.94
+              },
+              "text": ""
+            },
+            {
+              "j": 2,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 578.05,
+                "top": 479.61,
+                "width": 179.44,
+                "height": 33.33,
+                "bottom": 512.94
+              },
+              "text": "결석계, 확인서 또는 진단서\n\n(질병명을 확인할 수 있는 서류)"
+            }
+          ]
+        },
+        {
+          "i": 4,
+          "rect": {
+            "left": 163.48,
+            "top": 512.94,
+            "width": 594,
+            "height": 33.33,
+            "bottom": 546.27
+          },
+          "text": "생리통(월 1일)\n\n\t\n\n\n\n\n\t\n\n결석계",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 2,
+              "layout": "32",
+              "rect": {
+                "left": 236.23,
+                "top": 512.94,
+                "width": 215.25,
+                "height": 33.33,
+                "bottom": 546.27
+              },
+              "text": "생리통(월 1일)"
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 451.48,
+                "top": 512.94,
+                "width": 126.56,
+                "height": 33.33,
+                "bottom": 546.27
+              },
+              "text": ""
+            },
+            {
+              "j": 2,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 578.05,
+                "top": 512.94,
+                "width": 179.44,
+                "height": 33.33,
+                "bottom": 546.27
+              },
+              "text": "결석계"
+            }
+          ]
+        },
+        {
+          "i": 5,
+          "rect": {
+            "left": 163.48,
+            "top": 546.27,
+            "width": 594,
+            "height": 45.83,
+            "bottom": 592.09
+          },
+          "text": "질병으로 \n인한 결석\n\n\t\n\n법정\n\n감염병이 \n아닌 질병\n\n\t\n\n- 2일 이내 질병 결석\n\n\t\n\n\n\n\n\t\n\n결석계, 학부모 의견서 또는 \n처방전, 약국 봉투 등\n\n(질병명을 확인할",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 3,
+              "colSpan": 1,
+              "layout": "",
+              "rect": {
+                "left": 163.48,
+                "top": 546.27,
+                "width": 72.75,
+                "height": 132.31,
+                "bottom": 678.58
+              },
+              "text": "질병으로 \n인한 결석"
+            },
+            {
+              "j": 1,
+              "rowSpan": 2,
+              "colSpan": 1,
+              "layout": "",
+              "rect": {
+                "left": 236.23,
+                "top": 546.27,
+                "width": 69.75,
+                "height": 79.16,
+                "bottom": 625.42
+              },
+              "text": "법정\n\n감염병이 \n아닌 질병"
+            },
+            {
+              "j": 2,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "42",
+              "rect": {
+                "left": 305.98,
+                "top": 546.27,
+                "width": 145.5,
+                "height": 45.83,
+                "bottom": 592.09
+              },
+              "text": "- 2일 이내 질병 결석"
+            },
+            {
+              "j": 3,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "42",
+              "rect": {
+                "left": 451.48,
+                "top": 546.27,
+                "width": 126.56,
+                "height": 45.83,
+                "bottom": 592.09
+              },
+              "text": ""
+            },
+            {
+              "j": 4,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "42",
+              "rect": {
+                "left": 578.05,
+                "top": 546.27,
+                "width": 179.44,
+                "height": 45.83,
+                "bottom": 592.09
+              },
+              "text": "결석계, 학부모 의견서 또는 \n처방전, 약국 봉투 등\n\n(질병명을 확인할 수 있는 서류)"
+            }
+          ]
+        },
+        {
+          "i": 6,
+          "rect": {
+            "left": 163.48,
+            "top": 592.09,
+            "width": 594,
+            "height": 33.33,
+            "bottom": 625.42
+          },
+          "text": "- 3일 이상 질병 결석\n\n\t\n\n\n\n\n\t\n\n결석계, 확인서 또는 진단서\n\n(질병명을 확인할 수 있는 서류)",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 305.98,
+                "top": 592.09,
+                "width": 145.5,
+                "height": 33.33,
+                "bottom": 625.42
+              },
+              "text": "- 3일 이상 질병 결석"
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 451.48,
+                "top": 592.09,
+                "width": 126.56,
+                "height": 33.33,
+                "bottom": 625.42
+              },
+              "text": ""
+            },
+            {
+              "j": 2,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "32",
+              "rect": {
+                "left": 578.05,
+                "top": 592.09,
+                "width": 179.44,
+                "height": 33.33,
+                "bottom": 625.42
+              },
+              "text": "결석계, 확인서 또는 진단서\n\n(질병명을 확인할 수 있는 서류)"
+            }
+          ]
+        },
+        {
+          "i": 7,
+          "rect": {
+            "left": 163.48,
+            "top": 625.42,
+            "width": 594,
+            "height": 53.16,
+            "bottom": 678.58
+          },
+          "text": "- 미세먼지・오존 관련 기저질환\n\n감염병 관심・주의 단계 시 고위험군\n\n\t\n\n\n\n\n\t\n\n학부모 의견서, 의사 진단서\n\n※ 해당 학기별 최초 1회만 제출",
+          "cells": [
+            {
+              "j": 0,
+              "rowSpan": 1,
+              "colSpan": 2,
+              "layout": "51",
+              "rect": {
+                "left": 236.23,
+                "top": 625.42,
+                "width": 215.25,
+                "height": 53.16,
+                "bottom": 678.58
+              },
+              "text": "- 미세먼지・오존 관련 기저질환\n\n감염병 관심・주의 단계 시 고위험군"
+            },
+            {
+              "j": 1,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "51",
+              "rect": {
+                "left": 451.48,
+                "top": 625.42,
+                "width": 126.56,
+                "height": 53.16,
+                "bottom": 678.58
+              },
+              "text": ""
+            },
+            {
+              "j": 2,
+              "rowSpan": 1,
+              "colSpan": 1,
+              "layout": "51",
+              "rect": {
+                "left": 578.05,
+                "top": 625.42,
+                "width": 179.44,
+                "height": 53.16,
+                "bottom": 678.58
+              },
+              "text": "학부모 의견서, 의사 진단서\n\n※ 해당 학기별 최초 1회만 제출"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1119 @@
+{
+  "table": {
+    "top": 23,
+    "h": 1021.3,
+    "dataset": {
+      "nestingLevel": "1",
+      "sourceFormat": "hwpx",
+      "contentKind": "hwpx-performance-grade"
+    }
+  },
+  "rows": [
+    {
+      "i": 0,
+      "top": 23.5,
+      "h": 20.05,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "20.05",
+          "h": 20.05,
+          "text": "성능부문"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "20.05",
+          "h": 20.05,
+          "text": "성능항목"
+        },
+        {
+          "j": 2,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "20.05",
+          "h": 20.05,
+          "text": "성능등급"
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "top": 43.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 5,
+          "colSpan": 1,
+          "layout": "",
+          "h": 110,
+          "text": "소음관련 등급"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "경량충격음"
+        },
+        {
+          "j": 2,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★★★"
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "top": 65.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "중량충격음"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "top": 87.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "화장실 급배수소음"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "top": 109.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "세대간 경계벽의 차음성능"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "top": 131.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "교통소음(도로, 철도)에 대한 실내외 소음"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "top": 153.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 4,
+          "colSpan": 1,
+          "layout": "",
+          "h": 88,
+          "text": "구조관련 등급"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "가변성"
+        },
+        {
+          "j": 2,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "top": 175.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "수리용이성 전용부분"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "top": 197.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "수리용이성 공용부분"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "top": 219.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "내구성"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "top": 241.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 18,
+          "colSpan": 1,
+          "layout": "",
+          "h": 406.25,
+          "text": "환경관련 등급"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "생태면적율"
+        },
+        {
+          "j": 2,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "top": 263.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "자연지반 녹지율"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "top": 285.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "일조권 간섭방지 대책의 타당성"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "top": 307.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "실내공기 오염물질 저방출 제품의 적용"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "top": 329.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "단위세대 환기성능확보"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "top": 351.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "자동온도조절장치 설치 수준"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "top": 373.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "재활용 가능자원의 보관시설 설치"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★★★"
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "top": 395.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "신·재생에너지 이용"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★★"
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "top": 417.55,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "저탄소 에너지원 기술의 적용"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "top": 439.55,
+      "h": 32.25,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "32.25",
+          "h": 32.25,
+          "text": "저탄소 자재의 사용"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "32.25",
+          "h": 32.25,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "top": 471.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "자원순환 자재의 사용"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "top": 493.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "유해물질 저감 자재의 사용"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "top": 515.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "절수형 기기 사용"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "top": 537.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "물 사용량 모니터링"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "top": 559.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "에너지성능"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★★"
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "top": 581.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "에너지 모니터링 및 관리지원 장치"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "top": 603.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "환경성선언 제품(EPD)의 사용"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "top": 625.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "오존층 보호 및 지구온난화 저감"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "top": 647.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 12,
+          "colSpan": 1,
+          "layout": "",
+          "h": 264,
+          "text": "생활환경 등급"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "커뮤니티 센터 및 시설공간의 조성수준"
+        },
+        {
+          "j": 2,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★★★"
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "top": 669.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "대중교통의 근접성"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★★"
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "top": 691.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "자전거 주차장 및 자전거도로의 적합성"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "top": 713.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "녹색건축인증 관련 정보제공"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★★"
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "top": 735.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "단위세대의 사회적 약자 배려"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "top": 757.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "공용공간의 사회적 약자 배려"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "top": 779.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "홈네트워크 및 스마트홈"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★★"
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "top": 801.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "세대내 일조 확보율"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "top": 823.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "방범안전 콘텐츠"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "top": 845.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "건설현장의 환경관리 계획"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★★"
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "top": 867.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "운영·유지관리 문서 및 매뉴얼 제공"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★★★"
+        }
+      ]
+    },
+    {
+      "i": 39,
+      "top": 889.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "사용자 매뉴얼 제공"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★★★"
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "top": 911.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 6,
+          "colSpan": 1,
+          "layout": "",
+          "h": 132,
+          "text": "화재 ․ 소방 등급"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "감지 및 경보설비"
+        },
+        {
+          "j": 2,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★"
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "top": 933.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "제연설비"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 42,
+      "top": 955.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "내화 성능"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 43,
+      "top": 977.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "수평피난거리"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★★★"
+        }
+      ]
+    },
+    {
+      "i": 44,
+      "top": 999.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "복도 및 계단 유효너비"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "18.51",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    },
+    {
+      "i": 45,
+      "top": 1021.8,
+      "h": 22,
+      "cells": [
+        {
+          "j": 0,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "17.04",
+          "h": 22,
+          "text": "피난설비"
+        },
+        {
+          "j": 1,
+          "rowSpan": 1,
+          "colSpan": 1,
+          "layout": "17.09",
+          "h": 22,
+          "text": "★"
+        }
+      ]
+    }
+  ]
+}

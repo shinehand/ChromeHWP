@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-05-07T21:40:01.453Z",
+  "outputs": [
+    {
+      "id": "base",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-price-p2-css-grid/base-page-002.png"
+    },
+    {
+      "id": "shadow7070-a100",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-price-p2-css-grid/shadow7070-a100-page-002.png"
+    },
+    {
+      "id": "shadow7070-a075",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-price-p2-css-grid/shadow7070-a075-page-002.png"
+    },
+    {
+      "id": "shadow7070-a060",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-price-p2-css-grid/shadow7070-a060-page-002.png"
+    },
+    {
+      "id": "shadow9090-a100",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-price-p2-css-grid/shadow9090-a100-page-002.png"
+    },
+    {
+      "id": "border-bottom1-9090",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-price-p2-css-grid/border-bottom1-9090-page-002.png"
+    },
+    {
+      "id": "border-bottom1-7070",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-price-p2-css-grid/border-bottom1-7070-page-002.png"
+    },
+    {
+      "id": "filter115-shadow075",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-price-p2-css-grid/filter115-shadow075-page-002.png"
+    },
+    {
+      "id": "filter108-shadow100",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-price-p2-css-grid/filter108-shadow100-page-002.png"
+    },
+    {
+      "id": "filter120",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-price-p2-css-grid/filter120-page-002.png"
+    },
+    {
+      "id": "filter125",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/lh-price-p2-css-grid/filter125-page-002.png"
+    }
+  ]
+}

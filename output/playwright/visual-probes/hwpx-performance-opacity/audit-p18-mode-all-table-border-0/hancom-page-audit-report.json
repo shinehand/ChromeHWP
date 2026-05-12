@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-05-06T22:16:29.092Z",
+  "sourceManifest": "output/playwright/visual-probes/hwpx-performance-opacity/audit-p18-mode-all-table-border-0/manifest.json",
+  "verdictPolicy": {
+    "passVerdicts": [
+      "close"
+    ],
+    "advisoryVerdicts": [
+      "layout-review",
+      "review"
+    ],
+    "strictFailureVerdicts": [
+      "capture-error",
+      "capture-review",
+      "mismatch"
+    ],
+    "thresholds": {
+      "rawCloseMax": 18.0,
+      "rawReviewMax": 32.0,
+      "layoutReviewBlurMax": 32.0,
+      "layoutReviewProjectionMax": 30.0
+    },
+    "note": "review/layout-review are advisory states. They may keep automation exit status green, but they are not clean visual-fidelity passes and must be reported with raw/blur/layout metrics."
+  },
+  "documentCount": 1,
+  "totalPages": 1,
+  "severityCounts": {
+    "pass": 1,
+    "advisory": 0,
+    "strict-failure": 0,
+    "unknown": 0
+  },
+  "results": [
+    {
+      "id": "p18-mode-all-table-border-0",
+      "filename": "p18-mode-all-table-border-0.hwpx",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "verdictCounts": {
+        "close": 1
+      },
+      "severityCounts": {
+        "pass": 1
+      },
+      "advisoryPages": [],
+      "strictFailurePages": [],
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-018.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/p18-mode-all-table-border-0.png",
+          "scrollRatio": null,
+          "targetBand": "last",
+          "hancomCrop": "output/playwright/visual-probes/hwpx-performance-opacity/audit-p18-mode-all-table-border-0/p18-mode-all-table-border-0/hancom-crop-page-001.png",
+          "pageCompare": "output/playwright/visual-probes/hwpx-performance-opacity/audit-p18-mode-all-table-border-0/p18-mode-all-table-border-0/compare/page-001-compare.png",
+          "diff": 16.49707961504812,
+          "verdict": "close",
+          "visualMetrics": {
+            "rawDiff": 16.49707961504812,
+            "blurDiff": 15.81187489063867,
+            "projectionDiff": {
+              "row": 24.362970253718316,
+              "column": 24.348753280839897,
+              "combined": 24.35586176727911
+            }
+          },
+          "captureQuality": {
+            "hancomRatio": 1.4116161616161615,
+            "chromeRatio": 1.413178984861977,
+            "ratioGap": 0.001562823245815359,
+            "expectedGap": 0.002383838383838377,
+            "status": "ok"
+          },
+          "hancomCropSize": [
+            396,
+            559
+          ],
+          "chromeSize": [
+            1123,
+            1587
+          ],
+          "severity": "pass",
+          "verdictNote": "pass: raw pixel diff is inside the close band."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2237 @@
+{
+  "filename": "goyeopje-full-2024.hwp",
+  "pages": 11,
+  "page": {
+    "index": 6,
+    "width": 794,
+    "height": 1123
+  },
+  "bodyRect": {
+    "top": 1077,
+    "left": 633,
+    "width": 794,
+    "height": 1123,
+    "bottom": 2200,
+    "right": 1427
+  },
+  "text": "(뒷 면) 사업명 자격요건 6.25자녀수당 1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군 경의 자녀와 1954. 10. 25부터 1955. 6. 30까지 사이에 서남지구전투경찰대 소속으로 참전하여 전사하거나 순직한 경찰공무원의 자녀 중에서 ‘98. 1. 1. 이후 유족이 보상금을 수령하지 않은 경우 국가유공자예우법 제13조의 규정에 의한 보상금 지급순위 선순위인 자 1인 국가유공가등 생활조정수당 1) 일반지원대상 : 생활등급 10등급 이하자 2) 특별지원대상 : 생활등급 6 ~ 9등급자로서 다음요건 해당 자 - 가구원의 불구폐질, 장기질환 등으로 지출이 과다하여 사실상 생활정도가 일반지원 대상자 선정기준에 해당되는 경우 - 재해, 재난, 기타 사유로 사실상 생활이 극히 어려워 지원이 긴요하다고 인정되는 자 무공영예수당 60세 이상 무공수훈자 국가유공자 보철구지급 1) 전상군경, 공상군경, 4·19혁명부상자, 공상공무원 및 특별공로상이자로서 신체장애로 보철구가 필요한 자 2) 5·18민주화운동부상자로서 신체장애로 보철구가 필요한 자 3) 특수임무수행자 중 부상자로서 신체장애로 보철구가 필요한 자 국가보훈대상자 학습보조비지급 1) 「국가유공자 등 예우 및 지원에 관한 법률」에 따른 교육지원대상자 2) 「고엽제후유의증 환자지원 등에 관한 법률」에 따른 교육지원대상자 3) 「5․18민주유공자예우에 관한 법률」에 따른 교육지원대상자 4) 「특수임무수행자 지원 및 단체설립에 관한 법률」에 따른 교육지원대상자 ※ 2012학년도부터 학습보조비가 특수교육대상자 및 저소득자 등에게 집중지원 될 수 있도록 제도를 개선할 예정 손자녀가계지원비 광복이후에 사망한 독립유공자의 선순위 자녀의 자녀 중 나이가 많은 자 1인(’05. 1.1 이후 보훈보상금을 받은 사실이 있는 가계는 제외) 애국지사특별예우금 생존애국지사 보상금 1) 전상군경, 공상군경, 재일학도의용군인, 4·19혁명부상자 및 특별공로상이자 2) 전몰군경, 순직",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-object-common",
+        "layoutHeight": "884"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 60,
+        "left": 38,
+        "width": 710,
+        "height": 888,
+        "bottom": 948,
+        "right": 748
+      },
+      "tableRect": {
+        "top": 60,
+        "left": 38,
+        "width": 710,
+        "height": 888,
+        "bottom": 948,
+        "right": 748
+      },
+      "rowCount": 2,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0:row-0"
+          },
+          "rect": {
+            "top": 60.5,
+            "left": 38.5,
+            "width": 709,
+            "height": 23,
+            "bottom": 83.5,
+            "right": 747.5
+          },
+          "cellCount": 1,
+          "text": "(뒷 면)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0:row-1"
+          },
+          "rect": {
+            "top": 83.5,
+            "left": 38.5,
+            "width": 709,
+            "height": 864,
+            "bottom": 947.5,
+            "right": 747.5
+          },
+          "cellCount": 1,
+          "text": "사업명 자격요건 6.25자녀수당 1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군 경의 자녀와 1954. 10. 25부터 1955. 6. 30까지 사이에 서남지구전투경찰대 소속으로 참전하여 전사하거나 순직한 경찰공무원의 자녀 "
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0:row-0"
+          },
+          "rect": {
+            "top": 60.5,
+            "left": 38.5,
+            "width": 709,
+            "height": 23,
+            "bottom": 83.5,
+            "right": 747.5
+          },
+          "cellCount": 1,
+          "text": "(뒷 면)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0:row-1"
+          },
+          "rect": {
+            "top": 83.5,
+            "left": 38.5,
+            "width": 709,
+            "height": 864,
+            "bottom": 947.5,
+            "right": 747.5
+          },
+          "cellCount": 1,
+          "text": "사업명 자격요건 6.25자녀수당 1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군 경의 자녀와 1954. 10. 25부터 1955. 6. 30까지 사이에 서남지구전투경찰대 소속으로 참전하여 전사하거나 순직한 경찰공무원의 자녀 "
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0:row-0"
+          },
+          "rect": {
+            "top": 60.5,
+            "left": 38.5,
+            "width": 709,
+            "height": 23,
+            "bottom": 83.5,
+            "right": 747.5
+          },
+          "cellCount": 1,
+          "text": "(뒷 면)"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0:row-1"
+          },
+          "rect": {
+            "top": 83.5,
+            "left": 38.5,
+            "width": 709,
+            "height": 864,
+            "bottom": 947.5,
+            "right": 747.5
+          },
+          "cellCount": 1,
+          "text": "사업명 자격요건 6.25자녀수당 1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군 경의 자녀와 1954. 10. 25부터 1955. 6. 30까지 사이에 서남지구전투경찰대 소속으로 참전하여 전사하거나 순직한 경찰공무원의 자녀 "
+        }
+      ],
+      "text": "(뒷 면) 사업명 자격요건 6.25자녀수당 1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군 경의 자녀와 1954. 10. 25부터 1955. 6. 30까지 사이에 서남지구전투경찰대 소속으로 참전하여 전사하거나 순직한 경찰공무원의 자녀 중에서 ‘98. 1. 1. 이후 유족이 보상금을 수령하지 않은 경우 국가유공자예우법 제13조의 규정에 의한 보상금 지급순위 선순위인 ",
+      "style": {
+        "height": "884px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0",
+        "nestingLevel": "1",
+        "layoutPosition": "nested-absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "812"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0",
+        "nestingLevel": "1",
+        "sourceFormat": "hwp"
+      },
+      "rect": {
+        "top": 123,
+        "left": 94,
+        "width": 606,
+        "height": 812,
+        "bottom": 935,
+        "right": 700
+      },
+      "tableRect": {
+        "top": 123,
+        "left": 94,
+        "width": 606,
+        "height": 812,
+        "bottom": 935,
+        "right": 700
+      },
+      "rowCount": 14,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-0"
+          },
+          "rect": {
+            "top": 123.5,
+            "left": 94.5,
+            "width": 605,
+            "height": 30.03125,
+            "bottom": 153.53125,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "사업명 자격요건"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-1"
+          },
+          "rect": {
+            "top": 153.53125,
+            "left": 94.5,
+            "width": 605,
+            "height": 69.078125,
+            "bottom": 222.609375,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "6.25자녀수당 1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군 경의 자녀와 1954. 10. 25부터 1955. 6. 30까지 사이에 서남지구전투경찰대 소속으로 참전하여 전사하거나 순직한 경찰공무원의 자녀 중에서 ‘98. "
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-2"
+          },
+          "rect": {
+            "top": 222.609375,
+            "left": 94.5,
+            "width": 605,
+            "height": 86.09375,
+            "bottom": 308.703125,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "국가유공가등 생활조정수당 1) 일반지원대상 : 생활등급 10등급 이하자 2) 특별지원대상 : 생활등급 6 ~ 9등급자로서 다음요건 해당 자 - 가구원의 불구폐질, 장기질환 등으로 지출이 과다하여 사실상 생활정도가 일반지원 대상자 선정기준에 해당되는 경우 - 재해, 재난, 기타 사유로 사"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-3"
+          },
+          "rect": {
+            "top": 308.703125,
+            "left": 94.5,
+            "width": 605,
+            "height": 28.03125,
+            "bottom": 336.734375,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "무공영예수당 60세 이상 무공수훈자"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-4"
+          },
+          "rect": {
+            "top": 336.734375,
+            "left": 94.5,
+            "width": 605,
+            "height": 69.078125,
+            "bottom": 405.8125,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "국가유공자 보철구지급 1) 전상군경, 공상군경, 4·19혁명부상자, 공상공무원 및 특별공로상이자로서 신체장애로 보철구가 필요한 자 2) 5·18민주화운동부상자로서 신체장애로 보철구가 필요한 자 3) 특수임무수행자 중 부상자로서 신체장애로 보철구가 필요한 자"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-5"
+          },
+          "rect": {
+            "top": 405.8125,
+            "left": 94.5,
+            "width": 605,
+            "height": 104.125,
+            "bottom": 509.9375,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "국가보훈대상자 학습보조비지급 1) 「국가유공자 등 예우 및 지원에 관한 법률」에 따른 교육지원대상자 2) 「고엽제후유의증 환자지원 등에 관한 법률」에 따른 교육지원대상자 3) 「5․18민주유공자예우에 관한 법률」에 따른 교육지원대상자 4) 「특수임무수행자 지원 및 단체설립에 관한 법률」"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-6"
+          },
+          "rect": {
+            "top": 509.9375,
+            "left": 94.5,
+            "width": 605,
+            "height": 34.03125,
+            "bottom": 543.96875,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "손자녀가계지원비 광복이후에 사망한 독립유공자의 선순위 자녀의 자녀 중 나이가 많은 자 1인(’05. 1.1 이후 보훈보상금을 받은 사실이 있는 가계는 제외)"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-7"
+          },
+          "rect": {
+            "top": 543.96875,
+            "left": 94.5,
+            "width": 605,
+            "height": 28.03125,
+            "bottom": 572,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "애국지사특별예우금 생존애국지사"
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-8"
+          },
+          "rect": {
+            "top": 572,
+            "left": 94.5,
+            "width": 605,
+            "height": 52.0625,
+            "bottom": 624.0625,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "보상금 1) 전상군경, 공상군경, 재일학도의용군인, 4·19혁명부상자 및 특별공로상이자 2) 전몰군경, 순직군경, 4·19혁명사망자 및 특별공로순직자의 유족과 제1호에 해 당하는 자가 사망한 경우 그 유족 중 선순위자(先順位者) 1명"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-9"
+          },
+          "rect": {
+            "top": 624.0625,
+            "left": 94.5,
+            "width": 605,
+            "height": 34.03125,
+            "bottom": 658.09375,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "국가유공자등 간호수당 전상군경, 공상군경, 4·19혁명부상자, 공상공무원 및 특별공로상이자로서 상이정 도가 심하여 다른 사람의 보호 없이는 활동이 어려운 자"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-10"
+          },
+          "rect": {
+            "top": 658.09375,
+            "left": 94.5,
+            "width": 605,
+            "height": 34.03125,
+            "bottom": 692.125,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "고엽제환자2세수당 「고엽제후유의증 환자지원 등에 관한 법률」에 의해 고엽제후유증2세환자로 결정된 자"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-11"
+          },
+          "rect": {
+            "top": 692.125,
+            "left": 94.5,
+            "width": 605,
+            "height": 34.03125,
+            "bottom": 726.15625,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "고엽제 후유의증수당 「고엽제후유의증 환자지원 등에 관한 법률」에 의해 고엽제후유의증환자로 결 정된 자"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-6"
+          },
+          "rect": {
+            "top": 509.9375,
+            "left": 94.5,
+            "width": 605,
+            "height": 34.03125,
+            "bottom": 543.96875,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "손자녀가계지원비 광복이후에 사망한 독립유공자의 선순위 자녀의 자녀 중 나이가 많은 자 1인(’05. 1.1 이후 보훈보상금을 받은 사실이 있는 가계는 제외)"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-7"
+          },
+          "rect": {
+            "top": 543.96875,
+            "left": 94.5,
+            "width": 605,
+            "height": 28.03125,
+            "bottom": 572,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "애국지사특별예우금 생존애국지사"
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-8"
+          },
+          "rect": {
+            "top": 572,
+            "left": 94.5,
+            "width": 605,
+            "height": 52.0625,
+            "bottom": 624.0625,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "보상금 1) 전상군경, 공상군경, 재일학도의용군인, 4·19혁명부상자 및 특별공로상이자 2) 전몰군경, 순직군경, 4·19혁명사망자 및 특별공로순직자의 유족과 제1호에 해 당하는 자가 사망한 경우 그 유족 중 선순위자(先順位者) 1명"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-9"
+          },
+          "rect": {
+            "top": 624.0625,
+            "left": 94.5,
+            "width": 605,
+            "height": 34.03125,
+            "bottom": 658.09375,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "국가유공자등 간호수당 전상군경, 공상군경, 4·19혁명부상자, 공상공무원 및 특별공로상이자로서 상이정 도가 심하여 다른 사람의 보호 없이는 활동이 어려운 자"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-10"
+          },
+          "rect": {
+            "top": 658.09375,
+            "left": 94.5,
+            "width": 605,
+            "height": 34.03125,
+            "bottom": 692.125,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "고엽제환자2세수당 「고엽제후유의증 환자지원 등에 관한 법률」에 의해 고엽제후유증2세환자로 결정된 자"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-11"
+          },
+          "rect": {
+            "top": 692.125,
+            "left": 94.5,
+            "width": 605,
+            "height": 34.03125,
+            "bottom": 726.15625,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "고엽제 후유의증수당 「고엽제후유의증 환자지원 등에 관한 법률」에 의해 고엽제후유의증환자로 결 정된 자"
+        },
+        {
+          "rowIndex": 12,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-12"
+          },
+          "rect": {
+            "top": 726.15625,
+            "left": 94.5,
+            "width": 605,
+            "height": 52.0625,
+            "bottom": 778.21875,
+            "right": 699.5
+          },
+          "cellCount": 3,
+          "text": "재해위로금지급 재해 인정 기준 1) 태풍․강풍, 홍수, 호우, 풍랑, 해일, 대설, 지진, 그 밖에 이에 준하는 자연재해 2) 거주하고 있는 주택의 화재 3)「재난 및 안전관리기본법」에 의거 선포된 특별 재난지역의 피해"
+        },
+        {
+          "rowIndex": 13,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-13\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-13"
+          },
+          "rect": {
+            "top": 778.21875,
+            "left": 94.5,
+            "width": 605,
+            "height": 156.28125,
+            "bottom": 934.5,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "대상자 1)「독립유공자예우에 관한 법률」제4조에 따른 독립유공자 또는 제5 조의 유가족 중 선순위자 1명 2)「국가유공자 등 예우 및 지원에 관한 법률」제4조 적용대상자 또는 제5조의 유가족 중 선순위자 1명 *단, 제4조제1항제9호의2‘6․25전쟁 참전유공자’는 제외 3)「5․18민주"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-0"
+          },
+          "rect": {
+            "top": 123.5,
+            "left": 94.5,
+            "width": 605,
+            "height": 30.03125,
+            "bottom": 153.53125,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "사업명 자격요건"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-1"
+          },
+          "rect": {
+            "top": 153.53125,
+            "left": 94.5,
+            "width": 605,
+            "height": 69.078125,
+            "bottom": 222.609375,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "6.25자녀수당 1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군 경의 자녀와 1954. 10. 25부터 1955. 6. 30까지 사이에 서남지구전투경찰대 소속으로 참전하여 전사하거나 순직한 경찰공무원의 자녀 중에서 ‘98. "
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-2"
+          },
+          "rect": {
+            "top": 222.609375,
+            "left": 94.5,
+            "width": 605,
+            "height": 86.09375,
+            "bottom": 308.703125,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "국가유공가등 생활조정수당 1) 일반지원대상 : 생활등급 10등급 이하자 2) 특별지원대상 : 생활등급 6 ~ 9등급자로서 다음요건 해당 자 - 가구원의 불구폐질, 장기질환 등으로 지출이 과다하여 사실상 생활정도가 일반지원 대상자 선정기준에 해당되는 경우 - 재해, 재난, 기타 사유로 사"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-3"
+          },
+          "rect": {
+            "top": 308.703125,
+            "left": 94.5,
+            "width": 605,
+            "height": 28.03125,
+            "bottom": 336.734375,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "무공영예수당 60세 이상 무공수훈자"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-4"
+          },
+          "rect": {
+            "top": 336.734375,
+            "left": 94.5,
+            "width": 605,
+            "height": 69.078125,
+            "bottom": 405.8125,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "국가유공자 보철구지급 1) 전상군경, 공상군경, 4·19혁명부상자, 공상공무원 및 특별공로상이자로서 신체장애로 보철구가 필요한 자 2) 5·18민주화운동부상자로서 신체장애로 보철구가 필요한 자 3) 특수임무수행자 중 부상자로서 신체장애로 보철구가 필요한 자"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-5"
+          },
+          "rect": {
+            "top": 405.8125,
+            "left": 94.5,
+            "width": 605,
+            "height": 104.125,
+            "bottom": 509.9375,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "국가보훈대상자 학습보조비지급 1) 「국가유공자 등 예우 및 지원에 관한 법률」에 따른 교육지원대상자 2) 「고엽제후유의증 환자지원 등에 관한 법률」에 따른 교육지원대상자 3) 「5․18민주유공자예우에 관한 법률」에 따른 교육지원대상자 4) 「특수임무수행자 지원 및 단체설립에 관한 법률」"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-6"
+          },
+          "rect": {
+            "top": 509.9375,
+            "left": 94.5,
+            "width": 605,
+            "height": 34.03125,
+            "bottom": 543.96875,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "손자녀가계지원비 광복이후에 사망한 독립유공자의 선순위 자녀의 자녀 중 나이가 많은 자 1인(’05. 1.1 이후 보훈보상금을 받은 사실이 있는 가계는 제외)"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-7"
+          },
+          "rect": {
+            "top": 543.96875,
+            "left": 94.5,
+            "width": 605,
+            "height": 28.03125,
+            "bottom": 572,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "애국지사특별예우금 생존애국지사"
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-8"
+          },
+          "rect": {
+            "top": 572,
+            "left": 94.5,
+            "width": 605,
+            "height": 52.0625,
+            "bottom": 624.0625,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "보상금 1) 전상군경, 공상군경, 재일학도의용군인, 4·19혁명부상자 및 특별공로상이자 2) 전몰군경, 순직군경, 4·19혁명사망자 및 특별공로순직자의 유족과 제1호에 해 당하는 자가 사망한 경우 그 유족 중 선순위자(先順位者) 1명"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-9"
+          },
+          "rect": {
+            "top": 624.0625,
+            "left": 94.5,
+            "width": 605,
+            "height": 34.03125,
+            "bottom": 658.09375,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "국가유공자등 간호수당 전상군경, 공상군경, 4·19혁명부상자, 공상공무원 및 특별공로상이자로서 상이정 도가 심하여 다른 사람의 보호 없이는 활동이 어려운 자"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-10"
+          },
+          "rect": {
+            "top": 658.09375,
+            "left": 94.5,
+            "width": 605,
+            "height": 34.03125,
+            "bottom": 692.125,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "고엽제환자2세수당 「고엽제후유의증 환자지원 등에 관한 법률」에 의해 고엽제후유증2세환자로 결정된 자"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-11"
+          },
+          "rect": {
+            "top": 692.125,
+            "left": 94.5,
+            "width": 605,
+            "height": 34.03125,
+            "bottom": 726.15625,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "고엽제 후유의증수당 「고엽제후유의증 환자지원 등에 관한 법률」에 의해 고엽제후유의증환자로 결 정된 자"
+        },
+        {
+          "rowIndex": 12,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-12"
+          },
+          "rect": {
+            "top": 726.15625,
+            "left": 94.5,
+            "width": 605,
+            "height": 52.0625,
+            "bottom": 778.21875,
+            "right": 699.5
+          },
+          "cellCount": 3,
+          "text": "재해위로금지급 재해 인정 기준 1) 태풍․강풍, 홍수, 호우, 풍랑, 해일, 대설, 지진, 그 밖에 이에 준하는 자연재해 2) 거주하고 있는 주택의 화재 3)「재난 및 안전관리기본법」에 의거 선포된 특별 재난지역의 피해"
+        },
+        {
+          "rowIndex": 13,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0/row-13\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0:row-13"
+          },
+          "rect": {
+            "top": 778.21875,
+            "left": 94.5,
+            "width": 605,
+            "height": 156.28125,
+            "bottom": 934.5,
+            "right": 699.5
+          },
+          "cellCount": 2,
+          "text": "대상자 1)「독립유공자예우에 관한 법률」제4조에 따른 독립유공자 또는 제5 조의 유가족 중 선순위자 1명 2)「국가유공자 등 예우 및 지원에 관한 법률」제4조 적용대상자 또는 제5조의 유가족 중 선순위자 1명 *단, 제4조제1항제9호의2‘6․25전쟁 참전유공자’는 제외 3)「5․18민주"
+        }
+      ],
+      "text": "사업명 자격요건 6.25자녀수당 1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군 경의 자녀와 1954. 10. 25부터 1955. 6. 30까지 사이에 서남지구전투경찰대 소속으로 참전하여 전사하거나 순직한 경찰공무원의 자녀 중에서 ‘98. 1. 1. 이후 유족이 보상금을 수령하지 않은 경우 국가유공자예우법 제13조의 규정에 의한 보상금 지급순위 선순위인 자 1인 국",
+      "style": {
+        "height": "812px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "16",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 63,
+        "left": 46,
+        "width": 694,
+        "height": 18,
+        "bottom": 81,
+        "right": 740
+      },
+      "text": "(뒷 면)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "16px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 131.015625,
+        "left": 102,
+        "width": 95.8125,
+        "height": 15,
+        "bottom": 146.015625,
+        "right": 197.8125
+      },
+      "text": "사업명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-0-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 131.015625,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 15,
+        "bottom": 146.015625,
+        "right": 692
+      },
+      "text": "자격요건",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 181.0625,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 195.0625,
+        "right": 197.8125
+      },
+      "text": "6.25자녀수당",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-1-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "52",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 160.0625,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 56,
+        "bottom": 216.0625,
+        "right": 692
+      },
+      "text": "1954. 10. 25이전(1950.6.25 이전 전사․순직자 포함)에 전사하거나 순직한 전몰군경 또는 순직군 경의 자녀와 1954. 10. 25부터 1955. 6. 30까지 사이에 서남지구전투경찰대 소속으로 참전하",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "52px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-2-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 251.65625,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 265.65625,
+        "right": 197.8125
+      },
+      "text": "국가유공가등",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-2-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-2-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 265.65625,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 279.65625,
+        "right": 197.8125
+      },
+      "text": "생활조정수당",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-2-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-2-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 230.65625,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 14,
+        "bottom": 244.65625,
+        "right": 692
+      },
+      "text": "1) 일반지원대상 : 생활등급 10등급 이하자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-2-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-2-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 244.65625,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 14,
+        "bottom": 258.65625,
+        "right": 692
+      },
+      "text": "2) 특별지원대상 : 생활등급 6 ~ 9등급자로서 다음요건 해당 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-2-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-2-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 258.65625,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 28,
+        "bottom": 286.65625,
+        "right": 692
+      },
+      "text": "- 가구원의 불구폐질, 장기질환 등으로 지출이 과다하여 사실상 생활정도가 일반지원 대상자 선정기준에 해당되는 경우",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-2-cell-1-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-2-cell-1-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 286.65625,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 14,
+        "bottom": 300.65625,
+        "right": 692
+      },
+      "text": "- 재해, 재난, 기타 사유로 사실상 생활이 극히 어려워 지원이 긴요하다고 인정되는 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-3-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 315.71875,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 329.71875,
+        "right": 197.8125
+      },
+      "text": "무공영예수당",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-3-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-3-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 315.71875,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 14,
+        "bottom": 329.71875,
+        "right": 692
+      },
+      "text": "60세 이상 무공수훈자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-4-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 357.265625,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 371.265625,
+        "right": 197.8125
+      },
+      "text": "국가유공자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-4-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-4-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 371.265625,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 385.265625,
+        "right": 197.8125
+      },
+      "text": "보철구지급",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-4-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-4-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 343.265625,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 28,
+        "bottom": 371.265625,
+        "right": 692
+      },
+      "text": "1) 전상군경, 공상군경, 4·19혁명부상자, 공상공무원 및 특별공로상이자로서 신체장애로 보철구가 필요한 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-4-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-4-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 371.265625,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 14,
+        "bottom": 385.265625,
+        "right": 692
+      },
+      "text": "2) 5·18민주화운동부상자로서 신체장애로 보철구가 필요한 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-4-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-4-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 385.265625,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 14,
+        "bottom": 399.265625,
+        "right": 692
+      },
+      "text": "3) 특수임무수행자 중 부상자로서 신체장애로 보철구가 필요한 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-5-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 443.875,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 457.875,
+        "right": 197.8125
+      },
+      "text": "국가보훈대상자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-5-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-5-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 457.875,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 471.875,
+        "right": 197.8125
+      },
+      "text": "학습보조비지급",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-5-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-5-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 415.875,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 14,
+        "bottom": 429.875,
+        "right": 692
+      },
+      "text": "1) 「국가유공자 등 예우 및 지원에 관한 법률」에 따른 교육지원대상자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-5-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-5-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 429.875,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 14,
+        "bottom": 443.875,
+        "right": 692
+      },
+      "text": "2) 「고엽제후유의증 환자지원 등에 관한 법률」에 따른 교육지원대상자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-5-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-5-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 443.875,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 14,
+        "bottom": 457.875,
+        "right": 692
+      },
+      "text": "3) 「5․18민주유공자예우에 관한 법률」에 따른 교육지원대상자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-5-cell-1-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-5-cell-1-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 457.875,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 14,
+        "bottom": 471.875,
+        "right": 692
+      },
+      "text": "4) 「특수임무수행자 지원 및 단체설립에 관한 법률」에 따른 교육지원대상자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-5-cell-1-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-5-cell-1-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 471.875,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 28,
+        "bottom": 499.875,
+        "right": 692
+      },
+      "text": "※ 2012학년도부터 학습보조비가 특수교육대상자 및 저소득자 등에게 집중지원 될 수 있도록 제도를 개선할 예정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-6-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-6-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 519.953125,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 533.953125,
+        "right": 197.8125
+      },
+      "text": "손자녀가계지원비",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-6-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-6-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 512.953125,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 28,
+        "bottom": 540.953125,
+        "right": 692
+      },
+      "text": "광복이후에 사망한 독립유공자의 선순위 자녀의 자녀 중 나이가 많은 자 1인(’05. 1.1 이후 보훈보상금을 받은 사실이 있는 가계는 제외)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-7-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-7-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 550.984375,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 564.984375,
+        "right": 197.8125
+      },
+      "text": "애국지사특별예우금",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-7-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-7-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 550.984375,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 14,
+        "bottom": 564.984375,
+        "right": 692
+      },
+      "text": "생존애국지사",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-8-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-8-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 591.03125,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 605.03125,
+        "right": 197.8125
+      },
+      "text": "보상금",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-8-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-8-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 577.03125,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 14,
+        "bottom": 591.03125,
+        "right": 692
+      },
+      "text": "1) 전상군경, 공상군경, 재일학도의용군인, 4·19혁명부상자 및 특별공로상이자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-8-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-8-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 591.03125,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 28,
+        "bottom": 619.03125,
+        "right": 692
+      },
+      "text": "2) 전몰군경, 순직군경, 4·19혁명사망자 및 특별공로순직자의 유족과 제1호에 해 당하는 자가 사망한 경우 그 유족 중 선순위자(先順位者) 1명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-9-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-9-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 627.078125,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 641.078125,
+        "right": 197.8125
+      },
+      "text": "국가유공자등",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-9-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-9-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 641.078125,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 655.078125,
+        "right": 197.8125
+      },
+      "text": "간호수당",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-9-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-9-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 627.078125,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 28,
+        "bottom": 655.078125,
+        "right": 692
+      },
+      "text": "전상군경, 공상군경, 4·19혁명부상자, 공상공무원 및 특별공로상이자로서 상이정 도가 심하여 다른 사람의 보호 없이는 활동이 어려운 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-10-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-10-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 668.109375,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 682.109375,
+        "right": 197.8125
+      },
+      "text": "고엽제환자2세수당",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-10-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-10-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 661.109375,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 28,
+        "bottom": 689.109375,
+        "right": 692
+      },
+      "text": "「고엽제후유의증 환자지원 등에 관한 법률」에 의해 고엽제후유증2세환자로 결정된 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-11-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-11-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 695.140625,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 709.140625,
+        "right": 197.8125
+      },
+      "text": "고엽제",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-11-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-11-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 709.140625,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 723.140625,
+        "right": 197.8125
+      },
+      "text": "후유의증수당",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-11-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-11-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 695.140625,
+        "left": 212.8125,
+        "width": 479.1875,
+        "height": 28,
+        "bottom": 723.140625,
+        "right": 692
+      },
+      "text": "「고엽제후유의증 환자지원 등에 관한 법률」에 의해 고엽제후유의증환자로 결 정된 자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-12-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-12-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 823.328125,
+        "left": 102,
+        "width": 95.8125,
+        "height": 14,
+        "bottom": 837.328125,
+        "right": 197.8125
+      },
+      "text": "재해위로금지급",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-12-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-12-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 731.1875,
+        "left": 212.8125,
+        "width": 43.890625,
+        "height": 14,
+        "bottom": 745.1875,
+        "right": 256.703125
+      },
+      "text": "재해",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-12-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-12-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 745.1875,
+        "left": 212.8125,
+        "width": 43.890625,
+        "height": 14,
+        "bottom": 759.1875,
+        "right": 256.703125
+      },
+      "text": "인정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-12-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-12-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 759.1875,
+        "left": 212.8125,
+        "width": 43.890625,
+        "height": 14,
+        "bottom": 773.1875,
+        "right": 256.703125
+      },
+      "text": "기준",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-12-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-12-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 731.1875,
+        "left": 271.703125,
+        "width": 420.296875,
+        "height": 14,
+        "bottom": 745.1875,
+        "right": 692
+      },
+      "text": "1) 태풍․강풍, 홍수, 호우, 풍랑, 해일, 대설, 지진, 그 밖에 이에 준하는 자연재해",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-12-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-12-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 745.1875,
+        "left": 271.703125,
+        "width": 420.296875,
+        "height": 14,
+        "bottom": 759.1875,
+        "right": 692
+      },
+      "text": "2) 거주하고 있는 주택의 화재",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-12-cell-2-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-12-cell-2-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 759.1875,
+        "left": 271.703125,
+        "width": 420.296875,
+        "height": 14,
+        "bottom": 773.1875,
+        "right": 692
+      },
+      "text": "3)「재난 및 안전관리기본법」에 의거 선포된 특별 재난지역의 피해",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-13-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-13-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 849.359375,
+        "left": 212.8125,
+        "width": 43.890625,
+        "height": 14,
+        "bottom": 863.359375,
+        "right": 256.703125
+      },
+      "text": "대상자",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-13-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-13-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 793.359375,
+        "left": 271.703125,
+        "width": 420.296875,
+        "height": 28,
+        "bottom": 821.359375,
+        "right": 692
+      },
+      "text": "1)「독립유공자예우에 관한 법률」제4조에 따른 독립유공자 또는 제5 조의 유가족 중 선순위자 1명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-13-cell-1-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-13-cell-1-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 821.359375,
+        "left": 271.703125,
+        "width": 420.296875,
+        "height": 28,
+        "bottom": 849.359375,
+        "right": 692
+      },
+      "text": "2)「국가유공자 등 예우 및 지원에 관한 법률」제4조 적용대상자 또는 제5조의 유가족 중 선순위자 1명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-13-cell-1-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-13-cell-1-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 849.359375,
+        "left": 271.703125,
+        "width": 420.296875,
+        "height": 14,
+        "bottom": 863.359375,
+        "right": 692
+      },
+      "text": "*단, 제4조제1항제9호의2‘6․25전쟁 참전유공자’는 제외",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-13-cell-1-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-13-cell-1-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 863.359375,
+        "left": 271.703125,
+        "width": 420.296875,
+        "height": 28,
+        "bottom": 891.359375,
+        "right": 692
+      },
+      "text": "3)「5․18민주유공자예우에 관한 법률」제4조 적용대상자 또는 제5조 의 유가족 중 선순위자 1명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-5-block-0-row-1-cell-0-block-0-row-13-cell-1-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-5-block-0-row-1-cell-0-block-0-row-13-cell-1-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 891.359375,
+        "left": 271.703125,
+        "width": 420.296875,
+        "height": 28,
+        "bottom": 919.359375,
+        "right": 692
+      },
+      "text": "4)「특수임무수행자 지원 및 단체설립에 관한 법률」제3조 적용대상자 또는 제4조의 유가족 중 선순위자 1명",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 53
+}

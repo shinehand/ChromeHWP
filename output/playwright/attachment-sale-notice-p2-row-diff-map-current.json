@@ -1,0 +1,933 @@
+{
+  "source": "attachment-sale-notice page 2 DOM rows matched to 20px horizontal image-diff bands",
+  "scale": 2.8383838383838382,
+  "chromeSize": [
+    1124,
+    1587
+  ],
+  "metricWidth": 396,
+  "pageMetrics": {
+    "raw": 30.61055601055601,
+    "blur": 21.12276367276367,
+    "layout": 42.66721672167215
+  },
+  "tableSummary": {
+    "index": 1,
+    "depth": 0,
+    "rect": {
+      "left": 60,
+      "top": 104,
+      "width": 1006,
+      "height": 1291,
+      "bottom": 1395
+    },
+    "rowCount": 60,
+    "firstRows": [
+      {
+        "rowIndex": 0,
+        "dataset": {},
+        "rect": {
+          "left": 60.5,
+          "top": 104.5,
+          "width": 1005,
+          "height": 17,
+          "bottom": 121.5
+        },
+        "cellCount": 7,
+        "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)"
+      },
+      {
+        "rowIndex": 1,
+        "dataset": {},
+        "rect": {
+          "left": 60.5,
+          "top": 121.5,
+          "width": 1005,
+          "height": 22,
+          "bottom": 143.5
+        },
+        "cellCount": 2,
+        "text": "계약금(10%)\n\n\t\n\n잔금(90%)"
+      },
+      {
+        "rowIndex": 2,
+        "dataset": {},
+        "rect": {
+          "left": 60.5,
+          "top": 143.5,
+          "width": 1005,
+          "height": 21,
+          "bottom": 164.5
+        },
+        "cellCount": 3,
+        "text": "공급면적\n\n\t\n\n기타공용\n\n면적\n\n\t\n\n총계"
+      },
+      {
+        "rowIndex": 3,
+        "dataset": {},
+        "rect": {
+          "left": 60.5,
+          "top": 164.5,
+          "width": 1005,
+          "height": 23,
+          "bottom": 187.5
+        },
+        "cellCount": 3,
+        "text": "주거전용\n\n\t\n\n주거공용\n\n\t\n\n소계"
+      },
+      {
+        "rowIndex": 4,
+        "dataset": {},
+        "rect": {
+          "left": 60.5,
+          "top": 187.5,
+          "width": 1005,
+          "height": 21,
+          "bottom": 208.5
+        },
+        "cellCount": 11,
+        "text": "대구\n\n남구\n\n\t\n\n대명동 554-4 102동\n\n(안지랑로2길10)\n\n\t\n\n301\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+      }
+    ],
+    "lastRows": [
+      {
+        "rowIndex": 55,
+        "dataset": {},
+        "rect": {
+          "left": 60.5,
+          "top": 1258.5,
+          "width": 1005,
+          "height": 21,
+          "bottom": 1279.5
+        },
+        "cellCount": 11,
+        "text": "경북\n\n포항시\n\n\t\n\n남구 대도동 142-22 301동\n\n(문예로82번길20-10)\n\n\t\n\n102\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n56,500,000\n\n\t\n\n5,650,000\n\n\t\n\n50,850,000"
+      },
+      {
+        "rowIndex": 56,
+        "dataset": {},
+        "rect": {
+          "left": 60.5,
+          "top": 1279.5,
+          "width": 1005,
+          "height": 21,
+          "bottom": 1300.5
+        },
+        "cellCount": 9,
+        "text": "301\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+      },
+      {
+        "rowIndex": 57,
+        "dataset": {},
+        "rect": {
+          "left": 60.5,
+          "top": 1300.5,
+          "width": 1005,
+          "height": 21,
+          "bottom": 1321.5
+        },
+        "cellCount": 9,
+        "text": "302\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+      },
+      {
+        "rowIndex": 58,
+        "dataset": {},
+        "rect": {
+          "left": 60.5,
+          "top": 1321.5,
+          "width": 1005,
+          "height": 21,
+          "bottom": 1342.5
+        },
+        "cellCount": 9,
+        "text": "402\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+      },
+      {
+        "rowIndex": 59,
+        "dataset": {},
+        "rect": {
+          "left": 60.5,
+          "top": 1342.5,
+          "width": 1005,
+          "height": 52,
+          "bottom": 1394.5
+        },
+        "cellCount": 10,
+        "text": "남구 대도동 142-5 302동\n\n(문예로82번길20-8)\n\n\t\n\n402\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+      }
+    ]
+  },
+  "bands": [
+    {
+      "y": 180,
+      "y2": 200,
+      "mean": 37.9,
+      "chromeY": 510.9,
+      "chromeY2": 567.7,
+      "topChildren": [
+        {
+          "index": 1,
+          "cls": "hwp-table-wrap",
+          "rect": {
+            "left": 60,
+            "top": 104,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1395
+          },
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 19,
+          "rect": {
+            "left": 60.5,
+            "top": 502.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 523.5
+          },
+          "text": "301\n\n\t\n\n59.35\n\n\t\n\n7.5937\n\n\t\n\n66.9437\n\n\t\n\n0\n\n\t\n\n66.9437\n\n\t\n\n70,000,000\n\n\t\n\n7,000,000\n\n\t\n\n63,000,000"
+        },
+        {
+          "rowIndex": 20,
+          "rect": {
+            "left": 60.5,
+            "top": 523.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 544.5
+          },
+          "text": "502\n\n\t\n\n59.35\n\n\t\n\n7.5937\n\n\t\n\n66.9437\n\n\t\n\n0\n\n\t\n\n66.9437\n\n\t\n\n68,500,000\n\n\t\n\n6,850,000\n\n\t\n\n61,650,000"
+        },
+        {
+          "rowIndex": 21,
+          "rect": {
+            "left": 60.5,
+            "top": 544.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 565.5
+          },
+          "text": "대구\n\n동구\n\n\t\n\n방촌동 1072-22 나동\n\n(화랑로73길41)\n\n\t\n\n201\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n101,500,000\n\n\t\n\n10,150,0"
+        },
+        {
+          "rowIndex": 22,
+          "rect": {
+            "left": 60.5,
+            "top": 565.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 586.5
+          },
+          "text": "401\n\n\t\n\n59.54\n\n\t\n\n15.25\n\n\t\n\n74.79\n\n\t\n\n0\n\n\t\n\n74.79\n\n\t\n\n101,500,000\n\n\t\n\n10,150,000\n\n\t\n\n91,350,000"
+        }
+      ]
+    },
+    {
+      "y": 440,
+      "y2": 460,
+      "mean": 37.62,
+      "chromeY": 1248.9,
+      "chromeY2": 1305.7,
+      "topChildren": [
+        {
+          "index": 1,
+          "cls": "hwp-table-wrap",
+          "rect": {
+            "left": 60,
+            "top": 104,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1395
+          },
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 54,
+          "rect": {
+            "left": 60.5,
+            "top": 1237.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1258.5
+          },
+          "text": "402\n\n\t\n\n59.1084\n\n\t\n\n11.0006\n\n\t\n\n70.109\n\n\t\n\n0\n\n\t\n\n70.109\n\n\t\n\n68,000,000\n\n\t\n\n6,800,000\n\n\t\n\n61,200,000"
+        },
+        {
+          "rowIndex": 55,
+          "rect": {
+            "left": 60.5,
+            "top": 1258.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1279.5
+          },
+          "text": "경북\n\n포항시\n\n\t\n\n남구 대도동 142-22 301동\n\n(문예로82번길20-10)\n\n\t\n\n102\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n56,500,000\n\n\t"
+        },
+        {
+          "rowIndex": 56,
+          "rect": {
+            "left": 60.5,
+            "top": 1279.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1300.5
+          },
+          "text": "301\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+        },
+        {
+          "rowIndex": 57,
+          "rect": {
+            "left": 60.5,
+            "top": 1300.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1321.5
+          },
+          "text": "302\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+        }
+      ]
+    },
+    {
+      "y": 320,
+      "y2": 340,
+      "mean": 36.32,
+      "chromeY": 908.3,
+      "chromeY2": 965.1,
+      "topChildren": [
+        {
+          "index": 1,
+          "cls": "hwp-table-wrap",
+          "rect": {
+            "left": 60,
+            "top": 104,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1395
+          },
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 38,
+          "rect": {
+            "left": 60.5,
+            "top": 901.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 922.5
+          },
+          "text": "502\n\n\t\n\n59.1671\n\n\t\n\n12.2122\n\n\t\n\n71.3793\n\n\t\n\n0\n\n\t\n\n71.3793\n\n\t\n\n132,500,000\n\n\t\n\n13,250,000\n\n\t\n\n119,250,000"
+        },
+        {
+          "rowIndex": 39,
+          "rect": {
+            "left": 60.5,
+            "top": 922.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 943.5
+          },
+          "text": "대구\n\n수성구\n\n\t\n\n만촌동 1009-17\n\n(세진로12길15)\n\n\t\n\n102\n\n\t\n\n47.78\n\n\t\n\n15.72\n\n\t\n\n63.5\n\n\t\n\n10.92\n\n\t\n\n74.42\n\n\t\n\n151,000,000\n\n\t\n\n15,100,"
+        },
+        {
+          "rowIndex": 40,
+          "rect": {
+            "left": 60.5,
+            "top": 943.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 964.5
+          },
+          "text": "201\n\n\t\n\n46.04\n\n\t\n\n13.02\n\n\t\n\n59.06\n\n\t\n\n10.15\n\n\t\n\n69.21\n\n\t\n\n150,000,000\n\n\t\n\n15,000,000\n\n\t\n\n135,000,000"
+        },
+        {
+          "rowIndex": 41,
+          "rect": {
+            "left": 60.5,
+            "top": 964.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 985.5
+          },
+          "text": "202\n\n\t\n\n47.78\n\n\t\n\n15.72\n\n\t\n\n63.5\n\n\t\n\n10.92\n\n\t\n\n74.42\n\n\t\n\n157,000,000\n\n\t\n\n15,700,000\n\n\t\n\n141,300,000"
+        }
+      ]
+    },
+    {
+      "y": 340,
+      "y2": 360,
+      "mean": 36.21,
+      "chromeY": 965.1,
+      "chromeY2": 1021.8,
+      "topChildren": [
+        {
+          "index": 1,
+          "cls": "hwp-table-wrap",
+          "rect": {
+            "left": 60,
+            "top": 104,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1395
+          },
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 41,
+          "rect": {
+            "left": 60.5,
+            "top": 964.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 985.5
+          },
+          "text": "202\n\n\t\n\n47.78\n\n\t\n\n15.72\n\n\t\n\n63.5\n\n\t\n\n10.92\n\n\t\n\n74.42\n\n\t\n\n157,000,000\n\n\t\n\n15,700,000\n\n\t\n\n141,300,000"
+        },
+        {
+          "rowIndex": 42,
+          "rect": {
+            "left": 60.5,
+            "top": 985.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1006.5
+          },
+          "text": "경북\n\n경산시\n\n\t\n\n사동 606-8\n\n(원효로40길64-10)\n\n\t\n\n201\n\n\t\n\n48.72\n\n\t\n\n9.67\n\n\t\n\n58.39\n\n\t\n\n0\n\n\t\n\n58.39\n\n\t\n\n72,000,000\n\n\t\n\n7,200,000\n\n\t"
+        },
+        {
+          "rowIndex": 43,
+          "rect": {
+            "left": 60.5,
+            "top": 1006.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1027.5
+          },
+          "text": "203\n\n\t\n\n46.26\n\n\t\n\n9.16\n\n\t\n\n55.42\n\n\t\n\n0\n\n\t\n\n55.42\n\n\t\n\n68,000,000\n\n\t\n\n6,800,000\n\n\t\n\n61,200,000"
+        }
+      ]
+    },
+    {
+      "y": 100,
+      "y2": 120,
+      "mean": 35.45,
+      "chromeY": 283.8,
+      "chromeY2": 340.6,
+      "topChildren": [
+        {
+          "index": 1,
+          "cls": "hwp-table-wrap",
+          "rect": {
+            "left": 60,
+            "top": 104,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1395
+          },
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 8,
+          "rect": {
+            "left": 60.5,
+            "top": 271.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 292.5
+          },
+          "text": "대명동 554-4 103동\n\n(안지랑로2길10)\n\n\t\n\n202\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,"
+        },
+        {
+          "rowIndex": 9,
+          "rect": {
+            "left": 60.5,
+            "top": 292.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 313.5
+          },
+          "text": "301\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 10,
+          "rect": {
+            "left": 60.5,
+            "top": 313.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 334.5
+          },
+          "text": "402\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 11,
+          "rect": {
+            "left": 60.5,
+            "top": 334.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 355.5
+          },
+          "text": "501\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n108,500,000\n\n\t\n\n10,850,000\n\n\t\n\n97,650,000"
+        }
+      ]
+    },
+    {
+      "y": 460,
+      "y2": 480,
+      "mean": 35.3,
+      "chromeY": 1305.7,
+      "chromeY2": 1362.4,
+      "topChildren": [
+        {
+          "index": 1,
+          "cls": "hwp-table-wrap",
+          "rect": {
+            "left": 60,
+            "top": 104,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1395
+          },
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 57,
+          "rect": {
+            "left": 60.5,
+            "top": 1300.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1321.5
+          },
+          "text": "302\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+        },
+        {
+          "rowIndex": 58,
+          "rect": {
+            "left": 60.5,
+            "top": 1321.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1342.5
+          },
+          "text": "402\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t\n\n52,650,000"
+        },
+        {
+          "rowIndex": 59,
+          "rect": {
+            "left": 60.5,
+            "top": 1342.5,
+            "width": 1005,
+            "height": 52,
+            "bottom": 1394.5
+          },
+          "text": "남구 대도동 142-5 302동\n\n(문예로82번길20-8)\n\n\t\n\n402\n\n\t\n\n55.193\n\n\t\n\n16.337\n\n\t\n\n71.53\n\n\t\n\n0\n\n\t\n\n71.53\n\n\t\n\n58,500,000\n\n\t\n\n5,850,000\n\n\t"
+        }
+      ]
+    },
+    {
+      "y": 60,
+      "y2": 80,
+      "mean": 35,
+      "chromeY": 170.3,
+      "chromeY2": 227.1,
+      "topChildren": [
+        {
+          "index": 1,
+          "cls": "hwp-table-wrap",
+          "rect": {
+            "left": 60,
+            "top": 104,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1395
+          },
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 3,
+          "rect": {
+            "left": 60.5,
+            "top": 164.5,
+            "width": 1005,
+            "height": 23,
+            "bottom": 187.5
+          },
+          "text": "주거전용\n\n\t\n\n주거공용\n\n\t\n\n소계"
+        },
+        {
+          "rowIndex": 4,
+          "rect": {
+            "left": 60.5,
+            "top": 187.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 208.5
+          },
+          "text": "대구\n\n남구\n\n\t\n\n대명동 554-4 102동\n\n(안지랑로2길10)\n\n\t\n\n301\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,0"
+        },
+        {
+          "rowIndex": 5,
+          "rect": {
+            "left": 60.5,
+            "top": 208.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 229.5
+          },
+          "text": "401\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        }
+      ]
+    },
+    {
+      "y": 160,
+      "y2": 180,
+      "mean": 34.76,
+      "chromeY": 454.1,
+      "chromeY2": 510.9,
+      "topChildren": [
+        {
+          "index": 1,
+          "cls": "hwp-table-wrap",
+          "rect": {
+            "left": 60,
+            "top": 104,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1395
+          },
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 16,
+          "rect": {
+            "left": 60.5,
+            "top": 439.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 460.5
+          },
+          "text": "402\n\n\t\n\n59.7642\n\n\t\n\n16.7803\n\n\t\n\n76.5445\n\n\t\n\n0\n\n\t\n\n76.5445\n\n\t\n\n116,500,000\n\n\t\n\n11,650,000\n\n\t\n\n104,850,000"
+        },
+        {
+          "rowIndex": 17,
+          "rect": {
+            "left": 60.5,
+            "top": 460.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 481.5
+          },
+          "text": "501\n\n\t\n\n59.376\n\n\t\n\n16.5695\n\n\t\n\n75.9455\n\n\t\n\n0\n\n\t\n\n75.9455\n\n\t\n\n113,500,000\n\n\t\n\n11,350,000\n\n\t\n\n102,150,000"
+        },
+        {
+          "rowIndex": 18,
+          "rect": {
+            "left": 60.5,
+            "top": 481.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 502.5
+          },
+          "text": "대구\n\n달성군\n\n\t\n\n논공읍 북리 833-17\n\n(논공중앙로138)\n\n\t\n\n201\n\n\t\n\n59.35\n\n\t\n\n7.5937\n\n\t\n\n66.9437\n\n\t\n\n0\n\n\t\n\n66.9437\n\n\t\n\n70,000,000\n\n\t\n\n7,00"
+        },
+        {
+          "rowIndex": 19,
+          "rect": {
+            "left": 60.5,
+            "top": 502.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 523.5
+          },
+          "text": "301\n\n\t\n\n59.35\n\n\t\n\n7.5937\n\n\t\n\n66.9437\n\n\t\n\n0\n\n\t\n\n66.9437\n\n\t\n\n70,000,000\n\n\t\n\n7,000,000\n\n\t\n\n63,000,000"
+        }
+      ]
+    },
+    {
+      "y": 280,
+      "y2": 300,
+      "mean": 34.3,
+      "chromeY": 794.7,
+      "chromeY2": 851.5,
+      "topChildren": [
+        {
+          "index": 1,
+          "cls": "hwp-table-wrap",
+          "rect": {
+            "left": 60,
+            "top": 104,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1395
+          },
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 32,
+          "rect": {
+            "left": 60.5,
+            "top": 775.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 796.5
+          },
+          "text": "대구\n\n북구\n\n\t\n\n산격동 1497-30\n\n(대구체육관로10길16)\n\n\t\n\n201\n\n\t\n\n57.7441\n\n\t\n\n11.9664\n\n\t\n\n69.7105\n\n\t\n\n0\n\n\t\n\n69.7105\n\n\t\n\n128,500,000\n\n\t\n\n"
+        },
+        {
+          "rowIndex": 33,
+          "rect": {
+            "left": 60.5,
+            "top": 796.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 817.5
+          },
+          "text": "202\n\n\t\n\n59.1671\n\n\t\n\n12.2122\n\n\t\n\n71.3793\n\n\t\n\n0\n\n\t\n\n71.3793\n\n\t\n\n131,500,000\n\n\t\n\n13,150,000\n\n\t\n\n118,350,000"
+        },
+        {
+          "rowIndex": 34,
+          "rect": {
+            "left": 60.5,
+            "top": 817.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 838.5
+          },
+          "text": "302\n\n\t\n\n59.1671\n\n\t\n\n12.2122\n\n\t\n\n71.3793\n\n\t\n\n0\n\n\t\n\n71.3793\n\n\t\n\n131,500,000\n\n\t\n\n13,150,000\n\n\t\n\n118,350,000"
+        },
+        {
+          "rowIndex": 35,
+          "rect": {
+            "left": 60.5,
+            "top": 838.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 859.5
+          },
+          "text": "401\n\n\t\n\n57.7441\n\n\t\n\n11.9664\n\n\t\n\n69.7105\n\n\t\n\n0\n\n\t\n\n69.7105\n\n\t\n\n132,500,000\n\n\t\n\n13,250,000\n\n\t\n\n119,250,000"
+        }
+      ]
+    },
+    {
+      "y": 300,
+      "y2": 320,
+      "mean": 33.26,
+      "chromeY": 851.5,
+      "chromeY2": 908.3,
+      "topChildren": [
+        {
+          "index": 1,
+          "cls": "hwp-table-wrap",
+          "rect": {
+            "left": 60,
+            "top": 104,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1395
+          },
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 35,
+          "rect": {
+            "left": 60.5,
+            "top": 838.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 859.5
+          },
+          "text": "401\n\n\t\n\n57.7441\n\n\t\n\n11.9664\n\n\t\n\n69.7105\n\n\t\n\n0\n\n\t\n\n69.7105\n\n\t\n\n132,500,000\n\n\t\n\n13,250,000\n\n\t\n\n119,250,000"
+        },
+        {
+          "rowIndex": 36,
+          "rect": {
+            "left": 60.5,
+            "top": 859.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 880.5
+          },
+          "text": "402\n\n\t\n\n59.1671\n\n\t\n\n12.2122\n\n\t\n\n71.3793\n\n\t\n\n0\n\n\t\n\n71.3793\n\n\t\n\n135,500,000\n\n\t\n\n13,550,000\n\n\t\n\n121,950,000"
+        },
+        {
+          "rowIndex": 37,
+          "rect": {
+            "left": 60.5,
+            "top": 880.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 901.5
+          },
+          "text": "501\n\n\t\n\n57.7441\n\n\t\n\n11.9664\n\n\t\n\n69.7105\n\n\t\n\n0\n\n\t\n\n69.7105\n\n\t\n\n129,500,000\n\n\t\n\n12,950,000\n\n\t\n\n116,550,000"
+        },
+        {
+          "rowIndex": 38,
+          "rect": {
+            "left": 60.5,
+            "top": 901.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 922.5
+          },
+          "text": "502\n\n\t\n\n59.1671\n\n\t\n\n12.2122\n\n\t\n\n71.3793\n\n\t\n\n0\n\n\t\n\n71.3793\n\n\t\n\n132,500,000\n\n\t\n\n13,250,000\n\n\t\n\n119,250,000"
+        }
+      ]
+    },
+    {
+      "y": 80,
+      "y2": 100,
+      "mean": 32.68,
+      "chromeY": 227.1,
+      "chromeY2": 283.8,
+      "topChildren": [
+        {
+          "index": 1,
+          "cls": "hwp-table-wrap",
+          "rect": {
+            "left": 60,
+            "top": 104,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1395
+          },
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 5,
+          "rect": {
+            "left": 60.5,
+            "top": 208.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 229.5
+          },
+          "text": "401\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 6,
+          "rect": {
+            "left": 60.5,
+            "top": 229.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 250.5
+          },
+          "text": "402\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,800,000"
+        },
+        {
+          "rowIndex": 7,
+          "rect": {
+            "left": 60.5,
+            "top": 250.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 271.5
+          },
+          "text": "502\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n108,500,000\n\n\t\n\n10,850,000\n\n\t\n\n97,650,000"
+        },
+        {
+          "rowIndex": 8,
+          "rect": {
+            "left": 60.5,
+            "top": 271.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 292.5
+          },
+          "text": "대명동 554-4 103동\n\n(안지랑로2길10)\n\n\t\n\n202\n\n\t\n\n56.92\n\n\t\n\n12.15\n\n\t\n\n69.07\n\n\t\n\n0\n\n\t\n\n69.07\n\n\t\n\n112,000,000\n\n\t\n\n11,200,000\n\n\t\n\n100,"
+        }
+      ]
+    },
+    {
+      "y": 380,
+      "y2": 400,
+      "mean": 32.52,
+      "chromeY": 1078.6,
+      "chromeY2": 1135.4,
+      "topChildren": [
+        {
+          "index": 1,
+          "cls": "hwp-table-wrap",
+          "rect": {
+            "left": 60,
+            "top": 104,
+            "width": 1006,
+            "height": 1291,
+            "bottom": 1395
+          },
+          "text": "지역\n\n\t\n\n대상\n\n주택\n\n\t\n\n호\n\n\t\n\n세대별 계약면적(㎡)\n\n\t\n\n공급가격(원)\n\n\t\n\n\n\n\n\t\n\n\n\n\n\n\n\n계약금(10"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 46,
+          "rect": {
+            "left": 60.5,
+            "top": 1069.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1090.5
+          },
+          "text": "402\n\n\t\n\n48.7\n\n\t\n\n9.7\n\n\t\n\n58.4\n\n\t\n\n0\n\n\t\n\n58.4\n\n\t\n\n72,000,000\n\n\t\n\n7,200,000\n\n\t\n\n64,800,000"
+        },
+        {
+          "rowIndex": 47,
+          "rect": {
+            "left": 60.5,
+            "top": 1090.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1111.5
+          },
+          "text": "403\n\n\t\n\n46.26\n\n\t\n\n9.16\n\n\t\n\n55.42\n\n\t\n\n0\n\n\t\n\n55.42\n\n\t\n\n68,000,000\n\n\t\n\n6,800,000\n\n\t\n\n61,200,000"
+        },
+        {
+          "rowIndex": 48,
+          "rect": {
+            "left": 60.5,
+            "top": 1111.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1132.5
+          },
+          "text": "501\n\n\t\n\n57.1\n\n\t\n\n10.87\n\n\t\n\n67.97\n\n\t\n\n0\n\n\t\n\n67.97\n\n\t\n\n82,000,000\n\n\t\n\n8,200,000\n\n\t\n\n73,800,000"
+        },
+        {
+          "rowIndex": 49,
+          "rect": {
+            "left": 60.5,
+            "top": 1132.5,
+            "width": 1005,
+            "height": 21,
+            "bottom": 1153.5
+          },
+          "text": "502\n\n\t\n\n58.47\n\n\t\n\n11.59\n\n\t\n\n70.06\n\n\t\n\n0\n\n\t\n\n70.06\n\n\t\n\n84,000,000\n\n\t\n\n8,400,000\n\n\t\n\n75,600,000"
+        }
+      ]
+    }
+  ]
+}

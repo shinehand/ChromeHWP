@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-06T22:10:45.724Z",
+  "auditId": "p16-nested-border-none",
+  "source": "Probe p16 container/nested border scope",
+  "outputDirectory": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/audit-nested-border-none",
+  "documents": [
+    {
+      "id": "p16-nested-border-none",
+      "filename": "p16-nested-border-none.hwpx",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "state": {
+        "pages": 1
+      },
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-016.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/p16-nested-border-none.png",
+          "targetBand": "first"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "outputs": [
+    {
+      "id": "base",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/incheon-p16-performance-grade-blur-grid/base-page-016.png"
+    },
+    {
+      "id": "blur03",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/incheon-p16-performance-grade-blur-grid/blur03-page-016.png"
+    },
+    {
+      "id": "blur05",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/incheon-p16-performance-grade-blur-grid/blur05-page-016.png"
+    },
+    {
+      "id": "r045-b020-blur03",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/incheon-p16-performance-grade-blur-grid/r045-b020-blur03-page-016.png"
+    },
+    {
+      "id": "r060-b030-blur03",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/incheon-p16-performance-grade-blur-grid/r060-b030-blur03-page-016.png"
+    },
+    {
+      "id": "r075-b045-blur03",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/incheon-p16-performance-grade-blur-grid/r075-b045-blur03-page-016.png"
+    },
+    {
+      "id": "r060-b030-blur05",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/incheon-p16-performance-grade-blur-grid/r060-b030-blur05-page-016.png"
+    },
+    {
+      "id": "r075-b045-blur05",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/incheon-p16-performance-grade-blur-grid/r075-b045-blur05-page-016.png"
+    },
+    {
+      "id": "r100-b070-blur05",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/incheon-p16-performance-grade-blur-grid/r100-b070-blur05-page-016.png"
+    },
+    {
+      "id": "r060-b030-contrast080",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/incheon-p16-performance-grade-blur-grid/r060-b030-contrast080-page-016.png"
+    },
+    {
+      "id": "r075-b045-contrast070",
+      "path": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/incheon-p16-performance-grade-blur-grid/r075-b045-contrast070-page-016.png"
+    }
+  ]
+}

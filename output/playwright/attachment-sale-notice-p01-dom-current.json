@@ -1,0 +1,4602 @@
+{
+  "filename": "attachment-sale-notice.hwp",
+  "pages": 4,
+  "page": {
+    "index": 1,
+    "width": 1123,
+    "height": 1587
+  },
+  "bodyRect": {
+    "top": 97,
+    "left": 468.5,
+    "width": 1123,
+    "height": 1587,
+    "bottom": 1684,
+    "right": 1591.5
+  },
+  "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약 관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다. 고객 여러분께서는 청약과 관련한 상담은 청약의 참고 자료로만 활용해 주시 고, 반드시 공고문을 확인하시기 바랍니다. 더불어, 청약자 본인이 일반매각 모집공고를 통해 청약자격 등을 숙지하시어 주민등록표등 · 초본, 등기부등본 등을 발급받아 직접 확 인하신 후 신청하시기 바라며, 청약자격 미숙지, 착오 신청 등에 대해서는 청약자 본인에게 책임이 있으니 불이익을 당하는 일이 없도록 유의하여 주시기 바랍니다. 알 려 드 립 니 다 ■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 불문하며, 계약 체결 시에도 재당첨 제한 및 당첨자 관리 등이 적용되지 않습니다. (본 공고의 청약 자격(연령 및 국내 거주 여부 등) 기준일은 금회 공급하는 주택의 계약체결일입니다.) ■ 선착순 동·호지정 방식으로 공급하며, 주요 일정은 다음과 같습니다. 공 고 사 전 주 택 개 방 동·호지정 및 계약체결 2025. 12. 30(화) 2026. 1. 13(화) 10시 ~ 16시 2026. 1. 15(목) ~ 공고 중단 시까지 매주 목요일 13:30 ~ 16:00 LH 청약플러스 홈페이지(apply.lh.or.kr) 및 모바일앱 2026. 1. 8(목) 16시까지 사전 열람신청자에 한해 열람 가능 (p.3 참고) LH 대구경북지역본부 1층 마이홈 (대구 달서구 상화로 272) * [선착순 동·호지정 계약] 계약 예정 주의 화요일 18시까지 ",
+  "tables": [
+    {
+      "index": 0,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-table-line-seg-inferred",
+        "layoutHeight": "1034"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 27,
+        "left": 60,
+        "width": 1004,
+        "height": 1066.578125,
+        "bottom": 1093.578125,
+        "right": 1064
+      },
+      "tableRect": {
+        "top": 27,
+        "left": 60,
+        "width": 1004,
+        "height": 1066.578125,
+        "bottom": 1093.578125,
+        "right": 1064
+      },
+      "rowCount": 6,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-0"
+          },
+          "rect": {
+            "top": 29.5,
+            "left": 60.5,
+            "width": 1003,
+            "height": 119,
+            "bottom": 148.5,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ]"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-1"
+          },
+          "rect": {
+            "top": 148.5,
+            "left": 60.5,
+            "width": 1003,
+            "height": 24.578125,
+            "bottom": 173.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-2"
+          },
+          "rect": {
+            "top": 173.078125,
+            "left": 60.5,
+            "width": 1003,
+            "height": 70,
+            "bottom": 243.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": "LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약 관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다. 고객 여러분"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-3"
+          },
+          "rect": {
+            "top": 243.078125,
+            "left": 60.5,
+            "width": 1003,
+            "height": 20,
+            "bottom": 263.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-4"
+          },
+          "rect": {
+            "top": 263.078125,
+            "left": 60.5,
+            "width": 1003,
+            "height": 31,
+            "bottom": 294.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": "알 려 드 립 니 다"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-5"
+          },
+          "rect": {
+            "top": 294.078125,
+            "left": 60.5,
+            "width": 1003,
+            "height": 799,
+            "bottom": 1093.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 불문하며, 계약 체결 시에도 재당첨 제한 및 당첨자 관리 등이 적용되지 "
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-0"
+          },
+          "rect": {
+            "top": 29.5,
+            "left": 60.5,
+            "width": 1003,
+            "height": 119,
+            "bottom": 148.5,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ]"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-1"
+          },
+          "rect": {
+            "top": 148.5,
+            "left": 60.5,
+            "width": 1003,
+            "height": 24.578125,
+            "bottom": 173.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-2"
+          },
+          "rect": {
+            "top": 173.078125,
+            "left": 60.5,
+            "width": 1003,
+            "height": 70,
+            "bottom": 243.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": "LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약 관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다. 고객 여러분"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-3"
+          },
+          "rect": {
+            "top": 243.078125,
+            "left": 60.5,
+            "width": 1003,
+            "height": 20,
+            "bottom": 263.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-4"
+          },
+          "rect": {
+            "top": 263.078125,
+            "left": 60.5,
+            "width": 1003,
+            "height": 31,
+            "bottom": 294.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": "알 려 드 립 니 다"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-5"
+          },
+          "rect": {
+            "top": 294.078125,
+            "left": 60.5,
+            "width": 1003,
+            "height": 799,
+            "bottom": 1093.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 불문하며, 계약 체결 시에도 재당첨 제한 및 당첨자 관리 등이 적용되지 "
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-0"
+          },
+          "rect": {
+            "top": 29.5,
+            "left": 60.5,
+            "width": 1003,
+            "height": 119,
+            "bottom": 148.5,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ]"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-1"
+          },
+          "rect": {
+            "top": 148.5,
+            "left": 60.5,
+            "width": 1003,
+            "height": 24.578125,
+            "bottom": 173.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-2"
+          },
+          "rect": {
+            "top": 173.078125,
+            "left": 60.5,
+            "width": 1003,
+            "height": 70,
+            "bottom": 243.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": "LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약 관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다. 고객 여러분"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-3"
+          },
+          "rect": {
+            "top": 243.078125,
+            "left": 60.5,
+            "width": 1003,
+            "height": 20,
+            "bottom": 263.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-4"
+          },
+          "rect": {
+            "top": 263.078125,
+            "left": 60.5,
+            "width": 1003,
+            "height": 31,
+            "bottom": 294.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": "알 려 드 립 니 다"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1:row-5"
+          },
+          "rect": {
+            "top": 294.078125,
+            "left": 60.5,
+            "width": 1003,
+            "height": 799,
+            "bottom": 1093.078125,
+            "right": 1063.5
+          },
+          "cellCount": 1,
+          "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 불문하며, 계약 체결 시에도 재당첨 제한 및 당첨자 관리 등이 적용되지 "
+        }
+      ],
+      "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고 [ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ] LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약 관련 사항에 대한 착오 안내가 이루어지는 경우가 있습니다. 고객 여러분께서는 청약과 관련한 ",
+      "style": {
+        "height": "1034px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 1,
+      "depth": 1,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2",
+        "nestingLevel": "1",
+        "layoutHeight": "116",
+        "hwpAnchorOverlap": "48"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2",
+        "nestingLevel": "1",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 455.578125,
+        "left": 68,
+        "width": 938,
+        "height": 116,
+        "bottom": 571.578125,
+        "right": 1006
+      },
+      "tableRect": {
+        "top": 455.578125,
+        "left": 68,
+        "width": 938,
+        "height": 116,
+        "bottom": 571.578125,
+        "right": 1006
+      },
+      "rowCount": 3,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2:row-0"
+          },
+          "rect": {
+            "top": 456.078125,
+            "left": 68.5,
+            "width": 937,
+            "height": 27,
+            "bottom": 483.078125,
+            "right": 1005.5
+          },
+          "cellCount": 3,
+          "text": "공 고 사 전 주 택 개 방 동·호지정 및 계약체결"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2:row-1"
+          },
+          "rect": {
+            "top": 483.078125,
+            "left": 68.5,
+            "width": 937,
+            "height": 44,
+            "bottom": 527.078125,
+            "right": 1005.5
+          },
+          "cellCount": 3,
+          "text": "2025. 12. 30(화) 2026. 1. 13(화) 10시 ~ 16시 2026. 1. 15(목) ~ 공고 중단 시까지 매주 목요일 13:30 ~ 16:00"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2:row-2"
+          },
+          "rect": {
+            "top": 527.078125,
+            "left": 68.5,
+            "width": 937,
+            "height": 44,
+            "bottom": 571.078125,
+            "right": 1005.5
+          },
+          "cellCount": 3,
+          "text": "LH 청약플러스 홈페이지(apply.lh.or.kr) 및 모바일앱 2026. 1. 8(목) 16시까지 사전 열람신청자에 한해 열람 가능 (p.3 참고) LH 대구경북지역본부 1층 마이홈 (대구 달서구 상화로 272)"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2:row-0"
+          },
+          "rect": {
+            "top": 456.078125,
+            "left": 68.5,
+            "width": 937,
+            "height": 27,
+            "bottom": 483.078125,
+            "right": 1005.5
+          },
+          "cellCount": 3,
+          "text": "공 고 사 전 주 택 개 방 동·호지정 및 계약체결"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2:row-1"
+          },
+          "rect": {
+            "top": 483.078125,
+            "left": 68.5,
+            "width": 937,
+            "height": 44,
+            "bottom": 527.078125,
+            "right": 1005.5
+          },
+          "cellCount": 3,
+          "text": "2025. 12. 30(화) 2026. 1. 13(화) 10시 ~ 16시 2026. 1. 15(목) ~ 공고 중단 시까지 매주 목요일 13:30 ~ 16:00"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2:row-2"
+          },
+          "rect": {
+            "top": 527.078125,
+            "left": 68.5,
+            "width": 937,
+            "height": 44,
+            "bottom": 571.078125,
+            "right": 1005.5
+          },
+          "cellCount": 3,
+          "text": "LH 청약플러스 홈페이지(apply.lh.or.kr) 및 모바일앱 2026. 1. 8(목) 16시까지 사전 열람신청자에 한해 열람 가능 (p.3 참고) LH 대구경북지역본부 1층 마이홈 (대구 달서구 상화로 272)"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2:row-0"
+          },
+          "rect": {
+            "top": 456.078125,
+            "left": 68.5,
+            "width": 937,
+            "height": 27,
+            "bottom": 483.078125,
+            "right": 1005.5
+          },
+          "cellCount": 3,
+          "text": "공 고 사 전 주 택 개 방 동·호지정 및 계약체결"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2:row-1"
+          },
+          "rect": {
+            "top": 483.078125,
+            "left": 68.5,
+            "width": 937,
+            "height": 44,
+            "bottom": 527.078125,
+            "right": 1005.5
+          },
+          "cellCount": 3,
+          "text": "2025. 12. 30(화) 2026. 1. 13(화) 10시 ~ 16시 2026. 1. 15(목) ~ 공고 중단 시까지 매주 목요일 13:30 ~ 16:00"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2:row-2"
+          },
+          "rect": {
+            "top": 527.078125,
+            "left": 68.5,
+            "width": 937,
+            "height": 44,
+            "bottom": 571.078125,
+            "right": 1005.5
+          },
+          "cellCount": 3,
+          "text": "LH 청약플러스 홈페이지(apply.lh.or.kr) 및 모바일앱 2026. 1. 8(목) 16시까지 사전 열람신청자에 한해 열람 가능 (p.3 참고) LH 대구경북지역본부 1층 마이홈 (대구 달서구 상화로 272)"
+        }
+      ],
+      "text": "공 고 사 전 주 택 개 방 동·호지정 및 계약체결 2025. 12. 30(화) 2026. 1. 13(화) 10시 ~ 16시 2026. 1. 15(목) ~ 공고 중단 시까지 매주 목요일 13:30 ~ 16:00 LH 청약플러스 홈페이지(apply.lh.or.kr) 및 모바일앱 2026. 1. 8(목) 16시까지 사전 열람신청자에 한해 열람 가능 (p.3 참고) LH 대구경북지역본부 1층 마이홈 (대구 달서구 상화로 272)",
+      "style": {
+        "height": "116px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "",
+        "background": ""
+      }
+    },
+    {
+      "index": 2,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-2",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-flow-after-positioned",
+        "layoutHeight": "38"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-2",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 1109,
+        "left": 60,
+        "width": 1004,
+        "height": 39,
+        "bottom": 1148,
+        "right": 1064
+      },
+      "tableRect": {
+        "top": 1109,
+        "left": 60,
+        "width": 1004,
+        "height": 39,
+        "bottom": 1148,
+        "right": 1064
+      },
+      "rowCount": 1,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-2/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-2:row-0"
+          },
+          "rect": {
+            "top": 1109.5,
+            "left": 60.5,
+            "width": 1003,
+            "height": 38,
+            "bottom": 1147.5,
+            "right": 1063.5
+          },
+          "cellCount": 3,
+          "text": "Ⅰ 공급내역 및 공급금액"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-2/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-2:row-0"
+          },
+          "rect": {
+            "top": 1109.5,
+            "left": 60.5,
+            "width": 1003,
+            "height": 38,
+            "bottom": 1147.5,
+            "right": 1063.5
+          },
+          "cellCount": 3,
+          "text": "Ⅰ 공급내역 및 공급금액"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-2/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-2:row-0"
+          },
+          "rect": {
+            "top": 1109.5,
+            "left": 60.5,
+            "width": 1003,
+            "height": 38,
+            "bottom": 1147.5,
+            "right": 1063.5
+          },
+          "cellCount": 3,
+          "text": "Ⅰ 공급내역 및 공급금액"
+        }
+      ],
+      "text": "Ⅰ 공급내역 및 공급금액",
+      "style": {
+        "height": "38px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 3,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwp-flow-after-positioned",
+        "layoutHeight": "332"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 1196,
+        "left": 60,
+        "width": 1003,
+        "height": 338,
+        "bottom": 1534,
+        "right": 1063
+      },
+      "tableRect": {
+        "top": 1196,
+        "left": 60,
+        "width": 1003,
+        "height": 338,
+        "bottom": 1534,
+        "right": 1063
+      },
+      "rowCount": 13,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-0"
+          },
+          "rect": {
+            "top": 1196.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1222.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "지역 단지코드 주 소 사용승인연도 건설호수 금회공급호수"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-1"
+          },
+          "rect": {
+            "top": 1222.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1248.5,
+            "right": 1062.5
+          },
+          "cellCount": 7,
+          "text": "대구 남구 D00638 대구 남구 대명동 554-4 102동 (안지랑로2길10) 2013 8 4"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-2"
+          },
+          "rect": {
+            "top": 1248.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1274.5,
+            "right": 1062.5
+          },
+          "cellCount": 5,
+          "text": "D00639 대구 남구 대명동 554-4 103동 (안지랑로2길10) 2013 8 5"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-3"
+          },
+          "rect": {
+            "top": 1274.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1300.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "달서구 D00658 대구 달서구 상인동 438-9 (월곡로35길74-15) 2013 8 5"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-4"
+          },
+          "rect": {
+            "top": 1300.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1326.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "달성군 D00635 대구 달성군 논공읍 북리 833-17 (논공중앙로138) 2012 8 3"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-5"
+          },
+          "rect": {
+            "top": 1326.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1352.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "동구 D00684 대구 동구 방촌동 1072-22 나동 (화랑로73길41) 2013 8 5"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-6"
+          },
+          "rect": {
+            "top": 1352.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1378.5,
+            "right": 1062.5
+          },
+          "cellCount": 5,
+          "text": "D00685 대구 동구 방촌동 1072-22 다동 (화랑로73길41) 2013 8 6"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-7"
+          },
+          "rect": {
+            "top": 1378.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1404.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "북구 D00618 대구 북구 산격동 1497-30 (대구체육관로10길16) 2012 8 7"
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-8"
+          },
+          "rect": {
+            "top": 1404.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1430.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "수성구 D00361 대구 수성구 만촌동 1009-17 (세진로12길15) 2012 5 3"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-9"
+          },
+          "rect": {
+            "top": 1430.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1456.5,
+            "right": 1062.5
+          },
+          "cellCount": 7,
+          "text": "경북 경산시 D00627 경북 경산시 사동 606-8 (원효로40길64-10) 2012 11 8"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-10"
+          },
+          "rect": {
+            "top": 1456.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1482.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "구미시 D00661 경북 구미시 오태동 773-6 (금오대로10길45-1) 2013 8 5"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-11"
+          },
+          "rect": {
+            "top": 1482.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1508.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "포항시 D00714 경북 포항시 남구 대도동 142-22 301동 (문예로82번길20-10) 2013 8 4"
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-5"
+          },
+          "rect": {
+            "top": 1326.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1352.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "동구 D00684 대구 동구 방촌동 1072-22 나동 (화랑로73길41) 2013 8 5"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-6"
+          },
+          "rect": {
+            "top": 1352.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1378.5,
+            "right": 1062.5
+          },
+          "cellCount": 5,
+          "text": "D00685 대구 동구 방촌동 1072-22 다동 (화랑로73길41) 2013 8 6"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-7"
+          },
+          "rect": {
+            "top": 1378.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1404.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "북구 D00618 대구 북구 산격동 1497-30 (대구체육관로10길16) 2012 8 7"
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-8"
+          },
+          "rect": {
+            "top": 1404.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1430.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "수성구 D00361 대구 수성구 만촌동 1009-17 (세진로12길15) 2012 5 3"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-9"
+          },
+          "rect": {
+            "top": 1430.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1456.5,
+            "right": 1062.5
+          },
+          "cellCount": 7,
+          "text": "경북 경산시 D00627 경북 경산시 사동 606-8 (원효로40길64-10) 2012 11 8"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-10"
+          },
+          "rect": {
+            "top": 1456.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1482.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "구미시 D00661 경북 구미시 오태동 773-6 (금오대로10길45-1) 2013 8 5"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-11"
+          },
+          "rect": {
+            "top": 1482.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1508.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "포항시 D00714 경북 포항시 남구 대도동 142-22 301동 (문예로82번길20-10) 2013 8 4"
+        },
+        {
+          "rowIndex": 12,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-12"
+          },
+          "rect": {
+            "top": 1508.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 25,
+            "bottom": 1533.5,
+            "right": 1062.5
+          },
+          "cellCount": 5,
+          "text": "D00713 경북 포항시 남구 대도동 142-5 302동 (문예로82번길20-8) 2013 8 1"
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-0"
+          },
+          "rect": {
+            "top": 1196.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1222.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "지역 단지코드 주 소 사용승인연도 건설호수 금회공급호수"
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-1"
+          },
+          "rect": {
+            "top": 1222.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1248.5,
+            "right": 1062.5
+          },
+          "cellCount": 7,
+          "text": "대구 남구 D00638 대구 남구 대명동 554-4 102동 (안지랑로2길10) 2013 8 4"
+        },
+        {
+          "rowIndex": 2,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-2\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-2"
+          },
+          "rect": {
+            "top": 1248.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1274.5,
+            "right": 1062.5
+          },
+          "cellCount": 5,
+          "text": "D00639 대구 남구 대명동 554-4 103동 (안지랑로2길10) 2013 8 5"
+        },
+        {
+          "rowIndex": 3,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-3\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-3"
+          },
+          "rect": {
+            "top": 1274.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1300.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "달서구 D00658 대구 달서구 상인동 438-9 (월곡로35길74-15) 2013 8 5"
+        },
+        {
+          "rowIndex": 4,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-4\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-4"
+          },
+          "rect": {
+            "top": 1300.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1326.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "달성군 D00635 대구 달성군 논공읍 북리 833-17 (논공중앙로138) 2012 8 3"
+        },
+        {
+          "rowIndex": 5,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-5\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-5"
+          },
+          "rect": {
+            "top": 1326.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1352.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "동구 D00684 대구 동구 방촌동 1072-22 나동 (화랑로73길41) 2013 8 5"
+        },
+        {
+          "rowIndex": 6,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-6\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-6"
+          },
+          "rect": {
+            "top": 1352.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1378.5,
+            "right": 1062.5
+          },
+          "cellCount": 5,
+          "text": "D00685 대구 동구 방촌동 1072-22 다동 (화랑로73길41) 2013 8 6"
+        },
+        {
+          "rowIndex": 7,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-7\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-7"
+          },
+          "rect": {
+            "top": 1378.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1404.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "북구 D00618 대구 북구 산격동 1497-30 (대구체육관로10길16) 2012 8 7"
+        },
+        {
+          "rowIndex": 8,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-8\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-8"
+          },
+          "rect": {
+            "top": 1404.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1430.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "수성구 D00361 대구 수성구 만촌동 1009-17 (세진로12길15) 2012 5 3"
+        },
+        {
+          "rowIndex": 9,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-9\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-9"
+          },
+          "rect": {
+            "top": 1430.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1456.5,
+            "right": 1062.5
+          },
+          "cellCount": 7,
+          "text": "경북 경산시 D00627 경북 경산시 사동 606-8 (원효로40길64-10) 2012 11 8"
+        },
+        {
+          "rowIndex": 10,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-10\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-10"
+          },
+          "rect": {
+            "top": 1456.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1482.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "구미시 D00661 경북 구미시 오태동 773-6 (금오대로10길45-1) 2013 8 5"
+        },
+        {
+          "rowIndex": 11,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-11\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-11"
+          },
+          "rect": {
+            "top": 1482.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 26,
+            "bottom": 1508.5,
+            "right": 1062.5
+          },
+          "cellCount": 6,
+          "text": "포항시 D00714 경북 포항시 남구 대도동 142-22 301동 (문예로82번길20-10) 2013 8 4"
+        },
+        {
+          "rowIndex": 12,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-3/row-12\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-3:row-12"
+          },
+          "rect": {
+            "top": 1508.5,
+            "left": 60.5,
+            "width": 1002,
+            "height": 25,
+            "bottom": 1533.5,
+            "right": 1062.5
+          },
+          "cellCount": 5,
+          "text": "D00713 경북 포항시 남구 대도동 142-5 302동 (문예로82번길20-8) 2013 8 1"
+        }
+      ],
+      "text": "지역 단지코드 주 소 사용승인연도 건설호수 금회공급호수 대구 남구 D00638 대구 남구 대명동 554-4 102동 (안지랑로2길10) 2013 8 4 D00639 대구 남구 대명동 554-4 103동 (안지랑로2길10) 2013 8 5 달서구 D00658 대구 달서구 상인동 438-9 (월곡로35길74-15) 2013 8 5 달성군 D00635 대구 달성군 논공읍 북리 833-17 (논공중앙로138) 2012 8 3 동구 D",
+      "style": {
+        "height": "332px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    },
+    {
+      "index": 4,
+      "depth": 0,
+      "wrapDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0",
+        "readonlyDecoration": "true",
+        "nestingLevel": "0",
+        "layoutPosition": "absolute",
+        "layoutSource": "hwpx-header-hwp-control",
+        "layoutHeight": "39"
+      },
+      "tableDataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table\",\"nodeId\":\"page-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-0",
+        "nestingLevel": "0",
+        "sourceFormat": "hwp",
+        "readonlyDecoration": "true",
+        "repeatHeaderRows": "1"
+      },
+      "rect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 49,
+        "bottom": 68,
+        "right": 1062
+      },
+      "tableRect": {
+        "top": 19,
+        "left": 60,
+        "width": 1002,
+        "height": 49,
+        "bottom": 68,
+        "right": 1062
+      },
+      "rowCount": 2,
+      "firstRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-0"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 37.5,
+            "bottom": 57,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-1"
+          },
+          "rect": {
+            "top": 57,
+            "left": 60.5,
+            "width": 1001,
+            "height": 10.5,
+            "bottom": 67.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "lastRows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-0"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 37.5,
+            "bottom": 57,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-1"
+          },
+          "rect": {
+            "top": 57,
+            "left": 60.5,
+            "width": 1001,
+            "height": 10.5,
+            "bottom": 67.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "rows": [
+        {
+          "rowIndex": 0,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-0\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-0"
+          },
+          "rect": {
+            "top": 19.5,
+            "left": 60.5,
+            "width": 1001,
+            "height": 37.5,
+            "bottom": 57,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        },
+        {
+          "rowIndex": 1,
+          "dataset": {
+            "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"table-row\",\"nodeId\":\"page-0-block-0/row-1\",\"rawPreserved\":true}",
+            "layoutBoxId": "hwp:0:page-0-block-0:row-1"
+          },
+          "rect": {
+            "top": 57,
+            "left": 60.5,
+            "width": 1001,
+            "height": 10.5,
+            "bottom": 67.5,
+            "right": 1061.5
+          },
+          "cellCount": 1,
+          "text": ""
+        }
+      ],
+      "text": "",
+      "style": {
+        "height": "39px",
+        "minHeight": "",
+        "width": "100%"
+      },
+      "tableStyle": {
+        "border": "1px solid rgba(0, 0, 0, 0.5)",
+        "background": ""
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "43",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 43,
+        "left": 61,
+        "width": 1002,
+        "height": 48,
+        "bottom": 91,
+        "right": 1063
+      },
+      "text": "대구·경북 다세대주택 잔여세대 선착순 일반매각 공고",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "43px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 1,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-0-cell-0-block-2\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-0-cell-0-block-2",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "20",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 146,
+        "left": 61,
+        "width": 1002,
+        "height": 22,
+        "bottom": 168,
+        "right": 1063
+      },
+      "text": "[ 선착순 동·호 지정 계약 | 유주택자 및 기관·법인 계약 가능 ]",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 2,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 153,
+        "left": 68,
+        "width": 988,
+        "height": 17.578125,
+        "bottom": 170.578125,
+        "right": 1056
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 3,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-2-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "48",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 182.078125,
+        "left": 68,
+        "width": 988,
+        "height": 52,
+        "bottom": 234.078125,
+        "right": 1056
+      },
+      "text": "LH에서는 콜센터(1600-1004) 등을 통해 매각공고문의 내용과 관련하여 자세한 안내가 이루어질 수 있도록 상담을 실시하고 있으나, 청약자 개인의 다양하고 복잡한 상황에 대하 여 정확하지 않은 정보 제공으로 청약",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "48px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 4,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 245.578125,
+        "left": 68,
+        "width": 988,
+        "height": 17.578125,
+        "bottom": 263.15625,
+        "right": 1056
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 5,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-4-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "20",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 267.578125,
+        "left": 63,
+        "width": 998,
+        "height": 22,
+        "bottom": 289.578125,
+        "right": 1061
+      },
+      "text": "알 려 드 립 니 다",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "20px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 6,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "45",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 378.578125,
+        "left": 68,
+        "width": 988,
+        "height": 46,
+        "bottom": 424.578125,
+        "right": 1056
+      },
+      "text": "■ 계약체결일 기준 국내 거주 19세 이상의 성년자 및 기관·법인에게 공급합니다. (1인 2주택 이상 계약 가능) 주택소유 여부, 소득 및 자산요건, 거주지역, 신청자의 입주자저축 가입 여부, 과거 당첨사실 여부를 ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "45px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 7,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "39",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 435.578125,
+        "left": 68,
+        "width": 988,
+        "height": 63,
+        "bottom": 498.578125,
+        "right": 1056
+      },
+      "text": "■ 선착순 동·호지정 방식으로 공급하며, 주요 일정은 다음과 같습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "39px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 8,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 462.078125,
+        "left": 76,
+        "width": 278.671875,
+        "height": 15,
+        "bottom": 477.078125,
+        "right": 354.671875
+      },
+      "text": "공 고",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 9,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2-row-0-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 462.078125,
+        "left": 364.671875,
+        "width": 318.640625,
+        "height": 15,
+        "bottom": 477.078125,
+        "right": 683.3125
+      },
+      "text": "사 전 주 택 개 방",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 10,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2-row-0-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 462.078125,
+        "left": 688.3125,
+        "width": 314.6875,
+        "height": 15,
+        "bottom": 477.078125,
+        "right": 1003
+      },
+      "text": "동·호지정 및 계약체결",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 11,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 497.578125,
+        "left": 76,
+        "width": 278.671875,
+        "height": 15,
+        "bottom": 512.578125,
+        "right": 354.671875
+      },
+      "text": "2025. 12. 30(화)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 12,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2-row-1-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 497.578125,
+        "left": 364.671875,
+        "width": 318.640625,
+        "height": 15,
+        "bottom": 512.578125,
+        "right": 683.3125
+      },
+      "text": "2026. 1. 13(화) 10시 ~ 16시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 13,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2-row-1-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 488.078125,
+        "left": 688.3125,
+        "width": 314.6875,
+        "height": 15,
+        "bottom": 503.078125,
+        "right": 1003
+      },
+      "text": "2026. 1. 15(목) ~ 공고 중단 시까지",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 14,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2-row-1-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2-row-1-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 507.078125,
+        "left": 688.3125,
+        "width": 314.6875,
+        "height": 15,
+        "bottom": 522.078125,
+        "right": 1003
+      },
+      "text": "매주 목요일 13:30 ~ 16:00",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 15,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2-row-2-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 534.078125,
+        "left": 89,
+        "width": 265.671875,
+        "height": 30,
+        "bottom": 564.078125,
+        "right": 354.671875
+      },
+      "text": "LH 청약플러스 홈페이지(apply.lh.or.kr) 및 모바일앱",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 16,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2-row-2-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2-row-2-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 534.078125,
+        "left": 377.671875,
+        "width": 305.640625,
+        "height": 30,
+        "bottom": 564.078125,
+        "right": 683.3125
+      },
+      "text": "2026. 1. 8(목) 16시까지 사전 열람신청자에 한해 열람 가능 (p.3 참고)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 17,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2-row-2-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2-row-2-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 532.078125,
+        "left": 688.3125,
+        "width": 314.6875,
+        "height": 15,
+        "bottom": 547.078125,
+        "right": 1003
+      },
+      "text": "LH 대구경북지역본부 1층 마이홈",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 18,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-2-row-2-cell-2-block-1\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-2-row-2-cell-2-block-1",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 551.078125,
+        "left": 688.3125,
+        "width": 314.6875,
+        "height": 15,
+        "bottom": 566.078125,
+        "right": 1003
+      },
+      "text": "(대구 달서구 상화로 272)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 19,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-3\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-3",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "26",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 571.578125,
+        "left": 68,
+        "width": 988,
+        "height": 42,
+        "bottom": 613.578125,
+        "right": 1056
+      },
+      "text": "* [선착순 동·호지정 계약] 계약 예정 주의 화요일 18시까지 계약방문 유선예약 완료하신 후 계약체결일 당일 계약장소 도착 순서대로 동·호지정 계약 (단, 13:30 전 도착자는 동·호지정 순번 추첨)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "26px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 20,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-4\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-4",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 618.578125,
+        "left": 68,
+        "width": 988,
+        "height": 14,
+        "bottom": 632.578125,
+        "right": 1056
+      },
+      "text": "* 계약 개시 후 잔여주택 현황은 LH청약플러스(apply.lh.or.kr) – 청약 – 공지사항 에 게시 예정",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 21,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-5",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "75",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 637.578125,
+        "left": 68,
+        "width": 988,
+        "height": 75,
+        "bottom": 712.578125,
+        "right": 1056
+      },
+      "text": "■ 금회 공급 주택은 정부의 전월세시장 안정방안에 따라 우리 공사(LH)가 10년 임대 후 분양으로 전환한 주택 중 입주자가 분양받지 않고 퇴거하여 우리 공사에 명도된 주택이며, 신규공급 주택이 아닙니다. 기존 입주",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "75px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 22,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-6\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-6",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 717.578125,
+        "left": 68,
+        "width": 988,
+        "height": 15,
+        "bottom": 732.578125,
+        "right": 1056
+      },
+      "text": "■ 신청자 본인이 단지 여건, 내부 상태, 마감재 등을 반드시 확인 후 계약하여야 하며 세대 미확인으로 인한 이의를 제기할 수 없습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 23,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-7\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-7",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 737.578125,
+        "left": 68,
+        "width": 988,
+        "height": 15,
+        "bottom": 752.578125,
+        "right": 1056
+      },
+      "text": "■ 계약 체결 시 계약자의 명의변경 또는 공동명의 계약은 불가합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 24,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-8\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-8",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 757.578125,
+        "left": 68,
+        "width": 988,
+        "height": 30,
+        "bottom": 787.578125,
+        "right": 1056
+      },
+      "text": "■ 신청 및 계약체결 후 소유권이전등기가 완료되기 전까지 주소 또는 연락처 변동이 있을 경우, 즉시 변동사항을 LH 대구경북 임대공급운영팀으로 통보하여야 하며, 미이행 시 그에 따른 피해 또는 불이익에 대한 책임은 ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 25,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-9\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-9",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 792.578125,
+        "left": 68,
+        "width": 988,
+        "height": 15,
+        "bottom": 807.578125,
+        "right": 1056
+      },
+      "text": "■ 우리 공사 임대주택에 거주하면서 본 공급주택의 계약을 체결하실 경우, 본 주택 입주일까지 임대주택을 우리 공사에 명도하여야 합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 26,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-10\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-10",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 812.578125,
+        "left": 68,
+        "width": 988,
+        "height": 15,
+        "bottom": 827.578125,
+        "right": 1056
+      },
+      "text": "■ 계약 체결 후 해약하는 경우 계약서 등에 따라 위약금(총 주택가격의 10%)을 부과(공제)합니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 27,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-11\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-11",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "30",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 832.578125,
+        "left": 68,
+        "width": 988,
+        "height": 30,
+        "bottom": 862.578125,
+        "right": 1056
+      },
+      "text": "■ 계약 체결 후라도 서류의 결격 및 기타 부정한 방법으로 계약하였을 경우 계약을 취소하며, 주택공급 질서를 어지럽히는 행위 등으로 관련법을 위반할 경우 법에 따라 처벌받게 됩니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "30px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 28,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-12\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-12",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 867.578125,
+        "left": 68,
+        "width": 988,
+        "height": 15,
+        "bottom": 882.578125,
+        "right": 1056
+      },
+      "text": "■ 본 공고 이후 미분양 잔여세대는 LH에서 임대주택으로 운영할 수 있습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 29,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-13\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-13",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 887.578125,
+        "left": 68,
+        "width": 988,
+        "height": 15,
+        "bottom": 902.578125,
+        "right": 1056
+      },
+      "text": "■ 본 공고 이후 미분양 잔여세대는 추후 공급조건(분양가격, 대금납부조건 등)이 변경될 수 있으며, 이에 대하여 이의를 제기할 수 없습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 30,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-14\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-14",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 907.578125,
+        "left": 68,
+        "width": 988,
+        "height": 15,
+        "bottom": 922.578125,
+        "right": 1056
+      },
+      "text": "■ 금회 공급주택은 「집합건물의 소유 및 관리에 관한 법률」을 적용받습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 31,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-15\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-15",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 927.578125,
+        "left": 68,
+        "width": 988,
+        "height": 15,
+        "bottom": 942.578125,
+        "right": 1056
+      },
+      "text": "■ 금회 공급 주택은 공고일 현재 관리업체 용역을 통해 관리되고 있으며, 향후 관리주체 변경 등에 따라 관리비가 상승할 수 있습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 32,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-16\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-16",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 947.578125,
+        "left": 68,
+        "width": 988,
+        "height": 15,
+        "bottom": 962.578125,
+        "right": 1056
+      },
+      "text": "■ 공급대상주택이 소진되지 않더라도 사정에 따라 동·호지정계약 운영이 중단될 수 있습니다.",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 33,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-17\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-17",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 967.578125,
+        "left": 68,
+        "width": 988,
+        "height": 15,
+        "bottom": 982.578125,
+        "right": 1056
+      },
+      "text": "■ 본 공고문에 명시되지 않은 사항은 「주택법」, 「주택공급에 관한 규칙」, 「공공주택 특별법」 등 관계법령에 따릅니다",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 34,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-1-row-5-cell-0-block-18\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-1-row-5-cell-0-block-18",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "15",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 987.578125,
+        "left": 68,
+        "width": 988,
+        "height": 16,
+        "bottom": 1003.578125,
+        "right": 1056
+      },
+      "text": "■ (문의처) LH콜센터 ☎1600-1004 / LH 대구경북 임대공급운영팀 ☎053-603-2841, 2843 (평일 9시~18시, 점심시간 12시~13시 제외)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "15px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 35,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-2-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-2-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "27",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1112,
+        "left": 63,
+        "width": 48.9375,
+        "height": 33,
+        "bottom": 1145,
+        "right": 111.9375
+      },
+      "text": "Ⅰ",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "27px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 36,
+      "dataset": {
+        "empty": "true"
+      },
+      "rect": {
+        "top": 1119.703125,
+        "left": 116.9375,
+        "width": 19.96875,
+        "height": 17.578125,
+        "bottom": 1137.28125,
+        "right": 136.90625
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 37,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-2-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-2-row-0-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "21",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1117,
+        "left": 141.90625,
+        "width": 919.09375,
+        "height": 23,
+        "bottom": 1140,
+        "right": 1061
+      },
+      "text": "공급내역 및 공급금액",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "21px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 38,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-0-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-0-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1202.5,
+        "left": 63,
+        "width": 140,
+        "height": 14,
+        "bottom": 1216.5,
+        "right": 203
+      },
+      "text": "지역",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 39,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-0-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-0-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1202.5,
+        "left": 208,
+        "width": 77,
+        "height": 14,
+        "bottom": 1216.5,
+        "right": 285
+      },
+      "text": "단지코드",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 40,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-0-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-0-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1202.5,
+        "left": 290,
+        "width": 422,
+        "height": 14,
+        "bottom": 1216.5,
+        "right": 712
+      },
+      "text": "주 소",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 41,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-0-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-0-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1202.5,
+        "left": 717,
+        "width": 111,
+        "height": 14,
+        "bottom": 1216.5,
+        "right": 828
+      },
+      "text": "사용승인연도",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 42,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-0-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-0-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1202.5,
+        "left": 833,
+        "width": 111,
+        "height": 14,
+        "bottom": 1216.5,
+        "right": 944
+      },
+      "text": "건설호수",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 43,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-0-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-0-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1202.5,
+        "left": 949,
+        "width": 111,
+        "height": 14,
+        "bottom": 1216.5,
+        "right": 1060
+      },
+      "text": "금회공급호수",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 44,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-1-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-1-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1319.5,
+        "left": 68,
+        "width": 48,
+        "height": 14,
+        "bottom": 1333.5,
+        "right": 116
+      },
+      "text": "대구",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 45,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-1-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-1-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1241.5,
+        "left": 131,
+        "width": 67,
+        "height": 14,
+        "bottom": 1255.5,
+        "right": 198
+      },
+      "text": "남구",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 46,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-1-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-1-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1228.5,
+        "left": 213,
+        "width": 67,
+        "height": 14,
+        "bottom": 1242.5,
+        "right": 280
+      },
+      "text": "D00638",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 47,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-1-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-1-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1228,
+        "left": 295,
+        "width": 412,
+        "height": 15,
+        "bottom": 1243,
+        "right": 707
+      },
+      "text": "대구 남구 대명동 554-4 102동 (안지랑로2길10)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 48,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-1-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-1-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1228.5,
+        "left": 722,
+        "width": 101,
+        "height": 14,
+        "bottom": 1242.5,
+        "right": 823
+      },
+      "text": "2013",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 49,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-1-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-1-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1228.5,
+        "left": 838,
+        "width": 101,
+        "height": 14,
+        "bottom": 1242.5,
+        "right": 939
+      },
+      "text": "8",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 50,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-1-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-1-cell-6-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1228.5,
+        "left": 954,
+        "width": 101,
+        "height": 14,
+        "bottom": 1242.5,
+        "right": 1055
+      },
+      "text": "4",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 51,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-2-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-2-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1254.5,
+        "left": 213,
+        "width": 67,
+        "height": 14,
+        "bottom": 1268.5,
+        "right": 280
+      },
+      "text": "D00639",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 52,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-2-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-2-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1254,
+        "left": 295,
+        "width": 412,
+        "height": 15,
+        "bottom": 1269,
+        "right": 707
+      },
+      "text": "대구 남구 대명동 554-4 103동 (안지랑로2길10)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 53,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-2-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-2-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1254.5,
+        "left": 722,
+        "width": 101,
+        "height": 14,
+        "bottom": 1268.5,
+        "right": 823
+      },
+      "text": "2013",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 54,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-2-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-2-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1254.5,
+        "left": 838,
+        "width": 101,
+        "height": 14,
+        "bottom": 1268.5,
+        "right": 939
+      },
+      "text": "8",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 55,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-2-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-2-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1254.5,
+        "left": 954,
+        "width": 101,
+        "height": 14,
+        "bottom": 1268.5,
+        "right": 1055
+      },
+      "text": "5",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 56,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-3-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-3-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1280.5,
+        "left": 131,
+        "width": 67,
+        "height": 14,
+        "bottom": 1294.5,
+        "right": 198
+      },
+      "text": "달서구",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 57,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-3-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-3-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1280.5,
+        "left": 213,
+        "width": 67,
+        "height": 14,
+        "bottom": 1294.5,
+        "right": 280
+      },
+      "text": "D00658",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 58,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-3-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-3-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1280,
+        "left": 295,
+        "width": 412,
+        "height": 15,
+        "bottom": 1295,
+        "right": 707
+      },
+      "text": "대구 달서구 상인동 438-9 (월곡로35길74-15)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 59,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-3-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-3-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1280.5,
+        "left": 722,
+        "width": 101,
+        "height": 14,
+        "bottom": 1294.5,
+        "right": 823
+      },
+      "text": "2013",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 60,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-3-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-3-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1280.5,
+        "left": 838,
+        "width": 101,
+        "height": 14,
+        "bottom": 1294.5,
+        "right": 939
+      },
+      "text": "8",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 61,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-3-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-3-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1280.5,
+        "left": 954,
+        "width": 101,
+        "height": 14,
+        "bottom": 1294.5,
+        "right": 1055
+      },
+      "text": "5",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 62,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-4-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-4-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1306.5,
+        "left": 131,
+        "width": 67,
+        "height": 14,
+        "bottom": 1320.5,
+        "right": 198
+      },
+      "text": "달성군",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 63,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-4-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-4-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1306.5,
+        "left": 213,
+        "width": 67,
+        "height": 14,
+        "bottom": 1320.5,
+        "right": 280
+      },
+      "text": "D00635",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 64,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-4-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-4-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1306,
+        "left": 295,
+        "width": 412,
+        "height": 15,
+        "bottom": 1321,
+        "right": 707
+      },
+      "text": "대구 달성군 논공읍 북리 833-17 (논공중앙로138)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 65,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-4-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-4-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1306.5,
+        "left": 722,
+        "width": 101,
+        "height": 14,
+        "bottom": 1320.5,
+        "right": 823
+      },
+      "text": "2012",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 66,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-4-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-4-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1306.5,
+        "left": 838,
+        "width": 101,
+        "height": 14,
+        "bottom": 1320.5,
+        "right": 939
+      },
+      "text": "8",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 67,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-4-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-4-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1306.5,
+        "left": 954,
+        "width": 101,
+        "height": 14,
+        "bottom": 1320.5,
+        "right": 1055
+      },
+      "text": "3",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 68,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-5-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-5-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1345.5,
+        "left": 131,
+        "width": 67,
+        "height": 14,
+        "bottom": 1359.5,
+        "right": 198
+      },
+      "text": "동구",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 69,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-5-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-5-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1332.5,
+        "left": 213,
+        "width": 67,
+        "height": 14,
+        "bottom": 1346.5,
+        "right": 280
+      },
+      "text": "D00684",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 70,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-5-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-5-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1332,
+        "left": 295,
+        "width": 412,
+        "height": 15,
+        "bottom": 1347,
+        "right": 707
+      },
+      "text": "대구 동구 방촌동 1072-22 나동 (화랑로73길41)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 71,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-5-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-5-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1332.5,
+        "left": 722,
+        "width": 101,
+        "height": 14,
+        "bottom": 1346.5,
+        "right": 823
+      },
+      "text": "2013",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 72,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-5-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-5-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1332.5,
+        "left": 838,
+        "width": 101,
+        "height": 14,
+        "bottom": 1346.5,
+        "right": 939
+      },
+      "text": "8",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 73,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-5-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-5-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1332.5,
+        "left": 954,
+        "width": 101,
+        "height": 14,
+        "bottom": 1346.5,
+        "right": 1055
+      },
+      "text": "5",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 74,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-6-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-6-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1358.5,
+        "left": 213,
+        "width": 67,
+        "height": 14,
+        "bottom": 1372.5,
+        "right": 280
+      },
+      "text": "D00685",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 75,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-6-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-6-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1358,
+        "left": 295,
+        "width": 412,
+        "height": 15,
+        "bottom": 1373,
+        "right": 707
+      },
+      "text": "대구 동구 방촌동 1072-22 다동 (화랑로73길41)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 76,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-6-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-6-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1358.5,
+        "left": 722,
+        "width": 101,
+        "height": 14,
+        "bottom": 1372.5,
+        "right": 823
+      },
+      "text": "2013",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 77,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-6-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-6-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1358.5,
+        "left": 838,
+        "width": 101,
+        "height": 14,
+        "bottom": 1372.5,
+        "right": 939
+      },
+      "text": "8",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 78,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-6-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-6-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1358.5,
+        "left": 954,
+        "width": 101,
+        "height": 14,
+        "bottom": 1372.5,
+        "right": 1055
+      },
+      "text": "6",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 79,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-7-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-7-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1384.5,
+        "left": 131,
+        "width": 67,
+        "height": 14,
+        "bottom": 1398.5,
+        "right": 198
+      },
+      "text": "북구",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 80,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-7-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-7-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1384.5,
+        "left": 213,
+        "width": 67,
+        "height": 14,
+        "bottom": 1398.5,
+        "right": 280
+      },
+      "text": "D00618",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 81,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-7-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-7-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1384,
+        "left": 295,
+        "width": 412,
+        "height": 15,
+        "bottom": 1399,
+        "right": 707
+      },
+      "text": "대구 북구 산격동 1497-30 (대구체육관로10길16)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 82,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-7-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-7-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1384.5,
+        "left": 722,
+        "width": 101,
+        "height": 14,
+        "bottom": 1398.5,
+        "right": 823
+      },
+      "text": "2012",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 83,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-7-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-7-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1384.5,
+        "left": 838,
+        "width": 101,
+        "height": 14,
+        "bottom": 1398.5,
+        "right": 939
+      },
+      "text": "8",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 84,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-7-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-7-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1384.5,
+        "left": 954,
+        "width": 101,
+        "height": 14,
+        "bottom": 1398.5,
+        "right": 1055
+      },
+      "text": "7",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 85,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-8-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-8-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1410.5,
+        "left": 131,
+        "width": 67,
+        "height": 14,
+        "bottom": 1424.5,
+        "right": 198
+      },
+      "text": "수성구",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 86,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-8-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-8-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1410.5,
+        "left": 213,
+        "width": 67,
+        "height": 14,
+        "bottom": 1424.5,
+        "right": 280
+      },
+      "text": "D00361",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 87,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-8-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-8-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1410,
+        "left": 295,
+        "width": 412,
+        "height": 15,
+        "bottom": 1425,
+        "right": 707
+      },
+      "text": "대구 수성구 만촌동 1009-17 (세진로12길15)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 88,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-8-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-8-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1410.5,
+        "left": 722,
+        "width": 101,
+        "height": 14,
+        "bottom": 1424.5,
+        "right": 823
+      },
+      "text": "2012",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 89,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-8-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-8-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1410.5,
+        "left": 838,
+        "width": 101,
+        "height": 14,
+        "bottom": 1424.5,
+        "right": 939
+      },
+      "text": "5",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 90,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-8-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-8-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1410.5,
+        "left": 954,
+        "width": 101,
+        "height": 14,
+        "bottom": 1424.5,
+        "right": 1055
+      },
+      "text": "3",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 91,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-9-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-9-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1475,
+        "left": 68,
+        "width": 48,
+        "height": 14,
+        "bottom": 1489,
+        "right": 116
+      },
+      "text": "경북",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 92,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-9-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-9-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1436.5,
+        "left": 131,
+        "width": 67,
+        "height": 14,
+        "bottom": 1450.5,
+        "right": 198
+      },
+      "text": "경산시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 93,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-9-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-9-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1436.5,
+        "left": 213,
+        "width": 67,
+        "height": 14,
+        "bottom": 1450.5,
+        "right": 280
+      },
+      "text": "D00627",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 94,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-9-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-9-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1436,
+        "left": 295,
+        "width": 412,
+        "height": 15,
+        "bottom": 1451,
+        "right": 707
+      },
+      "text": "경북 경산시 사동 606-8 (원효로40길64-10)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 95,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-9-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-9-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1436.5,
+        "left": 722,
+        "width": 101,
+        "height": 14,
+        "bottom": 1450.5,
+        "right": 823
+      },
+      "text": "2012",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 96,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-9-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-9-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1436.5,
+        "left": 838,
+        "width": 101,
+        "height": 14,
+        "bottom": 1450.5,
+        "right": 939
+      },
+      "text": "11",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 97,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-9-cell-6-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-9-cell-6-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1436.5,
+        "left": 954,
+        "width": 101,
+        "height": 14,
+        "bottom": 1450.5,
+        "right": 1055
+      },
+      "text": "8",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 98,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-10-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-10-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1462.5,
+        "left": 131,
+        "width": 67,
+        "height": 14,
+        "bottom": 1476.5,
+        "right": 198
+      },
+      "text": "구미시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 99,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-10-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-10-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1462.5,
+        "left": 213,
+        "width": 67,
+        "height": 14,
+        "bottom": 1476.5,
+        "right": 280
+      },
+      "text": "D00661",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 100,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-10-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-10-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1462,
+        "left": 295,
+        "width": 412,
+        "height": 15,
+        "bottom": 1477,
+        "right": 707
+      },
+      "text": "경북 구미시 오태동 773-6 (금오대로10길45-1)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 101,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-10-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-10-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1462.5,
+        "left": 722,
+        "width": 101,
+        "height": 14,
+        "bottom": 1476.5,
+        "right": 823
+      },
+      "text": "2013",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 102,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-10-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-10-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1462.5,
+        "left": 838,
+        "width": 101,
+        "height": 14,
+        "bottom": 1476.5,
+        "right": 939
+      },
+      "text": "8",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 103,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-10-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-10-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1462.5,
+        "left": 954,
+        "width": 101,
+        "height": 14,
+        "bottom": 1476.5,
+        "right": 1055
+      },
+      "text": "5",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 104,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-11-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-11-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1501,
+        "left": 131,
+        "width": 67,
+        "height": 14,
+        "bottom": 1515,
+        "right": 198
+      },
+      "text": "포항시",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 105,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-11-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-11-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1488.5,
+        "left": 213,
+        "width": 67,
+        "height": 14,
+        "bottom": 1502.5,
+        "right": 280
+      },
+      "text": "D00714",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 106,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-11-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-11-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1488,
+        "left": 295,
+        "width": 412,
+        "height": 15,
+        "bottom": 1503,
+        "right": 707
+      },
+      "text": "경북 포항시 남구 대도동 142-22 301동 (문예로82번길20-10)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 107,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-11-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-11-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1488.5,
+        "left": 722,
+        "width": 101,
+        "height": 14,
+        "bottom": 1502.5,
+        "right": 823
+      },
+      "text": "2013",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 108,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-11-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-11-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1488.5,
+        "left": 838,
+        "width": 101,
+        "height": 14,
+        "bottom": 1502.5,
+        "right": 939
+      },
+      "text": "8",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 109,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-11-cell-5-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-11-cell-5-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1488.5,
+        "left": 954,
+        "width": 101,
+        "height": 14,
+        "bottom": 1502.5,
+        "right": 1055
+      },
+      "text": "4",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 110,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-12-cell-0-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-12-cell-0-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1514,
+        "left": 213,
+        "width": 67,
+        "height": 14,
+        "bottom": 1528,
+        "right": 280
+      },
+      "text": "D00713",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 111,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-12-cell-1-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-12-cell-1-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1513.5,
+        "left": 295,
+        "width": 412,
+        "height": 15,
+        "bottom": 1528.5,
+        "right": 707
+      },
+      "text": "경북 포항시 남구 대도동 142-5 302동 (문예로82번길20-8)",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 112,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-12-cell-2-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-12-cell-2-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1514,
+        "left": 722,
+        "width": 101,
+        "height": 14,
+        "bottom": 1528,
+        "right": 823
+      },
+      "text": "2013",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 113,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-12-cell-3-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-12-cell-3-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1514,
+        "left": 838,
+        "width": 101,
+        "height": 14,
+        "bottom": 1528,
+        "right": 939
+      },
+      "text": "8",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 114,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-3-row-12-cell-4-block-0\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-3-row-12-cell-4-block-0",
+        "layoutSource": "hwp-para-line-seg",
+        "layoutHeight": "13",
+        "layoutMode": "line-segments"
+      },
+      "rect": {
+        "top": 1514,
+        "left": 954,
+        "width": 101,
+        "height": 14,
+        "bottom": 1528,
+        "right": 1055
+      },
+      "text": "1",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "13px",
+        "lineHeight": "80%",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 115,
+      "dataset": {
+        "readonlyDecoration": "true",
+        "empty": "true"
+      },
+      "rect": {
+        "top": 59,
+        "left": 63,
+        "width": 996,
+        "height": 21.109375,
+        "bottom": 80.109375,
+        "right": 1059
+      },
+      "text": "",
+      "style": {
+        "top": "",
+        "left": "",
+        "height": "",
+        "minHeight": "",
+        "lineHeight": "",
+        "fontSize": ""
+      }
+    },
+    {
+      "index": 116,
+      "dataset": {
+        "sourceRef": "{\"format\":\"hwp\",\"path\":\"BodyText/Section0\",\"role\":\"section\",\"sectionIndex\":0,\"nodeName\":\"paragraph\",\"nodeId\":\"page-0-block-5\",\"rawPreserved\":true}",
+        "layoutBoxId": "hwp:0:page-0-block-5",
+        "layoutSource": "hwpx-footer-page-number",
+        "readonlyDecoration": "true",
+        "layoutPosition": "absolute",
+        "layoutHeight": "18"
+      },
+      "rect": {
+        "top": 1399,
+        "left": 60,
+        "width": 1006,
+        "height": 19.1875,
+        "bottom": 1418.1875,
+        "right": 1066
+      },
+      "text": "- 1 -",
+      "style": {
+        "top": "calc(var(--hwp-margin-top, 0px) + 1380px)",
+        "left": "calc(var(--hwp-margin-left, 0px) + 0px)",
+        "height": "",
+        "minHeight": "18px",
+        "lineHeight": "1.2",
+        "fontSize": ""
+      }
+    }
+  ],
+  "paragraphCount": 117
+}

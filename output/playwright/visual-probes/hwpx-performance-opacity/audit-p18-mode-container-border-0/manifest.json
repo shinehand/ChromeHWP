@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-06T22:16:29.092Z",
+  "auditId": "p18-mode-container-border-0",
+  "source": "Probe p18 mode",
+  "outputDirectory": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/audit-p18-mode-container-border-0",
+  "documents": [
+    {
+      "id": "p18-mode-container-border-0",
+      "filename": "p18-mode-container-border-0.hwpx",
+      "sourcePath": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx",
+      "pageCount": 1,
+      "state": {
+        "pages": 1
+      },
+      "pages": [
+        {
+          "pageIndex": 0,
+          "hancomScreenshot": "/Users/shinehandmac/Github/ChromeHWP/output/hancom-oracle/page-audit-incheon-latest/incheon-2a/hancom-page-018.png",
+          "chromePage": "/Users/shinehandmac/Github/ChromeHWP/output/playwright/visual-probes/hwpx-performance-opacity/p18-mode-container-border-0.png",
+          "targetBand": "last"
+        }
+      ]
+    }
+  ]
+}
