@@ -57,6 +57,11 @@
   - 기존: `4294967295` → `TABLE_UNIT_SCALE` 곱 후 30px 클램핑 → 셀 안쪽 여백 과대
   - 수정: `0x80000000` 이상(signed int32 음수 범위) → 0 → 휴리스틱 여백 fallback
 
+### 세션 5 (HWPX 번호/선굵기/필드 렌더링)
+- HWPX 번호 매기기 자동화 (`hh:numbering` + `hh:paraHead` 파싱 및 `convertNumberFormat` 도입)
+- HWP/HWPX 세부 선 굵기 및 테두리 정밀화 (16단계 스텝 매핑 테이블 적용으로 한컴 뷰어 선 굵기 일치도 대폭 향상)
+- HWPX `fieldBegin`-`fieldEnd` 필드 값 파싱 및 텍스트 렌더링 복원 (LastResult stringParam 활용)
+
 ---
 
 ## 현재 상태 (Current Status)
@@ -147,30 +152,6 @@
   - `vertRelTo='PARA'` flow 배치 vs `vertRelTo='PAGE'` 절대 배치 구분 재검토
   - 표 외부 여백(`outMargin`)이 렌더러에 반영되는지 확인
 - **검증**: incheon-2a.hwpx 1페이지에서 슬로건·밴드 상대 위치가 개선되어야 함
-
-### 5. HWPX 번호 매기기 자동화 (`hh:numbering` + `paraHead`)
-- **왜**: `hh:paraHead`(번호 형식), 자동 들여쓰기, `newNum` ctrl이 현재 무시됨.
-- **어디**: `js/hwp-parser.js` → `_hwpxParseHeader`, `_hwpxParagraphBlocks`
-- **무엇**:
-  - `hh:numbering / hh:paraHead`에서 번호 형식(DIGIT/HANGUL/ALPHA)과 레벨별 텍스트 추출
-  - 단락의 `listInfo` → 자동 번호 접두어 텍스트 삽입
-- **검증**: incheon-2a.hwpx에서 "1.", "가." 등 자동 번호가 표시되어야 함
-
-### 6. HWP 세부 선 굵기 / 테두리 정밀화
-- **왜**: HWP `BorderFill`에서 선 굵기(THICK, 0.4mm 등)가 렌더러에서 하나로 뭉쳐짐.
-- **어디**: `js/hwp-renderer.js` → `resolveBorderStyle`
-- **무엇**:
-  - `lineWidthMm` → CSS `border-width` 매핑 테이블 추가 (0.1mm=1px, 0.4mm=2px, 1.0mm=3px 등)
-  - 이중 선(`DOUBLE`) / 점선(`DOTTED`) 스타일 CSS 구현
-- **검증**: attachment-sale-notice.hwp, goyeopje.hwp 표 테두리가 원본 굵기에 근사
-
-### 7. HWPX `fieldBegin`-`fieldEnd` 필드 값 렌더링
-- **왜**: `FORMULA`, `HYPERLINK` 필드의 결과값(`LastResult`)이 fieldBegin 파라미터 없이 표시됨.
-- **어디**: `js/hwp-parser.js` → `_hwpxParagraphBlocks` (ctrl child 처리부)
-- **무엇**:
-  - `fieldBegin`의 `LastResult` stringParam → 표시 텍스트로 사용
-  - `HYPERLINK` 필드 → `<a>` 태그 생성 (뷰어 UX)
-- **검증**: 필드가 있는 HWPX에서 수식 결과값이 올바르게 표시
 
 ---
 

@@ -135,11 +135,59 @@ function resolveParagraphListMarker(para, listStateRef = null) {
   counters.length = level;
   state[key] = counters;
 
+  function convertNumberFormat(num, formatType) {
+    const n = Number(num);
+    if (!Number.isFinite(n) || n <= 0) return String(num);
+    switch (String(formatType || 'DIGIT').toUpperCase()) {
+      case 'HANGUL_SYLLABLE': {
+        const chars = ['가','나','다','라','마','바','사','아','자','차','카','타','파','하'];
+        return chars[(n - 1) % chars.length];
+      }
+      case 'HANGUL_JAMO': {
+        const jamo = ['ㄱ','ㄴ','ㄷ','ㄹ','ㅁ','ㅂ','ㅅ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+        return jamo[(n - 1) % jamo.length];
+      }
+      case 'CIRCLED_DIGIT':
+        if (n >= 1 && n <= 15) return String.fromCharCode(0x245F + n); // ①
+        if (n >= 16 && n <= 20) return String.fromCharCode(0x246F + n - 15); // ⑯
+        return String(n);
+      case 'ROMAN_LOWER':
+        return ['i','ii','iii','iv','v','vi','vii','viii','ix','x'][n - 1] || String(n);
+      case 'ROMAN_UPPER':
+        return ['I','II','III','IV','V','VI','VII','VIII','IX','X'][n - 1] || String(n);
+      case 'ALPHA_LOWER':
+        return String.fromCharCode(97 + ((n - 1) % 26)); // a
+      case 'ALPHA_UPPER':
+        return String.fromCharCode(65 + ((n - 1) % 26)); // A
+      case 'CIRCLED_HANGUL_SYLLABLE':
+        return String.fromCharCode(0x326E + ((n - 1) % 14)); // ㉮
+      case 'CIRCLED_HANGUL_JAMO':
+        return String.fromCharCode(0x3260 + ((n - 1) % 14)); // ㉠
+      case 'CIRCLED_ALPHA_LOWER':
+        return String.fromCharCode(0x24D0 + ((n - 1) % 26)); // ⓐ
+      case 'CIRCLED_ALPHA_UPPER':
+        return String.fromCharCode(0x24B6 + ((n - 1) % 26)); // Ⓐ
+      case 'DECIMAL':
+      case 'DIGIT':
+      default:
+        return String(n);
+    }
+  }
+
   const joined = counters.join('.');
   const format = String(listInfo.format || '').trim();
   const marker = format
-    ? format.replace(/\^N/g, `${joined}.`).replace(/\^n/g, joined).replace(/\^\^/g, '^').trim()
-    : `${currentValue}.`;
+    ? format
+        .replace(/\^N/g, `${joined}.`)
+        .replace(/\^n/g, joined)
+        .replace(/\^([0-9]+)/g, (match, lvl) => {
+          const l = Number(lvl);
+          if (l === level) return convertNumberFormat(counters[l - 1], listInfo.numFormat);
+          return (l > 0 && l <= counters.length) ? counters[l - 1] : match;
+        })
+        .replace(/\^\^/g, '^')
+        .trim()
+    : `${convertNumberFormat(currentValue, listInfo.numFormat)}.`;
   return marker || `${currentValue}.`;
 }
 
@@ -1229,12 +1277,26 @@ function hwpxBorderTypeToCss(type) {
   }
 }
 
+// HWP BorderFill widthId → mm 표준 테이블(한컴 스펙 Table 22)
+// 0.1 0.12 0.15 0.2 0.25 0.3 0.4 0.5 0.6 0.7 1.0 1.5 2.0 3.0 4.0 5.0
+// widthMm 값이 이 테이블에서 나오므로 1:1 매핑으로 CSS px를 계산한다.
+const HWP_BORDER_WIDTH_STEP_MM  = [0.1, 0.12, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7, 1.0, 1.5, 2.0, 3.0, 4.0, 5.0];
+// 대응하는 CSS px 값 (96dpi 기준, 0.1mm=최소 0.5px로 상향)
+const HWP_BORDER_WIDTH_STEP_PX  = [0.5, 0.5, 0.7, 0.8, 1.0, 1.2, 1.5, 2.0, 2.3, 2.7, 3.8, 5.7, 7.5, 11.3, 15.1, 18.9];
 function hwpxBorderWidthToPx(widthMm) {
   const mm = Number(widthMm);
   if (!Number.isFinite(mm) || mm <= 0) return '0px';
-  // 0.1mm(최세선) ≈ 0.38px → 시각적으로 표시되는 최소값 0.5px 보장, 8px 상한
-  // (이전 4px 상한은 2.0mm 이상 굵은 선을 너무 얇게 렌더링하는 원인이었음)
-  return `${Math.max(0.5, Math.min(8, Math.round(mm * CSS_PX_PER_MM * 10) / 10))}px`;
+  // 가장 가까운 스텝 찾기
+  let minDist = Infinity, best = HWP_BORDER_WIDTH_STEP_PX[0];
+  for (let i = 0; i < HWP_BORDER_WIDTH_STEP_MM.length; i++) {
+    const d = Math.abs(mm - HWP_BORDER_WIDTH_STEP_MM[i]);
+    if (d < minDist) { minDist = d; best = HWP_BORDER_WIDTH_STEP_PX[i]; }
+  }
+  // 스텝 범위를 벗어나는 임의 mm 값(HWPX 등)은 선형 보간
+  if (minDist > 0.05) {
+    best = Math.max(0.5, Math.min(19, mm * CSS_PX_PER_MM));
+  }
+  return `${best}px`;
 }
 
 function applyCellBorderStyle(td, cell) {

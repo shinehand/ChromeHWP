@@ -1,11 +1,11 @@
 # Verify Sample Hotspots
 
-Generated: 2026-05-12T14:44:34.132Z
+Generated: 2026-06-21T03:12:18.355Z
 Viewer: http://127.0.0.1:4173/pages/viewer.html
 
 ## goyeopje.hwp
 
-- source: /Users/shinehandmac/Downloads/고엽제등록신청서.hwp
+- source: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje.hwp
 - page: 1 / 2 쪽
 - section: 구역: 1 / 1
 - fonts: 한양신명조, 휴먼명조, 고운바탕, 나눔명조, AppleMyungjo, Batang, Noto Serif KR, 휴먼옛체
@@ -20,7 +20,7 @@ Viewer: http://127.0.0.1:4173/pages/viewer.html
 
 ## goyeopje-full-2024.hwp
 
-- source: /Users/shinehandmac/Downloads/231229 고엽제후유(의)증환자 등 등록신청서 일체(2024.1.1. 기준).hwp
+- source: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje-full-2024.hwp
 - page: 1 / 11 쪽
 - section: 구역: 1 / 2
 - fonts: 휴먼명조, 한양중고딕, 굴림체, 돋움, 나눔고딕, 휴먼고딕, Apple SD Gothic Neo, Malgun Gothic, NanumSquareNeo, Noto Sans KR, Pretendard, Wanted Sans, 고운바탕, 나눔명조, 한양신명조, AppleMyungjo, Batang, Noto Serif KR, 맑은 고딕, D2Coding, GulimChe, Noto Sans Mono, 한양견고딕, 돋움체, 한컴 윤체 B, HY헤드라인M
@@ -38,7 +38,7 @@ Viewer: http://127.0.0.1:4173/pages/viewer.html
 
 ## gyeolseokgye.hwp
 
-- source: /Users/shinehandmac/Downloads/결석계.hwp
+- source: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/gyeolseokgye.hwp
 - page: 1 / 1 쪽
 - section: 구역: 1 / 1
 - fonts: 함초롬바탕, Noto Serif KR, 고운바탕, 나눔명조, 한양신명조, 휴먼명조, AppleMyungjo, Batang, 함초롬돋움, Apple SD Gothic Neo, HCR Batang, Malgun Gothic
@@ -52,7 +52,7 @@ Viewer: http://127.0.0.1:4173/pages/viewer.html
 
 ## attachment-sale-notice.hwp
 
-- source: /Users/shinehandmac/Downloads/(첨부)정정_공고문_신축다세대잔여세대선착순일반매각.hwp
+- source: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp
 - page: 1 / 4 쪽
 - section: 구역: 1 / 1
 - fonts: 나눔고딕, 돋움, 한양중고딕, 휴먼고딕, Apple SD Gothic Neo, Malgun Gothic, NanumSquareNeo, Noto Sans KR, Pretendard, Wanted Sans, 맑은 고딕, 휴먼명조, HY헤드라인M, 한양신명조, #중고딕, 고운바탕, 나눔명조, AppleMyungjo, Batang, Noto Serif KR
@@ -69,7 +69,7 @@ Viewer: http://127.0.0.1:4173/pages/viewer.html
 
 ## incheon-2a.hwpx
 
-- source: /Users/shinehandmac/Downloads/(공고문)인천가정2A-.hwpx
+- source: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx
 - page: 1 / 18 쪽
 - section: 구역: 1 / 1
 - fonts: 돋움, 한양중고딕, Malgun Gothic, 나눔고딕, 휴먼고딕, Apple SD Gothic Neo, NanumSquareNeo, Noto Sans KR, Pretendard, Wanted Sans, 맑은 고딕, 굴림, HY헤드라인M, 한컴돋움, 한양신명조, 고운바탕, 나눔명조, 휴먼명조, AppleMyungjo, Batang, Noto Serif KR

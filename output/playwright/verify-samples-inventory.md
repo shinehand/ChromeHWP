@@ -1,18 +1,18 @@
 # Downloads HWP Inventory
 
-Generated: 2026-05-12T14:44:34.132Z
-Downloads Directory: /Users/shinehandmac/Downloads
+Generated: 2026-06-21T03:12:18.355Z
+Downloads Directory: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs
 Discovered Documents: 5
 Verified Documents: 5
 
 ## goyeopje.hwp
 
-- path: /Users/shinehandmac/Downloads/고엽제등록신청서.hwp
+- path: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje.hwp
 - kind: 기준 샘플
 - status: 완료
 - page: 1 / 2 쪽
 - section: 구역: 1 / 1
-- source: /Users/shinehandmac/Downloads/고엽제등록신청서.hwp
+- source: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje.hwp
 - fonts: 한양신명조, 휴먼명조, 고운바탕, 나눔명조, AppleMyungjo, Batang, Noto Serif KR, 휴먼옛체
 - fonts-source: rendered-dom
 - rendered-font-diagnostics: family 휴먼옛체, 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, "Noto Serif KR", Batang, AppleMyungjo, serif(125), 휴먼명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, "Noto Serif KR", Batang, AppleMyungjo, serif(1) · size 14.6667px(61), 14px(50), 16px(6) · line-height 23.1733px(61), 22.12px(50), 25.28px(6)
@@ -25,12 +25,12 @@ Verified Documents: 5
 
 ## goyeopje-full-2024.hwp
 
-- path: /Users/shinehandmac/Downloads/231229 고엽제후유(의)증환자 등 등록신청서 일체(2024.1.1. 기준).hwp
+- path: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje-full-2024.hwp
 - kind: 기준 샘플
 - status: 완료
 - page: 1 / 11 쪽
 - section: 구역: 1 / 2
-- source: /Users/shinehandmac/Downloads/231229 고엽제후유(의)증환자 등 등록신청서 일체(2024.1.1. 기준).hwp
+- source: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/goyeopje-full-2024.hwp
 - fonts: 휴먼명조, 한양중고딕, 굴림체, 돋움, 나눔고딕, 휴먼고딕, Apple SD Gothic Neo, Malgun Gothic, NanumSquareNeo, Noto Sans KR, Pretendard, Wanted Sans, 고운바탕, 나눔명조, 한양신명조, AppleMyungjo, Batang, Noto Serif KR, 맑은 고딕, D2Coding, GulimChe, Noto Sans Mono, 한양견고딕, 돋움체, 한컴 윤체 B, HY헤드라인M
 - fonts-source: rendered-dom
 - rendered-font-diagnostics: family 굴림체, 휴먼명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, "Noto Serif KR", Batang, AppleMyungjo, serif(243), "맑은 고딕", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, "Wanted Sans", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, sans-serif(141), 굴림체, GulimChe, D2Coding, "Noto Sans Mono", monospace(81), 한양중고딕, 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, "Wanted Sans", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, sans-serif(67), 돋움, 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, "Wanted Sans", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, sans-serif(46) · size 13.3333px(259), 16px(114), 14.6667px(90) · line-height 21.0667px(259), 25.28px(114), 23.1733px(90)
@@ -46,12 +46,12 @@ Verified Documents: 5
 
 ## gyeolseokgye.hwp
 
-- path: /Users/shinehandmac/Downloads/결석계.hwp
+- path: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/gyeolseokgye.hwp
 - kind: 기준 샘플
 - status: 완료
 - page: 1 / 1 쪽
 - section: 구역: 1 / 1
-- source: /Users/shinehandmac/Downloads/결석계.hwp
+- source: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/gyeolseokgye.hwp
 - fonts: 함초롬바탕, Noto Serif KR, 고운바탕, 나눔명조, 한양신명조, 휴먼명조, AppleMyungjo, Batang, 함초롬돋움, Apple SD Gothic Neo, HCR Batang, Malgun Gothic
 - fonts-source: rendered-dom
 - rendered-font-diagnostics: family 함초롬바탕, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, "Noto Serif KR", Batang, AppleMyungjo, serif(57), "HCR Batang", 함초롬바탕, 함초롬돋움, "Noto Serif KR", "Malgun Gothic", "Apple SD Gothic Neo", serif(2) · size 13.3333px(34), 17.3333px(6), 16px(5) · line-height 21.0667px(34), 27.3867px(6), 25.28px(5)
@@ -63,12 +63,12 @@ Verified Documents: 5
 
 ## attachment-sale-notice.hwp
 
-- path: /Users/shinehandmac/Downloads/(첨부)정정_공고문_신축다세대잔여세대선착순일반매각.hwp
+- path: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp
 - kind: 기준 샘플
 - status: 완료
 - page: 1 / 4 쪽
 - section: 구역: 1 / 1
-- source: /Users/shinehandmac/Downloads/(첨부)정정_공고문_신축다세대잔여세대선착순일반매각.hwp
+- source: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/attachment-sale-notice.hwp
 - fonts: 나눔고딕, 돋움, 한양중고딕, 휴먼고딕, Apple SD Gothic Neo, Malgun Gothic, NanumSquareNeo, Noto Sans KR, Pretendard, Wanted Sans, 맑은 고딕, 휴먼명조, HY헤드라인M, 한양신명조, #중고딕, 고운바탕, 나눔명조, AppleMyungjo, Batang, Noto Serif KR
 - fonts-source: rendered-dom
 - rendered-font-diagnostics: family "맑은 고딕", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, "Wanted Sans", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, sans-serif(596), 휴먼명조, HY헤드라인M, 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, "Wanted Sans", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, sans-serif(7), "#중고딕", 한양신명조, 휴먼명조, 한양신명조, 나눔명조, 고운바탕, "Noto Serif KR", Batang, AppleMyungjo, serif(1) · size 13.3333px(514), 14.6667px(68), 12px(14) · line-height 21.0667px(514), 23.1733px(68), 18.96px(14)
@@ -83,12 +83,12 @@ Verified Documents: 5
 
 ## incheon-2a.hwpx
 
-- path: /Users/shinehandmac/Downloads/(공고문)인천가정2A-.hwpx
+- path: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx
 - kind: 기준 샘플
 - status: 완료
 - page: 1 / 18 쪽
 - section: 구역: 1 / 1
-- source: /Users/shinehandmac/Downloads/(공고문)인천가정2A-.hwpx
+- source: /Users/shinehandmac/Github/ChromeHWP/output/playwright/inputs/incheon-2a.hwpx
 - fonts: 돋움, 한양중고딕, Malgun Gothic, 나눔고딕, 휴먼고딕, Apple SD Gothic Neo, NanumSquareNeo, Noto Sans KR, Pretendard, Wanted Sans, 맑은 고딕, 굴림, HY헤드라인M, 한컴돋움, 한양신명조, 고운바탕, 나눔명조, 휴먼명조, AppleMyungjo, Batang, Noto Serif KR
 - fonts-source: rendered-dom
 - rendered-font-diagnostics: family 돋움, 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, "Wanted Sans", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, sans-serif(561), "맑은 고딕", 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, "Wanted Sans", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, sans-serif(92), 굴림, 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, "Wanted Sans", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, sans-serif(33), 한양중고딕, 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, "Wanted Sans", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, sans-serif(16), HY헤드라인M, 휴먼고딕, 한양중고딕, 돋움, 나눔고딕, NanumSquareNeo, "Wanted Sans", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, sans-serif(11) · size 12px(568), 10.6667px(100), 13.3333px(42) · line-height 18.96px(568), 16.8533px(100), 21.0667px(42)

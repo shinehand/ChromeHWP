@@ -203,6 +203,8 @@ Object.assign(HwpParser, {
       charProps: {},
       fontFaces: {},
       hangulFonts: {},
+      numberings: {},
+      bullets: {},
     };
 
     const allNodes = Array.from(doc.getElementsByTagName('*'));
@@ -241,6 +243,28 @@ Object.assign(HwpParser, {
 
     allNodes.forEach(node => {
       const name = HwpParser._hwpxLocalName(node);
+      if (name === 'numbering') {
+        const id = Number(node.getAttribute('id'));
+        if (!Number.isFinite(id)) return;
+        refs.numberings[id] = HwpParser._hwpxChildren(node, 'paraHead').map(headEl => ({
+          level: HwpParser._hwpxAttrNum(headEl, 'level', 1),
+          start: HwpParser._hwpxAttrNum(headEl, 'start', 1),
+          numFormat: headEl.getAttribute('numFormat') || 'DIGIT',
+          text: headEl.textContent || headEl.innerHTML || '',
+          align: headEl.getAttribute('align') || 'LEFT',
+        }));
+        return;
+      }
+      if (name === 'bullet') {
+        const id = Number(node.getAttribute('id'));
+        if (!Number.isFinite(id)) return;
+        refs.bullets[id] = {
+          char: node.getAttribute('char') || '•',
+          imageIDRef: node.getAttribute('imageIDRef'),
+        };
+        return;
+      }
+
       if (name === 'borderFill') {
         const id = Number(node.getAttribute('id'));
         if (!Number.isFinite(id)) return;
@@ -276,6 +300,7 @@ Object.assign(HwpParser, {
         const alignEl = HwpParser._hwpxFirstChild(node, 'align');
         const marginEl = HwpParser._hwpxDescendant(node, 'margin');
         const lineSpacingEl = HwpParser._hwpxDescendant(node, 'lineSpacing');
+        const headingEl = HwpParser._hwpxFirstChild(node, 'heading');
         refs.paraProps[id] = {
           align: HwpParser._hwpxMapAlign(alignEl?.getAttribute?.('horizontal')),
           marginLeft: HwpParser._hwpxAttrNum(HwpParser._hwpxDescendant(marginEl, 'left'), 'value', 0),
@@ -286,6 +311,9 @@ Object.assign(HwpParser, {
           spacingAfter: HwpParser._hwpxAttrNum(HwpParser._hwpxDescendant(marginEl, 'next'), 'value', 0),
           lineSpacingType: HwpParser._normalizeLineSpacingType(lineSpacingEl?.getAttribute?.('type')),
           lineSpacing: HwpParser._hwpxAttrNum(lineSpacingEl, 'value', 0),
+          headingType: headingEl?.getAttribute?.('type') || 'NONE',
+          headingIdRef: Number(headingEl?.getAttribute?.('idRef')) || 0,
+          headingLevel: Number(headingEl?.getAttribute?.('level')) || 0,
         };
         return;
       }
@@ -1113,9 +1141,43 @@ Object.assign(HwpParser, {
       'columnBreak',
       'merged',
     ]);
+
+    let listInfo = null;
+    if (paraInfo.headingType === 'OUTLINE' || paraInfo.headingType === 'NUMBER') {
+      const numberings = header.numberings || {};
+      let numbering = numberings[paraInfo.headingIdRef];
+      if (!numbering && Object.keys(numberings).length > 0) {
+        numbering = numberings[Object.keys(numberings)[0]];
+      }
+      if (numbering) {
+        const head = numbering.find(h => h.level === (paraInfo.headingLevel + 1)) || numbering[0];
+        if (head) {
+          listInfo = {
+            kind: paraInfo.headingType === 'OUTLINE' ? 'outline' : 'number',
+            listId: paraInfo.headingIdRef || 1,
+            level: paraInfo.headingLevel + 1,
+            start: head.start || 1,
+            format: head.text,
+            numFormat: head.numFormat || 'DIGIT',
+          };
+        }
+      }
+    } else if (paraInfo.headingType === 'BULLET') {
+      const bullets = header.bullets || {};
+      let bullet = bullets[paraInfo.headingIdRef];
+      if (!bullet && Object.keys(bullets).length > 0) {
+        bullet = bullets[Object.keys(bullets)[0]];
+      }
+      listInfo = {
+        kind: 'bullet',
+        marker: bullet ? bullet.char : '•',
+      };
+    }
+
     const blockInfo = {
       ...paraInfo,
       ...paragraphLayout,
+      listInfo,
       pageBreak: rawParagraph.pageBreak,
       columnBreak: rawParagraph.columnBreak,
       rawParagraph,
@@ -1187,6 +1249,34 @@ Object.assign(HwpParser, {
           HwpParser._hwpxPushTextRun(runBuffer, '\n', charInfo || {});
         } else if (name === 'tab') {
           HwpParser._hwpxPushTextRun(runBuffer, '\t', charInfo || {});
+        } else if (name === 'ctrl') {
+          // hp:ctrl 내부 처리: fieldBegin, autoNumFormat 등
+          const ctrlChild = child.children[0];
+          const ctrlName = ctrlChild ? HwpParser._hwpxLocalName(ctrlChild) : '';
+          if (ctrlName === 'fieldBegin') {
+            // FORMULA/HYPERLINK 등 필드: LastResult stringParam을 텍스트 런으로 삽입
+            // (필드 결과값은 hp:t로도 중복 존재하므로 fieldBegin 자체는 스킵)
+            // 단, hp:t 없이 fieldBegin만 있는 경우를 위해 LastResult 추출
+            const paramsEl = HwpParser._hwpxFirstChild(ctrlChild, 'parameters');
+            if (paramsEl) {
+              const lastResultEl = Array.from(paramsEl.children).find(p =>
+                HwpParser._hwpxLocalName(p) === 'stringParam' && p.getAttribute('name') === 'LastResult'
+              );
+              if (lastResultEl) {
+                // 이 run에 hp:t가 없는 경우에만 LastResult를 삽입 (중복 방지)
+                const hasT = HwpParser._hwpxChildren(runEl, 't').some(t => t.textContent.trim());
+                if (!hasT) {
+                  HwpParser._hwpxPushTextRun(runBuffer, lastResultEl.textContent || '', charInfo || {});
+                }
+              }
+            }
+          } else if (ctrlName === 'autoNumFormat') {
+            // 자동 번호 (페이지 번호, 주석 번호 등) - 현재는 플레이스홀더 텍스트
+            const numType = ctrlChild.getAttribute('numType') || '';
+            if (numType === 'PAGE') {
+              // 페이지 번호는 렌더러에서 처리하므로 여기서는 무시
+            }
+          }
         }
       });
     });
