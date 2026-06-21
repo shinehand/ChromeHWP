@@ -1,6 +1,6 @@
 # Verify Sample Hotspots
 
-Generated: 2026-06-21T03:12:18.355Z
+Generated: 2026-06-21T03:17:20.407Z
 Viewer: http://127.0.0.1:4173/pages/viewer.html
 
 ## goyeopje.hwp

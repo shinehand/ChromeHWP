@@ -817,6 +817,52 @@ Object.assign(HwpParser, {
     const width = Number(objectInfo?.rawObjectLayout?.size?.width) || 0;
     const height = Number(objectInfo?.rawObjectLayout?.size?.height) || 0;
 
+    // 선 스타일 (lineShape) 파싱: 속성(Attribute) 또는 자식 노드에서 값을 유연하게 추출
+    const lineShapeEl = HwpParser._hwpxFirstChild(shpEl, 'lineShape') || HwpParser._hwpxDescendant(shpEl, 'lineShape');
+    let lineColor = null;
+    let lineWidthMm = 0;
+    let lineStyle = 'SOLID';
+    if (lineShapeEl) {
+      const colorAttr = lineShapeEl.getAttribute('color');
+      const colorNode = HwpParser._hwpxFirstChild(lineShapeEl, 'color')?.textContent;
+      lineColor = HwpParser._hwpxNormalizeColor(colorAttr || colorNode);
+
+      const widthAttr = lineShapeEl.getAttribute('width');
+      const widthNode = HwpParser._hwpxFirstChild(lineShapeEl, 'width')?.textContent;
+      const widthRaw = widthAttr || widthNode;
+      if (widthRaw) {
+        lineWidthMm = HwpParser._hwpxParseMm(widthRaw);
+      }
+
+      const styleAttr = lineShapeEl.getAttribute('style');
+      const styleNode = HwpParser._hwpxFirstChild(lineShapeEl, 'style')?.textContent;
+      lineStyle = (styleAttr || styleNode || 'SOLID').toUpperCase();
+    }
+
+    // 채우기 스타일 (fillBrush) 파싱: 단색(winBrush) 및 그라데이션(gradation) 처리
+    const fillBrushEl = HwpParser._hwpxFirstChild(shpEl, 'fillBrush') || HwpParser._hwpxDescendant(shpEl, 'fillBrush');
+    let fillColor = null;
+    let fillGradient = null;
+    if (fillBrushEl) {
+      const winBrushEl = HwpParser._hwpxFirstChild(fillBrushEl, 'winBrush');
+      if (winBrushEl) {
+        fillColor = HwpParser._hwpxNormalizeColor(winBrushEl.getAttribute('faceColor'));
+      }
+      const gradationEl = HwpParser._hwpxFirstChild(fillBrushEl, 'gradation');
+      if (gradationEl) {
+        const gradientColors = HwpParser._hwpxChildren(gradationEl, 'color')
+          .map(colorEl => HwpParser._hwpxNormalizeColor(colorEl.getAttribute('value') || colorEl.textContent || ''))
+          .filter(Boolean);
+        if (gradientColors.length >= 2) {
+          fillGradient = {
+            type: gradationEl.getAttribute('type') || 'LINEAR',
+            angle: HwpParser._hwpxAttrNum(gradationEl, 'angle', 0),
+            colors: gradientColors,
+          };
+        }
+      }
+    }
+
     const subListEl = HwpParser._hwpxFirstChild(shpEl, 'subList');
     if (subListEl) {
       const blocks = HwpParser._hwpxBlocksFromContainer(subListEl, header);
@@ -827,6 +873,11 @@ Object.assign(HwpParser, {
         height,
         sourceFormat: 'hwpx',
         texts: blocks.flatMap(b => b.texts || []),
+        lineColor,
+        lineWidthMm,
+        lineStyle,
+        fillColor,
+        fillGradient,
       }, objectInfo);
     }
 
@@ -849,6 +900,11 @@ Object.assign(HwpParser, {
       sourceFormat: 'hwpx',
       description: HwpParser._hwpxFirstChild(shpEl, 'shapeComment')?.textContent?.trim?.() || '',
       texts: [HwpParser._run('')],
+      lineColor,
+      lineWidthMm,
+      lineStyle,
+      fillColor,
+      fillGradient,
     }, objectInfo);
   },
 

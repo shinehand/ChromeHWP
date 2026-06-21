@@ -502,6 +502,32 @@ function appendTextBoxBlock(parent, block, context = {}) {
   if (widthPx) content.style.minWidth = `${widthPx}px`;
   if (heightPx) content.style.minHeight = `${heightPx}px`;
 
+  // 채움 색상 및 그라데이션 적용
+  const fillGrad = block.fillGradient;
+  if (fillGrad?.colors?.length >= 2) {
+    content.style.background = hwpxGradientToCss(fillGrad);
+  } else if (block.fillColor) {
+    content.style.backgroundColor = block.fillColor;
+  }
+
+  // 테두리 선 색상·굵기·스타일 적용
+  const lineColor = block.lineColor;
+  const lineWidthMm = Number(block.lineWidthMm) || 0;
+  if (lineColor) {
+    const lineWidthPx = lineWidthMm > 0
+      ? Math.max(0.5, Math.min(8, lineWidthMm * CSS_PX_PER_MM))
+      : 1;
+    let borderStyle = 'solid';
+    const normalizedStyle = String(block.lineStyle || '').toUpperCase();
+    if (normalizedStyle === 'DOTTED' || normalizedStyle === 'DOT') {
+      borderStyle = 'dotted';
+    } else if (normalizedStyle === 'DASHED' || normalizedStyle === 'DASH') {
+      borderStyle = 'dashed';
+    }
+    content.style.border = `${lineWidthPx}px ${borderStyle} ${lineColor}`;
+    content.style.boxSizing = 'border-box';
+  }
+
   (block.paragraphs || []).forEach(para => {
     appendBlockByType(content, para, { pageIndex, tableIndexRef, listStateRef });
   });
